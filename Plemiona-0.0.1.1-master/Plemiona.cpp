@@ -14,6 +14,7 @@
 #define KEY_LEFT 75
 #define KEY_RIGHT 77
 
+
 #define skret_lewo_gora 201
 #define skret_prawo_gora 187
 #define prosto_dol 186
@@ -29,6 +30,21 @@
 using namespace std;
 HANDLE hOut;
 
+char woda=176;
+char gora=94;
+char dom = 178;
+char stolica = 219;
+ char dom2 = 177;
+ char mapa[137][201];
+ char postac = 193;
+ 
+ char blok = bloczek;
+ char osadnik = 79;
+ char robotnik = 82;
+ char osada = 254;
+ char farma = 206;
+ char kopalnia = 88;
+ char tartak = 84;
 
 void gotoxy(int x, int y)
 {
@@ -737,23 +753,35 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int *bufo
 {
 	char ster;
 	int h=0;
+	int y2=miasto[1].y1;
+	int x2=miasto[1].x1;
 	do{
 		gotoxy(109,33);
-		for(int i=miasto[1].x1;i<=miasto[1].x1;i++){
-			for(int j=miasto[1].y1-1;j<=miasto[1].y1;j++){
-				if(mapa[i][j]!='R' && mapa[i][j]!='O' && mapa[i][j]!='A' && mapa[i][j]!='B')SetConsoleTextAttribute( hOut, 10 );
+		for(int i=miasto[1].x1-1;i<=miasto[1].x1+1;i++){
+			for(int j=miasto[1].y1-1;j<=miasto[1].y1+1;j++){
+				if(mapa[i][j]!='R' && mapa[i][j]!='O' && mapa[i][j]!='A' && mapa[i][j]!='B' && mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=stolica && mapa[i][j]!=osada)SetConsoleTextAttribute( hOut, 10 );
+				if(i==x2 && j==y2)SetConsoleTextAttribute( hOut, 14 );
 				cout <<mapa[i][j];
-				SetConsoleTextAttribute( hOut, 8 );
+				SetConsoleTextAttribute( hOut, 7 );
 			}
 			h++;
 			gotoxy(109,33+h);
 		}
 		
 		ster=getch();
+		h=0;
+		if(ster=='w' && x2-1!=miasto[1].x1-2)x2--;
+		if(ster=='s' && x2+1!=miasto[1].x1+2)x2++;
+		if(ster=='a' && y2-1!=miasto[1].y1-2)y2--;
+		if(ster=='d' && y2+1!=miasto[1].y1+2)y2++;
+		if(ster=='q' && mapa[x2][y2]!='R' && mapa[x2][y2]!='O' && mapa[x2][y2]!='A' && mapa[x2][y2]!='B' && mapa[x2][y2]!=woda && mapa[x2][y2]!=gora && mapa[x2][y2]!=stolica && mapa[x2][y2]!=osada){
+			mapa[x2][y2]='R';
+			return;
+		}
+		cls();
 		
 		
-		
-	}while(ster!='e');
+	}while(ster!=27);
 	
 }
 
@@ -776,26 +804,10 @@ int main(){
 
 
  
-
-	
-char dom = 178;
-char stolica = 219;
- char dom2 = 177;
- char woda = 176;
- char mapa[137][201];
- char postac = 193;
- char gora = 94;
- char blok = bloczek;
- char osadnik = 79;
- char robotnik = 82;
- char osada = 254;
- char farma = 206;
- char kopalnia = 88;
- char tartak = 84;
- 
  char mapa_stolicy[80][150];
  char bufor_miasta[80][150];
- 
+ char mapa_jednostek[127][201];
+ char bufor_mjednostek[127][201];
  int mapa_farma[127][201];
  int mapa_kopalnia[127][201];
  int mapa_tartak[127][201];
@@ -1415,12 +1427,18 @@ for(int i=0;i<137;i++){
 		teretorium[i][j]='x';
 	}
 }
+for(int i=0;i<137;i++){
+	for(int j=0;j<201;j++){
+		mapa_jednostek[i][j]=' ';
+	}
+}
 
 wczytaj.close();
 wczytaj_miasto.close();
- mapa[107][64]=osadnik;
- mapa[101][64]=robotnik;
- mapa[103][61]=osadnik;
+ mapa_jednostek[107][64]=osadnik;
+ mapa_jednostek[101][64]=robotnik;
+ mapa_jednostek[102][64]=robotnik;
+ mapa_jednostek[103][61]=osadnik;
  
 miasto[1].produkcja=1000;
 
@@ -1492,26 +1510,26 @@ for(int i=x-19;i<=x+19;i++){
                         cout << mapa[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
-                if(mapa[i][j]=='O' && budowa==true ||mapa[i][j]=='O' && ruch==true){
+                if(mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!=' ' && ruch==true){
                         SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
-                        cout << mapa[i][j];
+                        cout << mapa_jednostek[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
-                if(mapa[i][j]=='R' && budowa==true || mapa[i][j]=='R' && ruch==true){
+                if(mapa_jednostek[i][j]!=' ' && budowa==true || mapa_jednostek[i][j]!=' ' && ruch==true){
                         SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
-                        cout << mapa[i][j];
+                        cout << mapa_jednostek[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
 
                         	
-				if(mapa[i][j]==osadnik){
+				if(mapa_jednostek[i][j]!=' '){
         			SetConsoleTextAttribute( hOut, 12 | BACKGROUND_GREEN );
-        			cout << mapa[i][j];
+        			cout << mapa_jednostek[i][j];
         			SetConsoleTextAttribute( hOut, 8 );
 						}else{
-				if(mapa[i][j]==82){
+				if(mapa_jednostek[i][j]!=' '){
         			SetConsoleTextAttribute( hOut, 12 | BACKGROUND_GREEN );
-        			cout << mapa[i][j];
+        			cout << mapa_jednostek[i][j];
         			SetConsoleTextAttribute( hOut, 8 );
 						}else{
                 if(mapa[i][j]==dom){
@@ -1646,7 +1664,7 @@ gotoxy(110,4);
  cout << "    BUDOWA " << budowa << "    WYBOR JEDNOSTKI " << wybor_jednostki <<"    MENU " << menu << "     MENU BUDOWY " << menu_budowy;
 if(wybor_jednostki==true){
 	gotoxy(110,5);
-	cout << "Wybrano: " << jednostki[mapa[x][y]];
+	cout << "Wybrano: " << jednostki[mapa_jednostek[x][y]];
 }
 SetConsoleTextAttribute( hOut, 10 );
 gotoxy(8,50);
@@ -1792,7 +1810,7 @@ if(nazwa==true){
 }
 
 
-if(menu_budowy==true && mapa[x][y]=='R'){
+if(menu_budowy==true && mapa_jednostek[x][y]=='R'){
 gotoxy(81,1);
 cout << "BUDOWA                    ";
 gotoxy(76,3);
@@ -2035,34 +2053,34 @@ if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& wy
               y++;
               }
               ///////////////////budowa/////////////
-if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true && mapa[x-1][y]=='O' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true && mapa[x-1][y]=='O'){
+if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true && mapa_jednostek[x-1][y]=='O'&& mapa_jednostek[x][y]=='O' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true && mapa_jednostek[x-1][y]=='O'&& mapa_jednostek[x][y]=='O'){
               x--;
               }
-if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && mapa[x+1][y]=='O' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa[x+1][y]=='O'){
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && mapa_jednostek[x+1][y]=='O'&& mapa_jednostek[x][y]=='O' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa_jednostek[x+1][y]=='O'&& mapa_jednostek[x][y]=='O'){
               x++;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true&& mapa[x][y-1]=='O' || ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true&& mapa[x][y-1]=='O'){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true&& mapa_jednostek[x][y-1]=='O' && mapa_jednostek[x][y]=='O'|| ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true&& mapa_jednostek[x][y-1]=='O'&& mapa_jednostek[x][y]=='O'){
               y--;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa[x][y+1]=='O' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&ruch==true && mapa[x][y+1]=='O'){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa_jednostek[x][y+1]=='O' && mapa_jednostek[x][y]=='O'|| ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&ruch==true && mapa_jednostek[x][y+1]=='O'&& mapa_jednostek[x][y]=='O'){
               y++;
               }
               /////robotnicy/////////
-if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true &&mapa[x-1][y]=='R' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&mapa[x-1][y]=='R'){
+if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true &&mapa_jednostek[x-1][y]=='R'&& mapa_jednostek[x][y]=='R' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&mapa_jednostek[x-1][y]=='R' && mapa_jednostek[x][y]=='R'){
               x--;
               }
-if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && mapa[x+1][y]=='R' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa[x+1][y]=='R'){
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && mapa_jednostek[x+1][y]=='R'&& mapa_jednostek[x][y]=='R' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa_jednostek[x+1][y]=='R'&& mapa_jednostek[x][y]=='R'){
               x++;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true && mapa[x][y-1]=='R' || ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && mapa[x][y-1]=='R'){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true && mapa_jednostek[x][y-1]=='R'&& mapa_jednostek[x][y]=='R' || ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && mapa_jednostek[x][y-1]=='R'&& mapa_jednostek[x][y]=='R'){
               y--;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa[x][y+1]=='R' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && mapa[x][y+1]=='R'){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa_jednostek[x][y+1]=='R' && mapa_jednostek[x][y]=='R' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && mapa_jednostek[x][y+1]=='R'&& mapa_jednostek[x][y]=='R'){
               y++;
               }
               
               
-if(ster=='e' && wybor_jednostki==false && mapa[x][y]==osadnik || mapa[x][y]==82 && ster=='e' && wybor_jednostki==false ){
+if(ster=='e' && wybor_jednostki==false && mapa_jednostek[x][y]==osadnik || mapa_jednostek[x][y]==82 && ster=='e' && wybor_jednostki==false ){
 	wybor_jednostki=true;
 	menu=false;
 }
@@ -2088,7 +2106,7 @@ if(ster=='q' && lista_miast==true && x0!=8){
 }
 
 
-if(ster=='q' && menu==false && x0==3 && mapa[x][y]=='O' && budowa==true){
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='O' && budowa==true){
 if(budowa==true){
 
 	system("CLS");
@@ -2097,7 +2115,7 @@ if(budowa==true){
 	for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
 		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma&& mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 		}
 	}
 }
@@ -2109,7 +2127,7 @@ x0=0;
 system("CLS");
 }
 
-if(ster=='q' && menu==false && x0==3 && mapa[x][y]=='R' && budowa==true && menu_budowy==true){
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='R' && budowa==true && menu_budowy==true){
 	bufor_budowa=10;
 	menu_budowy=false;
 	system("CLS");
@@ -2117,7 +2135,7 @@ if(ster=='q' && menu==false && x0==3 && mapa[x][y]=='R' && budowa==true && menu_
 	y=yd;
 	for(int i=x-1;i<=x+1;i++){
 		for(int j=y-1;j<=y+1;j++){
-			mapa[i][j]=bufor_multi[i][j];
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 	}
 }
 menu=true;
@@ -2161,15 +2179,23 @@ if(ster=='e' && menu==true && mapa[x][y]==osada || ster=='e' && menu==true && ma
 }
 
 
-if(ster=='q' && menu==false && x0==3 && mapa[x][y]=='R' && ruch==true){
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='R' && ruch==true){
 	ruch=false;
 	system("CLS");
 	x=xd;
 	y=yd;
+	if(nawigacja==false){
 	for(int i=x-1;i<=x+1;i++){
 		for(int j=y-1;j<=y+1;j++){
-			mapa[i][j]=bufor_multi[i][j];
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 	}
+}
+}else{
+		for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+	}
+}
 }
 menu=true;
 wybor_jednostki=false;
@@ -2177,15 +2203,25 @@ budowa=false;
 x0=0;
 system("CLS");
 }
-if(ster=='q' && menu==false && x0==3 && mapa[x][y]=='O' && ruch==true){
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='O' && ruch==true){
 	ruch=false;
 	system("CLS");
 	x=xd;
 	y=yd;
+	if(nawigacja==false){
+
 	for(int i=x-1;i<=x+1;i++){
 		for(int j=y-1;j<=y+1;j++){
-			mapa[i][j]=bufor_multi[i][j];
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 	}
+}
+}else{
+
+	for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+	}
+}	
 }
 menu=true;
 wybor_jednostki=false;
@@ -2207,13 +2243,13 @@ menu=true;
 system("CLS");
 }
 
-if(ster=='q' && x0==2 && wybor_jednostki==true && mapa[x][y]=='R' && menu==false && menu_budowy==false){
+if(ster=='q' && x0==2 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==false){
 	menu_budowy=true;
 	system("CLS");
 	continue;
 }
 
-if(ster=='q' && x0==3 && wybor_jednostki==true && mapa[x][y]=='R' && menu==false && menu_budowy==true){
+if(ster=='q' && x0==3 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==true){
 	bufor_budowa=10;
 	menu_budowy=false;
 	menu=false;
@@ -2222,49 +2258,49 @@ if(ster=='q' && x0==3 && wybor_jednostki==true && mapa[x][y]=='R' && menu==false
 }
 
 
-if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='O' && menu==false && x0==2 && budowa==false && bufor_multi[x][y]==dom2){
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==false && x0==2 && budowa==false && bufor_multi[x][y]==dom2){
 	xd=x;
 	yd=y;
-	bufor_multi[x][y]=mapa[x][y];
-	mapa[x][y]='O';
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='O';
 	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa[x-1][y]!=farma&& mapa[x-1][y]!=tartak&& mapa[x-1][y]!=kopalnia){
-	bufor_multi[x-1][y]=mapa[x-1][y];
-	mapa[x-1][y]='O';
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
+	mapa_jednostek[x-1][y]='O';
 	}
 	
 	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora&& mapa[x-1][y+1]!=tartak&& mapa[x-1][y+1]!=farma&& mapa[x-1][y+1]!=kopalnia){
-	bufor_multi[x-1][y+1]=mapa[x-1][y+1];
-	mapa[x-1][y+1]='O';
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
+	mapa_jednostek[x-1][y+1]='O';
 	}
 	
 	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora&& mapa[x-1][y-1]!=tartak&& mapa[x-1][y-1]!=farma&& mapa[x-1][y-1]!=kopalnia){
-	bufor_multi[x-1][y-1]=mapa[x-1][y-1];
-	mapa[x-1][y-1]='O';
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
+	mapa_jednostek[x-1][y-1]='O';
 	}
 	
 	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora&&mapa[x][y+1]!=tartak&&mapa[x][y+1]!=farma&&mapa[x][y+1]!=kopalnia){
-	bufor_multi[x][y+1]=mapa[x][y+1];
-	mapa[x][y+1]='O';
+	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
+	mapa_jednostek[x][y+1]='O';
 	}
 	
 	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& mapa[x][y-1]!=tartak&& mapa[x][y-1]!=farma&& mapa[x][y-1]!=kopalnia){
-	bufor_multi[x][y-1]=mapa[x][y-1];
-	mapa[x][y-1]='O';
+	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
+	mapa_jednostek[x][y-1]='O';
 	}
 	
 	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora&& mapa[x+1][y-1]!=tartak&& mapa[x+1][y-1]!=farma&& mapa[x+1][y-1]!=kopalnia){
-	bufor_multi[x+1][y-1]=mapa[x+1][y-1];
-	mapa[x+1][y-1]='O';
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
+	mapa_jednostek[x+1][y-1]='O';
 	}
 	
 	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora&& mapa[x+1][y]!=tartak&& mapa[x+1][y]!=farma&& mapa[x+1][y]!=kopalnia){
-	bufor_multi[x+1][y]=mapa[x+1][y];
-	mapa[x+1][y]='O';
+	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
+	mapa_jednostek[x+1][y]='O';
 	}
 	
 	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora&& mapa[x+1][y+1]!=tartak&& mapa[x+1][y+1]!=farma&& mapa[x+1][y+1]!=kopalnia){
-	bufor_multi[x+1][y+1]=mapa[x+1][y+1];
-	mapa[x+1][y+1]='O';
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
+	mapa_jednostek[x+1][y+1]='O';
 	}
 	
 	budowa=true;
@@ -2275,109 +2311,109 @@ if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='O' && menu==false && x0==2
 
 
 ////////////tartak/////////////
-if(ster=='q' && wybor_jednostki==true && menu==false && x0==2 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && bufor_multi[x][y]==dom){
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==2 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_multi[x][y]==dom){
 	
 	bufor_budowa=2;
 	xd=x;
 	yd=y;
 	
-	bufor_multi[x][y]=mapa[x][y];
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	if(bufor_multi[x][y]==dom)
-	mapa[x][y]='R';
+	mapa_jednostek[x][y]='R';
 	
-	bufor_multi[x-1][y]=mapa[x-1][y];
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
 	if(mapa[x-1][y]==dom){
 	
-	mapa[x-1][y]='R';
+	mapa_jednostek[x-1][y]='R';
 	}
-	bufor_multi[x-1][y+1]=mapa[x-1][y+1];
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
 	if(bufor_multi[x-1][y+1]==dom){
 	
-	mapa[x-1][y+1]='R';
+	mapa_jednostek[x-1][y+1]='R';
 	}
-	bufor_multi[x-1][y-1]=mapa[x-1][y-1];
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
 	if(bufor_multi[x-1][y-1]==dom){
 	
-	mapa[x-1][y-1]='R';
+	mapa_jednostek[x-1][y-1]='R';
 	}
-	bufor_multi[x][y+1]=mapa[x][y+1];
+	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
 	if(bufor_multi[x][y+1]==dom){
 	
-	mapa[x][y+1]='R';
+	mapa_jednostek[x][y+1]='R';
 	}
-	bufor_multi[x][y-1]=mapa[x][y-1];
+	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
 	if(bufor_multi[x][y-1]==dom){
 	
-	mapa[x][y-1]='R';
+	mapa_jednostek[x][y-1]='R';
 	}
-	bufor_multi[x+1][y-1]=mapa[x+1][y-1];
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
 	if(bufor_multi[x+1][y-1]==dom){
 	
-	mapa[x+1][y-1]='R';
+	mapa_jednostek[x+1][y-1]='R';
 	}
-	bufor_multi[x+1][y]=mapa[x+1][y];
+	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
 	if(bufor_multi[x+1][y]==dom){
 	
-	mapa[x+1][y]='R';
+	mapa_jednostek[x+1][y]='R';
 	}
-	bufor_multi[x+1][y+1]=mapa[x+1][y+1];
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
 	if(bufor_multi[x+1][y+1]==dom){
 	
-	mapa[x+1][y+1]='R';
+	mapa_jednostek[x+1][y+1]='R';
 	}
 	budowa=true;
 }
 ////////////farma
 
-if(ster=='q' && wybor_jednostki==true && menu==false && x0==0 && budowa==false && mapa[x][y]=='R' && menu_budowy==true){
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==0 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true){
 
 	bufor_budowa=0;
 	xd=x;
 	yd=y;
 	
 	if(bufor_multi[x][y]==dom2)
-	bufor_multi[x][y]=mapa[x][y];
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	
-	mapa[x][y]='R';
+	mapa_jednostek[x][y]='R';
 	
-	bufor_multi[x-1][y]=mapa[x-1][y];
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
 	if(mapa[x-1][y]==dom2){
-	mapa[x-1][y]='R';
+	mapa_jednostek[x-1][y]='R';
 	}
-	bufor_multi[x-1][y+1]=mapa[x-1][y+1];
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
 	if(bufor_multi[x-1][y+1]==dom2){
 	
-	mapa[x-1][y+1]='R';
+	mapa_jednostek[x-1][y+1]='R';
 	}
-	bufor_multi[x-1][y-1]=mapa[x-1][y-1];
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
 	if(bufor_multi[x-1][y-1]==dom2){
 	
-	mapa[x-1][y-1]='R';
+	mapa_jednostek[x-1][y-1]='R';
 	}
-	bufor_multi[x][y+1]=mapa[x][y+1];
+	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
 	if(bufor_multi[x][y+1]==dom2){
 	
-	mapa[x][y+1]='R';
+	mapa_jednostek[x][y+1]='R';
 	}
-	bufor_multi[x][y-1]=mapa[x][y-1];
+	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
 	if(bufor_multi[x][y-1]==dom2){
 	
-	mapa[x][y-1]='R';
+	mapa_jednostek[x][y-1]='R';
 	}
-	bufor_multi[x+1][y-1]=mapa[x+1][y-1];
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
 	if(bufor_multi[x+1][y-1]==dom2){
 	
-	mapa[x+1][y-1]='R';
+	mapa_jednostek[x+1][y-1]='R';
 	}
-	bufor_multi[x+1][y]=mapa[x+1][y];
+	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
 	if(bufor_multi[x+1][y]==dom2){
 	
-	mapa[x+1][y]='R';
+	mapa_jednostek[x+1][y]='R';
 	}
-	bufor_multi[x+1][y+1]=mapa[x+1][y+1];
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
 	if(bufor_multi[x+1][y+1]==dom2){
 	
-	mapa[x+1][y+1]='R';
+	mapa_jednostek[x+1][y+1]='R';
 	}
 	budowa=true;
 
@@ -2385,69 +2421,69 @@ if(ster=='q' && wybor_jednostki==true && menu==false && x0==0 && budowa==false &
 
 /////////kopalnia
 
-if(ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x][y-1]==gora || 
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x][y+1]==gora || 
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x-1][y+1]==gora ||
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x-1][y]==gora ||
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x-1][y-1]==gora ||
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x+1][y+1]==gora||
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x+1][y]==gora||
-ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa[x][y]=='R' && menu_budowy==true && mapa[x+1][y-1]==gora){
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x][y-1]==gora || 
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x][y+1]==gora || 
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x-1][y+1]==gora ||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x-1][y]==gora ||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x-1][y-1]==gora ||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x+1][y+1]==gora||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x+1][y]==gora||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && mapa[x+1][y-1]==gora){
 
 	bufor_budowa=1;
 	xd=x;
 	yd=y;
 	
-	bufor_multi[x][y]=mapa[x][y];
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	if(bufor_multi[x][y]==dom2)
-	mapa[x][y]='R';
+	mapa_jednostek[x][y]='R';
 	
-	bufor_multi[x-1][y]=mapa[x-1][y];
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
 	if(mapa[x-1][y]==dom2){
 	
-	mapa[x-1][y]='R';
+	mapa_jednostek[x-1][y]='R';
 	}
-	bufor_multi[x-1][y+1]=mapa[x-1][y+1];
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
 	if(bufor_multi[x-1][y+1]==dom2){
 	
-	mapa[x-1][y+1]='R';
+	mapa_jednostek[x-1][y+1]='R';
 	}
-	bufor_multi[x-1][y-1]=mapa[x-1][y-1];
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
 	if(bufor_multi[x-1][y-1]==dom2){
 	
-	mapa[x-1][y-1]='R';
+	mapa_jednostek[x-1][y-1]='R';
 	}
-	bufor_multi[x][y+1]=mapa[x][y+1];
+	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
 	if(bufor_multi[x][y+1]==dom2){
 	
 	mapa[x][y+1]='R';
 	}
-	bufor_multi[x][y-1]=mapa[x][y-1];
+	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
 	if(bufor_multi[x][y-1]==dom2){
 	
-	mapa[x][y-1]='R';
+	mapa_jednostek[x][y-1]='R';
 	}
-	bufor_multi[x+1][y-1]=mapa[x+1][y-1];
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
 	if(bufor_multi[x+1][y-1]==dom2){
 	
-	mapa[x+1][y-1]='R';
+	mapa_jednostek[x+1][y-1]='R';
 	}
-	bufor_multi[x+1][y]=mapa[x+1][y];
+	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
 	if(bufor_multi[x+1][y]==dom2){
 	
-	mapa[x+1][y]='R';
+	mapa_jednostek[x+1][y]='R';
 	}
-	bufor_multi[x+1][y+1]=mapa[x+1][y+1];
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
 	if(bufor_multi[x+1][y+1]==dom2){
 	
-	mapa[x+1][y+1]='R';
+	mapa_jednostek[x+1][y+1]='R';
 	}
 	budowa=true;
 
 }
 
 
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][y]=='O' && teretorium[x][y]=='x' || budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][y]=='O' && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='O' && teretorium[x][y]=='x' || budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='O' && teretorium[x][y]=='1'){
 	miasta[x][y]=liczba_miast;
 	if(liczba_miast==1)
 	mapa[x][y]=stolica;
@@ -2479,7 +2515,7 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][
 	
 	miasto[liczba_miast].x1=x;
 	miasto[liczba_miast].y1=y;
-	
+	bufor_multi[x][y]=mapa[x][y];
 	liczba_miast++;
 	budowa=false;
 	wybor_jednostki=false;
@@ -2487,18 +2523,18 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][
 	nazwa=true;
 	for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma&& mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 		}
 	}
-	if(mapa[xd][yd]=='O')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='O')mapa_jednostek[xd][yd]=' ';
 }
 
 system("CLS");
 }
 
 /////////tartak////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][y]=='R' && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=tartak;
 	budowa=false;
@@ -2507,11 +2543,11 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][
 	menu=true;
 	for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma&& mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 		}
 	}
-	if(mapa[xd][yd]=='R')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
 mapa_tartak[x][y]=zasieg_miast[x][y]-48;
 system("CLS");
@@ -2520,7 +2556,7 @@ if(tartakb.lvl==3)
 miasto[mapa_tartak[x][y]].przychod_drewno=miasto[mapa_tartak[x][y]].przychod_drewno+20;
 }
 ///////////////farma///////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][y]=='R' && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=farma;
 	budowa=false;
@@ -2529,11 +2565,11 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][
 	menu=true;
 	for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma&& mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 		}
 	}
-	if(mapa[xd][yd]=='R')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
 mapa_farma[x][y]=zasieg_miast[x][y]-48;
 system("CLS");
@@ -2543,7 +2579,7 @@ if(port.lvl>=2){
 }
 }
 ///////////////kopalnia///////////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][y]=='R' && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=kopalnia;
 	budowa=false;
@@ -2552,12 +2588,13 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa[x][
 	menu=true;
 	for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma&& mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 		}
 	}
-	if(mapa[xd][yd]=='R')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
+bufor_multi[xd][yd]=kopalnia;
 mapa_kopalnia[x][y]=zasieg_miast[x][y]-48;
 system("CLS");
 miasto[mapa_kopalnia[x][y]].przychod_kamien=miasto[mapa_kopalnia[x][y]].przychod_kamien+30;
@@ -2574,125 +2611,123 @@ miasto[mapa_kopalnia[x][y]].przychod_zloto=miasto[mapa_kopalnia[x][y]].przychod_
 
 ///////////////RUCH//////////////
 
-if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='O' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
 	xd=x;
 	yd=y;
-	bufor_multi[x][y]=mapa[x][y];
-	mapa[x][y]='O';
-	bufor_multi[x-1][y]=mapa[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa[x-1][y]!=osadnik && mapa[x-1][y]!=robotnik){
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='O';
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='B' && mapa_jednostek[x-1][y]!='A'){
 
-	mapa[x-1][y]='O';
+	mapa_jednostek[x-1][y]='O';
 	}
-	bufor_multi[x-1][y+1]=mapa[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa[x-1][y+1]!=osadnik && mapa[x-1][y+1]!=robotnik){
-	mapa[x-1][y+1]='O';
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='B' && mapa_jednostek[x-1][y+1]!='A'){
+	mapa_jednostek[x-1][y+1]='O';
 	}
-	bufor_multi[x-1][y-1]=mapa[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa[x-1][y-1]!=osadnik && mapa[x-1][y-1]!=robotnik){
-	mapa[x-1][y-1]='O';
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek[x-1][y-1]!='A'){
+	mapa_jednostek[x-1][y-1]='O';
 	}
-		bufor_multi[x][y+1]=mapa[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa[x][y+1]!=osadnik && mapa[x][y+1]!=robotnik){
+		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='B' && mapa_jednostek[x][y+1]!='A'){
 
-	mapa[x][y+1]='O';
+	mapa_jednostek[x][y+1]='O';
 	}
-		bufor_multi[x][y-1]=mapa[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa[x][y-1]!=osadnik && mapa[x][y-1]!=robotnik){
+		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek[x][y-1]!='A'){
 
-	mapa[x][y-1]='O';
+	mapa_jednostek[x][y-1]='O';
 	}
-		bufor_multi[x+1][y-1]=mapa[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa[x+1][y-1]!=osadnik && mapa[x+1][y-1]!=robotnik){
+		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='A'&& mapa_jednostek[x+1][y-1]!='B'){
 
-	mapa[x+1][y-1]='O';
+	mapa_jednostek[x+1][y-1]='O';
 	}
-		bufor_multi[x+1][y]=mapa[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa[x+1][y]!=osadnik && mapa[x+1][y]!=robotnik){
+		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='A'&& mapa_jednostek[x+1][y]!='B'){
 
-	mapa[x+1][y]='O';
+	mapa_jednostek[x+1][y]='O';
 	}
-		bufor_multi[x+1][y+1]=mapa[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa[x+1][y+1]!=osadnik && mapa[x+1][y+1]!=robotnik){
+		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='A'&& mapa_jednostek[x+1][y+1]!='B'){
 
-	mapa[x+1][y+1]='O';
+	mapa_jednostek[x+1][y+1]='O';
 	}
 	
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa[x][y]=='O' && x0==0 && ruch==true && nawigacja==false){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='O' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma && mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
-		}
+		mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 	}
-	if(mapa[xd][yd]=='O')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='O')mapa_jednostek[xd][yd]=' ';
 }
-	mapa[x][y]='O';
+	mapa_jednostek[x][y]='O';
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
 }
 
-if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
 	xd=x;
 	yd=y;
-	bufor_multi[x][y]=mapa[x][y];
-	mapa[x][y]='R';
-	bufor_multi[x-1][y]=mapa[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa[x-1][y]!=osadnik && mapa[x-1][y]!=robotnik){
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='R';
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik){
 
-	mapa[x-1][y]='R';
+	mapa_jednostek[x-1][y]='R';
 	}
-	bufor_multi[x-1][y+1]=mapa[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa[x-1][y+1]!=osadnik && mapa[x-1][y+1]!=robotnik){
-	mapa[x-1][y+1]='R';
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik){
+	mapa_jednostek[x-1][y+1]='R';
 	}
-	bufor_multi[x-1][y-1]=mapa[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa[x-1][y-1]!=osadnik && mapa[x-1][y-1]!=robotnik){
-	mapa[x-1][y-1]='R';
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik){
+	mapa_jednostek[x-1][y-1]='R';
 	}
-		bufor_multi[x][y+1]=mapa[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa[x][y+1]!=osadnik && mapa[x][y+1]!=robotnik){
+		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik){
 
-	mapa[x][y+1]='R';
+	mapa_jednostek[x][y+1]='R';
 	}
-		bufor_multi[x][y-1]=mapa[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa[x][y-1]!=osadnik && mapa[x][y-1]!=robotnik){
+		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik){
 
-	mapa[x][y-1]='R';
+	mapa_jednostek[x][y-1]='R';
 	}
-		bufor_multi[x+1][y-1]=mapa[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa[x+1][y-1]!=osadnik && mapa[x+1][y-1]!=robotnik){
+		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik){
 
-	mapa[x+1][y-1]='R';
+	mapa_jednostek[x+1][y-1]='R';
 	}
-		bufor_multi[x+1][y]=mapa[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa[x+1][y]!=osadnik && mapa[x+1][y]!=robotnik){
+		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik){
 
-	mapa[x+1][y]='R';
+	mapa_jednostek[x+1][y]='R';
 	}
-		bufor_multi[x+1][y+1]=mapa[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa[x+1][y+1]!=osadnik && mapa[x+1][y+1]!=robotnik){
+		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik){
 
-	mapa[x+1][y+1]='R';
+	mapa_jednostek[x+1][y+1]='R';
 	}
 	
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa[x][y]=='R' && x0==0 && ruch==true && nawigacja==false){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && bufor_mjednostek[x][y]!='R' && x0==0 && ruch==true && nawigacja==false && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma && mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
-		}
+		
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+		
 	}
-	if(mapa[xd][yd]=='R')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
-	mapa[x][y]='R';
+	mapa_jednostek[x][y]='R';
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
@@ -2700,49 +2735,50 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa[x][y]=='R' && x0==0 
 }
 /////////////nawigacja/////////
 
-if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='O' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
 	xd=x;
 	yd=y;
-	bufor_multi[x][y]=mapa[x][y];
-	mapa[x][y]='O';
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='O';
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
-				bufor_multi[i][j]=mapa[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=osadnik && mapa[i][j]!=robotnik){
+				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora  && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada && mapa[i][j]!=kopalnia && mapa[i][j]!=farma && mapa[i][j]!=tartak){
 
-	mapa[i][j]='O';
+	mapa_jednostek[i][j]='O';
 	}
 		}
 	}
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa[x][y]=='O' && x0==0 && ruch==true && nawigacja==true){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && bufor_mjednostek[x][y]!='O' && x0==0 && ruch==true && nawigacja==true && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-2;i<=xd+2;i++){
 		for(int j=yd-2;j<=yd+2;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma && mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
-		}
+		
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+		
 	}
-	if(mapa[xd][yd]=='O')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='O')mapa_jednostek[xd][yd]=' ';
 }
-	mapa[x][y]='O';
+	mapa_jednostek[x][y]='O';
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+
 }
 
-if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
 	xd=x;
 	yd=y;
-	bufor_multi[x][y]=mapa[x][y];
-	mapa[x][y]='R';
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='R';
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
-				bufor_multi[i][j]=mapa[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=osadnik && mapa[i][j]!=robotnik){
+				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada && mapa[i][j]!=kopalnia && mapa[i][j]!=farma && mapa[i][j]!=tartak){
 
-	mapa[i][j]='R';
+	mapa_jednostek[i][j]='R';
 	}
 		}
 	}
@@ -2750,16 +2786,16 @@ if(ster=='q' && wybor_jednostki==true && mapa[x][y]=='R' && menu==false && x0==0
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa[x][y]=='R' && x0==0 && ruch==true && nawigacja==true){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='R' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-2;i<=xd+2;i++){
 		for(int j=yd-2;j<=yd+2;j++){
-		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma && mapa[i][j]!=kopalnia){
-			mapa[i][j]=bufor_multi[i][j];
-		}
+		
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+		
 	}
-	if(mapa[xd][yd]=='R')mapa[xd][yd]=dom;
+	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
-	mapa[x][y]='R';
+	mapa_jednostek[x][y]='R';
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
@@ -2774,6 +2810,11 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa[x][y]=='R' && x0==0 
  	kamien+=1000;
  	drewno+=1000;
  	wiara+=1000;
+ }
+ if(ster=='x'){
+ 	hodowla=true;
+ 	waluta=true;
+ 	nawigacja=true;
  }
  
 }
@@ -3827,7 +3868,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			ratusz.lvl=1;
 			zwieksz_koszt(ratusz);
 		}
-		if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==1 && kapitol.lvl>=ratusz.lvl && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
+		if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==1 && kapitol.lvl>=1 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
 			ratusz.lvl++;
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
@@ -3835,7 +3876,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			jrobotnik.koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
-		if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==2 && kapitol.lvl>=ratusz.lvl && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
+		if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==2 && kapitol.lvl>=2 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
 			ratusz.lvl++;
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
@@ -3843,7 +3884,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			jrobotnik.koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
-				if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==3 && kapitol.lvl>=ratusz.lvl && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
+				if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==3 && kapitol.lvl>=3 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
 			ratusz.lvl++;
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
@@ -3851,7 +3892,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			jrobotnik.koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
-				if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==4 && kapitol.lvl>=ratusz.lvl && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
+				if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==4 && kapitol.lvl>=4 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
 			ratusz.lvl++;
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
@@ -5706,11 +5747,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 	if(rekrutacja==true){
 		
 		if(ster=='q' && x0==0 && drewno>=jrobotnik.koszt_drewno && zloto>=jrobotnik.koszt_zloto && zywnosc>=jrobotnik.koszt_zywnosc && kamien>=jrobotnik.koszt_kamien && miasto[1].produkcja>=jrobotnik.koszt_produkcja){
-			if(mapa[x-1][y]==dom2 || mapa[x+1][y]==dom2 || mapa[x][y-1]==dom2 || mapa[x][y+1]==dom2 || mapa[x-1][y-1]==dom2 || mapa[x-1][y+1]==dom2 || mapa[x+1][y-1]==dom2 || mapa[x+1][y+1]==dom2 ||
-			mapa[x-1][y]==dom || mapa[x+1][y]==dom || mapa[x][y-1]==dom || mapa[x][y+1]==dom || mapa[x-1][y-1]==dom || mapa[x-1][y+1]==dom || mapa[x+1][y-1]==dom || mapa[x+1][y+1]==dom){
+			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
+			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
 				
-				rekrutuj(jrobotnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
 				wystaw_armie(jrobotnik,mapa,0);
+				rekrutuj(jrobotnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				
 				
 			}
 			
