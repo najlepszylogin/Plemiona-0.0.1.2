@@ -171,7 +171,15 @@ struct struktura_armii
 	string nazwa;
 };
 
-string garnizon_jednostki[10]={"Robotnik","Osadnik","Pikinier","Lucznik","Kusznik","Ciezkozbrojny","Lekka Jazda","Ciezka Jazda","Taran","Elita"};
+struct struktura_garnizonu
+{
+string nazwa;
+int ilosc;
+int wielkosc;
+};
+
+struktura_garnizonu sjednostki[11]={{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}};
+
 
 struktura_jednostek pikinier=
 {
@@ -183,7 +191,7 @@ struktura_jednostek lucznik=
 };
 struktura_jednostek kusznik=
 {
-	5,2,2,200,400,350,200,350,0,450,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza","Kusznicy"
+	5,2,2,200,400,350,200,350,0,450,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Kusznicy"
 };
 struktura_jednostek ciezkozbrojny=
 {
@@ -373,6 +381,11 @@ struktura_jednostek elita=
  bool budowa_miasto=false;
  bool rozbudowa=false;
 bool rekrutacja=false;
+int liczba_armii=0;
+int liczba_zolnierzy=0;
+bool bplac=false;
+
+struktura_armii armia[50];
 
 struktura_jednostek jrobotnik=
 {
@@ -687,6 +700,8 @@ void rozbuduj(struktura_budowli budowla,int *drewno, int *kamien, int *zywnosc,
 
 
 void rekrutowanka(int x0){
+	
+			if(bplac==true)x0=x0+2;
 			struktura_jednostek jednostka;
 			if(x0==0)jednostka=jrobotnik;
 			if(x0==1)jednostka=josadnik;
@@ -699,7 +714,7 @@ void rekrutowanka(int x0){
 			if(x0==8)jednostka=taran;
 			if(x0==9)jednostka=elita;
 			if(x0==10)return;
-
+			if(bplac==false){
 			gotoxy(114,12);
 			cout << "Koszt: ";
 			gotoxy(110,13);
@@ -712,23 +727,27 @@ void rekrutowanka(int x0){
 			cout <<"Zloto: "<< jednostka.koszt_zloto<<"                    ";
 			gotoxy(110,17);
 			cout << "Produkcja: "<<jednostka.koszt_produkcja<<"                    ";
-			gotoxy(114,18);
+			gotoxy(110,18);
+			cout << "Ludnosc: "<<jednostka.wielkosc*100<<"                    ";
+			}
+			
+			gotoxy(114,19);
 			cout << "Statystyki: ";
-			gotoxy(110,19);
-			cout << "Atak "<<jednostka.atak<<"                    ";
 			gotoxy(110,20);
-			cout << "Obrona "<<jednostka.obrona<<"                    ";
+			cout << "Atak "<<jednostka.atak<<"                    ";
 			gotoxy(110,21);
-			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
+			cout << "Obrona "<<jednostka.obrona<<"                    ";
 			gotoxy(110,22);
-			cout <<"Jazda "<<jednostka.jazda<<"                    ";
+			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
 			gotoxy(110,23);
-			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			cout <<"Jazda "<<jednostka.jazda<<"                    ";
 			gotoxy(110,24);
+			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			gotoxy(110,25);
 			cout << "Wielkosc "<<jednostka.wielkosc<<"                    ";
-			gotoxy(110,26);
+			gotoxy(110,27);
 			cout <<"Wymagania: ";
-			gotoxy(110,29);
+			gotoxy(110,28);
 			cout << jednostka.wymagania<<"                                              ";
 
 }
@@ -742,14 +761,13 @@ void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnos
 		*zloto=*zloto-budowla.koszt_zloto;
 
 		miasto[1].ludnosc=miasto[1].ludnosc-budowla.wielkosc*100;
-		*max_zolnierzy=*max_zolnierzy-budowla.wielkosc;
 		*rekrutacja=false;
 		*menu_stolica=true;
 		*x0=0;
 		system("CLS");
 }
 
-void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int *bufor_rekrutacji)
+void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor_rekrutacji, char mapa_jednostek[137][201])
 {
 	char ster;
 	int h=0;
@@ -759,7 +777,7 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int *bufo
 		gotoxy(109,33);
 		for(int i=miasto[1].x1-1;i<=miasto[1].x1+1;i++){
 			for(int j=miasto[1].y1-1;j<=miasto[1].y1+1;j++){
-				if(mapa[i][j]!='R' && mapa[i][j]!='O' && mapa[i][j]!='A' && mapa[i][j]!='B' && mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=stolica && mapa[i][j]!=osada)SetConsoleTextAttribute( hOut, 10 );
+				if(mapa_jednostek[i][j]!='R' && mapa_jednostek[i][j]!='O' && mapa_jednostek[i][j]!='A' && mapa_jednostek[i][j]!='B' && mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=stolica && mapa[i][j]!=osada)SetConsoleTextAttribute( hOut, 10 );
 				if(i==x2 && j==y2)SetConsoleTextAttribute( hOut, 14 );
 				cout <<mapa[i][j];
 				SetConsoleTextAttribute( hOut, 7 );
@@ -774,8 +792,15 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int *bufo
 		if(ster=='s' && x2+1!=miasto[1].x1+2)x2++;
 		if(ster=='a' && y2-1!=miasto[1].y1-2)y2--;
 		if(ster=='d' && y2+1!=miasto[1].y1+2)y2++;
-		if(ster=='q' && mapa[x2][y2]!='R' && mapa[x2][y2]!='O' && mapa[x2][y2]!='A' && mapa[x2][y2]!='B' && mapa[x2][y2]!=woda && mapa[x2][y2]!=gora && mapa[x2][y2]!=stolica && mapa[x2][y2]!=osada){
-			mapa[x2][y2]='R';
+		if(ster=='q' && mapa_jednostek[x2][y2]!='R' && mapa_jednostek[x2][y2]!='O' && mapa_jednostek[x2][y2]!='A' && mapa_jednostek[x2][y2]!='B' && mapa[x2][y2]!=woda && mapa[x2][y2]!=gora && mapa[x2][y2]!=stolica && mapa[x2][y2]!=osada){
+			if(bufor_rekrutacji==0)mapa_jednostek[x2][y2]='R';
+			if(bufor_rekrutacji==1)mapa_jednostek[x2][y2]='O';
+			if(bufor_rekrutacji!=0 && bufor_rekrutacji!=1){	
+			mapa_jednostek[x2][y2]='A';
+			armia[liczba_armii].x=x2;
+			armia[liczba_armii].y=y2;
+			liczba_armii++;
+			}
 			return;
 		}
 		cls();
@@ -1668,7 +1693,7 @@ if(wybor_jednostki==true){
 }
 SetConsoleTextAttribute( hOut, 10 );
 gotoxy(8,50);
-cout << "Zywnosc: "<< zywnosc<<"("<<przychod_zywnosc<<")" <<"  Drewno: " << drewno <<"("<<przychod_drewno<<")"<< "  Kamien: " << kamien<<"("<<przychod_kamien<<")"<< "  Wiara: " << wiara<<"("<<przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy << "  Zloto: " << zloto <<"("<<przychod_zloto<<")"<< "  Nauka: "<<nauka<<"("<<przychod_nauka<<")";
+cout << "Zywnosc: "<< zywnosc<<"("<<przychod_zywnosc<<")" <<"  Drewno: " << drewno <<"("<<przychod_drewno<<")"<< "  Kamien: " << kamien<<"("<<przychod_kamien<<")"<< "  Wiara: " << wiara<<"("<<przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy<<"("<<liczba_zolnierzy<<")" << "  Zloto: " << zloto <<"("<<przychod_zloto<<")"<< "  Nauka: "<<nauka<<"("<<przychod_nauka<<")";
 SetConsoleTextAttribute( hOut, 8 );
 
 if(menu==true){
@@ -2456,7 +2481,7 @@ ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && m
 	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
 	if(bufor_multi[x][y+1]==dom2){
 	
-	mapa[x][y+1]='R';
+	mapa_jednostek[x][y+1]='R';
 	}
 	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
 	if(bufor_multi[x][y-1]==dom2){
@@ -2534,7 +2559,7 @@ system("CLS");
 }
 
 /////////tartak////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&bufor_mjednostek[x][y]!='R' && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=tartak;
 	budowa=false;
@@ -2556,7 +2581,7 @@ if(tartakb.lvl==3)
 miasto[mapa_tartak[x][y]].przychod_drewno=miasto[mapa_tartak[x][y]].przychod_drewno+20;
 }
 ///////////////farma///////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&bufor_mjednostek[x][y]!='R' && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=farma;
 	budowa=false;
@@ -2579,7 +2604,7 @@ if(port.lvl>=2){
 }
 }
 ///////////////kopalnia///////////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' &&bufor_mjednostek[x][y]!='R' && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=kopalnia;
 	budowa=false;
@@ -2815,6 +2840,15 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
  	hodowla=true;
  	waluta=true;
  	nawigacja=true;
+ 	obrobka_zelaza=true;
+ 	obrobka_stali=true;
+ 	ratusz.lvl=5;
+ 	kapitol.lvl=5;
+ 	koszary.lvl=4;
+ 	stajnia.lvl=4;
+ 	warsztat.lvl=2;
+ 	plac.lvl=1;
+ 	miasto[1].ludnosc=30000;
  }
  
 }
@@ -2898,7 +2932,7 @@ cout << "Jestes w miescie " << miasto[1].nazwa;
 SetConsoleTextAttribute( hOut, 10 );
 gotoxy(8,60);
 cout << "Zywnosc: " << zywnosc<<"("<<miasto[1].przychod_zywnosc<<")" <<"  Drewno: " << drewno <<"("<<miasto[1].przychod_drewno<<")" <<
- "  Kamien: " << kamien<<"("<<miasto[1].przychod_kamien<<")" << "  Wiara: " << wiara <<"("<<miasto[1].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy << "  Zloto: " 
+ "  Kamien: " << kamien<<"("<<miasto[1].przychod_kamien<<")" << "  Wiara: " << wiara <<"("<<miasto[1].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy <<"("<<liczba_zolnierzy<<")"<< "  Zloto: " 
  << zloto << "("<<miasto[1].przychod_zloto<<")" <<"  Produckja: " << miasto[1].produkcja <<"("<<miasto[1].przychod_produkcja
  <<")" << "  Ludnosc: "<<miasto[1].ludnosc << "  Nauka: " << nauka<<"("<<miasto[1].przychod_nauka<<")"<<"  Obrona: "<<miasto[1].obrona;
 SetConsoleTextAttribute( hOut, 8 );
@@ -3700,6 +3734,112 @@ gotoxy(45,17);
 for(int i=0;i<28;i++)cout << blok;
 }
 
+	if(bplac==true){
+		gotoxy(50,1);
+cout << "NAZWA/ILOSC POSIADANYCH/DO ARMII                    ";
+rekrutowanka(x0);
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<sjednostki[2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<sjednostki[2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "<<blok; 
+
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<sjednostki[3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Lucznik / "<<sjednostki[3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        ";
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<sjednostki[4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<sjednostki[4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "<<blok; 
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<sjednostki[5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<sjednostki[5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "<<blok; 
+
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<sjednostki[6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<sjednostki[6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<sjednostki[7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<sjednostki[7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "<<blok;
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<sjednostki[8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<sjednostki[8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "<<blok;
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita / "<<sjednostki[9].ilosc<<" / "<<armia[liczba_armii+1].elity<<"          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita / "<<sjednostki[9].ilosc<<" / "<<armia[liczba_armii+1].elity<<"          "<<blok; 
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(45,14);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,15);
+for(int i=0;i<28;i++)cout << blok;
+	}
+
 gotoxy(8,62);
 		cout << "BUDOWA_MIASTO " << budowa_miasto << "  x0 " << x0 << "  bufor budowy " << bufor_budowa_miasto << "  ratuszlvl "<<ratusz.lvl;
     	
@@ -3715,7 +3855,7 @@ gotoxy(8,62);
 		}
 		
     	
-if(ster==KEY_DOWN && x0!=7 && menu_stolica==true || ster==KEY_DOWN && x0!=41 && menu_budowy==true || ster==KEY_DOWN && x0!=41 && rozbudowa==true || ster==KEY_DOWN && x0!=10 && rekrutacja==true){
+if(ster==KEY_DOWN && x0!=7 && menu_stolica==true || ster==KEY_DOWN && x0!=41 && menu_budowy==true || ster==KEY_DOWN && x0!=41 && rozbudowa==true || ster==KEY_DOWN && x0!=10 && rekrutacja==true || ster==KEY_DOWN && x0!=8 && bplac==true){
 	x0++;
 	cls();
 	continue;
@@ -3758,6 +3898,13 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 	x=xd;
 	y=yd;
 	system("CLS");
+		}
+		
+		if(ster==27){
+			menu_stolica=true;
+			rozbudowa=false;
+			rekrutacja=false;
+			bplac=false;
 		}
 		
 		if(ster=='q' && x0==2 && menu_stolica==true){
@@ -3842,6 +3989,45 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			x0=0;
 			system("CLS");
 			continue;
+		}
+		if(ster=='q' && x0==3 && menu_stolica==true && plac.lvl==1){
+			menu_stolica=false;
+			bplac=true;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		if(ster=='q' && x0==8 && bplac==true && plac.lvl==1){
+			menu_stolica=true;
+			bplac=false;
+			x0=0;
+			sjednostki[2].ilosc=sjednostki[2].ilosc+armia[liczba_armii+1].pikinierzy;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].pikinierzy*pikinier.wielkosc;
+			armia[liczba_armii+1].pikinierzy=0;
+			sjednostki[3].ilosc=sjednostki[3].ilosc+armia[liczba_armii+1].lucznicy;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].lucznicy*lucznik.wielkosc;
+			armia[liczba_armii+1].lucznicy=0;
+			sjednostki[4].ilosc=sjednostki[4].ilosc+armia[liczba_armii+1].kusznicy;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].kusznicy*kusznik.wielkosc;
+			armia[liczba_armii+1].kusznicy=0;
+			sjednostki[5].ilosc=sjednostki[5].ilosc+armia[liczba_armii+1].ciezkozbrojni;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].ciezkozbrojni*ciezkozbrojny.wielkosc;
+			armia[liczba_armii+1].ciezkozbrojni=0;
+			sjednostki[6].ilosc=sjednostki[6].ilosc+armia[liczba_armii+1].lekka_jazda;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].lekka_jazda*lekka_jazda.wielkosc;
+			armia[liczba_armii+1].lekka_jazda=0;
+			sjednostki[7].ilosc=sjednostki[7].ilosc+armia[liczba_armii+1].ciezka_jazda;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].ciezka_jazda*ciezka_jazda.wielkosc;
+			armia[liczba_armii+1].ciezka_jazda=0;
+			sjednostki[8].ilosc=sjednostki[8].ilosc+armia[liczba_armii+1].tarany;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].tarany*taran.wielkosc;
+			armia[liczba_armii+1].tarany=0;
+			sjednostki[9].ilosc=sjednostki[9].ilosc+armia[liczba_armii+1].elity;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].elity*elita.wielkosc;
+			armia[liczba_armii+1].elity=0;
+			
+			system("CLS");
+			continue;			
 		}
 		
 		////////////////////////////////////budowanko////////////////////////////////////////////////////////////
@@ -3957,14 +4143,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			mieszkalna.lvl=1;
 			zwieksz_koszt(mieszkalna);
 		}	
-		if(ster=='q' && rozbudowa==true&& mieszkalna.lvl==1&&ratusz.lvl==2 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna.lvl==1&&ratusz.lvl==2 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
 		
 			mieszkalna.lvl++;
 			rozbuduj(mieszkalna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mieszkalna);
 			zwieksz_przychod(mieszkalna,&przychod_nauka,&max_zolnierzy);
 		}
-		if(ster=='q' && rozbudowa==true&& mieszkalna.lvl==2&&ratusz.lvl==3 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna.lvl==2&&ratusz.lvl==3 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
 		
 			mieszkalna.lvl++;
 			rozbuduj(mieszkalna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
@@ -3994,13 +4180,13 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			handlowa.lvl=1;
 			zwieksz_koszt(handlowa);
 		}	
-		if(ster=='q' && rozbudowa==true&& handlowa.lvl==1&&ratusz.lvl>=3 && drewno>=handlowa.koszt_drewno && kamien>=handlowa.koszt_kamien && zywnosc>=handlowa.koszt_zywnosc && zloto>=handlowa.koszt_zloto && miasto[1].produkcja>=handlowa.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==3&& handlowa.lvl==1&&ratusz.lvl>=3 && drewno>=handlowa.koszt_drewno && kamien>=handlowa.koszt_kamien && zywnosc>=handlowa.koszt_zywnosc && zloto>=handlowa.koszt_zloto && miasto[1].produkcja>=handlowa.koszt_produkcja){
 			handlowa.lvl++;
 			rozbuduj(handlowa,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(handlowa);
 			zwieksz_przychod(handlowa,&przychod_nauka,&max_zolnierzy);
 		}
-		if(ster=='q' && rozbudowa==true&& handlowa.lvl==2&&ratusz.lvl>=4 && drewno>=handlowa.koszt_drewno && kamien>=handlowa.koszt_kamien && zywnosc>=handlowa.koszt_zywnosc && zloto>=handlowa.koszt_zloto && miasto[1].produkcja>=handlowa.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==3&& handlowa.lvl==2&&ratusz.lvl>=4 && drewno>=handlowa.koszt_drewno && kamien>=handlowa.koszt_kamien && zywnosc>=handlowa.koszt_zywnosc && zloto>=handlowa.koszt_zloto && miasto[1].produkcja>=handlowa.koszt_produkcja){
 		
 			handlowa.lvl++;
 			rozbuduj(handlowa,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
@@ -4031,13 +4217,13 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			naukowa.lvl=1;
 			zwieksz_koszt(naukowa);
 		}	
-		if(ster=='q' && rozbudowa==true&& naukowa.lvl==1&&ratusz.lvl>=3 && drewno>=naukowa.koszt_drewno && kamien>=naukowa.koszt_kamien && zywnosc>=naukowa.koszt_zywnosc && zloto>=naukowa.koszt_zloto && miasto[1].produkcja>=naukowa.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==4&& naukowa.lvl==1&&ratusz.lvl>=3 && drewno>=naukowa.koszt_drewno && kamien>=naukowa.koszt_kamien && zywnosc>=naukowa.koszt_zywnosc && zloto>=naukowa.koszt_zloto && miasto[1].produkcja>=naukowa.koszt_produkcja){
 			naukowa.lvl++;
 			rozbuduj(naukowa,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(naukowa);
 			zwieksz_przychod(naukowa,&przychod_nauka,&max_zolnierzy);
 		}
-		if(ster=='q' && rozbudowa==true&& naukowa.lvl==2&&ratusz.lvl==5 && drewno>=naukowa.koszt_drewno && kamien>=naukowa.koszt_kamien && zywnosc>=naukowa.koszt_zywnosc && zloto>=naukowa.koszt_zloto && miasto[1].produkcja>=naukowa.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==4&& naukowa.lvl==2&&ratusz.lvl==5 && drewno>=naukowa.koszt_drewno && kamien>=naukowa.koszt_kamien && zywnosc>=naukowa.koszt_zywnosc && zloto>=naukowa.koszt_zloto && miasto[1].produkcja>=naukowa.koszt_produkcja){
 		rozbuduj(naukowa,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			naukowa.lvl++;
 			zwieksz_koszt(naukowa);
@@ -4068,7 +4254,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			miasto[1].obrona=miasto[1].obrona+5;
 			
 		}	
-		if(ster=='q' && rozbudowa==true&& wojskowa.lvl==1&&ratusz.lvl>=3 && drewno>=wojskowa.koszt_drewno && kamien>=wojskowa.koszt_kamien && zywnosc>=wojskowa.koszt_zywnosc && zloto>=wojskowa.koszt_zloto && miasto[1].produkcja>=wojskowa.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==5&& wojskowa.lvl==1&&ratusz.lvl>=3 && drewno>=wojskowa.koszt_drewno && kamien>=wojskowa.koszt_kamien && zywnosc>=wojskowa.koszt_zywnosc && zloto>=wojskowa.koszt_zloto && miasto[1].produkcja>=wojskowa.koszt_produkcja){
 			wojskowa.lvl++;
 			rozbuduj(wojskowa,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(wojskowa);
@@ -4076,7 +4262,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			
 			miasto[1].obrona=miasto[1].obrona+10;
     	}
-    	if(ster=='q' && rozbudowa==true&& wojskowa.lvl==2&&ratusz.lvl>=5 && drewno>=wojskowa.koszt_drewno && kamien>=wojskowa.koszt_kamien && zywnosc>=wojskowa.koszt_zywnosc && zloto>=wojskowa.koszt_zloto && miasto[1].produkcja>=wojskowa.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true&& x0==5&& wojskowa.lvl==2&&ratusz.lvl>=5 && drewno>=wojskowa.koszt_drewno && kamien>=wojskowa.koszt_kamien && zywnosc>=wojskowa.koszt_zywnosc && zloto>=wojskowa.koszt_zloto && miasto[1].produkcja>=wojskowa.koszt_produkcja){
 			wojskowa.lvl++;
 			rozbuduj(wojskowa,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(wojskowa);
@@ -4107,7 +4293,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			religijna.lvl=1;
 			zwieksz_koszt(religijna);
 		}	
-		if(ster=='q' && rozbudowa==true&& religijna.lvl==2&&ratusz.lvl>=4 && drewno>=religijna.koszt_drewno && kamien>=religijna.koszt_kamien && zywnosc>=religijna.koszt_zywnosc && zloto>=religijna.koszt_zloto && miasto[1].produkcja>=religijna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==6&& religijna.lvl==2&&ratusz.lvl>=4 && drewno>=religijna.koszt_drewno && kamien>=religijna.koszt_kamien && zywnosc>=religijna.koszt_zywnosc && zloto>=religijna.koszt_zloto && miasto[1].produkcja>=religijna.koszt_produkcja){
 			religijna.lvl++;
 			rozbuduj(religijna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(religijna);
@@ -4115,7 +4301,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			
 
     	}
-    	if(ster=='q' && rozbudowa==true&& religijna.lvl==2&&kapitol.lvl==5 && drewno>=religijna.koszt_drewno && kamien>=religijna.koszt_kamien && zywnosc>=religijna.koszt_zywnosc && zloto>=religijna.koszt_zloto && miasto[1].produkcja>=religijna.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true&& x0==6&& religijna.lvl==2&&kapitol.lvl==5 && drewno>=religijna.koszt_drewno && kamien>=religijna.koszt_kamien && zywnosc>=religijna.koszt_zywnosc && zloto>=religijna.koszt_zloto && miasto[1].produkcja>=religijna.koszt_produkcja){
 			religijna.lvl++;
 				rozbuduj(religijna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(religijna);
@@ -4146,14 +4332,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rekreacyjna.lvl=1;
 			zwieksz_koszt(rekreacyjna);
 		}	
-		if(ster=='q' && rozbudowa==true&& rekreacyjna.lvl==2&&ratusz.lvl>=2 && drewno>=rekreacyjna.koszt_drewno && kamien>=rekreacyjna.koszt_kamien && zywnosc>=rekreacyjna.koszt_zywnosc && zloto>=rekreacyjna.koszt_zloto && miasto[1].produkcja>=rekreacyjna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==7&& rekreacyjna.lvl==2&&ratusz.lvl>=2 && drewno>=rekreacyjna.koszt_drewno && kamien>=rekreacyjna.koszt_kamien && zywnosc>=rekreacyjna.koszt_zywnosc && zloto>=rekreacyjna.koszt_zloto && miasto[1].produkcja>=rekreacyjna.koszt_produkcja){
 			rekreacyjna.lvl++;
 			rozbuduj(rekreacyjna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(rekreacyjna);
 			zwieksz_przychod(rekreacyjna,&przychod_nauka,&max_zolnierzy);
 
     	}
-    	if(ster=='q' && rozbudowa==true&& rekreacyjna.lvl==2&&ratusz.lvl>=4 && drewno>=rekreacyjna.koszt_drewno && kamien>=rekreacyjna.koszt_kamien && zywnosc>=rekreacyjna.koszt_zywnosc && zloto>=rekreacyjna.koszt_zloto && miasto[1].produkcja>=rekreacyjna.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true&& x0==7&& rekreacyjna.lvl==2&&ratusz.lvl>=4 && drewno>=rekreacyjna.koszt_drewno && kamien>=rekreacyjna.koszt_kamien && zywnosc>=rekreacyjna.koszt_zywnosc && zloto>=rekreacyjna.koszt_zloto && miasto[1].produkcja>=rekreacyjna.koszt_produkcja){
 			rekreacyjna.lvl++;
 			rozbuduj(rekreacyjna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(rekreacyjna);
@@ -4184,7 +4370,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			szkola.lvl=1;
 			zwieksz_koszt(szkola);
 		}	
-		if(ster=='q' && rozbudowa==true&& szkola.lvl==2&&ratusz.lvl>=3 && drewno>=szkola.koszt_drewno && kamien>=szkola.koszt_kamien && zywnosc>=szkola.koszt_zywnosc && zloto>=szkola.koszt_zloto && miasto[1].produkcja>=szkola.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==8&& szkola.lvl==2&&ratusz.lvl>=3 && drewno>=szkola.koszt_drewno && kamien>=szkola.koszt_kamien && zywnosc>=szkola.koszt_zywnosc && zloto>=szkola.koszt_zloto && miasto[1].produkcja>=szkola.koszt_produkcja){
 			szkola.lvl++;
 			rozbuduj(szkola,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(szkola);
@@ -4214,7 +4400,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			akademia.lvl=1;
 			zwieksz_koszt(akademia);
 		}	
-			if(ster=='q' && rozbudowa==true&& akademia.lvl==2&&kapitol.lvl==5 && drewno>=akademia.koszt_drewno && kamien>=akademia.koszt_kamien && zywnosc>=akademia.koszt_zywnosc && zloto>=akademia.koszt_zloto && miasto[1].produkcja>=akademia.koszt_produkcja){
+			if(ster=='q' && rozbudowa==true&& x0==9&& akademia.lvl==2&&kapitol.lvl==5 && drewno>=akademia.koszt_drewno && kamien>=akademia.koszt_kamien && zywnosc>=akademia.koszt_zywnosc && zloto>=akademia.koszt_zloto && miasto[1].produkcja>=akademia.koszt_produkcja){
 			akademia.lvl++;
 			rozbuduj(akademia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(akademia);
@@ -4245,26 +4431,26 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			kapitol.lvl=1;
 			zwieksz_koszt(kapitol);
 		}	
-				if(ster=='q' && rozbudowa==true&& kapitol.lvl==1 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol.lvl==1 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
 			kapitol.lvl++;
 			rozbuduj(kapitol,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kapitol);
 			zwieksz_przychod(kapitol,&przychod_nauka,&max_zolnierzy);
     	}
-				if(ster=='q' && rozbudowa==true&& kapitol.lvl==2 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol.lvl==2 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
 			kapitol.lvl++;
 			rozbuduj(kapitol,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kapitol);
 			zwieksz_przychod(kapitol,&przychod_nauka,&max_zolnierzy);
     	}
-				if(ster=='q' && rozbudowa==true&& kapitol.lvl==3 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol.lvl==3 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
 			kapitol.lvl++;
 			rozbuduj(kapitol,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kapitol);
 			zwieksz_przychod(kapitol,&przychod_nauka,&max_zolnierzy);
 			
     	}
-				if(ster=='q' && rozbudowa==true&& kapitol.lvl==4 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol.lvl==4 && drewno>=kapitol.koszt_drewno && kamien>=kapitol.koszt_kamien && zywnosc>=kapitol.koszt_zywnosc && zloto>=kapitol.koszt_zloto && miasto[1].produkcja>=kapitol.koszt_produkcja){
 			kapitol.lvl++;
 			rozbuduj(kapitol,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kapitol);
@@ -4293,14 +4479,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			mur.lvl=1;
 		
 		}	
-			if(ster=='q' && budowa_miasto==true&& mur.lvl==1 && ratusz.lvl>=3 && drewno>=mur.koszt_drewno && kamien>=mur.koszt_kamien && zywnosc>=mur.koszt_zywnosc && zloto>=mur.koszt_zloto && miasto[1].produkcja>=mur.koszt_produkcja){
+			if(ster=='q' && budowa_miasto==true&& x0==11&& mur.lvl==1 && ratusz.lvl>=3 && drewno>=mur.koszt_drewno && kamien>=mur.koszt_kamien && zywnosc>=mur.koszt_zywnosc && zloto>=mur.koszt_zloto && miasto[1].produkcja>=mur.koszt_produkcja){
 			mur.lvl++;
 			rozbuduj(mur,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mur);
 			zwieksz_przychod(mur,&przychod_nauka,&max_zolnierzy);
 			
     	}	
-		if(ster=='q' && rozbudowa==true&& mur.lvl==2 && ratusz.lvl>=5 && drewno>=mur.koszt_drewno && kamien>=mur.koszt_kamien && zywnosc>=mur.koszt_zywnosc && zloto>=mur.koszt_zloto && miasto[1].produkcja>=mur.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==11&& mur.lvl==2 && ratusz.lvl>=5 && drewno>=mur.koszt_drewno && kamien>=mur.koszt_kamien && zywnosc>=mur.koszt_zywnosc && zloto>=mur.koszt_zloto && miasto[1].produkcja>=mur.koszt_produkcja){
 			mur.lvl++;
 			rozbuduj(mur,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mur);
@@ -4330,14 +4516,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			zwieksz_koszt(koszary);
 			miasto[1].obrona=miasto[1].obrona+1;
 		}	
-		if(ster=='q' && rozbudowa==true&& koszary.lvl==1 && ratusz.lvl>=2 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==12&& koszary.lvl==1 && ratusz.lvl>=2 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
 			koszary.lvl++;
 			rozbuduj(koszary,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(koszary);
 			zwieksz_przychod(koszary,&przychod_nauka,&max_zolnierzy);
 			pikinier.koszt_produkcja=pikinier.koszt_produkcja-25;
     	}	
-		if(ster=='q' && rozbudowa==true&& koszary.lvl==2 && ratusz.lvl>=4 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==12&& koszary.lvl==2 && ratusz.lvl>=4 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
 			koszary.lvl++;
 			rozbuduj(koszary,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(koszary);
@@ -4345,7 +4531,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			pikinier.koszt_produkcja=pikinier.koszt_produkcja-25;
 			
     	}
-    	if(ster=='q' && rozbudowa==true&& koszary.lvl==3 && ratusz.lvl>=5 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true && x0==12&& koszary.lvl==3 && ratusz.lvl>=5 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
 			koszary.lvl++;
 			rozbuduj(koszary,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(koszary);
@@ -4377,7 +4563,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			zwieksz_koszt(huta);
 			
 		}	
-		if(ster=='q' && rozbudowa==true&& huta.lvl==1 && ratusz.lvl>=4 && drewno>=huta.koszt_drewno && kamien>=huta.koszt_kamien && zywnosc>=huta.koszt_zywnosc && zloto>=huta.koszt_zloto && miasto[1].produkcja>=huta.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==13&& huta.lvl==1 && ratusz.lvl>=4 && drewno>=huta.koszt_drewno && kamien>=huta.koszt_kamien && zywnosc>=huta.koszt_zywnosc && zloto>=huta.koszt_zloto && miasto[1].produkcja>=huta.koszt_produkcja){
 			huta.lvl++;
 			rozbuduj(huta,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(huta);
@@ -4413,7 +4599,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			ciezkozbrojny.koszt_zloto=ciezkozbrojny.koszt_zloto-50;
 			zwieksz_koszt(oboz);
 		}	
-		if(ster=='q' && rozbudowa==true&& oboz.lvl==1 && ratusz.lvl>=4 && drewno>=oboz.koszt_drewno && kamien>=oboz.koszt_kamien && zywnosc>=oboz.koszt_zywnosc && zloto>=oboz.koszt_zloto && miasto[1].produkcja>=oboz.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==14&& oboz.lvl==1 && ratusz.lvl>=4 && drewno>=oboz.koszt_drewno && kamien>=oboz.koszt_kamien && zywnosc>=oboz.koszt_zywnosc && zloto>=oboz.koszt_zloto && miasto[1].produkcja>=oboz.koszt_produkcja){
 			oboz.lvl++;
 			rozbuduj(oboz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(oboz);
@@ -4426,7 +4612,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			ciezkozbrojny.koszt_zloto=ciezkozbrojny.koszt_zloto-25;
 			
     	}
-		if(ster=='q' && rozbudowa==true&& oboz.lvl==2 && ratusz.lvl>=5 && drewno>=oboz.koszt_drewno && kamien>=oboz.koszt_kamien && zywnosc>=oboz.koszt_zywnosc && zloto>=oboz.koszt_zloto && miasto[1].produkcja>=oboz.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==14&& oboz.lvl==2 && ratusz.lvl>=5 && drewno>=oboz.koszt_drewno && kamien>=oboz.koszt_kamien && zywnosc>=oboz.koszt_zywnosc && zloto>=oboz.koszt_zloto && miasto[1].produkcja>=oboz.koszt_produkcja){
 			oboz.lvl++;
 			rozbuduj(oboz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(oboz);
@@ -4461,7 +4647,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			bank.lvl=1;
 			zwieksz_koszt(bank);
 		}	
-		if(ster=='q' && rozbudowa==true&& bank.lvl==1 && ratusz.lvl>=5 && drewno>=bank.koszt_drewno && kamien>=bank.koszt_kamien && zywnosc>=bank.koszt_zywnosc && zloto>=bank.koszt_zloto && miasto[1].produkcja>=bank.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==15&& bank.lvl==1 && ratusz.lvl>=5 && drewno>=bank.koszt_drewno && kamien>=bank.koszt_kamien && zywnosc>=bank.koszt_zywnosc && zloto>=bank.koszt_zloto && miasto[1].produkcja>=bank.koszt_produkcja){
 			bank.lvl++;
 			rozbuduj(bank,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(bank);
@@ -4491,7 +4677,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			josadnik.koszt_produkcja=josadnik.koszt_produkcja-50;
 			zwieksz_koszt(gildia);
 		}	
-		if(ster=='q' && rozbudowa==true&& gildia.lvl==1 && ratusz.lvl>=4 && drewno>=gildia.koszt_drewno && kamien>=gildia.koszt_kamien && zywnosc>=gildia.koszt_zywnosc && zloto>=gildia.koszt_zloto && miasto[1].produkcja>=gildia.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==16&& gildia.lvl==1 && ratusz.lvl>=4 && drewno>=gildia.koszt_drewno && kamien>=gildia.koszt_kamien && zywnosc>=gildia.koszt_zywnosc && zloto>=gildia.koszt_zloto && miasto[1].produkcja>=gildia.koszt_produkcja){
 			gildia.lvl++;
 			rozbuduj(gildia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(gildia);
@@ -4500,7 +4686,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			josadnik.koszt_zloto=josadnik.koszt_zloto-100;
 			
     	}	
-		if(ster=='q' && rozbudowa==true&& gildia.lvl==2 && kapitol.lvl==5 && drewno>=gildia.koszt_drewno && kamien>=gildia.koszt_kamien && zywnosc>=gildia.koszt_zywnosc && zloto>=gildia.koszt_zloto && miasto[1].produkcja>=gildia.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==16&& gildia.lvl==2 && kapitol.lvl==5 && drewno>=gildia.koszt_drewno && kamien>=gildia.koszt_kamien && zywnosc>=gildia.koszt_zywnosc && zloto>=gildia.koszt_zloto && miasto[1].produkcja>=gildia.koszt_produkcja){
 			gildia.lvl++;
 			rozbuduj(gildia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(gildia);
@@ -4531,7 +4717,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			biblioteka.lvl=1;
 			zwieksz_koszt(biblioteka);
 		}	
-		if(ster=='q' && rozbudowa==true&& biblioteka.lvl==1 && ratusz.lvl>=4 && drewno>=biblioteka.koszt_drewno && kamien>=biblioteka.koszt_kamien && zywnosc>=biblioteka.koszt_zywnosc && zloto>=biblioteka.koszt_zloto && miasto[1].produkcja>=biblioteka.koszt_produkcja){
+		if(ster=='q' && x0==17&& rozbudowa==true&& biblioteka.lvl==1 && ratusz.lvl>=4 && drewno>=biblioteka.koszt_drewno && kamien>=biblioteka.koszt_kamien && zywnosc>=biblioteka.koszt_zywnosc && zloto>=biblioteka.koszt_zloto && miasto[1].produkcja>=biblioteka.koszt_produkcja){
 			biblioteka.lvl++;
 			rozbuduj(biblioteka,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(biblioteka);
@@ -4560,14 +4746,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			park.lvl=1;
 			zwieksz_koszt(park);
 		}	
-		if(ster=='q' && rozbudowa==true&& park.lvl==1 && ratusz.lvl>=3 && drewno>=park.koszt_drewno && kamien>=park.koszt_kamien && zywnosc>=park.koszt_zywnosc && zloto>=park.koszt_zloto && miasto[1].produkcja>=park.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==18&& park.lvl==1 && ratusz.lvl>=3 && drewno>=park.koszt_drewno && kamien>=park.koszt_kamien && zywnosc>=park.koszt_zywnosc && zloto>=park.koszt_zloto && miasto[1].produkcja>=park.koszt_produkcja){
 			park.lvl++;
 			rozbuduj(park,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(park);
 			zwieksz_przychod(park,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& park.lvl==2 && ratusz.lvl>=5 && drewno>=park.koszt_drewno && kamien>=park.koszt_kamien && zywnosc>=park.koszt_zywnosc && zloto>=park.koszt_zloto && miasto[1].produkcja>=park.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==18&& park.lvl==2 && ratusz.lvl>=5 && drewno>=park.koszt_drewno && kamien>=park.koszt_kamien && zywnosc>=park.koszt_zywnosc && zloto>=park.koszt_zloto && miasto[1].produkcja>=park.koszt_produkcja){
 			park.lvl++;
 			rozbuduj(park,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(park);
@@ -4596,14 +4782,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			pomnik.lvl=1;
 			zwieksz_koszt(pomnik);
 		}	
-		if(ster=='q' && rozbudowa==true&& pomnik.lvl==1 && ratusz.lvl>=2 && drewno>=pomnik.koszt_drewno && kamien>=pomnik.koszt_kamien && zywnosc>=pomnik.koszt_zywnosc && zloto>=pomnik.koszt_zloto && miasto[1].produkcja>=pomnik.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==19&& pomnik.lvl==1 && ratusz.lvl>=2 && drewno>=pomnik.koszt_drewno && kamien>=pomnik.koszt_kamien && zywnosc>=pomnik.koszt_zywnosc && zloto>=pomnik.koszt_zloto && miasto[1].produkcja>=pomnik.koszt_produkcja){
 			pomnik.lvl++;
 			rozbuduj(pomnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(pomnik);
 			zwieksz_przychod(pomnik,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& pomnik.lvl==2 && ratusz.lvl>=4 && drewno>=pomnik.koszt_drewno && kamien>=pomnik.koszt_kamien && zywnosc>=pomnik.koszt_zywnosc && zloto>=pomnik.koszt_zloto && miasto[1].produkcja>=pomnik.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==19&& pomnik.lvl==2 && ratusz.lvl>=4 && drewno>=pomnik.koszt_drewno && kamien>=pomnik.koszt_kamien && zywnosc>=pomnik.koszt_zywnosc && zloto>=pomnik.koszt_zloto && miasto[1].produkcja>=pomnik.koszt_produkcja){
 			pomnik.lvl++;
 			rozbuduj(pomnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(pomnik);
@@ -4632,14 +4818,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			ambasada.lvl=1;
 			zwieksz_koszt(ambasada);
 		}	
-		if(ster=='q' && rozbudowa==true&& ambasada.lvl==1 && ratusz.lvl>=5 && drewno>=ambasada.koszt_drewno && kamien>=ambasada.koszt_kamien && zywnosc>=ambasada.koszt_zywnosc && zloto>=ambasada.koszt_zloto && miasto[1].produkcja>=ambasada.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==20&& ambasada.lvl==1 && ratusz.lvl>=5 && drewno>=ambasada.koszt_drewno && kamien>=ambasada.koszt_kamien && zywnosc>=ambasada.koszt_zywnosc && zloto>=ambasada.koszt_zloto && miasto[1].produkcja>=ambasada.koszt_produkcja){
 			ambasada.lvl++;
 			rozbuduj(ambasada,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ambasada);
 			zwieksz_przychod(ambasada,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& ambasada.lvl==2 && kapitol.lvl==5 && drewno>=ambasada.koszt_drewno && kamien>=ambasada.koszt_kamien && zywnosc>=ambasada.koszt_zywnosc && zloto>=ambasada.koszt_zloto && miasto[1].produkcja>=ambasada.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==20&& ambasada.lvl==2 && kapitol.lvl==5 && drewno>=ambasada.koszt_drewno && kamien>=ambasada.koszt_kamien && zywnosc>=ambasada.koszt_zywnosc && zloto>=ambasada.koszt_zloto && miasto[1].produkcja>=ambasada.koszt_produkcja){
 			ambasada.lvl++;
 			rozbuduj(ambasada,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ambasada);
@@ -4668,14 +4854,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			port.lvl=1;
 			zwieksz_koszt(port);
 		}	
-		if(ster=='q' && rozbudowa==true&& port.lvl==1 && ratusz.lvl>=3 && drewno>=port.koszt_drewno && kamien>=port.koszt_kamien && zywnosc>=port.koszt_zywnosc && zloto>=port.koszt_zloto && miasto[1].produkcja>=port.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==21&& port.lvl==1 && ratusz.lvl>=3 && drewno>=port.koszt_drewno && kamien>=port.koszt_kamien && zywnosc>=port.koszt_zywnosc && zloto>=port.koszt_zloto && miasto[1].produkcja>=port.koszt_produkcja){
 			port.lvl++;
 			rozbuduj(port,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(port);
 			zwieksz_przychod(port,&przychod_nauka,&max_zolnierzy);
 			
     	}
-    	if(ster=='q' && rozbudowa==true&& port.lvl==2 && ratusz.lvl>=4 && nawigacja==true && drewno>=port.koszt_drewno && kamien>=port.koszt_kamien && zywnosc>=port.koszt_zywnosc && zloto>=port.koszt_zloto && miasto[1].produkcja>=port.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true&& x0==21&& port.lvl==2 && ratusz.lvl>=4 && nawigacja==true && drewno>=port.koszt_drewno && kamien>=port.koszt_kamien && zywnosc>=port.koszt_zywnosc && zloto>=port.koszt_zloto && miasto[1].produkcja>=port.koszt_produkcja){
 			port.lvl++;
 			rozbuduj(port,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(port);
@@ -4705,7 +4891,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			teatr.lvl=1;
 			zwieksz_koszt(teatr);
 		}	
-		if(ster=='q' && rozbudowa==true&& teatr.lvl==1 && kapitol.lvl==5&&administracja==true && drewno>=teatr.koszt_drewno && kamien>=teatr.koszt_kamien && zywnosc>=teatr.koszt_zywnosc && zloto>=teatr.koszt_zloto && miasto[1].produkcja>=teatr.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==22&& teatr.lvl==1 && kapitol.lvl==5&&administracja==true && drewno>=teatr.koszt_drewno && kamien>=teatr.koszt_kamien && zywnosc>=teatr.koszt_zywnosc && zloto>=teatr.koszt_zloto && miasto[1].produkcja>=teatr.koszt_produkcja){
 			teatr.lvl++;
 			rozbuduj(teatr,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(teatr);
@@ -4759,7 +4945,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			droga.lvl=1;
 			
 		}	
-		if(ster=='q' && rozbudowa==true&& droga.lvl==1 && ratusz.lvl>=4 &&infrastruktura==true && drewno>=droga.koszt_drewno && kamien>=droga.koszt_kamien && zywnosc>=droga.koszt_zywnosc && zloto>=droga.koszt_zloto && miasto[1].produkcja>=droga.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==23&& droga.lvl==1 && ratusz.lvl>=4 &&infrastruktura==true && drewno>=droga.koszt_drewno && kamien>=droga.koszt_kamien && zywnosc>=droga.koszt_zywnosc && zloto>=droga.koszt_zloto && miasto[1].produkcja>=droga.koszt_produkcja){
 			droga.lvl++;
 			rozbuduj(droga,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_przychod(droga,&przychod_nauka,&max_zolnierzy);
@@ -4794,14 +4980,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			tawerna.lvl=1;
 			zwieksz_koszt(tawerna);
 		}	
-		if(ster=='q' && rozbudowa==true&& tawerna.lvl==1 && ratusz.lvl>=3 && drewno>=tawerna.koszt_drewno && kamien>=tawerna.koszt_kamien && zywnosc>=tawerna.koszt_zywnosc && zloto>=tawerna.koszt_zloto && miasto[1].produkcja>=tawerna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==24&& tawerna.lvl==1 && ratusz.lvl>=3 && drewno>=tawerna.koszt_drewno && kamien>=tawerna.koszt_kamien && zywnosc>=tawerna.koszt_zywnosc && zloto>=tawerna.koszt_zloto && miasto[1].produkcja>=tawerna.koszt_produkcja){
 			tawerna.lvl++;
 			rozbuduj(tawerna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(tawerna);
 			zwieksz_przychod(tawerna,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& tawerna.lvl==2 && ratusz.lvl>=4&&browarnictwo==true && drewno>=tawerna.koszt_drewno && kamien>=tawerna.koszt_kamien && zywnosc>=tawerna.koszt_zywnosc && zloto>=tawerna.koszt_zloto && miasto[1].produkcja>=tawerna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==24&& tawerna.lvl==2 && ratusz.lvl>=4&&browarnictwo==true && drewno>=tawerna.koszt_drewno && kamien>=tawerna.koszt_kamien && zywnosc>=tawerna.koszt_zywnosc && zloto>=tawerna.koszt_zloto && miasto[1].produkcja>=tawerna.koszt_produkcja){
 			tawerna.lvl++;
 			rozbuduj(tawerna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(tawerna);
@@ -4830,21 +5016,21 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			magazyn.lvl=1;
 			zwieksz_koszt(magazyn);
 		}	
-		if(ster=='q' && rozbudowa==true&& magazyn.lvl==1 && ratusz.lvl>=3 && drewno>=magazyn.koszt_drewno && kamien>=magazyn.koszt_kamien && zywnosc>=magazyn.koszt_zywnosc && zloto>=magazyn.koszt_zloto && miasto[1].produkcja>=magazyn.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==25&& magazyn.lvl==1 && ratusz.lvl>=3 && drewno>=magazyn.koszt_drewno && kamien>=magazyn.koszt_kamien && zywnosc>=magazyn.koszt_zywnosc && zloto>=magazyn.koszt_zloto && miasto[1].produkcja>=magazyn.koszt_produkcja){
 			magazyn.lvl++;
 			rozbuduj(magazyn,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(magazyn);
 			zwieksz_przychod(magazyn,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& magazyn.lvl==2 && ratusz.lvl>=4 && hodowla==true && drewno>=magazyn.koszt_drewno && kamien>=magazyn.koszt_kamien && zywnosc>=magazyn.koszt_zywnosc && zloto>=magazyn.koszt_zloto && miasto[1].produkcja>=magazyn.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==25&& magazyn.lvl==2 && ratusz.lvl>=4 && hodowla==true && drewno>=magazyn.koszt_drewno && kamien>=magazyn.koszt_kamien && zywnosc>=magazyn.koszt_zywnosc && zloto>=magazyn.koszt_zloto && miasto[1].produkcja>=magazyn.koszt_produkcja){
 			magazyn.lvl++;
 			rozbuduj(magazyn,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(magazyn);
 			zwieksz_przychod(magazyn,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& magazyn.lvl==3 && kapitol.lvl==5 && drewno>=magazyn.koszt_drewno && kamien>=magazyn.koszt_kamien && zywnosc>=magazyn.koszt_zywnosc && zloto>=magazyn.koszt_zloto && miasto[1].produkcja>=magazyn.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==25&& magazyn.lvl==3 && kapitol.lvl==5 && drewno>=magazyn.koszt_drewno && kamien>=magazyn.koszt_kamien && zywnosc>=magazyn.koszt_zywnosc && zloto>=magazyn.koszt_zloto && miasto[1].produkcja>=magazyn.koszt_produkcja){
 			magazyn.lvl++;
 			rozbuduj(magazyn,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(magazyn);
@@ -4873,21 +5059,21 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			mlyn.lvl=1;
 			zwieksz_koszt(mlyn);
 		}	
-		if(ster=='q' && rozbudowa==true&& mlyn.lvl==1 && ratusz.lvl>=3 && drewno>=mlyn.koszt_drewno && kamien>=mlyn.koszt_kamien && zywnosc>=mlyn.koszt_zywnosc && zloto>=mlyn.koszt_zloto && miasto[1].produkcja>=mlyn.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==26&& mlyn.lvl==1 && ratusz.lvl>=3 && drewno>=mlyn.koszt_drewno && kamien>=mlyn.koszt_kamien && zywnosc>=mlyn.koszt_zywnosc && zloto>=mlyn.koszt_zloto && miasto[1].produkcja>=mlyn.koszt_produkcja){
 			mlyn.lvl++;
 			rozbuduj(mlyn,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mlyn);
 			zwieksz_przychod(mlyn,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& mlyn.lvl==2 && ratusz.lvl>=4 && drewno>=mlyn.koszt_drewno && kamien>=mlyn.koszt_kamien && zywnosc>=mlyn.koszt_zywnosc && zloto>=mlyn.koszt_zloto && miasto[1].produkcja>=mlyn.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==26&& mlyn.lvl==2 && ratusz.lvl>=4 && drewno>=mlyn.koszt_drewno && kamien>=mlyn.koszt_kamien && zywnosc>=mlyn.koszt_zywnosc && zloto>=mlyn.koszt_zloto && miasto[1].produkcja>=mlyn.koszt_produkcja){
 			mlyn.lvl++;
 			rozbuduj(mlyn,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mlyn);
 			zwieksz_przychod(mlyn,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& mlyn.lvl==3 && ratusz.lvl>=5 && drewno>=mlyn.koszt_drewno && kamien>=mlyn.koszt_kamien && zywnosc>=mlyn.koszt_zywnosc && zloto>=mlyn.koszt_zloto && miasto[1].produkcja>=mlyn.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==26&& mlyn.lvl==3 && ratusz.lvl>=5 && drewno>=mlyn.koszt_drewno && kamien>=mlyn.koszt_kamien && zywnosc>=mlyn.koszt_zywnosc && zloto>=mlyn.koszt_zloto && miasto[1].produkcja>=mlyn.koszt_produkcja){
 			mlyn.lvl++;
 			rozbuduj(mlyn,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mlyn);
@@ -4937,21 +5123,21 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			tartakb.lvl=1;
 			zwieksz_koszt(tartakb);
 		}	
-		if(ster=='q' && rozbudowa==true&& tartakb.lvl==1 && ratusz.lvl>=3 && drewno>=tartakb.koszt_drewno && kamien>=tartakb.koszt_kamien && zywnosc>=tartakb.koszt_zywnosc && zloto>=tartakb.koszt_zloto && miasto[1].produkcja>=tartakb.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==28&& tartakb.lvl==1 && ratusz.lvl>=3 && drewno>=tartakb.koszt_drewno && kamien>=tartakb.koszt_kamien && zywnosc>=tartakb.koszt_zywnosc && zloto>=tartakb.koszt_zloto && miasto[1].produkcja>=tartakb.koszt_produkcja){
 			tartakb.lvl++;
 			rozbuduj(tartakb,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(tartakb);
 			zwieksz_przychod(tartakb,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& tartakb.lvl==2 && ratusz.lvl>=4 && drewno>=tartakb.koszt_drewno && kamien>=tartakb.koszt_kamien && zywnosc>=tartakb.koszt_zywnosc && zloto>=tartakb.koszt_zloto && miasto[1].produkcja>=tartakb.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==28&& tartakb.lvl==2 && ratusz.lvl>=4 && drewno>=tartakb.koszt_drewno && kamien>=tartakb.koszt_kamien && zywnosc>=tartakb.koszt_zywnosc && zloto>=tartakb.koszt_zloto && miasto[1].produkcja>=tartakb.koszt_produkcja){
 			tartakb.lvl++;
 			rozbuduj(tartakb,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(tartakb);
 			zwieksz_przychod(tartakb,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& tartakb.lvl==3 && ratusz.lvl>=5 && drewno>=tartakb.koszt_drewno && kamien>=tartakb.koszt_kamien && zywnosc>=tartakb.koszt_zywnosc && zloto>=tartakb.koszt_zloto && miasto[1].produkcja>=tartakb.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==28&& tartakb.lvl==3 && ratusz.lvl>=5 && drewno>=tartakb.koszt_drewno && kamien>=tartakb.koszt_kamien && zywnosc>=tartakb.koszt_zywnosc && zloto>=tartakb.koszt_zloto && miasto[1].produkcja>=tartakb.koszt_produkcja){
 			tartakb.lvl++;
 			rozbuduj(tartakb,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(tartakb);
@@ -4980,21 +5166,21 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			kamieniarz.lvl=1;
 			zwieksz_koszt(kamieniarz);
 		}	
-		if(ster=='q' && rozbudowa==true&& kamieniarz.lvl==1 && ratusz.lvl>=3 && drewno>=kamieniarz.koszt_drewno && kamien>=kamieniarz.koszt_kamien && zywnosc>=kamieniarz.koszt_zywnosc && zloto>=kamieniarz.koszt_zloto && miasto[1].produkcja>=kamieniarz.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==29&& kamieniarz.lvl==1 && ratusz.lvl>=3 && drewno>=kamieniarz.koszt_drewno && kamien>=kamieniarz.koszt_kamien && zywnosc>=kamieniarz.koszt_zywnosc && zloto>=kamieniarz.koszt_zloto && miasto[1].produkcja>=kamieniarz.koszt_produkcja){
 			kamieniarz.lvl++;
 			rozbuduj(kamieniarz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kamieniarz);
 			zwieksz_przychod(kamieniarz,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& kamieniarz.lvl==2 && ratusz.lvl>=4 && drewno>=kamieniarz.koszt_drewno && kamien>=kamieniarz.koszt_kamien && zywnosc>=kamieniarz.koszt_zywnosc && zloto>=kamieniarz.koszt_zloto && miasto[1].produkcja>=kamieniarz.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==29&& kamieniarz.lvl==2 && ratusz.lvl>=4 && drewno>=kamieniarz.koszt_drewno && kamien>=kamieniarz.koszt_kamien && zywnosc>=kamieniarz.koszt_zywnosc && zloto>=kamieniarz.koszt_zloto && miasto[1].produkcja>=kamieniarz.koszt_produkcja){
 			kamieniarz.lvl++;
 			rozbuduj(kamieniarz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kamieniarz);
 			zwieksz_przychod(kamieniarz,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& kamieniarz.lvl==3 && ratusz.lvl>=5 && drewno>=kamieniarz.koszt_drewno && kamien>=kamieniarz.koszt_kamien && zywnosc>=kamieniarz.koszt_zywnosc && zloto>=kamieniarz.koszt_zloto && miasto[1].produkcja>=kamieniarz.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==29&& kamieniarz.lvl==3 && ratusz.lvl>=5 && drewno>=kamieniarz.koszt_drewno && kamien>=kamieniarz.koszt_kamien && zywnosc>=kamieniarz.koszt_zywnosc && zloto>=kamieniarz.koszt_zloto && miasto[1].produkcja>=kamieniarz.koszt_produkcja){
 			kamieniarz.lvl++;
 			rozbuduj(kamieniarz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kamieniarz);
@@ -5044,14 +5230,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			kosciol.lvl=1;
 			zwieksz_koszt(kosciol);
 		}
-		if(ster=='q' && rozbudowa==true&& kosciol.lvl==1 && ratusz.lvl>=3 && drewno>=kosciol.koszt_drewno && kamien>=kosciol.koszt_kamien && zywnosc>=kosciol.koszt_zywnosc && zloto>=kosciol.koszt_zloto && miasto[1].produkcja>=kosciol.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==31&& kosciol.lvl==1 && ratusz.lvl>=3 && drewno>=kosciol.koszt_drewno && kamien>=kosciol.koszt_kamien && zywnosc>=kosciol.koszt_zywnosc && zloto>=kosciol.koszt_zloto && miasto[1].produkcja>=kosciol.koszt_produkcja){
 			kosciol.lvl++;
 			rozbuduj(kosciol,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kosciol);
 			zwieksz_przychod(kosciol,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& kosciol.lvl==2 && ratusz.lvl>=4 && drewno>=kosciol.koszt_drewno && kamien>=kosciol.koszt_kamien && zywnosc>=kosciol.koszt_zywnosc && zloto>=kosciol.koszt_zloto && miasto[1].produkcja>=kosciol.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==31&& kosciol.lvl==2 && ratusz.lvl>=4 && drewno>=kosciol.koszt_drewno && kamien>=kosciol.koszt_kamien && zywnosc>=kosciol.koszt_zywnosc && zloto>=kosciol.koszt_zloto && miasto[1].produkcja>=kosciol.koszt_produkcja){
 			kosciol.lvl++;
 			rozbuduj(kosciol,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(kosciol);
@@ -5081,14 +5267,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			katedra.lvl=1;
 			zwieksz_koszt(katedra);
 		}	
-		if(ster=='q' && rozbudowa==true&& katedra.lvl==1 && ratusz.lvl>=5 && drewno>=katedra.koszt_drewno && kamien>=katedra.koszt_kamien && zywnosc>=katedra.koszt_zywnosc && zloto>=katedra.koszt_zloto && miasto[1].produkcja>=katedra.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==32&& katedra.lvl==1 && ratusz.lvl>=5 && drewno>=katedra.koszt_drewno && kamien>=katedra.koszt_kamien && zywnosc>=katedra.koszt_zywnosc && zloto>=katedra.koszt_zloto && miasto[1].produkcja>=katedra.koszt_produkcja){
 			katedra.lvl++;
 			rozbuduj(katedra,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(katedra);
 			zwieksz_przychod(katedra,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& katedra.lvl==2 && kapitol.lvl==5 && drewno>=katedra.koszt_drewno && kamien>=katedra.koszt_kamien && zywnosc>=katedra.koszt_zywnosc && zloto>=katedra.koszt_zloto && miasto[1].produkcja>=katedra.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==32&& katedra.lvl==2 && kapitol.lvl==5 && drewno>=katedra.koszt_drewno && kamien>=katedra.koszt_kamien && zywnosc>=katedra.koszt_zywnosc && zloto>=katedra.koszt_zloto && miasto[1].produkcja>=katedra.koszt_produkcja){
 			katedra.lvl++;
 			rozbuduj(katedra,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(katedra);
@@ -5117,14 +5303,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			skarbiec.lvl=1;
 			zwieksz_koszt(skarbiec);
 		}	
-		if(ster=='q' && rozbudowa==true&& skarbiec.lvl==1 && ratusz.lvl>=5 && drewno>=skarbiec.koszt_drewno && kamien>=skarbiec.koszt_kamien && zywnosc>=skarbiec.koszt_zywnosc && zloto>=skarbiec.koszt_zloto && miasto[1].produkcja>=skarbiec.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==33&& skarbiec.lvl==1 && ratusz.lvl>=5 && drewno>=skarbiec.koszt_drewno && kamien>=skarbiec.koszt_kamien && zywnosc>=skarbiec.koszt_zywnosc && zloto>=skarbiec.koszt_zloto && miasto[1].produkcja>=skarbiec.koszt_produkcja){
 			skarbiec.lvl++;
 			rozbuduj(skarbiec,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(skarbiec);
 			zwieksz_przychod(skarbiec,&przychod_nauka,&max_zolnierzy);
 			
     	}
-		if(ster=='q' && rozbudowa==true&& skarbiec.lvl==2 && kapitol.lvl==5 && drewno>=skarbiec.koszt_drewno && kamien>=skarbiec.koszt_kamien && zywnosc>=skarbiec.koszt_zywnosc && zloto>=skarbiec.koszt_zloto && miasto[1].produkcja>=skarbiec.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==33&& skarbiec.lvl==2 && kapitol.lvl==5 && drewno>=skarbiec.koszt_drewno && kamien>=skarbiec.koszt_kamien && zywnosc>=skarbiec.koszt_zywnosc && zloto>=skarbiec.koszt_zloto && miasto[1].produkcja>=skarbiec.koszt_produkcja){
 			skarbiec.lvl++;
 			rozbuduj(skarbiec,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(skarbiec);
@@ -5154,7 +5340,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			zwieksz_koszt(fort);
 			miasto[1].obrona=miasto[1].obrona+15;
 		}	
-		if(ster=='q' && rozbudowa==true&& fort.lvl==1 && ratusz.lvl>=3 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==34&& fort.lvl==1 && ratusz.lvl>=3 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja){
 			fort.lvl++;
 			rozbuduj(fort,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(fort);
@@ -5162,7 +5348,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			miasto[1].obrona=miasto[1].obrona+15;
 		
     	}
-		if(ster=='q' && rozbudowa==true&& fort.lvl==2 && ratusz.lvl>=4 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==34&& fort.lvl==2 && ratusz.lvl>=4 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja){
 			fort.lvl++;
 			rozbuduj(fort,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(fort);
@@ -5170,7 +5356,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			miasto[1].obrona=miasto[1].obrona+15;
 			
     	}
-		if(ster=='q' && rozbudowa==true&& fort.lvl==3 && kapitol.lvl==5 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==34&& fort.lvl==3 && kapitol.lvl==5 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja){
 			fort.lvl++;
 			rozbuduj(fort,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(fort);
@@ -5200,7 +5386,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			weglarnia.lvl=1;
 			zwieksz_koszt(weglarnia);
 		}
-		if(ster=='q' && rozbudowa==true&& weglarnia.lvl==1 && ratusz.lvl>=3 && drewno>=weglarnia.koszt_drewno && kamien>=weglarnia.koszt_kamien && zywnosc>=weglarnia.koszt_zywnosc && zloto>=weglarnia.koszt_zloto && miasto[1].produkcja>=weglarnia.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==35&& weglarnia.lvl==1 && ratusz.lvl>=3 && drewno>=weglarnia.koszt_drewno && kamien>=weglarnia.koszt_kamien && zywnosc>=weglarnia.koszt_zywnosc && zloto>=weglarnia.koszt_zloto && miasto[1].produkcja>=weglarnia.koszt_produkcja){
 			weglarnia.lvl++;
 			rozbuduj(weglarnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(weglarnia);
@@ -5232,7 +5418,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			zwieksz_koszt(warsztat);
 			kusznik.koszt_produkcja-=50;
 		}
-		if(ster=='q' && rozbudowa==true&& warsztat.lvl==1 &&ratusz.lvl>=4 && mechanika==true && drewno>=warsztat.koszt_drewno && kamien>=warsztat.koszt_kamien && zywnosc>=warsztat.koszt_zywnosc && zloto>=warsztat.koszt_zloto && miasto[1].produkcja>=warsztat.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==36&& warsztat.lvl==1 &&ratusz.lvl>=4 && mechanika==true && drewno>=warsztat.koszt_drewno && kamien>=warsztat.koszt_kamien && zywnosc>=warsztat.koszt_zywnosc && zloto>=warsztat.koszt_zloto && miasto[1].produkcja>=warsztat.koszt_produkcja){
 			warsztat.lvl++;
 			rozbuduj(warsztat,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(warsztat);
@@ -5255,14 +5441,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		}
 			}
 		}
-				if(ster=='e' && budowa_miasto==true && ratusz.lvl>=3 && bufor_budowa_miasto==37 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja && stajnia.lvl==0)
+				if(ster=='e' && budowa_miasto==true && ratusz.lvl>=2 && bufor_budowa_miasto==37 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja && stajnia.lvl==0)
 		{
 		zbuduj(stajnia, x,  y, mapa_stolicy, bufor_miasta, &drewno, &kamien, &zywnosc, 
 			&zloto, &max_zolnierzy, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka, &x0);
 			stajnia.lvl=1;
 			zwieksz_koszt(stajnia);
 		}
-		if(ster=='q' && rozbudowa==true&& stajnia.lvl==1 && ratusz.lvl>=3 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true&& x0==37&& stajnia.lvl==1 && ratusz.lvl>=3 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
 			stajnia.lvl++;
 			rozbuduj(stajnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(stajnia);
@@ -5270,7 +5456,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			lekka_jazda.koszt_produkcja-=50;
 			ciezka_jazda.koszt_produkcja-=50;
     	}
-    	if(ster=='q' && rozbudowa==true&& stajnia.lvl==2 && ratusz.lvl>=4 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true&& x0==37&& stajnia.lvl==2 && ratusz.lvl>=4 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
 			stajnia.lvl++;
 			rozbuduj(stajnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(stajnia);
@@ -5278,7 +5464,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			lekka_jazda.koszt_produkcja-=50;
 			ciezka_jazda.koszt_produkcja-=50;
     	}
-    	if(ster=='q' && rozbudowa==true&& stajnia.lvl==3 && ratusz.lvl>=5 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
+    	if(ster=='q' && rozbudowa==true&& x0==37&& stajnia.lvl==3 && ratusz.lvl>=5 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
 			stajnia.lvl++;
 			rozbuduj(stajnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(stajnia);
@@ -5746,23 +5932,145 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 	
 	if(rekrutacja==true){
 		
-		if(ster=='q' && x0==0 && drewno>=jrobotnik.koszt_drewno && zloto>=jrobotnik.koszt_zloto && zywnosc>=jrobotnik.koszt_zywnosc && kamien>=jrobotnik.koszt_kamien && miasto[1].produkcja>=jrobotnik.koszt_produkcja){
+		if(ster=='q' && x0==0 && drewno>=jrobotnik.koszt_drewno && miasto[1].ludnosc>=jrobotnik.wielkosc*100 && zloto>=jrobotnik.koszt_zloto && zywnosc>=jrobotnik.koszt_zywnosc && kamien>=jrobotnik.koszt_kamien && miasto[1].produkcja>=jrobotnik.koszt_produkcja){
 			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
 			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
-				
-				wystaw_armie(jrobotnik,mapa,0);
+				wystaw_armie(jrobotnik,mapa,0, mapa_jednostek);
 				rekrutuj(jrobotnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				
-				
 			}
-			
-			
+		}
+		if(ster=='q' && x0==1 && drewno>=josadnik.koszt_drewno&& miasto[1].ludnosc>=josadnik.wielkosc*100 && zloto>=josadnik.koszt_zloto && zywnosc>=josadnik.koszt_zywnosc && kamien>=josadnik.koszt_kamien && miasto[1].produkcja>=josadnik.koszt_produkcja){
+			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
+			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
+				wystaw_armie(josadnik,mapa,1, mapa_jednostek);
+				rekrutuj(josadnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+			}
+		}
+		if(ster=='q' && x0==2 && drewno>=pikinier.koszt_drewno&& miasto[1].ludnosc>=pikinier.wielkosc*100 && zloto>=pikinier.koszt_zloto && zywnosc>=pikinier.koszt_zywnosc && sjednostki[2].ilosc<9 && kamien>=pikinier.koszt_kamien && miasto[1].produkcja>=pikinier.koszt_produkcja && koszary.lvl>=1){
+				rekrutuj(pikinier,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[2].ilosc++;
+		}
+		if(ster=='q' && x0==3 && drewno>=lucznik.koszt_drewno&& miasto[1].ludnosc>=lucznik.wielkosc*100 && zloto>=lucznik.koszt_zloto && zywnosc>=lucznik.koszt_zywnosc&& sjednostki[3].ilosc<9 && kamien>=lucznik.koszt_kamien && miasto[1].produkcja>=lucznik.koszt_produkcja && koszary.lvl>=2 && lowiectwo==true){
+				rekrutuj(lucznik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[3].ilosc++;
+		}
+		if(ster=='q' && x0==4 && drewno>=kusznik.koszt_drewno&& miasto[1].ludnosc>=kusznik.wielkosc*100 && zloto>=kusznik.koszt_zloto && zywnosc>=kusznik.koszt_zywnosc&& sjednostki[4].ilosc<9 && kamien>=kusznik.koszt_kamien && miasto[1].produkcja>=kusznik.koszt_produkcja && koszary.lvl>=3 && lowiectwo==true && obrobka_zelaza==true){
+				rekrutuj(kusznik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[4].ilosc++;
+		}
+		if(ster=='q' && x0==5 && drewno>=ciezkozbrojny.koszt_drewno&& miasto[1].ludnosc>=ciezkozbrojny.wielkosc*100 && zloto>=ciezkozbrojny.koszt_zloto && zywnosc>=ciezkozbrojny.koszt_zywnosc&& sjednostki[5].ilosc<9 && kamien>=ciezkozbrojny.koszt_kamien && miasto[1].produkcja>=ciezkozbrojny.koszt_produkcja && koszary.lvl>=4 && obrobka_zelaza==true){
+				rekrutuj(ciezkozbrojny,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[5].ilosc++;
+		}
+		if(ster=='q' && x0==6 && drewno>=lekka_jazda.koszt_drewno&& miasto[1].ludnosc>=lekka_jazda.wielkosc*100 && zloto>=lekka_jazda.koszt_zloto && zywnosc>=lekka_jazda.koszt_zywnosc&& sjednostki[6].ilosc<9 && kamien>=lekka_jazda.koszt_kamien && miasto[1].produkcja>=lekka_jazda.koszt_produkcja && stajnia.lvl>=1){
+				rekrutuj(lekka_jazda,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[6].ilosc++;
+		}
+		if(ster=='q' && x0==7 && drewno>=ciezka_jazda.koszt_drewno&& miasto[1].ludnosc>=ciezka_jazda.wielkosc*100 && zloto>=ciezka_jazda.koszt_zloto && zywnosc>=ciezka_jazda.koszt_zywnosc&& sjednostki[7].ilosc<9 && kamien>=ciezka_jazda.koszt_kamien && miasto[1].produkcja>=ciezka_jazda.koszt_produkcja && stajnia.lvl>=3 && obrobka_stali==true){
+				rekrutuj(ciezka_jazda,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[7].ilosc++;
+		}
+		if(ster=='q' && x0==8 && drewno>=taran.koszt_drewno&& miasto[1].ludnosc>=taran.wielkosc*100 && zloto>=taran.koszt_zloto && zywnosc>=taran.koszt_zywnosc && kamien>=taran.koszt_kamien&& sjednostki[8].ilosc<9 && miasto[1].produkcja>=taran.koszt_produkcja && warsztat.lvl>=2){
+				rekrutuj(taran,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[8].ilosc++;
+		}
+		if(ster=='q' && x0==9 && drewno>=elita.koszt_drewno && miasto[1].ludnosc>=elita.wielkosc*100&& zloto>=elita.koszt_zloto && zywnosc>=elita.koszt_zywnosc && kamien>=elita.koszt_kamien&& sjednostki[9].ilosc<9 && miasto[1].produkcja>=elita.koszt_produkcja && akademia.lvl>=1 && obrobka_stali==true){
+				rekrutuj(elita,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[9].ilosc++;
 		}
 		
 	}
 	
+	if(bplac==true){
+		
+		if(ster==KEY_RIGHT && sjednostki[x0+2].ilosc>0 && liczba_zolnierzy+sjednostki[x0+2].wielkosc<=max_zolnierzy){
+			if(x0==0){
+			armia[liczba_armii+1].pikinierzy++;
+			sjednostki[2].ilosc--;
+			liczba_zolnierzy+=pikinier.wielkosc;
+			}
+			if(x0==1){
+			armia[liczba_armii+1].lucznicy++;
+			sjednostki[3].ilosc--;
+			liczba_zolnierzy+=lucznik.wielkosc;
+			}
+			if(x0==2){
+			armia[liczba_armii+1].kusznicy++;
+			sjednostki[4].ilosc--;
+			liczba_zolnierzy+=kusznik.wielkosc;
+			}
+			if(x0==3){
+			armia[liczba_armii+1].ciezkozbrojni++;
+			sjednostki[5].ilosc--;
+			liczba_zolnierzy+=ciezkozbrojny.wielkosc;
+			}
+			if(x0==4){
+			armia[liczba_armii+1].lekka_jazda++;
+			sjednostki[6].ilosc--;
+			liczba_zolnierzy+=lekka_jazda.wielkosc;
+			}
+			if(x0==5){
+			armia[liczba_armii+1].ciezka_jazda++;
+			sjednostki[7].ilosc--;
+			liczba_zolnierzy+=ciezka_jazda.wielkosc;
+			}
+			if(x0==6){
+			armia[liczba_armii+1].tarany++;
+			sjednostki[8].ilosc--;
+			liczba_zolnierzy+=taran.wielkosc;
+			}
+			if(x0==7){
+			armia[liczba_armii+1].elity++;
+			sjednostki[9].ilosc--;
+			liczba_zolnierzy+=elita.wielkosc;
+			}	
+		}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].pikinierzy>0 && x0==0){
+			armia[liczba_armii+1].pikinierzy--;
+			sjednostki[2].ilosc++;
+			liczba_zolnierzy-=pikinier.wielkosc;
+		}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].lucznicy>0 && x0==1){
+			armia[liczba_armii+1].lucznicy--;
+			sjednostki[3].ilosc++;
+			liczba_zolnierzy-=lucznik.wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].kusznicy>0 && x0==2){
+			armia[liczba_armii+1].kusznicy--;
+			sjednostki[4].ilosc++;
+			liczba_zolnierzy-=kusznik.wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezkozbrojni>0 && x0==3){
+			armia[liczba_armii+1].ciezkozbrojni--;
+			sjednostki[5].ilosc++;
+			liczba_zolnierzy-=ciezkozbrojny.wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].lekka_jazda>0 && x0==4){
+			armia[liczba_armii+1].lekka_jazda--;
+			sjednostki[6].ilosc++;
+			liczba_zolnierzy-=lekka_jazda.wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezka_jazda>0 && x0==5){
+			armia[liczba_armii+1].ciezka_jazda--;
+			sjednostki[7].ilosc++;
+			liczba_zolnierzy-=ciezka_jazda.wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].tarany>0 && x0==6){
+			armia[liczba_armii+1].tarany--;
+			sjednostki[8].ilosc++;
+			liczba_zolnierzy-=taran.wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].elity>0 && x0==7){
+			armia[liczba_armii+1].elity--;
+			sjednostki[9].ilosc++;
+			liczba_zolnierzy-=elita.wielkosc;
+			}	
+		
+	}
 	
 }
 
