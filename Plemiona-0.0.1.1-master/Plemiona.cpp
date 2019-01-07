@@ -169,6 +169,7 @@ struct struktura_armii
 	int elity;
 	int objetosc;
 	string nazwa;
+	int wielkosc;
 };
 
 struct struktura_garnizonu
@@ -384,6 +385,7 @@ bool rekrutacja=false;
 int liczba_armii=0;
 int liczba_zolnierzy=0;
 bool bplac=false;
+ char mapa_armii[127][201];
 
 struktura_armii armia[50];
 
@@ -394,6 +396,10 @@ struktura_jednostek jrobotnik=
 struktura_jednostek josadnik=
 {
 	0,2,2,500,500,100,100,100,0,10,false,false,0,"Osadnik"
+};
+struktura_jednostek jarmia=
+{
+	0,0,0,0,0,0,0,0,0,0,false,false,0,"Armia"	
 };
 
 
@@ -799,7 +805,32 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 			mapa_jednostek[x2][y2]='A';
 			armia[liczba_armii].x=x2;
 			armia[liczba_armii].y=y2;
-			liczba_armii++;
+			armia[liczba_armii].id=liczba_armii;
+			mapa_armii[x2][y2]=armia[liczba_armii].id+48;
+			mapa_jednostek[x2][y2]='A';
+			gotoxy(54,25);
+		for(int i=0;i<40;i++)cout << blok;
+		gotoxy(54,26);
+		cout << blok;
+		for(int i=0;i<38;i++)cout<< " ";
+		cout << blok;
+		gotoxy(54,28);
+		cout << blok;
+		for(int i=0;i<38;i++)cout<< " ";
+		cout << blok;
+		gotoxy(54,29);
+		for(int i=0;i<40;i++)cout << blok;
+		gotoxy(90,27);
+		cout << "   " << blok;
+		gotoxy(54,27);
+		cout <<blok<< "  Wpisz nazwe armii: ";
+		getline(cin, armia[liczba_armii].nazwa);
+
+	gotoxy(54,27);
+	for(int i=0;i<28;i++)cout << blok;
+
+			cls;
+			return;
 			}
 			return;
 		}
@@ -808,6 +839,44 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 		
 	}while(ster!=27);
 	
+}
+
+void pokaz_armie(struktura_armii armia)
+{
+	int atak_razem;
+	atak_razem=armia.pikinierzy*pikinier.atak;
+	atak_razem+=armia.lucznicy*lucznik.atak;
+	atak_razem+=armia.kusznicy*kusznik.atak;
+	atak_razem+=armia.ciezkozbrojni*ciezkozbrojny.atak;
+	atak_razem+=armia.lekka_jazda*lekka_jazda.atak;
+	atak_razem+=armia.ciezka_jazda*ciezka_jazda.atak;
+	atak_razem+=armia.tarany*taran.atak;
+	atak_razem+=armia.elity*elita.atak;
+	int obrona_razem;
+	obrona_razem=armia.pikinierzy*pikinier.obrona;
+	obrona_razem+=armia.lucznicy*lucznik.obrona;
+	obrona_razem+=armia.kusznicy*kusznik.obrona;
+	obrona_razem+=armia.ciezkozbrojni*ciezkozbrojny.obrona;
+	obrona_razem+=armia.lekka_jazda*lekka_jazda.obrona;
+	obrona_razem+=armia.ciezka_jazda*ciezka_jazda.obrona;
+	obrona_razem+=armia.tarany*taran.obrona;
+	obrona_razem+=armia.elity*elita.obrona;
+	int utrzymanie;
+	utrzymanie=armia.pikinierzy*pikinier.utrzymanie;
+	utrzymanie+=armia.lucznicy*lucznik.utrzymanie;
+	utrzymanie+=armia.kusznicy*kusznik.utrzymanie;
+	utrzymanie+=armia.ciezkozbrojni*ciezkozbrojny.utrzymanie;
+	utrzymanie+=armia.lekka_jazda*lekka_jazda.utrzymanie;
+	utrzymanie+=armia.ciezka_jazda*ciezka_jazda.utrzymanie;
+	utrzymanie+=armia.tarany*taran.utrzymanie;
+	utrzymanie+=armia.elity*elita.utrzymanie;
+	
+	gotoxy(110,30);
+	cout << "ATAK: " << atak_razem<<"     ";
+	gotoxy(110,31);
+	cout << "OBRONA: "<<obrona_razem<<"    ";
+	gotoxy(110,32);
+	cout << "UTRZYMANIE: "<<utrzymanie<<"     ";
 }
 
 ///////////
@@ -846,6 +915,7 @@ int main(){
  string jednostki[255];
  jednostki[osadnik]="osadnik";
  jednostki[82]="robotnik";
+ 
  
  ////technologie/////
  
@@ -1454,6 +1524,12 @@ for(int i=0;i<137;i++){
 }
 for(int i=0;i<137;i++){
 	for(int j=0;j<201;j++){
+		if(mapa[i][j]==dom || mapa[i][j]==dom2)
+		mapa_armii[i][j]='0';
+	}
+}
+for(int i=0;i<137;i++){
+	for(int j=0;j<201;j++){
 		mapa_jednostek[i][j]=' ';
 	}
 }
@@ -1654,10 +1730,37 @@ for(int i=x-19;i<=x+19;i++){
         
     	}
 	}
+	
+	if(wybor_map==3){
+    	for(int i=x-19;i<=x+19;i++){
+	cout << "   ";
+        for(int j=y-19;j<=y+19;j++){
+        		if(j==(y+19) || i==(x+19) || j==(y-19) || i==(x-19))cout << blok;
+        		else{
+				if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa_armii[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+        		}else{
+        			if(mapa_armii[i][j]!='0'){
+        				SetConsoleTextAttribute( hOut, 12  );
+        				cout << mapa_armii[i][j];
+        				SetConsoleTextAttribute( hOut, 8 );
+					}else
+        			cout << mapa_armii[i][j];
+
+		}
+     	}
+     	}
+        cout << endl;
+        
+    	}
+	}
     	
         cout << endl;
 cout << "( " << y <<" , "<<x<<" )   "; 
 if(miasta[x][y]>=1)cout << miasto[miasta[x][y]].nazwa;
+if(mapa_armii[x][y]>48)cout << armia[mapa_armii[x][y]-48].nazwa;
 
 if(mapa_tartak[x][y]>=1)cout << "Tartak miasta " << miasto[mapa_tartak[x][y]].nazwa;
 if(mapa_kopalnia[x][y]>=1)cout << "Kopalnia miasta " << miasto[mapa_kopalnia[x][y]].nazwa;
@@ -1689,7 +1792,10 @@ gotoxy(110,4);
  cout << "    BUDOWA " << budowa << "    WYBOR JEDNOSTKI " << wybor_jednostki <<"    MENU " << menu << "     MENU BUDOWY " << menu_budowy;
 if(wybor_jednostki==true){
 	gotoxy(110,5);
+	if(mapa_jednostek[x][y]!='A')
 	cout << "Wybrano: " << jednostki[mapa_jednostek[x][y]];
+	else
+	cout << "Wybrano: " << armia[mapa_armii[x][y]-48].nazwa;
 }
 SetConsoleTextAttribute( hOut, 10 );
 gotoxy(8,50);
@@ -2062,7 +2168,7 @@ x0--;
 continue;
 }
 
-if(ster==']' && wybor_map!=2)wybor_map++;
+if(ster==']' && wybor_map!=3)wybor_map++;
 if(ster=='[' && wybor_map!=0)wybor_map--;
  
  if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && wybor_jednostki==false){
@@ -2103,9 +2209,22 @@ if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& b
 if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa_jednostek[x][y+1]=='R' && mapa_jednostek[x][y]=='R' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && mapa_jednostek[x][y+1]=='R'&& mapa_jednostek[x][y]=='R'){
               y++;
               }
+              ////////armie////////
+if( ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&mapa_jednostek[x-1][y]=='A' && mapa_jednostek[x][y]=='A'){
+              x--;
+              }
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa_jednostek[x+1][y]=='A'&& mapa_jednostek[x][y]=='A'){
+              x++;
+              }
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && mapa_jednostek[x][y-1]=='A'&& mapa_jednostek[x][y]=='A'){
+              y--;
+              }
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && mapa_jednostek[x][y+1]=='A'&& mapa_jednostek[x][y]=='A'){
+              y++;
+              }
               
               
-if(ster=='e' && wybor_jednostki==false && mapa_jednostek[x][y]==osadnik || mapa_jednostek[x][y]==82 && ster=='e' && wybor_jednostki==false ){
+if(ster=='e' && wybor_jednostki==false && mapa_jednostek[x][y]==osadnik || mapa_jednostek[x][y]==82 && ster=='e' && wybor_jednostki==false || mapa_jednostek[x][y]=='A' && ster=='e' && wybor_jednostki==false){
 	wybor_jednostki=true;
 	menu=false;
 }
@@ -2756,7 +2875,70 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+}
 
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='A';
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='O' && mapa_jednostek[x-1][y]!='A'){
+
+	mapa_jednostek[x-1][y]='A';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='O' && mapa_jednostek[x-1][y+1]!='A'){
+	mapa_jednostek[x-1][y+1]='A';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='O'&& mapa_jednostek[x-1][y-1]!='A'){
+	mapa_jednostek[x-1][y-1]='A';
+	}
+		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='O' && mapa_jednostek[x][y+1]!='A'){
+
+	mapa_jednostek[x][y+1]='A';
+	}
+		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='O'&& mapa_jednostek[x][y-1]!='A'){
+
+	mapa_jednostek[x][y-1]='A';
+	}
+		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='O'&& mapa_jednostek[x+1][y-1]!='B'){
+
+	mapa_jednostek[x+1][y-1]='A';
+	}
+		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='O'&& mapa_jednostek[x+1][y]!='B'){
+
+	mapa_jednostek[x+1][y]='A';
+	}
+		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='O'&& mapa_jednostek[x+1][y+1]!='B'){
+
+	mapa_jednostek[x+1][y+1]='A';
+	}
+	
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='A' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='O'){
+		for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+	}
+	if(mapa_jednostek[xd][yd]=='A')mapa_jednostek[xd][yd]=' ';
+}
+	mapa_jednostek[x][y]='A';
+	armia[mapa_armii[xd][yd]-48].x=x;
+	armia[mapa_armii[xd][yd]-48].y=y;
+	mapa_armii[x][y]=mapa_armii[xd][yd];
+	mapa_armii[xd][yd]='0';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
 }
 /////////////nawigacja/////////
 
@@ -2811,6 +2993,43 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	ruch=true;
 }
 
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='A' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='R'){
+		for(int i=xd-2;i<=xd+2;i++){
+		for(int j=yd-2;j<=yd+2;j++){
+		
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+		
+	}
+	if(mapa_jednostek[xd][yd]=='A')mapa_jednostek[xd][yd]=' ';
+}
+	armia[mapa_armii[xd][yd]-48].x=x;
+	armia[mapa_armii[xd][yd]-48].y=y;
+	mapa_armii[x][y]=mapa_armii[xd][yd];
+	mapa_armii[xd][yd]='0';
+	mapa_jednostek[x][y]='A';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+}
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	mapa_jednostek[x][y]='A';
+	for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada && mapa[i][j]!=kopalnia && mapa[i][j]!=farma && mapa[i][j]!=tartak){
+
+	mapa_jednostek[i][j]='A';
+	}
+		}
+	}
+	
+	ruch=true;
+}
+
 if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='R' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-2;i<=xd+2;i++){
 		for(int j=yd-2;j<=yd+2;j++){
@@ -2824,7 +3043,6 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
-
 }
 
  if(ster=='c'){
@@ -3738,6 +3956,7 @@ for(int i=0;i<28;i++)cout << blok;
 		gotoxy(50,1);
 cout << "NAZWA/ILOSC POSIADANYCH/DO ARMII                    ";
 rekrutowanka(x0);
+pokaz_armie(armia[liczba_armii+1]);
 gotoxy(45,3);
 for(int i=0;i<28;i++)cout << blok;
 gotoxy(45,4);
@@ -3903,8 +4122,10 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		if(ster==27){
 			menu_stolica=true;
 			rozbudowa=false;
+			menu_budowy=false;
 			rekrutacja=false;
 			bplac=false;
+			system("CLS");
 		}
 		
 		if(ster=='q' && x0==2 && menu_stolica==true){
@@ -4025,6 +4246,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			sjednostki[9].ilosc=sjednostki[9].ilosc+armia[liczba_armii+1].elity;
 			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].elity*elita.wielkosc;
 			armia[liczba_armii+1].elity=0;
+			armia[liczba_armii+1].wielkosc-=pikinier.wielkosc;
+			armia[liczba_armii+1].wielkosc-=lucznik.wielkosc;
+			armia[liczba_armii+1].wielkosc-=kusznik.wielkosc;
+			armia[liczba_armii+1].wielkosc-=ciezkozbrojny.wielkosc;
+			armia[liczba_armii+1].wielkosc-=lekka_jazda.wielkosc;
+			armia[liczba_armii+1].wielkosc-=ciezka_jazda.wielkosc;
+			armia[liczba_armii+1].wielkosc-=taran.wielkosc;
+			armia[liczba_armii+1].wielkosc-=elita.wielkosc;
 			
 			system("CLS");
 			continue;			
@@ -5332,7 +5561,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		}
 			}
 		}
-				if(ster=='e' && budowa_miasto==true && ratusz.lvl>=2 && bufor_budowa_miasto==35 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja && fort.lvl==0)
+				if(ster=='e' && budowa_miasto==true && ratusz.lvl>=2 && bufor_budowa_miasto==34 && drewno>=fort.koszt_drewno && kamien>=fort.koszt_kamien && zywnosc>=fort.koszt_zywnosc && zloto>=fort.koszt_zloto && miasto[1].produkcja>=fort.koszt_produkcja && fort.lvl==0)
 		{
 		zbuduj(fort, x,  y, mapa_stolicy, bufor_miasta, &drewno, &kamien, &zywnosc, 
 			&zloto, &max_zolnierzy, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka, &x0);
@@ -5990,85 +6219,111 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		if(ster==KEY_RIGHT && sjednostki[x0+2].ilosc>0 && liczba_zolnierzy+sjednostki[x0+2].wielkosc<=max_zolnierzy){
 			if(x0==0){
 			armia[liczba_armii+1].pikinierzy++;
+			armia[liczba_armii+1].wielkosc+=pikinier.wielkosc;
 			sjednostki[2].ilosc--;
 			liczba_zolnierzy+=pikinier.wielkosc;
 			}
 			if(x0==1){
 			armia[liczba_armii+1].lucznicy++;
+			armia[liczba_armii+1].wielkosc+=lucznik.wielkosc;
 			sjednostki[3].ilosc--;
 			liczba_zolnierzy+=lucznik.wielkosc;
 			}
 			if(x0==2){
 			armia[liczba_armii+1].kusznicy++;
+			armia[liczba_armii+1].wielkosc+=kusznik.wielkosc;
 			sjednostki[4].ilosc--;
 			liczba_zolnierzy+=kusznik.wielkosc;
 			}
 			if(x0==3){
 			armia[liczba_armii+1].ciezkozbrojni++;
+			armia[liczba_armii+1].wielkosc+=ciezkozbrojny.wielkosc;
 			sjednostki[5].ilosc--;
 			liczba_zolnierzy+=ciezkozbrojny.wielkosc;
 			}
 			if(x0==4){
 			armia[liczba_armii+1].lekka_jazda++;
+			armia[liczba_armii+1].wielkosc+=lekka_jazda.wielkosc;
 			sjednostki[6].ilosc--;
 			liczba_zolnierzy+=lekka_jazda.wielkosc;
 			}
 			if(x0==5){
 			armia[liczba_armii+1].ciezka_jazda++;
+			armia[liczba_armii+1].wielkosc+=ciezka_jazda.wielkosc;
 			sjednostki[7].ilosc--;
 			liczba_zolnierzy+=ciezka_jazda.wielkosc;
 			}
 			if(x0==6){
 			armia[liczba_armii+1].tarany++;
+			armia[liczba_armii+1].wielkosc+=taran.wielkosc;
 			sjednostki[8].ilosc--;
 			liczba_zolnierzy+=taran.wielkosc;
 			}
 			if(x0==7){
 			armia[liczba_armii+1].elity++;
+			armia[liczba_armii+1].wielkosc+=elita.wielkosc;
 			sjednostki[9].ilosc--;
 			liczba_zolnierzy+=elita.wielkosc;
 			}	
 		}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].pikinierzy>0 && x0==0){
 			armia[liczba_armii+1].pikinierzy--;
+			armia[liczba_armii+1].wielkosc-=pikinier.wielkosc;
 			sjednostki[2].ilosc++;
 			liczba_zolnierzy-=pikinier.wielkosc;
 		}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].lucznicy>0 && x0==1){
 			armia[liczba_armii+1].lucznicy--;
+			armia[liczba_armii+1].wielkosc-=lucznik.wielkosc;
 			sjednostki[3].ilosc++;
 			liczba_zolnierzy-=lucznik.wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].kusznicy>0 && x0==2){
 			armia[liczba_armii+1].kusznicy--;
+			armia[liczba_armii+1].wielkosc-=kusznik.wielkosc;
 			sjednostki[4].ilosc++;
 			liczba_zolnierzy-=kusznik.wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezkozbrojni>0 && x0==3){
 			armia[liczba_armii+1].ciezkozbrojni--;
+			armia[liczba_armii+1].wielkosc-=ciezkozbrojny.wielkosc;
 			sjednostki[5].ilosc++;
 			liczba_zolnierzy-=ciezkozbrojny.wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].lekka_jazda>0 && x0==4){
 			armia[liczba_armii+1].lekka_jazda--;
+			armia[liczba_armii+1].wielkosc-=lekka_jazda.wielkosc;
 			sjednostki[6].ilosc++;
 			liczba_zolnierzy-=lekka_jazda.wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezka_jazda>0 && x0==5){
 			armia[liczba_armii+1].ciezka_jazda--;
+			armia[liczba_armii+1].wielkosc-=ciezka_jazda.wielkosc;
 			sjednostki[7].ilosc++;
 			liczba_zolnierzy-=ciezka_jazda.wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].tarany>0 && x0==6){
 			armia[liczba_armii+1].tarany--;
+			armia[liczba_armii+1].wielkosc-=taran.wielkosc;
 			sjednostki[8].ilosc++;
 			liczba_zolnierzy-=taran.wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].elity>0 && x0==7){
 			armia[liczba_armii+1].elity--;
+			armia[liczba_armii+1].wielkosc-=elita.wielkosc;
 			sjednostki[9].ilosc++;
 			liczba_zolnierzy-=elita.wielkosc;
 			}	
+		
+		if(ster=='e' && armia[liczba_armii+1].wielkosc>0){
+			
+			liczba_armii++;
+			wystaw_armie(jarmia,mapa,45,mapa_jednostek);
+			bplac=false;
+			menu_stolica=true;
+			system("CLS");
+			continue;
+		}
 		
 	}
 	
