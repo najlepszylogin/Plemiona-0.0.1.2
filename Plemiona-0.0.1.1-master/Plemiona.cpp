@@ -148,6 +148,7 @@ struct struktura_jednostek
 	bool jazda;
 	int wielkosc;
 	string wymagania;
+	string wymagania_najmu;
 	string nazwa;
 };
 
@@ -184,35 +185,35 @@ struktura_garnizonu sjednostki[11]={{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier"
 
 struktura_jednostek pikinier=
 {
-	3,2,1,100,200,200,200,150,0,350,false,false,1,"1 poziom koszar","Pikinierzy"
+	3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom obozu","Pikinierzy"
 };
 struktura_jednostek lucznik=
 {
-	4,1,1,100,250,200,100,200,0,350,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lucznicy"
+	4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"
 };
 struktura_jednostek kusznik=
 {
-	5,2,2,200,400,350,200,350,0,450,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Kusznicy"
+	5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"
 };
 struktura_jednostek ciezkozbrojny=
 {
-	6,4,3,250,400,300,300,200,0,500,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Ciezkozbrojni"
+	6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"
 };
 struktura_jednostek lekka_jazda=
 {
-	4,2,2,150,250,250,250,200,0,400,false,true,2,"Stajnia na 1 poziomie","Lekka Jazda"
+	4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"
 };
 struktura_jednostek ciezka_jazda=
 {
-	7,3,3,300,450,350,350,250,0,550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Ciezka Jazda"
+	7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"
 };
 struktura_jednostek taran=
 {
-	10,1,3,300,450,100,100,350,0,450,true,false,3,"Warsztat na 2 poziomie","Taran"
+	10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","3 poziom obozu","Taran"
 };
 struktura_jednostek elita=
 {
-	8,6,4,400,400,400,400,400,0,600,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","Elita"
+	8,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita"
 };
 
  struktura_budowli akademia=
@@ -386,20 +387,22 @@ int liczba_armii=0;
 int liczba_zolnierzy=0;
 bool bplac=false;
  char mapa_armii[127][201];
+ bool najmij=false;
+ bool menu_osada=false;
 
 struktura_armii armia[50];
 
 struktura_jednostek jrobotnik=
 {
-	0,2,1,25,150,25,10,10,0,0,false,false,0,"Robotnik"
+	0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","1 poziom obozu","Robotnik"
 };
 struktura_jednostek josadnik=
 {
-	0,2,2,500,500,100,100,100,0,10,false,false,0,"Osadnik"
+	0,2,2,500,500,100,100,100,0,1000,false,false,0,"1 poziom Ratusza","2 poziom obozu","Osadnik"
 };
 struktura_jednostek jarmia=
 {
-	0,0,0,0,0,0,0,0,0,0,false,false,0,"Armia"	
+	0,0,0,0,0,0,0,0,0,0,false,false,0,"1 poziom Ratusza","1 poziom obozu","Armia"	
 };
 
 
@@ -758,6 +761,50 @@ void rekrutowanka(int x0){
 
 }
 
+void najmowanka(int x0)
+{
+	struktura_jednostek jednostka;
+			if(x0==0)jednostka=jrobotnik;
+			if(x0==1)jednostka=josadnik;
+			if(x0==2)jednostka=pikinier;
+			if(x0==3)jednostka=lucznik;
+			if(x0==4)jednostka=kusznik;
+			if(x0==5)jednostka=ciezkozbrojny;
+			if(x0==6)jednostka=lekka_jazda;
+			if(x0==7)jednostka=ciezka_jazda;
+			if(x0==8)jednostka=taran;
+			if(x0==9)jednostka=elita;
+			if(x0==10)return;
+			if(bplac==false){
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Zloto: "<< jednostka.koszt_zloto*3<<"                    ";
+			gotoxy(110,14);
+			cout <<"Wiara: "<< jednostka.koszt_wiara<<"                    ";
+			}
+			
+			gotoxy(114,15);
+			cout << "Statystyki: ";
+			gotoxy(110,16);
+			cout << "Atak "<<jednostka.atak<<"                    ";
+			gotoxy(110,17);
+			cout << "Obrona "<<jednostka.obrona<<"                    ";
+			gotoxy(110,18);
+			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
+			gotoxy(110,19);
+			cout <<"Jazda "<<jednostka.jazda<<"                    ";
+			gotoxy(110,20);
+			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			gotoxy(110,21);
+			cout << "Wielkosc "<<jednostka.wielkosc<<"                    ";
+			gotoxy(110,22);
+			cout <<"Wymagania: ";
+			gotoxy(110,23);
+			cout << jednostka.wymagania_najmu<<"                                              ";
+
+}
+
 void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnosc, 
 			int *zloto, int *max_zolnierzy, bool *rekrutacja, bool *menu_stolica, int *x0){
 
@@ -768,6 +815,33 @@ void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnos
 
 		miasto[1].ludnosc=miasto[1].ludnosc-budowla.wielkosc*100;
 		*rekrutacja=false;
+		*menu_stolica=true;
+		*x0=0;
+		system("CLS");
+}
+
+void najmijv(struktura_jednostek &budowla, int *wiara, bool *najmij, int *zloto, int *x0, bool *menu_stolica)
+{
+		int xd=0;
+		gotoxy(109,33);
+		cout << "Wynierz metode platnosci";
+		char ster;
+		do{
+		
+		ster=getch();
+		if(ster==KEY_RIGHT && xd!=1)xd++;
+		if(ster==KEY_LEFT && xd!=0)xd--;
+		gotoxy(109,33);
+		SetConsoleTextAttribute( hOut, 7 );
+		if(xd==0)cout << "Kup za: ZLOTO            ";
+		if(xd==1)cout << "Kup za: WIARA            ";
+		
+		}while(ster!='e');
+		if(xd==0)
+		*zloto=*zloto-budowla.koszt_zloto*3;
+		if(xd==1)
+		*wiara=*wiara-budowla.koszt_wiara;
+		*najmij=false;
 		*menu_stolica=true;
 		*x0=0;
 		system("CLS");
@@ -973,7 +1047,7 @@ int przychod_wiara=0;
 int przychod_zloto=0;
 int ludnosc=0;
 int ksztalt=0;
-
+int xm=0;
 
  int wybor_map=0;
 
@@ -2318,12 +2392,13 @@ if(ster=='e' && menu==true && mapa[x][y]==osada || ster=='e' && menu==true && ma
 	}
 	}else{
 		miasto[miasta[x][y]].menu_osady=true;
+		xm=miasta[x][y];
 	}
 	system("CLS");
 }
 
 
-if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='R' && ruch==true){
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='R' && ruch==true && budowa==false){
 	ruch=false;
 	system("CLS");
 	x=xd;
@@ -2347,7 +2422,7 @@ budowa=false;
 x0=0;
 system("CLS");
 }
-if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='O' && ruch==true){
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='O' && ruch==true && budowa==false){
 	ruch=false;
 	system("CLS");
 	x=xd;
@@ -2387,13 +2462,13 @@ menu=true;
 system("CLS");
 }
 
-if(ster=='q' && x0==2 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==false){
+if(ster=='q' && x0==2 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==false && ruch==false){
 	menu_budowy=true;
 	system("CLS");
 	continue;
 }
 
-if(ster=='q' && x0==3 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==true){
+if(ster=='q' && x0==3 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==true && ruch==false){
 	bufor_budowa=10;
 	menu_budowy=false;
 	menu=false;
@@ -2402,7 +2477,7 @@ if(ster=='q' && x0==3 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && m
 }
 
 
-if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==false && x0==2 && budowa==false && bufor_multi[x][y]==dom2){
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==false && x0==2 && budowa==false && bufor_multi[x][y]==dom2 && ruch==false){
 	xd=x;
 	yd=y;
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
@@ -4059,6 +4134,133 @@ gotoxy(45,15);
 for(int i=0;i<28;i++)cout << blok;
 	}
 
+	if(najmij==true){
+		gotoxy(55,1);
+cout << "REKRUTACJA JEDNOSTEK                    ";
+najmowanka(x0);
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Robotnik               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Robotnik               "<<blok; 
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Osadnik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Osadnik                "<<blok; 
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier               "<<blok; 
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lucznik                "<<blok; 
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik                "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny          "<<blok; 
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda            "<<blok; 
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda           "<<blok;
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran                  "<<blok;
+gotoxy(45,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita                  "<<blok; 
+gotoxy(45,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(45,16);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,17);
+for(int i=0;i<28;i++)cout << blok;
+
+	}
+
 gotoxy(8,62);
 		cout << "BUDOWA_MIASTO " << budowa_miasto << "  x0 " << x0 << "  bufor budowy " << bufor_budowa_miasto << "  ratuszlvl "<<ratusz.lvl;
     	
@@ -4074,7 +4276,7 @@ gotoxy(8,62);
 		}
 		
     	
-if(ster==KEY_DOWN && x0!=7 && menu_stolica==true || ster==KEY_DOWN && x0!=41 && menu_budowy==true || ster==KEY_DOWN && x0!=41 && rozbudowa==true || ster==KEY_DOWN && x0!=10 && rekrutacja==true || ster==KEY_DOWN && x0!=8 && bplac==true){
+if(ster==KEY_DOWN && x0!=7 && menu_stolica==true || ster==KEY_DOWN && x0!=41 && menu_budowy==true || ster==KEY_DOWN && x0!=41 && rozbudowa==true || ster==KEY_DOWN && x0!=10 && rekrutacja==true || ster==KEY_DOWN && x0!=10 && najmij==true|| ster==KEY_DOWN && x0!=8 && bplac==true){
 	x0++;
 	cls();
 	continue;
@@ -4125,6 +4327,8 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			menu_budowy=false;
 			rekrutacja=false;
 			bplac=false;
+			najmij=false;
+			x0=0;
 			system("CLS");
 		}
 		
@@ -4207,6 +4411,22 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		if(ster=='q' && x0==41 && rozbudowa==true){
 			menu_stolica=true;
 			rozbudowa=false;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		if(ster=='q' && x0==4 && menu_stolica==true && oboz.lvl>0){
+			menu_stolica=false;
+			najmij=true;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		
+				
+		if(ster=='q' && x0==10 && najmij==true){
+			menu_stolica=true;
+			najmij=false;
 			x0=0;
 			system("CLS");
 			continue;
@@ -6326,13 +6546,299 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		}
 		
 	}
+	if(najmij==true){
+				
+		if(ster=='q' && x0==0  && zloto>=jrobotnik.koszt_zloto*3 || ster=='q' && x0==0 && wiara>=jrobotnik.koszt_wiara){
+			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
+			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
+				najmijv(jrobotnik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				wystaw_armie(jrobotnik,mapa,0, mapa_jednostek);
+				
+			}
+		}
+		if(ster=='q' && x0==1 && zloto>=josadnik.koszt_zloto*3 || ster=='q' && x0==1 && wiara>=josadnik.koszt_wiara){
+			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
+			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
+			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
+				najmijv(josadnik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				rekrutuj(josadnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+			}
+		}
+		if(ster=='q' && x0==2  && zloto>=pikinier.koszt_zloto*3 || ster=='q' && x0==2 && wiara>=pikinier.koszt_wiara){
+				najmijv(pikinier,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[2].ilosc++;
+		}
+		if(ster=='q' && x0==3 && zloto>=lucznik.koszt_zloto*3 || ster=='q' && x0==3 && wiara>=lucznik.koszt_wiara){
+				najmijv(lucznik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[3].ilosc++;
+		}
+		if(ster=='q' && x0==4 && zloto>=kusznik.koszt_zloto*3&& oboz.lvl>=2 || ster=='q' && x0==4 && wiara>=kusznik.koszt_wiara && oboz.lvl>=2){
+				najmijv(kusznik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[4].ilosc++;
+		}
+		if(ster=='q' && x0==5 && zloto>=ciezkozbrojny.koszt_zloto*3&& oboz.lvl>=2 || ster=='q' && x0==5 && wiara>=ciezkozbrojny.koszt_wiara&& oboz.lvl>=2){
+				najmijv(ciezkozbrojny,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[5].ilosc++;
+		}
+		if(ster=='q' && x0==6 && zloto>=lekka_jazda.koszt_zloto*3 && oboz.lvl>=2|| ster=='q' && x0==6 && wiara>=lekka_jazda.koszt_wiara&& oboz.lvl>=2){
+						najmijv(lekka_jazda,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[6].ilosc++;
+		}
+		if(ster=='q' && x0==7 && zloto>=ciezka_jazda.koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==7 && wiara>=ciezka_jazda.koszt_wiara&& oboz.lvl>=3){
+				najmijv(ciezka_jazda,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[7].ilosc++;
+		}
+		if(ster=='q' && x0==8 && zloto>=taran.koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==8 && wiara>=taran.koszt_wiara&& oboz.lvl>=3){
+				najmijv(taran,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[8].ilosc++;
+		}
+		if(ster=='q' && x0==9 && zloto>=elita.koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==9 && wiara>=elita.koszt_wiara&& oboz.lvl>=3){
+				najmijv(elita,&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[9].ilosc++;
+		}
+		
+	}
 	
 }
 
-while(miasto[2].menu_osady==true){
+while(miasto[xm].menu_osady==true){
 	system("CLS");
-	cout << "siema";
-	getch();
+	gotoxy(3,3);
+	cout << "Jestes w miescie "<<miasto[xm].nazwa;
+	
+	SetConsoleTextAttribute( hOut, 10 );
+gotoxy(8,60);
+cout << "Zywnosc: " << zywnosc<<"("<<miasto[xm].przychod_zywnosc<<")" <<"  Drewno: " << drewno <<"("<<miasto[xm].przychod_drewno<<")" <<
+ "  Kamien: " << kamien<<"("<<miasto[xm].przychod_kamien<<")" << "  Wiara: " << wiara <<"("<<miasto[xm].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy <<"("<<liczba_zolnierzy<<")"<< "  Zloto: " 
+ << zloto << "("<<miasto[xm].przychod_zloto<<")" <<"  Produckja: " << miasto[xm].produkcja <<"("<<miasto[xm].przychod_produkcja
+ <<")" << "  Ludnosc: "<<miasto[xm].ludnosc << "  Nauka: " << nauka<<"("<<miasto[xm].przychod_nauka<<")"<<"  Obrona: "<<miasto[xm].obrona;
+SetConsoleTextAttribute( hOut, 8 );
+	
+if(menu_osada==true){
+	gotoxy(55,1);
+cout << "MENU MIASTA                    ";
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Mapa Swiata            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Mapa Swiata            "<<blok; 
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Buduj                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Buduj                  "<<blok; 
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Rekrutuj               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Rekrutuj               "<<blok; 
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Plac Manewrowy         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Plac Manewrowy         "<<blok; 
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Zbierz Podatek         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Zbierz Podatek         "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Zmien nazwe            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Zmien nazwe            "<<blok; 
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Rozbudowa              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Rozbudowa              "<<blok; 
+gotoxy(45,12);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,13);
+for(int i=0;i<28;i++)cout << blok;
+}
+	
+	
+	ster=getch();
+	
+	if(ster==27){
+		miasto[xm].menu_osady=false;
+		xm=0;
+		mapa_glowna=true;
+		menu=true;
+		system("CLS");
+	}
+	
+	if(rekrutacja==true){
+gotoxy(55,1);
+cout << "REKRUTACJA JEDNOSTEK                    ";
+rekrutowanka(x0);
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Robotnik               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Robotnik               "<<blok; 
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Osadnik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Osadnik                "<<blok; 
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier               "<<blok; 
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lucznik                "<<blok; 
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik                "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny          "<<blok; 
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda            "<<blok; 
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda           "<<blok;
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran                  "<<blok;
+gotoxy(45,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita                  "<<blok; 
+gotoxy(45,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(45,16);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,17);
+for(int i=0;i<28;i++)cout << blok;
+}
+	
 }
 
 }while(e==1);
