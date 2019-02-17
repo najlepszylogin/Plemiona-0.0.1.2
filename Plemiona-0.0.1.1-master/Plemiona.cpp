@@ -98,6 +98,7 @@ struct struktura_miasto
 	int produkcja;
 	int przychod_produkcja;
 	bool menu_osady;
+	int podatek;
 	int garnizon[10];
 	
 };
@@ -132,6 +133,33 @@ struct struktura_budowli
 	char wyglad[9][21];
 };
 
+struct struktura_budowli_osada
+{
+ 	string nazwa;
+	int koszt_drewno;
+	int koszt_kamien;
+	int koszt_zywnosc;
+	int koszt_zloto;
+	int koszt_produkcja;
+	bool budowa;
+	int max_lvl;
+	int lvl;
+	int nauka;
+	int wiara;
+	int zywnosc;
+	int drewno;
+	int kamien;
+	int zloto;
+	int produkcja;
+	int ludnosc;
+	int max_zolnierzy;
+	string opis;
+	string wymagania1;
+	string wymagania2;
+	string wymagania3;
+	string wymagania4;
+};
+
 struct struktura_jednostek
 {
 	float atak;
@@ -148,6 +176,7 @@ struct struktura_jednostek
 	bool jazda;
 	int wielkosc;
 	string wymagania;
+	string wymagania_osada;
 	string wymagania_najmu;
 	string nazwa;
 };
@@ -180,41 +209,137 @@ int ilosc;
 int wielkosc;
 };
 
-struktura_garnizonu sjednostki[11]={{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}};
+struktura_garnizonu sjednostki[12][12]={{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}}};
 
 
-struktura_jednostek pikinier=
+struktura_jednostek pikinier[11]=
 {
-	3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom obozu","Pikinierzy"
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"}
 };
-struktura_jednostek lucznik=
+struktura_jednostek lucznik[11]=
 {
-	4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"}
 };
-struktura_jednostek kusznik=
+struktura_jednostek kusznik[11]=
 {
-	5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	
 };
-struktura_jednostek ciezkozbrojny=
+struktura_jednostek ciezkozbrojny[11]=
 {
-	6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"}
 };
-struktura_jednostek lekka_jazda=
+struktura_jednostek lekka_jazda[11]=
 {
-	4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"}
 };
-struktura_jednostek ciezka_jazda=
+struktura_jednostek ciezka_jazda[11]=
 {
-	7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"}
 };
-struktura_jednostek taran=
+struktura_jednostek taran[11]=
 {
-	10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","3 poziom obozu","Taran"
+	
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"}
 };
 struktura_jednostek elita=
 {
-	8,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita"
+	8,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita"
 };
+
+
+
 
  struktura_budowli akademia=
  {
@@ -226,7 +351,7 @@ struktura_jednostek elita=
  };
  struktura_budowli ratusz=
  {
- 	0,"Ratusz", 200,200,350,100,0,false,5,0,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu","4 poziom kapitolu"
+ 	0,"Ratusz", 200,200,350,100,100,false,5,0,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu","4 poziom kapitolu"
  };
  struktura_budowli rynek=
  {
@@ -369,6 +494,677 @@ struktura_jednostek elita=
  	38,"Stajnia",400,150,200,200,450,false,4,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
  };
  
+ ////////////////////////////////////////////////////budynki osady
+ 
+ 
+ struktura_budowli_osada rada_osady[11]=
+ {
+ {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ }};
+ 
+ struktura_budowli_osada koszary_osada[11]=
+ {
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ }
+ };
+ 
+ struktura_budowli_osada warsztat_osada[11]=
+ {{
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ }};
+ 
+ struktura_budowli_osada stajnia_osada[11]=
+ {
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada magazyn_osada[11]=
+ {
+ 	 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	}
+ };
+ 
+ struktura_budowli_osada mlyn_osada[11]=
+ {
+ 	 {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ }
+ };
+ 
+ struktura_budowli_osada kamieniarz_osada[11]=
+ {
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ }	,	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ }
+ };
+ 
+ struktura_budowli_osada weglarz_osada[11]=
+ {
+	{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ 
+ };
+ 
+ struktura_budowli_osada pomnik_osada[11]=
+ {
+ 	 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada park_osada[11]=
+ {
+ 	{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ 	
+ };
+ 
+ struktura_budowli_osada port_osada[11]=
+ {
+ 	 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada kosciol_osada[11]=
+ {
+ 	 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada biblioteka_osada[11]=
+ {
+ 	{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada mieszkalna_osada[11]=
+ {
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ }
+ };
+ 
+  struktura_budowli_osada handlowa_osada[11]=
+  {
+  	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ }
+  };
+ 
+ struktura_budowli_osada robotnicza_osada[11]=
+ {
+ 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada wojskowa_osada[11]=
+ {
+ 	 {
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada tawerna_osada[11]=
+ {
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+
+ 
+ ///////////////////////////////////////////////////////////////////
  
   bool menu=true;
  bool wybor_jednostki=false;
@@ -392,21 +1188,33 @@ bool bplac=false;
 
 struktura_armii armia[50];
 
-struktura_jednostek jrobotnik=
+struktura_jednostek jrobotnik[11]=
 {
-	0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","1 poziom obozu","Robotnik"
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"}
 };
 struktura_jednostek josadnik=
 {
-	0,2,2,500,500,100,100,100,0,1000,false,false,0,"1 poziom Ratusza","2 poziom obozu","Osadnik"
+	0,2,2,500,500,100,100,100,0,1000,false,false,0,"1 poziom Ratusza","---","2 poziom obozu","Osadnik"
 };
 struktura_jednostek jarmia=
 {
-	0,0,0,0,0,0,0,0,0,0,false,false,0,"1 poziom Ratusza","1 poziom obozu","Armia"	
+	0,0,0,0,0,0,0,0,0,0,false,false,0,"1 poziom Ratusza","1 poziom Rady Osady","1 poziom obozu","Armia"	
 };
 
 
 struktura_miasto miasto[10];
+
+
 
 void budowlanka(struktura_budowli budowla, int x, int y, char mapa_stolicy[80][150], char bufor_miasta[80][150], int *bufor_budowa_miasto,int x0,int ksztalt){
 	if(budowla.nazwa!="Droga"){
@@ -503,6 +1311,67 @@ void budowlanka(struktura_budowli budowla, int x, int y, char mapa_stolicy[80][1
 			gotoxy(110,29);
 			cout << budowla.wymagania5<<"                                        ";
 			}
+}
+
+void budowlanka_osada(struktura_budowli_osada budowla){
+
+
+		
+			gotoxy(114,10);
+			cout << budowla.nazwa<<"                                        ";
+			gotoxy(110,11);
+			cout << budowla.opis<<"                                        ";
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< budowla.koszt_drewno<<"     ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<budowla.koszt_kamien<<"     ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<budowla.koszt_zywnosc<<"     ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< budowla.koszt_zloto<<"     ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<budowla.koszt_produkcja<<"     ";
+			gotoxy(114,18);
+			cout << "Zwieksza: ";
+			gotoxy(110,19);
+			cout << "Zloto/tura+"<<budowla.zloto<<"     ";
+			gotoxy(110,20);
+			cout << "Drewno/tura+"<<budowla.drewno<<"     ";
+			gotoxy(110,21);
+			cout<<"Kamien/tura+"<<budowla.kamien<<"     ";
+			gotoxy(110,22);
+			cout <<"Zywnosc/tura+"<<budowla.zywnosc<<"     ";
+			gotoxy(110,23);
+			cout <<"Produkcja/tura+"<<budowla.produkcja<<"     ";
+			gotoxy(110,24);
+			cout << "Ludnosc+"<<budowla.ludnosc<<"     ";
+			gotoxy(110,25);
+			cout << "Max.Zolnierzy+"<<budowla.max_zolnierzy<<"     ";
+			gotoxy(110,26);
+			cout << "Nauka/tura+"<<budowla.nauka<<"     ";
+			gotoxy(110,27);
+			cout << "Wiara/tura+"<<budowla.wiara<<"     ";
+			gotoxy(110,28);
+			cout <<"Wymagania: ";
+			if(budowla.lvl==0){
+			gotoxy(110,29);
+			cout << budowla.wymagania1<<"                                        ";
+			}
+			if(budowla.lvl==1){
+			gotoxy(110,29);
+			cout << budowla.wymagania2<<"                                        ";
+			}
+			if(budowla.lvl==2){
+			gotoxy(110,29);
+			cout << budowla.wymagania3<<"                                        ";
+			}
+			if(budowla.lvl==3){
+			gotoxy(110,29);
+			cout << budowla.wymagania4<<"                                        ";
+			}
+
 }
 
 void rozbudowlanka(int x0){
@@ -611,7 +1480,75 @@ void rozbudowlanka(int x0){
 			}
 }
 
+void rozbudowlanka_osada(int x0, struktura_budowli_osada budowla){
+
+
+			gotoxy(114,10);
+			cout << budowla.nazwa<< " bedzie rozbudowany(a) do poziomu "<<budowla.lvl+1<<"                    ";
+			gotoxy(110,11);
+			cout << budowla.opis;
+			for(int i=110+budowla.opis.size();i<220;i++)cout << " ";
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< budowla.koszt_drewno<<"                    ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<budowla.koszt_kamien<<"                    ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<budowla.koszt_zywnosc<<"                    ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< budowla.koszt_zloto<<"                    ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<budowla.koszt_produkcja<<"                    ";
+			gotoxy(114,18);
+			cout << "Zwieksza: ";
+			gotoxy(110,19);
+			cout << "Zloto/tura+"<<budowla.zloto*1.5<<"                    ";
+			gotoxy(110,20);
+			cout << "Drewno/tura+"<<budowla.drewno*1.5<<"                    ";
+			gotoxy(110,21);
+			cout<<"Kamien/tura+"<<budowla.kamien*1.5<<"                    ";
+			gotoxy(110,22);
+			cout <<"Zywnosc/tura+"<<budowla.zywnosc*1.5<<"                    ";
+			gotoxy(110,23);
+			cout <<"Produkcja/tura+"<<budowla.produkcja*1.5<<"                    ";
+			gotoxy(110,24);
+			cout << "Ludnosc+"<<budowla.ludnosc*1.5<<"                    ";
+			gotoxy(110,25);
+			cout << "Max.Zolnierzy+"<<budowla.max_zolnierzy*1.25<<"                    ";
+			gotoxy(110,26);
+			cout << "Nauka/tura+"<<budowla.nauka*1.5<<"                    ";
+			gotoxy(110,27);
+			cout << "Wiara/tura+"<<budowla.wiara*1.5<<"                    ";
+			gotoxy(110,28);
+			cout <<"Wymagania: ";
+			if(budowla.lvl==0){
+			gotoxy(110,29);
+			cout << budowla.wymagania1<<"                                              ";
+			}
+			if(budowla.lvl==1){
+			gotoxy(110,29);
+			cout << budowla.wymagania2<<"                                              ";
+			}
+			if(budowla.lvl==2){
+			gotoxy(110,29);
+			cout << budowla.wymagania3<<"                                              ";
+			}
+			if(budowla.lvl==3){
+			gotoxy(110,29);
+			cout << budowla.wymagania4<<"                                              ";
+	}
+};
+
 void zwieksz_koszt(struktura_budowli &budowla){
+	budowla.koszt_drewno=budowla.koszt_drewno*1.5;
+	budowla.koszt_kamien=budowla.koszt_kamien*1.5;
+	budowla.koszt_zywnosc=budowla.koszt_zywnosc*1.5;
+	budowla.koszt_zloto=budowla.koszt_zloto*1.5;
+	budowla.koszt_produkcja=budowla.koszt_produkcja*1.5;
+}
+
+void zwieksz_koszt_osada(struktura_budowli_osada &budowla){
 	budowla.koszt_drewno=budowla.koszt_drewno*1.5;
 	budowla.koszt_kamien=budowla.koszt_kamien*1.5;
 	budowla.koszt_zywnosc=budowla.koszt_zywnosc*1.5;
@@ -653,6 +1590,40 @@ void zwieksz_przychod(struktura_budowli &budowla, int *przychod_nauka, int *max_
 		*max_zolnierzy=*max_zolnierzy+budowla.max_zolnierzy;
 }
 
+void zwieksz_przychod_osada(struktura_budowli_osada &budowla, int *przychod_nauka, int *max_zolnierzy, int xm){
+	
+	miasto[xm].przychod_zloto=miasto[xm].przychod_zloto-budowla.zloto;
+	miasto[xm].przychod_drewno=miasto[xm].przychod_drewno-budowla.drewno;
+	miasto[xm].przychod_kamien=miasto[xm].przychod_kamien-budowla.kamien;
+	miasto[xm].przychod_zywnosc=miasto[xm].przychod_zywnosc-budowla.zywnosc;
+	miasto[xm].przychod_wiara=miasto[xm].przychod_wiara-budowla.wiara;
+	miasto[xm].przychod_produkcja=miasto[xm].przychod_produkcja-budowla.produkcja;
+	*przychod_nauka=*przychod_nauka-budowla.nauka;
+	miasto[xm].ludnosc=miasto[xm].ludnosc-budowla.ludnosc;
+	*max_zolnierzy=*max_zolnierzy-budowla.max_zolnierzy;
+	
+	budowla.drewno=budowla.drewno+budowla.drewno*0.5;
+	budowla.zloto=budowla.zloto+budowla.zloto*0.5;
+	budowla.kamien=budowla.kamien+budowla.kamien*0.5;
+	budowla.zywnosc=budowla.zywnosc+budowla.zywnosc*0.5;
+	budowla.produkcja=budowla.produkcja+budowla.produkcja*0.5;
+	budowla.wiara=budowla.wiara+budowla.wiara*0.5;
+	budowla.nauka=budowla.nauka+budowla.nauka*0.5;
+	budowla.ludnosc=budowla.ludnosc+budowla.ludnosc*0.5;
+	budowla.max_zolnierzy=budowla.max_zolnierzy+budowla.max_zolnierzy*0.25;
+	
+		miasto[xm].przychod_zloto=miasto[xm].przychod_zloto+budowla.zloto;
+		miasto[xm].przychod_drewno=miasto[xm].przychod_drewno+budowla.drewno;
+		miasto[xm].przychod_kamien=miasto[xm].przychod_kamien+budowla.kamien;
+		miasto[xm].przychod_zywnosc=miasto[xm].przychod_zywnosc+budowla.zywnosc;
+		miasto[xm].przychod_wiara=miasto[xm].przychod_wiara+budowla.wiara;
+		miasto[xm].przychod_produkcja=miasto[xm].przychod_produkcja+budowla.produkcja;
+		miasto[xm].przychod_produkcja=miasto[xm].przychod_produkcja+miasto[xm].ludnosc*0.0005;
+		*przychod_nauka=*przychod_nauka+budowla.nauka;
+		miasto[xm].ludnosc=miasto[xm].ludnosc+budowla.ludnosc;
+		*max_zolnierzy=*max_zolnierzy+budowla.max_zolnierzy;
+}
+
 void zbuduj(struktura_budowli &budowla, int x, int y, char mapa_stolicy[80][150],char bufor_miasta[80][150],int *drewno, int *kamien, int *zywnosc, 
 			int *zloto, int *max_zolnierzy, bool * budowa_miasto, bool *menu_budowy, bool *menu_stolica, int *przychod_nauka, int *x0){
 
@@ -691,6 +1662,31 @@ void zbuduj(struktura_budowli &budowla, int x, int y, char mapa_stolicy[80][150]
 		system("CLS");
 }
 
+void zbuduj_osada(struktura_budowli_osada &budowla,int *drewno, int *kamien, int *zywnosc, 
+			int *zloto, int *max_zolnierzy, bool *menu_budowy, bool *menu_osada, int *przychod_nauka, int *x0, int xm){
+
+		*drewno=*drewno-budowla.koszt_drewno;
+		*kamien=*kamien-budowla.koszt_kamien;
+		*zywnosc=*zywnosc-budowla.koszt_zywnosc;
+		*zloto=*zloto-budowla.koszt_zloto;
+		miasto[xm].produkcja=miasto[xm].produkcja-budowla.koszt_produkcja;
+		miasto[xm].przychod_zloto=miasto[xm].przychod_zloto+budowla.zloto;
+		miasto[xm].przychod_drewno=miasto[xm].przychod_drewno+budowla.drewno;
+		miasto[xm].przychod_kamien=miasto[xm].przychod_kamien+budowla.kamien;
+		miasto[xm].przychod_zywnosc=miasto[xm].przychod_zywnosc+budowla.zywnosc;
+		miasto[xm].przychod_wiara=miasto[xm].przychod_wiara+budowla.wiara;
+		miasto[xm].przychod_produkcja=miasto[xm].przychod_produkcja+budowla.produkcja;
+		*przychod_nauka=*przychod_nauka+budowla.nauka;
+		miasto[xm].przychod_produkcja=miasto[xm].przychod_produkcja+miasto[xm].ludnosc*0.0005;
+		miasto[xm].ludnosc=miasto[xm].ludnosc+budowla.ludnosc;
+		*max_zolnierzy=*max_zolnierzy+budowla.max_zolnierzy;
+		*menu_budowy=false;
+		*menu_osada=true;
+		budowla.budowa=true;
+		*x0=0;
+		system("CLS");
+}
+
 
 void rozbuduj(struktura_budowli budowla,int *drewno, int *kamien, int *zywnosc, 
 			int *zloto, int *max_zolnierzy, bool *rozbudowa, bool *menu_stolica, int *przychod_nauka, int *x0){
@@ -707,20 +1703,35 @@ void rozbuduj(struktura_budowli budowla,int *drewno, int *kamien, int *zywnosc,
 		system("CLS");
 }
 
+void rozbuduj_osada(struktura_budowli_osada budowla,int *drewno, int *kamien, int *zywnosc, 
+			int *zloto, int *max_zolnierzy, bool *rozbudowa, bool *menu_osada, int *przychod_nauka, int *x0, int xm){
+	
+		*drewno=*drewno-budowla.koszt_drewno;
+		*kamien=*kamien-budowla.koszt_kamien;
+		*zywnosc=*zywnosc-budowla.koszt_zywnosc;
+		*zloto=*zloto-budowla.koszt_zloto;
+		miasto[xm].produkcja=miasto[xm].produkcja-budowla.koszt_produkcja;
+		*rozbudowa=false;
+		*menu_osada=true;
+
+		*x0=0;
+		system("CLS");
+}
+
 
 void rekrutowanka(int x0){
 	
 			if(bplac==true)x0=x0+2;
 			struktura_jednostek jednostka;
-			if(x0==0)jednostka=jrobotnik;
+			if(x0==0)jednostka=jrobotnik[1];
 			if(x0==1)jednostka=josadnik;
-			if(x0==2)jednostka=pikinier;
-			if(x0==3)jednostka=lucznik;
-			if(x0==4)jednostka=kusznik;
-			if(x0==5)jednostka=ciezkozbrojny;
-			if(x0==6)jednostka=lekka_jazda;
-			if(x0==7)jednostka=ciezka_jazda;
-			if(x0==8)jednostka=taran;
+			if(x0==2)jednostka=pikinier[1];
+			if(x0==3)jednostka=lucznik[1];
+			if(x0==4)jednostka=kusznik[1];
+			if(x0==5)jednostka=ciezkozbrojny[1];
+			if(x0==6)jednostka=lekka_jazda[1];
+			if(x0==7)jednostka=ciezka_jazda[1];
+			if(x0==8)jednostka=taran[1];
 			if(x0==9)jednostka=elita;
 			if(x0==10)return;
 			if(bplac==false){
@@ -761,18 +1772,69 @@ void rekrutowanka(int x0){
 
 }
 
+void rekrutowanka_osada(int x0, int xm){
+	
+			if(bplac==true)x0=x0+2;
+			struktura_jednostek jednostka;
+			if(x0==0)jednostka=jrobotnik[xm];
+			if(x0==1)jednostka=pikinier[xm];
+			if(x0==2)jednostka=lucznik[xm];
+			if(x0==3)jednostka=kusznik[xm];
+			if(x0==4)jednostka=ciezkozbrojny[xm];
+			if(x0==5)jednostka=lekka_jazda[xm];
+			if(x0==6)jednostka=ciezka_jazda[xm];
+			if(x0==7)jednostka=taran[xm];
+			if(x0==8)return;
+			if(bplac==false){
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< jednostka.koszt_drewno<<"                    ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<jednostka.koszt_kamien<<"                    ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<jednostka.koszt_zywnosc<<"                    ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< jednostka.koszt_zloto<<"                    ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<jednostka.koszt_produkcja<<"                    ";
+			gotoxy(110,18);
+			cout << "Ludnosc: "<<jednostka.wielkosc*100<<"                    ";
+			}
+			
+			gotoxy(114,19);
+			cout << "Statystyki: ";
+			gotoxy(110,20);
+			cout << "Atak "<<jednostka.atak<<"                    ";
+			gotoxy(110,21);
+			cout << "Obrona "<<jednostka.obrona<<"                    ";
+			gotoxy(110,22);
+			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
+			gotoxy(110,23);
+			cout <<"Jazda "<<jednostka.jazda<<"                    ";
+			gotoxy(110,24);
+			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			gotoxy(110,25);
+			cout << "Wielkosc "<<jednostka.wielkosc<<"                    ";
+			gotoxy(110,27);
+			cout <<"Wymagania: ";
+			gotoxy(110,28);
+			cout << jednostka.wymagania_osada<<"                                              ";
+
+}
+
 void najmowanka(int x0)
 {
 	struktura_jednostek jednostka;
-			if(x0==0)jednostka=jrobotnik;
+			if(x0==0)jednostka=jrobotnik[1];
 			if(x0==1)jednostka=josadnik;
-			if(x0==2)jednostka=pikinier;
-			if(x0==3)jednostka=lucznik;
-			if(x0==4)jednostka=kusznik;
-			if(x0==5)jednostka=ciezkozbrojny;
-			if(x0==6)jednostka=lekka_jazda;
-			if(x0==7)jednostka=ciezka_jazda;
-			if(x0==8)jednostka=taran;
+			if(x0==2)jednostka=pikinier[1];
+			if(x0==3)jednostka=lucznik[1];
+			if(x0==4)jednostka=kusznik[1];
+			if(x0==5)jednostka=ciezkozbrojny[1];
+			if(x0==6)jednostka=lekka_jazda[1];
+			if(x0==7)jednostka=ciezka_jazda[1];
+			if(x0==8)jednostka=taran[1];
 			if(x0==9)jednostka=elita;
 			if(x0==10)return;
 			if(bplac==false){
@@ -816,6 +1878,25 @@ void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnos
 		miasto[1].ludnosc=miasto[1].ludnosc-budowla.wielkosc*100;
 		*rekrutacja=false;
 		*menu_stolica=true;
+		
+			gotoxy(54,25);
+			for(int i=0;i<70;i++)cout << blok;
+			gotoxy(54,26);
+			cout << blok;
+			for(int i=0;i<68;i++)cout<< " ";
+			cout << blok;
+			gotoxy(54,28);
+			cout << blok;
+			for(int i=0;i<68;i++)cout<< " ";
+			cout << blok;
+			gotoxy(54,29);
+			for(int i=0;i<70;i++)cout << blok;
+			gotoxy(120,27);
+			cout << "   " << blok;
+			gotoxy(54,27);
+			cout <<blok<< " Zrekrutowales " <<budowla.nazwa<<"                                          ";
+			Sleep(2000);
+		
 		*x0=0;
 		system("CLS");
 }
@@ -847,16 +1928,16 @@ void najmijv(struktura_jednostek &budowla, int *wiara, bool *najmij, int *zloto,
 		system("CLS");
 }
 
-void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor_rekrutacji, char mapa_jednostek[137][201])
+void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor_rekrutacji, char mapa_jednostek[137][201], int xm)
 {
 	char ster;
 	int h=0;
-	int y2=miasto[1].y1;
-	int x2=miasto[1].x1;
+	int y2=miasto[xm].y1;
+	int x2=miasto[xm].x1;
 	do{
 		gotoxy(109,33);
-		for(int i=miasto[1].x1-1;i<=miasto[1].x1+1;i++){
-			for(int j=miasto[1].y1-1;j<=miasto[1].y1+1;j++){
+		for(int i=miasto[xm].x1-1;i<=miasto[xm].x1+1;i++){
+			for(int j=miasto[xm].y1-1;j<=miasto[xm].y1+1;j++){
 				if(mapa_jednostek[i][j]!='R' && mapa_jednostek[i][j]!='O' && mapa_jednostek[i][j]!='A' && mapa_jednostek[i][j]!='B' && mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=stolica && mapa[i][j]!=osada)SetConsoleTextAttribute( hOut, 10 );
 				if(i==x2 && j==y2)SetConsoleTextAttribute( hOut, 14 );
 				cout <<mapa[i][j];
@@ -868,10 +1949,10 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 		
 		ster=getch();
 		h=0;
-		if(ster=='w' && x2-1!=miasto[1].x1-2)x2--;
-		if(ster=='s' && x2+1!=miasto[1].x1+2)x2++;
-		if(ster=='a' && y2-1!=miasto[1].y1-2)y2--;
-		if(ster=='d' && y2+1!=miasto[1].y1+2)y2++;
+		if(ster=='w' && x2-1!=miasto[xm].x1-2)x2--;
+		if(ster=='s' && x2+1!=miasto[xm].x1+2)x2++;
+		if(ster=='a' && y2-1!=miasto[xm].y1-2)y2--;
+		if(ster=='d' && y2+1!=miasto[xm].y1+2)y2++;
 		if(ster=='q' && mapa_jednostek[x2][y2]!='R' && mapa_jednostek[x2][y2]!='O' && mapa_jednostek[x2][y2]!='A' && mapa_jednostek[x2][y2]!='B' && mapa[x2][y2]!=woda && mapa[x2][y2]!=gora && mapa[x2][y2]!=stolica && mapa[x2][y2]!=osada){
 			if(bufor_rekrutacji==0)mapa_jednostek[x2][y2]='R';
 			if(bufor_rekrutacji==1)mapa_jednostek[x2][y2]='O';
@@ -915,34 +1996,34 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 	
 }
 
-void pokaz_armie(struktura_armii armia)
+void pokaz_armie(struktura_armii armia, int xm)
 {
 	int atak_razem;
-	atak_razem=armia.pikinierzy*pikinier.atak;
-	atak_razem+=armia.lucznicy*lucznik.atak;
-	atak_razem+=armia.kusznicy*kusznik.atak;
-	atak_razem+=armia.ciezkozbrojni*ciezkozbrojny.atak;
-	atak_razem+=armia.lekka_jazda*lekka_jazda.atak;
-	atak_razem+=armia.ciezka_jazda*ciezka_jazda.atak;
-	atak_razem+=armia.tarany*taran.atak;
+	atak_razem=armia.pikinierzy*pikinier[xm].atak;
+	atak_razem+=armia.lucznicy*lucznik[xm].atak;
+	atak_razem+=armia.kusznicy*kusznik[xm].atak;
+	atak_razem+=armia.ciezkozbrojni*ciezkozbrojny[xm].atak;
+	atak_razem+=armia.lekka_jazda*lekka_jazda[xm].atak;
+	atak_razem+=armia.ciezka_jazda*ciezka_jazda[xm].atak;
+	atak_razem+=armia.tarany*taran[xm].atak;
 	atak_razem+=armia.elity*elita.atak;
 	int obrona_razem;
-	obrona_razem=armia.pikinierzy*pikinier.obrona;
-	obrona_razem+=armia.lucznicy*lucznik.obrona;
-	obrona_razem+=armia.kusznicy*kusznik.obrona;
-	obrona_razem+=armia.ciezkozbrojni*ciezkozbrojny.obrona;
-	obrona_razem+=armia.lekka_jazda*lekka_jazda.obrona;
-	obrona_razem+=armia.ciezka_jazda*ciezka_jazda.obrona;
-	obrona_razem+=armia.tarany*taran.obrona;
+	obrona_razem=armia.pikinierzy*pikinier[xm].obrona;
+	obrona_razem+=armia.lucznicy*lucznik[xm].obrona;
+	obrona_razem+=armia.kusznicy*kusznik[xm].obrona;
+	obrona_razem+=armia.ciezkozbrojni*ciezkozbrojny[xm].obrona;
+	obrona_razem+=armia.lekka_jazda*lekka_jazda[xm].obrona;
+	obrona_razem+=armia.ciezka_jazda*ciezka_jazda[xm].obrona;
+	obrona_razem+=armia.tarany*taran[xm].obrona;
 	obrona_razem+=armia.elity*elita.obrona;
 	int utrzymanie;
-	utrzymanie=armia.pikinierzy*pikinier.utrzymanie;
-	utrzymanie+=armia.lucznicy*lucznik.utrzymanie;
-	utrzymanie+=armia.kusznicy*kusznik.utrzymanie;
-	utrzymanie+=armia.ciezkozbrojni*ciezkozbrojny.utrzymanie;
-	utrzymanie+=armia.lekka_jazda*lekka_jazda.utrzymanie;
-	utrzymanie+=armia.ciezka_jazda*ciezka_jazda.utrzymanie;
-	utrzymanie+=armia.tarany*taran.utrzymanie;
+	utrzymanie=armia.pikinierzy*pikinier[xm].utrzymanie;
+	utrzymanie+=armia.lucznicy*lucznik[xm].utrzymanie;
+	utrzymanie+=armia.kusznicy*kusznik[xm].utrzymanie;
+	utrzymanie+=armia.ciezkozbrojni*ciezkozbrojny[xm].utrzymanie;
+	utrzymanie+=armia.lekka_jazda*lekka_jazda[xm].utrzymanie;
+	utrzymanie+=armia.ciezka_jazda*ciezka_jazda[xm].utrzymanie;
+	utrzymanie+=armia.tarany*taran[xm].utrzymanie;
 	utrzymanie+=armia.elity*elita.utrzymanie;
 	
 	gotoxy(110,30);
@@ -1058,7 +2139,7 @@ int xm=0;
 int h=0;
 string komunikat="Brak komunikatow moj Panie";
  
-
+for(int i=1;i<11;i++)miasto[i].podatek=100;
  
  int x=102;
  int l_robert=0;
@@ -1607,6 +2688,8 @@ for(int i=0;i<137;i++){
 		mapa_jednostek[i][j]=' ';
 	}
 }
+
+struktura_budowli_osada aktualna;
 
 wczytaj.close();
 wczytaj_miasto.close();
@@ -2367,6 +3450,7 @@ if(menu==true && x0==0 && ster=='q' && liczba_miast>1){
 	menu=false;
 	mapa_glowna=false;
 	bmapa_stolicy=true;
+	xm=1;
 	xd=x;
 	yd=y;
 	x=40;
@@ -2386,6 +3470,7 @@ if(ster=='e' && menu==true && mapa[x][y]==osada || ster=='e' && menu==true && ma
 	if(mapa[x][y]==stolica){
 	bmapa_stolicy=true;
 	x=40;
+	xm=1;
 	y=70;
 	while(mapa_stolicy[x][y]!=dom && mapa_stolicy[x][y]!=dom2 && mapa_stolicy[x][y]!=woda && mapa_stolicy[x][y]!=gora){
 		x++;
@@ -2393,6 +3478,7 @@ if(ster=='e' && menu==true && mapa[x][y]==osada || ster=='e' && menu==true && ma
 	}else{
 		miasto[miasta[x][y]].menu_osady=true;
 		xm=miasta[x][y];
+		menu_osada=true;
 	}
 	system("CLS");
 }
@@ -2753,7 +3839,7 @@ system("CLS");
 }
 
 /////////tartak////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&bufor_mjednostek[x][y]!='R' && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=tartak;
 	budowa=false;
@@ -2775,7 +3861,7 @@ if(tartakb.lvl==3)
 miasto[mapa_tartak[x][y]].przychod_drewno=miasto[mapa_tartak[x][y]].przychod_drewno+20;
 }
 ///////////////farma///////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&bufor_mjednostek[x][y]!='R' && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=farma;
 	budowa=false;
@@ -2798,7 +3884,7 @@ if(port.lvl>=2){
 }
 }
 ///////////////kopalnia///////////////
-if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' &&bufor_mjednostek[x][y]!='R' && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' &&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
 
 	mapa[x][y]=kopalnia;
 	budowa=false;
@@ -3095,7 +4181,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada && mapa[i][j]!=kopalnia && mapa[i][j]!=farma && mapa[i][j]!=tartak){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada){
 
 	mapa_jednostek[i][j]='A';
 	}
@@ -3123,7 +4209,8 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
  if(ster=='c'){
  	zloto=zloto+1000;
  	nauka=nauka+1000;
- 	miasto[1].produkcja=miasto[1].produkcja+1000;
+ 	for(int i=1;i<11;i++)
+ 	miasto[i].produkcja=miasto[i].produkcja+1000;
  	zywnosc+=1000;
  	kamien+=1000;
  	drewno+=1000;
@@ -3151,6 +4238,30 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
 
 
 while(bmapa_stolicy==true){
+	
+	przychod_zloto=0;
+	przychod_drewno=0;
+	przychod_kamien=0;
+	przychod_zywnosc=0;
+	przychod_wiara=0;
+	przychod_nauka=0;
+//	for(int i=1;i<10;i++){
+//	miasto[i].obrona+=ludnosc*0.00005; ////to bedzie szlo do next turn
+//	}
+	for(int i=1;i<10;i++)przychod_zloto=przychod_zloto+miasto[i].przychod_zloto;
+	if(waluta==true)przychod_zloto=przychod_zloto*1.25;
+	for(int i=1;i<10;i++)przychod_drewno=przychod_drewno+miasto[i].przychod_drewno;
+	for(int i=1;i<10;i++)przychod_kamien=przychod_kamien+miasto[i].przychod_kamien;
+	if(huta.lvl>=1)przychod_kamien=przychod_kamien+przychod_kamien*0.3;
+	for(int i=1;i<10;i++)przychod_zywnosc=przychod_zywnosc+miasto[i].przychod_zywnosc;
+	if(hodowla==true)przychod_zywnosc=przychod_zywnosc*1.25;
+	for(int i=1;i<10;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc-ludnosc*0.0005;
+	for(int i=1;i<10;i++)przychod_wiara=przychod_wiara+miasto[i].przychod_wiara;
+	if(ewangelizacja==true)przychod_wiara=przychod_wiara*1.25;
+	for(int i=1;i<10;i++)przychod_nauka=przychod_nauka+miasto[i].przychod_nauka;
+	if(gildie==true)przychod_nauka=przychod_nauka*1.25;
+         cls();
+	
 	if(technologie==false){
 	
          cls();
@@ -4031,7 +5142,7 @@ for(int i=0;i<28;i++)cout << blok;
 		gotoxy(50,1);
 cout << "NAZWA/ILOSC POSIADANYCH/DO ARMII                    ";
 rekrutowanka(x0);
-pokaz_armie(armia[liczba_armii+1]);
+pokaz_armie(armia[liczba_armii+1], xm);
 gotoxy(45,3);
 for(int i=0;i<28;i++)cout << blok;
 gotoxy(45,4);
@@ -4040,84 +5151,84 @@ gotoxy(45,5);
 if(x0==0){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Pikinier / "<<sjednostki[2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "; 
+cout<<"   Pikinier / "<<sjednostki[0][2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Pikinier / "<<sjednostki[2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "<<blok; 
+cout <<blok<< "   Pikinier / "<<sjednostki[0][2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "<<blok; 
 
 gotoxy(45,6);
 if(x0==1){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Lucznik / "<<sjednostki[3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        "; 
+cout<<"   Lucznik / "<<sjednostki[0][3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<<"   Lucznik / "<<sjednostki[3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        ";
+cout <<blok<<"   Lucznik / "<<sjednostki[0][3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        ";
 gotoxy(45,7);
 if(x0==2){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Kusznik / "<<sjednostki[4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "; 
+cout<<"   Kusznik / "<<sjednostki[0][4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Kusznik / "<<sjednostki[4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "<<blok; 
+cout <<blok<< "   Kusznik / "<<sjednostki[0][4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "<<blok; 
 gotoxy(45,8);
 if(x0==3){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Ciezkozbrojny / "<<sjednostki[5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "; 
+cout<<"   Ciezkozbrojny / "<<sjednostki[0][5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Ciezkozbrojny / "<<sjednostki[5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "<<blok; 
+cout <<blok<< "   Ciezkozbrojny / "<<sjednostki[0][5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "<<blok; 
 
 gotoxy(45,9);
 if(x0==4){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Lekka Jazda / "<<sjednostki[6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "; 
+cout<<"   Lekka Jazda / "<<sjednostki[0][6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Lekka Jazda / "<<sjednostki[6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "<<blok; 
+cout <<blok<< "   Lekka Jazda / "<<sjednostki[0][6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "<<blok; 
 gotoxy(45,10);
 if(x0==5){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Ciezka Jazda / "<<sjednostki[7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "; 
+cout<<"   Ciezka Jazda / "<<sjednostki[0][7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Ciezka Jazda / "<<sjednostki[7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "<<blok;
+cout <<blok<< "   Ciezka Jazda / "<<sjednostki[0][7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "<<blok;
 gotoxy(45,11);
 if(x0==6){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Taran / "<<sjednostki[8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "; 
+cout<<"   Taran / "<<sjednostki[0][8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Taran / "<<sjednostki[8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "<<blok;
+cout <<blok<< "   Taran / "<<sjednostki[0][8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "<<blok;
 gotoxy(45,12);
 if(x0==7){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Elita / "<<sjednostki[9].ilosc<<" / "<<armia[liczba_armii+1].elity<<"          "; 
+cout<<"   Elita / "<<sjednostki[0][9].ilosc<<" / "<<armia[liczba_armii+1].elity<<"          "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
-cout <<blok<< "   Elita / "<<sjednostki[9].ilosc<<" / "<<armia[liczba_armii+1].elity<<"          "<<blok; 
+cout <<blok<< "   Elita / "<<sjednostki[0][9].ilosc<<" / "<<armia[liczba_armii+1].elity<<"          "<<blok; 
 gotoxy(45,13);
 if(x0==8){
 cout << blok;
@@ -4442,37 +5553,37 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			menu_stolica=true;
 			bplac=false;
 			x0=0;
-			sjednostki[2].ilosc=sjednostki[2].ilosc+armia[liczba_armii+1].pikinierzy;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].pikinierzy*pikinier.wielkosc;
+			sjednostki[0][2].ilosc=sjednostki[0][2].ilosc+armia[liczba_armii+1].pikinierzy;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].pikinierzy*pikinier[xm].wielkosc;
 			armia[liczba_armii+1].pikinierzy=0;
-			sjednostki[3].ilosc=sjednostki[3].ilosc+armia[liczba_armii+1].lucznicy;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].lucznicy*lucznik.wielkosc;
+			sjednostki[0][3].ilosc=sjednostki[0][3].ilosc+armia[liczba_armii+1].lucznicy;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].lucznicy*lucznik[xm].wielkosc;
 			armia[liczba_armii+1].lucznicy=0;
-			sjednostki[4].ilosc=sjednostki[4].ilosc+armia[liczba_armii+1].kusznicy;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].kusznicy*kusznik.wielkosc;
+			sjednostki[0][4].ilosc=sjednostki[0][4].ilosc+armia[liczba_armii+1].kusznicy;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].kusznicy*kusznik[xm].wielkosc;
 			armia[liczba_armii+1].kusznicy=0;
-			sjednostki[5].ilosc=sjednostki[5].ilosc+armia[liczba_armii+1].ciezkozbrojni;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].ciezkozbrojni*ciezkozbrojny.wielkosc;
+			sjednostki[0][5].ilosc=sjednostki[0][5].ilosc+armia[liczba_armii+1].ciezkozbrojni;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].ciezkozbrojni*ciezkozbrojny[xm].wielkosc;
 			armia[liczba_armii+1].ciezkozbrojni=0;
-			sjednostki[6].ilosc=sjednostki[6].ilosc+armia[liczba_armii+1].lekka_jazda;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].lekka_jazda*lekka_jazda.wielkosc;
+			sjednostki[0][6].ilosc=sjednostki[0][6].ilosc+armia[liczba_armii+1].lekka_jazda;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].lekka_jazda*lekka_jazda[xm].wielkosc;
 			armia[liczba_armii+1].lekka_jazda=0;
-			sjednostki[7].ilosc=sjednostki[7].ilosc+armia[liczba_armii+1].ciezka_jazda;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].ciezka_jazda*ciezka_jazda.wielkosc;
+			sjednostki[0][7].ilosc=sjednostki[0][7].ilosc+armia[liczba_armii+1].ciezka_jazda;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].ciezka_jazda*ciezka_jazda[xm].wielkosc;
 			armia[liczba_armii+1].ciezka_jazda=0;
-			sjednostki[8].ilosc=sjednostki[8].ilosc+armia[liczba_armii+1].tarany;
-			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].tarany*taran.wielkosc;
+			sjednostki[0][8].ilosc=sjednostki[0][8].ilosc+armia[liczba_armii+1].tarany;
+			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].tarany*taran[xm].wielkosc;
 			armia[liczba_armii+1].tarany=0;
-			sjednostki[9].ilosc=sjednostki[9].ilosc+armia[liczba_armii+1].elity;
+			sjednostki[0][9].ilosc=sjednostki[0][9].ilosc+armia[liczba_armii+1].elity;
 			liczba_zolnierzy=liczba_zolnierzy-armia[liczba_armii+1].elity*elita.wielkosc;
 			armia[liczba_armii+1].elity=0;
-			armia[liczba_armii+1].wielkosc-=pikinier.wielkosc;
-			armia[liczba_armii+1].wielkosc-=lucznik.wielkosc;
-			armia[liczba_armii+1].wielkosc-=kusznik.wielkosc;
-			armia[liczba_armii+1].wielkosc-=ciezkozbrojny.wielkosc;
-			armia[liczba_armii+1].wielkosc-=lekka_jazda.wielkosc;
-			armia[liczba_armii+1].wielkosc-=ciezka_jazda.wielkosc;
-			armia[liczba_armii+1].wielkosc-=taran.wielkosc;
+			armia[liczba_armii+1].wielkosc-=pikinier[xm].wielkosc;
+			armia[liczba_armii+1].wielkosc-=lucznik[xm].wielkosc;
+			armia[liczba_armii+1].wielkosc-=kusznik[xm].wielkosc;
+			armia[liczba_armii+1].wielkosc-=ciezkozbrojny[xm].wielkosc;
+			armia[liczba_armii+1].wielkosc-=lekka_jazda[xm].wielkosc;
+			armia[liczba_armii+1].wielkosc-=ciezka_jazda[xm].wielkosc;
+			armia[liczba_armii+1].wielkosc-=taran[xm].wielkosc;
 			armia[liczba_armii+1].wielkosc-=elita.wielkosc;
 			
 			system("CLS");
@@ -4508,7 +5619,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
 			josadnik.koszt_produkcja-=50;
-			jrobotnik.koszt_produkcja-=25;
+			jrobotnik[xm].koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
 		if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==2 && kapitol.lvl>=2 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
@@ -4516,7 +5627,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
 			josadnik.koszt_produkcja-=50;
-			jrobotnik.koszt_produkcja-=25;
+			jrobotnik[xm].koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
 				if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==3 && kapitol.lvl>=3 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
@@ -4524,7 +5635,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
 			josadnik.koszt_produkcja-=50;
-			jrobotnik.koszt_produkcja-=25;
+			jrobotnik[xm].koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
 				if(ster=='q' && x0==0 && rozbudowa==true && ratusz.lvl==4 && kapitol.lvl>=4 && drewno>=ratusz.koszt_drewno && kamien>=ratusz.koszt_kamien && zywnosc>=ratusz.koszt_zywnosc && zloto>=ratusz.koszt_zloto && miasto[1].produkcja>=ratusz.koszt_produkcja){
@@ -4532,7 +5643,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(ratusz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(ratusz);
 			josadnik.koszt_produkcja-=50;
-			jrobotnik.koszt_produkcja-=25;
+			jrobotnik[xm].koszt_produkcja-=25;
 			zwieksz_przychod(ratusz,&przychod_nauka,&max_zolnierzy);
 		}
 		//////////////////
@@ -4592,14 +5703,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			mieszkalna.lvl=1;
 			zwieksz_koszt(mieszkalna);
 		}	
-		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna.lvl==1&&ratusz.lvl==2 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna.lvl==1&&ratusz.lvl>=2 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
 		
 			mieszkalna.lvl++;
 			rozbuduj(mieszkalna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(mieszkalna);
 			zwieksz_przychod(mieszkalna,&przychod_nauka,&max_zolnierzy);
 		}
-		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna.lvl==2&&ratusz.lvl==3 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
+		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna.lvl==2&&ratusz.lvl>=3 && drewno>=mieszkalna.koszt_drewno && kamien>=mieszkalna.koszt_kamien && zywnosc>=mieszkalna.koszt_zywnosc && zloto>=mieszkalna.koszt_zloto && miasto[1].produkcja>=mieszkalna.koszt_produkcja){
 		
 			mieszkalna.lvl++;
 			rozbuduj(mieszkalna,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
@@ -4970,14 +6081,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(koszary,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(koszary);
 			zwieksz_przychod(koszary,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_produkcja=pikinier.koszt_produkcja-25;
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
     	}	
 		if(ster=='q' && rozbudowa==true && x0==12&& koszary.lvl==2 && ratusz.lvl>=4 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
 			koszary.lvl++;
 			rozbuduj(koszary,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(koszary);
 			zwieksz_przychod(koszary,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_produkcja=pikinier.koszt_produkcja-25;
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
 			
     	}
     	if(ster=='q' && rozbudowa==true && x0==12&& koszary.lvl==3 && ratusz.lvl>=5 && drewno>=koszary.koszt_drewno && kamien>=koszary.koszt_kamien && zywnosc>=koszary.koszt_zywnosc && zloto>=koszary.koszt_zloto && miasto[1].produkcja>=koszary.koszt_produkcja){
@@ -4985,7 +6096,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(koszary,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(koszary);
 			zwieksz_przychod(koszary,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_produkcja=pikinier.koszt_produkcja-25;
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
 			
     	}
 			//////////////////
@@ -5017,7 +6128,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(huta,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(huta);
 			zwieksz_przychod(huta,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_produkcja=pikinier.koszt_produkcja-25;
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
 			
     	}	//////////////////
 				if(ster=='q' && x0==14 && menu_budowy==true && oboz.lvl==0){
@@ -5040,12 +6151,12 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		zbuduj(oboz, x,  y, mapa_stolicy, bufor_miasta, &drewno, &kamien, &zywnosc, 
 			&zloto, &max_zolnierzy, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka, &x0);
 			oboz.lvl=1;
-			pikinier.koszt_zloto=pikinier.koszt_zloto-50;
-			lucznik.koszt_zloto=lucznik.koszt_zloto-50;
-			kusznik.koszt_zloto=kusznik.koszt_zloto-50;	
-			lekka_jazda.koszt_zloto=lekka_jazda.koszt_zloto-50;
-			ciezka_jazda.koszt_zloto=ciezka_jazda.koszt_zloto-50;
-			ciezkozbrojny.koszt_zloto=ciezkozbrojny.koszt_zloto-50;
+			pikinier[xm].koszt_zloto=pikinier[xm].koszt_zloto-50;
+			lucznik[xm].koszt_zloto=lucznik[xm].koszt_zloto-50;
+			kusznik[xm].koszt_zloto=kusznik[xm].koszt_zloto-50;	
+			lekka_jazda[xm].koszt_zloto=lekka_jazda[xm].koszt_zloto-50;
+			ciezka_jazda[xm].koszt_zloto=ciezka_jazda[xm].koszt_zloto-50;
+			ciezkozbrojny[xm].koszt_zloto=ciezkozbrojny[xm].koszt_zloto-50;
 			zwieksz_koszt(oboz);
 		}	
 		if(ster=='q' && rozbudowa==true&& x0==14&& oboz.lvl==1 && ratusz.lvl>=4 && drewno>=oboz.koszt_drewno && kamien>=oboz.koszt_kamien && zywnosc>=oboz.koszt_zywnosc && zloto>=oboz.koszt_zloto && miasto[1].produkcja>=oboz.koszt_produkcja){
@@ -5053,12 +6164,12 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(oboz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(oboz);
 			zwieksz_przychod(oboz,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_zloto=pikinier.koszt_zloto-25;
-			lucznik.koszt_zloto=lucznik.koszt_zloto-25;
-			kusznik.koszt_zloto=kusznik.koszt_zloto-25;	
-			lekka_jazda.koszt_zloto=lekka_jazda.koszt_zloto-25;
-			ciezka_jazda.koszt_zloto=ciezka_jazda.koszt_zloto-25;
-			ciezkozbrojny.koszt_zloto=ciezkozbrojny.koszt_zloto-25;
+			pikinier[xm].koszt_zloto=pikinier[xm].koszt_zloto-25;
+			lucznik[xm].koszt_zloto=lucznik[xm].koszt_zloto-25;
+			kusznik[xm].koszt_zloto=kusznik[xm].koszt_zloto-25;	
+			lekka_jazda[xm].koszt_zloto=lekka_jazda[xm].koszt_zloto-25;
+			ciezka_jazda[xm].koszt_zloto=ciezka_jazda[xm].koszt_zloto-25;
+			ciezkozbrojny[xm].koszt_zloto=ciezkozbrojny[xm].koszt_zloto-25;
 			
     	}
 		if(ster=='q' && rozbudowa==true&& x0==14&& oboz.lvl==2 && ratusz.lvl>=5 && drewno>=oboz.koszt_drewno && kamien>=oboz.koszt_kamien && zywnosc>=oboz.koszt_zywnosc && zloto>=oboz.koszt_zloto && miasto[1].produkcja>=oboz.koszt_produkcja){
@@ -5066,12 +6177,12 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(oboz,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(oboz);
 			zwieksz_przychod(oboz,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_zloto=pikinier.koszt_zloto-25;
-			lucznik.koszt_zloto=lucznik.koszt_zloto-25;
-			kusznik.koszt_zloto=kusznik.koszt_zloto-25;	
-			lekka_jazda.koszt_zloto=lekka_jazda.koszt_zloto-25;
-			ciezka_jazda.koszt_zloto=ciezka_jazda.koszt_zloto-25;
-			ciezkozbrojny.koszt_zloto=ciezkozbrojny.koszt_zloto-25;
+			pikinier[xm].koszt_zloto=pikinier[xm].koszt_zloto-25;
+			lucznik[xm].koszt_zloto=lucznik[xm].koszt_zloto-25;
+			kusznik[xm].koszt_zloto=kusznik[xm].koszt_zloto-25;	
+			lekka_jazda[xm].koszt_zloto=lekka_jazda[xm].koszt_zloto-25;
+			ciezka_jazda[xm].koszt_zloto=ciezka_jazda[xm].koszt_zloto-25;
+			ciezkozbrojny[xm].koszt_zloto=ciezkozbrojny[xm].koszt_zloto-25;
 			
     	}	//////////////////
 				if(ster=='q' && x0==15 && menu_budowy==true && bank.lvl==0){
@@ -5398,14 +6509,14 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			droga.lvl++;
 			rozbuduj(droga,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_przychod(droga,&przychod_nauka,&max_zolnierzy);
-			pikinier.koszt_produkcja-=25;
-			lucznik.koszt_produkcja-=25;
-			kusznik.koszt_produkcja-=25;
-			ciezkozbrojny.koszt_produkcja-=25;
-			lekka_jazda.koszt_produkcja-=25;
-			ciezka_jazda.koszt_produkcja-=25;
+			pikinier[xm].koszt_produkcja-=25;
+			lucznik[xm].koszt_produkcja-=25;
+			kusznik[xm].koszt_produkcja-=25;
+			ciezkozbrojny[xm].koszt_produkcja-=25;
+			lekka_jazda[xm].koszt_produkcja-=25;
+			ciezka_jazda[xm].koszt_produkcja-=25;
 			elita.koszt_produkcja-=25;
-			taran.koszt_produkcja-=25;
+			taran[xm].koszt_produkcja-=25;
     	}	//////////////////
 				if(ster=='q' && x0==24 && menu_budowy==true && tawerna.lvl==0){
 							budowlanka(tawerna,x,y,mapa_stolicy,bufor_miasta,&bufor_budowa_miasto,x0,ksztalt);
@@ -5863,16 +6974,16 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		zbuduj(warsztat, x,  y, mapa_stolicy, bufor_miasta, &drewno, &kamien, &zywnosc, 
 			&zloto, &max_zolnierzy, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka, &x0);
 			warsztat.lvl=1;
-			kusznik.koszt_produkcja=kusznik.koszt_produkcja-50;
+			kusznik[xm].koszt_produkcja=kusznik[xm].koszt_produkcja-50;
 			zwieksz_koszt(warsztat);
-			kusznik.koszt_produkcja-=50;
+			kusznik[xm].koszt_produkcja-=50;
 		}
 		if(ster=='q' && rozbudowa==true && x0==36&& warsztat.lvl==1 &&ratusz.lvl>=4 && mechanika==true && drewno>=warsztat.koszt_drewno && kamien>=warsztat.koszt_kamien && zywnosc>=warsztat.koszt_zywnosc && zloto>=warsztat.koszt_zloto && miasto[1].produkcja>=warsztat.koszt_produkcja){
 			warsztat.lvl++;
 			rozbuduj(warsztat,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(warsztat);
 			zwieksz_przychod(warsztat,&przychod_nauka,&max_zolnierzy);
-			kusznik.koszt_produkcja-=50;
+			kusznik[xm].koszt_produkcja-=50;
     	}
 				//////////////////
 				if(ster=='q' && x0==37 && menu_budowy==true && stajnia.lvl==0){
@@ -5902,24 +7013,24 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			rozbuduj(stajnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(stajnia);
 			zwieksz_przychod(stajnia,&przychod_nauka,&max_zolnierzy);
-			lekka_jazda.koszt_produkcja-=50;
-			ciezka_jazda.koszt_produkcja-=50;
+			lekka_jazda[xm].koszt_produkcja-=50;
+			ciezka_jazda[xm].koszt_produkcja-=50;
     	}
     	if(ster=='q' && rozbudowa==true&& x0==37&& stajnia.lvl==2 && ratusz.lvl>=4 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
 			stajnia.lvl++;
 			rozbuduj(stajnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(stajnia);
 			zwieksz_przychod(stajnia,&przychod_nauka,&max_zolnierzy);
-			lekka_jazda.koszt_produkcja-=50;
-			ciezka_jazda.koszt_produkcja-=50;
+			lekka_jazda[xm].koszt_produkcja-=50;
+			ciezka_jazda[xm].koszt_produkcja-=50;
     	}
     	if(ster=='q' && rozbudowa==true&& x0==37&& stajnia.lvl==3 && ratusz.lvl>=5 && drewno>=stajnia.koszt_drewno && kamien>=stajnia.koszt_kamien && zywnosc>=stajnia.koszt_zywnosc && zloto>=stajnia.koszt_zloto && miasto[1].produkcja>=stajnia.koszt_produkcja){
 			stajnia.lvl++;
 			rozbuduj(stajnia,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_stolica,&przychod_nauka,&x0);
 			zwieksz_koszt(stajnia);
 			zwieksz_przychod(stajnia,&przychod_nauka,&max_zolnierzy);
-			lekka_jazda.koszt_produkcja-=50;
-			ciezka_jazda.koszt_produkcja-=50;
+			lekka_jazda[xm].koszt_produkcja-=50;
+			ciezka_jazda[xm].koszt_produkcja-=50;
     	}
 				//////////////////
 				if(ster=='q' && x0==38 && menu_budowy==true && ratusz.lvl>=1){
@@ -6348,10 +7459,11 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			gotoxy(0,0);
 			menu_stolica=true;
 			technologie=false;
-			continue;
+			gotoxy(0,0);
 			system("CLS");
-			cls();
 			x0=0;
+			continue;
+
 		}
 		
 		if(ster=='q' && x0==1 && nauka>=350 && lowiectwo==false)odkryj(&lowiectwo,350,&nauka);
@@ -6361,8 +7473,8 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 		if(ster=='q' && x0==5 && nauka>=450 && gildie==false)odkryj(&mechanika,450,&nauka);
 		if(ster=='q' && x0==6 && nauka>=450 && hutnictwo==false){
 		odkryj(&hutnictwo,450,&nauka);
-		pikinier.atak++;
-		ciezkozbrojny.atak++;
+		pikinier[xm].atak++;
+		ciezkozbrojny[xm].atak++;
 		elita.atak++;	
 		};
 		if(ster=='q' && x0==7 && nauka>=450 && waluta==false)odkryj(&waluta,450,&nauka);
@@ -6381,13 +7493,13 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 	
 	if(rekrutacja==true){
 		
-		if(ster=='q' && x0==0 && drewno>=jrobotnik.koszt_drewno && miasto[1].ludnosc>=jrobotnik.wielkosc*100 && zloto>=jrobotnik.koszt_zloto && zywnosc>=jrobotnik.koszt_zywnosc && kamien>=jrobotnik.koszt_kamien && miasto[1].produkcja>=jrobotnik.koszt_produkcja){
+		if(ster=='q' && x0==0 && drewno>=jrobotnik[xm].koszt_drewno && miasto[1].ludnosc>=jrobotnik[xm].wielkosc*100 && zloto>=jrobotnik[xm].koszt_zloto && zywnosc>=jrobotnik[xm].koszt_zywnosc && kamien>=jrobotnik[xm].koszt_kamien && miasto[1].produkcja>=jrobotnik[xm].koszt_produkcja){
 			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
 			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
-				wystaw_armie(jrobotnik,mapa,0, mapa_jednostek);
-				rekrutuj(jrobotnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				wystaw_armie(jrobotnik[xm],mapa,0, mapa_jednostek, 1);
+				rekrutuj(jrobotnik[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
 			}
 		}
 		if(ster=='q' && x0==1 && drewno>=josadnik.koszt_drewno&& miasto[1].ludnosc>=josadnik.wielkosc*100 && zloto>=josadnik.koszt_zloto && zywnosc>=josadnik.koszt_zywnosc && kamien>=josadnik.koszt_kamien && miasto[1].produkcja>=josadnik.koszt_produkcja){
@@ -6395,150 +7507,150 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
 			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
-				wystaw_armie(josadnik,mapa,1, mapa_jednostek);
+				wystaw_armie(josadnik,mapa,1, mapa_jednostek, 1);
 				rekrutuj(josadnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
 			}
 		}
-		if(ster=='q' && x0==2 && drewno>=pikinier.koszt_drewno&& miasto[1].ludnosc>=pikinier.wielkosc*100 && zloto>=pikinier.koszt_zloto && zywnosc>=pikinier.koszt_zywnosc && sjednostki[2].ilosc<9 && kamien>=pikinier.koszt_kamien && miasto[1].produkcja>=pikinier.koszt_produkcja && koszary.lvl>=1){
-				rekrutuj(pikinier,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[2].ilosc++;
+		if(ster=='q' && x0==2 && drewno>=pikinier[xm].koszt_drewno&& miasto[1].ludnosc>=pikinier[xm].wielkosc*100 && zloto>=pikinier[xm].koszt_zloto && zywnosc>=pikinier[xm].koszt_zywnosc && sjednostki[0][2].ilosc<9 && kamien>=pikinier[xm].koszt_kamien && miasto[1].produkcja>=pikinier[xm].koszt_produkcja && koszary.lvl>=1){
+				rekrutuj(pikinier[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][2].ilosc++;
 		}
-		if(ster=='q' && x0==3 && drewno>=lucznik.koszt_drewno&& miasto[1].ludnosc>=lucznik.wielkosc*100 && zloto>=lucznik.koszt_zloto && zywnosc>=lucznik.koszt_zywnosc&& sjednostki[3].ilosc<9 && kamien>=lucznik.koszt_kamien && miasto[1].produkcja>=lucznik.koszt_produkcja && koszary.lvl>=2 && lowiectwo==true){
-				rekrutuj(lucznik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[3].ilosc++;
+		if(ster=='q' && x0==3 && drewno>=lucznik[xm].koszt_drewno&& miasto[1].ludnosc>=lucznik[xm].wielkosc*100 && zloto>=lucznik[xm].koszt_zloto && zywnosc>=lucznik[xm].koszt_zywnosc&& sjednostki[0][3].ilosc<9 && kamien>=lucznik[xm].koszt_kamien && miasto[1].produkcja>=lucznik[xm].koszt_produkcja && koszary.lvl>=2 && lowiectwo==true){
+				rekrutuj(lucznik[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][3].ilosc++;
 		}
-		if(ster=='q' && x0==4 && drewno>=kusznik.koszt_drewno&& miasto[1].ludnosc>=kusznik.wielkosc*100 && zloto>=kusznik.koszt_zloto && zywnosc>=kusznik.koszt_zywnosc&& sjednostki[4].ilosc<9 && kamien>=kusznik.koszt_kamien && miasto[1].produkcja>=kusznik.koszt_produkcja && koszary.lvl>=3 && lowiectwo==true && obrobka_zelaza==true){
-				rekrutuj(kusznik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[4].ilosc++;
+		if(ster=='q' && x0==4 && drewno>=kusznik[xm].koszt_drewno&& miasto[1].ludnosc>=kusznik[xm].wielkosc*100 && zloto>=kusznik[xm].koszt_zloto && zywnosc>=kusznik[xm].koszt_zywnosc&& sjednostki[0][4].ilosc<9 && kamien>=kusznik[xm].koszt_kamien && miasto[1].produkcja>=kusznik[xm].koszt_produkcja && koszary.lvl>=3 && lowiectwo==true && obrobka_zelaza==true){
+				rekrutuj(kusznik[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][4].ilosc++;
 		}
-		if(ster=='q' && x0==5 && drewno>=ciezkozbrojny.koszt_drewno&& miasto[1].ludnosc>=ciezkozbrojny.wielkosc*100 && zloto>=ciezkozbrojny.koszt_zloto && zywnosc>=ciezkozbrojny.koszt_zywnosc&& sjednostki[5].ilosc<9 && kamien>=ciezkozbrojny.koszt_kamien && miasto[1].produkcja>=ciezkozbrojny.koszt_produkcja && koszary.lvl>=4 && obrobka_zelaza==true){
-				rekrutuj(ciezkozbrojny,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[5].ilosc++;
+		if(ster=='q' && x0==5 && drewno>=ciezkozbrojny[xm].koszt_drewno&& miasto[1].ludnosc>=ciezkozbrojny[xm].wielkosc*100 && zloto>=ciezkozbrojny[xm].koszt_zloto && zywnosc>=ciezkozbrojny[xm].koszt_zywnosc&& sjednostki[0][5].ilosc<9 && kamien>=ciezkozbrojny[xm].koszt_kamien && miasto[1].produkcja>=ciezkozbrojny[xm].koszt_produkcja && koszary.lvl>=4 && obrobka_zelaza==true){
+				rekrutuj(ciezkozbrojny[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][5].ilosc++;
 		}
-		if(ster=='q' && x0==6 && drewno>=lekka_jazda.koszt_drewno&& miasto[1].ludnosc>=lekka_jazda.wielkosc*100 && zloto>=lekka_jazda.koszt_zloto && zywnosc>=lekka_jazda.koszt_zywnosc&& sjednostki[6].ilosc<9 && kamien>=lekka_jazda.koszt_kamien && miasto[1].produkcja>=lekka_jazda.koszt_produkcja && stajnia.lvl>=1){
-				rekrutuj(lekka_jazda,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[6].ilosc++;
+		if(ster=='q' && x0==6 && drewno>=lekka_jazda[xm].koszt_drewno&& miasto[1].ludnosc>=lekka_jazda[xm].wielkosc*100 && zloto>=lekka_jazda[xm].koszt_zloto && zywnosc>=lekka_jazda[xm].koszt_zywnosc&& sjednostki[0][6].ilosc<9 && kamien>=lekka_jazda[xm].koszt_kamien && miasto[1].produkcja>=lekka_jazda[xm].koszt_produkcja && stajnia.lvl>=1){
+				rekrutuj(lekka_jazda[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][6].ilosc++;
 		}
-		if(ster=='q' && x0==7 && drewno>=ciezka_jazda.koszt_drewno&& miasto[1].ludnosc>=ciezka_jazda.wielkosc*100 && zloto>=ciezka_jazda.koszt_zloto && zywnosc>=ciezka_jazda.koszt_zywnosc&& sjednostki[7].ilosc<9 && kamien>=ciezka_jazda.koszt_kamien && miasto[1].produkcja>=ciezka_jazda.koszt_produkcja && stajnia.lvl>=3 && obrobka_stali==true){
-				rekrutuj(ciezka_jazda,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[7].ilosc++;
+		if(ster=='q' && x0==7 && drewno>=ciezka_jazda[xm].koszt_drewno&& miasto[1].ludnosc>=ciezka_jazda[xm].wielkosc*100 && zloto>=ciezka_jazda[xm].koszt_zloto && zywnosc>=ciezka_jazda[xm].koszt_zywnosc&& sjednostki[0][7].ilosc<9 && kamien>=ciezka_jazda[xm].koszt_kamien && miasto[1].produkcja>=ciezka_jazda[xm].koszt_produkcja && stajnia.lvl>=3 && obrobka_stali==true){
+				rekrutuj(ciezka_jazda[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][7].ilosc++;
 		}
-		if(ster=='q' && x0==8 && drewno>=taran.koszt_drewno&& miasto[1].ludnosc>=taran.wielkosc*100 && zloto>=taran.koszt_zloto && zywnosc>=taran.koszt_zywnosc && kamien>=taran.koszt_kamien&& sjednostki[8].ilosc<9 && miasto[1].produkcja>=taran.koszt_produkcja && warsztat.lvl>=2){
-				rekrutuj(taran,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[8].ilosc++;
+		if(ster=='q' && x0==8 && drewno>=taran[xm].koszt_drewno&& miasto[1].ludnosc>=taran[xm].wielkosc*100 && zloto>=taran[xm].koszt_zloto && zywnosc>=taran[xm].koszt_zywnosc && kamien>=taran[xm].koszt_kamien&& sjednostki[0][8].ilosc<9 && miasto[1].produkcja>=taran[xm].koszt_produkcja && warsztat.lvl>=2){
+				rekrutuj(taran[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[0][8].ilosc++;
 		}
-		if(ster=='q' && x0==9 && drewno>=elita.koszt_drewno && miasto[1].ludnosc>=elita.wielkosc*100&& zloto>=elita.koszt_zloto && zywnosc>=elita.koszt_zywnosc && kamien>=elita.koszt_kamien&& sjednostki[9].ilosc<9 && miasto[1].produkcja>=elita.koszt_produkcja && akademia.lvl>=1 && obrobka_stali==true){
+		if(ster=='q' && x0==9 && drewno>=elita.koszt_drewno && miasto[1].ludnosc>=elita.wielkosc*100&& zloto>=elita.koszt_zloto && zywnosc>=elita.koszt_zywnosc && kamien>=elita.koszt_kamien&& sjednostki[0][9].ilosc<9 && miasto[1].produkcja>=elita.koszt_produkcja && akademia.lvl>=1 && obrobka_stali==true){
 				rekrutuj(elita,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
-				sjednostki[9].ilosc++;
+				sjednostki[0][9].ilosc++;
 		}
 		
 	}
 	
 	if(bplac==true){
 		
-		if(ster==KEY_RIGHT && sjednostki[x0+2].ilosc>0 && liczba_zolnierzy+sjednostki[x0+2].wielkosc<=max_zolnierzy){
+		if(ster==KEY_RIGHT && sjednostki[0][x0+2].ilosc>0 && liczba_zolnierzy+sjednostki[0][x0+2].wielkosc<=max_zolnierzy){
 			if(x0==0){
 			armia[liczba_armii+1].pikinierzy++;
-			armia[liczba_armii+1].wielkosc+=pikinier.wielkosc;
-			sjednostki[2].ilosc--;
-			liczba_zolnierzy+=pikinier.wielkosc;
+			armia[liczba_armii+1].wielkosc+=pikinier[xm].wielkosc;
+			sjednostki[0][2].ilosc--;
+			liczba_zolnierzy+=pikinier[xm].wielkosc;
 			}
 			if(x0==1){
 			armia[liczba_armii+1].lucznicy++;
-			armia[liczba_armii+1].wielkosc+=lucznik.wielkosc;
-			sjednostki[3].ilosc--;
-			liczba_zolnierzy+=lucznik.wielkosc;
+			armia[liczba_armii+1].wielkosc+=lucznik[xm].wielkosc;
+			sjednostki[0][3].ilosc--;
+			liczba_zolnierzy+=lucznik[xm].wielkosc;
 			}
 			if(x0==2){
 			armia[liczba_armii+1].kusznicy++;
-			armia[liczba_armii+1].wielkosc+=kusznik.wielkosc;
-			sjednostki[4].ilosc--;
-			liczba_zolnierzy+=kusznik.wielkosc;
+			armia[liczba_armii+1].wielkosc+=kusznik[xm].wielkosc;
+			sjednostki[0][4].ilosc--;
+			liczba_zolnierzy+=kusznik[xm].wielkosc;
 			}
 			if(x0==3){
 			armia[liczba_armii+1].ciezkozbrojni++;
-			armia[liczba_armii+1].wielkosc+=ciezkozbrojny.wielkosc;
-			sjednostki[5].ilosc--;
-			liczba_zolnierzy+=ciezkozbrojny.wielkosc;
+			armia[liczba_armii+1].wielkosc+=ciezkozbrojny[xm].wielkosc;
+			sjednostki[0][5].ilosc--;
+			liczba_zolnierzy+=ciezkozbrojny[xm].wielkosc;
 			}
 			if(x0==4){
 			armia[liczba_armii+1].lekka_jazda++;
-			armia[liczba_armii+1].wielkosc+=lekka_jazda.wielkosc;
-			sjednostki[6].ilosc--;
-			liczba_zolnierzy+=lekka_jazda.wielkosc;
+			armia[liczba_armii+1].wielkosc+=lekka_jazda[xm].wielkosc;
+			sjednostki[0][6].ilosc--;
+			liczba_zolnierzy+=lekka_jazda[xm].wielkosc;
 			}
 			if(x0==5){
 			armia[liczba_armii+1].ciezka_jazda++;
-			armia[liczba_armii+1].wielkosc+=ciezka_jazda.wielkosc;
-			sjednostki[7].ilosc--;
-			liczba_zolnierzy+=ciezka_jazda.wielkosc;
+			armia[liczba_armii+1].wielkosc+=ciezka_jazda[xm].wielkosc;
+			sjednostki[0][7].ilosc--;
+			liczba_zolnierzy+=ciezka_jazda[xm].wielkosc;
 			}
 			if(x0==6){
 			armia[liczba_armii+1].tarany++;
-			armia[liczba_armii+1].wielkosc+=taran.wielkosc;
-			sjednostki[8].ilosc--;
-			liczba_zolnierzy+=taran.wielkosc;
+			armia[liczba_armii+1].wielkosc+=taran[xm].wielkosc;
+			sjednostki[0][8].ilosc--;
+			liczba_zolnierzy+=taran[xm].wielkosc;
 			}
 			if(x0==7){
 			armia[liczba_armii+1].elity++;
 			armia[liczba_armii+1].wielkosc+=elita.wielkosc;
-			sjednostki[9].ilosc--;
+			sjednostki[0][9].ilosc--;
 			liczba_zolnierzy+=elita.wielkosc;
 			}	
 		}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].pikinierzy>0 && x0==0){
 			armia[liczba_armii+1].pikinierzy--;
-			armia[liczba_armii+1].wielkosc-=pikinier.wielkosc;
-			sjednostki[2].ilosc++;
-			liczba_zolnierzy-=pikinier.wielkosc;
+			armia[liczba_armii+1].wielkosc-=pikinier[xm].wielkosc;
+			sjednostki[0][2].ilosc++;
+			liczba_zolnierzy-=pikinier[xm].wielkosc;
 		}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].lucznicy>0 && x0==1){
 			armia[liczba_armii+1].lucznicy--;
-			armia[liczba_armii+1].wielkosc-=lucznik.wielkosc;
-			sjednostki[3].ilosc++;
-			liczba_zolnierzy-=lucznik.wielkosc;
+			armia[liczba_armii+1].wielkosc-=lucznik[xm].wielkosc;
+			sjednostki[0][3].ilosc++;
+			liczba_zolnierzy-=lucznik[xm].wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].kusznicy>0 && x0==2){
 			armia[liczba_armii+1].kusznicy--;
-			armia[liczba_armii+1].wielkosc-=kusznik.wielkosc;
-			sjednostki[4].ilosc++;
-			liczba_zolnierzy-=kusznik.wielkosc;
+			armia[liczba_armii+1].wielkosc-=kusznik[xm].wielkosc;
+			sjednostki[0][4].ilosc++;
+			liczba_zolnierzy-=kusznik[xm].wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezkozbrojni>0 && x0==3){
 			armia[liczba_armii+1].ciezkozbrojni--;
-			armia[liczba_armii+1].wielkosc-=ciezkozbrojny.wielkosc;
-			sjednostki[5].ilosc++;
-			liczba_zolnierzy-=ciezkozbrojny.wielkosc;
+			armia[liczba_armii+1].wielkosc-=ciezkozbrojny[xm].wielkosc;
+			sjednostki[0][5].ilosc++;
+			liczba_zolnierzy-=ciezkozbrojny[xm].wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].lekka_jazda>0 && x0==4){
 			armia[liczba_armii+1].lekka_jazda--;
-			armia[liczba_armii+1].wielkosc-=lekka_jazda.wielkosc;
-			sjednostki[6].ilosc++;
-			liczba_zolnierzy-=lekka_jazda.wielkosc;
+			armia[liczba_armii+1].wielkosc-=lekka_jazda[xm].wielkosc;
+			sjednostki[0][6].ilosc++;
+			liczba_zolnierzy-=lekka_jazda[xm].wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezka_jazda>0 && x0==5){
 			armia[liczba_armii+1].ciezka_jazda--;
-			armia[liczba_armii+1].wielkosc-=ciezka_jazda.wielkosc;
-			sjednostki[7].ilosc++;
-			liczba_zolnierzy-=ciezka_jazda.wielkosc;
+			armia[liczba_armii+1].wielkosc-=ciezka_jazda[xm].wielkosc;
+			sjednostki[0][7].ilosc++;
+			liczba_zolnierzy-=ciezka_jazda[xm].wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].tarany>0 && x0==6){
 			armia[liczba_armii+1].tarany--;
-			armia[liczba_armii+1].wielkosc-=taran.wielkosc;
-			sjednostki[8].ilosc++;
-			liczba_zolnierzy-=taran.wielkosc;
+			armia[liczba_armii+1].wielkosc-=taran[xm].wielkosc;
+			sjednostki[0][8].ilosc++;
+			liczba_zolnierzy-=taran[xm].wielkosc;
 			}
 		if(ster==KEY_LEFT && armia[liczba_armii+1].elity>0 && x0==7){
 			armia[liczba_armii+1].elity--;
 			armia[liczba_armii+1].wielkosc-=elita.wielkosc;
-			sjednostki[9].ilosc++;
+			sjednostki[0][9].ilosc++;
 			liczba_zolnierzy-=elita.wielkosc;
 			}	
 		
 		if(ster=='e' && armia[liczba_armii+1].wielkosc>0){
 			
 			liczba_armii++;
-			wystaw_armie(jarmia,mapa,45,mapa_jednostek);
+			wystaw_armie(jarmia,mapa,45,mapa_jednostek, 1);
 			bplac=false;
 			menu_stolica=true;
 			system("CLS");
@@ -6548,13 +7660,13 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 	}
 	if(najmij==true){
 				
-		if(ster=='q' && x0==0  && zloto>=jrobotnik.koszt_zloto*3 || ster=='q' && x0==0 && wiara>=jrobotnik.koszt_wiara){
+		if(ster=='q' && x0==0  && zloto>=jrobotnik[xm].koszt_zloto*3 || ster=='q' && x0==0 && wiara>=jrobotnik[xm].koszt_wiara){
 			if(mapa[miasto[1].x1-1][miasto[1].y1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1]==dom2 || mapa[miasto[1].x1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom2 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom2 || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom2 ||
 			mapa[miasto[1].x1-1][miasto[1].y1]==dom || mapa[miasto[1].x1+1][miasto[1].y1]==dom || mapa[miasto[1].x1][miasto[1].y1-1]==dom || mapa[miasto[1].x1][miasto[1].y1+1]==dom || mapa[miasto[1].x1-1][miasto[1].y1-1]==dom 
 			|| mapa[miasto[1].x1-1][miasto[1].y1+1]==dom || mapa[miasto[1].x1+1][miasto[1].y1-1]==dom || mapa[miasto[1].x1+1][miasto[1].y1+1]==dom){
-				najmijv(jrobotnik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				wystaw_armie(jrobotnik,mapa,0, mapa_jednostek);
+				najmijv(jrobotnik[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				wystaw_armie(jrobotnik[xm],mapa,0, mapa_jednostek,  1);
 				
 			}
 		}
@@ -6567,64 +7679,91 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 				rekrutuj(josadnik,&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
 			}
 		}
-		if(ster=='q' && x0==2  && zloto>=pikinier.koszt_zloto*3 || ster=='q' && x0==2 && wiara>=pikinier.koszt_wiara){
-				najmijv(pikinier,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[2].ilosc++;
+		if(ster=='q' && x0==2  && zloto>=pikinier[xm].koszt_zloto*3 || ster=='q' && x0==2 && wiara>=pikinier[xm].koszt_wiara){
+				najmijv(pikinier[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][2].ilosc++;
 		}
-		if(ster=='q' && x0==3 && zloto>=lucznik.koszt_zloto*3 || ster=='q' && x0==3 && wiara>=lucznik.koszt_wiara){
-				najmijv(lucznik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[3].ilosc++;
+		if(ster=='q' && x0==3 && zloto>=lucznik[xm].koszt_zloto*3 || ster=='q' && x0==3 && wiara>=lucznik[xm].koszt_wiara){
+				najmijv(lucznik[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][3].ilosc++;
 		}
-		if(ster=='q' && x0==4 && zloto>=kusznik.koszt_zloto*3&& oboz.lvl>=2 || ster=='q' && x0==4 && wiara>=kusznik.koszt_wiara && oboz.lvl>=2){
-				najmijv(kusznik,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[4].ilosc++;
+		if(ster=='q' && x0==4 && zloto>=kusznik[xm].koszt_zloto*3&& oboz.lvl>=2 || ster=='q' && x0==4 && wiara>=kusznik[xm].koszt_wiara && oboz.lvl>=2){
+				najmijv(kusznik[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][4].ilosc++;
 		}
-		if(ster=='q' && x0==5 && zloto>=ciezkozbrojny.koszt_zloto*3&& oboz.lvl>=2 || ster=='q' && x0==5 && wiara>=ciezkozbrojny.koszt_wiara&& oboz.lvl>=2){
-				najmijv(ciezkozbrojny,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[5].ilosc++;
+		if(ster=='q' && x0==5 && zloto>=ciezkozbrojny[xm].koszt_zloto*3&& oboz.lvl>=2 || ster=='q' && x0==5 && wiara>=ciezkozbrojny[xm].koszt_wiara&& oboz.lvl>=2){
+				najmijv(ciezkozbrojny[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][5].ilosc++;
 		}
-		if(ster=='q' && x0==6 && zloto>=lekka_jazda.koszt_zloto*3 && oboz.lvl>=2|| ster=='q' && x0==6 && wiara>=lekka_jazda.koszt_wiara&& oboz.lvl>=2){
-						najmijv(lekka_jazda,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[6].ilosc++;
+		if(ster=='q' && x0==6 && zloto>=lekka_jazda[xm].koszt_zloto*3 && oboz.lvl>=2|| ster=='q' && x0==6 && wiara>=lekka_jazda[xm].koszt_wiara&& oboz.lvl>=2){
+						najmijv(lekka_jazda[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][6].ilosc++;
 		}
-		if(ster=='q' && x0==7 && zloto>=ciezka_jazda.koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==7 && wiara>=ciezka_jazda.koszt_wiara&& oboz.lvl>=3){
-				najmijv(ciezka_jazda,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[7].ilosc++;
+		if(ster=='q' && x0==7 && zloto>=ciezka_jazda[xm].koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==7 && wiara>=ciezka_jazda[xm].koszt_wiara&& oboz.lvl>=3){
+				najmijv(ciezka_jazda[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][7].ilosc++;
 		}
-		if(ster=='q' && x0==8 && zloto>=taran.koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==8 && wiara>=taran.koszt_wiara&& oboz.lvl>=3){
-				najmijv(taran,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[8].ilosc++;
+		if(ster=='q' && x0==8 && zloto>=taran[xm].koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==8 && wiara>=taran[xm].koszt_wiara&& oboz.lvl>=3){
+				najmijv(taran[xm],&wiara,&najmij,&zloto,&x0,&menu_stolica);
+				sjednostki[0][8].ilosc++;
 		}
 		if(ster=='q' && x0==9 && zloto>=elita.koszt_zloto*3 && oboz.lvl>=3|| ster=='q' && x0==9 && wiara>=elita.koszt_wiara&& oboz.lvl>=3){
 				najmijv(elita,&wiara,&najmij,&zloto,&x0,&menu_stolica);
-				sjednostki[9].ilosc++;
+				sjednostki[0][9].ilosc++;
 		}
 		
 	}
 	
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 while(miasto[xm].menu_osady==true){
-	system("CLS");
+
+	
+	if(x0==0)aktualna=rada_osady[xm];
+	if(x0==1)aktualna=mieszkalna_osada[xm];
+	if(x0==2)aktualna=handlowa_osada[xm];
+	if(x0==3)aktualna=wojskowa_osada[xm];
+	if(x0==4)aktualna=robotnicza_osada[xm];
+	if(x0==5)aktualna=koszary_osada[xm];
+	if(x0==6)aktualna=biblioteka_osada[xm];
+	if(x0==7)aktualna=park_osada[xm];
+	if(x0==8)aktualna=pomnik_osada[xm];
+	if(x0==9)aktualna=port_osada[xm];
+	if(x0==10)aktualna=tawerna_osada[xm];
+	if(x0==11)aktualna=magazyn_osada[xm];
+	if(x0==12)aktualna=mlyn_osada[xm];
+	if(x0==13)aktualna=kamieniarz_osada[xm];
+	if(x0==14)aktualna=kosciol_osada[xm];
+	if(x0==15)aktualna=weglarz_osada[xm];
+	if(x0==16)aktualna=warsztat_osada[xm];
+	if(x0==17)aktualna=stajnia_osada[xm];
+
+	
+	
 	gotoxy(3,3);
-	cout << "Jestes w miescie "<<miasto[xm].nazwa;
+	cout << "Jestes w osadzie "<<miasto[xm].nazwa;
 	
 	SetConsoleTextAttribute( hOut, 10 );
 gotoxy(8,60);
 cout << "Zywnosc: " << zywnosc<<"("<<miasto[xm].przychod_zywnosc<<")" <<"  Drewno: " << drewno <<"("<<miasto[xm].przychod_drewno<<")" <<
  "  Kamien: " << kamien<<"("<<miasto[xm].przychod_kamien<<")" << "  Wiara: " << wiara <<"("<<miasto[xm].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy <<"("<<liczba_zolnierzy<<")"<< "  Zloto: " 
  << zloto << "("<<miasto[xm].przychod_zloto<<")" <<"  Produckja: " << miasto[xm].produkcja <<"("<<miasto[xm].przychod_produkcja
- <<")" << "  Ludnosc: "<<miasto[xm].ludnosc << "  Nauka: " << nauka<<"("<<miasto[xm].przychod_nauka<<")"<<"  Obrona: "<<miasto[xm].obrona;
+ <<")" << "  Ludnosc: "<<miasto[xm].ludnosc << "  Nauka: " << nauka<<"("<<miasto[xm].przychod_nauka<<")"<<"  Obrona: "<<miasto[xm].obrona << "  Podatek: "<<miasto[xm].podatek;
 SetConsoleTextAttribute( hOut, 8 );
-	
+	gotoxy(8,61);
+	cout << xm <<"   "<< rada_osady[xm].lvl;
+
 if(menu_osada==true){
-	gotoxy(55,1);
-cout << "MENU MIASTA                    ";
-gotoxy(45,3);
+	gotoxy(50,1);
+cout << "MENU OSADY                    ";
+gotoxy(40,3);
 for(int i=0;i<28;i++)cout << blok;
-gotoxy(45,4);
+gotoxy(40,4);
 cout <<blok<< "                          "<<blok;
-gotoxy(45,5);
+gotoxy(40,5);
 if(x0==0){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6634,7 +7773,7 @@ cout << blok;
 }
 else
 cout << blok<<"   Mapa Swiata            "<<blok; 
-gotoxy(45,6);
+gotoxy(40,6);
 if(x0==1){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6644,7 +7783,7 @@ cout << blok;
 }
 else
 cout <<blok<< "   Buduj                  "<<blok; 
-gotoxy(45,7);
+gotoxy(40,7);
 if(x0==2){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6655,7 +7794,7 @@ cout<<blok;
 else
 cout <<blok<< "   Rekrutuj               "<<blok; 
 
-gotoxy(45,8);
+gotoxy(40,8);
 if(x0==3){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6665,7 +7804,7 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Plac Manewrowy         "<<blok; 
-gotoxy(45,9);
+gotoxy(40,9);
 if(x0==4){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6675,7 +7814,7 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Zbierz Podatek         "<<blok; 
-gotoxy(45,10);
+gotoxy(40,10);
 if(x0==5){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6686,7 +7825,7 @@ cout<<blok;
 else
 cout <<blok<< "   Zmien nazwe            "<<blok; 
 
-gotoxy(45,11);
+gotoxy(40,11);
 if(x0==6){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6696,32 +7835,435 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Rozbudowa              "<<blok; 
-gotoxy(45,12);
+gotoxy(40,12);
 cout <<blok<< "                          "<<blok;
-gotoxy(45,13);
+gotoxy(40,13);
 for(int i=0;i<28;i++)cout << blok;
 }
-	
-	
-	ster=getch();
-	
-	if(ster==27){
-		miasto[xm].menu_osady=false;
-		xm=0;
-		mapa_glowna=true;
-		menu=true;
-		system("CLS");
+
+	if(menu_budowy==true || rozbudowa==true){
+gotoxy(50,1);
+if(menu_budowy==true && rozbudowa==false)
+cout << "MENU BUDOWY                    ";
+budowlanka_osada(aktualna);
+if(rozbudowa==true){
+cout << "MENU ROZBUDOWY                 ";
+rozbudowlanka_osada(x0, aktualna);
+
+}
+gotoxy(40,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(40,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,5);
+if(x0==0){
+cout<< blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"Rada Osady("<<rada_osady[xm].lvl<<"/4)           ";
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else{
+if(rada_osady[xm].budowa==true)
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"Rada Osady("<<rada_osady[xm].lvl<<"/4)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"Dzielnica Mieszkalna ("<<mieszkalna_osada[xm].lvl<<"/2)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(mieszkalna_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "Dzielnica Mieszkalna ("<<mieszkalna_osada[xm].lvl<<"/2)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Handlowa ("<<handlowa_osada[xm].lvl<<"/2) "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(handlowa_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< " Dzielnica Handlowa ("<<handlowa_osada[xm].lvl<<"/2) "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Wojskowa ("<<wojskowa_osada[xm].lvl<<"/2) "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(wojskowa_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<" Dzielnica Wojskowa ("<<wojskowa_osada[xm].lvl<<"/2) "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"Dzielnica Robotnicza ("<<robotnicza_osada[xm].lvl<<"/2)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(robotnicza_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"Dzielnica Robotnicza ("<<robotnicza_osada[xm].lvl<<"/2)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Koszary ("<<koszary_osada[xm].lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(koszary_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Koszary ("<<koszary_osada[xm].lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+
+gotoxy(40,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Biblioteka ("<<biblioteka_osada[xm].lvl<<"/2)       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(biblioteka_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Biblioteka ("<<biblioteka_osada[xm].lvl<<"/2)       "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+gotoxy(40,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Park ("<<park_osada[xm].lvl<<"/2)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(park_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Park ("<<park_osada[xm].lvl<<"/2)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pomnik ("<<pomnik_osada[xm].lvl<<"/2)           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(pomnik_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Pomnik ("<<pomnik_osada[xm].lvl<<"/2)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+
+gotoxy(40,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Port ("<<port_osada[xm].lvl<<"/2)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(port_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Port ("<<port_osada[xm].lvl<<"/2)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+} 
+
+
+gotoxy(40,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Tawerna ("<<tawerna_osada[xm].lvl<<"/2)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(tawerna_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Tawerna ("<<tawerna_osada[xm].lvl<<"/2)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,16);
+if(x0==11){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Magazyn ("<<magazyn_osada[xm].lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(magazyn_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Magazyn ("<<magazyn_osada[xm].lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,17);
+if(x0==12){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Mlyn ("<<mlyn_osada[xm].lvl<<"/3)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(mlyn_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Mlyn ("<<mlyn_osada[xm].lvl<<"/3)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+gotoxy(40,18);
+if(x0==13){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kamieniarz ("<<kamieniarz_osada[xm].lvl<<"/3)       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kamieniarz_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kamieniarz ("<<kamieniarz_osada[xm].lvl<<"/3)       "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+gotoxy(40,19);
+if(x0==14){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kosciol ("<<kosciol_osada[xm].lvl<<"/2)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kosciol_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kosciol ("<<kosciol_osada[xm].lvl<<"/2)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+gotoxy(40,20);
+if(x0==15){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Weglarnia ("<<weglarz_osada[xm].lvl<<"/2)        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(weglarz_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Weglarnia ("<<weglarz_osada[xm].lvl<<"/2)        "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,21);
+if(x0==16){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Warsztat ("<<warsztat_osada[xm].lvl<<"/2)         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(warsztat_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Warsztat ("<<warsztat_osada[xm].lvl<<"/2)         "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,22);
+if(x0==17){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Stajnia ("<<stajnia_osada[xm].lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(stajnia_osada[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Stajnia ("<<stajnia_osada[xm].lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,23);
+if(x0==18){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok;
+gotoxy(40,24);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,25);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+
+if(nazwa==true){
+	gotoxy(54,25);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(54,26);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,28);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,29);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(90,27);
+	cout << "   " << blok;
+	gotoxy(54,27);
+	cout <<blok<< "  Wpisz nazwe miasta: ";
+	getline(cin, miasto[xm].nazwa);
+
+	gotoxy(54,27);
+	for(int i=0;i<28;i++)cout << blok;
+	nazwa=false;
+	system("CLS");
+	continue;
+}
+
+	if(bplac==true){
+		gotoxy(50,1);
+cout << "NAZWA/ILOSC POSIADANYCH/DO ARMII                    ";
+rekrutowanka_osada(x0, xm);
+pokaz_armie(armia[liczba_armii+1], xm);
+gotoxy(40,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(40,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<sjednostki[xm][2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<sjednostki[xm][2].ilosc<<" / "<<armia[liczba_armii+1].pikinierzy<<"       "<<blok; 
+
+gotoxy(40,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<sjednostki[xm][3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Lucznik / "<<sjednostki[xm][3].ilosc<<" / "<<armia[liczba_armii+1].lucznicy<<"        ";
+gotoxy(40,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<sjednostki[xm][4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<sjednostki[xm][4].ilosc<<" / "<<armia[liczba_armii+1].kusznicy<<"        "<<blok; 
+gotoxy(40,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<sjednostki[xm][5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<sjednostki[xm][5].ilosc<<" / "<<armia[liczba_armii+1].ciezkozbrojni<<"  "<<blok; 
+
+gotoxy(40,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<sjednostki[xm][6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<sjednostki[xm][6].ilosc<<" / "<<armia[liczba_armii+1].lekka_jazda<<"    "<<blok; 
+gotoxy(40,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<sjednostki[xm][7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<sjednostki[xm][7].ilosc<<" / "<<armia[liczba_armii+1].ciezka_jazda<<"   "<<blok;
+gotoxy(40,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<sjednostki[xm][8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<sjednostki[xm][8].ilosc<<" / "<<armia[liczba_armii+1].tarany<<"          "<<blok;
+gotoxy(40,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(40,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,14);
+for(int i=0;i<28;i++)cout << blok;
 	}
 	
-	if(rekrutacja==true){
-gotoxy(55,1);
+		if(rekrutacja==true){
+gotoxy(50,1);
 cout << "REKRUTACJA JEDNOSTEK                    ";
-rekrutowanka(x0);
-gotoxy(45,3);
+rekrutowanka_osada(x0, xm);
+gotoxy(40,3);
 for(int i=0;i<28;i++)cout << blok;
-gotoxy(45,4);
+gotoxy(40,4);
 cout <<blok<< "                          "<<blok;
-gotoxy(45,5);
+gotoxy(40,5);
 if(x0==0){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -6731,18 +8273,8 @@ cout << blok;
 }
 else
 cout << blok<<"   Robotnik               "<<blok; 
-gotoxy(45,6);
+gotoxy(40,6);
 if(x0==1){
-cout << blok;
-SetConsoleTextAttribute( hOut, 2 );
-cout << "   Osadnik                "; 
-SetConsoleTextAttribute( hOut, 8 );
-cout << blok;
-}
-else
-cout <<blok<< "   Osadnik                "<<blok; 
-gotoxy(45,7);
-if(x0==2){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Pikinier               "; 
@@ -6752,8 +8284,8 @@ cout<<blok;
 else
 cout <<blok<< "   Pikinier               "<<blok; 
 
-gotoxy(45,8);
-if(x0==3){
+gotoxy(40,7);
+if(x0==2){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Lucznik                "; 
@@ -6762,8 +8294,8 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Lucznik                "<<blok; 
-gotoxy(45,9);
-if(x0==4){
+gotoxy(40,8);
+if(x0==3){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Kusznik                "; 
@@ -6772,8 +8304,8 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Kusznik                "<<blok; 
-gotoxy(45,10);
-if(x0==5){
+gotoxy(40,9);
+if(x0==4){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Ciezkozbrojny          "; 
@@ -6783,8 +8315,8 @@ cout<<blok;
 else
 cout <<blok<< "   Ciezkozbrojny          "<<blok; 
 
-gotoxy(45,11);
-if(x0==6){
+gotoxy(40,10);
+if(x0==5){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Lekka Jazda            "; 
@@ -6793,8 +8325,8 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Lekka Jazda            "<<blok; 
-gotoxy(45,12);
-if(x0==7){
+gotoxy(40,11);
+if(x0==6){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Ciezka Jazda           "; 
@@ -6803,8 +8335,8 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Ciezka Jazda           "<<blok;
-gotoxy(45,13);
-if(x0==8){
+gotoxy(40,12);
+if(x0==7){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Taran                  "; 
@@ -6813,18 +8345,8 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Taran                  "<<blok;
-gotoxy(45,14);
-if(x0==9){
-cout << blok;
-SetConsoleTextAttribute( hOut, 2 );
-cout<<"   Elita                  "; 
-SetConsoleTextAttribute( hOut, 8 );
-cout<<blok;
-}
-else
-cout <<blok<< "   Elita                  "<<blok; 
-gotoxy(45,15);
-if(x0==10){
+gotoxy(40,13);
+if(x0==8){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Powrot                 "; 
@@ -6833,11 +8355,651 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Powrot                 "<<blok; 
-gotoxy(45,16);
+gotoxy(40,14);
 cout <<blok<< "                          "<<blok;
-gotoxy(45,17);
+gotoxy(40,15);
 for(int i=0;i<28;i++)cout << blok;
 }
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	ster=getch();
+	
+	if(ster==27){
+		miasto[xm].menu_osady=false;
+		menu_osada=false;
+		rozbudowa=false;
+		menu_budowy=false;
+		rekrutacja=false;
+		bplac=false;
+		xm=0;
+		mapa_glowna=true;
+		menu=true;
+		system("CLS");
+	}
+	
+	if(ster=='q' && x0==0 && menu_osada==true){
+		miasto[xm].menu_osady=false;
+		menu_osada=false;
+		xm=0;
+		mapa_glowna=true;
+		menu=true;
+		system("CLS");
+	}
+	
+if(ster==KEY_DOWN && x0!=6 && menu_osada==true || ster==KEY_DOWN && x0!=18 && menu_budowy==true || ster==KEY_DOWN && x0!=18 && rozbudowa==true || ster==KEY_DOWN && x0!=8 && rekrutacja==true || ster==KEY_DOWN && x0!=7 && bplac==true){
+	x0++;
+	cls();
+	continue;
+}
+if(ster==KEY_UP && x0!=0){
+	x0--;
+	cls();
+	continue;
+}
+
+if(ster=='q' && x0==4 && menu_osada==true){
+	zloto+=miasto[xm].podatek;
+
+	gotoxy(54,25);
+	for(int i=0;i<70;i++)cout << blok;
+	gotoxy(54,26);
+	cout << blok;
+	for(int i=0;i<68;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,28);
+	cout << blok;
+	for(int i=0;i<68;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,29);
+	for(int i=0;i<70;i++)cout << blok;
+	gotoxy(118,27);
+	cout << "   " << blok;
+	gotoxy(54,27);
+	cout <<blok<< "  Zebrales podatek z miasta "<<miasto[xm].nazwa<<" w wysokosci "<<miasto[xm].podatek;
+	Sleep(2000);
+	miasto[xm].podatek=0;
+	system("CLS");
+	continue;
+}
+
+if(ster=='q' && x0==3 && menu_osada==true){
+	menu_osada=false;
+	bplac=true;
+	x0=0;
+	gotoxy(0,0);
+	system("CLS");
+	continue;
+
+}
+if(ster=='q' && x0==7 && bplac==true){
+	menu_osada=true;
+	bplac=false;
+	x0=0;
+	gotoxy(0,0);
+	system("CLS");
+	continue;
+}
+
+if(ster=='q' && x0==5 && menu_osada==true){
+	nazwa=true;
+	gotoxy(0,0);
+	system("CLS");
+	continue;
+}
+if(ster=='q' && x0==1 && menu_osada==true){
+	menu_osada=false;
+	menu_budowy=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+
+}
+if(ster=='q' && x0==18 && menu_budowy==true){
+	menu_budowy=false;
+	menu_osada=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+}
+if(ster=='q' && x0==6 && menu_osada==true){
+	menu_osada=false;
+	rozbudowa=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+
+}
+if(ster=='q' && x0==18 && rozbudowa==true){
+	menu_osada=true;
+	rozbudowa=false;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+}
+if(ster=='q' && x0==2 && menu_osada==true){
+	menu_osada=false;
+	rekrutacja=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+
+}
+if(ster=='q' && x0==8 && rekrutacja==true){
+	menu_osada=true;
+	rekrutacja=false;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+}
+
+
+	
+
+	
+	if(bplac==true){
+		
+		if(ster==KEY_RIGHT && sjednostki[xm][x0+2].ilosc>0 && liczba_zolnierzy+sjednostki[xm][x0+2].wielkosc<=max_zolnierzy){
+			if(x0==0){
+			armia[liczba_armii+1].pikinierzy++;
+			armia[liczba_armii+1].wielkosc+=pikinier[xm].wielkosc;
+			sjednostki[xm][2].ilosc--;
+			liczba_zolnierzy+=pikinier[xm].wielkosc;
+			}
+			if(x0==1){
+			armia[liczba_armii+1].lucznicy++;
+			armia[liczba_armii+1].wielkosc+=lucznik[xm].wielkosc;
+			sjednostki[xm][3].ilosc--;
+			liczba_zolnierzy+=lucznik[xm].wielkosc;
+			}
+			if(x0==2){
+			armia[liczba_armii+1].kusznicy++;
+			armia[liczba_armii+1].wielkosc+=kusznik[xm].wielkosc;
+			sjednostki[xm][4].ilosc--;
+			liczba_zolnierzy+=kusznik[xm].wielkosc;
+			}
+			if(x0==3){
+			armia[liczba_armii+1].ciezkozbrojni++;
+			armia[liczba_armii+1].wielkosc+=ciezkozbrojny[xm].wielkosc;
+			sjednostki[xm][5].ilosc--;
+			liczba_zolnierzy+=ciezkozbrojny[xm].wielkosc;
+			}
+			if(x0==4){
+			armia[liczba_armii+1].lekka_jazda++;
+			armia[liczba_armii+1].wielkosc+=lekka_jazda[xm].wielkosc;
+			sjednostki[xm][6].ilosc--;
+			liczba_zolnierzy+=lekka_jazda[xm].wielkosc;
+			}
+			if(x0==5){
+			armia[liczba_armii+1].ciezka_jazda++;
+			armia[liczba_armii+1].wielkosc+=ciezka_jazda[xm].wielkosc;
+			sjednostki[xm][7].ilosc--;
+			liczba_zolnierzy+=ciezka_jazda[xm].wielkosc;
+			}
+			if(x0==6){
+			armia[liczba_armii+1].tarany++;
+			armia[liczba_armii+1].wielkosc+=taran[xm].wielkosc;
+			sjednostki[xm][8].ilosc--;
+			liczba_zolnierzy+=taran[xm].wielkosc;
+			}
+	
+		}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].pikinierzy>0 && x0==0){
+			armia[liczba_armii+1].pikinierzy--;
+			armia[liczba_armii+1].wielkosc-=pikinier[xm].wielkosc;
+			sjednostki[xm][2].ilosc++;
+			liczba_zolnierzy-=pikinier[xm].wielkosc;
+		}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].lucznicy>0 && x0==1){
+			armia[liczba_armii+1].lucznicy--;
+			armia[liczba_armii+1].wielkosc-=lucznik[xm].wielkosc;
+			sjednostki[xm][3].ilosc++;
+			liczba_zolnierzy-=lucznik[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].kusznicy>0 && x0==2){
+			armia[liczba_armii+1].kusznicy--;
+			armia[liczba_armii+1].wielkosc-=kusznik[xm].wielkosc;
+			sjednostki[xm][4].ilosc++;
+			liczba_zolnierzy-=kusznik[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezkozbrojni>0 && x0==3){
+			armia[liczba_armii+1].ciezkozbrojni--;
+			armia[liczba_armii+1].wielkosc-=ciezkozbrojny[xm].wielkosc;
+			sjednostki[xm][5].ilosc++;
+			liczba_zolnierzy-=ciezkozbrojny[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].lekka_jazda>0 && x0==4){
+			armia[liczba_armii+1].lekka_jazda--;
+			armia[liczba_armii+1].wielkosc-=lekka_jazda[xm].wielkosc;
+			sjednostki[xm][6].ilosc++;
+			liczba_zolnierzy-=lekka_jazda[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].ciezka_jazda>0 && x0==5){
+			armia[liczba_armii+1].ciezka_jazda--;
+			armia[liczba_armii+1].wielkosc-=ciezka_jazda[xm].wielkosc;
+			sjednostki[xm][7].ilosc++;
+			liczba_zolnierzy-=ciezka_jazda[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia[liczba_armii+1].tarany>0 && x0==6){
+			armia[liczba_armii+1].tarany--;
+			armia[liczba_armii+1].wielkosc-=taran[xm].wielkosc;
+			sjednostki[xm][8].ilosc++;
+			liczba_zolnierzy-=taran[xm].wielkosc;
+			}
+	
+		
+		if(ster=='e' && armia[liczba_armii+1].wielkosc>0){
+			
+			liczba_armii++;
+			wystaw_armie(jarmia,mapa,45,mapa_jednostek, xm);
+			bplac=false;
+			menu_osada=true;
+			system("CLS");
+			continue;
+		}
+		
+	}
+	
+	if(rekrutacja==true){
+		
+		if(ster=='q' && x0==0 && drewno>=jrobotnik[xm].koszt_drewno && miasto[xm].ludnosc>=jrobotnik[xm].wielkosc*100 && zloto>=jrobotnik[xm].koszt_zloto && zywnosc>=jrobotnik[xm].koszt_zywnosc && kamien>=jrobotnik[xm].koszt_kamien && miasto[xm].produkcja>=jrobotnik[xm].koszt_produkcja){
+			if(mapa[miasto[xm].x1-1][miasto[xm].y1]==dom2 || mapa[miasto[xm].x1+1][miasto[xm].y1]==dom2 || mapa[miasto[xm].x1][miasto[xm].y1-1]==dom2 || mapa[miasto[xm].x1][miasto[xm].y1+1]==dom2 || mapa[miasto[xm].x1-1][miasto[xm].y1-1]==dom2 
+			|| mapa[miasto[xm].x1-1][miasto[xm].y1+1]==dom2 || mapa[miasto[xm].x1+1][miasto[xm].y1-1]==dom2 || mapa[miasto[xm].x1+1][miasto[xm].y1+1]==dom2 ||
+			mapa[miasto[xm].x1-1][miasto[xm].y1]==dom || mapa[miasto[xm].x1+1][miasto[xm].y1]==dom || mapa[miasto[xm].x1][miasto[xm].y1-1]==dom || mapa[miasto[xm].x1][miasto[xm].y1+1]==dom || mapa[miasto[xm].x1-1][miasto[xm].y1-1]==dom 
+			|| mapa[miasto[xm].x1-1][miasto[xm].y1+1]==dom || mapa[miasto[xm].x1+1][miasto[xm].y1-1]==dom || mapa[miasto[xm].x1+1][miasto[xm].y1+1]==dom){
+				wystaw_armie(jrobotnik[xm],mapa,0, mapa_jednostek, xm);
+				rekrutuj(jrobotnik[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				menu_osada=true;
+			}
+		}
+		if(ster=='q' && x0==1 && drewno>=pikinier[xm].koszt_drewno&& miasto[xm].ludnosc>=pikinier[xm].wielkosc*100 && zloto>=pikinier[xm].koszt_zloto && zywnosc>=pikinier[xm].koszt_zywnosc && sjednostki[xm][2].ilosc<9 && kamien>=pikinier[xm].koszt_kamien && miasto[xm].produkcja>=pikinier[xm].koszt_produkcja && koszary.lvl>=1){
+				rekrutuj(pikinier[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][2].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==2 && drewno>=lucznik[xm].koszt_drewno&& miasto[xm].ludnosc>=lucznik[xm].wielkosc*100 && zloto>=lucznik[xm].koszt_zloto && zywnosc>=lucznik[xm].koszt_zywnosc&& sjednostki[xm][3].ilosc<9 && kamien>=lucznik[xm].koszt_kamien && miasto[xm].produkcja>=lucznik[xm].koszt_produkcja && koszary.lvl>=2 && lowiectwo==true){
+				rekrutuj(lucznik[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][3].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==3 && drewno>=kusznik[xm].koszt_drewno&& miasto[xm].ludnosc>=kusznik[xm].wielkosc*100 && zloto>=kusznik[xm].koszt_zloto && zywnosc>=kusznik[xm].koszt_zywnosc&& sjednostki[xm][4].ilosc<9 && kamien>=kusznik[xm].koszt_kamien && miasto[xm].produkcja>=kusznik[xm].koszt_produkcja && koszary.lvl>=3 && lowiectwo==true && obrobka_zelaza==true){
+				rekrutuj(kusznik[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][4].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==4 && drewno>=ciezkozbrojny[xm].koszt_drewno&& miasto[xm].ludnosc>=ciezkozbrojny[xm].wielkosc*100 && zloto>=ciezkozbrojny[xm].koszt_zloto && zywnosc>=ciezkozbrojny[xm].koszt_zywnosc&& sjednostki[xm][5].ilosc<9 && kamien>=ciezkozbrojny[xm].koszt_kamien && miasto[xm].produkcja>=ciezkozbrojny[xm].koszt_produkcja && koszary.lvl>=4 && obrobka_zelaza==true){
+				rekrutuj(ciezkozbrojny[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][5].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==5 && drewno>=lekka_jazda[xm].koszt_drewno&& miasto[xm].ludnosc>=lekka_jazda[xm].wielkosc*100 && zloto>=lekka_jazda[xm].koszt_zloto && zywnosc>=lekka_jazda[xm].koszt_zywnosc&& sjednostki[xm][6].ilosc<9 && kamien>=lekka_jazda[xm].koszt_kamien && miasto[xm].produkcja>=lekka_jazda[xm].koszt_produkcja && stajnia.lvl>=1){
+				rekrutuj(lekka_jazda[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][6].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==6 && drewno>=ciezka_jazda[xm].koszt_drewno&& miasto[xm].ludnosc>=ciezka_jazda[xm].wielkosc*100 && zloto>=ciezka_jazda[xm].koszt_zloto && zywnosc>=ciezka_jazda[xm].koszt_zywnosc&& sjednostki[xm][7].ilosc<9 && kamien>=ciezka_jazda[xm].koszt_kamien && miasto[xm].produkcja>=ciezka_jazda[xm].koszt_produkcja && stajnia.lvl>=3 && obrobka_stali==true){
+				rekrutuj(ciezka_jazda[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][7].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==7 && drewno>=taran[xm].koszt_drewno&& miasto[xm].ludnosc>=taran[xm].wielkosc*100 && zloto>=taran[xm].koszt_zloto && zywnosc>=taran[xm].koszt_zywnosc && kamien>=taran[xm].koszt_kamien&& sjednostki[xm][8].ilosc<9 && miasto[xm].produkcja>=taran[xm].koszt_produkcja && warsztat.lvl>=2){
+				rekrutuj(taran[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rekrutacja,&menu_stolica,&x0);
+				sjednostki[xm][8].ilosc++;
+				menu_osada=true;
+		}
+	}
+	
+	////////////////////////buwodanko/////////////////////
+	
+	
+		if(ster=='q' && x0==0 && rozbudowa==true && rada_osady[xm].lvl==1 && kapitol.lvl>=1 && drewno>=rada_osady[xm].koszt_drewno && kamien>=rada_osady[xm].koszt_kamien && zywnosc>=rada_osady[xm].koszt_zywnosc && zloto>=rada_osady[xm].koszt_zloto && miasto[xm].produkcja>=rada_osady[xm].koszt_produkcja){
+			rada_osady[xm].lvl++;
+			rozbuduj_osada(rada_osady[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(rada_osady[xm]);
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod_osada(rada_osady[xm],&przychod_nauka,&max_zolnierzy, xm);
+		}
+		if(ster=='q' && x0==0 && rozbudowa==true && rada_osady[xm].lvl==2 && kapitol.lvl>=2 && drewno>=rada_osady[xm].koszt_drewno && kamien>=rada_osady[xm].koszt_kamien && zywnosc>=rada_osady[xm].koszt_zywnosc && zloto>=rada_osady[xm].koszt_zloto && miasto[xm].produkcja>=rada_osady[xm].koszt_produkcja){
+			rada_osady[xm].lvl++;
+			rozbuduj_osada(rada_osady[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(rada_osady[xm]);
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod_osada(rada_osady[xm],&przychod_nauka,&max_zolnierzy, xm);
+		}
+				if(ster=='q' && x0==0 && rozbudowa==true && rada_osady[xm].lvl==3 && kapitol.lvl>=3 && drewno>=rada_osady[xm].koszt_drewno && kamien>=rada_osady[xm].koszt_kamien && zywnosc>=rada_osady[xm].koszt_zywnosc && zloto>=rada_osady[xm].koszt_zloto && miasto[xm].produkcja>=rada_osady[xm].koszt_produkcja){
+			rada_osady[xm].lvl++;
+			rozbuduj_osada(rada_osady[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(rada_osady[xm]);
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod_osada(rada_osady[xm],&przychod_nauka,&max_zolnierzy, xm);
+		}
+
+				//////////////////
+				if(ster=='q' && x0==1 && menu_budowy==true && mieszkalna_osada[xm].lvl==0&&rada_osady[xm].lvl>=1 && drewno>=mieszkalna_osada[xm].koszt_drewno && kamien>=mieszkalna_osada[xm].koszt_kamien && zywnosc>=mieszkalna_osada[xm].koszt_zywnosc && zloto>=mieszkalna_osada[xm].koszt_zloto && miasto[xm].produkcja>=mieszkalna_osada[xm].koszt_produkcja){
+					mieszkalna_osada[xm].lvl++;
+					zbuduj_osada(mieszkalna_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+					zwieksz_koszt_osada(mieszkalna_osada[xm]);
+					zwieksz_przychod_osada(mieszkalna_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+				}
+		if(ster=='q' && rozbudowa==true && x0==1&& mieszkalna_osada[xm].lvl==1&&rada_osady[xm].lvl>=2 && drewno>=mieszkalna_osada[xm].koszt_drewno && kamien>=mieszkalna_osada[xm].koszt_kamien && zywnosc>=mieszkalna_osada[xm].koszt_zywnosc && zloto>=mieszkalna_osada[xm].koszt_zloto && miasto[xm].produkcja>=mieszkalna_osada[xm].koszt_produkcja){
+		
+			mieszkalna_osada[xm].lvl++;
+			rozbuduj_osada(mieszkalna_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(mieszkalna_osada[xm]);
+			zwieksz_przychod_osada(mieszkalna_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+		}
+
+			//////////////////
+				if(ster=='q' && x0==2 && menu_budowy==true&& handlowa_osada[xm].lvl==0 &&rada_osady[xm].lvl>=2 && drewno>=handlowa_osada[xm].koszt_drewno && kamien>=handlowa_osada[xm].koszt_kamien && zywnosc>=handlowa_osada[xm].koszt_zywnosc && zloto>=handlowa_osada[xm].koszt_zloto && miasto[xm].produkcja>=handlowa_osada[xm].koszt_produkcja){
+	
+			handlowa_osada[xm].lvl++;
+			zbuduj_osada(handlowa_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(handlowa_osada[xm]);
+			zwieksz_przychod_osada(handlowa_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+	}
+		if(ster=='q' && rozbudowa==true&& x0==2&& handlowa_osada[xm].lvl==1&&rada_osady[xm].lvl>=3 && drewno>=handlowa_osada[xm].koszt_drewno && kamien>=handlowa_osada[xm].koszt_kamien && zywnosc>=handlowa_osada[xm].koszt_zywnosc && zloto>=handlowa_osada[xm].koszt_zloto && miasto[xm].produkcja>=handlowa_osada[xm].koszt_produkcja){
+		
+			handlowa_osada[xm].lvl++;
+			rozbuduj_osada(handlowa_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(handlowa_osada[xm]);
+			zwieksz_przychod_osada(handlowa_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+    	}
+			//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==3&& wojskowa_osada[xm].lvl==0&&rada_osady[xm].lvl>=2 && drewno>=wojskowa_osada[xm].koszt_drewno && kamien>=wojskowa_osada[xm].koszt_kamien && zywnosc>=wojskowa_osada[xm].koszt_zywnosc && zloto>=wojskowa_osada[xm].koszt_zloto && miasto[xm].produkcja>=wojskowa_osada[xm].koszt_produkcja){
+			wojskowa_osada[xm].lvl++;
+			zbuduj_osada(wojskowa_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(wojskowa_osada[xm]);
+			zwieksz_przychod_osada(wojskowa_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+			miasto[xm].obrona=miasto[xm].obrona+10;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==3&& wojskowa_osada[xm].lvl==1&&rada_osady[xm].lvl>=3&& drewno>=wojskowa_osada[xm].koszt_drewno && kamien>=wojskowa_osada[xm].koszt_kamien && zywnosc>=wojskowa_osada[xm].koszt_zywnosc && zloto>=wojskowa_osada[xm].koszt_zloto && miasto[xm].produkcja>=wojskowa_osada[xm].koszt_produkcja){
+			wojskowa_osada[xm].lvl++;
+			rozbuduj_osada(wojskowa_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(wojskowa_osada[xm]);
+			zwieksz_przychod_osada(wojskowa_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+			miasto[xm].obrona=miasto[xm].obrona+15;
+    	}
+			
+			//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==4&& robotnicza_osada[xm].lvl==0&&rada_osady[xm].lvl>=1 && drewno>=robotnicza_osada[xm].koszt_drewno && kamien>=robotnicza_osada[xm].koszt_kamien && zywnosc>=robotnicza_osada[xm].koszt_zywnosc && zloto>=robotnicza_osada[xm].koszt_zloto && miasto[xm].produkcja>=robotnicza_osada[xm].koszt_produkcja){
+			robotnicza_osada[xm].lvl++;
+			zbuduj_osada(robotnicza_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(robotnicza_osada[xm]);
+			zwieksz_przychod_osada(robotnicza_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==4&& robotnicza_osada[xm].lvl==1&&rada_osady[xm].lvl>=2 && drewno>=robotnicza_osada[xm].koszt_drewno && kamien>=robotnicza_osada[xm].koszt_kamien && zywnosc>=robotnicza_osada[xm].koszt_zywnosc && zloto>=robotnicza_osada[xm].koszt_zloto && miasto[xm].produkcja>=robotnicza_osada[xm].koszt_produkcja){
+			robotnicza_osada[xm].lvl++;
+			rozbuduj_osada(robotnicza_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(robotnicza_osada[xm]);
+			zwieksz_przychod_osada(robotnicza_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+
+    	}
+			
+		///////////////////////
+	
+		if(ster=='q' && menu_budowy==true && x0==5&& koszary_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=koszary_osada[xm].koszt_drewno && kamien>=koszary_osada[xm].koszt_kamien && zywnosc>=koszary_osada[xm].koszt_zywnosc && zloto>=koszary_osada[xm].koszt_zloto && miasto[xm].produkcja>=koszary_osada[xm].koszt_produkcja){
+			koszary_osada[xm].lvl++;
+			zbuduj_osada(koszary_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(koszary_osada[xm]);
+			zwieksz_przychod_osada(koszary_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
+    	}	
+		if(ster=='q' && rozbudowa==true && x0==5&& koszary_osada[xm].lvl==1 && rada_osady[xm].lvl>=2 && drewno>=koszary_osada[xm].koszt_drewno && kamien>=koszary_osada[xm].koszt_kamien && zywnosc>=koszary_osada[xm].koszt_zywnosc && zloto>=koszary_osada[xm].koszt_zloto && miasto[xm].produkcja>=koszary_osada[xm].koszt_produkcja){
+			koszary_osada[xm].lvl++;
+			rozbuduj_osada(koszary_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(koszary_osada[xm]);
+			zwieksz_przychod_osada(koszary_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
+			
+    	}
+    	if(ster=='q' && rozbudowa==true && x0==5&& koszary_osada[xm].lvl==2 && rada_osady[xm].lvl>=4 && drewno>=koszary_osada[xm].koszt_drewno && kamien>=koszary_osada[xm].koszt_kamien && zywnosc>=koszary_osada[xm].koszt_zywnosc && zloto>=koszary_osada[xm].koszt_zloto && miasto[xm].produkcja>=koszary_osada[xm].koszt_produkcja){
+			koszary_osada[xm].lvl++;
+			rozbuduj_osada(koszary_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(koszary_osada[xm]);
+			zwieksz_przychod_osada(koszary_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			pikinier[xm].koszt_produkcja=pikinier[xm].koszt_produkcja-25;
+			
+    	}
+			//////////////////
+
+		if(ster=='q' && x0==6&& menu_budowy==true&& biblioteka_osada[xm].lvl==0 && rada_osady[xm].lvl>=2 && drewno>=biblioteka_osada[xm].koszt_drewno && kamien>=biblioteka_osada[xm].koszt_kamien && zywnosc>=biblioteka_osada[xm].koszt_zywnosc && zloto>=biblioteka_osada[xm].koszt_zloto && miasto[xm].produkcja>=biblioteka_osada[xm].koszt_produkcja){
+			biblioteka_osada[xm].lvl++;
+			zbuduj_osada(biblioteka_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(biblioteka_osada[xm]);
+			zwieksz_przychod_osada(biblioteka_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+    	}
+		if(ster=='q' && x0==6&& rozbudowa==true&& biblioteka_osada[xm].lvl==1 && rada_osady[xm].lvl>=4 && drewno>=biblioteka_osada[xm].koszt_drewno && kamien>=biblioteka_osada[xm].koszt_kamien && zywnosc>=biblioteka_osada[xm].koszt_zywnosc && zloto>=biblioteka_osada[xm].koszt_zloto && miasto[xm].produkcja>=biblioteka_osada[xm].koszt_produkcja){
+			biblioteka_osada[xm].lvl++;
+			rozbuduj_osada(biblioteka_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(biblioteka_osada[xm]);
+			zwieksz_przychod_osada(biblioteka_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+    	}	
+			//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==7&& park_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=park_osada[xm].koszt_drewno && kamien>=park_osada[xm].koszt_kamien && zywnosc>=park_osada[xm].koszt_zywnosc && zloto>=park_osada[xm].koszt_zloto && miasto[xm].produkcja>=park_osada[xm].koszt_produkcja){
+			park_osada[xm].lvl++;
+			zbuduj_osada(park_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(park_osada[xm]);
+			zwieksz_przychod_osada(park_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==7&& park_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=park_osada[xm].koszt_drewno && kamien>=park_osada[xm].koszt_kamien && zywnosc>=park_osada[xm].koszt_zywnosc && zloto>=park_osada[xm].koszt_zloto && miasto[xm].produkcja>=park_osada[xm].koszt_produkcja){
+			park_osada[xm].lvl++;
+			rozbuduj_osada(park_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0, xm);
+			zwieksz_koszt_osada(park_osada[xm]);
+			zwieksz_przychod_osada(park_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+    	}	//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==8&& pomnik_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=pomnik_osada[xm].koszt_drewno && kamien>=pomnik_osada[xm].koszt_kamien && zywnosc>=pomnik_osada[xm].koszt_zywnosc && zloto>=pomnik_osada[xm].koszt_zloto && miasto[xm].produkcja>=pomnik_osada[xm].koszt_produkcja){
+			pomnik_osada[xm].lvl++;
+			zbuduj_osada(pomnik_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(pomnik_osada[xm]);
+			zwieksz_przychod_osada(pomnik_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==8&& pomnik_osada[xm].lvl==1 && rada_osady[xm].lvl>=2 && drewno>=pomnik_osada[xm].koszt_drewno && kamien>=pomnik_osada[xm].koszt_kamien && zywnosc>=pomnik_osada[xm].koszt_zywnosc && zloto>=pomnik_osada[xm].koszt_zloto && miasto[xm].produkcja>=pomnik_osada[xm].koszt_produkcja){
+			pomnik_osada[xm].lvl++;
+			rozbuduj_osada(pomnik_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(pomnik_osada[xm]);
+			zwieksz_przychod_osada(pomnik_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}	
+				//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==9&& port_osada[xm].lvl==0&&miasto[xm].woda==true && rada_osady[xm].lvl>=2 && drewno>=port_osada[xm].koszt_drewno && kamien>=port_osada[xm].koszt_kamien && zywnosc>=port_osada[xm].koszt_zywnosc && zloto>=port_osada[xm].koszt_zloto && miasto[xm].produkcja>=port_osada[xm].koszt_produkcja){
+			port_osada[xm].lvl++;
+			zbuduj_osada(port_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(port_osada[xm]);
+			zwieksz_przychod_osada(port_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==9&& port_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=port_osada[xm].koszt_drewno && kamien>=port_osada[xm].koszt_kamien && zywnosc>=port_osada[xm].koszt_zywnosc && zloto>=port_osada[xm].koszt_zloto && miasto[xm].produkcja>=port_osada[xm].koszt_produkcja){
+			port_osada[xm].lvl++;
+			rozbuduj_osada(port_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(port_osada[xm]);
+			zwieksz_przychod_osada(port_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+			//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==10&& tawerna_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=tawerna_osada[xm].koszt_drewno && kamien>=tawerna_osada[xm].koszt_kamien && zywnosc>=tawerna_osada[xm].koszt_zywnosc && zloto>=tawerna_osada[xm].koszt_zloto && miasto[xm].produkcja>=tawerna_osada[xm].koszt_produkcja){
+			tawerna_osada[xm].lvl++;
+			zbuduj_osada(tawerna_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(tawerna_osada[xm]);
+			zwieksz_przychod_osada(tawerna_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==10&& tawerna_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=tawerna_osada[xm].koszt_drewno && kamien>=tawerna_osada[xm].koszt_kamien && zywnosc>=tawerna_osada[xm].koszt_zywnosc && zloto>=tawerna_osada[xm].koszt_zloto && miasto[xm].produkcja>=tawerna_osada[xm].koszt_produkcja){
+			tawerna_osada[xm].lvl++;
+			rozbuduj_osada(tawerna_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(tawerna_osada[xm]);
+			zwieksz_przychod_osada(tawerna_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			
+    	}	//////////////////
+		
+		if(ster=='q' && menu_budowy==true&& x0==11&& magazyn_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=magazyn_osada[xm].koszt_drewno && kamien>=magazyn_osada[xm].koszt_kamien && zywnosc>=magazyn_osada[xm].koszt_zywnosc && zloto>=magazyn_osada[xm].koszt_zloto && miasto[xm].produkcja>=magazyn_osada[xm].koszt_produkcja){
+			magazyn_osada[xm].lvl++;
+			zbuduj_osada(magazyn_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(magazyn_osada[xm]);
+			zwieksz_przychod_osada(magazyn_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==11&& magazyn_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=magazyn_osada[xm].koszt_drewno && kamien>=magazyn_osada[xm].koszt_kamien && zywnosc>=magazyn_osada[xm].koszt_zywnosc && zloto>=magazyn_osada[xm].koszt_zloto && miasto[xm].produkcja>=magazyn_osada[xm].koszt_produkcja){
+			magazyn_osada[xm].lvl++;
+			rozbuduj_osada(magazyn_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(magazyn_osada[xm]);
+			zwieksz_przychod_osada(magazyn_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}	
+    	if(ster=='q' && rozbudowa==true&& x0==11&& magazyn_osada[xm].lvl==2 && rada_osady[xm].lvl>=4 && drewno>=magazyn_osada[xm].koszt_drewno && kamien>=magazyn_osada[xm].koszt_kamien && zywnosc>=magazyn_osada[xm].koszt_zywnosc && zloto>=magazyn_osada[xm].koszt_zloto && miasto[xm].produkcja>=magazyn_osada[xm].koszt_produkcja){
+			magazyn_osada[xm].lvl++;
+			rozbuduj_osada(magazyn_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(magazyn_osada[xm]);
+			zwieksz_przychod_osada(magazyn_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}	
+			//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==12&& mlyn_osada[xm].lvl==0 && rada_osady[xm].lvl>=2 && drewno>=mlyn_osada[xm].koszt_drewno && kamien>=mlyn_osada[xm].koszt_kamien && zywnosc>=mlyn_osada[xm].koszt_zywnosc && zloto>=mlyn_osada[xm].koszt_zloto && miasto[xm].produkcja>=mlyn_osada[xm].koszt_produkcja){
+			mlyn_osada[xm].lvl++;
+			zbuduj_osada(mlyn_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(mlyn_osada[xm]);
+			zwieksz_przychod_osada(mlyn_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==12&& mlyn_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=mlyn_osada[xm].koszt_drewno && kamien>=mlyn_osada[xm].koszt_kamien && zywnosc>=mlyn_osada[xm].koszt_zywnosc && zloto>=mlyn_osada[xm].koszt_zloto && miasto[xm].produkcja>=mlyn_osada[xm].koszt_produkcja){
+			mlyn_osada[xm].lvl++;
+			rozbuduj_osada(mlyn_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(mlyn_osada[xm]);
+			zwieksz_przychod_osada(mlyn_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==12&& mlyn_osada[xm].lvl==2 && rada_osady[xm].lvl>=4 && drewno>=mlyn_osada[xm].koszt_drewno && kamien>=mlyn_osada[xm].koszt_kamien && zywnosc>=mlyn_osada[xm].koszt_zywnosc && zloto>=mlyn_osada[xm].koszt_zloto && miasto[xm].produkcja>=mlyn_osada[xm].koszt_produkcja){
+			mlyn_osada[xm].lvl++;
+			rozbuduj_osada(mlyn_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(mlyn_osada[xm]);
+			zwieksz_przychod_osada(mlyn_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+    	}
+
+	//////////////////
+				
+		if(ster=='q' && menu_budowy==true&& x0==13&& kamieniarz_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=kamieniarz_osada[xm].koszt_drewno && kamien>=kamieniarz_osada[xm].koszt_kamien && zywnosc>=kamieniarz_osada[xm].koszt_zywnosc && zloto>=kamieniarz_osada[xm].koszt_zloto && miasto[xm].produkcja>=kamieniarz_osada[xm].koszt_produkcja){
+			kamieniarz_osada[xm].lvl++;
+			zbuduj_osada(kamieniarz_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(kamieniarz_osada[xm]);
+			zwieksz_przychod_osada(kamieniarz_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==13&& kamieniarz_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=kamieniarz_osada[xm].koszt_drewno && kamien>=kamieniarz_osada[xm].koszt_kamien && zywnosc>=kamieniarz_osada[xm].koszt_zywnosc && zloto>=kamieniarz_osada[xm].koszt_zloto && miasto[xm].produkcja>=kamieniarz_osada[xm].koszt_produkcja){
+			kamieniarz_osada[xm].lvl++;
+			rozbuduj_osada(kamieniarz_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(kamieniarz_osada[xm]);
+			zwieksz_przychod_osada(kamieniarz_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==13&& kamieniarz_osada[xm].lvl==2 && rada_osady[xm].lvl>=4 && drewno>=kamieniarz_osada[xm].koszt_drewno && kamien>=kamieniarz_osada[xm].koszt_kamien && zywnosc>=kamieniarz_osada[xm].koszt_zywnosc && zloto>=kamieniarz_osada[xm].koszt_zloto && miasto[xm].produkcja>=kamieniarz_osada[xm].koszt_produkcja){
+			kamieniarz_osada[xm].lvl++;
+			rozbuduj_osada(kamieniarz_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(kamieniarz_osada[xm]);
+			zwieksz_przychod_osada(kamieniarz_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+
+	//////////////////
+			
+		if(ster=='q' && menu_budowy==true&& x0==14&& kosciol_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=kosciol_osada[xm].koszt_drewno && kamien>=kosciol_osada[xm].koszt_kamien && zywnosc>=kosciol_osada[xm].koszt_zywnosc && zloto>=kosciol_osada[xm].koszt_zloto && miasto[xm].produkcja>=kosciol_osada[xm].koszt_produkcja){
+			kosciol_osada[xm].lvl++;
+			zbuduj_osada(kosciol_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(kosciol_osada[xm]);
+			zwieksz_przychod_osada(kosciol_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==14&& kosciol_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=kosciol_osada[xm].koszt_drewno && kamien>=kosciol_osada[xm].koszt_kamien && zywnosc>=kosciol_osada[xm].koszt_zywnosc && zloto>=kosciol_osada[xm].koszt_zloto && miasto[xm].produkcja>=kosciol_osada[xm].koszt_produkcja){
+			kosciol_osada[xm].lvl++;
+			rozbuduj_osada(kosciol_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(kosciol_osada[xm]);
+			zwieksz_przychod_osada(kosciol_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}	
+			//////////////////
+			
+
+		if(ster=='q' && menu_budowy==true&& x0==15&& weglarz_osada[xm].lvl==0 && rada_osady[xm].lvl>=1 && drewno>=weglarz_osada[xm].koszt_drewno && kamien>=weglarz_osada[xm].koszt_kamien && zywnosc>=weglarz_osada[xm].koszt_zywnosc && zloto>=weglarz_osada[xm].koszt_zloto && miasto[xm].produkcja>=weglarz_osada[xm].koszt_produkcja){
+			weglarz_osada[xm].lvl++;
+			zbuduj_osada(weglarz_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(weglarz_osada[xm]);
+			zwieksz_przychod_osada(weglarz_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==15&& weglarz_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=weglarz_osada[xm].koszt_drewno && kamien>=weglarz_osada[xm].koszt_kamien && zywnosc>=weglarz_osada[xm].koszt_zywnosc && zloto>=weglarz_osada[xm].koszt_zloto && miasto[xm].produkcja>=weglarz_osada[xm].koszt_produkcja){
+			weglarz_osada[xm].lvl++;
+			rozbuduj_osada(weglarz_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(weglarz_osada[xm]);
+			zwieksz_przychod_osada(weglarz_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			
+    	}
+				//////////////////
+
+		if(ster=='q' && menu_budowy==true && x0==16&& warsztat_osada[xm].lvl==0 &&rada_osady[xm].lvl>=2 && drewno>=warsztat_osada[xm].koszt_drewno && kamien>=warsztat_osada[xm].koszt_kamien && zywnosc>=warsztat_osada[xm].koszt_zywnosc && zloto>=warsztat_osada[xm].koszt_zloto && miasto[xm].produkcja>=warsztat_osada[xm].koszt_produkcja){
+			warsztat_osada[xm].lvl++;
+			zbuduj_osada(warsztat_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(warsztat_osada[xm]);
+			zwieksz_przychod_osada(warsztat_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			kusznik[xm].koszt_produkcja-=50;
+    	}
+    	if(ster=='q' && rozbudowa==true && x0==16&& warsztat_osada[xm].lvl==1 && mechanika==true &&rada_osady[xm].lvl>=4 && drewno>=warsztat_osada[xm].koszt_drewno && kamien>=warsztat_osada[xm].koszt_kamien && zywnosc>=warsztat_osada[xm].koszt_zywnosc && zloto>=warsztat_osada[xm].koszt_zloto && miasto[xm].produkcja>=warsztat_osada[xm].koszt_produkcja){
+			warsztat_osada[xm].lvl++;
+			rozbuduj_osada(warsztat_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(warsztat_osada[xm]);
+			zwieksz_przychod_osada(warsztat_osada[xm],&przychod_nauka,&max_zolnierzy, xm);
+			kusznik[xm].koszt_produkcja-=50;
+    	}
+				//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==17&& stajnia_osada[xm].lvl==0 && rada_osady[xm].lvl>=2 && drewno>=stajnia_osada[xm].koszt_drewno && kamien>=stajnia_osada[xm].koszt_kamien && zywnosc>=stajnia_osada[xm].koszt_zywnosc && zloto>=stajnia_osada[xm].koszt_zloto && miasto[xm].produkcja>=stajnia_osada[xm].koszt_produkcja){
+			stajnia_osada[xm].lvl++;
+			zbuduj_osada(stajnia_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&menu_budowy,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(stajnia_osada[xm]);
+			zwieksz_przychod_osada(stajnia_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			lekka_jazda[xm].koszt_produkcja-=50;
+
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==17&& stajnia_osada[xm].lvl==1 && rada_osady[xm].lvl>=3 && drewno>=stajnia_osada[xm].koszt_drewno && kamien>=stajnia_osada[xm].koszt_kamien && zywnosc>=stajnia_osada[xm].koszt_zywnosc && zloto>=stajnia_osada[xm].koszt_zloto && miasto[xm].produkcja>=stajnia_osada[xm].koszt_produkcja){
+			stajnia_osada[xm].lvl++;
+			rozbuduj_osada(stajnia_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(stajnia_osada[xm]);
+			zwieksz_przychod_osada(stajnia_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			lekka_jazda[xm].koszt_produkcja-=50;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==17&& stajnia_osada[xm].lvl==2 && rada_osady[xm].lvl>=4 && drewno>=stajnia_osada[xm].koszt_drewno && kamien>=stajnia_osada[xm].koszt_kamien && zywnosc>=stajnia_osada[xm].koszt_zywnosc && zloto>=stajnia_osada[xm].koszt_zloto && miasto[xm].produkcja>=stajnia_osada[xm].koszt_produkcja){
+			stajnia_osada[xm].lvl++;
+			rozbuduj_osada(stajnia_osada[xm],&drewno,&kamien,&zywnosc,&zloto,&max_zolnierzy,&rozbudowa,&menu_osada,&przychod_nauka,&x0,xm);
+			zwieksz_koszt_osada(stajnia_osada[xm]);
+			zwieksz_przychod_osada(stajnia_osada[xm],&przychod_nauka,&max_zolnierzy,xm);
+			lekka_jazda[xm].koszt_produkcja-=50;
+
+    	}
+    	
+
+		if(ster==KEY_UP && x0==0 && menu_budowy==true || ster==KEY_UP && x0==0 && rozbudowa==true)
+		x0=18;
+		
+		if(ster==KEY_DOWN && x0==18 && menu_budowy==true || ster==KEY_DOWN && x0==18 && rozbudowa==true)
+		x0=0;
 	
 }
 
