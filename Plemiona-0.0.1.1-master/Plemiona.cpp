@@ -7,6 +7,7 @@
 #include <fstream>
 #include <string>
 #include "MMSystem.h"
+#include <cmath>
 
 #define bloczek 219
 #define KEY_UP 72
@@ -30,6 +31,10 @@
 using namespace std;
 HANDLE hOut;
 
+string komunikat_domyslny = "Brak komunikatow moj Panie";
+
+ 
+
 char woda=176;
 char gora=94;
 char dom = 178;
@@ -42,9 +47,11 @@ char stolica = 219;
  char osadnik = 79;
  char robotnik = 82;
  char osada = 254;
+ char wioska = 87;
  char farma = 206;
  char kopalnia = 88;
  char tartak = 84;
+  int ilosc_barbarzyncow;
 
 void gotoxy(int x, int y)
 {
@@ -179,6 +186,7 @@ struct struktura_jednostek
 	string wymagania_osada;
 	string wymagania_najmu;
 	string nazwa;
+	string atuty;
 };
 
 struct struktura_armii
@@ -197,7 +205,7 @@ struct struktura_armii
 	int ciezka_jazda;
 	int tarany;
 	int elity;
-	int objetosc;
+	int miasto_domowe;
 	string nazwa;
 	int wielkosc;
 };
@@ -233,111 +241,116 @@ struktura_garnizonu sjednostki[12][12]={{
 									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}}};
 
 
-struktura_jednostek pikinier[11]=
+struktura_jednostek pikinier[12]=
 {
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"},
-	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy"}
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"}
 };
-struktura_jednostek lucznik[11]=
+struktura_jednostek lucznik[12]=
 {
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy"}
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
+	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"}
 };
-struktura_jednostek kusznik[11]=
+struktura_jednostek kusznik[12]=
 {
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
 	
 };
-struktura_jednostek ciezkozbrojny[11]=
+struktura_jednostek ciezkozbrojny[12]=
 {
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni"}
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"}
 };
-struktura_jednostek lekka_jazda[11]=
+struktura_jednostek lekka_jazda[12]=
 {
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"},
-	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda"}
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
 };
-struktura_jednostek ciezka_jazda[11]=
+struktura_jednostek ciezka_jazda[12]=
 {
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda"}
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
 };
 struktura_jednostek taran[11]=
 {
 	
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"},
-	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran"}
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"}
 };
 struktura_jednostek elita=
 {
 	8,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita"
 };
-
 
 
 
@@ -1185,6 +1198,14 @@ bool bplac=false;
  char mapa_armii[127][201];
  bool najmij=false;
  bool menu_osada=false;
+ bool blisko=false;
+ bool bkomunikat=false;
+ bool gracz1=true;
+ bool gracz2=false;
+ bool ruch_barbarzyncow=false;
+ 
+
+ char mapa_walki[49][73];
 
 struktura_armii armia[50];
 
@@ -1212,7 +1233,7 @@ struktura_jednostek jarmia=
 };
 
 
-struktura_miasto miasto[10];
+struktura_miasto miasto[11];
 
 
 
@@ -1769,7 +1790,10 @@ void rekrutowanka(int x0){
 			cout <<"Wymagania: ";
 			gotoxy(110,28);
 			cout << jednostka.wymagania<<"                                              ";
-
+			gotoxy(110,29);
+			cout<<"Specjalne: ";
+			gotoxy(110,30);
+			cout << jednostka.atuty<<"                                                       ";
 }
 
 void rekrutowanka_osada(int x0, int xm){
@@ -1820,7 +1844,10 @@ void rekrutowanka_osada(int x0, int xm){
 			cout <<"Wymagania: ";
 			gotoxy(110,28);
 			cout << jednostka.wymagania_osada<<"                                              ";
-
+			gotoxy(110,29);
+			cout<<"Specjalne: ";
+			gotoxy(110,30);
+			cout << jednostka.atuty<<"                                                       ";
 }
 
 void najmowanka(int x0)
@@ -1895,7 +1922,7 @@ void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnos
 			cout << "   " << blok;
 			gotoxy(54,27);
 			cout <<blok<< " Zrekrutowales " <<budowla.nazwa<<"                                          ";
-			Sleep(2000);
+			Sleep(1200);
 		
 		*x0=0;
 		system("CLS");
@@ -1958,6 +1985,7 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 			if(bufor_rekrutacji==1)mapa_jednostek[x2][y2]='O';
 			if(bufor_rekrutacji!=0 && bufor_rekrutacji!=1){	
 			mapa_jednostek[x2][y2]='A';
+			armia[liczba_armii].miasto_domowe=xm;
 			armia[liczba_armii].x=x2;
 			armia[liczba_armii].y=y2;
 			armia[liczba_armii].id=liczba_armii;
@@ -2034,43 +2062,1211 @@ void pokaz_armie(struktura_armii armia, int xm)
 	cout << "UTRZYMANIE: "<<utrzymanie<<"     ";
 }
 
-///////////
-	 int x0=0;
-	 bool technologie;
-	 ////////////
-	 
-	 
-void odkryj( bool *nazwa, int koszt, int *nauka){
-			*nazwa=true;
-			nauka=nauka-koszt;
-			technologie=false;
-			menu_stolica=true;
-			x0=0;
-}
-
-
-int main(){
-
-
+ int szansa=1;
  
  char mapa_stolicy[80][150];
  char bufor_miasta[80][150];
  char mapa_jednostek[127][201];
  char bufor_mjednostek[127][201];
  int mapa_farma[127][201];
+ int mapa_wioska[127][201];
  int mapa_kopalnia[127][201];
  int mapa_tartak[127][201];
  char zasieg_miast[127][201];
  char teretorium[127][201];
+ bool mgla_wojny[127][201];
+ bool niewidocznosc[127][201];
+ char bufor_widocznosci[137][201];
  int bufor_budowa=10;
  int bufor_budowa_miasto=45;
  int bufor_rekrutacja;
+ 
+ int barbarzynca_x;
+ int barbarzynca_y;
+ bool barbarzynca_blad=false;
+ int szansa_ruch;
+ bool barbarzynca_atak=false;
+ short bufor_barbarzyncow[137][201];
+ bool koniec_ruchu=false;
+ int min_x;
+ int min_y;
+
+
+void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto,int *liczba_barbarzyncow){
+	
+	struktura_armii armia_barb;
+	system("CLS");
+	bool koniec=false;
+	bool ruch=true;
+	bool wygrana=false;
+	int x0;
+	int x1=-1;
+	int x2=0;
+	int maxrand;
+	int max;
+	char ster;
+	bool pikinierzy=false;
+	bool lucznicy=false;
+	bool kusznicy=false;
+	bool ciezkozbrojni=false;
+	bool lekka_jazdy=false;
+	bool ciezka_jazdy=false;
+	bool tarany=false;
+	bool elity=false;
+	bool atak=false;
+	bool menu=true;
+	bool atak1=false;
+	int rando[6];
+	
+	int atak_bufor;
+	int atak_bufor_obrona;
+	int obrona_bufor;
+	int zycie_bufor;
+	
+	int miasto_domowe=armia.miasto_domowe;
+	int identyfikator_gracz;
+	int identyfikator_barb[5];
+	string identyfikator_nazwy[8]={"Pikinier","Lucznik","Kusznik","Ciezkozbrojny","Lekka Jazda","Ciezka Jazda","Taran","Elita"};
+	int zycie_pikinierzy[40];
+	int zycie_lucznicy[40];
+	int zycie_kusznicy[40];
+	int zycie_ciezkozbrojni[40];
+	int zycie_lekka_jazda[40];
+	int zycie_ciezka_jazda[40];
+	int zycie_tarany[40];
+	int zycie_elity[40];
+	int zycie_pikinierzy_barb[40];
+	int zycie_lucznicy_barb[40];
+	int zycie_kusznicy_barb[40];
+	int zycie_ciezkozbrojni_barb[40];
+	int zycie_lekka_jazda_barb[40];
+	int zycie_ciezka_jazda_barb[40];
+	////
+	int obrona_pikinierzy[40];
+	int obrona_lucznicy[40];
+	int obrona_kusznicy[40];
+	int obrona_ciezkozbrojni[40];
+	int obrona_lekka_jazda[40];
+	int obrona_ciezka_jazda[40];
+	int obrona_tarany[40];
+	int obrona_elity[40];
+	int obrona_pikinierzy_barb[40];
+	int obrona_lucznicy_barb[40];
+	int obrona_kusznicy_barb[40];
+	int obrona_ciezkozbrojni_barb[40];
+	int obrona_lekka_jazda_barb[40];
+	int obrona_ciezka_jazda_barb[40];
+	string komunikat="Wybierz Twoja jednostke do potyczki";
+	if(armia.wielkosc<=10){
+	maxrand=(rand()%4+1);	
+	
+	}
+	if(armia.wielkosc>10 && armia.wielkosc<=20){
+		maxrand=(rand()%6+1);
+	}
+	if(armia.wielkosc>20){
+	
+	maxrand=(rand()%8+1);
+	}
+	
+	armia_barb.wielkosc=0;
+	max=armia.wielkosc;
+	max=10;
+
+	rando[0]=(rand()%maxrand);
+	
+	armia_barb.wielkosc=rando[0]*pikinier[11].wielkosc+1;
+	armia_barb.pikinierzy=rando[0]+1;
+	
+	rando[1]=(rand()%maxrand);
+
+	armia_barb.wielkosc+=(rando[1]*lucznik[11].wielkosc);
+	armia_barb.lucznicy=rando[1];
+	
+	rando[2]=(rand()%maxrand);
+	if(armia.wielkosc>10){
+	armia_barb.wielkosc+=(rando[2]*kusznik[11].wielkosc);
+	armia_barb.kusznicy=rando[2];
+	}
+		rando[3]=(rand()%maxrand);
+	if(armia.wielkosc>10){
+	armia_barb.wielkosc+=(rando[3]*ciezkozbrojny[11].wielkosc);
+	armia_barb.ciezkozbrojni=rando[3];
+	}
+		rando[4]=(rand()%maxrand);
+	if(armia.wielkosc>20){
+	armia_barb.wielkosc+=(rando[4]*lekka_jazda[11].wielkosc);
+	armia_barb.lekka_jazda=rando[4];
+	}
+			rando[5]=(rand()%maxrand);
+	if(armia.wielkosc>20){
+	armia_barb.wielkosc+=(rando[5]*ciezka_jazda[11].wielkosc);
+	armia_barb.ciezka_jazda=rando[5];
+	}
+	
+	
+	for(int i=0;i<armia.pikinierzy;i++){
+		zycie_pikinierzy[i]=pikinier[miasto_domowe].obrona*2;
+		obrona_pikinierzy[i]=pikinier[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.lucznicy;i++){
+		zycie_lucznicy[i]=lucznik[miasto_domowe].obrona*2;
+		obrona_lucznicy[i]=lucznik[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.kusznicy;i++){
+		zycie_kusznicy[i]=kusznik[miasto_domowe].obrona*2;
+		obrona_kusznicy[i]=kusznik[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.ciezkozbrojni;i++){
+		zycie_ciezkozbrojni[i]=ciezkozbrojny[miasto_domowe].obrona*2;
+		obrona_ciezkozbrojni[i]=ciezkozbrojny[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.lekka_jazda;i++){
+		zycie_lekka_jazda[i]=lekka_jazda[miasto_domowe].obrona*2;
+		obrona_lekka_jazda[i]=lekka_jazda[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.ciezka_jazda;i++){
+		zycie_ciezka_jazda[i]=ciezka_jazda[miasto_domowe].obrona*2;
+		obrona_ciezka_jazda[i]=ciezka_jazda[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.tarany;i++){
+		zycie_tarany[i]=taran[miasto_domowe].obrona*2;
+		obrona_tarany[i]=taran[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.elity;i++){
+		zycie_elity[i]=elita.obrona*2;
+		obrona_elity[i]=elita.obrona;
+	}
+	//////////////////////////
+		for(int i=0;i<armia_barb.pikinierzy;i++){
+		zycie_pikinierzy_barb[i]=pikinier[11].obrona*2;
+		obrona_pikinierzy_barb[i]=pikinier[11].obrona;
+	}
+		for(int i=0;i<armia_barb.lucznicy;i++){
+		zycie_lucznicy_barb[i]=lucznik[11].obrona*2;
+		obrona_lucznicy_barb[i]=lucznik[11].obrona;
+	}
+		for(int i=0;i<armia_barb.kusznicy;i++){
+		zycie_kusznicy_barb[i]=kusznik[11].obrona*2;
+		obrona_kusznicy_barb[i]=kusznik[11].obrona;
+	}
+		for(int i=0;i<armia_barb.ciezkozbrojni;i++){
+		zycie_ciezkozbrojni_barb[i]=ciezkozbrojny[11].obrona*2;
+		obrona_ciezkozbrojni_barb[i]=ciezkozbrojny[11].obrona;
+	}
+		for(int i=0;i<armia_barb.lekka_jazda;i++){
+		zycie_lekka_jazda_barb[i]=lekka_jazda[11].obrona*2;
+		obrona_lekka_jazda_barb[i]=lekka_jazda[11].obrona;
+	}
+		for(int i=0;i<armia_barb.ciezka_jazda;i++){
+		zycie_ciezka_jazda_barb[i]=ciezka_jazda[11].obrona*2;
+		obrona_ciezka_jazda_barb[i]=ciezka_jazda[11].obrona;
+	}
+	
+	
+	while(koniec==false){
+
+		
+
+		
+		gotoxy(20,17);
+		cout<<"           /\                                                 /\ ";
+		gotoxy(20,18);
+ 		cout<<" _         )(_______________________   ______________________ )(         _";
+ 		gotoxy(20,19);
+		cout<<"(_)///////(**)______________________> <______________________(**)\\\\\\\\\\\\\\\(_)";
+		gotoxy(20,20);
+        cout<<"           )(                                                 )(";
+        gotoxy(20,21);
+        cout<<"           \/                                                 \/";
+		gotoxy(30,23);
+		cout << komunikat<<"                            ";
+		
+		gotoxy(76,1);
+		cout << "Armia Gracza: ";
+	gotoxy(76,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+rekrutowanka(x0+2);
+gotoxy(70,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(70,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,5);
+if(x0==0 && menu==true){
+komunikat="Wybierz Twoja jednostke do potyczki";
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia.pikinierzy<<"           "<<blok; 
+
+gotoxy(70,6);
+if(x0==1&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok;
+gotoxy(70,7);
+if(x0==2&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia.kusznicy<<"            "<<blok; 
+gotoxy(70,8);
+if(x0==3&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(70,9);
+if(x0==4&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia.lekka_jazda<<"        "<<blok; 
+gotoxy(70,10);
+if(x0==5&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "<<blok;
+gotoxy(70,11);
+if(x0==6&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<armia.tarany<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<armia.tarany<<"              "<<blok;
+gotoxy(70,12);
+if(x0==7&& menu==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita / "<<armia.elity<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita / "<<armia.elity<<"              "<<blok; 
+gotoxy(70,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,14);
+for(int i=0;i<28;i++)cout << blok;
+		
+		//////////////pokaz barbow///
+		
+gotoxy(10,1);
+		cout << "Armia Barbarzyncow: ";
+	gotoxy(10,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+gotoxy(5,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(5,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,5);
+if(x1==0 && atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia_barb.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia_barb.pikinierzy<<"           "<<blok; 
+
+gotoxy(5,6);
+if(x1==1&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok;
+gotoxy(5,7);
+if(x1==2&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia_barb.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia_barb.kusznicy<<"            "<<blok; 
+gotoxy(5,8);
+if(x1==3&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(5,9);
+if(x1==4&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "<<blok; 
+gotoxy(5,10);
+if(x1==5&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "<<blok;
+gotoxy(5,11);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,12);
+for(int i=0;i<28;i++)cout << blok;
+
+	if(atak1==true){
+	gotoxy(0,60);	
+	if(pikinierzy==true){
+		for(int i=0;i<armia_barb.pikinierzy;i++){
+			if(zycie_pikinierzy_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+			}else
+			cout<<"                      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true){
+		for(int i=0;i<armia_barb.lucznicy;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+			}else
+			cout<<"                      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true){
+		for(int i=0;i<armia_barb.kusznicy;i++){
+			if(zycie_kusznicy_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+			}else
+			cout<<"                      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true){
+		for(int i=0;i<armia_barb.ciezkozbrojni;i++){
+			if(zycie_ciezkozbrojni_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+			}else
+			cout<<"                      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true){
+		for(int i=0;i<armia_barb.lekka_jazda;i++){
+			if(zycie_lekka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"                      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true){
+		for(int i=0;i<armia_barb.ciezka_jazda;i++){
+			if(zycie_ciezka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"                      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+}
+	////////////////////////////////////
+
+	
+		gotoxy(0,60);	
+	if(pikinierzy==true&& atak==false){
+		for(int i=0;i<armia.pikinierzy;i++){
+			if(zycie_pikinierzy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true&& atak==false){
+		for(int i=0;i<armia.lucznicy;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true&& atak==false){
+		for(int i=0;i<armia.kusznicy;i++){
+			if(zycie_kusznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+			}else
+			cout<<"      ------          ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true&& atak==false){
+		for(int i=0;i<armia.ciezkozbrojni;i++){
+			if(zycie_ciezkozbrojni[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true&& atak==false){
+		for(int i=0;i<armia.lekka_jazda;i++){
+			if(zycie_lekka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+			}else
+			cout<<"          ------      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true&& atak==false){
+		for(int i=0;i<armia.ciezka_jazda;i++){
+			if(zycie_ciezka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(tarany==true&& atak==false){
+		for(int i=0;i<armia.tarany;i++){
+			if(zycie_tarany[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(elity==true && atak==false){
+		for(int i=0;i<armia.elity;i++){
+			if(zycie_elity[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		
+		
+		
+	ster=getch();
+	
+	
+	if(ster==KEY_DOWN && x0!=7 && menu==true){
+	x0++;
+	cls();
+	continue;
+	}
+	if(ster==KEY_UP && x0!=0 && menu==true){
+	x0--;
+	cls();
+	continue;
+	}	
+	
+	if(ster==KEY_DOWN && x1!=5 && atak==true && atak1==false){
+	x1++;
+	cls();
+	continue;
+	}
+	if(ster==KEY_UP && x1!=0 && atak==true && atak1==false){
+	x1--;
+	cls();
+	continue;
+	}	
+	///////////////////////////////
+	if(ster==KEY_DOWN && x2!=armia.pikinierzy-1 && pikinierzy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	if(ster==KEY_UP && x2!=0){
+	x2--;
+	cls();
+	
+	}	
+		if(ster==KEY_DOWN && x2!=armia.lucznicy-1 && lucznicy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	
+	if(ster==KEY_DOWN && x2!=armia.kusznicy-1 && kusznicy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia.ciezkozbrojni-1 && ciezkozbrojni==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia.lekka_jazda-1 && lekka_jazdy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia.ciezka_jazda-1 && ciezka_jazdy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia.tarany-1 && tarany==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	if(ster==KEY_DOWN && x2!=armia.elity-1 && elity==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	/////////////////////////
+	if(ster==KEY_DOWN && x2!=armia_barb.pikinierzy-1 && pikinierzy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+		if(ster==KEY_DOWN && x2!=armia_barb.lucznicy-1 && lucznicy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+	
+	if(ster==KEY_DOWN && x2!=armia_barb.kusznicy-1 && kusznicy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia_barb.ciezkozbrojni-1 && ciezkozbrojni==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia_barb.lekka_jazda-1 && lekka_jazdy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=armia_barb.ciezka_jazda-1 && ciezka_jazdy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+		if(armia_barb.wielkosc<1){
+		break;
+		wygrana=true;
+		
+		}
+		
+		if(armia.wielkosc<1){
+		break;
+		wygrana=false;
+		
+		}
+
+	if(ster==27 && menu==false){
+		menu=true;
+		atak=false;
+		elity=false;
+		tarany=false;
+		ciezka_jazdy=false;
+		lekka_jazdy=false;
+		ciezkozbrojni=false;
+		kusznicy=false;
+		lucznicy=false;
+		pikinierzy=false;
+		x0=0;
+		x1=0;
+		x2=0;
+		system("CLS");
+	}
+	if(ster=='m')return;
+	if(ster=='q' && x0==0 && atak==false && armia.pikinierzy>0&& pikinierzy==false){
+		menu=false;
+		pikinierzy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==1&& atak==false && armia.lucznicy>0&& lucznicy==false){
+		menu=false;
+		lucznicy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==2&& atak==false && armia.kusznicy>0&&kusznicy==false){
+		menu=false;
+		kusznicy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==3&& atak==false && armia.ciezkozbrojni>0&&ciezkozbrojni==false){
+		menu=false;
+		ciezkozbrojni=true;
+		continue;
+	}	
+		if(ster=='q' && x0==4&& atak==false && armia.lekka_jazda>0&&lekka_jazdy==false){
+		menu=false;
+		lekka_jazdy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==5&& atak==false && armia.ciezka_jazda>0&&ciezka_jazdy==false){
+		menu=false;
+		ciezka_jazdy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==6&& atak==false && armia.tarany>0&&tarany==false){
+		menu=false;
+		tarany=true;
+		continue;
+	}	
+		if(ster=='q' && x0==7&& atak==false && armia.elity>0&&elity==false){
+		menu=false;
+		elity=true;
+		continue;
+	}	
+	
+	//////////////////////
+	if(ster=='q' && x1==0 && atak==true&& armia_barb.pikinierzy>0 && pikinierzy==false){
+		menu=false;
+		x2=0;
+		atak1=true;
+		pikinierzy=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==1&& atak==true && armia_barb.lucznicy>0 && lucznicy==false){
+		menu=false;
+		atak1=true;
+		x2=0;
+		lucznicy=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==2 && atak==true&& armia_barb.kusznicy>0&&kusznicy==false){
+		menu=false;
+		atak1=true;
+		x2=0;
+		kusznicy=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==3&& atak==true && armia_barb.ciezkozbrojni>0&&ciezkozbrojni==false){
+		menu=false;
+		atak1=true;
+		x2=0;
+		ciezkozbrojni=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==4&& atak==true && armia_barb.lekka_jazda>0&&lekka_jazdy==false){
+		menu=false;
+		atak1=true;
+		lekka_jazdy=true;
+		x2=0;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==5 && atak==true&& armia_barb.ciezka_jazda>0&&ciezka_jazdy==false){
+		menu=false;
+		atak1=true;
+		ciezka_jazdy=true;
+		x2=0;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+
+		if(ster=='q' && pikinierzy==true&& atak==false && zycie_pikinierzy[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			pikinierzy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && lucznicy==true&& atak==false && zycie_lucznicy[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			lucznicy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && kusznicy==true&& atak==false && zycie_kusznicy[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			kusznicy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && ciezkozbrojni==true&& atak==false && zycie_ciezkozbrojni[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			ciezkozbrojni=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && lekka_jazdy==true&& atak==false && zycie_lekka_jazda[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			lekka_jazdy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && ciezka_jazdy==true&& atak==false && zycie_ciezka_jazda[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			ciezka_jazdy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && tarany==true&& atak==false && zycie_tarany[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			tarany=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && elity==true&& atak==false && zycie_elity[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			elity=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+////////////////////////////////
+		if(ster=='q' && pikinierzy==true&& atak1==true && zycie_pikinierzy_barb[x2]>0){
+			komunikat="Atak w toku";
+			if(x0==0){
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_pikinierzy[identyfikator_gracz]<<"/"<<obrona_pikinierzy[identyfikator_gracz]<<")     VS    "<<"Pikinier ("<<zycie_pikinierzy_barb[x2]<<"/"<<obrona_pikinierzy_barb[x2]<<")";
+			gotoxy(30,27);
+			if(obrona_pikinierzy_barb[x2]<=0){
+			atak_bufor=pikinier[miasto_domowe].atak-abs(obrona_pikinierzy_barb[x2]);
+			zycie_pikinierzy_barb[x2]-=atak_bufor;
+			}else
+			atak_bufor=0;
+			atak_bufor_obrona=0;
+			if(obrona_pikinierzy_barb[x2]>0){
+			atak_bufor_obrona=pikinier[miasto_domowe].atak;
+			obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			}
+
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<pikinier[miasto_domowe].atak <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona<<")";
+				if(obrona_pikinierzy_barb[x2]<0){
+				obrona_pikinierzy_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_pikinierzy_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego pikiniera";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_pikinierzy_barb[x2]>0){
+			
+			if(obrona_pikinierzy[identyfikator_gracz]<=0){
+			atak_bufor=pikinier[11].obrona-abs(obrona_pikinierzy[identyfikator_gracz]);
+			zycie_pikinierzy[identyfikator_gracz]-=atak_bufor;
+			}else
+			atak_bufor=0;
+			atak_bufor_obrona=0;
+			if(obrona_pikinierzy[identyfikator_gracz]>0){
+			atak_bufor_obrona=pikinier[1].obrona;
+			obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			}
+			
+			cout << "Zadaja ci "<<pikinier[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona<<")";
+			gotoxy(30,28);
+			if(zycie_pikinierzy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			}
+			}
+			getch();
+			pikinierzy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			x1=0;
+			system("CLS");
+		}
+		if(ster=='q' && lucznicy==true&& atak1==true && zycie_lucznicy_barb[x2]>0){
+			komunikat="Atak w toku";
+			atak=true;
+			lucznicy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+		if(ster=='q' && kusznicy==true&& atak1==true && zycie_kusznicy_barb[x2]>0){
+			komunikat="Atak w toku";
+			atak=true;
+			kusznicy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+		if(ster=='q' && ciezkozbrojni==true&& atak1==true && zycie_ciezkozbrojni_barb[x2]>0){
+			komunikat="Atak w toku";
+			atak=true;
+			ciezkozbrojni=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+		if(ster=='q' && lekka_jazdy==true&& atak1==true && zycie_lekka_jazda_barb[x2]>0){
+			komunikat="Atak w toku";
+			atak=true;
+			lekka_jazdy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+		if(ster=='q' && ciezka_jazdy==true&& atak1==true && zycie_ciezka_jazda_barb[x2]>0){
+			komunikat="Atak w toku";
+			atak=true;
+			ciezka_jazdy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+
+
+		
+		
+		
+		
+		
+		
+	}
+	cout<< "KONIEC";
+	return;
+	
+	
+}
+
+
+void walka_gracze(struktura_armii armia, char mapa_walki[49][73], string pre_walka[49]){
+	bool koniec=false;
+	bool gracz1;
+	bool gracz2;
+	int x;
+	int y;
+	
+	
+	 for(int i=0;i<49;i++){
+	for(int j=0;j<73;j++){
+		if(mapa_walki[i][j]==dom2){
+			szansa=(rand()%100);
+			if(szansa>90){
+			mapa_walki[i][j]=dom;
+			}
+			if(szansa<10){
+			mapa_walki[i][j]=gora;
+			}
+		}
+	}
+}
+	
+	while(koniec==false){
+		
+		
+		for(int i=x-15;i<=x+15;i++){
+	cout << "   ";
+        for(int j=y-15;j<=y+15;j++){
+        		if(j==(y+15) || i==(x+15) || j==(y-15) || i==(x-15))cout << blok;
+        		else{
+                if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{	
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' && mapa_jednostek[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+
+                        	
+				if(mapa_jednostek[i][j]=='B'){
+        			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
+        			cout << mapa_jednostek[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
+				if(mapa_jednostek[i][j]!=' '){
+        			SetConsoleTextAttribute( hOut, 12 | BACKGROUND_GREEN );
+        			cout << mapa_jednostek[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
+                if(mapa[i][j]==dom){
+                                    SetConsoleTextAttribute( hOut, 2 );
+                                    cout << mapa[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                                    
+                if(mapa[i][j]==dom2){
+                                     SetConsoleTextAttribute( hOut, 10 );
+                                    cout << mapa[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa[i][j]==woda){
+                                     SetConsoleTextAttribute( hOut, 9  );
+                                    cout << mapa[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa[i][j]==gora){
+                                     SetConsoleTextAttribute( hOut, 7 | BACKGROUND_GREEN );
+                                     cout << mapa[i][j];
+                                     SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+
+                cout << mapa[i][j];
+                
+                }
+                }
+            	}
+                }
+            	}
+                }
+            	}
+            	}
+            	}
+            	}
+            	}
+			
+                
+        cout << endl;
+        }
+    	}
+		
+		
+	}
+	
+	for(int i=0;i<49;i++){
+		for(int j=0;j<73;j++){
+		mapa_walki[i][j]=pre_walka[i][j];
+		}
+	}
+}
+
+
+///////////
+	 int x0=0;
+	 bool technologie;
+	 ////////////
+	 
+	 
+void odkryj( bool *nazwa, int koszt, int *nauka, string NazwaTechnologii){
+			*nazwa=true;
+			nauka=nauka-koszt;
+			technologie=false;
+			menu_stolica=true;
+			gotoxy(54,25);
+			for(int i=0;i<70;i++)cout << blok;
+			gotoxy(54,26);
+			cout << blok;
+			for(int i=0;i<68;i++)cout<< " ";
+			cout << blok;
+			gotoxy(54,28);
+			cout << blok;
+			for(int i=0;i<68;i++)cout<< " ";
+			cout << blok;
+			gotoxy(54,29);
+			for(int i=0;i<70;i++)cout << blok;
+			gotoxy(120,27);
+			cout << "   " << blok;
+			gotoxy(54,27);
+			cout <<blok<< " Okdryles " <<NazwaTechnologii<<"                                          ";
+			Sleep(2000);
+			x0=0;
+}
+
+
+int main(){
 
  int miasta[137][201];
  string jednostki[255];
  jednostki[osadnik]="osadnik";
  jednostki[82]="robotnik";
+ string gracz1_nazwa="Kuba";
+ string gracz2_nazwa;
  
+ srand(time(NULL));
  
  ////technologie/////
  
@@ -2092,13 +3288,15 @@ int main(){
  bool hutnictwo=false;
  bool ewangelizacja=false;
  bool browarnictwo=false;
+ int nastepna_tura_domyslnie=5;
+ int nastepna_tura=5;
 
 ///////////////////////////////
  
  HANDLE wHnd; 
 HANDLE rHnd; 
  
- int szansa=1;
+
  int szansa_robert;
  int punkty=0;
  char bufor_poj;
@@ -2144,7 +3342,7 @@ for(int i=1;i<11;i++)miasto[i].podatek=100;
  int x=102;
  int l_robert=0;
  int y=63;
- srand( time( NULL ) );
+
  int e=1;
  hOut = GetStdHandle( STD_OUTPUT_HANDLE );
  char ster;
@@ -2624,7 +3822,22 @@ for(int i=0;i<137;i++){
 for(int i=0;i<80;i++){
 	getline(wczytaj_miasto, pre_miasto[i]);
 }
+
+wczytaj.close();
+ wczytaj.open("Assets/Maps/map_attack.txt");
+ string pre_walka[49];
+
+for(int i=0;i<49;i++){
+	getline(wczytaj, pre_walka[i]);
+}
  
+ 
+ for(int i=0;i<49;i++){
+	for(int j=0;j<73;j++){
+		mapa_walki[i][j]=pre_walka[i][j];
+		cout << endl;
+	}
+}
  
 for(int i=0;i<137;i++){
 	for(int j=0;j<201;j++){
@@ -2701,8 +3914,14 @@ wczytaj_miasto.close();
 miasto[1].produkcja=1000;
 
 do{
+	gotoxy(50,50);
+cout << "Tura Gracza "<<gracz1_nazwa<<", wcisnij cokolwiek aby kontynuowac";
+getch();
+system("CLS");
+while(gracz1==true){
 
- 
+	
+
 while(mapa_glowna==true){
 	h=0;
 	przychod_zloto=0;
@@ -2711,21 +3930,59 @@ while(mapa_glowna==true){
 	przychod_zywnosc=0;
 	przychod_wiara=0;
 	przychod_nauka=0;
-//	for(int i=1;i<10;i++){
-//	miasto[i].obrona+=ludnosc*0.00005; ////to bedzie szlo do next turn
-//	}
-	for(int i=1;i<10;i++)przychod_zloto=przychod_zloto+miasto[i].przychod_zloto;
+	
+	////mgla wojny////
+
+		for(int i=0;i<127;i++){
+		for(int j=0;j<201;j++){
+			niewidocznosc[i][j]=false;
+			
+		}
+	}
+		for(int i=0;i<137;i++){
+		for(int j=0;j<201;j++){
+			if((mapa_jednostek[i][j]!=' '&& mapa_jednostek[i][j]!='B') || (mapa[i][j]==stolica || mapa[i][j]==osada)){
+				for(int p=i-4;p<=i+4;p++){
+					for(int o=j-4;o<=j+4;o++){
+						mgla_wojny[p][o]=true;
+						bufor_widocznosci[p][o]=mapa[p][o];
+					}
+				}
+			}
+		}
+	}
+	for(int i=0;i<137;i++){
+		for(int j=0;j<201;j++){
+			if((mapa_jednostek[i][j]!=' ' && mapa_jednostek[i][j]!='B') && mgla_wojny[i][j]==true || (mapa[i][j]==stolica || mapa[i][j]==osada) && mgla_wojny[i][j]==true){
+				for(int p=i-4;p<=i+4;p++){
+					for(int o=j-4;o<=j+4;o++){
+						niewidocznosc[p][o]=true;
+					}
+				}
+			}
+		}
+	}
+
+	for(int i=1;i<11;i++)przychod_zloto=przychod_zloto+miasto[i].przychod_zloto;
 	if(waluta==true)przychod_zloto=przychod_zloto*1.25;
-	for(int i=1;i<10;i++)przychod_drewno=przychod_drewno+miasto[i].przychod_drewno;
-	for(int i=1;i<10;i++)przychod_kamien=przychod_kamien+miasto[i].przychod_kamien;
+	for(int i=0;i<137;i++){
+		for(int j=0;j<201;j++){
+			if(mapa_armii[i][j]>0){
+				przychod_zloto-+armia[mapa_armii[i][j]].utrzymanie;
+			}
+		}
+	}
+	for(int i=1;i<11;i++)przychod_drewno=przychod_drewno+miasto[i].przychod_drewno;
+	for(int i=1;i<11;i++)przychod_kamien=przychod_kamien+miasto[i].przychod_kamien;
 	if(huta.lvl>=1)przychod_kamien=przychod_kamien+przychod_kamien*0.3;
-	for(int i=1;i<10;i++)przychod_zywnosc=przychod_zywnosc+miasto[i].przychod_zywnosc;
+	for(int i=1;i<11;i++)przychod_zywnosc=przychod_zywnosc+miasto[i].przychod_zywnosc;
 	if(hodowla==true)przychod_zywnosc=przychod_zywnosc*1.25;
-	for(int i=1;i<10;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc-ludnosc*0.0005;
-	for(int i=1;i<10;i++)przychod_wiara=przychod_wiara+miasto[i].przychod_wiara;
+	for(int i=1;i<11;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc-ludnosc*0.0005;
+	for(int i=1;i<11;i++)przychod_wiara=przychod_wiara+miasto[i].przychod_wiara;
 	if(ewangelizacja==true)przychod_wiara=przychod_wiara*1.25;
-	for(int i=1;i<10;i++)przychod_nauka=przychod_nauka+miasto[i].przychod_nauka;
+	for(int i=1;i<11;i++)przychod_nauka=przychod_nauka+miasto[i].przychod_nauka;
 	if(gildie==true)przychod_nauka=przychod_nauka*1.25;
+	
          cls();
          
  
@@ -2738,6 +3995,21 @@ for(int i=x-19;i<=x+19;i++){
         for(int j=y-19;j<=y+19;j++){
         		if(j==(y+19) || i==(x+19) || j==(y-19) || i==(x-19))cout << blok;
         		else{
+        		if(mgla_wojny[i][j]==false)cout<<" ";
+        		else{
+        		if(niewidocznosc[i][j]==false){
+        			    if(mapa[i][j]==woda){
+                         SetConsoleTextAttribute( hOut, 9  );
+                    	cout << mapa[i][j];
+                    	SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+						
+        		    SetConsoleTextAttribute( hOut, 8 | BACKGROUND_GREEN );
+        			cout << bufor_widocznosci[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );	
+        			}
+				}else{
+				
         		if(mapa[i][j]==stolica){
         			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
         			cout << mapa[i][j];
@@ -2762,26 +4034,36 @@ for(int i=x-19;i<=x+19;i++){
                         SetConsoleTextAttribute( hOut,  5 |BACKGROUND_GREEN );
                         cout << mapa[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
-                        }else{                        	
+                        }else{       
+				if(mapa[i][j]==wioska){
+                        SetConsoleTextAttribute( hOut,  5 |BACKGROUND_GREEN );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{                   	
                 if(i==x && j==y){
                         SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
                         cout << mapa[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
-                if(mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!=' ' && ruch==true){
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{	
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && ruch==true){
                         SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
                         cout << mapa_jednostek[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
-                if(mapa_jednostek[i][j]!=' ' && budowa==true || mapa_jednostek[i][j]!=' ' && ruch==true){
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' && mapa_jednostek[i][j]!=' ' && ruch==true){
                         SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
                         cout << mapa_jednostek[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
 
                         	
-				if(mapa_jednostek[i][j]!=' '){
-        			SetConsoleTextAttribute( hOut, 12 | BACKGROUND_GREEN );
+				if(mapa_jednostek[i][j]=='B'){
+        			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
         			cout << mapa_jednostek[i][j];
         			SetConsoleTextAttribute( hOut, 8 );
 						}else{
@@ -2816,9 +4098,13 @@ for(int i=x-19;i<=x+19;i++){
                 
                 }
                 }
-                }
             	}
                 }
+            	}
+            	}
+            	}
+                }
+            	}
             	}
             	}
             	}
@@ -2923,6 +4209,10 @@ if(mapa_tartak[x][y]>=1)cout << "Tartak miasta " << miasto[mapa_tartak[x][y]].na
 if(mapa_kopalnia[x][y]>=1)cout << "Kopalnia miasta " << miasto[mapa_kopalnia[x][y]].nazwa;
 if(mapa_farma[x][y]>=1)cout << "Farma miasta " << miasto[mapa_farma[x][y]].nazwa;
 if(mapa_farma[x][y]==0)cout << "                          ";
+if(mapa_wioska[x][y]>=1)cout << "Wioska miasta " << miasto[mapa_wioska[x][y]].nazwa;
+if(mapa_wioska[x][y]==0)cout << "                          ";
+if(mapa_jednostek[x][y]=='B')cout << "Barbarzyncy " << miasto[mapa_wioska[x][y]].nazwa;
+if(mapa_jednostek[x][y]!='B')cout << "                          ";
 if(mapa_kopalnia[x][y]==0)cout << "                          ";
 if(mapa_tartak[x][y]==0)cout << "                          ";
 if(miasta[x][y]==0)cout << "                          ";
@@ -2945,8 +4235,10 @@ for(int i=0;i<komunikat.size()/7;i++){
 	}
 	gotoxy(44,4+i);
 }
+gotoxy(8,48);
+cout << "Pozostalo ruchow: "<<nastepna_tura << " z " << nastepna_tura_domyslnie;
 gotoxy(110,4);
- cout << "    BUDOWA " << budowa << "    WYBOR JEDNOSTKI " << wybor_jednostki <<"    MENU " << menu << "     MENU BUDOWY " << menu_budowy;
+ cout << "    BUDOWA " << budowa << "    WYBOR JEDNOSTKI " << wybor_jednostki <<"    MENU " << menu << "     MENU BUDOWY " << menu_budowy << "   Liczba miast "<<liczba_miast << " ilosc barbow "<<ilosc_barbarzyncow;
 if(wybor_jednostki==true){
 	gotoxy(110,5);
 	if(mapa_jednostek[x][y]!='A')
@@ -3002,15 +4294,25 @@ gotoxy(76,8);
 if(x0==3){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Nestepna Tura          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Nastepna Tura          "<<blok; 
+gotoxy(76,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Anuluj                 "; 
 SetConsoleTextAttribute( hOut, 8 );
 cout<<blok;
 }
 else
 cout <<blok<< "   Anuluj                 "<<blok; 
-gotoxy(76,9);
-cout <<blok<< "                          "<<blok;
 gotoxy(76,10);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,11);
 for(int i=0;i<28;i++)cout << blok;
 }
 
@@ -3135,9 +4437,19 @@ cout<<blok;
 }
 else
 cout <<blok<< "   Tartak                 "<<blok; 
-
 gotoxy(76,8);
 if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Wioska                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Wioska                 "<<blok; 
+
+gotoxy(76,9);
+if(x0==4){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Anuluj                 "; 
@@ -3147,9 +4459,9 @@ cout<<blok;
 else
 cout <<blok<< "   Anuluj                 "<<blok; 
 
-gotoxy(76,9);
-cout <<blok<< "                          "<<blok;
 gotoxy(76,10);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,11);
 for(int i=0;i<28;i++)cout << blok;
 
 }
@@ -3313,8 +4625,13 @@ for(int i=0;i<28;i++)cout << blok;
 
   
  ster=getch();
-
-if(ster==KEY_DOWN && x0!=3 && lista_miast==false || ster==KEY_DOWN && x0!=8 && lista_miast==true){
+	
+	komunikat = komunikat_domyslny;
+	if(bkomunikat==true){
+		system("CLS");
+		bkomunikat=false;
+	}
+if(ster==KEY_DOWN && x0!=3 ||ster==KEY_DOWN && x0!=4 && menu==true || ster==KEY_DOWN && x0!=8 && lista_miast==true ||ster==KEY_DOWN && x0!=4 && menu_budowy==true){
 	x0++;
 
 	continue;
@@ -3328,60 +4645,77 @@ continue;
 if(ster==']' && wybor_map!=3)wybor_map++;
 if(ster=='[' && wybor_map!=0)wybor_map--;
  
- if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && wybor_jednostki==false){
+ if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && wybor_jednostki==false && mgla_wojny[x-1][y]!=false){
               x--;
               }
- if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& wybor_jednostki==false){
+ if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& wybor_jednostki==false&& mgla_wojny[x+1][y]!=false){
               x++;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& wybor_jednostki==false){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& wybor_jednostki==false&& mgla_wojny[x][y-1]!=false){
               y--;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& wybor_jednostki==false){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& wybor_jednostki==false&& mgla_wojny[x][y+1]!=false){
               y++;
               }
               ///////////////////budowa/////////////
-if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true && mapa_jednostek[x-1][y]=='O'&& mapa_jednostek[x][y]=='O' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true && mapa_jednostek[x-1][y]=='O'&& mapa_jednostek[x][y]=='O'){
+if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true && (mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A')&& mapa_jednostek[x][y]=='O' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true && (mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A')&& mapa_jednostek[x][y]=='O'){
               x--;
+              continue;
               }
-if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && mapa_jednostek[x+1][y]=='O'&& mapa_jednostek[x][y]=='O' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa_jednostek[x+1][y]=='O'&& mapa_jednostek[x][y]=='O'){
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' )&& mapa_jednostek[x][y]=='O' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' )&& mapa_jednostek[x][y]=='O'){
               x++;
+              continue;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true&& mapa_jednostek[x][y-1]=='O' && mapa_jednostek[x][y]=='O'|| ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true&& mapa_jednostek[x][y-1]=='O'&& mapa_jednostek[x][y]=='O'){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true&& (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A' )&& mapa_jednostek[x][y]=='O'|| ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true&& (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A' )&& mapa_jednostek[x][y]=='O'){
               y--;
+              continue;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa_jednostek[x][y+1]=='O' && mapa_jednostek[x][y]=='O'|| ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&ruch==true && mapa_jednostek[x][y+1]=='O'&& mapa_jednostek[x][y]=='O'){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R'|| mapa_jednostek[x][y+1]=='A' )&& mapa_jednostek[x][y]=='O'|| ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&ruch==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R' || mapa_jednostek[x][y]=='A')&& mapa_jednostek[x][y]=='O'){
               y++;
+              continue;
               }
               /////robotnicy/////////
-if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true &&mapa_jednostek[x-1][y]=='R'&& mapa_jednostek[x][y]=='R' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&mapa_jednostek[x-1][y]=='R' && mapa_jednostek[x][y]=='R'){
+if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true &&(mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A')&& mapa_jednostek[x][y]=='R' || ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&(mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A') && mapa_jednostek[x][y]=='R'){
               x--;
+              continue;
               }
-if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && mapa_jednostek[x+1][y]=='R'&& mapa_jednostek[x][y]=='R' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa_jednostek[x+1][y]=='R'&& mapa_jednostek[x][y]=='R'){
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' )&& mapa_jednostek[x][y]=='R' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' )&& mapa_jednostek[x][y]=='R'){
               x++;
+              continue;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true && mapa_jednostek[x][y-1]=='R'&& mapa_jednostek[x][y]=='R' || ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && mapa_jednostek[x][y-1]=='R'&& mapa_jednostek[x][y]=='R'){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true && (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A' )&& mapa_jednostek[x][y]=='R' || ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A' )&& mapa_jednostek[x][y]=='R'){
               y--;
+              continue;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && mapa_jednostek[x][y+1]=='R' && mapa_jednostek[x][y]=='R' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && mapa_jednostek[x][y+1]=='R'&& mapa_jednostek[x][y]=='R'){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R'|| mapa_jednostek[x][y+1]=='A' ) && mapa_jednostek[x][y]=='R' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R'|| mapa_jednostek[x][y+1]=='A' )&& mapa_jednostek[x][y]=='R'){
               y++;
+              continue;
               }
               ////////armie////////
-if( ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&mapa_jednostek[x-1][y]=='A' && mapa_jednostek[x][y]=='A'){
+if( ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&(mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A'||mapa_jednostek[x-1][y]=='B') && mapa_jednostek[x][y]=='A'&&mapa_armii[x-1][y]=='0'){
               x--;
+              continue;
               }
-if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && mapa_jednostek[x+1][y]=='A'&& mapa_jednostek[x][y]=='A'){
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' ||mapa_jednostek[x+1][y]=='B' )&& mapa_jednostek[x][y]=='A'&&mapa_armii[x+1][y]=='0'){
               x++;
+              continue;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && mapa_jednostek[x][y-1]=='A'&& mapa_jednostek[x][y]=='A'){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A'||mapa_jednostek[x][y-1]=='B' )&& mapa_jednostek[x][y]=='A'&&mapa_armii[x][y-1]=='0'){
               y--;
+              continue;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && mapa_jednostek[x][y+1]=='A'&& mapa_jednostek[x][y]=='A'){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R'|| mapa_jednostek[x][y+1]=='A' || mapa_jednostek[x][y+1]=='B')&& mapa_jednostek[x][y]=='A'&&mapa_armii[x][y+1]=='0'){
               y++;
+              continue;
               }
               
               
 if(ster=='e' && wybor_jednostki==false && mapa_jednostek[x][y]==osadnik || mapa_jednostek[x][y]==82 && ster=='e' && wybor_jednostki==false || mapa_jednostek[x][y]=='A' && ster=='e' && wybor_jednostki==false){
+	if(nastepna_tura==0){
+		komunikat="Nie masz juz punktow ruchu moj Panie";
+		bkomunikat=true;
+		continue;
+	}
 	wybor_jednostki=true;
 	menu=false;
 }
@@ -3406,6 +4740,28 @@ if(ster=='q' && lista_miast==true && x0!=8){
 	system("CLS");
 }
 
+/////////////////NASTEPNA TURA///////
+if(ster=='q' && menu==true && x0==3){
+	nastepna_tura=nastepna_tura_domyslnie;
+	gracz1=false;
+	//gracz2=true;
+	ruch_barbarzyncow=true;
+	for(int i=1;i<11;i++){
+	miasto[i].obrona+=ludnosc*0.00005; 
+	}
+	for(int i=1;i<11;i++){
+	miasto[i].produkcja+=miasto[i].przychod_produkcja; 
+	}
+	for(int i=1;i<11;i++){
+	miasto[i].ludnosc+=100; 
+	}
+	zywnosc+=przychod_zywnosc;
+	zloto+=przychod_zloto;
+	kamien+=przychod_kamien;
+	drewno+=przychod_drewno;
+	nauka+=przychod_nauka;
+	break;
+}
 
 if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='O' && budowa==true){
 if(budowa==true){
@@ -3428,7 +4784,7 @@ x0=0;
 system("CLS");
 }
 
-if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='R' && budowa==true && menu_budowy==true){
+if(ster=='q' && menu==false && x0==4 && mapa_jednostek[x][y]=='R' && budowa==true && menu_budowy==true){
 	bufor_budowa=10;
 	menu_budowy=false;
 	system("CLS");
@@ -3508,6 +4864,30 @@ budowa=false;
 x0=0;
 system("CLS");
 }
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='A' && ruch==true && budowa==false){
+	ruch=false;
+	system("CLS");
+	x=xd;
+	y=yd;
+	if(nawigacja==false){
+	for(int i=x-1;i<=x+1;i++){
+		for(int j=y-1;j<=y+1;j++){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}else{
+		for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}
+menu=true;
+wybor_jednostki=false;
+budowa=false;
+x0=0;
+system("CLS");
+}
 if(ster=='q' && menu==false && x0==3 && mapa_jednostek[x][y]=='O' && ruch==true && budowa==false){
 	ruch=false;
 	system("CLS");
@@ -3554,7 +4934,7 @@ if(ster=='q' && x0==2 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && m
 	continue;
 }
 
-if(ster=='q' && x0==3 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==true && ruch==false){
+if(ster=='q' && x0==4 && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && menu_budowy==true && ruch==false){
 	bufor_budowa=10;
 	menu_budowy=false;
 	menu=false;
@@ -3568,42 +4948,42 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==fals
 	yd=y;
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	mapa_jednostek[x][y]='O';
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa[x-1][y]!=farma&& mapa[x-1][y]!=tartak&& mapa[x-1][y]!=kopalnia){
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa[x-1][y]!=farma&& mapa[x-1][y]!=tartak&& mapa[x-1][y]!=kopalnia&& mapa[x-1][y]!=wioska){
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
 	mapa_jednostek[x-1][y]='O';
 	}
 	
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora&& mapa[x-1][y+1]!=tartak&& mapa[x-1][y+1]!=farma&& mapa[x-1][y+1]!=kopalnia){
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora&& mapa[x-1][y+1]!=tartak&& mapa[x-1][y+1]!=farma&& mapa[x-1][y+1]!=kopalnia&& mapa[x-1][y+1]!=wioska){
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
 	mapa_jednostek[x-1][y+1]='O';
 	}
 	
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora&& mapa[x-1][y-1]!=tartak&& mapa[x-1][y-1]!=farma&& mapa[x-1][y-1]!=kopalnia){
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora&& mapa[x-1][y-1]!=tartak&& mapa[x-1][y-1]!=farma&& mapa[x-1][y-1]!=kopalnia&& mapa[x-1][y-1]!=wioska){
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
 	mapa_jednostek[x-1][y-1]='O';
 	}
 	
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora&&mapa[x][y+1]!=tartak&&mapa[x][y+1]!=farma&&mapa[x][y+1]!=kopalnia){
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora&&mapa[x][y+1]!=tartak&&mapa[x][y+1]!=farma&&mapa[x][y+1]!=kopalnia&&mapa[x][y+1]!=wioska){
 	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
 	mapa_jednostek[x][y+1]='O';
 	}
 	
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& mapa[x][y-1]!=tartak&& mapa[x][y-1]!=farma&& mapa[x][y-1]!=kopalnia){
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& mapa[x][y-1]!=tartak&& mapa[x][y-1]!=farma&& mapa[x][y-1]!=kopalnia&& mapa[x][y-1]!=wioska){
 	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
 	mapa_jednostek[x][y-1]='O';
 	}
 	
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora&& mapa[x+1][y-1]!=tartak&& mapa[x+1][y-1]!=farma&& mapa[x+1][y-1]!=kopalnia){
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora&& mapa[x+1][y-1]!=tartak&& mapa[x+1][y-1]!=farma&& mapa[x+1][y-1]!=kopalnia&& mapa[x+1][y-1]!=wioska){
 	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
 	mapa_jednostek[x+1][y-1]='O';
 	}
 	
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora&& mapa[x+1][y]!=tartak&& mapa[x+1][y]!=farma&& mapa[x+1][y]!=kopalnia){
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora&& mapa[x+1][y]!=tartak&& mapa[x+1][y]!=farma&& mapa[x+1][y]!=kopalnia&& mapa[x+1][y]!=wioska){
 	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
 	mapa_jednostek[x+1][y]='O';
 	}
 	
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora&& mapa[x+1][y+1]!=tartak&& mapa[x+1][y+1]!=farma&& mapa[x+1][y+1]!=kopalnia){
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora&& mapa[x+1][y+1]!=tartak&& mapa[x+1][y+1]!=farma&& mapa[x+1][y+1]!=kopalnia&& mapa[x+1][y+1]!=wioska){
 	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
 	mapa_jednostek[x+1][y+1]='O';
 	}
@@ -3675,48 +5055,103 @@ if(ster=='q' && wybor_jednostki==true && menu==false && x0==0 && budowa==false &
 	bufor_budowa=0;
 	xd=x;
 	yd=y;
-	
-	if(bufor_multi[x][y]==dom2)
+		bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	if(bufor_multi[x][y]==dom2 && bufor_multi[x][y]!=wioska && bufor_multi[x][y]!=kopalnia)
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	
 	mapa_jednostek[x][y]='R';
 	
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]==dom2){
+	if(mapa[x-1][y]==dom2 && bufor_multi[x-1][y]!=wioska && bufor_multi[x-1][y]!=kopalnia){
 	mapa_jednostek[x-1][y]='R';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(bufor_multi[x-1][y+1]==dom2){
+	if(bufor_multi[x-1][y+1]==dom2 && bufor_multi[x-1][y+1]!=wioska && bufor_multi[x-1][y+1]!=kopalnia){
 	
 	mapa_jednostek[x-1][y+1]='R';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(bufor_multi[x-1][y-1]==dom2){
+	if(bufor_multi[x-1][y-1]==dom2 && bufor_multi[x-1][y-1]!=wioska && bufor_multi[x-1][y-1]!=kopalnia){
 	
 	mapa_jednostek[x-1][y-1]='R';
 	}
 	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(bufor_multi[x][y+1]==dom2){
+	if(bufor_multi[x][y+1]==dom2 && bufor_multi[x][y+1]!=wioska && bufor_multi[x][y+1]!=kopalnia){
 	
 	mapa_jednostek[x][y+1]='R';
 	}
 	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(bufor_multi[x][y-1]==dom2){
+	if(bufor_multi[x][y-1]==dom2 && bufor_multi[x][y-1]!=wioska && bufor_multi[x][y-1]!=kopalnia){
 	
 	mapa_jednostek[x][y-1]='R';
 	}
 	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(bufor_multi[x+1][y-1]==dom2){
+	if(bufor_multi[x+1][y-1]==dom2&& bufor_multi[x+1][y-1]!=wioska && bufor_multi[x+1][y-1]!=kopalnia){
 	
 	mapa_jednostek[x+1][y-1]='R';
 	}
 	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(bufor_multi[x+1][y]==dom2){
+	if(bufor_multi[x+1][y]==dom2&& bufor_multi[x+1][y]!=wioska && bufor_multi[x+1][y]!=kopalnia){
 	
 	mapa_jednostek[x+1][y]='R';
 	}
 	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(bufor_multi[x+1][y+1]==dom2){
+	if(bufor_multi[x+1][y+1]==dom2&& bufor_multi[x+1][y+1]!=wioska && bufor_multi[x+1][y+1]!=kopalnia){
+	
+	mapa_jednostek[x+1][y+1]='R';
+	}
+	budowa=true;
+
+}
+
+/////////wioska//////////
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==3 && budowa==false && mapa_jednostek[x][y]=='R' && menu_budowy==true){
+
+	bufor_budowa=3;
+	xd=x;
+	yd=y;
+		bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+		if(bufor_multi[x][y]==dom2 && bufor_multi[x][y]!=farma && bufor_multi[x][y]!=kopalnia)
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	
+	mapa_jednostek[x][y]='R';
+	
+	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
+	if(mapa[x-1][y]==dom2 && bufor_multi[x-1][y]!=farma && bufor_multi[x-1][y]!=kopalnia){
+	mapa_jednostek[x-1][y]='R';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
+	if(bufor_multi[x-1][y+1]==dom2 && bufor_multi[x-1][y+1]!=farma && bufor_multi[x-1][y+1]!=kopalnia){
+	
+	mapa_jednostek[x-1][y+1]='R';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
+	if(bufor_multi[x-1][y-1]==dom2 && bufor_multi[x-1][y-1]!=farma && bufor_multi[x-1][y-1]!=kopalnia){
+	
+	mapa_jednostek[x-1][y-1]='R';
+	}
+	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
+	if(bufor_multi[x][y+1]==dom2 && bufor_multi[x][y+1]!=farma && bufor_multi[x][y+1]!=kopalnia){
+	
+	mapa_jednostek[x][y+1]='R';
+	}
+	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
+	if(bufor_multi[x][y-1]==dom2 && bufor_multi[x][y-1]!=farma && bufor_multi[x][y-1]!=kopalnia){
+	
+	mapa_jednostek[x][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
+	if(bufor_multi[x+1][y-1]==dom2&& bufor_multi[x+1][y-1]!=farma && bufor_multi[x+1][y-1]!=kopalnia){
+	
+	mapa_jednostek[x+1][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
+	if(bufor_multi[x+1][y]==dom2&& bufor_multi[x+1][y]!=farma && bufor_multi[x+1][y]!=kopalnia){
+	
+	mapa_jednostek[x+1][y]='R';
+	}
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
+	if(bufor_multi[x+1][y+1]==dom2&& bufor_multi[x+1][y+1]!=farma && bufor_multi[x+1][y+1]!=kopalnia){
 	
 	mapa_jednostek[x+1][y+1]='R';
 	}
@@ -3740,46 +5175,47 @@ ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && m
 	yd=y;
 	
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
-	if(bufor_multi[x][y]==dom2)
+	if(bufor_multi[x][y]==dom2 && bufor_multi[x][y]!=wioska && bufor_multi[x][y]!=farma)
+	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	
 	mapa_jednostek[x][y]='R';
 	
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]==dom2){
-	
+	if(mapa[x-1][y]==dom2 && bufor_multi[x-1][y]!=wioska && bufor_multi[x-1][y]!=farma){
 	mapa_jednostek[x-1][y]='R';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(bufor_multi[x-1][y+1]==dom2){
+	if(bufor_multi[x-1][y+1]==dom2 && bufor_multi[x-1][y+1]!=wioska && bufor_multi[x-1][y+1]!=farma){
 	
 	mapa_jednostek[x-1][y+1]='R';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(bufor_multi[x-1][y-1]==dom2){
+	if(bufor_multi[x-1][y-1]==dom2 && bufor_multi[x-1][y-1]!=wioska && bufor_multi[x-1][y-1]!=farma){
 	
 	mapa_jednostek[x-1][y-1]='R';
 	}
 	bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(bufor_multi[x][y+1]==dom2){
+	if(bufor_multi[x][y+1]==dom2 && bufor_multi[x][y+1]!=wioska && bufor_multi[x][y+1]!=farma){
 	
 	mapa_jednostek[x][y+1]='R';
 	}
 	bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(bufor_multi[x][y-1]==dom2){
+	if(bufor_multi[x][y-1]==dom2 && bufor_multi[x][y-1]!=wioska && bufor_multi[x][y-1]!=farma){
 	
 	mapa_jednostek[x][y-1]='R';
 	}
 	bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(bufor_multi[x+1][y-1]==dom2){
+	if(bufor_multi[x+1][y-1]==dom2&& bufor_multi[x+1][y-1]!=wioska && bufor_multi[x+1][y-1]!=farma){
 	
 	mapa_jednostek[x+1][y-1]='R';
 	}
 	bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(bufor_multi[x+1][y]==dom2){
+	if(bufor_multi[x+1][y]==dom2&& bufor_multi[x+1][y]!=wioska && bufor_multi[x+1][y]!=farma){
 	
 	mapa_jednostek[x+1][y]='R';
 	}
 	bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(bufor_multi[x+1][y+1]==dom2){
+	if(bufor_multi[x+1][y+1]==dom2&& bufor_multi[x+1][y+1]!=wioska && bufor_multi[x+1][y+1]!=farma){
 	
 	mapa_jednostek[x+1][y+1]='R';
 	}
@@ -3789,6 +5225,28 @@ ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && m
 
 
 if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='O' && teretorium[x][y]=='x' || budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='O' && teretorium[x][y]=='1'){
+	
+		if(liczba_miast==11)
+	{
+	komunikat="Masz maksymalna ilosc miast moj Panie";
+	bkomunikat=true;
+	continue;
+	}
+	for(int i=x-3;i<=x+3;i++){
+		for(int j=y-3;j<=y+3;j++){
+			if(mapa[i][j]==stolica || mapa[i][j]==osada || mapa_jednostek[x][y]=='B'){
+				komunikat = "Jestes za blisko innego miasta lub za blisko jednostek wroga moj Panie";
+				blisko=true;
+			}
+		}
+	}
+	if(blisko==true){
+		blisko=false;
+		bkomunikat=true;
+		continue;
+		
+	}
+
 	miasta[x][y]=liczba_miast;
 	if(liczba_miast==1)
 	mapa[x][y]=stolica;
@@ -3798,6 +5256,8 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 	if(mapa[x-1][y]==woda || mapa[x-1][y-1]==woda || mapa[x-1][y+1]==woda || mapa[x][y-1]==woda || mapa[x][y+1]==woda || mapa[x+1][y-1]==woda || mapa[x+1][y]==woda || mapa[x+1][y+1]==woda)
 	miasto[liczba_miast].woda=true;
 	
+
+	
 	for(int i=x-5;i<x+5;i++){
 		for(int j=y-5;j<y+5;j++){
 			if(mapa[i][j]!=woda && mapa[i][j]!=gora && zasieg_miast[i][j]=='0'){
@@ -3806,6 +5266,7 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 				if(mapa[i][j]==tartak)mapa_tartak[i][j]=liczba_miast;
 				if(mapa[i][j]==kopalnia)mapa_kopalnia[i][j]=liczba_miast;
 				if(mapa[i][j]==farma)mapa_farma[i][j]=liczba_miast;
+				if(mapa[i][j]==wioska)mapa_wioska[i][j]=liczba_miast;
 			}
 		}
 	}
@@ -3834,7 +5295,7 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 	}
 	if(mapa_jednostek[xd][yd]=='O')mapa_jednostek[xd][yd]=' ';
 }
-
+nastepna_tura--;
 system("CLS");
 }
 
@@ -3855,10 +5316,12 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
 mapa_tartak[x][y]=zasieg_miast[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
 system("CLS");
 miasto[mapa_tartak[x][y]].przychod_drewno=miasto[mapa_tartak[x][y]].przychod_drewno+30;
 if(tartakb.lvl==3)
 miasto[mapa_tartak[x][y]].przychod_drewno=miasto[mapa_tartak[x][y]].przychod_drewno+20;
+nastepna_tura--;
 }
 ///////////////farma///////////
 if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='1'){
@@ -3877,11 +5340,39 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
 }
 mapa_farma[x][y]=zasieg_miast[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
 system("CLS");
 miasto[mapa_farma[x][y]].przychod_zywnosc=miasto[mapa_farma[x][y]].przychod_zywnosc+30;
 if(port.lvl>=2){
 	miasto[mapa_farma[x][y]].przychod_zywnosc=miasto[mapa_farma[x][y]].przychod_zywnosc+miasto[mapa_farma[x][y]].przychod_zywnosc*port.lvl*0.1;
 }
+nastepna_tura--;
+}
+/////////////wioska///////////////////
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==3 && teretorium[x][y]=='1'){
+
+	mapa[x][y]=wioska;
+	budowa=false;
+	menu_budowy=false;
+	wybor_jednostki=false;
+	menu=true;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+	if(mapa_jednostek[xd][yd]=='R')mapa_jednostek[xd][yd]=' ';
+}
+mapa_wioska[x][y]=zasieg_miast[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
+system("CLS");
+miasto[mapa_wioska[x][y]].przychod_produkcja=miasto[mapa_wioska[x][y]].przychod_produkcja+30;
+miasto[mapa_wioska[x][y]].ludnosc+=1000;
+if(magazyn.lvl>=2){
+	miasto[mapa_wioska[x][y]].przychod_produkcja=miasto[mapa_wioska[x][y]].przychod_produkcja+miasto[mapa_wioska[x][y]].przychod_produkcja*magazyn.lvl*0.1;
+}
+nastepna_tura--;
 }
 ///////////////kopalnia///////////////
 if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek[x][y]=='R' &&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='1'){
@@ -3901,6 +5392,7 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 }
 bufor_multi[xd][yd]=kopalnia;
 mapa_kopalnia[x][y]=zasieg_miast[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
 system("CLS");
 miasto[mapa_kopalnia[x][y]].przychod_kamien=miasto[mapa_kopalnia[x][y]].przychod_kamien+30;
 miasto[mapa_kopalnia[x][y]].przychod_zloto=miasto[mapa_kopalnia[x][y]].przychod_zloto+15;
@@ -3912,6 +5404,7 @@ if(port.lvl==3){
 miasto[mapa_kopalnia[x][y]].przychod_kamien=miasto[mapa_kopalnia[x][y]].przychod_kamien+20;
 miasto[mapa_kopalnia[x][y]].przychod_zloto=miasto[mapa_kopalnia[x][y]].przychod_zloto+20;
 }
+nastepna_tura--;
 }
 
 ///////////////RUCH//////////////
@@ -3974,6 +5467,7 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+	nastepna_tura--;
 }
 
 if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
@@ -3982,40 +5476,40 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	mapa_jednostek[x][y]='R';
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik){
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik&& mapa_jednostek[x-1][y]!='B'){
 
 	mapa_jednostek[x-1][y]='R';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik){
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa_jednostek[x-1][y+1]!='B'){
 	mapa_jednostek[x-1][y+1]='R';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik){
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa_jednostek[x-1][y-1]!='B'){
 	mapa_jednostek[x-1][y-1]='R';
 	}
 		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik){
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik&& mapa_jednostek[x][y+1]!='B'){
 
 	mapa_jednostek[x][y+1]='R';
 	}
 		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik){
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa_jednostek[x][y-1]!='B'){
 
 	mapa_jednostek[x][y-1]='R';
 	}
 		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik){
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa_jednostek[x+1][y-1]!='B'){
 
 	mapa_jednostek[x+1][y-1]='R';
 	}
 		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik){
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa_jednostek[x+1][y]!='B'){
 
 	mapa_jednostek[x+1][y]='R';
 	}
 		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik){
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa_jednostek[x+1][y+1]!='B'){
 
 	mapa_jednostek[x+1][y+1]='R';
 	}
@@ -4036,6 +5530,7 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+	nastepna_tura--;
 }
 
 if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==false){
@@ -4044,40 +5539,40 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	mapa_jednostek[x][y]='A';
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='O' && mapa_jednostek[x-1][y]!='A'){
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='O'&& mapa_jednostek[x-1][y]!='B' && mapa_jednostek[x-1][y]!='A'){
 
 	mapa_jednostek[x-1][y]='A';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='O' && mapa_jednostek[x-1][y+1]!='A'){
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='O'&& mapa_jednostek[x-1][y+1]!='B' && mapa_jednostek[x-1][y+1]!='A'){
 	mapa_jednostek[x-1][y+1]='A';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='O'&& mapa_jednostek[x-1][y-1]!='A'){
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='O'&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek[x-1][y-1]!='A'){
 	mapa_jednostek[x-1][y-1]='A';
 	}
 		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='O' && mapa_jednostek[x][y+1]!='A'){
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='O'&& mapa_jednostek[x][y+1]!='B' && mapa_jednostek[x][y+1]!='A'){
 
 	mapa_jednostek[x][y+1]='A';
 	}
 		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='O'&& mapa_jednostek[x][y-1]!='A'){
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='O'&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek[x][y-1]!='A'){
 
 	mapa_jednostek[x][y-1]='A';
 	}
 		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='O'&& mapa_jednostek[x+1][y-1]!='B'){
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='O'&& mapa_jednostek[x+1][y-1]!='B'&& mapa_jednostek[x+1][y-1]!='B'){
 
 	mapa_jednostek[x+1][y-1]='A';
 	}
 		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='O'&& mapa_jednostek[x+1][y]!='B'){
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='O'&& mapa_jednostek[x+1][y]!='B'&& mapa_jednostek[x+1][y]!='B'){
 
 	mapa_jednostek[x+1][y]='A';
 	}
 		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='O'&& mapa_jednostek[x+1][y+1]!='B'){
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='O'&& mapa_jednostek[x+1][y+1]!='B'&& mapa_jednostek[x+1][y+1]!='B'){
 
 	mapa_jednostek[x+1][y+1]='A';
 	}
@@ -4085,13 +5580,19 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='A' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='O'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && (mapa_jednostek[x][y]=='A'||mapa_jednostek[x][y]=='B') && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='A' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='O'){
+	
+		if(mapa_jednostek[x][y]=='B'){
+			walka_barbarzyncy(armia[mapa_armii[x][y]-48],true,false,&zloto,&ilosc_barbarzyncow);
+		}
+			
 		for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
 		mapa_jednostek[i][j]=bufor_mjednostek[i][j];
 	}
 	if(mapa_jednostek[xd][yd]=='A')mapa_jednostek[xd][yd]=' ';
 }
+
 	mapa_jednostek[x][y]='A';
 	armia[mapa_armii[xd][yd]-48].x=x;
 	armia[mapa_armii[xd][yd]-48].y=y;
@@ -4100,6 +5601,7 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='A'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+	nastepna_tura--;
 }
 /////////////nawigacja/////////
 
@@ -4111,7 +5613,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==fals
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora  && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada && mapa[i][j]!=kopalnia && mapa[i][j]!=farma && mapa[i][j]!=tartak){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora  && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa_jednostek[i][j]!='B'){
 
 	mapa_jednostek[i][j]='O';
 	}
@@ -4133,7 +5635,7 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
-
+	nastepna_tura--;
 }
 
 if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
@@ -4144,7 +5646,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada && mapa[i][j]!=kopalnia && mapa[i][j]!=farma && mapa[i][j]!=tartak){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa_jednostek[i][j]!='B' ){
 
 	mapa_jednostek[i][j]='R';
 	}
@@ -4171,17 +5673,19 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='A'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+	nastepna_tura--;
 }
 
 if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja==true){
 	xd=x;
 	yd=y;
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
+	
 	mapa_jednostek[x][y]='A';
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa[i][j]!=stolica && mapa[i][j]!=osada){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik &&mapa_jednostek[i][j]!='B' ){
 
 	mapa_jednostek[i][j]='A';
 	}
@@ -4204,6 +5708,7 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
 	ruch=false;
 	wybor_jednostki=false;
 	menu=true;
+	nastepna_tura--;
 }
 
  if(ster=='c'){
@@ -4231,6 +5736,34 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
  	miasto[1].ludnosc=30000;
  }
  
+ if(ster=='b'){
+ 	mapa_jednostek[x][y]='B';
+ }
+  if(ster=='o'){
+ 	mapa_jednostek[x][y]='O';
+ }
+  if(ster=='r'){
+ 	mapa_jednostek[x][y]='R';
+ }
+ if(ster=='l'){
+ 	walka_barbarzyncy(armia[1],true,false,&zloto,&ilosc_barbarzyncow);
+ }
+ if(ster=='n'){
+ 	mapa_jednostek[x][y]='A';
+ 	liczba_armii++;
+ 	armia[liczba_armii].ciezka_jazda=5;
+ 	armia[liczba_armii].pikinierzy=5;
+ 	armia[liczba_armii].lucznicy=5;
+ 	armia[liczba_armii].kusznicy=5;
+ 	armia[liczba_armii].ciezkozbrojni=5;
+ 	armia[liczba_armii].lekka_jazda=5;
+ 	armia[liczba_armii].tarany=5;
+ 	armia[liczba_armii].elity=5;
+ 	armia[liczba_armii].miasto_domowe=2;
+ 	armia[liczba_armii].wielkosc=40;
+ 	armia[liczba_armii].nazwa="ARMIA SMIERCI";
+ }
+ 
 }
 
 /////////////////MAPA STOLICY////////////////
@@ -4245,20 +5778,17 @@ while(bmapa_stolicy==true){
 	przychod_zywnosc=0;
 	przychod_wiara=0;
 	przychod_nauka=0;
-//	for(int i=1;i<10;i++){
-//	miasto[i].obrona+=ludnosc*0.00005; ////to bedzie szlo do next turn
-//	}
-	for(int i=1;i<10;i++)przychod_zloto=przychod_zloto+miasto[i].przychod_zloto;
+	for(int i=1;i<11;i++)przychod_zloto=przychod_zloto+miasto[i].przychod_zloto;
 	if(waluta==true)przychod_zloto=przychod_zloto*1.25;
-	for(int i=1;i<10;i++)przychod_drewno=przychod_drewno+miasto[i].przychod_drewno;
-	for(int i=1;i<10;i++)przychod_kamien=przychod_kamien+miasto[i].przychod_kamien;
+	for(int i=1;i<11;i++)przychod_drewno=przychod_drewno+miasto[i].przychod_drewno;
+	for(int i=1;i<11;i++)przychod_kamien=przychod_kamien+miasto[i].przychod_kamien;
 	if(huta.lvl>=1)przychod_kamien=przychod_kamien+przychod_kamien*0.3;
-	for(int i=1;i<10;i++)przychod_zywnosc=przychod_zywnosc+miasto[i].przychod_zywnosc;
+	for(int i=1;i<11;i++)przychod_zywnosc=przychod_zywnosc+miasto[i].przychod_zywnosc;
 	if(hodowla==true)przychod_zywnosc=przychod_zywnosc*1.25;
-	for(int i=1;i<10;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc-ludnosc*0.0005;
-	for(int i=1;i<10;i++)przychod_wiara=przychod_wiara+miasto[i].przychod_wiara;
+	for(int i=1;i<11;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc-ludnosc*0.0005;
+	for(int i=1;i<11;i++)przychod_wiara=przychod_wiara+miasto[i].przychod_wiara;
 	if(ewangelizacja==true)przychod_wiara=przychod_wiara*1.25;
-	for(int i=1;i<10;i++)przychod_nauka=przychod_nauka+miasto[i].przychod_nauka;
+	for(int i=1;i<11;i++)przychod_nauka=przychod_nauka+miasto[i].przychod_nauka;
 	if(gildie==true)przychod_nauka=przychod_nauka*1.25;
          cls();
 	
@@ -7153,13 +8683,13 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 						gotoxy(8,30);
 			cout << "Koszt: 400pkt. nauki";
 			gotoxy(8,31);
-			cout << "Mozliwosc rozbudowy tawerny do 3 poziomu";
+			cout << "Mozliwosc rozbudowy tawerny do 3 poziomu oraz zwieksza sie ilosc ruchow na ture";
 		}
 		if(x0==5){
 			gotoxy(8,30);
 			cout << "Koszt: 450pkt. nauki";
 			gotoxy(8,31);
-			cout << "Mozna budowac tarany i rozbudowac warsztat do 2 poziomu";
+			cout << "Mozna budowac tarany i rozbudowac warsztat do 2 poziomu oraz zwieksza sie ilosc ruchow na ture ";
 		}
 		if(x0==6){
 			gotoxy(8,30);
@@ -7189,7 +8719,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			gotoxy(8,30);
 			cout << "Koszt: 500pkt. nauki";
 			gotoxy(8,31);
-			cout << "Mozna handlowac z drugim graczem oraz rozbudowac kapitol do poziomu 5";
+			cout << "Mozna handlowac z drugim graczem oraz rozbudowac kapitol do poziomu 5 oraz zwieksza sie ilosc ruchow na ture";
 		}
 		if(x0==11){
 			gotoxy(8,30);
@@ -7466,25 +8996,34 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 
 		}
 		
-		if(ster=='q' && x0==1 && nauka>=350 && lowiectwo==false)odkryj(&lowiectwo,350,&nauka);
-		if(ster=='q' && x0==2 && nauka>=350 && hodowla==false)odkryj(&hodowla,350,&nauka);
-		if(ster=='q' && x0==3 && nauka>=400 && gildie==false)odkryj(&gildie,400,&nauka);
-		if(ster=='q' && x0==4 && nauka>=400 && browarnictwo==false)odkryj(&browarnictwo,400,&nauka);
-		if(ster=='q' && x0==5 && nauka>=450 && gildie==false)odkryj(&mechanika,450,&nauka);
+		if(ster=='q' && x0==1 && nauka>=350 && lowiectwo==false)odkryj(&lowiectwo,350,&nauka,"Lowiectwo");
+		if(ster=='q' && x0==2 && nauka>=350 && hodowla==false)odkryj(&hodowla,350,&nauka,"Hodowla");
+		if(ster=='q' && x0==3 && nauka>=400 && gildie==false)odkryj(&gildie,400,&nauka,"Gildie");
+		if(ster=='q' && x0==4 && nauka>=400 && browarnictwo==false){
+		odkryj(&browarnictwo,400,&nauka,"Browarnictwo");
+		nastepna_tura_domyslnie++;
+		}
+		if(ster=='q' && x0==5 && nauka>=450 && mechanika==false){
+		odkryj(&mechanika,450,&nauka,"Mechanika");
+		nastepna_tura_domyslnie++;
+	};
 		if(ster=='q' && x0==6 && nauka>=450 && hutnictwo==false){
-		odkryj(&hutnictwo,450,&nauka);
+		odkryj(&hutnictwo,450,&nauka,"Hutnictwo");
 		pikinier[xm].atak++;
 		ciezkozbrojny[xm].atak++;
 		elita.atak++;	
 		};
-		if(ster=='q' && x0==7 && nauka>=450 && waluta==false)odkryj(&waluta,450,&nauka);
-		if(ster=='q' && x0==8 && nauka>=500 && obrobka_zelaza==false)odkryj(&obrobka_zelaza,500,&nauka);
-		if(ster=='q' && x0==9 && nauka>=500 && infrastruktura==false)odkryj(&infrastruktura,500,&nauka);
-		if(ster=='q' && x0==10 && nauka>=500 && administracja==false)odkryj(&administracja,500,&nauka);
-		if(ster=='q' && x0==11 && nauka>=500 && ewangelizacja==false)odkryj(&ewangelizacja,500,&nauka);
-		if(ster=='q' && x0==12 && nauka>=550 && obrobka_stali==false)odkryj(&obrobka_stali,550,&nauka);
-		if(ster=='q' && x0==13 && nauka>=550 && nawigacja==false)odkryj(&nawigacja,550,&nauka);
-		if(ster=='q' && x0==14 && nauka>=550 && sztuka==false)odkryj(&sztuka,550,&nauka);
+		if(ster=='q' && x0==7 && nauka>=450 && waluta==false)odkryj(&waluta,450,&nauka,"Waluta");
+		if(ster=='q' && x0==8 && nauka>=500 && obrobka_zelaza==false)odkryj(&obrobka_zelaza,500,&nauka,"Obrobka Zelaza");
+		if(ster=='q' && x0==9 && nauka>=500 && infrastruktura==false)odkryj(&infrastruktura,500,&nauka,"Infrastruktura");
+		if(ster=='q' && x0==10 && nauka>=500 && administracja==false){
+		odkryj(&administracja,500,&nauka,"Administracja");
+		nastepna_tura_domyslnie++;
+		};
+		if(ster=='q' && x0==11 && nauka>=500 && ewangelizacja==false)odkryj(&ewangelizacja,500,&nauka,"Ewangelizacja");
+		if(ster=='q' && x0==12 && nauka>=550 && obrobka_stali==false)odkryj(&obrobka_stali,550,&nauka,"Obrobka Stali");
+		if(ster=='q' && x0==13 && nauka>=550 && nawigacja==false)odkryj(&nawigacja,550,&nauka,"Nawigacja");
+		if(ster=='q' && x0==14 && nauka>=550 && sztuka==false)odkryj(&sztuka,550,&nauka,"Sztuka");
 
 	
 	system("CLS");
@@ -7647,7 +9186,7 @@ if(ster=='d' && mapa_stolicy[x][y+1]!='@'&& mapa_stolicy[x][y+1]!=stolica){
 			liczba_zolnierzy-=elita.wielkosc;
 			}	
 		
-		if(ster=='e' && armia[liczba_armii+1].wielkosc>0){
+		if(ster=='e' && armia[liczba_armii+1].wielkosc>0 && liczba_armii<=50){
 			
 			liczba_armii++;
 			wystaw_armie(jarmia,mapa,45,mapa_jednostek, 1);
@@ -8594,7 +10133,7 @@ if(ster=='q' && x0==8 && rekrutacja==true){
 			}
 	
 		
-		if(ster=='e' && armia[liczba_armii+1].wielkosc>0){
+		if(ster=='e' && armia[liczba_armii+1].wielkosc>0 &&liczba_armii<=50){
 			
 			liczba_armii++;
 			wystaw_armie(jarmia,mapa,45,mapa_jednostek, xm);
@@ -9001,6 +10540,705 @@ if(ster=='q' && x0==8 && rekrutacja==true){
 		if(ster==KEY_DOWN && x0==18 && menu_budowy==true || ster==KEY_DOWN && x0==18 && rozbudowa==true)
 		x0=0;
 	
+}
+}
+
+////////////////////////////////////////////////////////
+while(ruch_barbarzyncow==true){
+ system("CLS");
+ gotoxy(50,50);
+
+ cout << "Trwa ruch barbarzyncow, prosze czekac";
+ 
+	 if(ilosc_barbarzyncow<20){
+	 	for(int i=ilosc_barbarzyncow;i<=20;i++){
+	 		barbarzynca_x=(rand()%136);
+	 		barbarzynca_y=(rand()%200);
+	 		if(mapa[barbarzynca_x][barbarzynca_y]!=woda && mapa[barbarzynca_x][barbarzynca_y]!=gora &&mapa[barbarzynca_x][barbarzynca_y]!='@' && mapa[barbarzynca_x][barbarzynca_y]!=' '){
+	 			for(int p=barbarzynca_x-5;p<=barbarzynca_x+5;p++){
+	 				for(int o=barbarzynca_y-5;o<=barbarzynca_y+5;o++){
+	 					if(mapa[p][o]==osada || mapa[p][o]==stolica ||mapa[p][o]==tartak ||mapa[p][o]==kopalnia ||mapa[p][o]==farma ||mapa[p][o]==wioska || mapa_jednostek[p][o]=='A'|| mapa_jednostek[p][o]=='R'|| mapa_jednostek[p][o]=='O'){
+	 						barbarzynca_blad=true;
+						 }
+					 }
+				 }
+				 if(barbarzynca_blad==true){
+				 	barbarzynca_blad=false;
+				 	i--;
+				 	continue;
+				 }
+				 mapa_jednostek[barbarzynca_x][barbarzynca_y]='B';
+				 ilosc_barbarzyncow++;
+			 }
+		 }
+	 }
+	 
+	 for(int i=0;i<137;i++){
+	 	for(int j=0;j<201;j++){
+	 			
+	 			barbarzynca_blad=false;
+				barbarzynca_atak=false;
+	   			min_x=5;
+	 			min_y=5;
+	 			koniec_ruchu=false;
+
+	 		if(mapa_jednostek[i][j]=='B'){
+	 			for(int p=i-5;p<=i+5;p++){
+	 				for(int o=j-5;o<=j+5;o++){
+	 					if(mapa_jednostek[p][o]=='A')barbarzynca_blad=true;
+	 					
+					 }
+				 }
+				 
+
+				 if(barbarzynca_blad==false){
+				 for(int p=i-5;p<=i+5;p++){
+	 				for(int o=j-5;o<=j+5;o++){
+	 					if(mapa_jednostek[p][o]=='O' || mapa_jednostek[p][o]=='R' || mapa[p][o]==kopalnia|| mapa[p][o]==farma|| mapa[p][o]==tartak || mapa[p][o]==wioska){
+						
+					
+				
+					 	if(abs(i-p)<min_x){
+
+						min_x=abs(i-p);
+	 					min_y=abs(j-o);
+	 					}
+	 					if(abs(j-o)<min_y){
+						min_x=abs(i-p);
+	 					min_y=abs(j-o);
+	 					}
+
+	 					barbarzynca_atak=true;
+	 					}
+					 }
+				
+				 }
+				}
+
+				 if(barbarzynca_atak==false && koniec_ruchu==false && barbarzynca_blad==true){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+	 			if(barbarzynca_atak==true){
+	 				for(int p=i-min_x;p<=i+min_x;p++){
+	 				for(int o=j-min_y;o<=j+min_y;o++){
+	 					if(mapa_jednostek[p][o]=='O' || mapa_jednostek[p][o]=='R' || mapa[p][o]==kopalnia|| mapa[p][o]==farma|| mapa[p][o]==tartak || mapa[p][o]==wioska){
+						if(i-p==1 && j-o==1&&koniec_ruchu==false){
+						bufor_barbarzyncow[i-1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i-1][j-1]=' ';
+	 					mapa[i-1][j-1]=dom2;
+	 					mapa_tartak[i-1][j-1]=0;
+	 					mapa_farma[i-1][j-1]=0;
+	 					mapa_wioska[i-1][j-1]=0;
+	 					mapa_kopalnia[i-1][j-1]=0;
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(i-p==1 && j-o==0&&koniec_ruchu==false){
+						bufor_barbarzyncow[i-1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i-1][j]=' ';
+	 					mapa[i-1][j]=dom2;
+	 					mapa_tartak[i-1][j]=0;
+	 					mapa_farma[i-1][j]=0;
+	 					mapa_wioska[i-1][j]=0;
+	 					mapa_kopalnia[i-1][j]=0;
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(i-p==1 && j-o==-1&&koniec_ruchu==false){
+						bufor_barbarzyncow[i-1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i-1][j+1]=' ';
+	 					mapa[i-1][j+1]=dom2;
+	 					mapa_tartak[i-1][j+1]=0;
+	 					mapa_farma[i-1][j+1]=0;
+	 					mapa_wioska[i-1][j+1]=0;
+	 					mapa_kopalnia[i-1][j+1]=0;
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(i-p==0 && j-o==1&&koniec_ruchu==false){
+						bufor_barbarzyncow[i][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i][j-1]=' ';
+	 					mapa[i][j-1]=dom2;
+	 					mapa_tartak[i][j-1]=0;
+	 					mapa_farma[i][j-1]=0;
+	 					mapa_wioska[i][j-1]=0;
+	 					mapa_kopalnia[i][j-1]=0;
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(i-p==0 && j-o==-1&&koniec_ruchu==false){
+						bufor_barbarzyncow[i][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i][j+1]=' ';
+	 					mapa[i][j+1]=dom2;
+	 					mapa_tartak[i][j+1]=0;
+	 					mapa_farma[i][j+1]=0;
+	 					mapa_wioska[i][j+1]=0;
+	 					mapa_kopalnia[i][j+1]=0;
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(i-p==-1 && j-o==1&&koniec_ruchu==false){
+						bufor_barbarzyncow[i+1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i+1][j-1]=' ';
+	 					mapa[i+1][j-1]=dom2;
+	 					mapa_tartak[i+1][j-1]=0;
+	 					mapa_farma[i+1][j-1]=0;
+	 					mapa_wioska[i+1][j-1]=0;
+	 					mapa_kopalnia[i+1][j-1]=0;
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(i-p==-1 && j-o==0&&koniec_ruchu==false){
+						bufor_barbarzyncow[i+1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i+1][j]=' ';
+	 					mapa[i+1][j]=dom2;
+	 					mapa_tartak[i+1][j]=0;
+	 					mapa_farma[i+1][j]=0;
+	 					mapa_wioska[i+1][j]=0;
+	 					mapa_kopalnia[i+1][j]=0;
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(i-p==-1 && j-o==-1 &&koniec_ruchu==false){
+						bufor_barbarzyncow[i+1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					mapa_jednostek[i+1][j+1]=' ';
+	 					mapa[i+1][j+1]=dom2;
+	 					mapa_tartak[i+1][j+1]=0;
+	 					mapa_farma[i+1][j+1]=0;
+	 					mapa_wioska[i+1][j+1]=0;
+	 					mapa_kopalnia[i+1][j+1]=0;
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(p<i && o<j && mapa[i-1][j-1]!=gora&&koniec_ruchu==false&& mapa[i-1][j-1]!=woda){
+						bufor_barbarzyncow[i-1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(p<i && o<j && mapa[i-1][j-1]==gora&&koniec_ruchu==false&& mapa[i-1][j-1]==woda && mapa[i-1][j]!=gora&& mapa[i-1][j]!=woda){
+						bufor_barbarzyncow[i-1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(p<i && o<j && koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						/////////////////////////
+						if(p<i && o==j && mapa[i-1][j]!=gora&&koniec_ruchu==false&& mapa[i-1][j]!=woda){
+						bufor_barbarzyncow[i-1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(p<i && o==j && mapa[i-1][j]==gora&&koniec_ruchu==false&& mapa[i-1][j]==woda && mapa[i-1][j-1]!=gora&& mapa[i-1][j-1]!=woda){
+						bufor_barbarzyncow[i-1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p<i && o==j && mapa[i-1][j]==gora&&koniec_ruchu==false&& mapa[i-1][j]==woda && mapa[i-1][j-1]==gora&& mapa[i-1][j-1]==woda&& mapa[i-1][j+1]!=gora&& mapa[i-1][j+1]!=woda){
+						bufor_barbarzyncow[i-1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 				
+						}
+						if(p<i && o==j && koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						//////////////
+						if(p<i && o>j && mapa[i-1][j+1]!=gora&&koniec_ruchu==false&& mapa[i-1][j+1]!=woda){
+						bufor_barbarzyncow[i-1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p<i && o>j && mapa[i-1][j+1]==gora&&koniec_ruchu==false&& mapa[i-1][j+1]==woda && mapa[i-1][j]!=gora&& mapa[i-1][j]!=woda){
+						bufor_barbarzyncow[i-1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p<i && o>j && koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						///////////////////
+						if(p==i && o<j && mapa[i][j-1]!=gora&&koniec_ruchu==false&& mapa[i][j-1]!=woda){
+						bufor_barbarzyncow[i][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p==i && o<j && mapa[i][j-1]==gora&&koniec_ruchu==false&& mapa[i][j-1]==woda && mapa[i-1][j-1]!=gora&& mapa[i-1][j-1]!=woda){
+						bufor_barbarzyncow[i-1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p==i && o<j && mapa[i][j-1]==gora&&koniec_ruchu==false&& mapa[i][j-1]==woda && mapa[i-1][j-1]==gora&& mapa[i-1][j-1]==woda&& mapa[i-1][j-1]!=gora&& mapa[i-1][j-1]!=woda){
+						bufor_barbarzyncow[i+1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p==i && o<j && koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						//////////////
+						if(p>i && o<j && mapa[i+1][j-1]!=gora&& mapa[i+1][j-1]!=woda){
+						bufor_barbarzyncow[i+1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;	
+	 					
+						}
+						if(p>i && o<j && mapa[i+1][j-1]==gora&& mapa[i+1][j-1]==woda && mapa[i+1][j]!=gora&& mapa[i+1][j]!=woda){
+						bufor_barbarzyncow[i+1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p>i && o<j && koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						///////////////////
+						if(p>i && o==j && mapa[i+1][j]!=gora&&koniec_ruchu==false&& mapa[i+1][j]!=woda){
+						bufor_barbarzyncow[i+1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p>i && o==j && mapa[i+1][j]==gora&&koniec_ruchu==false&& mapa[i+1][j]==woda && mapa[i+1][j-1]!=gora&& mapa[i+1][j-1]!=woda){
+						bufor_barbarzyncow[i+1][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p>i && o==j && mapa[i+1][j]==gora&&koniec_ruchu==false&& mapa[i+1][j]==woda && mapa[i+1][j-1]==gora&& mapa[i+1][j-1]==woda&& mapa[i+1][j+1]!=gora&& mapa[i+1][j+1]!=woda){
+						bufor_barbarzyncow[i+1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p>i && o==j && koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						//////////////
+						if(p>i && o>j && mapa[i+1][j+1]!=gora&&koniec_ruchu==false&& mapa[i+1][j+1]!=woda){
+						bufor_barbarzyncow[i+1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p>i && o>j && mapa[i+1][j+1]==gora&&koniec_ruchu==false&& mapa[i+1][j+1]==woda && mapa[i+1][j]!=gora&& mapa[i+1][j]!=woda){
+						bufor_barbarzyncow[i+1][j]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p>i && o>j&& koniec_ruchu==false){
+				 	
+				 		
+						 
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						///////////////////
+						if(p==i && o>j && mapa[i][j+1]!=gora&& mapa[i][j+1]!=woda){
+						bufor_barbarzyncow[i][j-1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p==i && o>j && mapa[i][j+1]==gora&& mapa[i][j+1]==woda && mapa[i-1][j+1]!=gora&& mapa[i-1][j+1]!=woda){
+						bufor_barbarzyncow[i-1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p==i && o>j && mapa[i][j+1]==gora&& mapa[i][j+1]==woda && mapa[i-1][j+1]==gora&& mapa[i-1][j+1]==woda&& mapa[i-1][j+1]!=gora&& mapa[i-1][j+1]!=woda){
+						bufor_barbarzyncow[i+1][j+1]=1;
+	 					mapa_jednostek[i][j]=' ';
+	 					koniec_ruchu=true;
+	 					
+						}
+						if(p==i && o>j && koniec_ruchu==false){
+				 	
+
+	 			szansa_ruch=(rand()%8);
+	 			if(szansa_ruch==0)continue;
+	 			if(szansa_ruch==1 && mapa[i-1][j-1]!=woda &&mapa[i-1][j-1]!=gora){
+	 				bufor_barbarzyncow[i-1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				if(szansa_ruch==2&& mapa[i-1][j]!=woda &&mapa[i-1][j]!=gora){
+	 				bufor_barbarzyncow[i-1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==3&& mapa[i-1][j+1]!=woda &&mapa[i-1][j+1]!=gora){
+	 				bufor_barbarzyncow[i-1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==4&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==5&& mapa[i][j-1]!=woda &&mapa[i][j-1]!=gora){
+	 				bufor_barbarzyncow[i][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==6&& mapa[i+1][j-1]!=woda &&mapa[i+1][j-1]!=gora){
+	 				bufor_barbarzyncow[i+1][j-1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==7&& mapa[i+1][j]!=woda &&mapa[i+1][j]!=gora){
+	 				bufor_barbarzyncow[i+1][j]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 if(szansa_ruch==8&& mapa[i+1][j+1]!=woda &&mapa[i+1][j+1]!=gora){
+	 				bufor_barbarzyncow[i+1][j+1]=1;
+	 				mapa_jednostek[i][j]=' ';
+				 }
+				 barbarzynca_atak=false;
+				
+	 			}
+						//////////////
+				}
+				}
+				 }
+				 }
+
+				 
+			 }
+			 
+		 }
+
+
+	 }
+
+	
+	 for(int i=0;i<137;i++){
+	 	for(int j=0;j<201;j++){
+	 		if(bufor_barbarzyncow[i][j]==1){
+	 			mapa_jednostek[i][j]='B';
+	 			bufor_barbarzyncow[i][j]=0;
+			 }
+	 	}
+	 }
+
+	
+	Sleep(3000);
+	ruch_barbarzyncow=false;
+	gracz1=true;
+	system("CLS");
 }
 
 }while(e==1);
