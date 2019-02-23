@@ -240,6 +240,29 @@ struktura_garnizonu sjednostki[12][12]={{
 									{
 									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}}};
 
+struktura_garnizonu sjednostki2[12][12]={{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}},
+									{
+									{"Robotnik",0,0},{"Osadnik",0,0},{"Pikinier",0,1},{"Lucznik",0,1},{"Kusznik",0,2},{"Ciezkozbrojny",0,2},{"Lekka Jazda",0,2},{"Ciezka Jazda",0,3},{"Taran",0,3},{"Elita",0,3},{"WYSTAW",0}}};
+
 
 struktura_jednostek pikinier[12]=
 {
@@ -256,51 +279,112 @@ struktura_jednostek pikinier[12]=
 	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
 	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"}
 };
+struktura_jednostek pikinier2[12]=
+{
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"},
+	{3,2,1,100,200,200,200,150,0,650,false,false,1,"1 poziom koszar","1 poziom koszar","1 poziom obozu","Pikinierzy","Zadaje 1.5 razy wiecej obrazen taranom"}
+};
 struktura_jednostek lucznik[12]=
 {
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"},
-	{4,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Podczas ataku omija punkty obrony"}
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"}
+};
+struktura_jednostek lucznik2[12]=
+{
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"},
+	{3,1,1,100,250,200,100,200,0,650,true,false,1,"Lowiectwo oraz koszary na 2 poziomie","Lowiectwo oraz koszary na 2 poziomie","1 poziom obozu","Lucznicy","Atak nie powoduje kontry"}
 };
 struktura_jednostek kusznik[12]=
 {
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
-	{5,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	
+};
+struktura_jednostek kusznik2[12]=
+{
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
+	{4,2,2,200,400,350,200,350,0,850,true,false,2,"Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","Koszary na 3 poziomie oraz Obrobka Zelaza oraz Lowiectwo","2 poziom obozu","Kusznicy","Podczas ataku omija punkty obrony i atak nie powoduje kontry"},
 	
 };
 struktura_jednostek ciezkozbrojny[12]=
 {
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
-	{6,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"}
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"}
+};
+struktura_jednostek ciezkozbrojny2[12]=
+{
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"},
+	{5,4,3,250,400,300,300,200,0,1000,false,false,2,"Koszary na 4 poziomie oraz Obrobka Zelaza","Koszary w Stolicy na 4 poziomie oraz Obrobka Zelaza","2 poziom obozu","Ciezkozbrojni","x1.5 obrazen zadawanych obronie"}
 };
 struktura_jednostek lekka_jazda[12]=
 {
@@ -317,20 +401,50 @@ struktura_jednostek lekka_jazda[12]=
 	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
 	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
 };
+struktura_jednostek lekka_jazda2[12]=
+{
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{4,2,2,150,250,250,250,200,0,1000,false,true,2,"Stajnia na 1 poziomie","Stajnia na 1 poziomie","2 poziom obozu","Lekka Jazda","Zadaja 1,25 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
+};
 struktura_jednostek ciezka_jazda[12]=
 {
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
-	{7,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
+};
+struktura_jednostek ciezka_jazda2[12]=
+{
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"},
+	{5,3,3,300,450,350,350,250,0,1550,false,true,3,"Stajnia na 3 poziomie oraz Obrobka Stali","Stajnia na 3 poziomie oraz Obrobka Stali","3 poziom obozu","Ciezka Jazda","Zadaja 1,5 razy wiecej obrazen pikinierom i ciezkozbrojnym"}
 };
 struktura_jednostek taran[11]=
 {
@@ -347,11 +461,29 @@ struktura_jednostek taran[11]=
 	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
 	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"}
 };
+struktura_jednostek taran2[11]=
+{
+	
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"},
+	{10,1,3,300,450,100,100,350,0,1750,true,false,3,"Warsztat na 2 poziomie","Warsztat na 2 poziomie","3 poziom obozu","Taran","Moze niszczyc tylko obrone wroga oraz miasta"}
+};
 struktura_jednostek elita=
 {
-	8,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita"
+	7,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita","1.25x wiecej obrazen lucznikom i kusznikom"
 };
-
+struktura_jednostek elita2=
+{
+	7,6,4,400,400,400,400,400,0,2300,false,false,3,"Akademia na 1 poziomie oraz Obrobka Stali","Akademia na 1 poziomie oraz Obrobka Stali","3 poziom obozu","Elita","1.25x wiecej obrazen lucznikom i kusznikom"
+};
 
 
  struktura_budowli akademia=
@@ -506,10 +638,828 @@ struktura_jednostek elita=
  {
  	38,"Stajnia",400,150,200,200,450,false,4,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
  };
+ ////////
+  struktura_budowli akademia2=
+ {
+ 	9,"Akademia", 700,500,250,400,1000,false,2,0,2,0,-4,-4,-4,-5,0,0,4,"Pozwala rekrutowac elity","4 poziom ratusza","5 poziom kapitolu "
+ };
+ struktura_budowli kapitol2=
+ {
+ 	10,"Kapitol",500,250,240,300,950,false,5,0,5,0,10,4,4,7,0,2000,3,"Jako centralny budynek panstwa daje mozliwosci rozwoju","1 poziom ratusza"," "," "," ","Administracja"
+ };
+ struktura_budowli ratusz2=
+ {
+ 	0,"Ratusz", 200,200,350,100,100,false,5,0,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu","4 poziom kapitolu"
+ };
+ struktura_budowli rynek2=
+ {
+ 	1,"Rynek",300,200,100,50,400,false,3,0,0,2,2,2,2,2,2,0,0,"Pozwala na wymiane surowcow","1 poziom ratusza","2 poziom ratusza","4 poziom ratusza oraz Waluta"
+ };
+ struktura_budowli mieszkalna2=
+ {
+ 	2,"Mieszkalna",200,150,300,50,350,false,3,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom ratusza","2 poziom ratusza","3 poziom ratusza"
+ };
+ struktura_budowli handlowa2=
+ {
+ 	3,"Handlowa",200,150,300,50,350,false,3,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom ratusza","3 poziom ratusza","4 poziom ratusza"
+ };
+ struktura_budowli naukowa2=
+ {
+ 	4,"Naukowa",200,150,300,50,350,false,3,0,8,0,-2,-2,-2,-2,2,0,0,"Naukowcy wytwarzaja tu nauke"," 2 poziom ratusza","3 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli wojskowa2=
+ {
+ 	5,"Wojskowa",200,150,300,50,350,false,3,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom ratusza","3 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli religijna2=
+ {
+ 	6,"Religijna",200,150,300,50,350,false,3,0,0,8,-2,-2,-2,2,0,0,-1,"Pielgrzymi studiuja tu nauki koscielne dajac wiare","2 poziom ratusza"," 4 poziom ratusza","5 poziom kapitolu"
+ };
+ struktura_budowli rekreacyjna2=
+ {
+ 	7,"Rekreacyjna",200,150,300,50,350,false,3,0,0,0,1,1,1,1,0,500,0,"Mieszkancy moga sie tu zrelaksowac co daje premie do surowcow","1 poziom ratusza","2 poziom ratusza","4 poziom ratusza"
+ };
+ struktura_budowli szkola2=
+ {
+ 	8,"Szkola",350,300,150,100,500,false,2,0,10,0,-1,-1,-1,-1,0,0,0,"Uczy wszystkich obywateli","1 poziom ratusza","3 poziom ratusza"
+ };
+ struktura_budowli mur2=
+ {
+ 	11,"Mur",10,30,5,0,25,false,3,0,0,0,0,0,0,0,0,0,0,"Dodaje obrone do miasta za kazdy fragment","1 poziom ratusza","3 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli koszary2=
+ {
+ 	12,"Koszary",350,300,150,100,500,false,4,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom ratusza","2 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli huta2=
+ {
+ 	13,"Huta",400,400,400,100,500,false,2,0,0,0,0,0,5,5,10,0,0,"Zwieksza produkcje miasta","2 poziom ratusza","4 poziom ratusza"
+ };
+ struktura_budowli oboz2=
+ {
+ 	14,"Oboz",200,150,300,200,350,false,3,0,0,0,0,0,0,-1,0,0,2,"Pozwala kupowac jednostki za zloto","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli bank2=
+ {
+ 	15,"Bank",400,200,400,300,500,false,2,0,0,0,0,0,0,10,0,0,0,"Zwieksza przychod zlota","4 poziom ratusza","5 poziom ratusza",
+ };
+ struktura_budowli gildia2=
+ {
+ 	16,"Gildia",350,300,200,100,450,false,3,0,0,0,0,0,0,-3,0,0,0,"Zmniejsza ilosc produkcji potrzebnej do stworzenia osadnikow i robotnikow","2 poziom ratusza","4 poziom ratusza","5 poziom kapitolu"
+ };
+ struktura_budowli biblioteka2=
+ {
+ 	17,"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom ratusza","4 poziom ratusza"
+ };
+ struktura_budowli park2=
+ {
+ 	19,"Park",150,200,200,50,200,false,3,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom ratusza","3 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli pomnik2=
+ {
+ 	20,"Pomnik",100,100,100,50,150,false,3,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom ratusza","2 poziom ratusza","4poziom ratusza"
+ };
+ struktura_budowli ambasada2=
+ {
+ 	21,"Ambasada",350,300,200,100,450,false,3,0,0,4,0,0,0,-2,0,1000,2,"Daje wieksza premie przeciwko barabrzyncom","4 poziom ratusza","5 poziom ratusza","5 poziom kapitolu"
+ };
+ struktura_budowli port2=
+ {
+ 	22,"Port",400,200,350,125,600,false,3,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom ratusza","3 poziom ratusza","4 poziom ratusza oraz Nawigacja"
+ };
+ struktura_budowli teatr2=
+ {
+ 	23,"Teatr",300,250,300,250,400,false,2,0,4,4,0,0,0,5,0,0,0,"Mieszkancy moga korzystac z dobr kultury co zwieksza produkcje niektorych surowcow","4 poziom ratusza oraz Sztuka","5 poziom kapitolu"
+ };
+ struktura_budowli tawerna2=
+ {
+ 	24,"Tawerna",250,300,100,50,300,false,3,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom ratusza","3 poziom ratusza","4 poziom ratusza oraz Browarnictwo"
+ };
+ struktura_budowli droga2=
+ {
+ 	25,"Droga",10,0,5,5,10,false,2,0,0,0,0,0,0,0,0,10,0,"Wazny element miasta"," ","4 poziom ratusza oraz Infrastruktura"
+ };
+ struktura_budowli magazyn2=
+ {
+ 	26,"Magazyn",400,250,400,250,300,false,4,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom ratusza","3 poziom ratusza","4 poziom ratusza oraz Hodowla","5 poziom kaitolu"
+ };
+ struktura_budowli mlyn2=
+ {
+ 	27,"Mlyn",250,100,250,50,250,false,4,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli plac2=
+ {
+ 	28,"Plac",150,150,100,100,150,false,1,0,0,0,0,0,0,0,0,0,0,"Pozwala na formowanie armii z jednostek","1 poziom ratusza"
+ };
+ struktura_budowli tartakb2=
+ {
+ 	29,"Tartak",200,50,200,150,250,false,4,0,0,0,0,3,0,0,5,0,0,"Zwieksza produkcje drewna","1 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli kamieniarz2=
+ {
+ 	30,"Kamieniarz",200,50,200,150,250,false,4,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
+ };
+ struktura_budowli kolos2=
+ {
+ 	31,"Kolos",7000,7000,7000,7000,7000,false,1,0,20,20,20,20,20,20,20,5000,10,"Cud ktory prowadzi do wygranej","5 poziom kapitolu"
+ };
+ struktura_budowli kosciol2=
+ {
+ 	32,"Kosciol",300,100,300,200,300,false,3,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom ratusza","3 poziom ratusza","4 poziom ratusza"
+ };
+ struktura_budowli katedra2=
+ {
+ 	33,"Katedra",400,200,400,300,500,false,3,0,0,20,0,0,0,4,0,2500,0,"Zwieksza wiare","4 poziom ratusza oraz Ewangelizacja","5 poziom ratusza","5 poziom kapitolu"
+ };
+ struktura_budowli skarbiec2=
+ {
+ 	34,"Skarbiec",300,200,350,450,500,false,3,0,0,0,0,0,0,10,0,0,0,"Ochrona zlota daje zloto","3 poziom ratusza","5 poziom ratusza","5 poziom kapitolu"
+ };
+ struktura_budowli fort2=
+ {
+ 	35,"Fort",400,100,400,100,600,false,4,0,0,0,-2,-2,-2,-2,3,2000,7,"Zwieksza obrone miasta oraz ilosc zolnierzy w garnizonie","2 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom kapitolu"
+ };
+ struktura_budowli weglarnia2=
+ {
+ 	36,"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom ratusza","3 poziom ratusza"
+ };
+ struktura_budowli warsztat2=
+ {
+ 	37,"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom ratusza","4 poziom ratusza oraz Mechanika"
+ };
+ struktura_budowli stajnia2=
+ {
+ 	38,"Stajnia",400,150,200,200,450,false,4,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom ratusza","3 poziom ratusza","4 poziom ratusza","5 poziom ratusza"
+ };
  
  ////////////////////////////////////////////////////budynki osady
  
  
+ struktura_budowli_osada rada_osady2[11]=
+ {
+ {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ },
+  {
+ 	"Rada Osady", 200,200,350,100,0,true,4,1,5,5,5,5,5,5,25,1000,3,"Przyspiesza rekrutacje robotnikow"," ","1 poziom kapitolu","2 poziom kapitolu","3 poziom kapitolu"
+ }};
+ 
+ struktura_budowli_osada koszary_osada2[11]=
+ {
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ },
+ {
+ 	"Koszary",350,300,150,100,500,false,3,0,0,0,0,0,0,-2,0,0,5,"Mozliwosc rekrutacji jednostek piechoty","1 poziom rady osady","2 poziom rady osady","4 poziom rady osady" 
+ }
+ };
+ 
+ struktura_budowli_osada warsztat_osada2[11]=
+ {{
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+ 	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ },
+ {
+	"Warsztat",250,100,150,100,300,false,2,0,0,0,-2,0,0,0,7,0,0,"Zwieksza produkcje oraz pozwala rekrutowac tarany","2 poziom rady osady","4 poziom rady osady oraz Mechanika"
+ }};
+ 
+ struktura_budowli_osada stajnia_osada2[11]=
+ {
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	},
+ 	 {
+ 	"Stajnia",400,150,200,200,450,false,3,0,0,0,-1,-1,-1,-1,2,0,3,"Pozwala rekrutowac jazde","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada magazyn_osada2[11]=
+ {
+ 	 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	},
+ 		 {
+ 	"Magazyn",400,250,400,250,300,false,3,0,0,0,5,5,5,2,5,0,0,"Zwieksza mozliwosci logistyczne dzieki temu produkcja surowcow jest zwiekszona","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady oraz Hodowla"
+ 	}
+ };
+ 
+ struktura_budowli_osada mlyn_osada2[11]=
+ {
+ 	 {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },
+ {
+ 	"Mlyn",250,100,250,50,250,false,3,0,0,0,0,0,0,0,5,0,0,"Zwieksza produkcje zywnosci","2 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ }
+ };
+ 
+ struktura_budowli_osada kamieniarz_osada2[11]=
+ {
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ }	,	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ },	
+ {
+ 	"Kamieniarz",200,50,200,150,250,false,3,0,0,0,0,0,3,0,5,0,0,"Zwieksza produkcje kamienia","1 poziom rady osady","3 poziom rady osady","4 poziom rady osady"
+ }
+ };
+ 
+ struktura_budowli_osada weglarz_osada2[11]=
+ {
+	{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Weglarnia",150,100,350,100,300,false,2,0,0,0,-3,-1,6,0,7,0,0,"Zwieksza produkcje","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ 
+ };
+ 
+ struktura_budowli_osada pomnik_osada2[11]=
+ {
+ 	 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 		 {
+ 	"Pomnik",100,100,100,50,150,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga podziwiac potege wladcy co zwieksza produkcje surowcow","1 poziom rady osady","2 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada park_osada2[11]=
+ {
+ 	{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		{
+ 	"Park",150,200,200,50,200,false,2,0,2,2,1,1,1,1,1,0,0,"Mieszkancy moga sie zrelaksowac tu przez co zwiekszona jest produkcja surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ 	
+ };
+ 
+ struktura_budowli_osada port_osada2[11]=
+ {
+ 	 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Port",400,200,350,125,600,false,2,0,0,0,20,4,4,-3,3,1000,0,"Zwieksza sie logistyka (wieksza produkcja surowcow i daje premie do produkcji z zewnetrznych budynkow)","2 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada kosciol_osada2[11]=
+ {
+ 	 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 		 {
+ 	"Kosciol",300,100,300,200,300,false,2,0,0,10,0,0,0,2,0,1000,0,"Zwieksza wiare","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada biblioteka_osada2[11]=
+ {
+ 	{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	},
+ 		{
+ 	"Biblioteka",300,200,300,150,350,false,2,0,8,0,0,0,0,-3,0,0,0,"Mieszkancy moga z niej korzystac przez co zwieksza sie nauka","2 poziom rady osady","4 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada mieszkalna_osada2[11]=
+ {
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ },
+ 	{
+ 	"Mieszkalna",200,150,300,50,350,false,2,0,0,0,-5,-4,-2,-2,5,3000,0,"Dodaje miejsca zamieszkania","1 poziom rady osady","2 poziom rady osady"
+ }
+ };
+ 
+  struktura_budowli_osada handlowa_osada2[11]=
+  {
+  	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ },
+ 	{
+ 	"Handlowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,8,2,0,0,"Dzialania handlowe dodaja zloto do skarbca"," 2 poziom rady osady","3 poziom rady osady"
+ }
+  };
+ 
+ struktura_budowli_osada robotnicza_osada2[11]=
+ {
+ 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	},
+ 	 	 {
+ 	"Robotnicza",200,150,300,50,350,false,2,0,0,0,1,1,1,1,15,500,0,"Glowne miejsce pracy mieszkancow osady","1 poziom rady osady","2 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada wojskowa_osada2[11]=
+ {
+ 	 {
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Wojskowa",200,150,300,50,350,false,2,0,0,0,-2,-2,-2,-2,2,0,4,"Zolnierze ucza sie tu wlaczyc i tworzy miejsca dla nich"," 2 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ 
+ struktura_budowli_osada tawerna_osada2[11]=
+ {
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	},
+ 	{
+ 	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
+ 	}
+ };
+ //////////////
  struktura_budowli_osada rada_osady[11]=
  {
  {
@@ -1174,7 +2124,6 @@ struktura_jednostek elita=
  	"Tawerna",250,300,100,50,300,false,2,0,1,1,1,1,1,1,0,0,1,"Zadowoleni mieszkancy lepiej pracuja co zwieksza produkcje surowcow","1 poziom rady osady","3 poziom rady osady"
  	}
  };
- 
 
  
  ///////////////////////////////////////////////////////////////////
@@ -1193,9 +2142,12 @@ struktura_jednostek elita=
  bool rozbudowa=false;
 bool rekrutacja=false;
 int liczba_armii=0;
+int liczba_armii2=0;
 int liczba_zolnierzy=0;
+int liczba_zolnierzy2=0;
 bool bplac=false;
  char mapa_armii[127][201];
+ char mapa_armii2[127][201];
  bool najmij=false;
  bool menu_osada=false;
  bool blisko=false;
@@ -1203,11 +2155,12 @@ bool bplac=false;
  bool gracz1=true;
  bool gracz2=false;
  bool ruch_barbarzyncow=false;
+ bool wygrana=false;
  
 
- char mapa_walki[49][73];
 
 struktura_armii armia[50];
+struktura_armii armia2[50];
 
 struktura_jednostek jrobotnik[11]=
 {
@@ -1231,9 +2184,31 @@ struktura_jednostek jarmia=
 {
 	0,0,0,0,0,0,0,0,0,0,false,false,0,"1 poziom Ratusza","1 poziom Rady Osady","1 poziom obozu","Armia"	
 };
-
+struktura_jednostek jrobotnik2[11]=
+{
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"},
+	{0,2,1,50,150,25,10,10,0,300,false,false,0,"1 poziom Ratusza","2 poziom Rady Osady","1 poziom obozu","Robotnik"}
+};
+struktura_jednostek josadnik2=
+{
+	0,2,2,500,500,100,100,100,0,1000,false,false,0,"1 poziom Ratusza","---","2 poziom obozu","Osadnik"
+};
+struktura_jednostek jarmia2=
+{
+	0,0,0,0,0,0,0,0,0,0,false,false,0,"1 poziom Ratusza","1 poziom Rady Osady","1 poziom obozu","Armia"	
+};
 
 struktura_miasto miasto[11];
+struktura_miasto miasto2[11];
 
 
 
@@ -1264,6 +2239,103 @@ void budowlanka(struktura_budowli budowla, int x, int y, char mapa_stolicy[80][1
 			if(ksztalt%10==8)mapa_stolicy[x][y]=skrzyzowanie_gora;
 			if(ksztalt%10==9)mapa_stolicy[x][y]=skrzyzowanie_lewo;
 			if(ksztalt%10==10)mapa_stolicy[x][y]=skrzyzowanie_prawo;
+		}
+		
+			*bufor_budowa_miasto=x0;
+			gotoxy(90,27);
+			for(int i=0;i<9;i++){
+				for(int j=0;j<21;j++)cout << budowla.wyglad[i][j];
+				gotoxy(90,28+i);
+			}
+			system("CLS");
+			bufor_budowa_miasto=0;
+			gotoxy(114,10);
+			cout << budowla.nazwa<<"                                        ";
+			gotoxy(110,11);
+			cout << budowla.opis<<"                                        ";
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< budowla.koszt_drewno<<"     ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<budowla.koszt_kamien<<"     ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<budowla.koszt_zywnosc<<"     ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< budowla.koszt_zloto<<"     ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<budowla.koszt_produkcja<<"     ";
+			gotoxy(114,18);
+			cout << "Zwieksza: ";
+			gotoxy(110,19);
+			cout << "Zloto/tura+"<<budowla.zloto<<"     ";
+			gotoxy(110,20);
+			cout << "Drewno/tura+"<<budowla.drewno<<"     ";
+			gotoxy(110,21);
+			cout<<"Kamien/tura+"<<budowla.kamien<<"     ";
+			gotoxy(110,22);
+			cout <<"Zywnosc/tura+"<<budowla.zywnosc<<"     ";
+			gotoxy(110,23);
+			cout <<"Produkcja/tura+"<<budowla.produkcja<<"     ";
+			gotoxy(110,24);
+			cout << "Ludnosc+"<<budowla.ludnosc<<"     ";
+			gotoxy(110,25);
+			cout << "Max.Zolnierzy+"<<budowla.max_zolnierzy<<"     ";
+			gotoxy(110,26);
+			cout << "Nauka/tura+"<<budowla.nauka<<"     ";
+			gotoxy(110,27);
+			cout << "Wiara/tura+"<<budowla.wiara<<"     ";
+			gotoxy(110,28);
+			cout <<"Wymagania: ";
+			if(budowla.lvl==0){
+			gotoxy(110,29);
+			cout << budowla.wymagania1<<"                                        ";
+			}
+			if(budowla.lvl==1){
+			gotoxy(110,29);
+			cout << budowla.wymagania2<<"                                        ";
+			}
+			if(budowla.lvl==2){
+			gotoxy(110,29);
+			cout << budowla.wymagania3<<"                                        ";
+			}
+			if(budowla.lvl==3){
+			gotoxy(110,29);
+			cout << budowla.wymagania4<<"                                        ";
+			}
+			if(budowla.lvl==4){
+			gotoxy(110,29);
+			cout << budowla.wymagania5<<"                                        ";
+			}
+}
+
+void budowlanka2(struktura_budowli budowla, int x, int y, char mapa_stolicy2[80][150], char bufor_miasta2[80][150], int *bufor_budowa_miasto,int x0,int ksztalt){
+	if(budowla.nazwa!="Droga"){
+		if(budowla.nazwa!="Mur")
+			mapa_stolicy2[x][y]=254;
+		}else{
+		
+	
+	for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+				mapa_stolicy2[i][j]=budowla.wyglad[i-x][j-y];
+				if(budowla.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+			}
+			}
+		}
+		{
+			if(ksztalt%10==0)mapa_stolicy2[x][y]=prosto_dol;
+			if(ksztalt%10==1)mapa_stolicy2[x][y]=prosto_bok;
+			if(ksztalt%10==2)mapa_stolicy2[x][y]=skrzyzowanie;
+			if(ksztalt%10==3)mapa_stolicy2[x][y]=skret_lewo_dol;
+			if(ksztalt%10==4)mapa_stolicy2[x][y]=skret_lewo_gora;
+			if(ksztalt%10==5)mapa_stolicy2[x][y]=skret_prawo_dol;
+			if(ksztalt%10==6)mapa_stolicy2[x][y]=skret_prawo_gora;
+			if(ksztalt%10==7)mapa_stolicy2[x][y]=skrzyzowanie_dol;
+			if(ksztalt%10==8)mapa_stolicy2[x][y]=skrzyzowanie_gora;
+			if(ksztalt%10==9)mapa_stolicy2[x][y]=skrzyzowanie_lewo;
+			if(ksztalt%10==10)mapa_stolicy2[x][y]=skrzyzowanie_prawo;
 		}
 		
 			*bufor_budowa_miasto=x0;
@@ -1500,6 +2572,111 @@ void rozbudowlanka(int x0){
 			cout << budowla.wymagania5<<"                                              ";
 			}
 }
+void rozbudowlanka2(int x0){
+			struktura_budowli budowla;
+			if(x0==0)budowla=ratusz2;
+			if(x0==1)budowla=rynek2;
+			if(x0==2)budowla=mieszkalna2;
+			if(x0==3)budowla=handlowa2;
+			if(x0==4)budowla=naukowa2;
+			if(x0==5)budowla=wojskowa2;
+			if(x0==6)budowla=religijna2;
+			if(x0==7)budowla=rekreacyjna2;
+			if(x0==8)budowla=szkola2;
+			if(x0==9)budowla=akademia2;
+			if(x0==10)budowla=kapitol2;
+			if(x0==11)budowla=mur2;
+			if(x0==12)budowla=koszary2;
+			if(x0==13)budowla=huta2;
+			if(x0==14)budowla=oboz2;
+			if(x0==15)budowla=bank2;
+			if(x0==16)budowla=gildia2;
+			if(x0==17)budowla=biblioteka2;
+			if(x0==18)budowla=park2;
+			if(x0==19)budowla=pomnik2;
+			if(x0==20)budowla=ambasada2;
+			if(x0==21)budowla=port2;
+			if(x0==22)budowla=teatr2;
+			if(x0==23)budowla=droga2;
+			if(x0==24)budowla=tawerna2;
+			if(x0==25)budowla=magazyn2;
+			if(x0==26)budowla=mlyn2;
+			if(x0==27)budowla=plac2;
+			if(x0==28)budowla=tartakb2;
+			if(x0==29)budowla=kamieniarz2;
+			if(x0==30)budowla=kolos2;
+			if(x0==31)budowla=kosciol2;
+			if(x0==32)budowla=katedra2;
+			if(x0==33)budowla=skarbiec2;
+			if(x0==34)budowla=fort2;
+			if(x0==35)budowla=weglarnia2;
+			if(x0==36)budowla=warsztat2;
+			if(x0==37)budowla=stajnia2;
+			if(x0==38)return;
+			if(x0==39)return;
+			if(x0==40)return;
+			if(x0==41)return;
+
+			gotoxy(114,10);
+			cout << budowla.nazwa<< " bedzie rozbudowany(a) do poziomu "<<budowla.lvl+1<<"                    ";
+			gotoxy(110,11);
+			cout << budowla.opis;
+			for(int i=110+budowla.opis.size();i<220;i++)cout << " ";
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< budowla.koszt_drewno<<"                    ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<budowla.koszt_kamien<<"                    ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<budowla.koszt_zywnosc<<"                    ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< budowla.koszt_zloto<<"                    ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<budowla.koszt_produkcja<<"                    ";
+			gotoxy(114,18);
+			cout << "Zwieksza: ";
+			gotoxy(110,19);
+			cout << "Zloto/tura+"<<budowla.zloto*1.5<<"                    ";
+			gotoxy(110,20);
+			cout << "Drewno/tura+"<<budowla.drewno*1.5<<"                    ";
+			gotoxy(110,21);
+			cout<<"Kamien/tura+"<<budowla.kamien*1.5<<"                    ";
+			gotoxy(110,22);
+			cout <<"Zywnosc/tura+"<<budowla.zywnosc*1.5<<"                    ";
+			gotoxy(110,23);
+			cout <<"Produkcja/tura+"<<budowla.produkcja*1.5<<"                    ";
+			gotoxy(110,24);
+			cout << "Ludnosc+"<<budowla.ludnosc*1.5<<"                    ";
+			gotoxy(110,25);
+			cout << "Max.Zolnierzy+"<<budowla.max_zolnierzy*1.25<<"                    ";
+			gotoxy(110,26);
+			cout << "Nauka/tura+"<<budowla.nauka*1.5<<"                    ";
+			gotoxy(110,27);
+			cout << "Wiara/tura+"<<budowla.wiara*1.5<<"                    ";
+			gotoxy(110,28);
+			cout <<"Wymagania: ";
+			if(budowla.lvl==0){
+			gotoxy(110,29);
+			cout << budowla.wymagania1<<"                                              ";
+			}
+			if(budowla.lvl==1){
+			gotoxy(110,29);
+			cout << budowla.wymagania2<<"                                              ";
+			}
+			if(budowla.lvl==2){
+			gotoxy(110,29);
+			cout << budowla.wymagania3<<"                                              ";
+			}
+			if(budowla.lvl==3){
+			gotoxy(110,29);
+			cout << budowla.wymagania4<<"                                              ";
+			}
+			if(budowla.lvl==4){
+			gotoxy(110,29);
+			cout << budowla.wymagania5<<"                                              ";
+			}
+}
 
 void rozbudowlanka_osada(int x0, struktura_budowli_osada budowla){
 
@@ -1611,6 +2788,40 @@ void zwieksz_przychod(struktura_budowli &budowla, int *przychod_nauka, int *max_
 		*max_zolnierzy=*max_zolnierzy+budowla.max_zolnierzy;
 }
 
+void zwieksz_przychod2(struktura_budowli &budowla, int *przychod_nauka2, int *max_zolnierzy2){
+	
+	miasto2[1].przychod_zloto=miasto2[1].przychod_zloto-budowla.zloto;
+	miasto2[1].przychod_drewno=miasto2[1].przychod_drewno-budowla.drewno;
+	miasto2[1].przychod_kamien=miasto2[1].przychod_kamien-budowla.kamien;
+	miasto2[1].przychod_zywnosc=miasto2[1].przychod_zywnosc-budowla.zywnosc;
+	miasto2[1].przychod_wiara=miasto2[1].przychod_wiara-budowla.wiara;
+	miasto2[1].przychod_produkcja=miasto2[1].przychod_produkcja-budowla.produkcja;
+	*przychod_nauka2=*przychod_nauka2-budowla.nauka;
+	miasto2[1].ludnosc=miasto2[1].ludnosc-budowla.ludnosc;
+	*max_zolnierzy2=*max_zolnierzy2-budowla.max_zolnierzy;
+	
+	budowla.drewno=budowla.drewno+budowla.drewno*0.5;
+	budowla.zloto=budowla.zloto+budowla.zloto*0.5;
+	budowla.kamien=budowla.kamien+budowla.kamien*0.5;
+	budowla.zywnosc=budowla.zywnosc+budowla.zywnosc*0.5;
+	budowla.produkcja=budowla.produkcja+budowla.produkcja*0.5;
+	budowla.wiara=budowla.wiara+budowla.wiara*0.5;
+	budowla.nauka=budowla.nauka+budowla.nauka*0.5;
+	budowla.ludnosc=budowla.ludnosc+budowla.ludnosc*0.5;
+	budowla.max_zolnierzy=budowla.max_zolnierzy+budowla.max_zolnierzy*0.25;
+	
+		miasto2[1].przychod_zloto=miasto2[1].przychod_zloto+budowla.zloto;
+		miasto2[1].przychod_drewno=miasto2[1].przychod_drewno+budowla.drewno;
+		miasto2[1].przychod_kamien=miasto2[1].przychod_kamien+budowla.kamien;
+		miasto2[1].przychod_zywnosc=miasto2[1].przychod_zywnosc+budowla.zywnosc;
+		miasto2[1].przychod_wiara=miasto2[1].przychod_wiara+budowla.wiara;
+		miasto2[1].przychod_produkcja=miasto2[1].przychod_produkcja+budowla.produkcja;
+		miasto2[1].przychod_produkcja=miasto2[1].przychod_produkcja+miasto2[1].ludnosc*0.0005;
+		*przychod_nauka2=*przychod_nauka2+budowla.nauka;
+		miasto2[1].ludnosc=miasto2[1].ludnosc+budowla.ludnosc;
+		*max_zolnierzy2=*max_zolnierzy2+budowla.max_zolnierzy;
+}
+
 void zwieksz_przychod_osada(struktura_budowli_osada &budowla, int *przychod_nauka, int *max_zolnierzy, int xm){
 	
 	miasto[xm].przychod_zloto=miasto[xm].przychod_zloto-budowla.zloto;
@@ -1643,6 +2854,40 @@ void zwieksz_przychod_osada(struktura_budowli_osada &budowla, int *przychod_nauk
 		*przychod_nauka=*przychod_nauka+budowla.nauka;
 		miasto[xm].ludnosc=miasto[xm].ludnosc+budowla.ludnosc;
 		*max_zolnierzy=*max_zolnierzy+budowla.max_zolnierzy;
+}
+
+void zwieksz_przychod_osada2(struktura_budowli_osada &budowla, int *przychod_nauka2, int *max_zolnierzy2, int xm){
+	
+	miasto2[xm].przychod_zloto=miasto2[xm].przychod_zloto-budowla.zloto;
+	miasto2[xm].przychod_drewno=miasto2[xm].przychod_drewno-budowla.drewno;
+	miasto2[xm].przychod_kamien=miasto2[xm].przychod_kamien-budowla.kamien;
+	miasto2[xm].przychod_zywnosc=miasto2[xm].przychod_zywnosc-budowla.zywnosc;
+	miasto2[xm].przychod_wiara=miasto2[xm].przychod_wiara-budowla.wiara;
+	miasto2[xm].przychod_produkcja=miasto[xm].przychod_produkcja-budowla.produkcja;
+	*przychod_nauka2=*przychod_nauka2-budowla.nauka;
+	miasto2[xm].ludnosc=miasto2[xm].ludnosc-budowla.ludnosc;
+	*max_zolnierzy2=*max_zolnierzy2-budowla.max_zolnierzy;
+	
+	budowla.drewno=budowla.drewno+budowla.drewno*0.5;
+	budowla.zloto=budowla.zloto+budowla.zloto*0.5;
+	budowla.kamien=budowla.kamien+budowla.kamien*0.5;
+	budowla.zywnosc=budowla.zywnosc+budowla.zywnosc*0.5;
+	budowla.produkcja=budowla.produkcja+budowla.produkcja*0.5;
+	budowla.wiara=budowla.wiara+budowla.wiara*0.5;
+	budowla.nauka=budowla.nauka+budowla.nauka*0.5;
+	budowla.ludnosc=budowla.ludnosc+budowla.ludnosc*0.5;
+	budowla.max_zolnierzy=budowla.max_zolnierzy+budowla.max_zolnierzy*0.25;
+	
+		miasto2[xm].przychod_zloto=miasto2[xm].przychod_zloto+budowla.zloto;
+		miasto2[xm].przychod_drewno=miasto2[xm].przychod_drewno+budowla.drewno;
+		miasto2[xm].przychod_kamien=miasto2[xm].przychod_kamien+budowla.kamien;
+		miasto2[xm].przychod_zywnosc=miasto2[xm].przychod_zywnosc+budowla.zywnosc;
+		miasto2[xm].przychod_wiara=miasto2[xm].przychod_wiara+budowla.wiara;
+		miasto2[xm].przychod_produkcja=miasto2[xm].przychod_produkcja+budowla.produkcja;
+		miasto2[xm].przychod_produkcja=miasto2[xm].przychod_produkcja+miasto[xm].ludnosc*0.0005;
+		*przychod_nauka2=*przychod_nauka2+budowla.nauka;
+		miasto2[xm].ludnosc=miasto2[xm].ludnosc+budowla.ludnosc;
+		*max_zolnierzy2=*max_zolnierzy2+budowla.max_zolnierzy;
 }
 
 void zbuduj(struktura_budowli &budowla, int x, int y, char mapa_stolicy[80][150],char bufor_miasta[80][150],int *drewno, int *kamien, int *zywnosc, 
@@ -1683,6 +2928,44 @@ void zbuduj(struktura_budowli &budowla, int x, int y, char mapa_stolicy[80][150]
 		system("CLS");
 }
 
+void zbuduj2(struktura_budowli &budowla, int x, int y, char mapa_stolicy2[80][150],char bufor_miasta2[80][150],int *drewno2, int *kamien2, int *zywnosc2, 
+			int *zloto2, int *max_zolnierzy2, bool * budowa_miasto, bool *menu_budowy, bool *menu_stolica, int *przychod_nauka2, int *x0){
+
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=budowla.wyglad[i-x][j-y];
+				
+				if(budowla.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+				bufor_miasta2[i][j]=mapa_stolicy2[i][j];
+				
+		}
+		}
+		*drewno2=*drewno2-budowla.koszt_drewno;
+		*kamien2=*kamien2-budowla.koszt_kamien;
+		*zywnosc2=*zywnosc2-budowla.koszt_zywnosc;
+		*zloto2=*zloto2-budowla.koszt_zloto;
+		miasto2[1].produkcja=miasto2[1].produkcja-budowla.koszt_produkcja;
+		miasto2[1].przychod_zloto=miasto2[1].przychod_zloto+budowla.zloto;
+		miasto2[1].przychod_drewno=miasto2[1].przychod_drewno+budowla.drewno;
+		miasto2[1].przychod_kamien=miasto2[1].przychod_kamien+budowla.kamien;
+		miasto2[1].przychod_zywnosc=miasto2[1].przychod_zywnosc+budowla.zywnosc;
+		miasto2[1].przychod_wiara=miasto2[1].przychod_wiara+budowla.wiara;
+		miasto2[1].przychod_produkcja=miasto2[1].przychod_produkcja+budowla.produkcja;
+		*przychod_nauka2=*przychod_nauka2+budowla.nauka;
+		miasto2[1].przychod_produkcja=miasto2[1].przychod_produkcja+miasto2[1].ludnosc*0.0005;
+		miasto2[1].ludnosc=miasto2[1].ludnosc+budowla.ludnosc;
+		*max_zolnierzy2=*max_zolnierzy2+budowla.max_zolnierzy;
+		*budowa_miasto=false;
+		*menu_budowy=false;
+		*menu_stolica=true;
+		budowla.budowa=true;
+		*x0=0;
+		system("CLS");
+}
+
 void zbuduj_osada(struktura_budowli_osada &budowla,int *drewno, int *kamien, int *zywnosc, 
 			int *zloto, int *max_zolnierzy, bool *menu_budowy, bool *menu_osada, int *przychod_nauka, int *x0, int xm){
 
@@ -1707,6 +2990,30 @@ void zbuduj_osada(struktura_budowli_osada &budowla,int *drewno, int *kamien, int
 		*x0=0;
 		system("CLS");
 }
+void zbuduj_osada2(struktura_budowli_osada &budowla,int *drewno2, int *kamien2, int *zywnosc2, 
+			int *zloto2, int *max_zolnierzy2, bool *menu_budowy, bool *menu_osada, int *przychod_nauka2, int *x0, int xm){
+
+		*drewno2=*drewno2-budowla.koszt_drewno;
+		*kamien2=*kamien2-budowla.koszt_kamien;
+		*zywnosc2=*zywnosc2-budowla.koszt_zywnosc;
+		*zloto2=*zloto2-budowla.koszt_zloto;
+		miasto2[xm].produkcja=miasto2[xm].produkcja-budowla.koszt_produkcja;
+		miasto2[xm].przychod_zloto=miasto2[xm].przychod_zloto+budowla.zloto;
+		miasto2[xm].przychod_drewno=miasto2[xm].przychod_drewno+budowla.drewno;
+		miasto2[xm].przychod_kamien=miasto2[xm].przychod_kamien+budowla.kamien;
+		miasto2[xm].przychod_zywnosc=miasto2[xm].przychod_zywnosc+budowla.zywnosc;
+		miasto2[xm].przychod_wiara=miasto2[xm].przychod_wiara+budowla.wiara;
+		miasto2[xm].przychod_produkcja=miasto[xm].przychod_produkcja+budowla.produkcja;
+		*przychod_nauka2=*przychod_nauka2+budowla.nauka;
+		miasto2[xm].przychod_produkcja=miasto2[xm].przychod_produkcja+miasto2[xm].ludnosc*0.0005;
+		miasto2[xm].ludnosc=miasto2[xm].ludnosc+budowla.ludnosc;
+		*max_zolnierzy2=*max_zolnierzy2+budowla.max_zolnierzy;
+		*menu_budowy=false;
+		*menu_osada=true;
+		budowla.budowa=true;
+		*x0=0;
+		system("CLS");
+}
 
 
 void rozbuduj(struktura_budowli budowla,int *drewno, int *kamien, int *zywnosc, 
@@ -1724,6 +3031,21 @@ void rozbuduj(struktura_budowli budowla,int *drewno, int *kamien, int *zywnosc,
 		system("CLS");
 }
 
+void rozbuduj2(struktura_budowli budowla,int *drewno, int *kamien, int *zywnosc, 
+			int *zloto, int *max_zolnierzy, bool *rozbudowa, bool *menu_stolica, int *przychod_nauka, int *x0){
+	
+		*drewno=*drewno-budowla.koszt_drewno;
+		*kamien=*kamien-budowla.koszt_kamien;
+		*zywnosc=*zywnosc-budowla.koszt_zywnosc;
+		*zloto=*zloto-budowla.koszt_zloto;
+		miasto2[1].produkcja=miasto2[1].produkcja-budowla.koszt_produkcja;
+		*rozbudowa=false;
+		*menu_stolica=true;
+
+		*x0=0;
+		system("CLS");
+}
+
 void rozbuduj_osada(struktura_budowli_osada budowla,int *drewno, int *kamien, int *zywnosc, 
 			int *zloto, int *max_zolnierzy, bool *rozbudowa, bool *menu_osada, int *przychod_nauka, int *x0, int xm){
 	
@@ -1732,6 +3054,20 @@ void rozbuduj_osada(struktura_budowli_osada budowla,int *drewno, int *kamien, in
 		*zywnosc=*zywnosc-budowla.koszt_zywnosc;
 		*zloto=*zloto-budowla.koszt_zloto;
 		miasto[xm].produkcja=miasto[xm].produkcja-budowla.koszt_produkcja;
+		*rozbudowa=false;
+		*menu_osada=true;
+
+		*x0=0;
+		system("CLS");
+}
+void rozbuduj_osada2(struktura_budowli_osada budowla,int *drewno, int *kamien, int *zywnosc, 
+			int *zloto, int *max_zolnierzy, bool *rozbudowa, bool *menu_osada, int *przychod_nauka, int *x0, int xm){
+	
+		*drewno=*drewno-budowla.koszt_drewno;
+		*kamien=*kamien-budowla.koszt_kamien;
+		*zywnosc=*zywnosc-budowla.koszt_zywnosc;
+		*zloto=*zloto-budowla.koszt_zloto;
+		miasto2[xm].produkcja=miasto2[xm].produkcja-budowla.koszt_produkcja;
 		*rozbudowa=false;
 		*menu_osada=true;
 
@@ -1796,6 +3132,63 @@ void rekrutowanka(int x0){
 			cout << jednostka.atuty<<"                                                       ";
 }
 
+void rekrutowanka2(int x0){
+	
+			if(bplac==true)x0=x0+2;
+			struktura_jednostek jednostka;
+			if(x0==0)jednostka=jrobotnik2[1];
+			if(x0==1)jednostka=josadnik2;
+			if(x0==2)jednostka=pikinier2[1];
+			if(x0==3)jednostka=lucznik2[1];
+			if(x0==4)jednostka=kusznik2[1];
+			if(x0==5)jednostka=ciezkozbrojny2[1];
+			if(x0==6)jednostka=lekka_jazda2[1];
+			if(x0==7)jednostka=ciezka_jazda2[1];
+			if(x0==8)jednostka=taran2[1];
+			if(x0==9)jednostka=elita2;
+			if(x0==10)return;
+			if(bplac==false){
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< jednostka.koszt_drewno<<"                    ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<jednostka.koszt_kamien<<"                    ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<jednostka.koszt_zywnosc<<"                    ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< jednostka.koszt_zloto<<"                    ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<jednostka.koszt_produkcja<<"                    ";
+			gotoxy(110,18);
+			cout << "Ludnosc: "<<jednostka.wielkosc*100<<"                    ";
+			}
+			
+			gotoxy(114,19);
+			cout << "Statystyki: ";
+			gotoxy(110,20);
+			cout << "Atak "<<jednostka.atak<<"                    ";
+			gotoxy(110,21);
+			cout << "Obrona "<<jednostka.obrona<<"                    ";
+			gotoxy(110,22);
+			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
+			gotoxy(110,23);
+			cout <<"Jazda "<<jednostka.jazda<<"                    ";
+			gotoxy(110,24);
+			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			gotoxy(110,25);
+			cout << "Wielkosc "<<jednostka.wielkosc<<"                    ";
+			gotoxy(110,27);
+			cout <<"Wymagania: ";
+			gotoxy(110,28);
+			cout << jednostka.wymagania<<"                                              ";
+			gotoxy(110,29);
+			cout<<"Specjalne: ";
+			gotoxy(110,30);
+			cout << jednostka.atuty<<"                                                       ";
+}
+
+
 void rekrutowanka_osada(int x0, int xm){
 	
 			if(bplac==true)x0=x0+2;
@@ -1808,6 +3201,60 @@ void rekrutowanka_osada(int x0, int xm){
 			if(x0==5)jednostka=lekka_jazda[xm];
 			if(x0==6)jednostka=ciezka_jazda[xm];
 			if(x0==7)jednostka=taran[xm];
+			if(x0==8)return;
+			if(bplac==false){
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Drewno: "<< jednostka.koszt_drewno<<"                    ";
+			gotoxy(110,14);
+			cout<<"Kamien: " <<jednostka.koszt_kamien<<"                    ";
+			gotoxy(110,15);
+			cout<<"Zywnosc: "<<jednostka.koszt_zywnosc<<"                    ";
+			gotoxy(110,16);
+			cout <<"Zloto: "<< jednostka.koszt_zloto<<"                    ";
+			gotoxy(110,17);
+			cout << "Produkcja: "<<jednostka.koszt_produkcja<<"                    ";
+			gotoxy(110,18);
+			cout << "Ludnosc: "<<jednostka.wielkosc*100<<"                    ";
+			}
+			
+			gotoxy(114,19);
+			cout << "Statystyki: ";
+			gotoxy(110,20);
+			cout << "Atak "<<jednostka.atak<<"                    ";
+			gotoxy(110,21);
+			cout << "Obrona "<<jednostka.obrona<<"                    ";
+			gotoxy(110,22);
+			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
+			gotoxy(110,23);
+			cout <<"Jazda "<<jednostka.jazda<<"                    ";
+			gotoxy(110,24);
+			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			gotoxy(110,25);
+			cout << "Wielkosc "<<jednostka.wielkosc<<"                    ";
+			gotoxy(110,27);
+			cout <<"Wymagania: ";
+			gotoxy(110,28);
+			cout << jednostka.wymagania_osada<<"                                              ";
+			gotoxy(110,29);
+			cout<<"Specjalne: ";
+			gotoxy(110,30);
+			cout << jednostka.atuty<<"                                                       ";
+}
+
+void rekrutowanka_osada2(int x0, int xm){
+	
+			if(bplac==true)x0=x0+2;
+			struktura_jednostek jednostka;
+			if(x0==0)jednostka=jrobotnik2[xm];
+			if(x0==1)jednostka=pikinier2[xm];
+			if(x0==2)jednostka=lucznik2[xm];
+			if(x0==3)jednostka=kusznik2[xm];
+			if(x0==4)jednostka=ciezkozbrojny2[xm];
+			if(x0==5)jednostka=lekka_jazda2[xm];
+			if(x0==6)jednostka=ciezka_jazda2[xm];
+			if(x0==7)jednostka=taran2[xm];
 			if(x0==8)return;
 			if(bplac==false){
 			gotoxy(114,12);
@@ -1894,6 +3341,50 @@ void najmowanka(int x0)
 
 }
 
+void najmowanka2(int x0)
+{
+	struktura_jednostek jednostka;
+			if(x0==0)jednostka=jrobotnik2[1];
+			if(x0==1)jednostka=josadnik2;
+			if(x0==2)jednostka=pikinier2[1];
+			if(x0==3)jednostka=lucznik2[1];
+			if(x0==4)jednostka=kusznik2[1];
+			if(x0==5)jednostka=ciezkozbrojny2[1];
+			if(x0==6)jednostka=lekka_jazda2[1];
+			if(x0==7)jednostka=ciezka_jazda2[1];
+			if(x0==8)jednostka=taran2[1];
+			if(x0==9)jednostka=elita2;
+			if(x0==10)return;
+			if(bplac==false){
+			gotoxy(114,12);
+			cout << "Koszt: ";
+			gotoxy(110,13);
+			cout <<"Zloto: "<< jednostka.koszt_zloto*3<<"                    ";
+			gotoxy(110,14);
+			cout <<"Wiara: "<< jednostka.koszt_wiara<<"                    ";
+			}
+			
+			gotoxy(114,15);
+			cout << "Statystyki: ";
+			gotoxy(110,16);
+			cout << "Atak "<<jednostka.atak<<"                    ";
+			gotoxy(110,17);
+			cout << "Obrona "<<jednostka.obrona<<"                    ";
+			gotoxy(110,18);
+			cout<<"Zasiegowa "<<jednostka.zasieg<<"                    ";
+			gotoxy(110,19);
+			cout <<"Jazda "<<jednostka.jazda<<"                    ";
+			gotoxy(110,20);
+			cout <<"Utrzymanie "<<jednostka.utrzymanie<<"                    ";
+			gotoxy(110,21);
+			cout << "Wielkosc "<<jednostka.wielkosc<<"                    ";
+			gotoxy(110,22);
+			cout <<"Wymagania: ";
+			gotoxy(110,23);
+			cout << jednostka.wymagania_najmu<<"                                              ";
+
+}
+
 void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnosc, 
 			int *zloto, int *max_zolnierzy, bool *rekrutacja, bool *menu_stolica, int *x0){
 
@@ -1903,6 +3394,40 @@ void rekrutuj(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnos
 		*zloto=*zloto-budowla.koszt_zloto;
 
 		miasto[1].ludnosc=miasto[1].ludnosc-budowla.wielkosc*100;
+		*rekrutacja=false;
+		*menu_stolica=true;
+		
+			gotoxy(54,25);
+			for(int i=0;i<70;i++)cout << blok;
+			gotoxy(54,26);
+			cout << blok;
+			for(int i=0;i<68;i++)cout<< " ";
+			cout << blok;
+			gotoxy(54,28);
+			cout << blok;
+			for(int i=0;i<68;i++)cout<< " ";
+			cout << blok;
+			gotoxy(54,29);
+			for(int i=0;i<70;i++)cout << blok;
+			gotoxy(120,27);
+			cout << "   " << blok;
+			gotoxy(54,27);
+			cout <<blok<< " Zrekrutowales " <<budowla.nazwa<<"                                          ";
+			Sleep(1200);
+		
+		*x0=0;
+		system("CLS");
+}
+
+void rekrutuj2(struktura_jednostek &budowla,int *drewno, int *kamien, int *zywnosc, 
+			int *zloto, int *max_zolnierzy, bool *rekrutacja, bool *menu_stolica, int *x0){
+
+		*drewno=*drewno-budowla.koszt_drewno;
+		*kamien=*kamien-budowla.koszt_kamien;
+		*zywnosc=*zywnosc-budowla.koszt_zywnosc;
+		*zloto=*zloto-budowla.koszt_zloto;
+
+		miasto2[1].ludnosc=miasto2[1].ludnosc-budowla.wielkosc*100;
 		*rekrutacja=false;
 		*menu_stolica=true;
 		
@@ -1989,7 +3514,7 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 			armia[liczba_armii].x=x2;
 			armia[liczba_armii].y=y2;
 			armia[liczba_armii].id=liczba_armii;
-			mapa_armii[x2][y2]=armia[liczba_armii].id+48;
+			mapa_armii[x2][y2]=liczba_armii+48;
 			mapa_jednostek[x2][y2]='A';
 			gotoxy(54,25);
 		for(int i=0;i<40;i++)cout << blok;
@@ -2008,6 +3533,75 @@ void wystaw_armie(struktura_jednostek &jednostka, char mapa[137][201], int bufor
 		gotoxy(54,27);
 		cout <<blok<< "  Wpisz nazwe armii: ";
 		getline(cin, armia[liczba_armii].nazwa);
+
+	gotoxy(54,27);
+	for(int i=0;i<28;i++)cout << blok;
+
+			cls;
+			return;
+			}
+			return;
+		}
+		cls();
+		
+		
+	}while(ster!=27);
+	
+}
+
+void wystaw_armie2(struktura_jednostek &jednostka, char mapa[137][201], int bufor_rekrutacji, char mapa_jednostek2[137][201], int xm)
+{
+	char ster;
+	int h=0;
+	int y2=miasto2[xm].y1;
+	int x2=miasto2[xm].x1;
+	do{
+		gotoxy(109,33);
+		for(int i=miasto2[xm].x1-1;i<=miasto2[xm].x1+1;i++){
+			for(int j=miasto2[xm].y1-1;j<=miasto2[xm].y1+1;j++){
+				if(mapa_jednostek2[i][j]!='R' && mapa_jednostek2[i][j]!='O' && mapa_jednostek2[i][j]!='A' && mapa_jednostek2[i][j]!='B' && mapa[i][j]!=woda && mapa[i][j]!=gora && mapa[i][j]!=stolica && mapa[i][j]!=osada)SetConsoleTextAttribute( hOut, 10 );
+				if(i==x2 && j==y2)SetConsoleTextAttribute( hOut, 14 );
+				cout <<mapa[i][j];
+				SetConsoleTextAttribute( hOut, 7 );
+			}
+			h++;
+			gotoxy(109,33+h);
+		}
+		
+		ster=getch();
+		h=0;
+		if(ster=='w' && x2-1!=miasto2[xm].x1-2)x2--;
+		if(ster=='s' && x2+1!=miasto2[xm].x1+2)x2++;
+		if(ster=='a' && y2-1!=miasto2[xm].y1-2)y2--;
+		if(ster=='d' && y2+1!=miasto2[xm].y1+2)y2++;
+		if(ster=='q' && mapa_jednostek2[x2][y2]!='R' && mapa_jednostek2[x2][y2]!='O' && mapa_jednostek2[x2][y2]!='A' && mapa_jednostek2[x2][y2]!='B' && mapa[x2][y2]!=woda && mapa[x2][y2]!=gora && mapa[x2][y2]!=stolica && mapa[x2][y2]!=osada){
+			if(bufor_rekrutacji==0)mapa_jednostek2[x2][y2]='R';
+			if(bufor_rekrutacji==1)mapa_jednostek2[x2][y2]='O';
+			if(bufor_rekrutacji!=0 && bufor_rekrutacji!=1){	
+			mapa_jednostek2[x2][y2]='A';
+			armia2[liczba_armii2].miasto_domowe=xm;
+			armia2[liczba_armii2].x=x2;
+			armia2[liczba_armii2].y=y2;
+			armia2[liczba_armii2].id=liczba_armii2;
+			mapa_armii2[x2][y2]=liczba_armii2+48;
+			mapa_jednostek2[x2][y2]='A';
+			gotoxy(54,25);
+		for(int i=0;i<40;i++)cout << blok;
+		gotoxy(54,26);
+		cout << blok;
+		for(int i=0;i<38;i++)cout<< " ";
+		cout << blok;
+		gotoxy(54,28);
+		cout << blok;
+		for(int i=0;i<38;i++)cout<< " ";
+		cout << blok;
+		gotoxy(54,29);
+		for(int i=0;i<40;i++)cout << blok;
+		gotoxy(90,27);
+		cout << "   " << blok;
+		gotoxy(54,27);
+		cout <<blok<< "  Wpisz nazwe armii: ";
+		getline(cin, armia2[liczba_armii2].nazwa);
 
 	gotoxy(54,27);
 	for(int i=0;i<28;i++)cout << blok;
@@ -2061,22 +3655,70 @@ void pokaz_armie(struktura_armii armia, int xm)
 	gotoxy(110,32);
 	cout << "UTRZYMANIE: "<<utrzymanie<<"     ";
 }
+void pokaz_armie2(struktura_armii armia, int xm)
+{
+	int atak_razem;
+	atak_razem=armia.pikinierzy*pikinier2[xm].atak;
+	atak_razem+=armia.lucznicy*lucznik2[xm].atak;
+	atak_razem+=armia.kusznicy*kusznik2[xm].atak;
+	atak_razem+=armia.ciezkozbrojni*ciezkozbrojny2[xm].atak;
+	atak_razem+=armia.lekka_jazda*lekka_jazda2[xm].atak;
+	atak_razem+=armia.ciezka_jazda*ciezka_jazda2[xm].atak;
+	atak_razem+=armia.tarany*taran2[xm].atak;
+	atak_razem+=armia.elity*elita2.atak;
+	int obrona_razem;
+	obrona_razem=armia.pikinierzy*pikinier2[xm].obrona;
+	obrona_razem+=armia.lucznicy*lucznik2[xm].obrona;
+	obrona_razem+=armia.kusznicy*kusznik2[xm].obrona;
+	obrona_razem+=armia.ciezkozbrojni*ciezkozbrojny2[xm].obrona;
+	obrona_razem+=armia.lekka_jazda*lekka_jazda2[xm].obrona;
+	obrona_razem+=armia.ciezka_jazda*ciezka_jazda2[xm].obrona;
+	obrona_razem+=armia.tarany*taran2[xm].obrona;
+	obrona_razem+=armia.elity*elita2.obrona;
+	int utrzymanie;
+	utrzymanie=armia.pikinierzy*pikinier2[xm].utrzymanie;
+	utrzymanie+=armia.lucznicy*lucznik2[xm].utrzymanie;
+	utrzymanie+=armia.kusznicy*kusznik2[xm].utrzymanie;
+	utrzymanie+=armia.ciezkozbrojni*ciezkozbrojny2[xm].utrzymanie;
+	utrzymanie+=armia.lekka_jazda*lekka_jazda2[xm].utrzymanie;
+	utrzymanie+=armia.ciezka_jazda*ciezka_jazda2[xm].utrzymanie;
+	utrzymanie+=armia.tarany*taran2[xm].utrzymanie;
+	utrzymanie+=armia.elity*elita2.utrzymanie;
+	
+	gotoxy(110,30);
+	cout << "ATAK: " << atak_razem<<"     ";
+	gotoxy(110,31);
+	cout << "OBRONA: "<<obrona_razem<<"    ";
+	gotoxy(110,32);
+	cout << "UTRZYMANIE: "<<utrzymanie<<"     ";
+}
 
  int szansa=1;
  
  char mapa_stolicy[80][150];
  char bufor_miasta[80][150];
  char mapa_jednostek[127][201];
+  char mapa_stolicy2[80][150];
+ char bufor_miasta2[80][150];
+ char mapa_jednostek2[127][201];
  char bufor_mjednostek[127][201];
  int mapa_farma[127][201];
  int mapa_wioska[127][201];
  int mapa_kopalnia[127][201];
  int mapa_tartak[127][201];
+  int mapa_farma2[127][201];
+ int mapa_wioska2[127][201];
+ int mapa_kopalnia2[127][201];
+ int mapa_tartak2[127][201];
  char zasieg_miast[127][201];
+ char zasieg_miast2[127][201];
  char teretorium[127][201];
  bool mgla_wojny[127][201];
  bool niewidocznosc[127][201];
  char bufor_widocznosci[137][201];
+  bool mgla_wojny2[127][201];
+ bool niewidocznosc2[127][201];
+ char bufor_widocznosci2[137][201];
  int bufor_budowa=10;
  int bufor_budowa_miasto=45;
  int bufor_rekrutacja;
@@ -2092,14 +3734,14 @@ void pokaz_armie(struktura_armii armia, int xm)
  int min_y;
 
 
-void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto,int *liczba_barbarzyncow){
+void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto,int *liczba_barbarzyncow,bool *wygrana){
 	
 	struktura_armii armia_barb;
 	system("CLS");
 	bool koniec=false;
 	bool ruch=true;
-	bool wygrana=false;
-	int x0;
+	bool good=false;
+	int x0=0;
 	int x1=-1;
 	int x2=0;
 	int maxrand;
@@ -2117,11 +3759,27 @@ void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto
 	bool menu=true;
 	bool atak1=false;
 	int rando[6];
+	bool ruch_gracz=true;
 	
 	int atak_bufor;
 	int atak_bufor_obrona;
+	int obrona_bufor_barb;
 	int obrona_bufor;
+
 	int zycie_bufor;
+	float wspolczynnik_atak;
+	float wspolczynnik_atak_obrona;
+	int nagroda;
+
+	
+	int bufor_pikinierzy=armia.pikinierzy;
+	int bufor_lucznicy=armia.lucznicy;
+	int bufor_kusznicy=armia.kusznicy;
+	int bufor_ciezkozbrojni=armia.ciezkozbrojni;
+	int bufor_lekka_jazda=armia.lekka_jazda;
+	int bufor_ciezka_jazda=armia.ciezka_jazda;
+	int bufor_tarany=armia.tarany;
+	int bufor_elity=armia.elity;
 	
 	int miasto_domowe=armia.miasto_domowe;
 	int identyfikator_gracz;
@@ -2171,7 +3829,8 @@ void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto
 	
 	armia_barb.wielkosc=0;
 	max=armia.wielkosc;
-	max=10;
+	
+	
 
 	rando[0]=(rand()%maxrand);
 	
@@ -2203,7 +3862,19 @@ void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto
 	armia_barb.wielkosc+=(rando[5]*ciezka_jazda[11].wielkosc);
 	armia_barb.ciezka_jazda=rando[5];
 	}
+		int bufor_pikinierzy_barb=armia_barb.pikinierzy;
+	int bufor_lucznicy_barb=armia_barb.lucznicy;
+	int bufor_kusznicy_barb=armia_barb.kusznicy;
+	int bufor_ciezkozbrojni_barb=armia_barb.ciezkozbrojni;
+	int bufor_lekka_jazda_barb=armia_barb.lekka_jazda;
+	int bufor_ciezka_jazda_barb=armia_barb.ciezka_jazda;
 	
+	nagroda+=armia_barb.pikinierzy;
+	nagroda+=armia_barb.lucznicy;
+	nagroda+=armia_barb.kusznicy;
+	nagroda+=armia_barb.ciezkozbrojni;
+	nagroda+=armia_barb.lekka_jazda;
+	nagroda+=armia_barb.ciezka_jazda;
 	
 	for(int i=0;i<armia.pikinierzy;i++){
 		zycie_pikinierzy[i]=pikinier[miasto_domowe].obrona*2;
@@ -2266,8 +3937,35 @@ void walka_barbarzyncy(struktura_armii armia, bool gracz1,bool gracz2,int *zloto
 	
 	while(koniec==false){
 
-		
+		elity=false;
+		tarany=false;
+		ciezka_jazdy=false;
+		lekka_jazdy=false;
+		ciezkozbrojni=false;
+		kusznicy=false;
+		lucznicy=false;
+		pikinierzy=false;
 
+		if(armia.wielkosc==0){
+			koniec=true;
+			*wygrana=false;
+			continue;
+		}
+		if(armia_barb.wielkosc==0){
+			koniec=true;
+			*wygrana=true;
+			continue;
+		}
+	
+		komunikat="Wybierz Twoja jednostke do potyczki";
+		atak1=false;
+		atak=false;
+		menu=true;
+		system("CLS");
+		
+		while(ruch_gracz==true){
+		
+		
 		
 		gotoxy(20,17);
 		cout<<"           /\                                                 /\ ";
@@ -2292,7 +3990,7 @@ for(int i=0;i<28;i++)cout << blok;
 gotoxy(70,4);
 cout <<blok<< "                          "<<blok;
 gotoxy(70,5);
-if(x0==0 && menu==true){
+if(x0==0 ){
 komunikat="Wybierz Twoja jednostke do potyczki";
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
@@ -2304,7 +4002,7 @@ else
 cout <<blok<< "   Pikinier / "<<armia.pikinierzy<<"           "<<blok; 
 
 gotoxy(70,6);
-if(x0==1&& menu==true){
+if(x0==1){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok; 
@@ -2314,7 +4012,7 @@ SetConsoleTextAttribute( hOut, 8 );
 else
 cout <<blok<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok;
 gotoxy(70,7);
-if(x0==2&& menu==true){
+if(x0==2){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Kusznik / "<<armia.kusznicy<<"            "; 
@@ -2324,7 +4022,7 @@ cout<<blok;
 else
 cout <<blok<< "   Kusznik / "<<armia.kusznicy<<"            "<<blok; 
 gotoxy(70,8);
-if(x0==3&& menu==true){
+if(x0==3){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "; 
@@ -2335,7 +4033,7 @@ else
 cout <<blok<< "   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "<<blok; 
 
 gotoxy(70,9);
-if(x0==4&& menu==true){
+if(x0==4){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Lekka Jazda / "<<armia.lekka_jazda<<"        "; 
@@ -2345,7 +4043,7 @@ cout<<blok;
 else
 cout <<blok<< "   Lekka Jazda / "<<armia.lekka_jazda<<"        "<<blok; 
 gotoxy(70,10);
-if(x0==5&& menu==true){
+if(x0==5){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "; 
@@ -2355,7 +4053,7 @@ cout<<blok;
 else
 cout <<blok<< "   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "<<blok;
 gotoxy(70,11);
-if(x0==6&& menu==true){
+if(x0==6){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Taran / "<<armia.tarany<<"              "; 
@@ -2365,7 +4063,7 @@ cout<<blok;
 else
 cout <<blok<< "   Taran / "<<armia.tarany<<"              "<<blok;
 gotoxy(70,12);
-if(x0==7&& menu==true){
+if(x0==7){
 cout << blok;
 SetConsoleTextAttribute( hOut, 2 );
 cout<<"   Elita / "<<armia.elity<<"              "; 
@@ -2459,7 +4157,7 @@ for(int i=0;i<28;i++)cout << blok;
 	if(atak1==true){
 	gotoxy(0,60);	
 	if(pikinierzy==true){
-		for(int i=0;i<armia_barb.pikinierzy;i++){
+		for(int i=0;i<bufor_pikinierzy_barb;i++){
 			if(zycie_pikinierzy_barb[i]>0){
 			
 			if(i==x2){
@@ -2469,14 +4167,14 @@ for(int i=0;i<28;i++)cout << blok;
 			}else
 			cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
 			}else
-			cout<<"                      ";
+			cout<<"        ------        ";
 			
 			if(i%6==6)cout<< endl;
 		}
 	}
 		gotoxy(0,60);	
 	if(lucznicy==true){
-		for(int i=0;i<armia_barb.lucznicy;i++){
+		for(int i=0;i<bufor_lucznicy_barb;i++){
 			if(zycie_lucznicy[i]>0){
 			
 			if(i==x2){
@@ -2486,14 +4184,14 @@ for(int i=0;i<28;i++)cout << blok;
 			}else
 			cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
 			}else
-			cout<<"                      ";
+			cout<<"        ------        ";
 			
 			if(i%6==6)cout<< endl;
 		}
 	}
 		gotoxy(0,60);	
 	if(kusznicy==true){
-		for(int i=0;i<armia_barb.kusznicy;i++){
+		for(int i=0;i<bufor_kusznicy_barb;i++){
 			if(zycie_kusznicy_barb[i]>0){
 			
 			if(i==x2){
@@ -2503,14 +4201,14 @@ for(int i=0;i<28;i++)cout << blok;
 			}else
 			cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
 			}else
-			cout<<"                      ";
+			cout<<"        ------        ";
 			
 			if(i%6==6)cout<< endl;
 		}
 	}
 		gotoxy(0,60);	
 	if(ciezkozbrojni==true){
-		for(int i=0;i<armia_barb.ciezkozbrojni;i++){
+		for(int i=0;i<bufor_ciezkozbrojni_barb;i++){
 			if(zycie_ciezkozbrojni_barb[i]>0){
 			
 			if(i==x2){
@@ -2520,14 +4218,14 @@ for(int i=0;i<28;i++)cout << blok;
 			}else
 			cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
 			}else
-			cout<<"                      ";
+			cout<<"        ------        ";
 			
 			if(i%6==6)cout<< endl;
 		}
 	}
 		gotoxy(0,60);	
 	if(lekka_jazdy==true){
-		for(int i=0;i<armia_barb.lekka_jazda;i++){
+		for(int i=0;i<bufor_lekka_jazda_barb;i++){
 			if(zycie_lekka_jazda_barb[i]>0){
 			
 			if(i==x2){
@@ -2537,14 +4235,14 @@ for(int i=0;i<28;i++)cout << blok;
 			}else
 			cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
 			}else
-			cout<<"                      ";
+			cout<<"        ------        ";
 			
 			if(i%6==6)cout<< endl;
 		}
 	}
 		gotoxy(0,60);	
 	if(ciezka_jazdy==true){
-		for(int i=0;i<armia_barb.ciezka_jazda;i++){
+		for(int i=0;i<bufor_ciezka_jazda_barb;i++){
 			if(zycie_ciezka_jazda_barb[i]>0){
 			
 			if(i==x2){
@@ -2554,7 +4252,7 @@ for(int i=0;i<28;i++)cout << blok;
 			}else
 			cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
 			}else
-			cout<<"                      ";
+			cout<<"        ------        ";
 			
 			if(i%6==6)cout<< endl;
 		}
@@ -2565,7 +4263,7 @@ for(int i=0;i<28;i++)cout << blok;
 	
 		gotoxy(0,60);	
 	if(pikinierzy==true&& atak==false){
-		for(int i=0;i<armia.pikinierzy;i++){
+		for(int i=0;i<bufor_pikinierzy;i++){
 			if(zycie_pikinierzy[i]>0){
 			
 			if(i==x2){
@@ -2582,7 +4280,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		gotoxy(0,60);	
 	if(lucznicy==true&& atak==false){
-		for(int i=0;i<armia.lucznicy;i++){
+		for(int i=0;i<bufor_lucznicy;i++){
 			if(zycie_lucznicy[i]>0){
 			
 			if(i==x2){
@@ -2599,7 +4297,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		gotoxy(0,60);	
 	if(kusznicy==true&& atak==false){
-		for(int i=0;i<armia.kusznicy;i++){
+		for(int i=0;i<bufor_kusznicy;i++){
 			if(zycie_kusznicy[i]>0){
 			
 			if(i==x2){
@@ -2616,7 +4314,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		gotoxy(0,60);	
 	if(ciezkozbrojni==true&& atak==false){
-		for(int i=0;i<armia.ciezkozbrojni;i++){
+		for(int i=0;i<bufor_ciezkozbrojni;i++){
 			if(zycie_ciezkozbrojni[i]>0){
 			
 			if(i==x2){
@@ -2633,7 +4331,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		gotoxy(0,60);	
 	if(lekka_jazdy==true&& atak==false){
-		for(int i=0;i<armia.lekka_jazda;i++){
+		for(int i=0;i<bufor_lekka_jazda;i++){
 			if(zycie_lekka_jazda[i]>0){
 			
 			if(i==x2){
@@ -2667,7 +4365,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		gotoxy(0,60);	
 	if(tarany==true&& atak==false){
-		for(int i=0;i<armia.tarany;i++){
+		for(int i=0;i<bufor_tarany;i++){
 			if(zycie_tarany[i]>0){
 			
 			if(i==x2){
@@ -2684,7 +4382,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		gotoxy(0,60);	
 	if(elity==true && atak==false){
-		for(int i=0;i<armia.elity;i++){
+		for(int i=0;i<bufor_elity;i++){
 			if(zycie_elity[i]>0){
 			
 			if(i==x2){
@@ -2701,7 +4399,7 @@ for(int i=0;i<28;i++)cout << blok;
 	}
 		
 		
-		
+	cin.sync();	
 	ster=getch();
 	
 	
@@ -2727,7 +4425,7 @@ for(int i=0;i<28;i++)cout << blok;
 	continue;
 	}	
 	///////////////////////////////
-	if(ster==KEY_DOWN && x2!=armia.pikinierzy-1 && pikinierzy==true && atak==false){
+	if(ster==KEY_DOWN && x2!=bufor_pikinierzy-1 && pikinierzy==true && atak==false){
 	x2++;
 	cls();
 	
@@ -2737,97 +4435,98 @@ for(int i=0;i<28;i++)cout << blok;
 	cls();
 	
 	}	
-		if(ster==KEY_DOWN && x2!=armia.lucznicy-1 && lucznicy==true && atak==false){
+		if(ster==KEY_DOWN && x2!=bufor_lucznicy-1 && lucznicy==true && atak==false){
 	x2++;
 	cls();
 	
 	}
 	
-	if(ster==KEY_DOWN && x2!=armia.kusznicy-1 && kusznicy==true && atak==false){
-	x2++;
-	cls();
-	
-	}
-
-	if(ster==KEY_DOWN && x2!=armia.ciezkozbrojni-1 && ciezkozbrojni==true && atak==false){
+	if(ster==KEY_DOWN && x2!=bufor_kusznicy-1 && kusznicy==true && atak==false){
 	x2++;
 	cls();
 	
 	}
 
-	if(ster==KEY_DOWN && x2!=armia.lekka_jazda-1 && lekka_jazdy==true && atak==false){
+	if(ster==KEY_DOWN && x2!=bufor_ciezkozbrojni-1 && ciezkozbrojni==true && atak==false){
 	x2++;
 	cls();
 	
 	}
 
-	if(ster==KEY_DOWN && x2!=armia.ciezka_jazda-1 && ciezka_jazdy==true && atak==false){
+	if(ster==KEY_DOWN && x2!=bufor_lekka_jazda-1 && lekka_jazdy==true && atak==false){
 	x2++;
 	cls();
 	
 	}
 
-	if(ster==KEY_DOWN && x2!=armia.tarany-1 && tarany==true && atak==false){
+	if(ster==KEY_DOWN && x2!=bufor_ciezka_jazda-1 && ciezka_jazdy==true && atak==false){
 	x2++;
 	cls();
 	
 	}
-	if(ster==KEY_DOWN && x2!=armia.elity-1 && elity==true && atak==false){
+
+	if(ster==KEY_DOWN && x2!=bufor_tarany-1 && tarany==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	if(ster==KEY_DOWN && x2!=bufor_elity-1 && elity==true && atak==false){
 	x2++;
 	cls();
 	
 	}
 	/////////////////////////
-	if(ster==KEY_DOWN && x2!=armia_barb.pikinierzy-1 && pikinierzy==true && atak==true){
+	if(ster==KEY_DOWN && x2!=bufor_pikinierzy_barb-1 && pikinierzy==true && atak==true){
 	x2++;
 	cls();
 	
 	}
 
-		if(ster==KEY_DOWN && x2!=armia_barb.lucznicy-1 && lucznicy==true && atak==true){
+		if(ster==KEY_DOWN && x2!=bufor_lucznicy_barb-1 && lucznicy==true && atak==true){
 	x2++;
 	cls();
 	
 	}
 	
-	if(ster==KEY_DOWN && x2!=armia_barb.kusznicy-1 && kusznicy==true && atak==true){
-	x2++;
-	cls();
-	
-	}
-
-	if(ster==KEY_DOWN && x2!=armia_barb.ciezkozbrojni-1 && ciezkozbrojni==true && atak==true){
+	if(ster==KEY_DOWN && x2!=bufor_kusznicy_barb-1 && kusznicy==true && atak==true){
 	x2++;
 	cls();
 	
 	}
 
-	if(ster==KEY_DOWN && x2!=armia_barb.lekka_jazda-1 && lekka_jazdy==true && atak==true){
+	if(ster==KEY_DOWN && x2!=bufor_ciezkozbrojni_barb-1 && ciezkozbrojni==true && atak==true){
 	x2++;
 	cls();
 	
 	}
 
-	if(ster==KEY_DOWN && x2!=armia_barb.ciezka_jazda-1 && ciezka_jazdy==true && atak==true){
+	if(ster==KEY_DOWN && x2!=bufor_lekka_jazda_barb-1 && lekka_jazdy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_ciezka_jazda_barb-1 && ciezka_jazdy==true && atak==true){
 	x2++;
 	cls();
 	
 	}
 		if(armia_barb.wielkosc<1){
 		break;
-		wygrana=true;
+		*wygrana=true;
 		
 		}
 		
 		if(armia.wielkosc<1){
 		break;
-		wygrana=false;
+		*wygrana=false;
 		
 		}
 
 	if(ster==27 && menu==false){
 		menu=true;
 		atak=false;
+		atak1=false;
 		elity=false;
 		tarany=false;
 		ciezka_jazdy=false;
@@ -2836,6 +4535,7 @@ for(int i=0;i<28;i++)cout << blok;
 		kusznicy=false;
 		lucznicy=false;
 		pikinierzy=false;
+		komunikat="Wybierz Twoja jednostke do potyczki";
 		x0=0;
 		x1=0;
 		x2=0;
@@ -2995,30 +4695,111 @@ for(int i=0;i<28;i++)cout << blok;
 			identyfikator_gracz=x2;
 			x1=0;
 		}
+		identyfikator_gracz=x2;
+		if(x0==0){
+		zycie_bufor=zycie_pikinierzy[identyfikator_gracz];
+		obrona_bufor=obrona_pikinierzy[identyfikator_gracz];
+		atak_bufor=pikinier[miasto_domowe].atak;
+		wspolczynnik_atak=1;
+		wspolczynnik_atak_obrona=1;
+		if(x1==6)wspolczynnik_atak=1.5;
+		if(x1==6)wspolczynnik_atak_obrona=1.5;
+		}
+		if(x0==1){
+			zycie_bufor=zycie_lucznicy[identyfikator_gracz];
+			obrona_bufor=obrona_lucznicy[identyfikator_gracz];
+			atak_bufor=lucznik[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x0==2){
+			zycie_bufor=zycie_kusznicy[identyfikator_gracz];
+			obrona_bufor=obrona_kusznicy[identyfikator_gracz];
+			atak_bufor=kusznik[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x0==3){
+			zycie_bufor=zycie_ciezkozbrojni[identyfikator_gracz];
+			obrona_bufor=obrona_ciezkozbrojni[identyfikator_gracz];
+			atak_bufor=ciezkozbrojny[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1.5;
+		}
+		if(x0==4){
+			zycie_bufor=zycie_lekka_jazda[identyfikator_gracz];
+			obrona_bufor=obrona_lekka_jazda[identyfikator_gracz];
+			atak_bufor=lekka_jazda[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x1==0){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+			if(x1==3){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+		}
+		if(x0==5){
+			zycie_bufor=zycie_ciezka_jazda[identyfikator_gracz];
+			obrona_bufor=obrona_ciezka_jazda[identyfikator_gracz];
+			atak_bufor=ciezka_jazda[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x1==0){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+			if(x1==3){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+		}
+		if(x0==6){
+			zycie_bufor=zycie_tarany[identyfikator_gracz];
+			obrona_bufor=obrona_tarany[identyfikator_gracz];
+			atak_bufor=taran[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x0==7){
+			zycie_bufor=zycie_elity[identyfikator_gracz];
+			obrona_bufor=obrona_elity[identyfikator_gracz];
+			atak_bufor=elita.atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x1==1 ||x1==2){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+		}
+		
+		
 ////////////////////////////////
 		if(ster=='q' && pikinierzy==true&& atak1==true && zycie_pikinierzy_barb[x2]>0){
-			komunikat="Atak w toku";
-			if(x0==0){
+			komunikat="Atak na Pikiniera w toku";
+			obrona_bufor_barb=obrona_pikinierzy_barb[x2];
 			gotoxy(30,25);
-			cout << identyfikator_nazwy[x0]<<" ("<<zycie_pikinierzy[identyfikator_gracz]<<"/"<<obrona_pikinierzy[identyfikator_gracz]<<")     VS    "<<"Pikinier ("<<zycie_pikinierzy_barb[x2]<<"/"<<obrona_pikinierzy_barb[x2]<<")";
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Pikinier Wroga ("<<zycie_pikinierzy_barb[x2]<<"/"<<obrona_pikinierzy_barb[x2]<<")";
 			gotoxy(30,27);
-			if(obrona_pikinierzy_barb[x2]<=0){
-			atak_bufor=pikinier[miasto_domowe].atak-abs(obrona_pikinierzy_barb[x2]);
-			zycie_pikinierzy_barb[x2]-=atak_bufor;
-			}else
-			atak_bufor=0;
-			atak_bufor_obrona=0;
-			if(obrona_pikinierzy_barb[x2]>0){
-			atak_bufor_obrona=pikinier[miasto_domowe].atak;
-			obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
-			}
 
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_pikinierzy_barb[x2]>0&& x0!=2){
 			
-			Sleep(500);
-			cout << "Zadajesz barbarzyncom "<<pikinier[miasto_domowe].atak <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona<<")";
-				if(obrona_pikinierzy_barb[x2]<0){
-				obrona_pikinierzy_barb[x2]=0;
+			obrona_pikinierzy_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6)obrona_pikinierzy_barb[x2]=0;
 			}
+			
+			if(obrona_pikinierzy_barb[x2]<=0 &&x0!=6 && obrona_pikinierzy_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_pikinierzy_barb[x2]<0)atak_bufor=abs(obrona_pikinierzy_barb[x2]);
+			if(obrona_pikinierzy_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_pikinierzy_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_pikinierzy_barb[x2]=0;
+			}
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
 			
 			gotoxy(30,28);
 			if(zycie_pikinierzy_barb[x2]<=0){
@@ -3028,28 +4809,1651 @@ for(int i=0;i<28;i++)cout << blok;
 			}
 			Sleep(500);
 			gotoxy(30,29);
-			if(zycie_pikinierzy_barb[x2]>0){
+			if(zycie_pikinierzy_barb[x2]>0  && x0!=1 && x0!=2){
 			
-			if(obrona_pikinierzy[identyfikator_gracz]<=0){
-			atak_bufor=pikinier[11].obrona-abs(obrona_pikinierzy[identyfikator_gracz]);
-			zycie_pikinierzy[identyfikator_gracz]-=atak_bufor;
-			}else
+			atak_bufor=pikinier[11].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
 			atak_bufor=0;
-			atak_bufor_obrona=0;
-			if(obrona_pikinierzy[identyfikator_gracz]>0){
-			atak_bufor_obrona=pikinier[1].obrona;
-			obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
 			}
 			
-			cout << "Zadaja ci "<<pikinier[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona<<")";
+			cout << "Zadaja ci "<<pikinier[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
 			gotoxy(30,28);
-			if(zycie_pikinierzy[identyfikator_gracz]<=0){
+			if(zycie_bufor<=0 && x0==0){
 				cout<<"Zabijaja Ci pikiniera moj Panie";
 				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
 				armia.pikinierzy--;
 			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
 			}
 			}
+
+			getch();
+			pikinierzy=false;
+			atak1=false;
+			atak=true;
+			menu=true;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+		//////////////
+				if(ster=='q' && kusznicy==true&& atak1==true && zycie_kusznicy_barb[x2]>0){
+			komunikat="Atak na Kusznika w toku";
+			obrona_bufor_barb=obrona_kusznicy_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Kusznik Wroga ("<<zycie_kusznicy_barb[x2]<<"/"<<obrona_kusznicy_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_kusznicy_barb[x2]>0&& x0!=2){
+			obrona_kusznicy_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+					atak_bufor=0;
+				obrona_kusznicy_barb[x2]=0;
+			}
+			}
+			
+			if(obrona_kusznicy_barb[x2]<=0 &&x0!=6 && obrona_kusznicy_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_kusznicy_barb[x2]<0)atak_bufor=abs(obrona_kusznicy_barb[x2]);
+			if(obrona_kusznicy_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_kusznicy_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_kusznicy_barb[x2]=0;
+			}
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_kusznicy_barb[x2]<0){
+				obrona_kusznicy_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_kusznicy_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego kusznika";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_kusznicy_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=kusznik[11].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<kusznik[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+			getch();
+			kusznicy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+			/////////////////
+			if(ster=='q' && lucznicy==true&& atak1==true && zycie_lucznicy_barb[x2]>0){
+			komunikat="Atak na Lucznika w toku";
+			obrona_bufor_barb=obrona_lucznicy_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lucznik Wroga ("<<zycie_lucznicy_barb[x2]<<"/"<<obrona_lucznicy_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lucznicy_barb[x2]>0&& x0!=2){
+			obrona_lucznicy_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_lucznicy_barb[x2]=0;
+						atak_bufor=0;
+			}
+			}
+			
+			if(obrona_lucznicy_barb[x2]<=0 &&x0!=6 && obrona_lucznicy_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_lucznicy_barb[x2]<0)atak_bufor=abs(obrona_lucznicy_barb[x2]);
+			if(obrona_lucznicy_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_lucznicy_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_lucznicy_barb[x2]=0;
+			}
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_lucznicy_barb[x2]<0){
+				obrona_lucznicy_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_lucznicy_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego lucznika";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lucznicy_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=lucznik[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<lucznik[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			lucznicy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+					/////////////////
+			if(ster=='q' && ciezkozbrojni==true&& atak1==true && zycie_ciezkozbrojni_barb[x2]>0){
+			komunikat="Atak na Ciezkozbrojnego w toku";
+			obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezkozbrojny Wroga ("<<zycie_ciezkozbrojni_barb[x2]<<"/"<<obrona_ciezkozbrojni_barb[x2]<<")";
+			gotoxy(30,27);
+
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_ciezkozbrojni_barb[x2]>0&& x0!=2){
+			obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_ciezkozbrojni_barb[x2]=0;
+			atak_bufor=0;
+			}
+			}
+			
+			if(obrona_ciezkozbrojni_barb[x2]<=0 && x0!=6 && obrona_ciezkozbrojni_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_ciezkozbrojni_barb[x2]<0)atak_bufor=abs(obrona_ciezkozbrojni_barb[x2]);
+			if(obrona_ciezkozbrojni_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezkozbrojni_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezkozbrojni_barb[x2]=0;
+			}
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_ciezkozbrojni_barb[x2]<0){
+				obrona_ciezkozbrojni_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_ciezkozbrojni_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego Ciezkozbrojnego";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezkozbrojni_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=ciezkozbrojny[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<ciezkozbrojny[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			ciezkozbrojni=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+			
+		}
+		
+			/////////////////
+			if(ster=='q' && lekka_jazdy==true&& atak1==true && zycie_lekka_jazda_barb[x2]>0){
+			komunikat="Atak na Lekka Jazde w toku";
+			obrona_bufor_barb=obrona_lekka_jazda_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lekka Jazda Wroga ("<<zycie_lekka_jazda_barb[x2]<<"/"<<obrona_lekka_jazda_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lekka_jazda_barb[x2]>0&& x0!=2){
+			obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_lekka_jazda_barb[x2]=0;
+						atak_bufor=0;
+			
+			}
+			}
+			
+			if(obrona_lekka_jazda_barb[x2]<=0 &&x0!=6 && obrona_lekka_jazda_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_lekka_jazda_barb[x2]<0)atak_bufor=abs(obrona_lekka_jazda_barb[x2]);
+			if(obrona_lekka_jazda_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_lekka_jazda_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_lekka_jazda_barb[x2]=0;
+			}
+			
+
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_lekka_jazda_barb[x2]<0){
+				obrona_lekka_jazda_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_lekka_jazda_barb[x2]<=0){
+				cout<<"Zabijasz wroga Lekka Jazde";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lekka_jazda_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=lekka_jazda[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<lekka_jazda[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			lekka_jazdy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+					/////////////////
+			if(ster=='q' && ciezka_jazdy==true&& atak1==true && zycie_ciezka_jazda_barb[x2]>0){
+			komunikat="Atak na Ciezka Jazde w toku";
+			obrona_bufor_barb=obrona_ciezka_jazda_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezka Jazda Wroga ("<<zycie_ciezka_jazda_barb[x2]<<"/"<<obrona_ciezka_jazda_barb[x2]<<")";
+			gotoxy(30,27);
+			
+			
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor_barb>0&& x0!=2){
+			obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_ciezka_jazda_barb[x2]=0;
+						atak_bufor=0;
+			}
+			}
+			
+			if(obrona_ciezka_jazda_barb[x2]<=0 &&x0!=6 && obrona_ciezka_jazda_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			
+			if(obrona_ciezka_jazda_barb[x2]<0)atak_bufor=abs(obrona_ciezka_jazda_barb[x2]);
+			if(obrona_ciezka_jazda_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezka_jazda_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezka_jazda_barb[x2]=0;
+			}
+			
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_ciezka_jazda_barb[x2]<0){
+				obrona_ciezka_jazda_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_ciezka_jazda_barb[x2]<=0){
+				cout<<"Zabijasz wroga Ciezka Jazde";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezka_jazda_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=ciezka_jazda[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<ciezka_jazda[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			ciezka_jazdy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			system("CLS");
+			ruch_gracz=false;
+		}
+		
+
+
+		}
+		system("CLS");
+		menu=false;
+		komunikat="Trwa ruch barbarzyncow";
+		if(armia.wielkosc==0){
+			koniec=true;
+			*wygrana=false;
+			continue;
+		}
+		if(armia_barb.wielkosc==0){
+			koniec=true;
+			*wygrana=true;
+			continue;
+		}
+		while(ruch_gracz==false){
+
+			
+					gotoxy(20,17);
+		cout<<"           /\                                                 /\ ";
+		gotoxy(20,18);
+ 		cout<<" _         )(_______________________   ______________________ )(         _";
+ 		gotoxy(20,19);
+		cout<<"(_)///////(**)______________________> <______________________(**)\\\\\\\\\\\\\\\(_)";
+		gotoxy(20,20);
+        cout<<"           )(                                                 )(";
+        gotoxy(20,21);
+        cout<<"           \/                                                 \/";
+		gotoxy(30,23);
+		cout << komunikat<<"                            ";
+		
+		gotoxy(76,1);
+		cout << "Armia Gracza: ";
+	gotoxy(76,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+
+gotoxy(70,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(70,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,5);
+if(x0==0){
+komunikat="Barbarzyncy wlacza";
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia.pikinierzy<<"           "<<blok; 
+
+gotoxy(70,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok;
+gotoxy(70,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia.kusznicy<<"            "<<blok; 
+gotoxy(70,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(70,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia.lekka_jazda<<"        "<<blok; 
+gotoxy(70,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "<<blok;
+gotoxy(70,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<armia.tarany<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<armia.tarany<<"              "<<blok;
+gotoxy(70,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita / "<<armia.elity<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita / "<<armia.elity<<"              "<<blok; 
+gotoxy(70,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,14);
+for(int i=0;i<28;i++)cout << blok;
+		
+		//////////////pokaz barbow///
+		
+gotoxy(10,1);
+		cout << "Armia Barbarzyncow: ";
+		
+	gotoxy(10,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+gotoxy(5,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(5,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,5);
+if(x1==0 ){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia_barb.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia_barb.pikinierzy<<"           "<<blok; 
+
+gotoxy(5,6);
+if(x1==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok;
+gotoxy(5,7);
+if(x1==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia_barb.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia_barb.kusznicy<<"            "<<blok; 
+gotoxy(5,8);
+if(x1==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(5,9);
+if(x1==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "<<blok; 
+gotoxy(5,10);
+if(x1==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "<<blok;
+gotoxy(5,11);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,12);
+for(int i=0;i<28;i++)cout << blok;
+
+	if(atak1==true){
+	gotoxy(0,60);	
+	if(pikinierzy==true){
+		for(int i=0;i<bufor_pikinierzy_barb;i++){
+			if(zycie_pikinierzy_barb[i]>0){
+			
+			if(i==x2&& atak1==true){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true&& atak1==true){
+		for(int i=0;i<bufor_lucznicy_barb;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true&& atak1==true){
+		for(int i=0;i<bufor_kusznicy_barb;i++){
+			if(zycie_kusznicy_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true&& atak1==true){
+		for(int i=0;i<bufor_ciezkozbrojni_barb;i++){
+			if(zycie_ciezkozbrojni_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true&& atak1==true){
+		for(int i=0;i<bufor_lekka_jazda_barb;i++){
+			if(zycie_lekka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true && atak1==true){
+		for(int i=0;i<bufor_ciezka_jazda_barb;i++){
+			if(zycie_ciezka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+}
+	////////////////////////////////////
+
+	
+		gotoxy(0,60);	
+	if(pikinierzy==true && menu==true){
+		for(int i=0;i<bufor_pikinierzy;i++){
+			if(zycie_pikinierzy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true&& menu==true){
+		for(int i=0;i<bufor_lucznicy;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true&& menu==true){
+		for(int i=0;i<armia.kusznicy;i++){
+			if(zycie_kusznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+			}else
+			cout<<"      ------          ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true&& menu==true){
+		for(int i=0;i<bufor_kusznicy;i++){
+			if(zycie_ciezkozbrojni[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true&& menu==true){
+		for(int i=0;i<bufor_lekka_jazda;i++){
+			if(zycie_lekka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+			}else
+			cout<<"          ------      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true&& menu==true){
+		for(int i=0;i<bufor_ciezka_jazda;i++){
+			if(zycie_ciezka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(tarany==true&& menu==true){
+		for(int i=0;i<bufor_tarany;i++){
+			if(zycie_tarany[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(elity==true&& menu==true ){
+		for(int i=0;i<bufor_elity;i++){
+			if(zycie_elity[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		if(atak==true){
+		
+		atak1=true;
+		atak=false;
+		do{
+		
+		x1=(rand()%5);
+		if(x1==0 && armia_barb.pikinierzy>0){
+		good=true;
+		pikinierzy=true;
+		
+		}
+		if(x1==1 && armia_barb.lucznicy>0){
+			lucznicy=true;
+		good=true;
+		}
+		if(x1==2 && armia_barb.kusznicy>0){
+			kusznicy=true;
+		good=true;
+		}
+		if(x1==3 && armia_barb.ciezkozbrojni>0){
+			ciezkozbrojni=true;
+		good=true;
+		}
+		if(x1==4 && armia_barb.lekka_jazda>0){
+			lekka_jazdy=true;
+		good=true;
+		}
+		if(x1==5 && armia_barb.ciezka_jazda>0){
+		good=true;
+		ciezka_jazdy=true;
+		}
+		}while(good!=true);
+		Sleep(500);
+		good=false;
+		continue;
+		}
+		
+		if(atak1==true){
+		menu=true;
+		atak1=false;
+		
+		if(x1==0){
+		do{
+		x2=(rand()%bufor_pikinierzy_barb);
+		}while(zycie_pikinierzy_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==1){
+		do{
+		x2=(rand()%bufor_lucznicy_barb);
+		}while(zycie_lucznicy_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==2){
+		do{
+		x2=(rand()%bufor_kusznicy_barb);
+		}while(zycie_kusznicy_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==3){
+		do{
+		x2=(rand()%bufor_ciezkozbrojni_barb);
+		}while(zycie_ciezkozbrojni_barb[x2]<=0);
+		Sleep(500);
+		atak1=false;
+		menu=true;
+		continue;
+		}
+		if(x1==4){
+		do{
+		x2=(rand()%bufor_lekka_jazda_barb);
+		}while(zycie_lekka_jazda_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==5){
+		do{
+		x2=(rand()%bufor_ciezka_jazda_barb);
+		}while(zycie_ciezka_jazda_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		}
+		
+		if(menu==true){
+					
+		do{
+		x0=(rand()%7);
+		if(x0==0 && armia.pikinierzy>0)good=true;
+		if(x0==1 && armia.lucznicy>0)good=true;
+		if(x0==2 && armia.kusznicy>0)good=true;
+		if(x0==3 && armia.ciezkozbrojni>0)good=true;
+		if(x0==4 && armia.lekka_jazda>0)good=true;
+		if(x0==5 && armia.ciezka_jazda>0)good=true;
+		if(x0==6 && armia.tarany>0)good=true;
+		if(x0==7 && armia.elity>0)good=true;
+		}while(good!=true);
+		good=false;
+		atak1=false;
+		menu=false;
+		if(x0==0){
+		do{
+		identyfikator_gracz=(rand()%bufor_pikinierzy);
+		}while(zycie_pikinierzy[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==1){
+		do{
+		identyfikator_gracz=(rand()%bufor_lucznicy);
+		}while(zycie_lucznicy[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==2){
+		do{
+		identyfikator_gracz=(rand()%bufor_kusznicy);
+		}while(zycie_kusznicy[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==3){
+		do{
+		identyfikator_gracz=(rand()%bufor_ciezkozbrojni);
+		}while(zycie_ciezkozbrojni_barb[identyfikator_gracz]<=0);
+		Sleep(500);
+		atak1=false;
+		
+		continue;
+		}
+		if(x0==4){
+		do{
+		identyfikator_gracz=(rand()%bufor_lekka_jazda);
+		}while(zycie_lekka_jazda[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==5){
+		do{
+		identyfikator_gracz=(rand()%bufor_ciezka_jazda);
+		}while(zycie_ciezka_jazda[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==6){
+		do{
+		identyfikator_gracz=(rand()%bufor_tarany);
+		}while(zycie_tarany[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==7){
+		do{
+		identyfikator_gracz=(rand()%bufor_elity);
+		}while(zycie_elity[identyfikator_gracz]<=0);
+		Sleep(500);
+
+		continue;
+		}
+		}
+		
+		if(x1==0){
+		zycie_bufor=zycie_pikinierzy_barb[x2];
+		obrona_bufor=obrona_pikinierzy_barb[x2];
+		atak_bufor=pikinier[11].atak;
+		wspolczynnik_atak=1;
+		wspolczynnik_atak_obrona=1;
+		if(x0==6)wspolczynnik_atak=1.5;
+		if(x0==6)wspolczynnik_atak_obrona=1.5;
+		}
+		if(x1==1){
+			zycie_bufor=zycie_lucznicy_barb[x2];
+			obrona_bufor=obrona_lucznicy[x2];
+			atak_bufor=lucznik[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x1==2){
+			zycie_bufor=zycie_kusznicy_barb[x2];
+			obrona_bufor=obrona_kusznicy_barb[x2];
+			atak_bufor=kusznik[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x1==3){
+			zycie_bufor=zycie_ciezkozbrojni_barb[x2];
+			obrona_bufor=obrona_ciezkozbrojni_barb[x2];
+			atak_bufor=ciezkozbrojny[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1.5;
+		}
+		if(x1==4){
+			zycie_bufor=zycie_lekka_jazda_barb[x2];
+			obrona_bufor=obrona_lekka_jazda_barb[x2];
+			atak_bufor=lekka_jazda[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x0==0){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+			if(x0==3){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+		}
+		if(x1==5){
+			zycie_bufor=zycie_ciezka_jazda_barb[x2];
+			obrona_bufor=obrona_ciezka_jazda_barb[x2];
+			atak_bufor=ciezka_jazda[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x0==0){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+			if(x0==3){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+		}
+
+		//////////////////////////
+				if(x0==0){
+			komunikat="Atak na Pikiniera w toku";
+			obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Pikinier #"<<identyfikator_gracz+1<<"("<<zycie_pikinierzy[identyfikator_gracz]<<"/"<<obrona_pikinierzy[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_pikinierzy[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_pikinierzy[identyfikator_gracz]<=0  && obrona_pikinierzy[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_pikinierzy[identyfikator_gracz]<0)atak_bufor=abs(obrona_pikinierzy[identyfikator_gracz]);
+			if(obrona_pikinierzy[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_pikinierzy[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_pikinierzy[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_pikinierzy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego pikiniera";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_pikinierzy[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=pikinier[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+			atak_bufor=0;
+			
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<pikinier[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
 			getch();
 			pikinierzy=false;
 			atak1=false;
@@ -3057,163 +6461,4556 @@ for(int i=0;i<28;i++)cout << blok;
 			menu=true;
 			x0=0;
 			x2=-1;
+			identyfikator_gracz=-1;
 			x1=0;
+			ruch_gracz=true;
 			system("CLS");
 		}
-		if(ster=='q' && lucznicy==true&& atak1==true && zycie_lucznicy_barb[x2]>0){
-			komunikat="Atak w toku";
+		//////////////
+		if(x0==1){
+			komunikat="Atak na Lucznika w toku";
+			obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lucznik #"<<identyfikator_gracz+1<<"("<<zycie_lucznicy[identyfikator_gracz]<<"/"<<obrona_lucznicy[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lucznicy[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_lucznicy[identyfikator_gracz]<=0  && obrona_lucznicy[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_lucznicy[identyfikator_gracz]<0)atak_bufor=abs(obrona_lucznicy[identyfikator_gracz]);
+			if(obrona_lucznicy[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_lucznicy[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_lucznicy[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_lucznicy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego lucznika";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lucznicy[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=lucznik[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+				atak_bufor=0;
+			
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajaesz "<<kusznik[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			lucznicy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+			/////////////////
+				if(x0==2){
+			komunikat="Atak na Kusznika w toku";
+			obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lucznik #"<<identyfikator_gracz+1<<"("<<zycie_kusznicy[identyfikator_gracz]<<"/"<<obrona_kusznicy[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_kusznicy[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_kusznicy[identyfikator_gracz]<=0  && obrona_kusznicy[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_kusznicy[identyfikator_gracz]<0)atak_bufor=abs(obrona_kusznicy[identyfikator_gracz]);
+			if(obrona_kusznicy[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_kusznicy[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_kusznicy[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_kusznicy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego Kusznika";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_kusznicy[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=kusznik[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajaesz "<<lucznik[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			kusznicy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+					/////////////////
+			if(x0==3){
+			komunikat="Atak na Ciezkozbrojnego w toku";
+			obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezkozbrojny #"<<identyfikator_gracz+1<<"("<<zycie_ciezkozbrojni[identyfikator_gracz]<<"/"<<obrona_ciezkozbrojni[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_ciezkozbrojni[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_ciezkozbrojni[identyfikator_gracz]<=0  && obrona_ciezkozbrojni[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_ciezkozbrojni[identyfikator_gracz]<0)atak_bufor=abs(obrona_ciezkozbrojni[identyfikator_gracz]);
+			if(obrona_ciezkozbrojni[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezkozbrojni[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_ciezkozbrojni[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego Ciezkozbrojnego";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezkozbrojni[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=ciezkozbrojny[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajaesz "<<ciezkozbrojny[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			ciezkozbrojni=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+			/////////////////
+					if(x0==4){
+			komunikat="Atak na Lekka Jazde w toku";
+			obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lekka Jazda #"<<identyfikator_gracz+1<<"("<<zycie_lekka_jazda[identyfikator_gracz]<<"/"<<obrona_lekka_jazda[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lekka_jazda[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_lekka_jazda[identyfikator_gracz]<=0  && obrona_lekka_jazda[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_lekka_jazda[identyfikator_gracz]<0)atak_bufor=abs(obrona_lekka_jazda[identyfikator_gracz]);
+			if(obrona_lekka_jazda[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_lekka_jazda[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_lekka_jazda[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_lekka_jazda[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoja Lekka Jazde";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lekka_jazda[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=lekka_jazda[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<lekka_jazda[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			lekka_jazdy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+					/////////////////
+					if(x0==5){
+			komunikat="Atak na Ciezka Jazde w toku";
+			obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezka Jazda #"<<identyfikator_gracz+1<<"("<<zycie_ciezka_jazda[identyfikator_gracz]<<"/"<<obrona_ciezka_jazda[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_ciezka_jazda[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_ciezka_jazda[identyfikator_gracz]<=0  && obrona_ciezka_jazda[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_ciezka_jazda[identyfikator_gracz]<0)atak_bufor=abs(obrona_ciezka_jazda[identyfikator_gracz]);
+			if(obrona_ciezka_jazda[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezka_jazda[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezka_jazda[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_ciezka_jazda[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoja Ciezka Jazde";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezka_jazda[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=ciezka_jazda[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<ciezka_jazda[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			ciezka_jazdy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+						if(x0==6){
+			komunikat="Atak na Taran w toku";
+			obrona_bufor_barb=obrona_tarany[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Taran #"<<identyfikator_gracz+1<<"("<<zycie_tarany[identyfikator_gracz]<<"/"<<obrona_tarany[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_tarany[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_tarany[identyfikator_gracz]<=0  && obrona_tarany[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_tarany[identyfikator_gracz]<0)atak_bufor=abs(obrona_tarany[identyfikator_gracz]);
+			if(obrona_tarany[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_tarany[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_tarany[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_tarany[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoj Taran";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_tarany[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=taran[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<taran[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			tarany=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+		if(x0==7){
+			komunikat="Atak na Elite w toku";
+			obrona_bufor_barb=obrona_elity[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Elita #"<<identyfikator_gracz+1<<"("<<zycie_elity[identyfikator_gracz]<<"/"<<obrona_elity[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_elity[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_elity[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_elity[identyfikator_gracz]<=0  && obrona_elity[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_elity[identyfikator_gracz]<0)atak_bufor=abs(obrona_elity[identyfikator_gracz]);
+			if(obrona_elity[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_elity[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_elity[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_elity[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoja Elite";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_elity[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=elita.obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<elita.obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			elity=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+		
+		
+		}
+		
+	}
+	if(gracz1==true){
+	
+	if(*wygrana==true){
+		
+		*zloto+=nagroda*25;
+		return;
+	}
+	if(*wygrana==false){
+		*zloto-=nagroda*25;
+		return;
+	}
+}
+		if(gracz2==true){
+	
+	if(*wygrana==true){
+		
+		*zloto+=nagroda*25;
+		return;
+	}
+	if(*wygrana==false){
+		*zloto-=nagroda*25;
+		return;
+	}
+}
+	
+}
+
+void walka_barbarzyncy2(struktura_armii armia, bool gracz1,bool gracz2,int *zloto,int *liczba_barbarzyncow,bool *wygrana){
+	
+	struktura_armii armia_barb;
+	system("CLS");
+	bool koniec=false;
+	bool ruch=true;
+	bool good=false;
+	int x0=0;
+	int x1=-1;
+	int x2=0;
+	int maxrand;
+	int max;
+	char ster;
+	bool pikinierzy=false;
+	bool lucznicy=false;
+	bool kusznicy=false;
+	bool ciezkozbrojni=false;
+	bool lekka_jazdy=false;
+	bool ciezka_jazdy=false;
+	bool tarany=false;
+	bool elity=false;
+	bool atak=false;
+	bool menu=true;
+	bool atak1=false;
+	int rando[6];
+	bool ruch_gracz=true;
+	
+	int atak_bufor;
+	int atak_bufor_obrona;
+	int obrona_bufor_barb;
+	int obrona_bufor;
+
+	int zycie_bufor;
+	float wspolczynnik_atak;
+	float wspolczynnik_atak_obrona;
+	int nagroda;
+
+	
+	int bufor_pikinierzy=armia.pikinierzy;
+	int bufor_lucznicy=armia.lucznicy;
+	int bufor_kusznicy=armia.kusznicy;
+	int bufor_ciezkozbrojni=armia.ciezkozbrojni;
+	int bufor_lekka_jazda=armia.lekka_jazda;
+	int bufor_ciezka_jazda=armia.ciezka_jazda;
+	int bufor_tarany=armia.tarany;
+	int bufor_elity=armia.elity;
+	
+	int miasto_domowe=armia.miasto_domowe;
+	int identyfikator_gracz;
+	int identyfikator_barb[5];
+	string identyfikator_nazwy[8]={"Pikinier","Lucznik","Kusznik","Ciezkozbrojny","Lekka Jazda","Ciezka Jazda","Taran","Elita"};
+	int zycie_pikinierzy[40];
+	int zycie_lucznicy[40];
+	int zycie_kusznicy[40];
+	int zycie_ciezkozbrojni[40];
+	int zycie_lekka_jazda[40];
+	int zycie_ciezka_jazda[40];
+	int zycie_tarany[40];
+	int zycie_elity[40];
+	int zycie_pikinierzy_barb[40];
+	int zycie_lucznicy_barb[40];
+	int zycie_kusznicy_barb[40];
+	int zycie_ciezkozbrojni_barb[40];
+	int zycie_lekka_jazda_barb[40];
+	int zycie_ciezka_jazda_barb[40];
+	////
+	int obrona_pikinierzy[40];
+	int obrona_lucznicy[40];
+	int obrona_kusznicy[40];
+	int obrona_ciezkozbrojni[40];
+	int obrona_lekka_jazda[40];
+	int obrona_ciezka_jazda[40];
+	int obrona_tarany[40];
+	int obrona_elity[40];
+	int obrona_pikinierzy_barb[40];
+	int obrona_lucznicy_barb[40];
+	int obrona_kusznicy_barb[40];
+	int obrona_ciezkozbrojni_barb[40];
+	int obrona_lekka_jazda_barb[40];
+	int obrona_ciezka_jazda_barb[40];
+	string komunikat="Wybierz Twoja jednostke do potyczki";
+	if(armia.wielkosc<=10){
+	maxrand=(rand()%4+1);	
+	
+	}
+	if(armia.wielkosc>10 && armia.wielkosc<=20){
+		maxrand=(rand()%6+1);
+	}
+	if(armia.wielkosc>20){
+	
+	maxrand=(rand()%8+1);
+	}
+	
+	armia_barb.wielkosc=0;
+	max=armia.wielkosc;
+	
+	
+
+	rando[0]=(rand()%maxrand);
+	
+	armia_barb.wielkosc=rando[0]*pikinier[11].wielkosc+1;
+	armia_barb.pikinierzy=rando[0]+1;
+	
+	rando[1]=(rand()%maxrand);
+
+	armia_barb.wielkosc+=(rando[1]*lucznik[11].wielkosc);
+	armia_barb.lucznicy=rando[1];
+	
+	rando[2]=(rand()%maxrand);
+	if(armia.wielkosc>10){
+	armia_barb.wielkosc+=(rando[2]*kusznik[11].wielkosc);
+	armia_barb.kusznicy=rando[2];
+	}
+		rando[3]=(rand()%maxrand);
+	if(armia.wielkosc>10){
+	armia_barb.wielkosc+=(rando[3]*ciezkozbrojny[11].wielkosc);
+	armia_barb.ciezkozbrojni=rando[3];
+	}
+		rando[4]=(rand()%maxrand);
+	if(armia.wielkosc>20){
+	armia_barb.wielkosc+=(rando[4]*lekka_jazda[11].wielkosc);
+	armia_barb.lekka_jazda=rando[4];
+	}
+			rando[5]=(rand()%maxrand);
+	if(armia.wielkosc>20){
+	armia_barb.wielkosc+=(rando[5]*ciezka_jazda[11].wielkosc);
+	armia_barb.ciezka_jazda=rando[5];
+	}
+		int bufor_pikinierzy_barb=armia_barb.pikinierzy;
+	int bufor_lucznicy_barb=armia_barb.lucznicy;
+	int bufor_kusznicy_barb=armia_barb.kusznicy;
+	int bufor_ciezkozbrojni_barb=armia_barb.ciezkozbrojni;
+	int bufor_lekka_jazda_barb=armia_barb.lekka_jazda;
+	int bufor_ciezka_jazda_barb=armia_barb.ciezka_jazda;
+	
+	nagroda+=armia_barb.pikinierzy;
+	nagroda+=armia_barb.lucznicy;
+	nagroda+=armia_barb.kusznicy;
+	nagroda+=armia_barb.ciezkozbrojni;
+	nagroda+=armia_barb.lekka_jazda;
+	nagroda+=armia_barb.ciezka_jazda;
+	
+	for(int i=0;i<armia.pikinierzy;i++){
+		zycie_pikinierzy[i]=pikinier2[miasto_domowe].obrona*2;
+		obrona_pikinierzy[i]=pikinier2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.lucznicy;i++){
+		zycie_lucznicy[i]=lucznik2[miasto_domowe].obrona*2;
+		obrona_lucznicy[i]=lucznik2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.kusznicy;i++){
+		zycie_kusznicy[i]=kusznik2[miasto_domowe].obrona*2;
+		obrona_kusznicy[i]=kusznik2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.ciezkozbrojni;i++){
+		zycie_ciezkozbrojni[i]=ciezkozbrojny2[miasto_domowe].obrona*2;
+		obrona_ciezkozbrojni[i]=ciezkozbrojny2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.lekka_jazda;i++){
+		zycie_lekka_jazda[i]=lekka_jazda2[miasto_domowe].obrona*2;
+		obrona_lekka_jazda[i]=lekka_jazda2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.ciezka_jazda;i++){
+		zycie_ciezka_jazda[i]=ciezka_jazda2[miasto_domowe].obrona*2;
+		obrona_ciezka_jazda[i]=ciezka_jazda2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.tarany;i++){
+		zycie_tarany[i]=taran2[miasto_domowe].obrona*2;
+		obrona_tarany[i]=taran2[miasto_domowe].obrona;
+	}
+		for(int i=0;i<armia.elity;i++){
+		zycie_elity[i]=elita2.obrona*2;
+		obrona_elity[i]=elita2.obrona;
+	}
+	//////////////////////////
+		for(int i=0;i<armia_barb.pikinierzy;i++){
+		zycie_pikinierzy_barb[i]=pikinier[11].obrona*2;
+		obrona_pikinierzy_barb[i]=pikinier[11].obrona;
+	}
+		for(int i=0;i<armia_barb.lucznicy;i++){
+		zycie_lucznicy_barb[i]=lucznik[11].obrona*2;
+		obrona_lucznicy_barb[i]=lucznik[11].obrona;
+	}
+		for(int i=0;i<armia_barb.kusznicy;i++){
+		zycie_kusznicy_barb[i]=kusznik[11].obrona*2;
+		obrona_kusznicy_barb[i]=kusznik[11].obrona;
+	}
+		for(int i=0;i<armia_barb.ciezkozbrojni;i++){
+		zycie_ciezkozbrojni_barb[i]=ciezkozbrojny[11].obrona*2;
+		obrona_ciezkozbrojni_barb[i]=ciezkozbrojny[11].obrona;
+	}
+		for(int i=0;i<armia_barb.lekka_jazda;i++){
+		zycie_lekka_jazda_barb[i]=lekka_jazda[11].obrona*2;
+		obrona_lekka_jazda_barb[i]=lekka_jazda[11].obrona;
+	}
+		for(int i=0;i<armia_barb.ciezka_jazda;i++){
+		zycie_ciezka_jazda_barb[i]=ciezka_jazda[11].obrona*2;
+		obrona_ciezka_jazda_barb[i]=ciezka_jazda[11].obrona;
+	}
+	
+	
+	while(koniec==false){
+
+		elity=false;
+		tarany=false;
+		ciezka_jazdy=false;
+		lekka_jazdy=false;
+		ciezkozbrojni=false;
+		kusznicy=false;
+		lucznicy=false;
+		pikinierzy=false;
+
+		if(armia.wielkosc==0){
+			koniec=true;
+			*wygrana=false;
+			continue;
+		}
+		if(armia_barb.wielkosc==0){
+			koniec=true;
+			*wygrana=true;
+			continue;
+		}
+	
+		komunikat="Wybierz Twoja jednostke do potyczki";
+		atak1=false;
+		atak=false;
+		menu=true;
+		system("CLS");
+		
+		while(ruch_gracz==true){
+		
+		
+		
+		gotoxy(20,17);
+		cout<<"           /\                                                 /\ ";
+		gotoxy(20,18);
+ 		cout<<" _         )(_______________________   ______________________ )(         _";
+ 		gotoxy(20,19);
+		cout<<"(_)///////(**)______________________> <______________________(**)\\\\\\\\\\\\\\\(_)";
+		gotoxy(20,20);
+        cout<<"           )(                                                 )(";
+        gotoxy(20,21);
+        cout<<"           \/                                                 \/";
+		gotoxy(30,23);
+		cout << komunikat<<"                            ";
+		
+		gotoxy(76,1);
+		cout << "Armia Gracza: ";
+	gotoxy(76,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+rekrutowanka(x0+2);
+gotoxy(70,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(70,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,5);
+if(x0==0 ){
+komunikat="Wybierz Twoja jednostke do potyczki";
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia.pikinierzy<<"           "<<blok; 
+
+gotoxy(70,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok;
+gotoxy(70,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia.kusznicy<<"            "<<blok; 
+gotoxy(70,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(70,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia.lekka_jazda<<"        "<<blok; 
+gotoxy(70,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "<<blok;
+gotoxy(70,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<armia.tarany<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<armia.tarany<<"              "<<blok;
+gotoxy(70,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita / "<<armia.elity<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita / "<<armia.elity<<"              "<<blok; 
+gotoxy(70,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,14);
+for(int i=0;i<28;i++)cout << blok;
+		
+		//////////////pokaz barbow///
+		
+gotoxy(10,1);
+		cout << "Armia Barbarzyncow: ";
+	gotoxy(10,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+gotoxy(5,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(5,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,5);
+if(x1==0 && atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia_barb.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia_barb.pikinierzy<<"           "<<blok; 
+
+gotoxy(5,6);
+if(x1==1&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok;
+gotoxy(5,7);
+if(x1==2&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia_barb.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia_barb.kusznicy<<"            "<<blok; 
+gotoxy(5,8);
+if(x1==3&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(5,9);
+if(x1==4&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "<<blok; 
+gotoxy(5,10);
+if(x1==5&& atak==true){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "<<blok;
+gotoxy(5,11);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,12);
+for(int i=0;i<28;i++)cout << blok;
+
+	if(atak1==true){
+	gotoxy(0,60);	
+	if(pikinierzy==true){
+		for(int i=0;i<bufor_pikinierzy_barb;i++){
+			if(zycie_pikinierzy_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true){
+		for(int i=0;i<bufor_lucznicy_barb;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true){
+		for(int i=0;i<bufor_kusznicy_barb;i++){
+			if(zycie_kusznicy_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true){
+		for(int i=0;i<bufor_ciezkozbrojni_barb;i++){
+			if(zycie_ciezkozbrojni_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true){
+		for(int i=0;i<bufor_lekka_jazda_barb;i++){
+			if(zycie_lekka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true){
+		for(int i=0;i<bufor_ciezka_jazda_barb;i++){
+			if(zycie_ciezka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+}
+	////////////////////////////////////
+
+	
+		gotoxy(0,60);	
+	if(pikinierzy==true&& atak==false){
+		for(int i=0;i<bufor_pikinierzy;i++){
+			if(zycie_pikinierzy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true&& atak==false){
+		for(int i=0;i<bufor_lucznicy;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true&& atak==false){
+		for(int i=0;i<bufor_kusznicy;i++){
+			if(zycie_kusznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+			}else
+			cout<<"      ------          ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true&& atak==false){
+		for(int i=0;i<bufor_ciezkozbrojni;i++){
+			if(zycie_ciezkozbrojni[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true&& atak==false){
+		for(int i=0;i<bufor_lekka_jazda;i++){
+			if(zycie_lekka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+			}else
+			cout<<"          ------      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true&& atak==false){
+		for(int i=0;i<armia.ciezka_jazda;i++){
+			if(zycie_ciezka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(tarany==true&& atak==false){
+		for(int i=0;i<bufor_tarany;i++){
+			if(zycie_tarany[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(elity==true && atak==false){
+		for(int i=0;i<bufor_elity;i++){
+			if(zycie_elity[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		
+		
+	cin.sync();	
+	ster=getch();
+	
+	
+	if(ster==KEY_DOWN && x0!=7 && menu==true){
+	x0++;
+	cls();
+	continue;
+	}
+	if(ster==KEY_UP && x0!=0 && menu==true){
+	x0--;
+	cls();
+	continue;
+	}	
+	
+	if(ster==KEY_DOWN && x1!=5 && atak==true && atak1==false){
+	x1++;
+	cls();
+	continue;
+	}
+	if(ster==KEY_UP && x1!=0 && atak==true && atak1==false){
+	x1--;
+	cls();
+	continue;
+	}	
+	///////////////////////////////
+	if(ster==KEY_DOWN && x2!=bufor_pikinierzy-1 && pikinierzy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	if(ster==KEY_UP && x2!=0){
+	x2--;
+	cls();
+	
+	}	
+		if(ster==KEY_DOWN && x2!=bufor_lucznicy-1 && lucznicy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	
+	if(ster==KEY_DOWN && x2!=bufor_kusznicy-1 && kusznicy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_ciezkozbrojni-1 && ciezkozbrojni==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_lekka_jazda-1 && lekka_jazdy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_ciezka_jazda-1 && ciezka_jazdy==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_tarany-1 && tarany==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	if(ster==KEY_DOWN && x2!=bufor_elity-1 && elity==true && atak==false){
+	x2++;
+	cls();
+	
+	}
+	/////////////////////////
+	if(ster==KEY_DOWN && x2!=bufor_pikinierzy_barb-1 && pikinierzy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+		if(ster==KEY_DOWN && x2!=bufor_lucznicy_barb-1 && lucznicy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+	
+	if(ster==KEY_DOWN && x2!=bufor_kusznicy_barb-1 && kusznicy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_ciezkozbrojni_barb-1 && ciezkozbrojni==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_lekka_jazda_barb-1 && lekka_jazdy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+
+	if(ster==KEY_DOWN && x2!=bufor_ciezka_jazda_barb-1 && ciezka_jazdy==true && atak==true){
+	x2++;
+	cls();
+	
+	}
+		if(armia_barb.wielkosc<1){
+		break;
+		*wygrana=true;
+		
+		}
+		
+		if(armia.wielkosc<1){
+		break;
+		*wygrana=false;
+		
+		}
+
+	if(ster==27 && menu==false){
+		menu=true;
+		atak=false;
+		atak1=false;
+		elity=false;
+		tarany=false;
+		ciezka_jazdy=false;
+		lekka_jazdy=false;
+		ciezkozbrojni=false;
+		kusznicy=false;
+		lucznicy=false;
+		pikinierzy=false;
+		komunikat="Wybierz Twoja jednostke do potyczki";
+		x0=0;
+		x1=0;
+		x2=0;
+		system("CLS");
+	}
+	if(ster=='m')return;
+	if(ster=='q' && x0==0 && atak==false && armia.pikinierzy>0&& pikinierzy==false){
+		menu=false;
+		pikinierzy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==1&& atak==false && armia.lucznicy>0&& lucznicy==false){
+		menu=false;
+		lucznicy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==2&& atak==false && armia.kusznicy>0&&kusznicy==false){
+		menu=false;
+		kusznicy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==3&& atak==false && armia.ciezkozbrojni>0&&ciezkozbrojni==false){
+		menu=false;
+		ciezkozbrojni=true;
+		continue;
+	}	
+		if(ster=='q' && x0==4&& atak==false && armia.lekka_jazda>0&&lekka_jazdy==false){
+		menu=false;
+		lekka_jazdy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==5&& atak==false && armia.ciezka_jazda>0&&ciezka_jazdy==false){
+		menu=false;
+		ciezka_jazdy=true;
+		continue;
+	}	
+		if(ster=='q' && x0==6&& atak==false && armia.tarany>0&&tarany==false){
+		menu=false;
+		tarany=true;
+		continue;
+	}	
+		if(ster=='q' && x0==7&& atak==false && armia.elity>0&&elity==false){
+		menu=false;
+		elity=true;
+		continue;
+	}	
+	
+	//////////////////////
+	if(ster=='q' && x1==0 && atak==true&& armia_barb.pikinierzy>0 && pikinierzy==false){
+		menu=false;
+		x2=0;
+		atak1=true;
+		pikinierzy=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==1&& atak==true && armia_barb.lucznicy>0 && lucznicy==false){
+		menu=false;
+		atak1=true;
+		x2=0;
+		lucznicy=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==2 && atak==true&& armia_barb.kusznicy>0&&kusznicy==false){
+		menu=false;
+		atak1=true;
+		x2=0;
+		kusznicy=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==3&& atak==true && armia_barb.ciezkozbrojni>0&&ciezkozbrojni==false){
+		menu=false;
+		atak1=true;
+		x2=0;
+		ciezkozbrojni=true;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==4&& atak==true && armia_barb.lekka_jazda>0&&lekka_jazdy==false){
+		menu=false;
+		atak1=true;
+		lekka_jazdy=true;
+		x2=0;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+		if(ster=='q' && x1==5 && atak==true&& armia_barb.ciezka_jazda>0&&ciezka_jazdy==false){
+		menu=false;
+		atak1=true;
+		ciezka_jazdy=true;
+		x2=0;
+		komunikat="Wybierz jednostke wroga";
+		system("CLS");
+		continue;
+	}	
+
+		if(ster=='q' && pikinierzy==true&& atak==false && zycie_pikinierzy[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			pikinierzy=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && lucznicy==true&& atak==false && zycie_lucznicy[x2]>0){
+			komunikat="Wybierz cel ataku";
 			atak=true;
 			lucznicy=false;
 			identyfikator_gracz=x2;
 			x1=0;
 		}
-		if(ster=='q' && kusznicy==true&& atak1==true && zycie_kusznicy_barb[x2]>0){
-			komunikat="Atak w toku";
+				if(ster=='q' && kusznicy==true&& atak==false && zycie_kusznicy[x2]>0){
+			komunikat="Wybierz cel ataku";
 			atak=true;
 			kusznicy=false;
 			identyfikator_gracz=x2;
 			x1=0;
 		}
-		if(ster=='q' && ciezkozbrojni==true&& atak1==true && zycie_ciezkozbrojni_barb[x2]>0){
-			komunikat="Atak w toku";
+				if(ster=='q' && ciezkozbrojni==true&& atak==false && zycie_ciezkozbrojni[x2]>0){
+			komunikat="Wybierz cel ataku";
 			atak=true;
 			ciezkozbrojni=false;
 			identyfikator_gracz=x2;
 			x1=0;
 		}
-		if(ster=='q' && lekka_jazdy==true&& atak1==true && zycie_lekka_jazda_barb[x2]>0){
-			komunikat="Atak w toku";
+				if(ster=='q' && lekka_jazdy==true&& atak==false && zycie_lekka_jazda[x2]>0){
+			komunikat="Wybierz cel ataku";
 			atak=true;
 			lekka_jazdy=false;
 			identyfikator_gracz=x2;
 			x1=0;
 		}
-		if(ster=='q' && ciezka_jazdy==true&& atak1==true && zycie_ciezka_jazda_barb[x2]>0){
-			komunikat="Atak w toku";
+				if(ster=='q' && ciezka_jazdy==true&& atak==false && zycie_ciezka_jazda[x2]>0){
+			komunikat="Wybierz cel ataku";
 			atak=true;
 			ciezka_jazdy=false;
 			identyfikator_gracz=x2;
 			x1=0;
 		}
+				if(ster=='q' && tarany==true&& atak==false && zycie_tarany[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			tarany=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+				if(ster=='q' && elity==true&& atak==false && zycie_elity[x2]>0){
+			komunikat="Wybierz cel ataku";
+			atak=true;
+			elity=false;
+			identyfikator_gracz=x2;
+			x1=0;
+		}
+		identyfikator_gracz=x2;
+		if(x0==0){
+		zycie_bufor=zycie_pikinierzy[identyfikator_gracz];
+		obrona_bufor=obrona_pikinierzy[identyfikator_gracz];
+		atak_bufor=pikinier2[miasto_domowe].atak;
+		wspolczynnik_atak=1;
+		wspolczynnik_atak_obrona=1;
+		if(x1==6)wspolczynnik_atak=1.5;
+		if(x1==6)wspolczynnik_atak_obrona=1.5;
+		}
+		if(x0==1){
+			zycie_bufor=zycie_lucznicy[identyfikator_gracz];
+			obrona_bufor=obrona_lucznicy[identyfikator_gracz];
+			atak_bufor=lucznik2[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x0==2){
+			zycie_bufor=zycie_kusznicy[identyfikator_gracz];
+			obrona_bufor=obrona_kusznicy[identyfikator_gracz];
+			atak_bufor=kusznik2[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x0==3){
+			zycie_bufor=zycie_ciezkozbrojni[identyfikator_gracz];
+			obrona_bufor=obrona_ciezkozbrojni[identyfikator_gracz];
+			atak_bufor=ciezkozbrojny[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1.5;
+		}
+		if(x0==4){
+			zycie_bufor=zycie_lekka_jazda[identyfikator_gracz];
+			obrona_bufor=obrona_lekka_jazda[identyfikator_gracz];
+			atak_bufor=lekka_jazda2[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x1==0){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+			if(x1==3){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+		}
+		if(x0==5){
+			zycie_bufor=zycie_ciezka_jazda[identyfikator_gracz];
+			obrona_bufor=obrona_ciezka_jazda[identyfikator_gracz];
+			atak_bufor=ciezka_jazda2[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x1==0){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+			if(x1==3){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+		}
+		if(x0==6){
+			zycie_bufor=zycie_tarany[identyfikator_gracz];
+			obrona_bufor=obrona_tarany[identyfikator_gracz];
+			atak_bufor=taran2[miasto_domowe].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x0==7){
+			zycie_bufor=zycie_elity[identyfikator_gracz];
+			obrona_bufor=obrona_elity[identyfikator_gracz];
+			atak_bufor=elita2.atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x1==1 ||x1==2){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+		}
+		
+		
+////////////////////////////////
+		if(ster=='q' && pikinierzy==true&& atak1==true && zycie_pikinierzy_barb[x2]>0){
+			komunikat="Atak na Pikiniera w toku";
+			obrona_bufor_barb=obrona_pikinierzy_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Pikinier Wroga ("<<zycie_pikinierzy_barb[x2]<<"/"<<obrona_pikinierzy_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_pikinierzy_barb[x2]>0&& x0!=2){
+			
+			obrona_pikinierzy_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6)obrona_pikinierzy_barb[x2]=0;
+			}
+			
+			if(obrona_pikinierzy_barb[x2]<=0 &&x0!=6 && obrona_pikinierzy_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_pikinierzy_barb[x2]<0)atak_bufor=abs(obrona_pikinierzy_barb[x2]);
+			if(obrona_pikinierzy_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_pikinierzy_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_pikinierzy_barb[x2]=0;
+			}
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_pikinierzy_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego pikiniera";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_pikinierzy_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=pikinier[11].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<pikinier[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier2[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik2[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik2[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny2[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda2[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda2[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran2[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita2.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			pikinierzy=false;
+			atak1=false;
+			atak=true;
+			menu=true;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+		//////////////
+				if(ster=='q' && kusznicy==true&& atak1==true && zycie_kusznicy_barb[x2]>0){
+			komunikat="Atak na Kusznika w toku";
+			obrona_bufor_barb=obrona_kusznicy_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Kusznik Wroga ("<<zycie_kusznicy_barb[x2]<<"/"<<obrona_kusznicy_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_kusznicy_barb[x2]>0&& x0!=2){
+			obrona_kusznicy_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+					atak_bufor=0;
+				obrona_kusznicy_barb[x2]=0;
+			}
+			}
+			
+			if(obrona_kusznicy_barb[x2]<=0 &&x0!=6 && obrona_kusznicy_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_kusznicy_barb[x2]<0)atak_bufor=abs(obrona_kusznicy_barb[x2]);
+			if(obrona_kusznicy_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_kusznicy_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_kusznicy_barb[x2]=0;
+			}
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_kusznicy_barb[x2]<0){
+				obrona_kusznicy_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_kusznicy_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego kusznika";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_kusznicy_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=kusznik[11].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<kusznik[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+			getch();
+			kusznicy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+			/////////////////
+			if(ster=='q' && lucznicy==true&& atak1==true && zycie_lucznicy_barb[x2]>0){
+			komunikat="Atak na Lucznika w toku";
+			obrona_bufor_barb=obrona_lucznicy_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lucznik Wroga ("<<zycie_lucznicy_barb[x2]<<"/"<<obrona_lucznicy_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lucznicy_barb[x2]>0&& x0!=2){
+			obrona_lucznicy_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_lucznicy_barb[x2]=0;
+						atak_bufor=0;
+			}
+			}
+			
+			if(obrona_lucznicy_barb[x2]<=0 &&x0!=6 && obrona_lucznicy_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_lucznicy_barb[x2]<0)atak_bufor=abs(obrona_lucznicy_barb[x2]);
+			if(obrona_lucznicy_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_lucznicy_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_lucznicy_barb[x2]=0;
+			}
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_lucznicy_barb[x2]<0){
+				obrona_lucznicy_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_lucznicy_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego lucznika";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lucznicy_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=lucznik[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<lucznik[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			lucznicy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+					/////////////////
+			if(ster=='q' && ciezkozbrojni==true&& atak1==true && zycie_ciezkozbrojni_barb[x2]>0){
+			komunikat="Atak na Ciezkozbrojnego w toku";
+			obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezkozbrojny Wroga ("<<zycie_ciezkozbrojni_barb[x2]<<"/"<<obrona_ciezkozbrojni_barb[x2]<<")";
+			gotoxy(30,27);
 
 
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_ciezkozbrojni_barb[x2]>0&& x0!=2){
+			obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_ciezkozbrojni_barb[x2]=0;
+			atak_bufor=0;
+			}
+			}
+			
+			if(obrona_ciezkozbrojni_barb[x2]<=0 && x0!=6 && obrona_ciezkozbrojni_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_ciezkozbrojni_barb[x2]<0)atak_bufor=abs(obrona_ciezkozbrojni_barb[x2]);
+			if(obrona_ciezkozbrojni_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezkozbrojni_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezkozbrojni_barb[x2]=0;
+			}
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_ciezkozbrojni_barb[x2]<0){
+				obrona_ciezkozbrojni_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_ciezkozbrojni_barb[x2]<=0){
+				cout<<"Zabijasz wrogiego Ciezkozbrojnego";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezkozbrojni_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=ciezkozbrojny[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<ciezkozbrojny[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			ciezkozbrojni=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+			
+		}
 		
+			/////////////////
+			if(ster=='q' && lekka_jazdy==true&& atak1==true && zycie_lekka_jazda_barb[x2]>0){
+			komunikat="Atak na Lekka Jazde w toku";
+			obrona_bufor_barb=obrona_lekka_jazda_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lekka Jazda Wroga ("<<zycie_lekka_jazda_barb[x2]<<"/"<<obrona_lekka_jazda_barb[x2]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lekka_jazda_barb[x2]>0&& x0!=2){
+			obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_lekka_jazda_barb[x2]=0;
+						atak_bufor=0;
+			
+			}
+			}
+			
+			if(obrona_lekka_jazda_barb[x2]<=0 &&x0!=6 && obrona_lekka_jazda_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			if(obrona_lekka_jazda_barb[x2]<0)atak_bufor=abs(obrona_lekka_jazda_barb[x2]);
+			if(obrona_lekka_jazda_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_lekka_jazda_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_lekka_jazda_barb[x2]=0;
+			}
+			
+
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_lekka_jazda_barb[x2]<0){
+				obrona_lekka_jazda_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_lekka_jazda_barb[x2]<=0){
+				cout<<"Zabijasz wroga Lekka Jazde";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lekka_jazda_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=lekka_jazda[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<lekka_jazda[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			lekka_jazdy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			ruch_gracz=false;
+			system("CLS");
+		}
+					/////////////////
+			if(ster=='q' && ciezka_jazdy==true&& atak1==true && zycie_ciezka_jazda_barb[x2]>0){
+			komunikat="Atak na Ciezka Jazde w toku";
+			obrona_bufor_barb=obrona_ciezka_jazda_barb[x2];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x0]<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezka Jazda Wroga ("<<zycie_ciezka_jazda_barb[x2]<<"/"<<obrona_ciezka_jazda_barb[x2]<<")";
+			gotoxy(30,27);
+			
+			
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor_barb>0&& x0!=2){
+			obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+			if(x0==6){
+			obrona_ciezka_jazda_barb[x2]=0;
+						atak_bufor=0;
+			}
+			}
+			
+			if(obrona_ciezka_jazda_barb[x2]<=0 &&x0!=6 && obrona_ciezka_jazda_barb[x2]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x0==2){
+			
+			if(obrona_ciezka_jazda_barb[x2]<0)atak_bufor=abs(obrona_ciezka_jazda_barb[x2]);
+			if(obrona_ciezka_jazda_barb[x2]==0)atak_bufor=0;
+			if(obrona_bufor_barb==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezka_jazda_barb[x2]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezka_jazda_barb[x2]=0;
+			}
+			
+			
+			Sleep(500);
+			cout << "Zadajesz barbarzyncom "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+				if(obrona_ciezka_jazda_barb[x2]<0){
+				obrona_ciezka_jazda_barb[x2]=0;
+			}
+			
+			gotoxy(30,28);
+			if(zycie_ciezka_jazda_barb[x2]<=0){
+				cout<<"Zabijasz wroga Ciezka Jazde";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezka_jazda_barb[x2]>0  && x0!=1 && x0!=2){
+			
+			atak_bufor=ciezka_jazda[11].obrona;
+						atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x1!=2){
+			
+			if(x0==0)obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==1)obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==2)obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==3)obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==4)obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==5)obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==6)obrona_bufor_barb=obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona;
+			if(x0==7)obrona_bufor_barb=obrona_elity[identyfikator_gracz]-=atak_bufor_obrona;
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x1!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			if(x0==0)obrona_pikinierzy[identyfikator_gracz]=0;
+			if(x0==1)obrona_lucznicy[identyfikator_gracz]=0;
+			if(x0==2)obrona_kusznicy[identyfikator_gracz]=0;
+			if(x0==3)obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			if(x0==4)obrona_lekka_jazda[identyfikator_gracz]=0;
+			if(x0==5)obrona_ciezka_jazda[identyfikator_gracz]=0;
+			if(x0==6)obrona_tarany[identyfikator_gracz]=0;
+			if(x0==7)obrona_elity[identyfikator_gracz]=0;
+			}
+			if(obrona_bufor==0 || x1==2){
+			zycie_bufor-=atak_bufor;
+			if(x0==0)zycie_pikinierzy[identyfikator_gracz]=zycie_bufor;
+			if(x0==1)zycie_lucznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==2)zycie_kusznicy[identyfikator_gracz]=zycie_bufor;
+			if(x0==3)zycie_ciezkozbrojni[identyfikator_gracz]=zycie_bufor;
+			if(x0==4)zycie_lekka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==5)zycie_ciezka_jazda[identyfikator_gracz]=zycie_bufor;
+			if(x0==6)zycie_tarany[identyfikator_gracz]=zycie_bufor;
+			if(x0==7)zycie_elity[identyfikator_gracz]=zycie_bufor;
+			}
+			
+			cout << "Zadaja ci "<<ciezka_jazda[11].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x0==0){
+				cout<<"Zabijaja Ci pikiniera moj Panie";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x0==1){
+				cout<<"Zabijaja Ci lucznika moj Panie";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x0==2){
+				cout<<"Zabijaja Ci kusznika moj Panie";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x0==3){
+				cout<<"Zabijaja Ci ciezkozbrojnego moj Panie";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x0==4){
+				cout<<"Zabijaja Ci lekka jazde moj Panie";
+				armia.wielkosc-=lekka_jazda[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==5){
+				cout<<"Zabijaja Ci ciezka jazde moj Panie";
+				armia.wielkosc-=ciezka_jazda[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			if(zycie_bufor<=0 && x0==6){
+				cout<<"Zabijaja Ci taran moj Panie";
+				armia.wielkosc-=taran[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			if(zycie_bufor<=0 && x0==7){
+				cout<<"Zabijaja Ci elite moj Panie";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			}
+
+			getch();
+			ciezka_jazdy=false;
+			atak1=false;
+			atak=true;
+			menu=false;
+			x0=0;
+			x2=-1;
+			x1=0;
+			system("CLS");
+			ruch_gracz=false;
+		}
 		
+
+
+		}
+		system("CLS");
+		menu=false;
+		komunikat="Trwa ruch barbarzyncow";
+		if(armia.wielkosc==0){
+			koniec=true;
+			*wygrana=false;
+			continue;
+		}
+		if(armia_barb.wielkosc==0){
+			koniec=true;
+			*wygrana=true;
+			continue;
+		}
+		while(ruch_gracz==false){
+
+			
+					gotoxy(20,17);
+		cout<<"           /\                                                 /\ ";
+		gotoxy(20,18);
+ 		cout<<" _         )(_______________________   ______________________ )(         _";
+ 		gotoxy(20,19);
+		cout<<"(_)///////(**)______________________> <______________________(**)\\\\\\\\\\\\\\\(_)";
+		gotoxy(20,20);
+        cout<<"           )(                                                 )(";
+        gotoxy(20,21);
+        cout<<"           \/                                                 \/";
+		gotoxy(30,23);
+		cout << komunikat<<"                            ";
 		
-		
-		
-		
-	}
-	cout<< "KONIEC";
-	return;
-	
-	
+		gotoxy(76,1);
+		cout << "Armia Gracza: ";
+	gotoxy(76,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+
+gotoxy(70,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(70,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,5);
+if(x0==0){
+komunikat="Barbarzyncy wlacza";
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
 }
+else
+cout <<blok<< "   Pikinier / "<<armia.pikinierzy<<"           "<<blok; 
 
+gotoxy(70,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
 
-void walka_gracze(struktura_armii armia, char mapa_walki[49][73], string pre_walka[49]){
-	bool koniec=false;
-	bool gracz1;
-	bool gracz2;
-	int x;
-	int y;
-	
-	
-	 for(int i=0;i<49;i++){
-	for(int j=0;j<73;j++){
-		if(mapa_walki[i][j]==dom2){
-			szansa=(rand()%100);
-			if(szansa>90){
-			mapa_walki[i][j]=dom;
-			}
-			if(szansa<10){
-			mapa_walki[i][j]=gora;
-			}
+}
+else
+cout <<blok<<"   Lucznik / "<<armia.lucznicy<<"            "<<blok;
+gotoxy(70,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia.kusznicy<<"            "<<blok; 
+gotoxy(70,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(70,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia.lekka_jazda<<"        "<<blok; 
+gotoxy(70,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia.ciezka_jazda<<"       "<<blok;
+gotoxy(70,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<armia.tarany<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<armia.tarany<<"              "<<blok;
+gotoxy(70,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita / "<<armia.elity<<"              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita / "<<armia.elity<<"              "<<blok; 
+gotoxy(70,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(70,14);
+for(int i=0;i<28;i++)cout << blok;
+		
+		//////////////pokaz barbow///
+		
+gotoxy(10,1);
+		cout << "Armia Barbarzyncow: ";
+		
+	gotoxy(10,2);
+cout << "NAZWA/ILOSC POSIADANYCH                    ";
+gotoxy(5,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(5,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,5);
+if(x1==0 ){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<armia_barb.pikinierzy<<"           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<armia_barb.pikinierzy<<"           "<<blok; 
+
+gotoxy(5,6);
+if(x1==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+}
+else
+cout <<blok<<"   Lucznik / "<<armia_barb.lucznicy<<"            "<<blok;
+gotoxy(5,7);
+if(x1==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<armia_barb.kusznicy<<"            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<armia_barb.kusznicy<<"            "<<blok; 
+gotoxy(5,8);
+if(x1==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<armia_barb.ciezkozbrojni<<"      "<<blok; 
+
+gotoxy(5,9);
+if(x1==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<armia_barb.lekka_jazda<<"        "<<blok; 
+gotoxy(5,10);
+if(x1==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<armia_barb.ciezka_jazda<<"       "<<blok;
+gotoxy(5,11);
+cout <<blok<< "                          "<<blok;
+gotoxy(5,12);
+for(int i=0;i<28;i++)cout << blok;
+
+	if(atak1==true){
+	gotoxy(0,60);	
+	if(pikinierzy==true){
+		for(int i=0;i<bufor_pikinierzy_barb;i++){
+			if(zycie_pikinierzy_barb[i]>0){
+			
+			if(i==x2&& atak1==true){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier Wroga #"<<i+1<<" ("<<zycie_pikinierzy_barb[i]<<"/"<<obrona_pikinierzy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true&& atak1==true){
+		for(int i=0;i<bufor_lucznicy_barb;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik Wroga #"<<i+1<<" ("<<zycie_lucznicy_barb[i]<<"/"<<obrona_lucznicy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true&& atak1==true){
+		for(int i=0;i<bufor_kusznicy_barb;i++){
+			if(zycie_kusznicy_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik Wroga #"<<i+1<<" ("<<zycie_kusznicy_barb[i]<<"/"<<obrona_kusznicy_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true&& atak1==true){
+		for(int i=0;i<bufor_ciezkozbrojni_barb;i++){
+			if(zycie_ciezkozbrojni_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny Wroga #"<<i+1<<" ("<<zycie_ciezkozbrojni_barb[i]<<"/"<<obrona_ciezkozbrojni_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true&& atak1==true){
+		for(int i=0;i<bufor_lekka_jazda_barb;i++){
+			if(zycie_lekka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda Wroga #"<<i+1<<" ("<<zycie_lekka_jazda_barb[i]<<"/"<<obrona_lekka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true && atak1==true){
+		for(int i=0;i<bufor_ciezka_jazda_barb;i++){
+			if(zycie_ciezka_jazda_barb[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda Wroga #"<<i+1<<" ("<<zycie_ciezka_jazda_barb[i]<<"/"<<obrona_ciezka_jazda_barb[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
 		}
 	}
 }
+	////////////////////////////////////
+
 	
-	while(koniec==false){
-		
-		
-		for(int i=x-15;i<=x+15;i++){
-	cout << "   ";
-        for(int j=y-15;j<=y+15;j++){
-        		if(j==(y+15) || i==(x+15) || j==(y-15) || i==(x-15))cout << blok;
-        		else{
-                if(i==x && j==y){
-                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
-                        cout << mapa[i][j];
-                        SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && ruch==true){
-                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
-                        cout << mapa_jednostek[i][j];
-                        SetConsoleTextAttribute( hOut, 8 );
-                        }else{	
-                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && ruch==true){
-                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
-                        cout << mapa_jednostek[i][j];
-                        SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek[i][j]!=' ' && budowa==true ||mapa_jednostek[i][j]!='B' && mapa_jednostek[i][j]!=' ' && ruch==true){
-                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
-                        cout << mapa_jednostek[i][j];
-                        SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-
-                        	
-				if(mapa_jednostek[i][j]=='B'){
-        			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
-        			cout << mapa_jednostek[i][j];
-        			SetConsoleTextAttribute( hOut, 8 );
-						}else{
-				if(mapa_jednostek[i][j]!=' '){
-        			SetConsoleTextAttribute( hOut, 12 | BACKGROUND_GREEN );
-        			cout << mapa_jednostek[i][j];
-        			SetConsoleTextAttribute( hOut, 8 );
-						}else{
-                if(mapa[i][j]==dom){
-                                    SetConsoleTextAttribute( hOut, 2 );
-                                    cout << mapa[i][j];
-                                    SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-                                    
-                if(mapa[i][j]==dom2){
-                                     SetConsoleTextAttribute( hOut, 10 );
-                                    cout << mapa[i][j];
-                                    SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-                if(mapa[i][j]==woda){
-                                     SetConsoleTextAttribute( hOut, 9  );
-                                    cout << mapa[i][j];
-                                    SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-                if(mapa[i][j]==gora){
-                                     SetConsoleTextAttribute( hOut, 7 | BACKGROUND_GREEN );
-                                     cout << mapa[i][j];
-                                     SetConsoleTextAttribute( hOut, 8 );
-                        }else{
-
-                cout << mapa[i][j];
-                
-                }
-                }
-            	}
-                }
-            	}
-                }
-            	}
-            	}
-            	}
-            	}
-            	}
+		gotoxy(0,60);	
+	if(pikinierzy==true && menu==true){
+		for(int i=0;i<bufor_pikinierzy;i++){
+			if(zycie_pikinierzy[i]>0){
 			
-                
-        cout << endl;
-        }
-    	}
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Pikinier #"<<i+1<<" ("<<zycie_pikinierzy[i]<<"/"<<obrona_pikinierzy[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lucznicy==true&& menu==true){
+		for(int i=0;i<bufor_lucznicy;i++){
+			if(zycie_lucznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lucznik #"<<i+1<<" ("<<zycie_lucznicy[i]<<"/"<<obrona_lucznicy[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(kusznicy==true&& menu==true){
+		for(int i=0;i<armia.kusznicy;i++){
+			if(zycie_kusznicy[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Kusznik #"<<i+1<<" ("<<zycie_kusznicy[i]<<"/"<<obrona_kusznicy[i]<<")       "; 
+			}else
+			cout<<"      ------          ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezkozbrojni==true&& menu==true){
+		for(int i=0;i<bufor_kusznicy;i++){
+			if(zycie_ciezkozbrojni[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezkozbrojny #"<<i+1<<" ("<<zycie_ciezkozbrojni[i]<<"/"<<obrona_ciezkozbrojni[i]<<")       "; 
+			}else
+			cout<<"       ------         ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(lekka_jazdy==true&& menu==true){
+		for(int i=0;i<bufor_lekka_jazda;i++){
+			if(zycie_lekka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Lekka Jazda #"<<i+1<<" ("<<zycie_lekka_jazda[i]<<"/"<<obrona_lekka_jazda[i]<<")       "; 
+			}else
+			cout<<"          ------      ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(ciezka_jazdy==true&& menu==true){
+		for(int i=0;i<bufor_ciezka_jazda;i++){
+			if(zycie_ciezka_jazda[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Ciezka Jazda #"<<i+1<<" ("<<zycie_ciezka_jazda[i]<<"/"<<obrona_ciezka_jazda[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(tarany==true&& menu==true){
+		for(int i=0;i<bufor_tarany;i++){
+			if(zycie_tarany[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Taran #"<<i+1<<" ("<<zycie_tarany[i]<<"/"<<obrona_tarany[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		gotoxy(0,60);	
+	if(elity==true&& menu==true ){
+		for(int i=0;i<bufor_elity;i++){
+			if(zycie_elity[i]>0){
+			
+			if(i==x2){
+				SetConsoleTextAttribute( hOut, 2 );
+				cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+				SetConsoleTextAttribute( hOut, 8 );
+			}else
+			cout<<"Elita #"<<i+1<<" ("<<zycie_elity[i]<<"/"<<obrona_elity[i]<<")       "; 
+			}else
+			cout<<"        ------        ";
+			
+			if(i%6==6)cout<< endl;
+		}
+	}
+		if(atak==true){
 		
+		atak1=true;
+		atak=false;
+		do{
+		
+		x1=(rand()%5);
+		if(x1==0 && armia_barb.pikinierzy>0){
+		good=true;
+		pikinierzy=true;
+		
+		}
+		if(x1==1 && armia_barb.lucznicy>0){
+			lucznicy=true;
+		good=true;
+		}
+		if(x1==2 && armia_barb.kusznicy>0){
+			kusznicy=true;
+		good=true;
+		}
+		if(x1==3 && armia_barb.ciezkozbrojni>0){
+			ciezkozbrojni=true;
+		good=true;
+		}
+		if(x1==4 && armia_barb.lekka_jazda>0){
+			lekka_jazdy=true;
+		good=true;
+		}
+		if(x1==5 && armia_barb.ciezka_jazda>0){
+		good=true;
+		ciezka_jazdy=true;
+		}
+		}while(good!=true);
+		Sleep(500);
+		good=false;
+		continue;
+		}
+		
+		if(atak1==true){
+		menu=true;
+		atak1=false;
+		
+		if(x1==0){
+		do{
+		x2=(rand()%bufor_pikinierzy_barb);
+		}while(zycie_pikinierzy_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==1){
+		do{
+		x2=(rand()%bufor_lucznicy_barb);
+		}while(zycie_lucznicy_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==2){
+		do{
+		x2=(rand()%bufor_kusznicy_barb);
+		}while(zycie_kusznicy_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==3){
+		do{
+		x2=(rand()%bufor_ciezkozbrojni_barb);
+		}while(zycie_ciezkozbrojni_barb[x2]<=0);
+		Sleep(500);
+		atak1=false;
+		menu=true;
+		continue;
+		}
+		if(x1==4){
+		do{
+		x2=(rand()%bufor_lekka_jazda_barb);
+		}while(zycie_lekka_jazda_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		if(x1==5){
+		do{
+		x2=(rand()%bufor_ciezka_jazda_barb);
+		}while(zycie_ciezka_jazda_barb[x2]<=0);
+		Sleep(500);
+		
+		menu=true;
+		continue;
+		}
+		}
+		
+		if(menu==true){
+					
+		do{
+		x0=(rand()%7);
+		if(x0==0 && armia.pikinierzy>0)good=true;
+		if(x0==1 && armia.lucznicy>0)good=true;
+		if(x0==2 && armia.kusznicy>0)good=true;
+		if(x0==3 && armia.ciezkozbrojni>0)good=true;
+		if(x0==4 && armia.lekka_jazda>0)good=true;
+		if(x0==5 && armia.ciezka_jazda>0)good=true;
+		if(x0==6 && armia.tarany>0)good=true;
+		if(x0==7 && armia.elity>0)good=true;
+		}while(good!=true);
+		good=false;
+		atak1=false;
+		menu=false;
+		if(x0==0){
+		do{
+		identyfikator_gracz=(rand()%bufor_pikinierzy);
+		}while(zycie_pikinierzy[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==1){
+		do{
+		identyfikator_gracz=(rand()%bufor_lucznicy);
+		}while(zycie_lucznicy[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==2){
+		do{
+		identyfikator_gracz=(rand()%bufor_kusznicy);
+		}while(zycie_kusznicy[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==3){
+		do{
+		identyfikator_gracz=(rand()%bufor_ciezkozbrojni);
+		}while(zycie_ciezkozbrojni_barb[identyfikator_gracz]<=0);
+		Sleep(500);
+		atak1=false;
+		
+		continue;
+		}
+		if(x0==4){
+		do{
+		identyfikator_gracz=(rand()%bufor_lekka_jazda);
+		}while(zycie_lekka_jazda[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==5){
+		do{
+		identyfikator_gracz=(rand()%bufor_ciezka_jazda);
+		}while(zycie_ciezka_jazda[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==6){
+		do{
+		identyfikator_gracz=(rand()%bufor_tarany);
+		}while(zycie_tarany[identyfikator_gracz]<=0);
+		Sleep(500);
+		
+		
+		continue;
+		}
+		if(x0==7){
+		do{
+		identyfikator_gracz=(rand()%bufor_elity);
+		}while(zycie_elity[identyfikator_gracz]<=0);
+		Sleep(500);
+
+		continue;
+		}
+		}
+		
+		if(x1==0){
+		zycie_bufor=zycie_pikinierzy_barb[x2];
+		obrona_bufor=obrona_pikinierzy_barb[x2];
+		atak_bufor=pikinier[11].atak;
+		wspolczynnik_atak=1;
+		wspolczynnik_atak_obrona=1;
+		if(x0==6)wspolczynnik_atak=1.5;
+		if(x0==6)wspolczynnik_atak_obrona=1.5;
+		}
+		if(x1==1){
+			zycie_bufor=zycie_lucznicy_barb[x2];
+			obrona_bufor=obrona_lucznicy[x2];
+			atak_bufor=lucznik[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x1==2){
+			zycie_bufor=zycie_kusznicy_barb[x2];
+			obrona_bufor=obrona_kusznicy_barb[x2];
+			atak_bufor=kusznik[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+		}
+		if(x1==3){
+			zycie_bufor=zycie_ciezkozbrojni_barb[x2];
+			obrona_bufor=obrona_ciezkozbrojni_barb[x2];
+			atak_bufor=ciezkozbrojny[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1.5;
+		}
+		if(x1==4){
+			zycie_bufor=zycie_lekka_jazda_barb[x2];
+			obrona_bufor=obrona_lekka_jazda_barb[x2];
+			atak_bufor=lekka_jazda[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x0==0){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+			if(x0==3){
+				wspolczynnik_atak=1.25;
+				wspolczynnik_atak_obrona=1.25;
+			}
+		}
+		if(x1==5){
+			zycie_bufor=zycie_ciezka_jazda_barb[x2];
+			obrona_bufor=obrona_ciezka_jazda_barb[x2];
+			atak_bufor=ciezka_jazda[11].atak;
+			wspolczynnik_atak=1;
+			wspolczynnik_atak_obrona=1;
+			if(x0==0){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+			if(x0==3){
+				wspolczynnik_atak=1.5;
+				wspolczynnik_atak_obrona=1.5;
+			}
+		}
+
+		//////////////////////////
+				if(x0==0){
+			komunikat="Atak na Pikiniera w toku";
+			obrona_bufor_barb=obrona_pikinierzy[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<" ("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Pikinier #"<<identyfikator_gracz+1<<"("<<zycie_pikinierzy[identyfikator_gracz]<<"/"<<obrona_pikinierzy[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_pikinierzy[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_pikinierzy[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_pikinierzy[identyfikator_gracz]<=0  && obrona_pikinierzy[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_pikinierzy[identyfikator_gracz]<0)atak_bufor=abs(obrona_pikinierzy[identyfikator_gracz]);
+			if(obrona_pikinierzy[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_pikinierzy[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_pikinierzy[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_pikinierzy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego pikiniera";
+				armia.wielkosc-=pikinier[miasto_domowe].wielkosc;
+				armia.pikinierzy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_pikinierzy[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=pikinier2[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+			atak_bufor=0;
+			
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<pikinier[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			pikinierzy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+		//////////////
+		if(x0==1){
+			komunikat="Atak na Lucznika w toku";
+			obrona_bufor_barb=obrona_lucznicy[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lucznik #"<<identyfikator_gracz+1<<"("<<zycie_lucznicy[identyfikator_gracz]<<"/"<<obrona_lucznicy[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lucznicy[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_lucznicy[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_lucznicy[identyfikator_gracz]<=0  && obrona_lucznicy[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_lucznicy[identyfikator_gracz]<0)atak_bufor=abs(obrona_lucznicy[identyfikator_gracz]);
+			if(obrona_lucznicy[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_lucznicy[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_lucznicy[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_lucznicy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego lucznika";
+				armia.wielkosc-=lucznik[miasto_domowe].wielkosc;
+				armia.lucznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lucznicy[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=lucznik2[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+				atak_bufor=0;
+			
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajaesz "<<kusznik[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			lucznicy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+			/////////////////
+				if(x0==2){
+			komunikat="Atak na Kusznika w toku";
+			obrona_bufor_barb=obrona_kusznicy[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lucznik #"<<identyfikator_gracz+1<<"("<<zycie_kusznicy[identyfikator_gracz]<<"/"<<obrona_kusznicy[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_kusznicy[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_kusznicy[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_kusznicy[identyfikator_gracz]<=0  && obrona_kusznicy[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_kusznicy[identyfikator_gracz]<0)atak_bufor=abs(obrona_kusznicy[identyfikator_gracz]);
+			if(obrona_kusznicy[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_kusznicy[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_kusznicy[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_kusznicy[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego Kusznika";
+				armia.wielkosc-=kusznik[miasto_domowe].wielkosc;
+				armia.kusznicy--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_kusznicy[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=kusznik2[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajaesz "<<lucznik[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			kusznicy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+					/////////////////
+			if(x0==3){
+			komunikat="Atak na Ciezkozbrojnego w toku";
+			obrona_bufor_barb=obrona_ciezkozbrojni[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezkozbrojny #"<<identyfikator_gracz+1<<"("<<zycie_ciezkozbrojni[identyfikator_gracz]<<"/"<<obrona_ciezkozbrojni[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_ciezkozbrojni[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_ciezkozbrojni[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_ciezkozbrojni[identyfikator_gracz]<=0  && obrona_ciezkozbrojni[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_ciezkozbrojni[identyfikator_gracz]<0)atak_bufor=abs(obrona_ciezkozbrojni[identyfikator_gracz]);
+			if(obrona_ciezkozbrojni[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezkozbrojni[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezkozbrojni[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_ciezkozbrojni[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twojego Ciezkozbrojnego";
+				armia.wielkosc-=ciezkozbrojny[miasto_domowe].wielkosc;
+				armia.ciezkozbrojni--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezkozbrojni[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=ciezkozbrojny2[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajaesz "<<ciezkozbrojny[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			ciezkozbrojni=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+			/////////////////
+					if(x0==4){
+			komunikat="Atak na Lekka Jazde w toku";
+			obrona_bufor_barb=obrona_lekka_jazda[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Lekka Jazda #"<<identyfikator_gracz+1<<"("<<zycie_lekka_jazda[identyfikator_gracz]<<"/"<<obrona_lekka_jazda[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_lekka_jazda[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_lekka_jazda[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_lekka_jazda[identyfikator_gracz]<=0  && obrona_lekka_jazda[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_lekka_jazda[identyfikator_gracz]<0)atak_bufor=abs(obrona_lekka_jazda[identyfikator_gracz]);
+			if(obrona_lekka_jazda[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_lekka_jazda[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_lekka_jazda[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_lekka_jazda[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoja Lekka Jazde";
+				armia.wielkosc-=lekka_jazda2[miasto_domowe].wielkosc;
+				armia.lekka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_lekka_jazda[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=lekka_jazda[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<lekka_jazda[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			lekka_jazdy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+					/////////////////
+					if(x0==5){
+			komunikat="Atak na Ciezka Jazde w toku";
+			obrona_bufor_barb=obrona_ciezka_jazda[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Ciezka Jazda #"<<identyfikator_gracz+1<<"("<<zycie_ciezka_jazda[identyfikator_gracz]<<"/"<<obrona_ciezka_jazda[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_ciezka_jazda[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_ciezka_jazda[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_ciezka_jazda[identyfikator_gracz]<=0  && obrona_ciezka_jazda[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_ciezka_jazda[identyfikator_gracz]<0)atak_bufor=abs(obrona_ciezka_jazda[identyfikator_gracz]);
+			if(obrona_ciezka_jazda[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_ciezka_jazda[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_ciezka_jazda[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_ciezka_jazda[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoja Ciezka Jazde";
+				armia.wielkosc-=ciezka_jazda2[miasto_domowe].wielkosc;
+				armia.ciezka_jazda--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_ciezka_jazda[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=ciezka_jazda[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<ciezka_jazda[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			ciezka_jazdy=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+						if(x0==6){
+			komunikat="Atak na Taran w toku";
+			obrona_bufor_barb=obrona_tarany[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Taran #"<<identyfikator_gracz+1<<"("<<zycie_tarany[identyfikator_gracz]<<"/"<<obrona_tarany[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_tarany[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_tarany[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_tarany[identyfikator_gracz]<=0  && obrona_tarany[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_tarany[identyfikator_gracz]<0)atak_bufor=abs(obrona_tarany[identyfikator_gracz]);
+			if(obrona_tarany[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_tarany[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_tarany[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_tarany[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoj Taran";
+				armia.wielkosc-=taran2[miasto_domowe].wielkosc;
+				armia.tarany--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_tarany[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=taran[miasto_domowe].obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<taran2[miasto_domowe].obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			tarany=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+		if(x0==7){
+			komunikat="Atak na Elite w toku";
+			obrona_bufor_barb=obrona_elity[identyfikator_gracz];
+			gotoxy(30,25);
+			cout << identyfikator_nazwy[x1]<<" Wroga "<<"("<<zycie_bufor<<"/"<<obrona_bufor<<")     VS    "<<"Elita #"<<identyfikator_gracz+1<<"("<<zycie_elity[identyfikator_gracz]<<"/"<<obrona_elity[identyfikator_gracz]<<")";
+			gotoxy(30,27);
+
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_elity[identyfikator_gracz]>0&& x1!=2){
+			
+			obrona_elity[identyfikator_gracz]-=atak_bufor_obrona*wspolczynnik_atak_obrona;
+		
+			}
+			
+			if(obrona_elity[identyfikator_gracz]<=0  && obrona_elity[identyfikator_gracz]-atak_bufor_obrona*wspolczynnik_atak_obrona<0||x1==2){
+			if(obrona_elity[identyfikator_gracz]<0)atak_bufor=abs(obrona_elity[identyfikator_gracz]);
+			if(obrona_elity[identyfikator_gracz]==0)atak_bufor=0;
+			if(obrona_bufor==0)atak_bufor=atak_bufor_obrona;
+			zycie_elity[identyfikator_gracz]-=atak_bufor*wspolczynnik_atak;
+			obrona_elity[identyfikator_gracz]=0;
+			}
+			Sleep(500);
+			cout << "Zadaja Ci "<<atak_bufor*wspolczynnik_atak + atak_bufor_obrona*wspolczynnik_atak_obrona - atak_bufor <<" punktow obrazen ("<<atak_bufor * wspolczynnik_atak<<"/"<<atak_bufor_obrona * wspolczynnik_atak_obrona - atak_bufor<<")";
+			
+			gotoxy(30,28);
+			if(zycie_elity[identyfikator_gracz]<=0){
+				cout<<"Zabijaja Twoja Elite";
+				armia.wielkosc-=elita.wielkosc;
+				armia.elity--;
+			}
+			Sleep(500);
+			gotoxy(30,29);
+			if(zycie_elity[identyfikator_gracz]>0  && x1!=1 && x1!=2){
+			
+			atak_bufor=elita2.obrona;
+			atak_bufor_obrona=atak_bufor;
+			if(obrona_bufor>0&& x0!=2){
+			
+			if(x1==0)obrona_bufor_barb=obrona_pikinierzy_barb[x2]-=atak_bufor_obrona;
+			if(x1==1)obrona_bufor_barb=obrona_lucznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==2)obrona_bufor_barb=obrona_kusznicy_barb[x2]-=atak_bufor_obrona;
+			if(x1==3)obrona_bufor_barb=obrona_ciezkozbrojni_barb[x2]-=atak_bufor_obrona;
+			if(x1==4)obrona_bufor_barb=obrona_lekka_jazda_barb[x2]-=atak_bufor_obrona;
+			if(x1==5)obrona_bufor_barb=obrona_ciezka_jazda_barb[x2]-=atak_bufor_obrona;
+
+			atak_bufor=0;
+			}
+			if(obrona_bufor_barb<0&& x0!=2){
+			
+			atak_bufor=abs(obrona_bufor_barb);
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+
+			if(x1==0)obrona_pikinierzy_barb[x2]=0;
+			if(x1==1)obrona_lucznicy_barb[x2]=0;
+			if(x1==2)obrona_kusznicy_barb[x2]=0;
+			if(x1==3)obrona_ciezkozbrojni_barb[x2]=0;
+			if(x1==4)obrona_lekka_jazda_barb[x2]=0;
+			if(x1==5)obrona_ciezka_jazda_barb[x2]=0;
+
+			}
+			if(obrona_bufor==0 || x0==2){
+			zycie_bufor-=atak_bufor;
+			if(x1==0)zycie_pikinierzy_barb[x2]=zycie_bufor;
+			if(x1==1)zycie_lucznicy_barb[x2]=zycie_bufor;
+			if(x1==2)zycie_kusznicy_barb[x2]=zycie_bufor;
+			if(x1==3)zycie_ciezkozbrojni_barb[x2]=zycie_bufor;
+			if(x1==4)zycie_lekka_jazda_barb[x2]=zycie_bufor;
+			if(x1==5)zycie_ciezka_jazda_barb[x2]=zycie_bufor;
+			}
+			
+			cout << "Zadajesz "<<elita2.obrona <<" punktow obrazen ("<<atak_bufor<<"/"<<atak_bufor_obrona-atak_bufor<<")";
+
+			gotoxy(30,28);
+			if(zycie_bufor<=0 && x1==0){
+				cout<<"Zabijasz pikiniera moj Panie";
+				armia_barb.wielkosc-=pikinier[11].wielkosc;
+				armia_barb.pikinierzy--;
+			}
+			if(zycie_bufor<=0 && x1==1){
+				cout<<"Zabijasz lucznika moj Panie";
+				armia_barb.wielkosc-=lucznik[11].wielkosc;
+				armia_barb.lucznicy--;
+			}
+			if(zycie_bufor<=0 && x1==2){
+				cout<<"Zabijasz kusznika moj Panie";
+				armia_barb.wielkosc-=kusznik[11].wielkosc;
+				armia_barb.kusznicy--;
+			}
+			if(zycie_bufor<=0 && x1==3){
+				cout<<"Zabijasz ciezkozbrojnego moj Panie";
+				armia_barb.wielkosc-=ciezkozbrojny[11].wielkosc;
+				armia_barb.ciezkozbrojni--;
+			}
+			if(zycie_bufor<=0 && x1==4){
+				cout<<"Zabijasz lekka jazde moj Panie";
+				armia_barb.wielkosc-=lekka_jazda[11].wielkosc;
+				armia_barb.lekka_jazda--;
+			}
+			if(zycie_bufor<=0 && x1==5){
+				cout<<"Zabijasz ciezka jazde moj Panie";
+				armia_barb.wielkosc-=ciezka_jazda[11].wielkosc;
+				armia_barb.ciezka_jazda--;
+			}
+
+			}
+
+			getch();
+			elity=false;
+			atak1=false;
+			atak=false;
+			menu=true;
+			x0=0;
+			x2=-1;
+			identyfikator_gracz=-1;
+			x1=0;
+			ruch_gracz=true;
+			system("CLS");
+		}
+		
+		
+		}
+		
+	}
+	if(gracz1==true){
+	
+	if(*wygrana==true){
+		
+		*zloto+=nagroda*25;
+		return;
+	}
+	if(*wygrana==false){
+		*zloto-=nagroda*25;
+		return;
+	}
+}
+		if(gracz2==true){
+	
+	if(*wygrana==true){
+		
+		*zloto+=nagroda*25;
+		return;
+	}
+	if(*wygrana==false){
+		*zloto-=nagroda*25;
+		return;
+	}
+}
+	
+}
+
+
+/*void walka_gracze(struktura_armii armia, char mapa_walki[49][73], string pre_walka[49]){
+	
 		
 	}
 	
@@ -3222,7 +11019,7 @@ void walka_gracze(struktura_armii armia, char mapa_walki[49][73], string pre_wal
 		mapa_walki[i][j]=pre_walka[i][j];
 		}
 	}
-}
+}*/
 
 
 ///////////
@@ -3233,7 +11030,7 @@ void walka_gracze(struktura_armii armia, char mapa_walki[49][73], string pre_wal
 	 
 void odkryj( bool *nazwa, int koszt, int *nauka, string NazwaTechnologii){
 			*nazwa=true;
-			nauka=nauka-koszt;
+			*nauka=*nauka-koszt;
 			technologie=false;
 			menu_stolica=true;
 			gotoxy(54,25);
@@ -3251,19 +11048,21 @@ void odkryj( bool *nazwa, int koszt, int *nauka, string NazwaTechnologii){
 			gotoxy(120,27);
 			cout << "   " << blok;
 			gotoxy(54,27);
-			cout <<blok<< " Okdryles " <<NazwaTechnologii<<"                                          ";
+			cout <<blok<< " Odkryles " <<NazwaTechnologii<<"                                          ";
 			Sleep(2000);
 			x0=0;
 }
 
+			
+
 
 int main(){
-
- int miasta[137][201];
+int miasta[137][201];
+ int miasta2[137][201];
  string jednostki[255];
  jednostki[osadnik]="osadnik";
  jednostki[82]="robotnik";
- string gracz1_nazwa="Kuba";
+ string gracz1_nazwa;
  string gracz2_nazwa;
  
  srand(time(NULL));
@@ -3290,6 +11089,23 @@ int main(){
  bool browarnictwo=false;
  int nastepna_tura_domyslnie=5;
  int nastepna_tura=5;
+ 
+  bool hodowla2=false;
+ bool waluta2=false;
+ bool gildie2=false;
+ bool mechanika2=false;
+ bool lowiectwo2=false;
+ bool infrastruktura2=false;
+ bool administracja2=false;
+ bool obrobka_zelaza2=false;
+ bool obrobka_stali2=false;
+ bool nawigacja2=false;
+ bool sztuka2=false;
+ bool hutnictwo2=false;
+ bool ewangelizacja2=false;
+ bool browarnictwo2=false;
+ int nastepna_tura_domyslnie2=5;
+ int nastepna_tura2=5;
 
 ///////////////////////////////
  
@@ -3310,6 +11126,8 @@ int idmiasta;
  ifstream wczytaj_miasto;
  wczytaj_miasto.open("Assets/Maps/map_stolica.txt");
  string pre_miasto[80];
+ string pre_miasto2[80];
+ 
  
 int drewno=1000;
 int zloto=1000;
@@ -3328,11 +11146,29 @@ int ludnosc=0;
 int ksztalt=0;
 int xm=0;
 
+int drewno2=1000;
+int zloto2=1000;
+int kamien2=1000;
+int zywnosc2=1000;
+int wiara2=0;
+int max_zolnierzy2=5;
+int nauka2=400;
+int przychod_nauka2=0;
+int przychod_drewno2=0;
+int przychod_kamien2=0;
+int przychod_zywnosc2=0;
+int przychod_wiara2=0;
+int przychod_zloto2=0;
+int ludnosc2=0;
+
+int tura=0;
+
  int wybor_map=0;
 
  int xd=0;
  int yd=0;
  int liczba_miast=1;
+int liczba_miast2=1;
 
 int h=0;
 string komunikat="Brak komunikatow moj Panie";
@@ -3357,7 +11193,7 @@ for(int i=1;i<11;i++)miasto[i].podatek=100;
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		akademia.wyglad[i][j]=pre[i][j];
+		akademia2.wyglad[i][j]=akademia.wyglad[i][j]=pre[i][j];
 		}
 	}
 wczytaj_budynek.close();
@@ -3369,7 +11205,7 @@ wczytaj_budynek.close();
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		kapitol.wyglad[i][j]=pre[i][j];
+		kapitol2.wyglad[i][j]=kapitol.wyglad[i][j]=pre[i][j];
 
 		}
 
@@ -3384,7 +11220,7 @@ wczytaj_budynek.close();
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		ratusz.wyglad[i][j]=pre[i][j];
+		ratusz2.wyglad[i][j]=ratusz.wyglad[i][j]=pre[i][j];
 		}
 	}
  
@@ -3397,7 +11233,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		rynek.wyglad[i][j]=pre[i][j];
+		rynek2.wyglad[i][j]=rynek.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3409,7 +11245,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		mieszkalna.wyglad[i][j]=pre[i][j];
+		mieszkalna2.wyglad[i][j]=mieszkalna.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3421,7 +11257,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		handlowa.wyglad[i][j]=pre[i][j];
+		handlowa2.wyglad[i][j]=handlowa.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3433,7 +11269,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		naukowa.wyglad[i][j]=pre[i][j];
+		naukowa2.wyglad[i][j]=naukowa.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3445,7 +11281,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		wojskowa.wyglad[i][j]=pre[i][j];
+		wojskowa2.wyglad[i][j]=wojskowa.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3457,7 +11293,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		religijna.wyglad[i][j]=pre[i][j];
+		religijna2.wyglad[i][j]=religijna.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3469,7 +11305,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		rekreacyjna.wyglad[i][j]=pre[i][j];
+		rekreacyjna2.wyglad[i][j]=rekreacyjna.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3481,7 +11317,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		koszary.wyglad[i][j]=pre[i][j];
+		koszary2.wyglad[i][j]=koszary.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3493,7 +11329,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		szkola.wyglad[i][j]=pre[i][j];
+		szkola2.wyglad[i][j]=szkola.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3505,7 +11341,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		huta.wyglad[i][j]=pre[i][j];
+		huta2.wyglad[i][j]=huta.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3517,7 +11353,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		oboz.wyglad[i][j]=pre[i][j];
+		oboz2.wyglad[i][j]=oboz.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3529,7 +11365,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		bank.wyglad[i][j]=pre[i][j];
+		bank2.wyglad[i][j]=bank.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3541,7 +11377,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		gildia.wyglad[i][j]=pre[i][j];
+		gildia2.wyglad[i][j]=gildia.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3553,7 +11389,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		biblioteka.wyglad[i][j]=pre[i][j];
+		biblioteka2.wyglad[i][j]=biblioteka.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3565,7 +11401,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		park.wyglad[i][j]=pre[i][j];
+		park2.wyglad[i][j]=park.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3577,7 +11413,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		pomnik.wyglad[i][j]=pre[i][j];
+		pomnik2.wyglad[i][j]=pomnik.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3589,7 +11425,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		ambasada.wyglad[i][j]=pre[i][j];
+		ambasada2.wyglad[i][j]=ambasada.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3601,7 +11437,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		port.wyglad[i][j]=pre[i][j];
+		port2.wyglad[i][j]=port.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3613,7 +11449,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		teatr.wyglad[i][j]=pre[i][j];
+		teatr2.wyglad[i][j]=teatr.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3625,7 +11461,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		tawerna.wyglad[i][j]=pre[i][j];
+		tawerna2.wyglad[i][j]=tawerna.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3637,7 +11473,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		magazyn.wyglad[i][j]=pre[i][j];
+		magazyn2.wyglad[i][j]=magazyn.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3649,7 +11485,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		mlyn.wyglad[i][j]=pre[i][j];
+		mlyn2.wyglad[i][j]=mlyn.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3661,7 +11497,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		plac.wyglad[i][j]=pre[i][j];
+		plac2.wyglad[i][j]=plac.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3673,7 +11509,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		akademia.wyglad[i][j]=pre[i][j];
+		akademia2.wyglad[i][j]=akademia.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3685,7 +11521,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		tartakb.wyglad[i][j]=pre[i][j];
+		tartakb2.wyglad[i][j]=tartakb.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3697,7 +11533,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		kamieniarz.wyglad[i][j]=pre[i][j];
+		kamieniarz2.wyglad[i][j]=kamieniarz.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3709,7 +11545,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		kolos.wyglad[i][j]=pre[i][j];
+		kolos2.wyglad[i][j]=kolos.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3721,7 +11557,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		kosciol.wyglad[i][j]=pre[i][j];
+		kosciol2.wyglad[i][j]=kosciol.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3733,7 +11569,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		katedra.wyglad[i][j]=pre[i][j];
+		katedra2.wyglad[i][j]=katedra.wyglad[i][j]=pre[i][j];
 		}
  }
  wczytaj_budynek.close();
@@ -3745,7 +11581,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		skarbiec.wyglad[i][j]=pre[i][j];
+		skarbiec2.wyglad[i][j]=skarbiec.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3757,7 +11593,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		fort.wyglad[i][j]=pre[i][j];
+		fort2.wyglad[i][j]=fort.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3769,7 +11605,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		weglarnia.wyglad[i][j]=pre[i][j];
+		weglarnia2.wyglad[i][j]=weglarnia.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3781,7 +11617,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		warsztat.wyglad[i][j]=pre[i][j];
+		warsztat2.wyglad[i][j]=warsztat.wyglad[i][j]=pre[i][j];
 		}
 	}
  	wczytaj_budynek.close();
@@ -3793,7 +11629,7 @@ for(int i=0;i<9;i++){
 }
 for(int i=0;i<9;i++){
 	for(int j=0;j<21;j++){
-		stajnia.wyglad[i][j]=pre[i][j];
+		stajnia2.wyglad[i][j]=stajnia.wyglad[i][j]=pre[i][j];
 		}
 	}
 
@@ -3801,6 +11637,10 @@ for(int i=0;i<9;i++){
  for(int i=0;i<10;i++){
 	miasto[i].x1=60;
 	miasto[i].y1=60;
+}
+ for(int i=0;i<10;i++){
+	miasto2[i].x1=60;
+	miasto2[i].y1=60;
 }
  
   /* Window size coordinates, be sure to start index at zero! */
@@ -3832,12 +11672,7 @@ for(int i=0;i<49;i++){
 }
  
  
- for(int i=0;i<49;i++){
-	for(int j=0;j<73;j++){
-		mapa_walki[i][j]=pre_walka[i][j];
-		cout << endl;
-	}
-}
+ 
  
 for(int i=0;i<137;i++){
 	for(int j=0;j<201;j++){
@@ -3854,11 +11689,11 @@ for(int i=0;i<137;i++){
 
 for(int i=0;i<80;i++){
 	for(int j=0;j<150;j++){
-		mapa_stolicy[i][j]=pre_miasto[i][j];
+		mapa_stolicy2[i][j]=mapa_stolicy[i][j]=pre_miasto[i][j];
 		if(mapa_stolicy[i][j]==dom2){
 			szansa=(rand()%100);
 			if(szansa>70){
-			mapa_stolicy[i][j]=dom;
+			mapa_stolicy2[i][j]=mapa_stolicy[i][j]=dom;
 			}
 		}
 		cout << endl;
@@ -3873,14 +11708,14 @@ for(int i=0;i<137;i++){
 
 for(int i=0;i<80;i++){
 	for(int j=0;j<150;j++){
-		bufor_miasta[i][j]=mapa_stolicy[i][j];
+		bufor_miasta2[i][j]=bufor_miasta[i][j]=mapa_stolicy[i][j];
 	}
 }
 
 for(int i=0;i<137;i++){
 	for(int j=0;j<201;j++){
 		if(mapa[i][j]==dom || mapa[i][j]==dom2)
-		zasieg_miast[i][j]='0';
+		zasieg_miast2[i][j]=zasieg_miast[i][j]='0';
 	}
 }
 
@@ -3893,12 +11728,12 @@ for(int i=0;i<137;i++){
 for(int i=0;i<137;i++){
 	for(int j=0;j<201;j++){
 		if(mapa[i][j]==dom || mapa[i][j]==dom2)
-		mapa_armii[i][j]='0';
+		mapa_armii2[i][j]=mapa_armii[i][j]='0';
 	}
 }
 for(int i=0;i<137;i++){
 	for(int j=0;j<201;j++){
-		mapa_jednostek[i][j]=' ';
+		mapa_jednostek2[i][j]=mapa_jednostek[i][j]=' ';
 	}
 }
 
@@ -3906,18 +11741,58 @@ struktura_budowli_osada aktualna;
 
 wczytaj.close();
 wczytaj_miasto.close();
- mapa_jednostek[107][64]=osadnik;
- mapa_jednostek[101][64]=robotnik;
- mapa_jednostek[102][64]=robotnik;
- mapa_jednostek[103][61]=osadnik;
+bool good=false;
+do{
+	x=(rand()%136);
+	y=(rand()%200);
+	if(mapa[x][y]==dom || mapa[x][y]==dom2)good=true;
+	
+}while(good==false);
+mapa_jednostek[x][y]=osadnik;
+good=false;
+do{
+	x=(rand()%136);
+	y=(rand()%200);
+	for(int i=x-14;i<x+15;i++){
+		for(int j=y-14;j<y+15;j++){
+			if(mapa_jednostek[i][j]!=' ')continue;
+		}
+	}
+	if(mapa[x][y]==dom || mapa[x][y]==dom2)good=true;
+	
+}while(good==false);
+mapa_jednostek2[x][y]=osadnik;
+good=false;
  
-miasto[1].produkcja=1000;
+miasto[1].produkcja=500;
+miasto2[1].produkcja=500;
 
 do{
+	if(tura==0){
+	system("CLS");
+	gotoxy(50,52);
+	cout<<"Wpisz nazwe gracza 1: ";
+	getline(cin,gracz1_nazwa);
+	system("CLS");
+	gotoxy(50,52);
+	cout<<"Wpisz nazwe gracza 2: ";
+	getline(cin,gracz2_nazwa);
+	system("CLS");
+}
 	gotoxy(50,50);
 cout << "Tura Gracza "<<gracz1_nazwa<<", wcisnij cokolwiek aby kontynuowac";
 getch();
 system("CLS");
+tura++;
+for(int i=0;i<137;i++){
+	for(int j=0;j<201;j++){
+		if(mapa_jednostek[i][j]!=' ' && mapa_jednostek[i][j]!='B'){
+			x=i;
+			y=j;
+			break;
+		}
+	}
+}
 while(gracz1==true){
 
 	
@@ -3941,7 +11816,7 @@ while(mapa_glowna==true){
 	}
 		for(int i=0;i<137;i++){
 		for(int j=0;j<201;j++){
-			if((mapa_jednostek[i][j]!=' '&& mapa_jednostek[i][j]!='B') || (mapa[i][j]==stolica || mapa[i][j]==osada)){
+			if((mapa_jednostek[i][j]!=' '&& mapa_jednostek[i][j]!='B') || (miasta[i][j]!=0)){
 				for(int p=i-4;p<=i+4;p++){
 					for(int o=j-4;o<=j+4;o++){
 						mgla_wojny[p][o]=true;
@@ -3953,7 +11828,7 @@ while(mapa_glowna==true){
 	}
 	for(int i=0;i<137;i++){
 		for(int j=0;j<201;j++){
-			if((mapa_jednostek[i][j]!=' ' && mapa_jednostek[i][j]!='B') && mgla_wojny[i][j]==true || (mapa[i][j]==stolica || mapa[i][j]==osada) && mgla_wojny[i][j]==true){
+			if((mapa_jednostek[i][j]!=' ' && mapa_jednostek[i][j]!='B') && mgla_wojny[i][j]==true || (miasta[i][j]!=0) && mgla_wojny[i][j]==true){
 				for(int p=i-4;p<=i+4;p++){
 					for(int o=j-4;o<=j+4;o++){
 						niewidocznosc[p][o]=true;
@@ -3977,7 +11852,7 @@ while(mapa_glowna==true){
 	if(huta.lvl>=1)przychod_kamien=przychod_kamien+przychod_kamien*0.3;
 	for(int i=1;i<11;i++)przychod_zywnosc=przychod_zywnosc+miasto[i].przychod_zywnosc;
 	if(hodowla==true)przychod_zywnosc=przychod_zywnosc*1.25;
-	for(int i=1;i<11;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc-ludnosc*0.0005;
+	for(int i=1;i<11;i++)miasto[i].przychod_zywnosc=miasto[i].przychod_zywnosc;
 	for(int i=1;i<11;i++)przychod_wiara=przychod_wiara+miasto[i].przychod_wiara;
 	if(ewangelizacja==true)przychod_wiara=przychod_wiara*1.25;
 	for(int i=1;i<11;i++)przychod_nauka=przychod_nauka+miasto[i].przychod_nauka;
@@ -3987,7 +11862,7 @@ while(mapa_glowna==true){
          
  
          
-         cout << endl <<"              MAPA SWIATA"<< endl << endl;
+         cout << endl <<"GRACZ: "<<gracz1_nazwa<<" - - - MAPA SWIATA - - - TURA: "<<tura<< endl << endl;
         if(wybor_map==0){
 		
 for(int i=x-19;i<=x+19;i++){
@@ -4010,13 +11885,13 @@ for(int i=x-19;i<=x+19;i++){
         			}
 				}else{
 				
-        		if(mapa[i][j]==stolica){
+        		if(miasta[i][j]!=0){
         			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
         			cout << mapa[i][j];
         			SetConsoleTextAttribute( hOut, 8 );
 						}else{
-				if(mapa[i][j]==osada){
-                        SetConsoleTextAttribute( hOut,  4 |BACKGROUND_GREEN );
+				if(miasta2[i][j]!=0){
+                        SetConsoleTextAttribute( hOut,  9 |BACKGROUND_GREEN );
                         cout << mapa[i][j];
                         SetConsoleTextAttribute( hOut, 8 );
                         }else{
@@ -4072,6 +11947,11 @@ for(int i=x-19;i<=x+19;i++){
         			cout << mapa_jednostek[i][j];
         			SetConsoleTextAttribute( hOut, 8 );
 						}else{
+				if(mapa_jednostek2[i][j]!=' '){
+        			SetConsoleTextAttribute( hOut, 9 | BACKGROUND_GREEN );
+        			cout << mapa_jednostek2[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
                 if(mapa[i][j]==dom){
                                     SetConsoleTextAttribute( hOut, 2 );
                                     cout << mapa[i][j];
@@ -4100,6 +11980,7 @@ for(int i=x-19;i<=x+19;i++){
                 }
             	}
                 }
+            	}
             	}
             	}
             	}
@@ -4237,8 +12118,7 @@ for(int i=0;i<komunikat.size()/7;i++){
 }
 gotoxy(8,48);
 cout << "Pozostalo ruchow: "<<nastepna_tura << " z " << nastepna_tura_domyslnie;
-gotoxy(110,4);
- cout << "    BUDOWA " << budowa << "    WYBOR JEDNOSTKI " << wybor_jednostki <<"    MENU " << menu << "     MENU BUDOWY " << menu_budowy << "   Liczba miast "<<liczba_miast << " ilosc barbow "<<ilosc_barbarzyncow;
+
 if(wybor_jednostki==true){
 	gotoxy(110,5);
 	if(mapa_jednostek[x][y]!='A')
@@ -4692,19 +12572,19 @@ if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&bud
               continue;
               }
               ////////armie////////
-if( ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&(mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A'||mapa_jednostek[x-1][y]=='B') && mapa_jednostek[x][y]=='A'&&mapa_armii[x-1][y]=='0'){
+if( ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&(mapa_jednostek[x-1][y]=='O'|| mapa_jednostek[x-1][y]=='R'||mapa_jednostek[x-1][y]=='A'||mapa_jednostek[x-1][y]=='B'||mapa_jednostek2[x-1][y]!=' ') && mapa_jednostek[x][y]=='A'&&mapa_armii[x-1][y]=='0'){
               x--;
               continue;
               }
-if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' ||mapa_jednostek[x+1][y]=='B' )&& mapa_jednostek[x][y]=='A'&&mapa_armii[x+1][y]=='0'){
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek[x+1][y]=='O' ||mapa_jednostek[x+1][y]=='R' ||mapa_jednostek[x+1][y]=='A' ||mapa_jednostek[x+1][y]=='B'||mapa_jednostek2[x+1][y]!=' ' )&& mapa_jednostek[x][y]=='A'&&mapa_armii[x+1][y]=='0'){
               x++;
               continue;
               }
-if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A'||mapa_jednostek[x][y-1]=='B' )&& mapa_jednostek[x][y]=='A'&&mapa_armii[x][y-1]=='0'){
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && (mapa_jednostek[x][y-1]=='O' ||mapa_jednostek[x][y-1]=='R' ||mapa_jednostek[x][y-1]=='A'||mapa_jednostek[x][y-1]=='B' ||mapa_jednostek2[x][y-1]!=' ')&& mapa_jednostek[x][y]=='A'&&mapa_armii[x][y-1]=='0'){
               y--;
               continue;
               }
-if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R'|| mapa_jednostek[x][y+1]=='A' || mapa_jednostek[x][y+1]=='B')&& mapa_jednostek[x][y]=='A'&&mapa_armii[x][y+1]=='0'){
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && (mapa_jednostek[x][y+1]=='O' ||mapa_jednostek[x][y+1]=='R'|| mapa_jednostek[x][y+1]=='A' || mapa_jednostek[x][y+1]=='B'||mapa_jednostek2[x][y+1]!=' ')&& mapa_jednostek[x][y]=='A'&&mapa_armii[x][y+1]=='0'){
               y++;
               continue;
               }
@@ -4744,10 +12624,10 @@ if(ster=='q' && lista_miast==true && x0!=8){
 if(ster=='q' && menu==true && x0==3){
 	nastepna_tura=nastepna_tura_domyslnie;
 	gracz1=false;
-	//gracz2=true;
-	ruch_barbarzyncow=true;
+	gracz2=true;
+
 	for(int i=1;i<11;i++){
-	miasto[i].obrona+=ludnosc*0.00005; 
+	miasto[i].obrona+=miasto[i].ludnosc*0.00005; 
 	}
 	for(int i=1;i<11;i++){
 	miasto[i].produkcja+=miasto[i].przychod_produkcja; 
@@ -4823,7 +12703,7 @@ if(ster=='e' && menu==true && mapa[x][y]==osada || ster=='e' && menu==true && ma
 	mapa_glowna=false;
 	xd=x;
 	yd=y;
-	if(mapa[x][y]==stolica){
+	if(miasta[x][y]==1){
 	bmapa_stolicy=true;
 	x=40;
 	xm=1;
@@ -5234,7 +13114,7 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 	}
 	for(int i=x-3;i<=x+3;i++){
 		for(int j=y-3;j<=y+3;j++){
-			if(mapa[i][j]==stolica || mapa[i][j]==osada || mapa_jednostek[x][y]=='B'){
+			if(mapa[i][j]==stolica || mapa[i][j]==osada || mapa_jednostek[x][y]=='B' && mapa_jednostek2[x][y]!=' '){
 				komunikat = "Jestes za blisko innego miasta lub za blisko jednostek wroga moj Panie";
 				blisko=true;
 			}
@@ -5260,7 +13140,7 @@ if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jed
 	
 	for(int i=x-5;i<x+5;i++){
 		for(int j=y-5;j<y+5;j++){
-			if(mapa[i][j]!=woda && mapa[i][j]!=gora && zasieg_miast[i][j]=='0'){
+			if(mapa[i][j]!=woda && mapa[i][j]!=gora && zasieg_miast[i][j]=='0' && (teretorium[i][j]=='x' ||teretorium[i][j]=='1' )){
 				zasieg_miast[i][j]=liczba_miast-208;
 				teretorium[i][j]='1';
 				if(mapa[i][j]==tartak)mapa_tartak[i][j]=liczba_miast;
@@ -5415,40 +13295,40 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==fals
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	mapa_jednostek[x][y]='O';
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='B' && mapa_jednostek[x-1][y]!='A'){
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='B' && mapa_jednostek[x-1][y]!='A'&& mapa_jednostek2[x-1][y]==' '){
 
 	mapa_jednostek[x-1][y]='O';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='B' && mapa_jednostek[x-1][y+1]!='A'){
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='B' && mapa_jednostek[x-1][y+1]!='A'&& mapa_jednostek2[x-1][y+1]==' '){
 	mapa_jednostek[x-1][y+1]='O';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek[x-1][y-1]!='A'){
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek[x-1][y-1]!='A'&& mapa_jednostek2[x-1][y-1]==' '){
 	mapa_jednostek[x-1][y-1]='O';
 	}
 		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='B' && mapa_jednostek[x][y+1]!='A'){
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='B' && mapa_jednostek[x][y+1]!='A'&& mapa_jednostek2[x][y+1]==' '){
 
 	mapa_jednostek[x][y+1]='O';
 	}
 		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek[x][y-1]!='A'){
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek[x][y-1]!='A'&& mapa_jednostek2[x][y-1]==' '){
 
 	mapa_jednostek[x][y-1]='O';
 	}
 		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='A'&& mapa_jednostek[x+1][y-1]!='B'){
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='A'&& mapa_jednostek[x+1][y-1]!='B'&& mapa_jednostek2[x+1][y-1]==' '){
 
 	mapa_jednostek[x+1][y-1]='O';
 	}
 		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='A'&& mapa_jednostek[x+1][y]!='B'){
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='A'&& mapa_jednostek[x+1][y]!='B'&& mapa_jednostek2[x+1][y]==' '){
 
 	mapa_jednostek[x+1][y]='O';
 	}
 		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='A'&& mapa_jednostek[x+1][y+1]!='B'){
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='A'&& mapa_jednostek[x+1][y+1]!='B'&& mapa_jednostek2[x+1][y+1]==' '){
 
 	mapa_jednostek[x+1][y+1]='O';
 	}
@@ -5456,7 +13336,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='O' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='O' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek2[x][y]==' '&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
 		mapa_jednostek[i][j]=bufor_mjednostek[i][j];
@@ -5476,40 +13356,40 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	mapa_jednostek[x][y]='R';
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik&& mapa_jednostek[x-1][y]!='B'){
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik&& mapa_jednostek[x-1][y]!='B'&& mapa_jednostek2[x-1][y]==' '){
 
 	mapa_jednostek[x-1][y]='R';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa_jednostek[x-1][y+1]!='B'){
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa_jednostek[x-1][y+1]!='B'&& mapa_jednostek2[x-1][y+1]==' '){
 	mapa_jednostek[x-1][y+1]='R';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa_jednostek[x-1][y-1]!='B'){
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek2[x-1][y-1]==' '){
 	mapa_jednostek[x-1][y-1]='R';
 	}
 		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik&& mapa_jednostek[x][y+1]!='B'){
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik&& mapa_jednostek[x][y+1]!='B'&& mapa_jednostek2[x][y+1]==' '){
 
 	mapa_jednostek[x][y+1]='R';
 	}
 		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa_jednostek[x][y-1]!='B'){
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek2[x][y-1]==' '){
 
 	mapa_jednostek[x][y-1]='R';
 	}
 		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa_jednostek[x+1][y-1]!='B'){
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa_jednostek[x+1][y-1]!='B'&& mapa_jednostek2[x+1][y-1]==' '){
 
 	mapa_jednostek[x+1][y-1]='R';
 	}
 		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa_jednostek[x+1][y]!='B'){
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa_jednostek[x+1][y]!='B'&& mapa_jednostek2[x+1][y]==' '){
 
 	mapa_jednostek[x+1][y]='R';
 	}
 		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa_jednostek[x+1][y+1]!='B'){
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa_jednostek[x+1][y+1]!='B' && mapa_jednostek2[x+1][y+1]==' '){
 
 	mapa_jednostek[x+1][y+1]='R';
 	}
@@ -5517,7 +13397,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && bufor_mjednostek[x][y]!='R' && x0==0 && ruch==true && nawigacja==false && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && bufor_mjednostek[x][y]!='R' && x0==0 && ruch==true && nawigacja==false && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B' && mapa_jednostek2[x][y]==' '&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
 		
@@ -5539,40 +13419,40 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	bufor_mjednostek[x][y]=mapa_jednostek[x][y];
 	mapa_jednostek[x][y]='A';
 	bufor_mjednostek[x-1][y]=mapa_jednostek[x-1][y];
-	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='O'&& mapa_jednostek[x-1][y]!='B' && mapa_jednostek[x-1][y]!='A'){
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek[x-1][y]!=osadnik && mapa_jednostek[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]!='O'&& mapa_jednostek[x-1][y]!='B' && mapa_jednostek[x-1][y]!='A'&& mapa_jednostek2[x-1][y]==' '){
 
 	mapa_jednostek[x-1][y]='A';
 	}
 	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
-	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='O'&& mapa_jednostek[x-1][y+1]!='B' && mapa_jednostek[x-1][y+1]!='A'){
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]!='O'&& mapa_jednostek[x-1][y+1]!='B' && mapa_jednostek[x-1][y+1]!='A'&& mapa_jednostek2[x-1][y+1]==' '){
 	mapa_jednostek[x-1][y+1]='A';
 	}
 	bufor_mjednostek[x-1][y-1]=mapa_jednostek[x-1][y-1];
-	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='O'&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek[x-1][y-1]!='A'){
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek[x-1][y-1]!=osadnik && mapa_jednostek[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]!='O'&& mapa_jednostek[x-1][y-1]!='B'&& mapa_jednostek[x-1][y-1]!='A'&& mapa_jednostek2[x-1][y-1]==' '){
 	mapa_jednostek[x-1][y-1]='A';
 	}
 		bufor_mjednostek[x][y+1]=mapa_jednostek[x][y+1];
-	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='O'&& mapa_jednostek[x][y+1]!='B' && mapa_jednostek[x][y+1]!='A'){
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek[x][y+1]!=osadnik && mapa_jednostek[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]!='O'&& mapa_jednostek[x][y+1]!='B' && mapa_jednostek[x][y+1]!='A'&& mapa_jednostek2[x][y+1]==' '){
 
 	mapa_jednostek[x][y+1]='A';
 	}
 		bufor_mjednostek[x][y-1]=mapa_jednostek[x][y-1];
-	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='O'&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek[x][y-1]!='A'){
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek[x][y-1]!=osadnik && mapa_jednostek[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]!='O'&& mapa_jednostek[x][y-1]!='B'&& mapa_jednostek[x][y-1]!='A'&& mapa_jednostek2[x][y-1]==' '){
 
 	mapa_jednostek[x][y-1]='A';
 	}
 		bufor_mjednostek[x+1][y-1]=mapa_jednostek[x+1][y-1];
-	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='O'&& mapa_jednostek[x+1][y-1]!='B'&& mapa_jednostek[x+1][y-1]!='B'){
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek[x+1][y-1]!=osadnik && mapa_jednostek[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek[x+1][y-1]!='O'&& mapa_jednostek[x+1][y-1]!='B'&& mapa_jednostek[x+1][y-1]!='B'&& mapa_jednostek2[x+1][y-1]==' '){
 
 	mapa_jednostek[x+1][y-1]='A';
 	}
 		bufor_mjednostek[x+1][y]=mapa_jednostek[x+1][y];
-	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='O'&& mapa_jednostek[x+1][y]!='B'&& mapa_jednostek[x+1][y]!='B'){
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek[x+1][y]!=osadnik && mapa_jednostek[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek[x+1][y]!='O'&& mapa_jednostek[x+1][y]!='B'&& mapa_jednostek[x+1][y]!='B'&& mapa_jednostek2[x+1][y]==' '){
 
 	mapa_jednostek[x+1][y]='A';
 	}
 		bufor_mjednostek[x+1][y+1]=mapa_jednostek[x+1][y+1];
-	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='O'&& mapa_jednostek[x+1][y+1]!='B'&& mapa_jednostek[x+1][y+1]!='B'){
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek[x+1][y+1]!=osadnik && mapa_jednostek[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek[x+1][y+1]!='O'&& mapa_jednostek[x+1][y+1]!='B'&& mapa_jednostek[x+1][y+1]!='B' && mapa_jednostek2[x+1][y+1]==' '){
 
 	mapa_jednostek[x+1][y+1]='A';
 	}
@@ -5580,11 +13460,30 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && (mapa_jednostek[x][y]=='A'||mapa_jednostek[x][y]=='B') && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='A' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='O'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && (mapa_jednostek[x][y]=='A'||mapa_jednostek[x][y]=='B'|| mapa_jednostek2[x][y]!=' ') && x0==0 && ruch==true && nawigacja==false && bufor_mjednostek[x][y]!='A' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='O'){
 	
 		if(mapa_jednostek[x][y]=='B'){
-			walka_barbarzyncy(armia[mapa_armii[x][y]-48],true,false,&zloto,&ilosc_barbarzyncow);
+			walka_barbarzyncy(armia[mapa_armii[xd][yd]-48],true,false,&zloto,&ilosc_barbarzyncow,&wygrana);
+			if(wygrana==false){
+			
+			mapa_jednostek[xd][yd]=' ';
+			armia[mapa_armii[xd][yd]].atak=0;
+			armia[mapa_armii[xd][yd]].obrona=0;
+			armia[mapa_armii[xd][yd]].miasto_domowe=0;
+			armia[mapa_armii[xd][yd]].nazwa=" ";
+			armia[mapa_armii[xd][yd]].utrzymanie=0;
+			armia[mapa_armii[xd][yd]].wielkosc=0;
+			mapa_armii[xd][yd]='0';
+			liczba_armii--;
+			continue;
+			}else
+			ilosc_barbarzyncow--;
 		}
+			if(mapa_jednostek2[x][y]!='A'){
+				mapa_jednostek2[x][y]=' ';
+				komunikat="Zniszczyes wrogiego cywila";
+			}
+		
 			
 		for(int i=xd-1;i<=xd+1;i++){
 		for(int j=yd-1;j<=yd+1;j++){
@@ -5613,7 +13512,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==fals
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora  && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa_jednostek[i][j]!='B'){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora  && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa_jednostek[i][j]!='B'&& mapa_jednostek2[i][j]==' '){
 
 	mapa_jednostek[i][j]='O';
 	}
@@ -5622,7 +13521,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && bufor_mjednostek[x][y]!='O' && x0==0 && ruch==true && nawigacja==true && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='O' && bufor_mjednostek[x][y]!='O' && x0==0 && ruch==true && nawigacja==true && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='R'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek2[x][y]==' '&& mapa_jednostek[x][y]!='A'){
 		for(int i=xd-2;i<=xd+2;i++){
 		for(int j=yd-2;j<=yd+2;j++){
 		
@@ -5646,7 +13545,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa_jednostek[i][j]!='B' ){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik && mapa_jednostek[i][j]!='B'  && mapa_jednostek2[i][j]==' ' ){
 
 	mapa_jednostek[i][j]='R';
 	}
@@ -5656,7 +13555,31 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='A' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='R'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && (mapa_jednostek[x][y]=='A' ||mapa_jednostek[x][y]=='B'||mapa_jednostek2[x][y]!=' ') && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='A' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='R'){
+			if(mapa_jednostek[x][y]=='B'){
+			walka_barbarzyncy(armia[mapa_armii[xd][yd]-48],true,false,&zloto,&ilosc_barbarzyncow,&wygrana);
+			if(wygrana==false){
+			
+			mapa_jednostek[xd][yd]=' ';
+			armia[mapa_armii[xd][yd]].atak=0;
+			armia[mapa_armii[xd][yd]].obrona=0;
+			armia[mapa_armii[xd][yd]].miasto_domowe=0;
+			armia[mapa_armii[xd][yd]].nazwa=" ";
+			armia[mapa_armii[xd][yd]].utrzymanie=0;
+			armia[mapa_armii[xd][yd]].wielkosc=0;
+			mapa_armii[xd][yd]='0';
+			liczba_armii--;
+			continue;
+			}else
+			ilosc_barbarzyncow--;
+		}
+		
+			if(mapa_jednostek2[x][y]!='A'){
+				mapa_jednostek2[x][y]=' ';
+				komunikat="Zniszczyes wrogiego cywila";
+			}
+		
+		
 		for(int i=xd-2;i<=xd+2;i++){
 		for(int j=yd-2;j<=yd+2;j++){
 		
@@ -5685,7 +13608,7 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	for(int i=x-2;i<=x+2;i++){
 		for(int j=y-2;j<=y+2;j++){
 				bufor_mjednostek[i][j]=mapa_jednostek[i][j];
-	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik &&mapa_jednostek[i][j]!='B' ){
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek[i][j]!=osadnik && mapa_jednostek[i][j]!=robotnik &&mapa_jednostek[i][j]!='B'&&mapa_jednostek2[i][j]==' ' ){
 
 	mapa_jednostek[i][j]='A';
 	}
@@ -5695,7 +13618,9 @@ if(ster=='q' && wybor_jednostki==true && mapa_jednostek[x][y]=='A' && menu==fals
 	ruch=true;
 }
 
-if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='R' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='B'&& mapa_jednostek[x][y]!='A'){
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && x0==0 && ruch==true && nawigacja==true && bufor_mjednostek[x][y]!='R' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada&& mapa_jednostek[x][y]!='B'&& mapa_jednostek2[x][y]==' ' && mapa_jednostek[x][y]!='O'&& mapa_jednostek[x][y]!='A'){
+	
+		
 		for(int i=xd-2;i<=xd+2;i++){
 		for(int j=yd-2;j<=yd+2;j++){
 		
@@ -5733,11 +13658,12 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
  	stajnia.lvl=4;
  	warsztat.lvl=2;
  	plac.lvl=1;
- 	miasto[1].ludnosc=30000;
+ 	miasto[1].ludnosc=5000;
  }
  
  if(ster=='b'){
  	mapa_jednostek[x][y]='B';
+ 	ilosc_barbarzyncow++;
  }
   if(ster=='o'){
  	mapa_jednostek[x][y]='O';
@@ -5746,10 +13672,11 @@ if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R'
  	mapa_jednostek[x][y]='R';
  }
  if(ster=='l'){
- 	walka_barbarzyncy(armia[1],true,false,&zloto,&ilosc_barbarzyncow);
+ 	walka_barbarzyncy(armia[1],true,false,&zloto,&ilosc_barbarzyncow,&wygrana);
  }
  if(ster=='n'){
  	mapa_jednostek[x][y]='A';
+ 	mapa_armii[x][y]=liczba_armii+49;
  	liczba_armii++;
  	armia[liczba_armii].ciezka_jazda=5;
  	armia[liczba_armii].pikinierzy=5;
@@ -6902,10 +14829,6 @@ for(int i=0;i<28;i++)cout << blok;
 
 	}
 
-gotoxy(8,62);
-		cout << "BUDOWA_MIASTO " << budowa_miasto << "  x0 " << x0 << "  bufor budowy " << bufor_budowa_miasto << "  ratuszlvl "<<ratusz.lvl;
-    	
-    	
     	ster=getch();
     			if(budowa_miasto==true){
 		for(int i=0;i<80;i++){
@@ -10543,7 +18466,6701 @@ if(ster=='q' && x0==8 && rekrutacja==true){
 }
 }
 
+////////////////////////////////////////////////////////GRACZ 2
+
+system("CLS");
+gotoxy(50,50);
+cout << "Tura Gracza "<<gracz2_nazwa<<", wcisnij cokolwiek aby kontynuowac";
+getch();
+system("CLS");
+for(int i=0;i<137;i++){
+	for(int j=0;j<201;j++){
+		if(mapa_jednostek2[i][j]!=' '){
+			x=i;
+			y=j;
+			break;
+		}
+	}
+}
+
+while(gracz2==true){
+
+	
+
+while(mapa_glowna==true){
+	h=0;
+	przychod_zloto2=0;
+	przychod_drewno2=0;
+	przychod_kamien2=0;
+	przychod_zywnosc2=0;
+	przychod_wiara2=0;
+	przychod_nauka2=0;
+	
+	////mgla wojny////
+
+		for(int i=0;i<127;i++){
+		for(int j=0;j<201;j++){
+			niewidocznosc2[i][j]=false;
+			
+		}
+	}
+		for(int i=0;i<137;i++){
+		for(int j=0;j<201;j++){
+			if((mapa_jednostek2[i][j]!=' '&& mapa_jednostek[i][j]!='B') || (miasta2[i][j]!=0)){
+				for(int p=i-4;p<=i+4;p++){
+					for(int o=j-4;o<=j+4;o++){
+						mgla_wojny2[p][o]=true;
+						bufor_widocznosci2[p][o]=mapa[p][o];
+					}
+				}
+			}
+		}
+	}
+	for(int i=0;i<137;i++){
+		for(int j=0;j<201;j++){
+			if((mapa_jednostek2[i][j]!=' ' && mapa_jednostek[i][j]!='B') && mgla_wojny2[i][j]==true || (miasta2[i][j]!=0) && mgla_wojny2[i][j]==true){
+				for(int p=i-4;p<=i+4;p++){
+					for(int o=j-4;o<=j+4;o++){
+						niewidocznosc2[p][o]=true;
+					}
+				}
+			}
+		}
+	}
+
+	for(int i=1;i<11;i++)przychod_zloto2=przychod_zloto2+miasto2[i].przychod_zloto;
+	if(waluta2==true)przychod_zloto2=przychod_zloto2*1.25;
+	for(int i=0;i<137;i++){
+		for(int j=0;j<201;j++){
+			if(mapa_armii2[i][j]>0){
+				przychod_zloto2-+armia2[mapa_armii[i][j]].utrzymanie;
+			}
+		}
+	}
+	for(int i=1;i<11;i++)przychod_drewno2=przychod_drewno2+miasto2[i].przychod_drewno;
+	for(int i=1;i<11;i++)przychod_kamien2=przychod_kamien2+miasto2[i].przychod_kamien;
+	if(huta2.lvl>=1)przychod_kamien2=przychod_kamien2+przychod_kamien2*0.3;
+	for(int i=1;i<11;i++)przychod_zywnosc2=przychod_zywnosc2+miasto2[i].przychod_zywnosc;
+	if(hodowla2==true)przychod_zywnosc2=przychod_zywnosc2*1.25;
+	for(int i=1;i<11;i++)miasto2[i].przychod_zywnosc=miasto2[i].przychod_zywnosc;
+	for(int i=1;i<11;i++)przychod_wiara2=przychod_wiara2+miasto2[i].przychod_wiara;
+	if(ewangelizacja2==true)przychod_wiara2=przychod_wiara2*1.25;
+	for(int i=1;i<11;i++)przychod_nauka2=przychod_nauka2+miasto2[i].przychod_nauka;
+	if(gildie2==true)przychod_nauka2=przychod_nauka2*1.25;
+	
+         cls();
+         
+ 
+         
+         cout << endl <<"GRACZ: "<<gracz2_nazwa<<" - - - MAPA SWIATA - - - TURA: "<<tura<< endl << endl;
+        if(wybor_map==0){
+		
+for(int i=x-19;i<=x+19;i++){
+	cout << "   ";
+        for(int j=y-19;j<=y+19;j++){
+        		if(j==(y+19) || i==(x+19) || j==(y-19) || i==(x-19))cout << blok;
+        		else{
+        		if(mgla_wojny2[i][j]==false)cout<<" ";
+        		else{
+        		if(niewidocznosc2[i][j]==false){
+        			    if(mapa[i][j]==woda){
+                         SetConsoleTextAttribute( hOut, 9  );
+                    	cout << mapa[i][j];
+                    	SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+						
+        		    SetConsoleTextAttribute( hOut, 8 | BACKGROUND_GREEN );
+        			cout << bufor_widocznosci2[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );	
+        			}
+				}else{
+				
+        		if(miasta[i][j]!=0){
+        			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
+        			cout << mapa[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
+				if(miasta2[i][j]!=0){
+                        SetConsoleTextAttribute( hOut,  9 |BACKGROUND_GREEN );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+				if(mapa[i][j]==farma){
+                        SetConsoleTextAttribute( hOut,  14 );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+				if(mapa[i][j]==kopalnia){
+                        SetConsoleTextAttribute( hOut,  5  | BACKGROUND_GREEN);
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+				if(mapa[i][j]==tartak){
+                        SetConsoleTextAttribute( hOut,  5 |BACKGROUND_GREEN );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{       
+				if(mapa[i][j]==wioska){
+                        SetConsoleTextAttribute( hOut,  5 |BACKGROUND_GREEN );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{                   	
+                if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek2[i][j]!=' ' && budowa==true ||mapa_jednostek2[i][j]!='B' &&mapa_jednostek2[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek2[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{	
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek2[i][j]!=' ' && budowa==true ||mapa_jednostek2[i][j]!='B' &&mapa_jednostek2[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek2[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_jednostek[i][j]!='B' &&mapa_jednostek2[i][j]!=' ' && budowa==true ||mapa_jednostek2[i][j]!='B' && mapa_jednostek2[i][j]!=' ' && ruch==true){
+                        SetConsoleTextAttribute( hOut,  14 |BACKGROUND_GREEN );
+                        cout << mapa_jednostek2[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+
+                        	
+				if(mapa_jednostek[i][j]=='B'){
+        			SetConsoleTextAttribute( hOut, 4 | BACKGROUND_GREEN );
+        			cout << mapa_jednostek[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
+				if(mapa_jednostek[i][j]!=' '){
+        			SetConsoleTextAttribute( hOut, 12 | BACKGROUND_GREEN );
+        			cout << mapa_jednostek[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
+				if(mapa_jednostek2[i][j]!=' '){
+        			SetConsoleTextAttribute( hOut, 9 | BACKGROUND_GREEN );
+        			cout << mapa_jednostek2[i][j];
+        			SetConsoleTextAttribute( hOut, 8 );
+						}else{
+                if(mapa[i][j]==dom){
+                                    SetConsoleTextAttribute( hOut, 2 );
+                                    cout << mapa[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                                    
+                if(mapa[i][j]==dom2){
+                                     SetConsoleTextAttribute( hOut, 10 );
+                                    cout << mapa[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa[i][j]==woda){
+                                     SetConsoleTextAttribute( hOut, 9  );
+                                    cout << mapa[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa[i][j]==gora){
+                                     SetConsoleTextAttribute( hOut, 7 | BACKGROUND_GREEN );
+                                     cout << mapa[i][j];
+                                     SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+
+                cout << mapa[i][j];
+                
+                }
+                }
+            	}
+                }
+            	}
+            	}
+            	}
+            	}
+                }
+            	}
+            	}
+            	}
+            	}
+            	}
+            	}
+                }
+            	}
+            	}
+            	}
+                }
+            	}
+			
+                
+        cout << endl;
+        }
+    	}
+    	
+    	
+    	
+    if(wybor_map==1){
+    	for(int i=x-19;i<=x+19;i++){
+	cout << "   ";
+        for(int j=y-19;j<=y+19;j++){
+        		if(j==(y+19) || i==(x+19) || j==(y-19) || i==(x-19))cout << blok;
+        		else{
+				if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+        		}else{
+        			cout << zasieg_miast2[i][j];
+            	}
+		}
+     	}
+        cout << endl;
+        }
+    	}
+    	
+    	    if(wybor_map==2){
+    	for(int i=x-19;i<=x+19;i++){
+	cout << "   ";
+        for(int j=y-19;j<=y+19;j++){
+        		if(j==(y+19) || i==(x+19) || j==(y-19) || i==(x-19))cout << blok;
+        		else{
+				if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+        		}else{
+        			if(teretorium[i][j]=='1'){
+        				SetConsoleTextAttribute( hOut, 12  );
+        				cout << teretorium[i][j];
+        				SetConsoleTextAttribute( hOut, 8 );
+					}else{
+						if(teretorium[i][j]=='2'){
+						SetConsoleTextAttribute( hOut, 9  );	
+						cout << teretorium[i][j];
+        				SetConsoleTextAttribute( hOut, 8 );
+						}else
+        			cout << teretorium[i][j];
+            	}
+		}
+     	}
+     	}
+        cout << endl;
+        
+    	}
+	}
+	
+	if(wybor_map==3){
+    	for(int i=x-19;i<=x+19;i++){
+	cout << "   ";
+        for(int j=y-19;j<=y+19;j++){
+        		if(j==(y+19) || i==(x+19) || j==(y-19) || i==(x-19))cout << blok;
+        		else{
+				if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa_armii2[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+        		}else{
+        			if(mapa_armii2[i][j]!='0'){
+        				SetConsoleTextAttribute( hOut, 12  );
+        				cout << mapa_armii2[i][j];
+        				SetConsoleTextAttribute( hOut, 8 );
+					}else
+        			cout << mapa_armii2[i][j];
+
+		}
+     	}
+     	}
+        cout << endl;
+        
+    	}
+	}
+    	
+        cout << endl;
+cout << "( " << y <<" , "<<x<<" )   "; 
+if(miasta2[x][y]>=1)cout << miasto2[miasta[x][y]].nazwa;
+if(mapa_armii2[x][y]>48)cout << armia2[mapa_armii[x][y]-48].nazwa;
+
+if(mapa_tartak2[x][y]>=1)cout << "Tartak miasta " << miasto2[mapa_tartak2[x][y]].nazwa;
+if(mapa_kopalnia2[x][y]>=1)cout << "Kopalnia miasta " << miasto2[mapa_kopalnia2[x][y]].nazwa;
+if(mapa_farma2[x][y]>=1)cout << "Farma miasta " << miasto2[mapa_farma2[x][y]].nazwa;
+if(mapa_farma2[x][y]==0)cout << "                          ";
+if(mapa_wioska2[x][y]>=1)cout << "Wioska miasta " << miasto2[mapa_wioska2[x][y]].nazwa;
+if(mapa_wioska2[x][y]==0)cout << "                          ";
+if(mapa_jednostek[x][y]=='B')cout << "Barbarzyncy " << miasto2[mapa_wioska2[x][y]].nazwa;
+if(mapa_jednostek[x][y]!='B')cout << "                          ";
+if(mapa_kopalnia2[x][y]==0)cout << "                          ";
+if(mapa_tartak2[x][y]==0)cout << "                          ";
+if(miasta2[x][y]==0)cout << "                          ";
+gotoxy(54,1);
+cout << "KOMUNIKATY";
+gotoxy(44,3);
+for(int i=0;i<komunikat.size()/7;i++){
+	
+	for(int j=0;j<30;j++){
+		if(j==0 || i==0 || j==29 || i==(komunikat.size()/7-1))cout << blok;
+		else{
+		if(h<komunikat.size()){
+		
+		cout << komunikat[h];
+		h++;
+	}else
+	cout << " ";
+		
+	}
+	}
+	gotoxy(44,4+i);
+}
+gotoxy(8,48);
+cout << "Pozostalo ruchow: "<<nastepna_tura2 << " z " << nastepna_tura_domyslnie2;
+
+if(wybor_jednostki==true){
+	gotoxy(110,5);
+	if(mapa_jednostek2[x][y]!='A')
+	cout << "Wybrano: " << jednostki[mapa_jednostek2[x][y]];
+	else
+	cout << "Wybrano: " << armia2[mapa_armii2[x][y]-48].nazwa;
+}
+SetConsoleTextAttribute( hOut, 10 );
+gotoxy(8,50);
+cout << "Zywnosc: "<< zywnosc2<<"("<<przychod_zywnosc2<<")" <<"  Drewno: " << drewno2 <<"("<<przychod_drewno2<<")"<< "  Kamien: " << kamien2<<"("<<przychod_kamien2<<")"<< "  Wiara: " << wiara2<<"("<<przychod_wiara2<<")" << "  Max. Zolnierzy: " << max_zolnierzy2<<"("<<liczba_zolnierzy2<<")" << "  Zloto: " << zloto2 <<"("<<przychod_zloto2<<")"<< "  Nauka: "<<nauka2<<"("<<przychod_nauka2<<")";
+SetConsoleTextAttribute( hOut, 8 );
+
+if(menu==true){
+
+
+gotoxy(86,1);
+cout << "MENU";
+gotoxy(76,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(76,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Powrot do stolicy      "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Powrot do stolicy      "<<blok; 
+gotoxy(76,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Lista Miast            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Lista Miast            "<<blok; 
+gotoxy(76,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Dzialania jednostki    "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Dzialania jednostki    "<<blok; 
+gotoxy(76,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Nestepna Tura          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Nastepna Tura          "<<blok; 
+gotoxy(76,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Anuluj                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Anuluj                 "<<blok; 
+gotoxy(76,10);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,11);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+if(menu==false && menu_budowy==false && wybor_jednostki==true){
+
+
+gotoxy(81,1);
+cout << "DZIALNIA JEDNOSTKI";
+gotoxy(76,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(76,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Ruch                   "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Ruch                   "<<blok; 
+gotoxy(76,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Atakuj                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Atakuj                 "<<blok; 
+gotoxy(76,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Buduj                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Buduj                  "<<blok; 
+
+gotoxy(76,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+
+gotoxy(76,9);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,10);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+if(nazwa==true){
+	gotoxy(54,25);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(54,26);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,28);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,29);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(90,27);
+	cout << "   " << blok;
+	gotoxy(54,27);
+	cout <<blok<< "  Wpisz nazwe miasta: ";
+	getline(cin, miasto2[liczba_miast2-1].nazwa);
+
+	gotoxy(54,27);
+	for(int i=0;i<28;i++)cout << blok;
+	nazwa=false;
+	system("CLS");
+	continue;
+}
+
+
+if(menu_budowy==true && mapa_jednostek2[x][y]=='R'){
+gotoxy(81,1);
+cout << "BUDOWA                    ";
+gotoxy(76,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(76,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Farma                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Farma                  "<<blok; 
+gotoxy(76,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Kopalnia               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Kopalnia               "<<blok; 
+gotoxy(76,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Tartak                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Tartak                 "<<blok; 
+gotoxy(76,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Wioska                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Wioska                 "<<blok; 
+
+gotoxy(76,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Anuluj                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Anuluj                 "<<blok; 
+
+gotoxy(76,10);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,11);
+for(int i=0;i<28;i++)cout << blok;
+
+}
+	
+	
+	
+	if(lista_miast==true){
+	
+	
+gotoxy(75,1);
+cout << "        LISTA MIAST      ";
+gotoxy(76,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(76,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(76,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<miasto2[1].nazwa; 
+for(int i=miasto2[1].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else{
+
+cout << blok<<miasto2[1].nazwa;
+for(int i=miasto2[1].nazwa.size();i<26;i++)cout << " ";
+cout<<blok; }
+gotoxy(76,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<miasto2[2].nazwa; 
+for(int i=miasto2[2].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else{
+
+cout <<blok<<miasto2[2].nazwa;
+for(int i=miasto2[2].nazwa.size();i<26;i++)cout << " ";
+cout<<blok; }
+gotoxy(76,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[3].nazwa; 
+for(int i=miasto2[3].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[3].nazwa;
+for(int i=miasto2[3].nazwa.size();i<26;i++)cout << " ";
+cout<<blok;  }
+gotoxy(76,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[4].nazwa; 
+for(int i=miasto2[4].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[4].nazwa;
+for(int i=miasto2[4].nazwa.size();i<26;i++)cout << " ";
+cout<<blok; }
+gotoxy(76,9);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[5].nazwa; 
+for(int i=miasto2[5].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[5].nazwa;
+for(int i=miasto2[5].nazwa.size();i<26;i++)cout << " ";
+cout<<blok; }
+gotoxy(76,10);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[6].nazwa; 
+for(int i=miasto2[6].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[6].nazwa;
+for(int i=miasto2[6].nazwa.size();i<26;i++)cout << " ";
+cout<<blok; }
+gotoxy(76,11);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[7].nazwa; 
+for(int i=miasto2[7].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[7].nazwa;
+for(int i=miasto2[7].nazwa.size();i<26;i++)cout << " ";
+cout<<blok; }
+gotoxy(76,12);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[8].nazwa; 
+for(int i=miasto2[8].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[8].nazwa;
+for(int i=miasto2[8].nazwa.size();i<26;i++)cout << " ";
+cout<<blok;  }
+gotoxy(76,13);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<miasto2[9].nazwa; 
+for(int i=miasto2[9].nazwa.size();i<26;i++)cout << " ";
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+
+cout <<blok<<miasto2[9].nazwa;
+for(int i=miasto2[9].nazwa.size();i<26;i++)cout << " ";
+cout<<blok;  }
+gotoxy(76,14);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Powrot                 "<<blok; 
+gotoxy(76,15);
+cout <<blok<<"                          "<<blok;
+gotoxy(76,16);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+
+
+
+
+  
+ ster=getch();
+	
+	komunikat = komunikat_domyslny;
+	if(bkomunikat==true){
+		system("CLS");
+		bkomunikat=false;
+	}
+if(ster==KEY_DOWN && x0!=3 ||ster==KEY_DOWN && x0!=4 && menu==true || ster==KEY_DOWN && x0!=8 && lista_miast==true ||ster==KEY_DOWN && x0!=4 && menu_budowy==true){
+	x0++;
+
+	continue;
+}
+if(ster==KEY_UP && x0!=0){
+x0--;
+
+continue;
+}
+
+if(ster==']' && wybor_map!=3)wybor_map++;
+if(ster=='[' && wybor_map!=0)wybor_map--;
+ 
+ if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && wybor_jednostki==false && mgla_wojny2[x-1][y]!=false){
+              x--;
+              }
+ if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& wybor_jednostki==false&& mgla_wojny2[x+1][y]!=false){
+              x++;
+              }
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& wybor_jednostki==false&& mgla_wojny2[x][y-1]!=false){
+              y--;
+              }
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& wybor_jednostki==false&& mgla_wojny2[x][y+1]!=false){
+              y++;
+              }
+              ///////////////////budowa/////////////
+if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true && (mapa_jednostek2[x-1][y]=='O'|| mapa_jednostek2[x-1][y]=='R'||mapa_jednostek2[x-1][y]=='A')&& mapa_jednostek2[x][y]=='O' && mapa_jednostek[x-1][y]==' '|| ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true && (mapa_jednostek2[x-1][y]=='O'|| mapa_jednostek2[x-1][y]=='R'||mapa_jednostek2[x-1][y]=='A')&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x-1][y]==' '){
+              x--;
+              continue;
+              }
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && (mapa_jednostek2[x+1][y]=='O' ||mapa_jednostek2[x+1][y]=='R' ||mapa_jednostek2[x+1][y]=='A' )&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x+1][y]==' ' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek2[x+1][y]=='O' ||mapa_jednostek2[x+1][y]=='R' ||mapa_jednostek2[x+1][y]=='A' )&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x+1][y]==' '){
+              x++;
+              continue;
+              }
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true&& (mapa_jednostek2[x][y-1]=='O' ||mapa_jednostek2[x][y-1]=='R' ||mapa_jednostek2[x][y-1]=='A' )&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x][y-1]==' '|| ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true&& (mapa_jednostek2[x][y-1]=='O' ||mapa_jednostek2[x][y-1]=='R' ||mapa_jednostek2[x][y-1]=='A' )&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x][y-1]==' '){
+              y--;
+              continue;
+              }
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && (mapa_jednostek2[x][y+1]=='O' ||mapa_jednostek2[x][y+1]=='R'|| mapa_jednostek2[x][y+1]=='A' )&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x][y+1]==' '|| ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&ruch==true && (mapa_jednostek2[x][y+1]=='O' ||mapa_jednostek2[x][y+1]=='R' || mapa_jednostek2[x][y]=='A')&& mapa_jednostek2[x][y]=='O'&& mapa_jednostek[x][y+1]==' '){
+              y++;
+              continue;
+              }
+              /////robotnicy/////////
+if(ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && budowa==true &&(mapa_jednostek2[x-1][y]=='O'|| mapa_jednostek2[x-1][y]=='R'||mapa_jednostek2[x-1][y]=='A')&& mapa_jednostek2[x][y]=='R' && mapa_jednostek[x-1][y]==' '|| ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&(mapa_jednostek2[x-1][y]=='O'|| mapa_jednostek2[x-1][y]=='R'||mapa_jednostek2[x-1][y]=='A') && mapa_jednostek2[x][y]=='R'&& mapa_jednostek[x-1][y]==' '){
+              x--;
+              continue;
+              }
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& budowa==true && (mapa_jednostek2[x+1][y]=='O' ||mapa_jednostek2[x+1][y]=='R' ||mapa_jednostek2[x+1][y]=='A' )&& mapa_jednostek2[x][y]=='R'&& mapa_jednostek[x+1][y]==' ' || ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek2[x+1][y]=='O' ||mapa_jednostek2[x+1][y]=='R' ||mapa_jednostek2[x+1][y]=='A' )&& mapa_jednostek2[x][y]=='R'&& mapa_jednostek[x+1][y]==' '){
+              x++;
+              continue;
+              }
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& budowa==true && (mapa_jednostek2[x][y-1]=='O' ||mapa_jednostek2[x][y-1]=='R' ||mapa_jednostek2[x][y-1]=='A' )&& mapa_jednostek2[x][y]=='R'&& mapa_jednostek[x][y-1]==' ' || ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && (mapa_jednostek2[x][y-1]=='O' ||mapa_jednostek2[x][y-1]=='R' ||mapa_jednostek2[x][y-1]=='A' )&& mapa_jednostek2[x][y]=='R'&& mapa_jednostek[x][y-1]==' '){
+              y--;
+              continue;
+              }
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&&budowa==true && (mapa_jednostek2[x][y+1]=='O' ||mapa_jednostek2[x][y+1]=='R'|| mapa_jednostek2[x][y+1]=='A' ) && mapa_jednostek2[x][y]=='R'&& mapa_jednostek[x][y+1]==' ' || ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && (mapa_jednostek2[x][y+1]=='O' ||mapa_jednostek2[x][y+1]=='R'|| mapa_jednostek2[x][y+1]=='A' )&& mapa_jednostek2[x][y]=='R' && mapa_jednostek[x][y+1]==' '){
+              y++;
+              continue;
+              }
+              ////////armie////////
+if( ster=='w' && mapa[x-1][y]!='@' && mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && ruch==true &&(mapa_jednostek2[x-1][y]=='O'|| mapa_jednostek2[x-1][y]=='R'||mapa_jednostek2[x-1][y]=='A'||mapa_jednostek[x-1][y]!=' ') && mapa_jednostek2[x][y]=='A'&&mapa_armii2[x-1][y]=='0'){
+              x--;
+              continue;
+              }
+if(ster=='s' && mapa[x+1][y]!='@'&& mapa[x+1][y]!=woda&& mapa[x+1][y]!=gora&& ruch==true && (mapa_jednostek2[x+1][y]=='O' ||mapa_jednostek2[x+1][y]=='R' ||mapa_jednostek2[x+1][y]=='A' ||mapa_jednostek[x+1][y]!=' ')&& mapa_jednostek2[x][y]=='A'&&mapa_armii2[x+1][y]=='0'){
+              x++;
+              continue;
+              }
+if(ster=='a' && mapa[x][y-1]!='@'&& mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& ruch==true && (mapa_jednostek2[x][y-1]=='O' ||mapa_jednostek2[x][y-1]=='R' ||mapa_jednostek2[x][y-1]=='A'||mapa_jednostek[x][y-1]!=' ')&& mapa_jednostek2[x][y]=='A'&&mapa_armii2[x][y-1]=='0'){
+              y--;
+              continue;
+              }
+if(ster=='d' && mapa[x][y+1]!='@'&& mapa[x][y+1]!=woda&& mapa[x][y+1]!=gora&& ruch==true && (mapa_jednostek2[x][y+1]=='O' ||mapa_jednostek2[x][y+1]=='R'|| mapa_jednostek2[x][y+1]=='A' || mapa_jednostek[x][y+1]!=' ')&& mapa_jednostek2[x][y]=='A'&&mapa_armii2[x][y+1]=='0'){
+              y++;
+              continue;
+              }
+              
+              
+if(ster=='e' && wybor_jednostki==false && mapa_jednostek2[x][y]==osadnik || mapa_jednostek2[x][y]==82 && ster=='e' && wybor_jednostki==false || mapa_jednostek2[x][y]=='A' && ster=='e' && wybor_jednostki==false){
+	if(nastepna_tura==0){
+		komunikat="Nie masz juz punktow ruchu moj Panie";
+		bkomunikat=true;
+		continue;
+	}
+	wybor_jednostki=true;
+	menu=false;
+}
+
+if(ster=='q' && menu==true && x0==1 && wybor_jednostki==false){
+	menu=false;
+	lista_miast=true;
+	system("CLS");
+	x0=0;
+}
+
+if(ster=='q' && lista_miast==true && x0==8 && wybor_jednostki==false){
+	menu=true;
+	lista_miast=false;
+	system("CLS");
+	x0=0;
+}
+
+if(ster=='q' && lista_miast==true && x0!=8){
+	x=miasto2[x0+1].x1;
+	y=miasto2[x0+1].y1;
+	system("CLS");
+}
+
+/////////////////NASTEPNA TURA///////
+if(ster=='q' && menu==true && x0==3){
+	nastepna_tura=nastepna_tura_domyslnie;
+	gracz2=false;
+	//gracz2=true;
+	ruch_barbarzyncow=true;
+	for(int i=1;i<11;i++){
+	miasto2[i].obrona+=miasto2[i].ludnosc*0.00005; 
+	}
+	for(int i=1;i<11;i++){
+	miasto2[i].produkcja+=miasto2[i].przychod_produkcja; 
+	}
+	for(int i=1;i<11;i++){
+	miasto2[i].ludnosc+=100; 
+	}
+	zywnosc2+=przychod_zywnosc2;
+	zloto2+=przychod_zloto2;
+	kamien2+=przychod_kamien2;
+	drewno2+=przychod_drewno2;
+	nauka2+=przychod_nauka2;
+	break;
+}
+
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek2[x][y]=='O' && budowa==true){
+if(budowa==true){
+
+	system("CLS");
+	x=xd;
+	y=yd;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda && mapa[i][j]!=osada && mapa[i][j]!=stolica && mapa[i][j]!=tartak&& mapa[i][j]!=farma&& mapa[i][j]!=kopalnia){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+}
+}
+menu=true;
+budowa=false;
+wybor_jednostki=false;
+x0=0;
+system("CLS");
+}
+
+if(ster=='q' && menu==false && x0==4 && mapa_jednostek2[x][y]=='R' && budowa==true && menu_budowy==true){
+	bufor_budowa=10;
+	menu_budowy=false;
+	system("CLS");
+	x=xd;
+	y=yd;
+	for(int i=x-1;i<=x+1;i++){
+		for(int j=y-1;j<=y+1;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}
+menu=true;
+wybor_jednostki=false;
+budowa=false;
+x0=0;
+system("CLS");
+}
+/////////////////powrot do stolicy//////////
+if(menu==true && x0==0 && ster=='q' && liczba_miast2>1){
+	menu=false;
+	mapa_glowna=false;
+	bmapa_stolicy=true;
+	xm=1;
+	xd=x;
+	yd=y;
+	x=40;
+	y=70;
+	while(mapa_stolicy2[x][y]!=dom && mapa_stolicy2[x][y]!=dom2 && mapa_stolicy2[x][y]!=woda && mapa_stolicy2[x][y]!=gora){
+		x++;
+	}
+	
+	system("CLS");
+}
+
+if(ster=='e' && menu==true && miasta2[x][y]>0){
+	menu=false;
+	mapa_glowna=false;
+	xd=x;
+	yd=y;
+	if(miasta2[x][y]==1){
+	bmapa_stolicy=true;
+	x=40;
+	xm=1;
+	y=70;
+	while(mapa_stolicy2[x][y]!=dom && mapa_stolicy2[x][y]!=dom2 && mapa_stolicy2[x][y]!=woda && mapa_stolicy2[x][y]!=gora){
+		x++;
+	}
+	}else{
+		miasto2[miasta2[x][y]].menu_osady=true;
+		xm=miasta2[x][y];
+		menu_osada=true;
+	}
+	system("CLS");
+}
+
+
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek2[x][y]=='R' && ruch==true && budowa==false){
+	ruch=false;
+	system("CLS");
+	x=xd;
+	y=yd;
+	if(nawigacja2==false){
+	for(int i=x-1;i<=x+1;i++){
+		for(int j=y-1;j<=y+1;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}else{
+		for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}
+menu=true;
+wybor_jednostki=false;
+budowa=false;
+x0=0;
+system("CLS");
+}
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek2[x][y]=='A' && ruch==true && budowa==false){
+	ruch=false;
+	system("CLS");
+	x=xd;
+	y=yd;
+	if(nawigacja2==false){
+	for(int i=x-1;i<=x+1;i++){
+		for(int j=y-1;j<=y+1;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}else{
+		for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}
+menu=true;
+wybor_jednostki=false;
+budowa=false;
+x0=0;
+system("CLS");
+}
+if(ster=='q' && menu==false && x0==3 && mapa_jednostek2[x][y]=='O' && ruch==true && budowa==false){
+	ruch=false;
+	system("CLS");
+	x=xd;
+	y=yd;
+	if(nawigacja2==false){
+
+	for(int i=x-1;i<=x+1;i++){
+		for(int j=y-1;j<=y+1;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}
+}else{
+
+	for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+}	
+}
+menu=true;
+wybor_jednostki=false;
+budowa=false;
+x0=0;
+system("CLS");
+}
+
+if(ster=='q' && menu==true && x0==2 && wybor_jednostki==true && menu_budowy==false){
+menu=false;
+x0=0;
+system("CLS");
+}
+
+if(ster=='q' && menu==false && x0==3 && wybor_jednostki==true && menu_budowy==false){
+wybor_jednostki=false;
+x0=0;
+menu=true;
+system("CLS");
+}
+
+if(ster=='q' && x0==2 && wybor_jednostki==true && mapa_jednostek2[x][y]=='R' && menu==false && menu_budowy==false && ruch==false){
+	menu_budowy=true;
+	system("CLS");
+	continue;
+}
+
+if(ster=='q' && x0==4 && wybor_jednostki==true && mapa_jednostek2[x][y]=='R' && menu==false && menu_budowy==true && ruch==false){
+	bufor_budowa=10;
+	menu_budowy=false;
+	menu=false;
+	system("CLS");
+
+}
+
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='O' && menu==false && x0==2 && budowa==false && bufor_multi[x][y]==dom2 && ruch==false){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	mapa_jednostek2[x][y]='O';
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa[x-1][y]!=farma&& mapa[x-1][y]!=tartak&& mapa[x-1][y]!=kopalnia&& mapa[x-1][y]!=wioska){
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	mapa_jednostek2[x-1][y]='O';
+	}
+	
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora&& mapa[x-1][y+1]!=tartak&& mapa[x-1][y+1]!=farma&& mapa[x-1][y+1]!=kopalnia&& mapa[x-1][y+1]!=wioska){
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	mapa_jednostek2[x-1][y+1]='O';
+	}
+	
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora&& mapa[x-1][y-1]!=tartak&& mapa[x-1][y-1]!=farma&& mapa[x-1][y-1]!=kopalnia&& mapa[x-1][y-1]!=wioska){
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	mapa_jednostek2[x-1][y-1]='O';
+	}
+	
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora&&mapa[x][y+1]!=tartak&&mapa[x][y+1]!=farma&&mapa[x][y+1]!=kopalnia&&mapa[x][y+1]!=wioska){
+	bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	mapa_jednostek2[x][y+1]='O';
+	}
+	
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora&& mapa[x][y-1]!=tartak&& mapa[x][y-1]!=farma&& mapa[x][y-1]!=kopalnia&& mapa[x][y-1]!=wioska){
+	bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	mapa_jednostek2[x][y-1]='O';
+	}
+	
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora&& mapa[x+1][y-1]!=tartak&& mapa[x+1][y-1]!=farma&& mapa[x+1][y-1]!=kopalnia&& mapa[x+1][y-1]!=wioska){
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	mapa_jednostek2[x+1][y-1]='O';
+	}
+	
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora&& mapa[x+1][y]!=tartak&& mapa[x+1][y]!=farma&& mapa[x+1][y]!=kopalnia&& mapa[x+1][y]!=wioska){
+	bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	mapa_jednostek2[x+1][y]='O';
+	}
+	
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora&& mapa[x+1][y+1]!=tartak&& mapa[x+1][y+1]!=farma&& mapa[x+1][y+1]!=kopalnia&& mapa[x+1][y+1]!=wioska){
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	mapa_jednostek2[x+1][y+1]='O';
+	}
+	
+	budowa=true;
+}
+
+
+
+
+
+////////////tartak/////////////
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==2 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && bufor_multi[x][y]==dom){
+	
+	bufor_budowa=2;
+	xd=x;
+	yd=y;
+	
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	if(bufor_multi[x][y]==dom)
+	mapa_jednostek2[x][y]='R';
+	
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]==dom){
+	
+	mapa_jednostek2[x-1][y]='R';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	if(bufor_multi[x-1][y+1]==dom){
+	
+	mapa_jednostek2[x-1][y+1]='R';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(bufor_multi[x-1][y-1]==dom){
+	
+	mapa_jednostek[x-1][y-1]='R';
+	}
+	bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(bufor_multi[x][y+1]==dom){
+	
+	mapa_jednostek2[x][y+1]='R';
+	}
+	bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(bufor_multi[x][y-1]==dom){
+	
+	mapa_jednostek2[x][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(bufor_multi[x+1][y-1]==dom){
+	
+	mapa_jednostek2[x+1][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(bufor_multi[x+1][y]==dom){
+	
+	mapa_jednostek2[x+1][y]='R';
+	}
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(bufor_multi[x+1][y+1]==dom){
+	
+	mapa_jednostek2[x+1][y+1]='R';
+	}
+	budowa=true;
+}
+////////////farma
+
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==0 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true){
+
+	bufor_budowa=0;
+	xd=x;
+	yd=y;
+		bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	if(bufor_multi[x][y]==dom2 && bufor_multi[x][y]!=wioska && bufor_multi[x][y]!=kopalnia)
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	
+	mapa_jednostek2[x][y]='R';
+	
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]==dom2 && bufor_multi[x-1][y]!=wioska && bufor_multi[x-1][y]!=kopalnia){
+	mapa_jednostek2[x-1][y]='R';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	if(bufor_multi[x-1][y+1]==dom2 && bufor_multi[x-1][y+1]!=wioska && bufor_multi[x-1][y+1]!=kopalnia){
+	
+	mapa_jednostek2[x-1][y+1]='R';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(bufor_multi[x-1][y-1]==dom2 && bufor_multi[x-1][y-1]!=wioska && bufor_multi[x-1][y-1]!=kopalnia){
+	
+	mapa_jednostek2[x-1][y-1]='R';
+	}
+	bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(bufor_multi[x][y+1]==dom2 && bufor_multi[x][y+1]!=wioska && bufor_multi[x][y+1]!=kopalnia){
+	
+	mapa_jednostek2[x][y+1]='R';
+	}
+	bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(bufor_multi[x][y-1]==dom2 && bufor_multi[x][y-1]!=wioska && bufor_multi[x][y-1]!=kopalnia){
+	
+	mapa_jednostek2[x][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(bufor_multi[x+1][y-1]==dom2&& bufor_multi[x+1][y-1]!=wioska && bufor_multi[x+1][y-1]!=kopalnia){
+	
+	mapa_jednostek2[x+1][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(bufor_multi[x+1][y]==dom2&& bufor_multi[x+1][y]!=wioska && bufor_multi[x+1][y]!=kopalnia){
+	
+	mapa_jednostek2[x+1][y]='R';
+	}
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(bufor_multi[x+1][y+1]==dom2&& bufor_multi[x+1][y+1]!=wioska && bufor_multi[x+1][y+1]!=kopalnia){
+	
+	mapa_jednostek2[x+1][y+1]='R';
+	}
+	budowa=true;
+
+}
+
+/////////wioska//////////
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==3 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true){
+
+	bufor_budowa=3;
+	xd=x;
+	yd=y;
+		bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+		if(bufor_multi[x][y]==dom2 && bufor_multi[x][y]!=farma && bufor_multi[x][y]!=kopalnia)
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	
+	mapa_jednostek2[x][y]='R';
+	
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]==dom2 && bufor_multi[x-1][y]!=farma && bufor_multi[x-1][y]!=kopalnia){
+	mapa_jednostek2[x-1][y]='R';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	if(bufor_multi[x-1][y+1]==dom2 && bufor_multi[x-1][y+1]!=farma && bufor_multi[x-1][y+1]!=kopalnia){
+	
+	mapa_jednostek2[x-1][y+1]='R';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(bufor_multi[x-1][y-1]==dom2 && bufor_multi[x-1][y-1]!=farma && bufor_multi[x-1][y-1]!=kopalnia){
+	
+	mapa_jednostek2[x-1][y-1]='R';
+	}
+	bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(bufor_multi[x][y+1]==dom2 && bufor_multi[x][y+1]!=farma && bufor_multi[x][y+1]!=kopalnia){
+	
+	mapa_jednostek2[x][y+1]='R';
+	}
+	bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(bufor_multi[x][y-1]==dom2 && bufor_multi[x][y-1]!=farma && bufor_multi[x][y-1]!=kopalnia){
+	
+	mapa_jednostek2[x][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(bufor_multi[x+1][y-1]==dom2&& bufor_multi[x+1][y-1]!=farma && bufor_multi[x+1][y-1]!=kopalnia){
+	
+	mapa_jednostek2[x+1][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(bufor_multi[x+1][y]==dom2&& bufor_multi[x+1][y]!=farma && bufor_multi[x+1][y]!=kopalnia){
+	
+	mapa_jednostek2[x+1][y]='R';
+	}
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(bufor_multi[x+1][y+1]==dom2&& bufor_multi[x+1][y+1]!=farma && bufor_multi[x+1][y+1]!=kopalnia){
+	
+	mapa_jednostek2[x+1][y+1]='R';
+	}
+	budowa=true;
+
+}
+
+/////////kopalnia
+
+if(ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x][y-1]==gora || 
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x][y+1]==gora || 
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x-1][y+1]==gora ||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x-1][y]==gora ||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x-1][y-1]==gora ||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x+1][y+1]==gora||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x+1][y]==gora||
+ster=='q' && wybor_jednostki==true && menu==false && x0==1 && budowa==false && mapa_jednostek2[x][y]=='R' && menu_budowy==true && mapa[x+1][y-1]==gora){
+
+	bufor_budowa=1;
+	xd=x;
+	yd=y;
+	
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	if(bufor_multi[x][y]==dom2 && bufor_multi[x][y]!=wioska && bufor_multi[x][y]!=farma)
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	
+	mapa_jednostek2[x][y]='R';
+	
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]==dom2 && bufor_multi[x-1][y]!=wioska && bufor_multi[x-1][y]!=farma){
+	mapa_jednostek2[x-1][y]='R';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	if(bufor_multi[x-1][y+1]==dom2 && bufor_multi[x-1][y+1]!=wioska && bufor_multi[x-1][y+1]!=farma){
+	
+	mapa_jednostek2[x-1][y+1]='R';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(bufor_multi[x-1][y-1]==dom2 && bufor_multi[x-1][y-1]!=wioska && bufor_multi[x-1][y-1]!=farma){
+	
+	mapa_jednostek2[x-1][y-1]='R';
+	}
+	bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(bufor_multi[x][y+1]==dom2 && bufor_multi[x][y+1]!=wioska && bufor_multi[x][y+1]!=farma){
+	
+	mapa_jednostek2[x][y+1]='R';
+	}
+	bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(bufor_multi[x][y-1]==dom2 && bufor_multi[x][y-1]!=wioska && bufor_multi[x][y-1]!=farma){
+	
+	mapa_jednostek2[x][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(bufor_multi[x+1][y-1]==dom2&& bufor_multi[x+1][y-1]!=wioska && bufor_multi[x+1][y-1]!=farma){
+	
+	mapa_jednostek2[x+1][y-1]='R';
+	}
+	bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(bufor_multi[x+1][y]==dom2&& bufor_multi[x+1][y]!=wioska && bufor_multi[x+1][y]!=farma){
+	
+	mapa_jednostek2[x+1][y]='R';
+	}
+	bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(bufor_multi[x+1][y+1]==dom2&& bufor_multi[x+1][y+1]!=wioska && bufor_multi[x+1][y+1]!=farma){
+	
+	mapa_jednostek2[x+1][y+1]='R';
+	}
+	budowa=true;
+
+}
+
+
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek2[x][y]=='O' && teretorium[x][y]=='x' || budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek2[x][y]=='O' && teretorium[x][y]=='2'){
+	
+		if(liczba_miast2==11)
+	{
+	komunikat="Masz maksymalna ilosc miast moj Panie";
+	bkomunikat=true;
+	continue;
+	}
+	for(int i=x-3;i<=x+3;i++){
+		for(int j=y-3;j<=y+3;j++){
+			if(mapa[i][j]==stolica || mapa[i][j]==osada || mapa_jednostek[x][y]!=' '){
+				komunikat = "Jestes za blisko innego miasta lub za blisko jednostek wroga moj Panie";
+				blisko=true;
+			}
+		}
+	}
+	if(blisko==true){
+		blisko=false;
+		bkomunikat=true;
+		continue;
+		
+	}
+
+	miasta2[x][y]=liczba_miast2;
+	if(liczba_miast2==1)
+	mapa[x][y]=stolica;
+	else
+	mapa[x][y]=osada;
+	
+	if(mapa[x-1][y]==woda || mapa[x-1][y-1]==woda || mapa[x-1][y+1]==woda || mapa[x][y-1]==woda || mapa[x][y+1]==woda || mapa[x+1][y-1]==woda || mapa[x+1][y]==woda || mapa[x+1][y+1]==woda)
+	miasto2[liczba_miast2].woda=true;
+	
+
+	
+	for(int i=x-5;i<x+5;i++){
+		for(int j=y-5;j<y+5;j++){
+			if(mapa[i][j]!=woda && mapa[i][j]!=gora && zasieg_miast2[i][j]=='0' &&(teretorium[i][j]=='x' ||teretorium[i][j]=='2')){
+				zasieg_miast2[i][j]=liczba_miast2-208;
+				teretorium[i][j]='2';
+				if(mapa[i][j]==tartak)mapa_tartak2[i][j]=liczba_miast2;
+				if(mapa[i][j]==kopalnia)mapa_kopalnia2[i][j]=liczba_miast2;
+				if(mapa[i][j]==farma)mapa_farma2[i][j]=liczba_miast2;
+				if(mapa[i][j]==wioska)mapa_wioska2[i][j]=liczba_miast2;
+			}
+		}
+	}
+	for(int i=x-1;i<x+1;i++){
+		for(int j=y-1;j<y+1;j++){
+			if(mapa[i][j]!=woda && mapa[i][j]!=gora){
+				zasieg_miast2[i][j]=liczba_miast2-208;
+				
+			}
+		}
+	}
+	
+	miasto2[liczba_miast2].x1=x;
+	miasto2[liczba_miast2].y1=y;
+	bufor_multi[x][y]=mapa[x][y];
+	liczba_miast2++;
+	budowa=false;
+	wybor_jednostki=false;
+	menu=true;
+	nazwa=true;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+	if(mapa_jednostek2[xd][yd]=='O')mapa_jednostek2[xd][yd]=' ';
+}
+nastepna_tura2--;
+system("CLS");
+}
+
+/////////tartak////////
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek2[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==2 && teretorium[x][y]=='2'){
+
+	mapa[x][y]=tartak;
+	budowa=false;
+	menu_budowy=false;
+	wybor_jednostki=false;
+	menu=true;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+	if(mapa_jednostek2[xd][yd]=='R')mapa_jednostek2[xd][yd]=' ';
+}
+mapa_tartak2[x][y]=zasieg_miast2[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
+system("CLS");
+miasto[mapa_tartak2[x][y]].przychod_drewno=miasto2[mapa_tartak2[x][y]].przychod_drewno+30;
+if(tartakb2.lvl==3)
+miasto[mapa_tartak2[x][y]].przychod_drewno=miasto2[mapa_tartak2[x][y]].przychod_drewno+20;
+nastepna_tura2--;
+}
+///////////////farma///////////
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek2[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==0 && teretorium[x][y]=='2'){
+
+	mapa[x][y]=farma;
+	budowa=false;
+	menu_budowy=false;
+	wybor_jednostki=false;
+	menu=true;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+	if(mapa_jednostek2[xd][yd]=='R')mapa_jednostek2[xd][yd]=' ';
+}
+mapa_farma2[x][y]=zasieg_miast2[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
+system("CLS");
+miasto[mapa_farma2[x][y]].przychod_zywnosc=miasto2[mapa_farma2[x][y]].przychod_zywnosc+30;
+if(port2.lvl>=2){
+	miasto2[mapa_farma2[x][y]].przychod_zywnosc=miasto2[mapa_farma2[x][y]].przychod_zywnosc+miasto2[mapa_farma2[x][y]].przychod_zywnosc*port2.lvl*0.1;
+}
+nastepna_tura2--;
+}
+/////////////wioska///////////////////
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek2[x][y]=='R'&&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==3 && teretorium[x][y]=='2'){
+
+	mapa[x][y]=wioska;
+	budowa=false;
+	menu_budowy=false;
+	wybor_jednostki=false;
+	menu=true;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+	if(mapa_jednostek2[xd][yd]=='R')mapa_jednostek2[xd][yd]=' ';
+}
+mapa_wioska2[x][y]=zasieg_miast2[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
+system("CLS");
+miasto2[mapa_wioska2[x][y]].przychod_produkcja=miasto2[mapa_wioska2[x][y]].przychod_produkcja+30;
+miasto2[mapa_wioska2[x][y]].ludnosc+=1000;
+if(magazyn2.lvl>=2){
+	miasto2[mapa_wioska2[x][y]].przychod_produkcja=miasto2[mapa_wioska2[x][y]].przychod_produkcja+miasto2[mapa_wioska2[x][y]].przychod_produkcja*magazyn2.lvl*0.1;
+}
+nastepna_tura2--;
+}
+///////////////kopalnia///////////////
+if(budowa==true && ster=='e' && wybor_jednostki==true && menu==false && mapa_jednostek2[x][y]=='R' &&(bufor_mjednostek[x][y]!='R' || x==xd && y==yd) && menu_budowy==true && bufor_budowa==1 && teretorium[x][y]=='2'){
+
+	mapa[x][y]=kopalnia;
+	budowa=false;
+	menu_budowy=false;
+	wybor_jednostki=false;
+	menu=true;
+	for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		if(mapa[i][j]!=gora && mapa[i][j]!=woda){
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		}
+	}
+	if(mapa_jednostek2[xd][yd]=='R')mapa_jednostek2[xd][yd]=' ';
+}
+bufor_multi[xd][yd]=kopalnia;
+mapa_kopalnia2[x][y]=zasieg_miast2[x][y]-48;
+bufor_multi[x][y]=mapa[x][y];
+system("CLS");
+miasto2[mapa_kopalnia2[x][y]].przychod_kamien=miasto2[mapa_kopalnia2[x][y]].przychod_kamien+30;
+miasto2[mapa_kopalnia2[x][y]].przychod_zloto=miasto2[mapa_kopalnia2[x][y]].przychod_zloto+15;
+if(port2.lvl==2){
+miasto2[mapa_kopalnia2[x][y]].przychod_kamien=miasto2[mapa_kopalnia2[x][y]].przychod_kamien+10;
+miasto2[mapa_kopalnia2[x][y]].przychod_zloto=miasto2[mapa_kopalnia2[x][y]].przychod_zloto+10;
+}
+if(port2.lvl==3){
+miasto2[mapa_kopalnia2[x][y]].przychod_kamien=miasto2[mapa_kopalnia2[x][y]].przychod_kamien+20;
+miasto2[mapa_kopalnia2[x][y]].przychod_zloto=miasto2[mapa_kopalnia2[x][y]].przychod_zloto+20;
+}
+nastepna_tura2--;
+}
+
+///////////////RUCH//////////////
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='O' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja2==false){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	mapa_jednostek2[x][y]='O';
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek2[x-1][y]!=osadnik && mapa_jednostek2[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek[x-1][y]==' ' && mapa_jednostek2[x-1][y]!='A'){
+
+	mapa_jednostek2[x-1][y]='O';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek[x-1][y+1];
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek2[x-1][y+1]!=osadnik && mapa_jednostek2[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek[x-1][y+1]==' ' && mapa_jednostek2[x-1][y+1]!='A'){
+	mapa_jednostek2[x-1][y+1]='O';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek2[x-1][y-1]!=osadnik && mapa_jednostek2[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek[x-1][y-1]==' '&& mapa_jednostek2[x-1][y-1]!='A'){
+	mapa_jednostek2[x-1][y-1]='O';
+	}
+		bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek2[x][y+1]!=osadnik && mapa_jednostek2[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek[x][y+1]==' ' && mapa_jednostek2[x][y+1]!='A'){
+
+	mapa_jednostek2[x][y+1]='O';
+	}
+		bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek2[x][y-1]!=osadnik && mapa_jednostek2[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek[x][y-1]==' '&& mapa_jednostek2[x][y-1]!='A'){
+
+	mapa_jednostek2[x][y-1]='O';
+	}
+		bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek2[x+1][y-1]!=osadnik && mapa_jednostek2[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek2[x+1][y-1]!='A'&& mapa_jednostek[x+1][y-1]==' '){
+
+	mapa_jednostek2[x+1][y-1]='O';
+	}
+		bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek2[x+1][y]!=osadnik && mapa_jednostek2[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek2[x+1][y]!='A'&& mapa_jednostek[x+1][y]==' '){
+
+	mapa_jednostek2[x+1][y]='O';
+	}
+		bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek2[x+1][y+1]!=osadnik && mapa_jednostek2[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek2[x+1][y+1]!='A'&& mapa_jednostek[x+1][y+1]==' '){
+
+	mapa_jednostek2[x+1][y+1]='O';
+	}
+	
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek2[x][y]=='O' && x0==0 && ruch==true && nawigacja2==false && bufor_mjednostek[x][y]!='O' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek2[x][y]!='R'&& mapa_jednostek[x][y]==' '&& mapa_jednostek2[x][y]!='A'){
+		for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+	if(mapa_jednostek2[xd][yd]=='O')mapa_jednostek2[xd][yd]=' ';
+}
+	mapa_jednostek2[x][y]='O';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+	nastepna_tura2--;
+}
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja2==false){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	mapa_jednostek2[x][y]='R';
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek2[x-1][y]!=osadnik && mapa_jednostek2[x-1][y]!=robotnik&& mapa_jednostek[x-1][y]==' '){
+
+	mapa_jednostek2[x-1][y]='R';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek[x-1][y+1]!=osadnik && mapa_jednostek2[x-1][y+1]!=robotnik&& mapa_jednostek[x-1][y+1]==' '){
+	mapa_jednostek2[x-1][y+1]='R';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek2[x-1][y-1]!=osadnik && mapa_jednostek2[x-1][y-1]!=robotnik&& mapa_jednostek[x-1][y-1]==' '){
+	mapa_jednostek2[x-1][y-1]='R';
+	}
+		bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek2[x][y+1]!=osadnik && mapa_jednostek2[x][y+1]!=robotnik&& mapa_jednostek[x][y+1]==' '){
+
+	mapa_jednostek2[x][y+1]='R';
+	}
+		bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek2[x][y-1]!=osadnik && mapa_jednostek2[x][y-1]!=robotnik&& mapa_jednostek[x][y-1]==' '){
+
+	mapa_jednostek2[x][y-1]='R';
+	}
+		bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek2[x+1][y-1]!=osadnik && mapa_jednostek2[x+1][y-1]!=robotnik&& mapa_jednostek[x+1][y-1]==' '){
+
+	mapa_jednostek2[x+1][y-1]='R';
+	}
+		bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek2[x+1][y]!=osadnik && mapa_jednostek2[x+1][y]!=robotnik&& mapa_jednostek[x+1][y]==' '){
+
+	mapa_jednostek2[x+1][y]='R';
+	}
+		bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek2[x+1][y+1]!=osadnik && mapa_jednostek2[x+1][y+1]!=robotnik&& mapa_jednostek[x+1][y+1]==' '){
+
+	mapa_jednostek2[x+1][y+1]='R';
+	}
+	
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek[x][y]=='R' && bufor_mjednostek[x][y]!='R' && x0==0 && ruch==true && nawigacja2==false && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek2[x][y]!='O'&& mapa_jednostek[x][y]==' '&& mapa_jednostek2[x][y]!='A'){
+		for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		
+	}
+	if(mapa_jednostek2[xd][yd]=='R')mapa_jednostek2[xd][yd]=' ';
+}
+	mapa_jednostek2[x][y]='R';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+	nastepna_tura2--;
+}
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='A' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja2==false){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	mapa_jednostek2[x][y]='A';
+	bufor_mjednostek[x-1][y]=mapa_jednostek2[x-1][y];
+	if(mapa[x-1][y]!=woda && mapa[x-1][y]!=gora && mapa_jednostek2[x-1][y]!=osadnik && mapa_jednostek2[x-1][y]!=robotnik && mapa[x-1][y]!=stolica && mapa[x-1][y]!=osada && mapa_jednostek2[x-1][y]!='O'&& mapa_jednostek[x-1][y]==' ' && mapa_jednostek2[x-1][y]!='A'){
+
+	mapa_jednostek2[x-1][y]='A';
+	}
+	bufor_mjednostek[x-1][y+1]=mapa_jednostek2[x-1][y+1];
+	if(mapa[x-1][y+1]!=woda && mapa[x-1][y+1]!=gora && mapa_jednostek2[x-1][y+1]!=osadnik && mapa_jednostek2[x-1][y+1]!=robotnik&& mapa[x-1][y+1]!=stolica&& mapa[x-1][y+1]!=osada&& mapa_jednostek2[x-1][y+1]!='O'&& mapa_jednostek[x-1][y+1]==' ' && mapa_jednostek2[x-1][y+1]!='A'){
+	mapa_jednostek2[x-1][y+1]='A';
+	}
+	bufor_mjednostek[x-1][y-1]=mapa_jednostek2[x-1][y-1];
+	if(mapa[x-1][y-1]!=woda && mapa[x-1][y-1]!=gora && mapa_jednostek2[x-1][y-1]!=osadnik && mapa_jednostek2[x-1][y-1]!=robotnik&& mapa[x-1][y-1]!=stolica&& mapa[x-1][y-1]!=osada&& mapa_jednostek2[x-1][y-1]!='O'&& mapa_jednostek[x-1][y-1]==' '&& mapa_jednostek2[x-1][y-1]!='A'){
+	mapa_jednostek2[x-1][y-1]='A';
+	}
+		bufor_mjednostek[x][y+1]=mapa_jednostek2[x][y+1];
+	if(mapa[x][y+1]!=woda &&mapa[x][y+1]!=gora && mapa_jednostek2[x][y+1]!=osadnik && mapa_jednostek2[x][y+1]!=robotnik && mapa[x][y+1]!=stolica && mapa[x][y+1]!=osada && mapa_jednostek2[x][y+1]!='O'&& mapa_jednostek[x][y+1]==' ' && mapa_jednostek2[x][y+1]!='A'){
+
+	mapa_jednostek2[x][y+1]='A';
+	}
+		bufor_mjednostek[x][y-1]=mapa_jednostek2[x][y-1];
+	if(mapa[x][y-1]!=woda && mapa[x][y-1]!=gora && mapa_jednostek2[x][y-1]!=osadnik && mapa_jednostek2[x][y-1]!=robotnik&& mapa[x][y-1]!=stolica&& mapa[x][y-1]!=osada&& mapa_jednostek2[x][y-1]!='O'&& mapa_jednostek[x][y-1]==' '&& mapa_jednostek2[x][y-1]!='A'){
+
+	mapa_jednostek2[x][y-1]='A';
+	}
+		bufor_mjednostek[x+1][y-1]=mapa_jednostek2[x+1][y-1];
+	if(mapa[x+1][y-1]!=woda && mapa[x+1][y-1]!=gora && mapa_jednostek2[x+1][y-1]!=osadnik && mapa_jednostek2[x+1][y-1]!=robotnik&& mapa[x+1][y-1]!=stolica&& mapa[x+1][y-1]!=osada&& mapa_jednostek2[x+1][y-1]!='O'&& mapa_jednostek[x+1][y-1]==' '){
+
+	mapa_jednostek2[x+1][y-1]='A';
+	}
+		bufor_mjednostek[x+1][y]=mapa_jednostek2[x+1][y];
+	if(mapa[x+1][y]!=woda && mapa[x+1][y]!=gora && mapa_jednostek2[x+1][y]!=osadnik && mapa_jednostek2[x+1][y]!=robotnik&& mapa[x+1][y]!=stolica&& mapa[x+1][y]!=osada&& mapa_jednostek2[x+1][y]!='O'&& mapa_jednostek[x+1][y]==' '){
+
+	mapa_jednostek2[x+1][y]='A';
+	}
+		bufor_mjednostek[x+1][y+1]=mapa_jednostek2[x+1][y+1];
+	if(mapa[x+1][y+1]!=woda && mapa[x+1][y+1]!=gora && mapa_jednostek2[x+1][y+1]!=osadnik && mapa_jednostek2[x+1][y+1]!=robotnik&& mapa[x+1][y+1]!=stolica&& mapa[x+1][y+1]!=osada&& mapa_jednostek2[x+1][y+1]!='O'&& mapa_jednostek[x+1][y+1]==' '){
+
+	mapa_jednostek2[x+1][y+1]='A';
+	}
+	
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && (mapa_jednostek2[x][y]=='A'||mapa_jednostek[x][y]!=' ') && x0==0 && ruch==true && nawigacja2==false && bufor_mjednostek[x][y]!='A' && x0==0 && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek2[x][y]!='R'&& mapa_jednostek2[x][y]!='O'){
+	
+		if(mapa_jednostek[x][y]=='B'){
+			walka_barbarzyncy2(armia2[mapa_armii2[xd][yd]-48],false,true,&zloto2,&ilosc_barbarzyncow,&wygrana);
+			if(wygrana==false){
+			
+			mapa_jednostek2[xd][yd]=' ';
+			armia2[mapa_armii2[xd][yd]].atak=0;
+			armia2[mapa_armii2[xd][yd]].obrona=0;
+			armia2[mapa_armii2[xd][yd]].miasto_domowe=0;
+			armia2[mapa_armii2[xd][yd]].nazwa=" ";
+			armia2[mapa_armii2[xd][yd]].utrzymanie=0;
+			armia2[mapa_armii2[xd][yd]].wielkosc=0;
+			mapa_armii2[xd][yd]='0';
+			liczba_armii2--;
+			continue;
+			}else
+			ilosc_barbarzyncow--;
+		}
+		
+			if(mapa_jednostek[x][y]!='A' && mapa_jednostek[x][y]!='B'){
+				mapa_jednostek[x][y]=' ';
+				komunikat="Zniszczyes wrogiego cywila";
+			}
+		for(int i=xd-1;i<=xd+1;i++){
+		for(int j=yd-1;j<=yd+1;j++){
+		mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+	}
+	if(mapa_jednostek2[xd][yd]=='A')mapa_jednostek2[xd][yd]=' ';
+}
+
+	mapa_jednostek2[x][y]='A';
+	armia2[mapa_armii2[xd][yd]-48].x=x;
+	armia2[mapa_armii2[xd][yd]-48].y=y;
+	mapa_armii2[x][y]=mapa_armii2[xd][yd];
+	mapa_armii2[xd][yd]='0';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+	nastepna_tura2--;
+}
+/////////////nawigacja/////////
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='O' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja2==true){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	mapa_jednostek2[x][y]='O';
+	for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+				bufor_mjednostek[i][j]=mapa_jednostek2[i][j];
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora  && mapa_jednostek2[i][j]!=osadnik && mapa_jednostek2[i][j]!=robotnik && mapa_jednostek[i][j]==' '){
+
+	mapa_jednostek2[i][j]='O';
+	}
+		}
+	}
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek2[x][y]=='O' && bufor_mjednostek[x][y]!='O' && x0==0 && ruch==true && nawigacja==true && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek2[x][y]!='R'&& mapa_jednostek[x][y]==' '&& mapa_jednostek2[x][y]!='A'){
+		for(int i=xd-2;i<=xd+2;i++){
+		for(int j=yd-2;j<=yd+2;j++){
+		
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		
+	}
+	if(mapa_jednostek2[xd][yd]=='O')mapa_jednostek2[xd][yd]=' ';
+}
+	mapa_jednostek2[x][y]='O';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+	nastepna_tura2--;
+}
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='R' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja2==true){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	mapa_jednostek2[x][y]='R';
+	for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+				bufor_mjednostek[i][j]=mapa_jednostek2[i][j];
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek2[i][j]!=osadnik && mapa_jednostek2[i][j]!=robotnik && mapa_jednostek[i][j]==' ' ){
+
+	mapa_jednostek2[i][j]='R';
+	}
+		}
+	}
+	
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && (mapa_jednostek2[x][y]=='A' ||mapa_jednostek[x][y]!=' ') && x0==0 && ruch==true && nawigacja2==true && bufor_mjednostek[x][y]!='A' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada && mapa_jednostek2[x][y]!='O'&& mapa_jednostek2[x][y]!='R'){
+			if(mapa_jednostek[x][y]=='B'){
+			walka_barbarzyncy2(armia2[mapa_armii2[xd][yd]-48],false,true,&zloto2,&ilosc_barbarzyncow,&wygrana);
+			if(wygrana==false){
+			
+			mapa_jednostek2[xd][yd]=' ';
+			armia2[mapa_armii2[xd][yd]].atak=0;
+			armia2[mapa_armii2[xd][yd]].obrona=0;
+			armia2[mapa_armii2[xd][yd]].miasto_domowe=0;
+			armia2[mapa_armii2[xd][yd]].nazwa=" ";
+			armia2[mapa_armii2[xd][yd]].utrzymanie=0;
+			armia2[mapa_armii2[xd][yd]].wielkosc=0;
+			mapa_armii2[xd][yd]='0';
+			liczba_armii2--;
+			continue;
+			}else
+			ilosc_barbarzyncow--;
+		}
+	
+			if(mapa_jednostek[x][y]!='A' && mapa_jednostek[x][y]!='B'){
+				mapa_jednostek[x][y]=' ';
+				komunikat="Zniszczyes wrogiego cywila";
+			}
+		
+		
+		for(int i=xd-2;i<=xd+2;i++){
+		for(int j=yd-2;j<=yd+2;j++){
+		
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		
+	}
+	if(mapa_jednostek2[xd][yd]=='A')mapa_jednostek2[xd][yd]=' ';
+}
+	armia2[mapa_armii2[xd][yd]-48].x=x;
+	armia2[mapa_armii2[xd][yd]-48].y=y;
+	mapa_armii2[x][y]=mapa_armii2[xd][yd];
+	mapa_armii2[xd][yd]='0';
+	mapa_jednostek2[x][y]='A';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+	nastepna_tura2--;
+}
+
+if(ster=='q' && wybor_jednostki==true && mapa_jednostek2[x][y]=='A' && menu==false && x0==0 && budowa==false && ruch==false && nawigacja2==true){
+	xd=x;
+	yd=y;
+	bufor_mjednostek[x][y]=mapa_jednostek2[x][y];
+	
+	mapa_jednostek2[x][y]='A';
+	for(int i=x-2;i<=x+2;i++){
+		for(int j=y-2;j<=y+2;j++){
+				bufor_mjednostek[i][j]=mapa_jednostek2[i][j];
+	if(mapa[i][j]!=woda && mapa[i][j]!=gora && mapa_jednostek2[i][j]!=osadnik && mapa_jednostek2[i][j]!=robotnik &&mapa_jednostek[i][j]==' ' ){
+
+	mapa_jednostek2[i][j]='A';
+	}
+		}
+	}
+	
+	ruch=true;
+}
+
+if(ruch==true && ster=='e' && wybor_jednostki==true && mapa_jednostek2[x][y]=='R' && x0==0 && ruch==true && nawigacja2==true && bufor_mjednostek[x][y]!='R' && bufor_multi[x][y]!=stolica && bufor_multi[x][y]!=osada&& mapa_jednostek[x][y]==' ' && mapa_jednostek2[x][y]!='O'&& mapa_jednostek2[x][y]!='A'){
+	
+		
+		for(int i=xd-2;i<=xd+2;i++){
+		for(int j=yd-2;j<=yd+2;j++){
+		
+			mapa_jednostek2[i][j]=bufor_mjednostek[i][j];
+		
+	}
+	if(mapa_jednostek2[xd][yd]=='R')mapa_jednostek2[xd][yd]=' ';
+}
+	mapa_jednostek2[x][y]='R';
+	ruch=false;
+	wybor_jednostki=false;
+	menu=true;
+	nastepna_tura2--;
+}
+
+ if(ster=='c'){
+ 	zloto2=zloto2+1000;
+ 	nauka2=nauka2+1000;
+ 	for(int i=1;i<11;i++)
+ 	miasto2[i].produkcja=miasto2[i].produkcja+1000;
+ 	zywnosc2+=1000;
+ 	kamien2+=1000;
+ 	drewno2+=1000;
+ 	wiara2+=1000;
+ }
+ if(ster=='x'){
+ 	hodowla2=true;
+ 	waluta2=true;
+ 	nawigacja2=true;
+ 	obrobka_zelaza2=true;
+ 	obrobka_stali2=true;
+ 	ratusz2.lvl=5;
+ 	kapitol2.lvl=5;
+ 	koszary2.lvl=4;
+ 	stajnia2.lvl=4;
+ 	warsztat2.lvl=2;
+ 	plac2.lvl=1;
+ 	miasto2[1].ludnosc=3000;
+ }
+ 
+ if(ster=='b'){
+ 	mapa_jednostek[x][y]='B';
+ 	ilosc_barbarzyncow++;
+ }
+  if(ster=='o'){
+ 	mapa_jednostek2[x][y]='O';
+ }
+  if(ster=='r'){
+ 	mapa_jednostek2[x][y]='R';
+ }
+ if(ster=='l'){
+ 	walka_barbarzyncy2(armia2[1],false,true,&zloto2,&ilosc_barbarzyncow,&wygrana);
+ }
+ if(ster=='n'){
+ 	mapa_jednostek2[x][y]='A';
+ 	mapa_armii2[x][y]=liczba_armii2+49;
+ 	liczba_armii2++;
+ 	armia2[liczba_armii2].x=x;
+ 	armia2[liczba_armii2].y=y;
+ 	armia2[liczba_armii2].ciezka_jazda=5;
+ 	armia2[liczba_armii2].pikinierzy=5;
+ 	armia2[liczba_armii2].lucznicy=5;
+ 	armia2[liczba_armii2].kusznicy=5;
+ 	armia2[liczba_armii2].ciezkozbrojni=5;
+ 	armia2[liczba_armii2].lekka_jazda=5;
+ 	armia2[liczba_armii2].tarany=5;
+ 	armia2[liczba_armii2].elity=5;
+ 	armia2[liczba_armii2].miasto_domowe=2;
+ 	armia2[liczba_armii2].wielkosc=40;
+ 	armia2[liczba_armii2].nazwa="ARMIA SMIERCI";
+ }
+ 
+}
+
+/////////////////MAPA STOLICY////////////////
+
+
+
+while(bmapa_stolicy==true){
+	
+	przychod_zloto2=0;
+	przychod_drewno2=0;
+	przychod_kamien2=0;
+	przychod_zywnosc2=0;
+	przychod_wiara2=0;
+	przychod_nauka2=0;
+	for(int i=1;i<11;i++)przychod_zloto2=przychod_zloto2+miasto2[i].przychod_zloto;
+	if(waluta2==true)przychod_zloto2=przychod_zloto2*1.25;
+	for(int i=1;i<11;i++)przychod_drewno2=przychod_drewno2+miasto2[i].przychod_drewno;
+	for(int i=1;i<11;i++)przychod_kamien2=przychod_kamien2+miasto2[i].przychod_kamien;
+	if(huta2.lvl>=1)przychod_kamien2=przychod_kamien2+przychod_kamien2*0.3;
+	for(int i=1;i<11;i++)przychod_zywnosc2=przychod_zywnosc2+miasto2[i].przychod_zywnosc;
+	if(hodowla2==true)przychod_zywnosc=przychod_zywnosc*1.25;
+	for(int i=1;i<11;i++)miasto2[i].przychod_zywnosc=miasto2[i].przychod_zywnosc-miasto2[i].ludnosc*0.0005;
+	for(int i=1;i<11;i++)przychod_wiara2=przychod_wiara2+miasto2[i].przychod_wiara;
+	if(ewangelizacja2==true)przychod_wiara2=przychod_wiara2*1.25;
+	for(int i=1;i<11;i++)przychod_nauka2=przychod_nauka2+miasto2[i].przychod_nauka;
+	if(gildie2==true)przychod_nauka2=przychod_nauka2*1.25;
+         cls();
+	
+	if(technologie==false){
+	
+         cls();
+         cout << endl <<"                MAPA STOLICY"<< endl << endl;
+
+
+
+		
+for(int i=x-19;i<=x+19;i++){
+	cout << "   ";
+        for(int j=y-19;j<=y+19;j++){
+        		if(j==(y-19) || i==(x-19) || j==(y+19) || i==(x+19))cout << blok;
+        		else{
+                      	
+                if(i==x && j==y){
+                        SetConsoleTextAttribute( hOut,  BACKGROUND_RED );
+                        cout << mapa_stolicy2[i][j];
+                        SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_stolicy2[i][j]==dom){
+                                    SetConsoleTextAttribute( hOut, 2 );
+                                    cout << mapa_stolicy2[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                                    
+                if(mapa_stolicy2[i][j]==dom2){
+                                     SetConsoleTextAttribute( hOut, 10 );
+                                    cout << mapa_stolicy2[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_stolicy2[i][j]==woda){
+                                     SetConsoleTextAttribute( hOut, 9  );
+                                    cout << mapa_stolicy2[i][j];
+                                    SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                if(mapa_stolicy2[i][j]==gora){
+                                     SetConsoleTextAttribute( hOut, 7 | BACKGROUND_GREEN );
+                                     cout << mapa_stolicy2[i][j];
+                                     SetConsoleTextAttribute( hOut, 8 );
+                        }else{
+                        	
+                        	if(mapa_stolicy2[i][j]==prosto_dol || mapa_stolicy2[i][j]==prosto_bok || mapa_stolicy2[i][j]==skret_lewo_gora || mapa_stolicy2[i][j]==skret_lewo_dol || mapa_stolicy2[i][j]==skret_prawo_gora
+							|| mapa_stolicy2[i][j]==skret_prawo_dol || mapa_stolicy2[i][j]==skrzyzowanie || mapa_stolicy2[i][j]==skrzyzowanie_gora || mapa_stolicy2[i][j]==skrzyzowanie_lewo
+							|| mapa_stolicy2[i][j]==skrzyzowanie_prawo || mapa_stolicy2[i][j]==skrzyzowanie_dol){
+							SetConsoleTextAttribute( hOut, 7 | BACKGROUND_GREEN );
+							cout << mapa_stolicy2[i][j];
+							SetConsoleTextAttribute( hOut, 8 );
+							}else{
+							
+                cout << mapa_stolicy2[i][j];
+                
+                } 
+                }
+            	}
+            	}
+            	}
+            	}
+            	}
+                }
+         
+			
+                
+        cout << endl;
+        }
+    
+    	
+    	        cout << endl;
+cout << "( " << y-21 <<" , "<<x-22<<" )   "; 
+
+cout << endl << endl;
+cout << "Jestes w miescie " << miasto2[1].nazwa;
+SetConsoleTextAttribute( hOut, 10 );
+gotoxy(8,60);
+cout << "Zywnosc: " << zywnosc2<<"("<<miasto2[1].przychod_zywnosc<<")" <<"  Drewno: " << drewno2 <<"("<<miasto2[1].przychod_drewno<<")" <<
+ "  Kamien: " << kamien2<<"("<<miasto2[1].przychod_kamien<<")" << "  Wiara: " << wiara2 <<"("<<miasto2[1].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy2 <<"("<<liczba_zolnierzy2<<")"<< "  Zloto: " 
+ << zloto << "("<<miasto[1].przychod_zloto<<")" <<"  Produckja: " << miasto[1].produkcja <<"("<<miasto[1].przychod_produkcja
+ <<")" << "  Ludnosc: "<<miasto2[1].ludnosc << "  Nauka: " << nauka2<<"("<<miasto2[1].przychod_nauka<<")"<<"  Obrona: "<<miasto2[1].obrona;
+SetConsoleTextAttribute( hOut, 8 );
+	if(menu_budowy==true || rozbudowa==true){
+gotoxy(55,1);
+if(menu_budowy==true && rozbudowa==false)
+cout << "MENU BUDOWY                    ";
+if(rozbudowa==true){
+cout << "MENU ROZBUDOWY                 ";
+rozbudowlanka2(x0);
+
+}
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout<< blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Ratusz ("<<ratusz2.lvl<<"/5)           ";
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else{
+if(ratusz2.budowa==true)
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Ratusz ("<<ratusz2.lvl<<"/5)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Rynek ("<<rynek2.lvl<<"/3)            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else{
+if(rynek2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Rynek ("<<rynek2.lvl<<"/3)            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"Dzielnica Mieszkalna ("<<mieszkalna2.lvl<<"/3)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "Dzielnica Mieszkalna ("<<mieszkalna2.lvl<<"/3)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Handlowa ("<<handlowa2.lvl<<"/3) "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< " Dzielnica Handlowa ("<<handlowa2.lvl<<"/3) "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Dzielnica Naukowa ("<<naukowa2.lvl<<"/3)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Dzielnica Naukowa ("<<naukowa2.lvl<<"/3)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Wojskowa ("<<wojskowa2.lvl<<"/3) "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<" Dzielnica Wojskowa ("<<wojskowa2.lvl<<"/3) "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Religijna ("<<religijna2.lvl<<"/3)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<" Dzielnica Religijna ("<<religijna2.lvl<<"/3)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"Dzielnica Rekreacyjna("<<rekreacyjna2.lvl<<"/3)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"Dzielnica Rekreacyjna("<<rekreacyjna2.lvl<<"/3)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Szkola ("<<szkola2.lvl<<"/2)           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(szkola2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Szkola ("<<szkola2.lvl<<"/2)           "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Akademia ("<<akademia.lvl<<"/2)         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(akademia2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Akademia ("<<akademia2.lvl<<"/2)         "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kapitol ("<<kapitol2.lvl<<"/5)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kapitol2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Kapitol ("<<kapitol2.lvl<<"/5)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,16);
+if(x0==11){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Mur ("<<mur2.lvl<<"/3)              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Mur ("<<mur2.lvl<<"/3)              "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,17);
+if(x0==12){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Koszary ("<<koszary2.lvl<<"/4)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(koszary2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Koszary ("<<koszary2.lvl<<"/4)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,18);
+if(x0==13){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Huta ("<<huta2.lvl<<"/2)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(huta2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Huta ("<<huta2.lvl<<"/2)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,19);
+if(x0==14){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Oboz Najemnikow ("<<oboz2.lvl<<"/3)  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(oboz2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Oboz Najemnikow ("<<oboz2.lvl<<"/3)  "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,20);
+if(x0==15){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Bank ("<<bank2.lvl<<"/2)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(bank2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Bank ("<<bank2.lvl<<"/2)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,21);
+if(x0==16){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Gildia ("<<gildia2.lvl<<"/3)           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(gildia2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Gildia ("<<gildia2.lvl<<"/3)           "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,22);
+if(x0==17){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Biblioteka ("<<biblioteka2.lvl<<"/2)       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(biblioteka2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Biblioteka ("<<biblioteka2.lvl<<"/2)       "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+gotoxy(45,23);
+if(x0==18){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Park ("<<park2.lvl<<"/3)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(park2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Park ("<<park2.lvl<<"/3)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,24);
+if(x0==19){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pomnik ("<<pomnik2.lvl<<"/3)           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(pomnik2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Pomnik ("<<pomnik2.lvl<<"/3)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+gotoxy(45,25);
+if(x0==20){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ambasada ("<<ambasada2.lvl<<"/3)         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(ambasada2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Ambasada ("<<ambasada2.lvl<<"/3)         "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,26);
+if(x0==21){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Port ("<<port2.lvl<<"/3)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(port2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Port ("<<port2.lvl<<"/3)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+} 
+gotoxy(45,27);
+if(x0==22){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Teatr ("<<teatr2.lvl<<"/2)            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(teatr2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Teatr ("<<teatr2.lvl<<"/2)            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,28);
+if(x0==23){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Droga ("<<droga2.lvl<<"/2)            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Droga ("<<droga2.lvl<<"/2)            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+
+gotoxy(45,29);
+if(x0==24){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Tawerna ("<<tawerna2.lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(tawerna2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Tawerna ("<<tawerna2.lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,30);
+if(x0==25){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Magazyn ("<<magazyn2.lvl<<"/4)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(magazyn2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Magazyn ("<<magazyn2.lvl<<"/4)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,31);
+if(x0==26){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Mlyn ("<<mlyn2.lvl<<"/4)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(mlyn2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Mlyn ("<<mlyn2.lvl<<"/4)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,32);
+if(x0==27){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Plac ("<<plac2.lvl<<"/1)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(plac2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Plac ("<<plac2.lvl<<"/1)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,33);
+if(x0==28){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Tartak ("<<tartakb2.lvl<<"/4)           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(tartakb2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Tartak ("<<tartakb2.lvl<<"/4)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+gotoxy(45,34);
+if(x0==29){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kamieniarz ("<<kamieniarz2.lvl<<"/4)       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kamieniarz2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kamieniarz ("<<kamieniarz2.lvl<<"/4)       "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,35);
+if(x0==30){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kolos ("<<kolos2.lvl<<"/1)            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kolos2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kolos ("<<kolos2.lvl<<"/1)            "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,36);
+if(x0==31){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kosciol ("<<kosciol2.lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kosciol2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kosciol ("<<kosciol2.lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,37);
+if(x0==32){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Katedra ("<<katedra2.lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(katedra2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Katedra ("<<katedra2.lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,38);
+if(x0==33){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Skarbiec ("<<skarbiec2.lvl<<"/3)         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(skarbiec2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Skarbiec ("<<skarbiec2.lvl<<"/3)         "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,39);
+if(x0==34){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Fort ("<<fort2.lvl<<"/4)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(fort2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Fort ("<<fort2.lvl<<"/4)             "<<blok;  
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,40);
+if(x0==35){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Weglarnia ("<<weglarnia2.lvl<<"/2)        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(weglarnia2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Weglarnia ("<<weglarnia2.lvl<<"/2)        "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,41);
+if(x0==36){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Warsztat ("<<warsztat2.lvl<<"/2)         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(warsztat2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Warsztat ("<<warsztat2.lvl<<"/2)         "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,42);
+if(x0==37){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Stajnia ("<<stajnia2.lvl<<"/4)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(stajnia2.budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Stajnia ("<<stajnia2.lvl<<"/4)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(45,43);
+if(x0==38){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Krzak                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Krzak                  "<<blok;
+
+gotoxy(45,44);
+if(x0==39){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Zburz Teren            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Zburz Teren            "<<blok;
+gotoxy(45,45);
+if(x0==40){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Woda                   "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Woda                   "<<blok;
+gotoxy(45,46);
+if(x0==41){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok;
+gotoxy(45,47);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,48);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+
+	if(menu_stolica==true){
+gotoxy(55,1);
+cout << "MENU MIASTA                    ";
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Mapa Swiata            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Mapa Swiata            "<<blok; 
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Buduj                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Buduj                  "<<blok; 
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Rekrutuj               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Rekrutuj               "<<blok; 
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Plac Manewrowy         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Plac Manewrowy         "<<blok; 
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Najmij jednostki       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Najmij jednostki       "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Zmien nazwe            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Zmien nazwe            "<<blok; 
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Technologie            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Technologie            "<<blok; 
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Rozbudowa              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Rozbudowa              "<<blok; 
+gotoxy(45,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,14);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+	if(rekrutacja==true){
+gotoxy(55,1);
+cout << "REKRUTACJA JEDNOSTEK                    ";
+rekrutowanka2(x0);
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Robotnik               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Robotnik               "<<blok; 
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Osadnik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Osadnik                "<<blok; 
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier               "<<blok; 
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lucznik                "<<blok; 
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik                "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny          "<<blok; 
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda            "<<blok; 
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda           "<<blok;
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran                  "<<blok;
+gotoxy(45,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita                  "<<blok; 
+gotoxy(45,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(45,16);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,17);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+	if(bplac==true){
+		gotoxy(50,1);
+cout << "NAZWA/ILOSC POSIADANYCH/DO ARMII                    ";
+rekrutowanka(x0);
+pokaz_armie2(armia2[liczba_armii2+1], xm);
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<sjednostki2[0][2].ilosc<<" / "<<armia2[liczba_armii2+1].pikinierzy<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<sjednostki2[0][2].ilosc<<" / "<<armia2[liczba_armii2+1].pikinierzy<<"       "<<blok; 
+
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<sjednostki2[0][3].ilosc<<" / "<<armia2[liczba_armii2+1].lucznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Lucznik / "<<sjednostki2[0][3].ilosc<<" / "<<armia2[liczba_armii2+1].lucznicy<<"        ";
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<sjednostki2[0][4].ilosc<<" / "<<armia2[liczba_armii2+1].kusznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<sjednostki2[0][4].ilosc<<" / "<<armia2[liczba_armii2+1].kusznicy<<"        "<<blok; 
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<sjednostki2[0][5].ilosc<<" / "<<armia2[liczba_armii2+1].ciezkozbrojni<<"  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<sjednostki2[0][5].ilosc<<" / "<<armia2[liczba_armii2+1].ciezkozbrojni<<"  "<<blok; 
+
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<sjednostki2[0][6].ilosc<<" / "<<armia2[liczba_armii2+1].lekka_jazda<<"    "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<sjednostki2[0][6].ilosc<<" / "<<armia2[liczba_armii2+1].lekka_jazda<<"    "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<sjednostki2[0][7].ilosc<<" / "<<armia2[liczba_armii2+1].ciezka_jazda<<"   "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<sjednostki2[0][7].ilosc<<" / "<<armia2[liczba_armii2+1].ciezka_jazda<<"   "<<blok;
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<sjednostki2[0][8].ilosc<<" / "<<armia2[liczba_armii2+1].tarany<<"          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<sjednostki2[0][8].ilosc<<" / "<<armia2[liczba_armii2+1].tarany<<"          "<<blok;
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita / "<<sjednostki2[0][9].ilosc<<" / "<<armia2[liczba_armii2+1].elity<<"          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita / "<<sjednostki2[0][9].ilosc<<" / "<<armia2[liczba_armii2+1].elity<<"          "<<blok; 
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(45,14);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,15);
+for(int i=0;i<28;i++)cout << blok;
+	}
+
+	if(najmij==true){
+		gotoxy(55,1);
+cout << "REKRUTACJA JEDNOSTEK                    ";
+najmowanka2(x0);
+gotoxy(45,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(45,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Robotnik               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Robotnik               "<<blok; 
+gotoxy(45,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Osadnik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Osadnik                "<<blok; 
+gotoxy(45,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier               "<<blok; 
+
+gotoxy(45,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lucznik                "<<blok; 
+gotoxy(45,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik                "<<blok; 
+gotoxy(45,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny          "<<blok; 
+
+gotoxy(45,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda            "<<blok; 
+gotoxy(45,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda           "<<blok;
+gotoxy(45,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran                  "<<blok;
+gotoxy(45,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Elita                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Elita                  "<<blok; 
+gotoxy(45,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(45,16);
+cout <<blok<< "                          "<<blok;
+gotoxy(45,17);
+for(int i=0;i<28;i++)cout << blok;
+
+	}
+
+    	ster=getch();
+    			if(budowa_miasto==true){
+		for(int i=0;i<80;i++){
+			for(int j=0;j<150;j++){
+		mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+				}
+			}
+			
+		}
+		
+    	
+if(ster==KEY_DOWN && x0!=7 && menu_stolica==true || ster==KEY_DOWN && x0!=41 && menu_budowy==true || ster==KEY_DOWN && x0!=41 && rozbudowa==true || ster==KEY_DOWN && x0!=10 && rekrutacja==true || ster==KEY_DOWN && x0!=10 && najmij==true|| ster==KEY_DOWN && x0!=8 && bplac==true){
+	x0++;
+	cls();
+	continue;
+
+
+}
+if(ster==KEY_UP && x0!=0){
+x0--;
+cls();
+continue;
+
+}
+
+    	
+if(ster=='w' && mapa_stolicy2[x-1][y]!='@' && mapa_stolicy2[x-1][y]!=stolica){
+              x--;
+              }
+ if(ster=='s' && mapa_stolicy2[x+1][y]!='@'&& mapa_stolicy2[x+1][y]!=stolica){
+              x++;
+              }
+if(ster=='a' && mapa_stolicy2[x][y-1]!='@'&& mapa_stolicy2[x][y-1]!=stolica){
+              y--;
+              }
+if(ster=='d' && mapa_stolicy2[x][y+1]!='@'&& mapa_stolicy2[x][y+1]!=stolica){
+              y++;
+              }
+    	
+    	if(ster=='.' && ksztalt<1000)ksztalt++;
+    	if(ster==','){
+    		if(ksztalt==0)ksztalt=1000;
+    		else
+    		ksztalt--;
+		}
+    
+
+    	if(ster=='q' && x0==0 && menu_stolica==true){
+    menu=true;
+	mapa_glowna=true;
+	bmapa_stolicy=false;
+	x=xd;
+	y=yd;
+	system("CLS");
+		}
+		
+		if(ster==27){
+			menu_stolica=true;
+			rozbudowa=false;
+			menu_budowy=false;
+			rekrutacja=false;
+			bplac=false;
+			najmij=false;
+			x0=0;
+			system("CLS");
+		}
+		
+		if(ster=='q' && x0==2 && menu_stolica==true){
+			menu_stolica=false;
+			rekrutacja=true;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		if(ster=='q' && x0==10 && rekrutacja==true){
+			menu_stolica=true;
+			rekrutacja=false;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		
+		if(ster=='q' && x0==7 && menu_stolica==true){
+			menu_stolica=false;
+			rozbudowa=true;
+			system("CLS");
+			x0=40;
+			continue;
+		}
+		
+		if(ster=='q' && x0==6 && menu_stolica==true){
+			menu_stolica=false;
+			technologie=true;
+			system("CLS");
+			x0=0;
+		}
+    	
+    	if(ster=='q' && x0==5 && menu_stolica==true){
+
+	gotoxy(54,25);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(54,26);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,28);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,29);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(90,27);
+	cout << "   " << blok;
+	gotoxy(54,27);
+	cout <<blok<< "  Wpisz nazwe miasta: ";
+	getline(cin, miasto2[1].nazwa);
+
+	gotoxy(54,27);
+	for(int i=0;i<28;i++)cout << blok;
+
+	system("CLS");
+	continue;
+
+		}
+		
+		if(ster=='q' && x0==1 && menu_stolica==true){
+			menu_stolica=false;
+			menu_budowy=true;
+			system("CLS");
+			x0=0;
+			continue;
+		}
+		
+		if(ster=='q' && x0==41 && menu_budowy==true){
+			menu_stolica=true;
+			menu_budowy=false;
+			x0=0;
+			budowa_miasto=false;
+			system("CLS");
+			continue;
+		}
+		
+				
+		if(ster=='q' && x0==41 && rozbudowa==true){
+			menu_stolica=true;
+			rozbudowa=false;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		if(ster=='q' && x0==4 && menu_stolica==true && oboz2.lvl>0){
+			menu_stolica=false;
+			najmij=true;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		
+				
+		if(ster=='q' && x0==10 && najmij==true){
+			menu_stolica=true;
+			najmij=false;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		if(ster=='q' && x0==3 && menu_stolica==true && plac2.lvl==1){
+			menu_stolica=false;
+			bplac=true;
+			x0=0;
+			system("CLS");
+			continue;
+		}
+		if(ster=='q' && x0==8 && bplac==true && plac2.lvl==1){
+			menu_stolica=true;
+			bplac=false;
+			x0=0;
+			sjednostki2[0][2].ilosc=sjednostki2[0][2].ilosc+armia2[liczba_armii2+1].pikinierzy;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].pikinierzy*pikinier2[xm].wielkosc;
+			armia2[liczba_armii2+1].pikinierzy=0;
+			sjednostki2[0][3].ilosc=sjednostki2[0][3].ilosc+armia2[liczba_armii2+1].lucznicy;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].lucznicy*lucznik2[xm].wielkosc;
+			armia2[liczba_armii2+1].lucznicy=0;
+			sjednostki2[0][4].ilosc=sjednostki2[0][4].ilosc+armia2[liczba_armii2+1].kusznicy;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].kusznicy*kusznik2[xm].wielkosc;
+			armia2[liczba_armii2+1].kusznicy=0;
+			sjednostki2[0][5].ilosc=sjednostki2[0][5].ilosc+armia2[liczba_armii2+1].ciezkozbrojni;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].ciezkozbrojni*ciezkozbrojny2[xm].wielkosc;
+			armia2[liczba_armii2+1].ciezkozbrojni=0;
+			sjednostki2[0][6].ilosc=sjednostki2[0][6].ilosc+armia2[liczba_armii2+1].lekka_jazda;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].lekka_jazda*lekka_jazda2[xm].wielkosc;
+			armia2[liczba_armii2+1].lekka_jazda=0;
+			sjednostki2[0][7].ilosc=sjednostki2[0][7].ilosc+armia2[liczba_armii2+1].ciezka_jazda;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].ciezka_jazda*ciezka_jazda2[xm].wielkosc;
+			armia2[liczba_armii2+1].ciezka_jazda=0;
+			sjednostki2[0][8].ilosc=sjednostki2[0][8].ilosc+armia2[liczba_armii2+1].tarany;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].tarany*taran2[xm].wielkosc;
+			armia2[liczba_armii2+1].tarany=0;
+			sjednostki2[0][9].ilosc=sjednostki2[0][9].ilosc+armia2[liczba_armii2+1].elity;
+			liczba_zolnierzy2=liczba_zolnierzy2-armia2[liczba_armii2+1].elity*elita2.wielkosc;
+			armia2[liczba_armii2+1].elity=0;
+			armia2[liczba_armii2+1].wielkosc-=pikinier2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=lucznik2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=kusznik2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=ciezkozbrojny2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=lekka_jazda2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=ciezka_jazda2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=taran2[xm].wielkosc;
+			armia2[liczba_armii2+1].wielkosc-=elita2.wielkosc;
+			
+			system("CLS");
+			continue;			
+		}
+		
+		////////////////////////////////////budowanko////////////////////////////////////////////////////////////
+		if(ster=='q' && x0==0 && menu_budowy==true && ratusz2.lvl==0){
+			budowlanka2(ratusz,x,y,mapa_stolicy2,bufor_miasta,&bufor_budowa_miasto, x0, ksztalt);
+			budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==0 && ratusz2.lvl==0){
+		
+					
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=ratusz2.wyglad[i-x][j-y];
+				if(ratusz2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+		if(ster=='e' && budowa_miasto==true && bufor_budowa_miasto==0 && drewno2>=ratusz2.koszt_drewno && kamien2>=ratusz2.koszt_kamien && zywnosc2>=ratusz2.koszt_zywnosc && zloto2>=ratusz2.koszt_zloto && miasto2[1].produkcja>=ratusz2.koszt_produkcja && ratusz2.lvl==0)
+		{
+		zbuduj2(ratusz2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			ratusz2.lvl=1;
+			zwieksz_koszt(ratusz2);
+		}
+		if(ster=='q' && x0==0 && rozbudowa==true && ratusz2.lvl==1 && kapitol2.lvl>=1 && drewno2>=ratusz2.koszt_drewno && kamien2>=ratusz2.koszt_kamien && zywnosc2>=ratusz2.koszt_zywnosc && zloto2>=ratusz2.koszt_zloto && miasto2[1].produkcja>=ratusz2.koszt_produkcja){
+			ratusz2.lvl++;
+			rozbuduj2(ratusz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(ratusz2);
+			josadnik.koszt_produkcja-=50;
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod2(ratusz2,&przychod_nauka2,&max_zolnierzy2);
+		}
+		if(ster=='q' && x0==0 && rozbudowa==true && ratusz2.lvl==2 && kapitol2.lvl>=2 && drewno2>=ratusz2.koszt_drewno && kamien2>=ratusz2.koszt_kamien && zywnosc2>=ratusz2.koszt_zywnosc && zloto2>=ratusz2.koszt_zloto && miasto2[1].produkcja>=ratusz2.koszt_produkcja){
+			ratusz2.lvl++;
+			rozbuduj2(ratusz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(ratusz2);
+			josadnik.koszt_produkcja-=50;
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod2(ratusz2,&przychod_nauka2,&max_zolnierzy2);
+		}
+				if(ster=='q' && x0==0 && rozbudowa==true && ratusz2.lvl==3 && kapitol2.lvl>=3 && drewno2>=ratusz2.koszt_drewno && kamien2>=ratusz2.koszt_kamien && zywnosc2>=ratusz2.koszt_zywnosc && zloto2>=ratusz2.koszt_zloto && miasto2[1].produkcja>=ratusz2.koszt_produkcja){
+			ratusz2.lvl++;
+			rozbuduj2(ratusz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(ratusz2);
+			josadnik.koszt_produkcja-=50;
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod2(ratusz2,&przychod_nauka2,&max_zolnierzy2);
+		}
+				if(ster=='q' && x0==0 && rozbudowa==true && ratusz2.lvl==4 && kapitol2.lvl>=4 && drewno2>=ratusz2.koszt_drewno && kamien2>=ratusz2.koszt_kamien && zywnosc2>=ratusz2.koszt_zywnosc && zloto2>=ratusz2.koszt_zloto && miasto2[1].produkcja>=ratusz2.koszt_produkcja){
+			ratusz2.lvl++;
+			rozbuduj2(ratusz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(ratusz2);
+			josadnik.koszt_produkcja-=50;
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod2(ratusz2,&przychod_nauka2,&max_zolnierzy2);
+		}
+		//////////////////
+				if(ster=='q' && x0==1 && menu_budowy==true && rynek2.lvl==0){
+				budowlanka2(rynek2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+			budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==1 && rynek2.lvl==0&& ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=rynek2.wyglad[i-x][j-y];
+				if(rynek2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+		if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=1 && bufor_budowa_miasto==1 && drewno2>=rynek2.koszt_drewno && kamien2>=rynek2.koszt_kamien && zywnosc2>=rynek2.koszt_zywnosc && zloto2>=rynek2.koszt_zloto && miasto2[1].produkcja>=rynek2.koszt_produkcja && rynek2.lvl==0)
+		{
+		zbuduj2(rynek2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+		&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+		rynek2.lvl=1;
+		zwieksz_koszt(rynek2);
+		}
+		if(ster=='q' && x0==1 && rozbudowa==true &&ratusz2.lvl>=2 && rynek2.lvl==1 && drewno2>=rynek2.koszt_drewno && kamien2>=rynek2.koszt_kamien && zywnosc2>=rynek2.koszt_zywnosc && zloto2>=rynek2.koszt_zloto && miasto2[1].produkcja>=rynek2.koszt_produkcja){
+			rynek2.lvl++;
+			rozbuduj2(rynek2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(rynek2);
+			zwieksz_przychod2(rynek2,&przychod_nauka2,&max_zolnierzy2);
+		}
+		if(ster=='q' && x0==1 && rozbudowa==true &&ratusz2.lvl>=4 &&waluta==true && rynek2.lvl==2 && drewno2>=rynek2.koszt_drewno && kamien2>=rynek2.koszt_kamien && zywnosc2>=rynek2.koszt_zywnosc && zloto2>=rynek2.koszt_zloto && miasto2[1].produkcja>=rynek2.koszt_produkcja){
+			rynek2.lvl++;
+			rozbuduj2(rynek2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(rynek2);
+		}
+				//////////////////
+				if(ster=='q' && x0==2 && menu_budowy==true){
+						budowlanka2(mieszkalna2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+			budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==2&& ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=mieszkalna2.wyglad[i-x][j-y];
+				if(mieszkalna2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=1 && bufor_budowa_miasto==2 && drewno2>=mieszkalna2.koszt_drewno && kamien2>=mieszkalna2.koszt_kamien && zywnosc2>=mieszkalna2.koszt_zywnosc && zloto2>=mieszkalna2.koszt_zloto && miasto2[1].produkcja>=mieszkalna2.koszt_produkcja)
+		{
+		zbuduj2(mieszkalna2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			mieszkalna2.lvl=1;
+			zwieksz_koszt(mieszkalna2);
+		}	
+		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna2.lvl==1&&ratusz2.lvl>=2 && drewno2>=mieszkalna2.koszt_drewno && kamien2>=mieszkalna2.koszt_kamien && zywnosc2>=mieszkalna2.koszt_zywnosc && zloto2>=mieszkalna2.koszt_zloto && miasto2[1].produkcja>=mieszkalna2.koszt_produkcja){
+		
+			mieszkalna2.lvl++;
+			rozbuduj2(mieszkalna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mieszkalna2);
+			zwieksz_przychod2(mieszkalna2,&przychod_nauka2,&max_zolnierzy2);
+		}
+		if(ster=='q' && rozbudowa==true && x0==2&& mieszkalna2.lvl==2&&ratusz2.lvl>=3 && drewno2>=mieszkalna2.koszt_drewno && kamien2>=mieszkalna2.koszt_kamien && zywnosc2>=mieszkalna2.koszt_zywnosc && zloto2>=mieszkalna2.koszt_zloto && miasto2[1].produkcja>=mieszkalna2.koszt_produkcja){
+		
+			mieszkalna2.lvl++;
+			rozbuduj2(mieszkalna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mieszkalna2);
+			zwieksz_przychod2(mieszkalna2,&przychod_nauka2,&max_zolnierzy2);
+		}
+			//////////////////
+				if(ster=='q' && x0==3 && menu_budowy==true){
+							budowlanka2(handlowa2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==3&& ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=handlowa2.wyglad[i-x][j-y];
+				if(handlowa2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=2 && bufor_budowa_miasto==3 && drewno2>=handlowa2.koszt_drewno && kamien2>=handlowa2.koszt_kamien && zywnosc2>=handlowa2.koszt_zywnosc && zloto2>=handlowa2.koszt_zloto && miasto2[1].produkcja>=handlowa2.koszt_produkcja)
+		{
+		zbuduj2(handlowa2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			handlowa2.lvl=1;
+			zwieksz_koszt(handlowa2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==3&& handlowa2.lvl==1&&ratusz2.lvl>=3 && drewno2>=handlowa2.koszt_drewno && kamien2>=handlowa2.koszt_kamien && zywnosc2>=handlowa2.koszt_zywnosc && zloto2>=handlowa2.koszt_zloto && miasto2[1].produkcja>=handlowa2.koszt_produkcja){
+			handlowa2.lvl++;
+			rozbuduj2(handlowa2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(handlowa2);
+			zwieksz_przychod2(handlowa2,&przychod_nauka2,&max_zolnierzy2);
+		}
+		if(ster=='q' && rozbudowa==true&& x0==3&& handlowa2.lvl==2&&ratusz2.lvl>=4 && drewno2>=handlowa2.koszt_drewno && kamien2>=handlowa2.koszt_kamien && zywnosc2>=handlowa2.koszt_zywnosc && zloto2>=handlowa2.koszt_zloto && miasto2[1].produkcja>=handlowa2.koszt_produkcja){
+		
+			handlowa2.lvl++;
+			rozbuduj2(handlowa2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(handlowa2);
+			zwieksz_przychod2(handlowa2,&przychod_nauka2,&max_zolnierzy2);
+    	}
+			//////////////////
+				if(ster=='q' && x0==4 && menu_budowy==true){
+
+								budowlanka2(naukowa2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+								budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==4&& ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=naukowa2.wyglad[i-x][j-y];
+				if(naukowa2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=2 && bufor_budowa_miasto==4 && drewno2>=naukowa2.koszt_drewno && kamien2>=naukowa2.koszt_kamien && zywnosc2>=naukowa2.koszt_zywnosc && zloto2>=naukowa2.koszt_zloto && miasto2[1].produkcja>=naukowa2.koszt_produkcja)
+		{
+		zbuduj2(naukowa2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			naukowa2.lvl=1;
+			zwieksz_koszt(naukowa2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==4&& naukowa2.lvl==1&&ratusz2.lvl>=3 && drewno2>=naukowa2.koszt_drewno && kamien2>=naukowa2.koszt_kamien && zywnosc2>=naukowa2.koszt_zywnosc && zloto2>=naukowa2.koszt_zloto && miasto2[1].produkcja>=naukowa2.koszt_produkcja){
+			naukowa2.lvl++;
+			rozbuduj2(naukowa2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(naukowa2);
+			zwieksz_przychod2(naukowa2,&przychod_nauka2,&max_zolnierzy2);
+		}
+		if(ster=='q' && rozbudowa==true&& x0==4&& naukowa2.lvl==2&&ratusz2.lvl==5 && drewno2>=naukowa2.koszt_drewno && kamien2>=naukowa2.koszt_kamien && zywnosc2>=naukowa2.koszt_zywnosc && zloto2>=naukowa2.koszt_zloto && miasto2[1].produkcja>=naukowa2.koszt_produkcja){
+		rozbuduj2(naukowa2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			naukowa2.lvl++;
+			zwieksz_koszt(naukowa2);
+			zwieksz_przychod2(naukowa2,&przychod_nauka2,&max_zolnierzy2);
+    	}
+			//////////////////
+				if(ster=='q' && x0==5 && menu_budowy==true){
+						budowlanka2(wojskowa2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==5&& ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=wojskowa2.wyglad[i-x][j-y];
+				if(wojskowa2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=2 && bufor_budowa_miasto==5 && drewno2>=wojskowa2.koszt_drewno && kamien2>=wojskowa2.koszt_kamien && zywnosc2>=wojskowa2.koszt_zywnosc && zloto2>=wojskowa2.koszt_zloto && miasto2[1].produkcja>=wojskowa2.koszt_produkcja)
+		{
+		zbuduj2(wojskowa2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			wojskowa2.lvl=1;
+			zwieksz_koszt(wojskowa2);
+			miasto2[1].obrona=miasto2[1].obrona+5;
+			
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==5&& wojskowa2.lvl==1&&ratusz2.lvl>=3 && drewno2>=wojskowa2.koszt_drewno && kamien2>=wojskowa2.koszt_kamien && zywnosc2>=wojskowa2.koszt_zywnosc && zloto2>=wojskowa2.koszt_zloto && miasto2[1].produkcja>=wojskowa2.koszt_produkcja){
+			wojskowa2.lvl++;
+			rozbuduj2(wojskowa2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(wojskowa2);
+			zwieksz_przychod2(wojskowa2,&przychod_nauka2,&max_zolnierzy2);
+			
+			miasto2[1].obrona=miasto2[1].obrona+10;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==5&& wojskowa2.lvl==2&&ratusz2.lvl>=5 && drewno2>=wojskowa2.koszt_drewno && kamien2>=wojskowa2.koszt_kamien && zywnosc2>=wojskowa2.koszt_zywnosc && zloto2>=wojskowa2.koszt_zloto && miasto2[1].produkcja>=wojskowa2.koszt_produkcja){
+			wojskowa2.lvl++;
+			rozbuduj2(wojskowa2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(wojskowa2);
+			zwieksz_przychod2(wojskowa2,&przychod_nauka2,&max_zolnierzy2);
+			
+			miasto2[1].obrona=miasto2[1].obrona+15;
+    	}
+			//////////////////
+				if(ster=='q' && x0==6 && menu_budowy==true){
+							budowlanka2(religijna2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==6&& ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=religijna2.wyglad[i-x][j-y];
+				if(religijna2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=2 && bufor_budowa_miasto==6 && drewno2>=religijna2.koszt_drewno && kamien2>=religijna2.koszt_kamien && zywnosc2>=religijna2.koszt_zywnosc && zloto2>=religijna2.koszt_zloto && miasto2[1].produkcja>=religijna2.koszt_produkcja)
+		{
+		zbuduj2(religijna2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			religijna2.lvl=1;
+			zwieksz_koszt(religijna2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==6&& religijna2.lvl==2&&ratusz2.lvl>=4 && drewno2>=religijna2.koszt_drewno && kamien2>=religijna2.koszt_kamien && zywnosc2>=religijna2.koszt_zywnosc && zloto2>=religijna2.koszt_zloto && miasto2[1].produkcja>=religijna2.koszt_produkcja){
+			religijna2.lvl++;
+			rozbuduj2(religijna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(religijna2);
+			zwieksz_przychod2(religijna2,&przychod_nauka2,&max_zolnierzy2);
+			
+
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==6&& religijna2.lvl==2&&kapitol2.lvl==5 && drewno2>=religijna2.koszt_drewno && kamien2>=religijna2.koszt_kamien && zywnosc2>=religijna2.koszt_zywnosc && zloto2>=religijna2.koszt_zloto && miasto2[1].produkcja>=religijna2.koszt_produkcja){
+			religijna2.lvl++;
+				rozbuduj2(religijna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(religijna2);
+			zwieksz_przychod2(religijna2,&przychod_nauka2,&max_zolnierzy2);
+		
+
+    	}
+			//////////////////
+				if(ster=='q' && x0==7 && menu_budowy==true){
+							budowlanka2(rekreacyjna2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==7&& ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=rekreacyjna2.wyglad[i-x][j-y];
+				if(rekreacyjna2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1&& bufor_budowa_miasto==7 && drewno2>=rekreacyjna2.koszt_drewno && kamien2>=rekreacyjna2.koszt_kamien && zywnosc2>=rekreacyjna2.koszt_zywnosc && zloto2>=rekreacyjna2.koszt_zloto && miasto2[1].produkcja>=rekreacyjna2.koszt_produkcja )
+		{
+		zbuduj2(rekreacyjna2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			rekreacyjna2.lvl=1;
+			zwieksz_koszt(rekreacyjna2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==7&& rekreacyjna2.lvl==2&&ratusz2.lvl>=2 && drewno2>=rekreacyjna2.koszt_drewno && kamien2>=rekreacyjna2.koszt_kamien && zywnosc2>=rekreacyjna2.koszt_zywnosc && zloto2>=rekreacyjna2.koszt_zloto && miasto2[1].produkcja>=rekreacyjna2.koszt_produkcja){
+			rekreacyjna2.lvl++;
+			rozbuduj2(rekreacyjna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(rekreacyjna2);
+			zwieksz_przychod2(rekreacyjna2,&przychod_nauka2,&max_zolnierzy2);
+
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==7&& rekreacyjna2.lvl==2&&ratusz2.lvl>=4 && drewno2>=rekreacyjna2.koszt_drewno && kamien2>=rekreacyjna2.koszt_kamien && zywnosc2>=rekreacyjna2.koszt_zywnosc && zloto2>=rekreacyjna2.koszt_zloto && miasto2[1].produkcja>=rekreacyjna2.koszt_produkcja){
+			rekreacyjna2.lvl++;
+			rozbuduj2(rekreacyjna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(rekreacyjna2);
+			zwieksz_przychod2(rekreacyjna2,&przychod_nauka2,&max_zolnierzy2);
+			
+
+    	}
+			//////////////////
+				if(ster=='q' && x0==8 && menu_budowy==true && szkola2.lvl==0){
+						budowlanka2(szkola2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==8&& ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=szkola2.wyglad[i-x][j-y];
+				if(szkola2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=1 && bufor_budowa_miasto==8 && drewno2>=szkola2.koszt_drewno && kamien2>=szkola2.koszt_kamien && zywnosc2>=szkola2.koszt_zywnosc && zloto2>=szkola2.koszt_zloto && miasto2[1].produkcja>=szkola2.koszt_produkcja && szkola2.lvl==0)
+		{
+		zbuduj2(szkola2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			szkola2.lvl=1;
+			zwieksz_koszt(szkola2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==8&& szkola2.lvl==2&&ratusz2.lvl>=3 && drewno2>=szkola2.koszt_drewno && kamien2>=szkola2.koszt_kamien && zywnosc2>=szkola2.koszt_zywnosc && zloto2>=szkola2.koszt_zloto && miasto2[1].produkcja>=szkola2.koszt_produkcja){
+			szkola2.lvl++;
+			rozbuduj2(szkola2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(szkola2);
+			zwieksz_przychod2(szkola2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+			//////////////////
+				if(ster=='q' && x0==9 && menu_budowy==true && akademia2.lvl==0){
+						budowlanka2(akademia2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==9&& ratusz2.lvl>=4){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=akademia2.wyglad[i-x][j-y];
+				if(akademia2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=4 && bufor_budowa_miasto==9 && drewno2>=akademia2.koszt_drewno && kamien2>=akademia2.koszt_kamien && zywnosc2>=akademia2.koszt_zywnosc && zloto2>=akademia2.koszt_zloto && miasto2[1].produkcja>=akademia2.koszt_produkcja && akademia2.lvl==0)
+		{
+		zbuduj2(akademia2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			akademia2.lvl=1;
+			zwieksz_koszt(akademia2);
+		}	
+			if(ster=='q' && rozbudowa==true&& x0==9&& akademia2.lvl==2&&kapitol2.lvl==5 && drewno2>=akademia2.koszt_drewno && kamien2>=akademia2.koszt_kamien && zywnosc2>=akademia2.koszt_zywnosc && zloto2>=akademia2.koszt_zloto && miasto2[1].produkcja>=akademia2.koszt_produkcja){
+			akademia2.lvl++;
+			rozbuduj2(akademia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(akademia2);
+			zwieksz_przychod2(akademia2,&przychod_nauka2,&max_zolnierzy2);
+			elita2.koszt_produkcja-=100;
+			elita2.koszt_zloto-=50;
+    	}
+			//////////////////
+						if(ster=='q' && x0==10 && menu_budowy==true && kapitol2.lvl==0 ){
+						budowlanka2(kapitol2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==10 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=kapitol2.wyglad[i-x][j-y];
+				if(kapitol2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' &&ratusz2.lvl>=1 && budowa_miasto==true && bufor_budowa_miasto==10 && drewno2>=kapitol2.koszt_drewno && kamien2>=kapitol2.koszt_kamien && zywnosc2>=kapitol2.koszt_zywnosc && zloto2>=kapitol2.koszt_zloto && miasto2[1].produkcja>=kapitol2.koszt_produkcja && kapitol2.lvl==0)
+		{
+		zbuduj2(kapitol2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			kapitol2.lvl=1;
+			zwieksz_koszt(kapitol2);
+		}	
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol2.lvl==1 && drewno2>=kapitol2.koszt_drewno && kamien2>=kapitol2.koszt_kamien && zywnosc2>=kapitol2.koszt_zywnosc && zloto2>=kapitol2.koszt_zloto && miasto2[1].produkcja>=kapitol2.koszt_produkcja){
+			kapitol2.lvl++;
+			rozbuduj2(kapitol2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kapitol2);
+			zwieksz_przychod2(kapitol2,&przychod_nauka2,&max_zolnierzy2);
+    	}
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol2.lvl==2 && drewno2>=kapitol2.koszt_drewno && kamien2>=kapitol2.koszt_kamien && zywnosc2>=kapitol2.koszt_zywnosc && zloto2>=kapitol2.koszt_zloto && miasto2[1].produkcja>=kapitol2.koszt_produkcja){
+			kapitol2.lvl++;
+			rozbuduj2(kapitol2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kapitol2);
+			zwieksz_przychod2(kapitol2,&przychod_nauka2,&max_zolnierzy2);
+    	}
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol2.lvl==3 && drewno2>=kapitol2.koszt_drewno && kamien2>=kapitol2.koszt_kamien && zywnosc2>=kapitol2.koszt_zywnosc && zloto2>=kapitol2.koszt_zloto && miasto2[1].produkcja>=kapitol2.koszt_produkcja){
+			kapitol2.lvl++;
+			rozbuduj2(kapitol2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kapitol2);
+			zwieksz_przychod2(kapitol2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+				if(ster=='q'&& x0==10 && rozbudowa==true&& kapitol2.lvl==4 && drewno2>=kapitol2.koszt_drewno && kamien2>=kapitol2.koszt_kamien && zywnosc2>=kapitol2.koszt_zywnosc && zloto2>=kapitol2.koszt_zloto && miasto2[1].produkcja>=kapitol2.koszt_produkcja){
+			kapitol2.lvl++;
+			rozbuduj2(kapitol2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kapitol2);
+			zwieksz_przychod2(kapitol2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+		if(ster=='q' && x0==11 && menu_budowy==true){
+							budowlanka2(mur2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==11 && ratusz2.lvl>=1){
+				
+			mapa_stolicy2[x][y]=osada;
+		}
+		if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==11 && drewno2>=mur2.koszt_drewno && kamien2>=mur2.koszt_kamien && zywnosc2>=mur2.koszt_zywnosc && zloto2>=mur2.koszt_zloto && miasto2[1].produkcja>=mur2.koszt_produkcja && mapa_stolicy2[x][y]!=254)
+		{
+			zloto2=zloto2-mur2.koszt_zloto;
+			drewno2=drewno2-mur2.koszt_drewno;
+			kamien2=kamien2-mur2.koszt_kamien;
+			zywnosc2=zywnosc2-mur2.koszt_zywnosc;
+			miasto2[1].produkcja=miasto2[1].produkcja-mur2.koszt_produkcja;
+			miasto2[1].ludnosc=miasto2[1].ludnosc+mur2.ludnosc;
+
+			mapa_stolicy2[x][y]=osada;
+			bufor_miasta2[x][y]=mapa_stolicy2[x][y];			
+			mur2.lvl=1;
+		
+		}	
+			if(ster=='q' && budowa_miasto==true&& x0==11&& mur2.lvl==1 && ratusz2.lvl>=3 && drewno2>=mur2.koszt_drewno && kamien2>=mur2.koszt_kamien && zywnosc2>=mur2.koszt_zywnosc && zloto2>=mur2.koszt_zloto && miasto2[1].produkcja>=mur2.koszt_produkcja){
+			mur2.lvl++;
+			rozbuduj2(mur2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mur2);
+			zwieksz_przychod2(mur2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	
+		if(ster=='q' && rozbudowa==true&& x0==11&& mur2.lvl==2 && ratusz2.lvl>=5 && drewno2>=mur2.koszt_drewno && kamien2>=mur2.koszt_kamien && zywnosc2>=mur2.koszt_zywnosc && zloto2>=mur2.koszt_zloto && miasto2[1].produkcja>=mur2.koszt_produkcja){
+			mur2.lvl++;
+			rozbuduj2(mur2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mur2);
+			zwieksz_przychod2(mur2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}//////////////////
+				if(ster=='q' && x0==12 && menu_budowy==true && koszary2.lvl==0){
+							budowlanka2(koszary2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==12 && ratusz2.lvl>=1 ){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=koszary2.wyglad[i-x][j-y];
+				if(koszary2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==12 && drewno2>=koszary2.koszt_drewno && kamien2>=koszary2.koszt_kamien && zywnosc2>=koszary2.koszt_zywnosc && zloto2>=koszary2.koszt_zloto && miasto2[1].produkcja>=koszary2.koszt_produkcja && koszary2.lvl==0)
+		{
+		zbuduj2(koszary2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			koszary2.lvl=1;
+			zwieksz_koszt(koszary2);
+			miasto2[1].obrona=miasto2[1].obrona+1;
+		}	
+		if(ster=='q' && rozbudowa==true && x0==12&& koszary2.lvl==1 && ratusz2.lvl>=2 && drewno2>=koszary2.koszt_drewno && kamien2>=koszary2.koszt_kamien && zywnosc2>=koszary2.koszt_zywnosc && zloto2>=koszary2.koszt_zloto && miasto2[1].produkcja>=koszary2.koszt_produkcja){
+			koszary2.lvl++;
+			rozbuduj2(koszary2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(koszary2);
+			zwieksz_przychod2(koszary2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+    	}	
+		if(ster=='q' && rozbudowa==true && x0==12&& koszary2.lvl==2 && ratusz2.lvl>=4 && drewno2>=koszary2.koszt_drewno && kamien2>=koszary2.koszt_kamien && zywnosc2>=koszary2.koszt_zywnosc && zloto2>=koszary2.koszt_zloto && miasto2[1].produkcja>=koszary2.koszt_produkcja){
+			koszary2.lvl++;
+			rozbuduj2(koszary2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(koszary2);
+			zwieksz_przychod2(koszary2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+			
+    	}
+    	if(ster=='q' && rozbudowa==true && x0==12&& koszary2.lvl==3 && ratusz2.lvl>=5 && drewno2>=koszary2.koszt_drewno && kamien2>=koszary2.koszt_kamien && zywnosc2>=koszary2.koszt_zywnosc && zloto2>=koszary2.koszt_zloto && miasto2[1].produkcja>=koszary2.koszt_produkcja){
+			koszary2.lvl++;
+			rozbuduj2(koszary2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(koszary2);
+			zwieksz_przychod2(koszary2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+			
+    	}
+			//////////////////
+				if(ster=='q' && x0==13 && menu_budowy==true && huta2.lvl==0){
+							budowlanka2(huta2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==13&& ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=huta2.wyglad[i-x][j-y];
+				if(huta2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && bufor_budowa_miasto==13&& ratusz2.lvl>=2 && drewno2>=huta2.koszt_drewno && kamien2>=huta2.koszt_kamien && zywnosc2>=huta2.koszt_zywnosc && zloto2>=huta2.koszt_zloto && miasto2[1].produkcja>=huta2.koszt_produkcja && huta2.lvl==0)
+		{
+		zbuduj2(huta2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			huta2.lvl=1;
+			zwieksz_koszt(huta2);
+			
+		}	
+		if(ster=='q' && rozbudowa==true && x0==13&& huta2.lvl==1 && ratusz2.lvl>=4 && drewno2>=huta2.koszt_drewno && kamien2>=huta2.koszt_kamien && zywnosc2>=huta2.koszt_zywnosc && zloto2>=huta2.koszt_zloto && miasto2[1].produkcja>=huta2.koszt_produkcja){
+			huta2.lvl++;
+			rozbuduj2(huta2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(huta2);
+			zwieksz_przychod2(huta2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+			
+    	}	//////////////////
+				if(ster=='q' && x0==14 && menu_budowy==true && oboz2.lvl==0){
+							budowlanka2(oboz2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==14&& ratusz2.lvl>=3){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=oboz2.wyglad[i-x][j-y];
+				if(oboz2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=3 && bufor_budowa_miasto==14 && drewno2>=oboz2.koszt_drewno && kamien2>=oboz2.koszt_kamien && zywnosc2>=oboz2.koszt_zywnosc && zloto2>=oboz2.koszt_zloto && miasto2[1].produkcja>=oboz2.koszt_produkcja && oboz2.lvl==0)
+		{
+		zbuduj2(oboz2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			oboz2.lvl=1;
+			pikinier2[xm].koszt_zloto=pikinier2[xm].koszt_zloto-50;
+			lucznik2[xm].koszt_zloto=lucznik2[xm].koszt_zloto-50;
+			kusznik2[xm].koszt_zloto=kusznik2[xm].koszt_zloto-50;	
+			lekka_jazda2[xm].koszt_zloto=lekka_jazda2[xm].koszt_zloto-50;
+			ciezka_jazda2[xm].koszt_zloto=ciezka_jazda2[xm].koszt_zloto-50;
+			ciezkozbrojny2[xm].koszt_zloto=ciezkozbrojny2[xm].koszt_zloto-50;
+			zwieksz_koszt(oboz2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==14&& oboz2.lvl==1 && ratusz2.lvl>=4 && drewno2>=oboz2.koszt_drewno && kamien2>=oboz2.koszt_kamien && zywnosc2>=oboz2.koszt_zywnosc && zloto2>=oboz2.koszt_zloto && miasto2[1].produkcja>=oboz2.koszt_produkcja){
+			oboz2.lvl++;
+			rozbuduj2(oboz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(oboz2);
+			zwieksz_przychod2(oboz2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_zloto=pikinier2[xm].koszt_zloto-25;
+			lucznik2[xm].koszt_zloto=lucznik2[xm].koszt_zloto-25;
+			kusznik2[xm].koszt_zloto=kusznik2[xm].koszt_zloto-25;	
+			lekka_jazda2[xm].koszt_zloto=lekka_jazda2[xm].koszt_zloto-25;
+			ciezka_jazda2[xm].koszt_zloto=ciezka_jazda2[xm].koszt_zloto-25;
+			ciezkozbrojny2[xm].koszt_zloto=ciezkozbrojny2[xm].koszt_zloto-25;
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==14&& oboz2.lvl==2 && ratusz2.lvl>=5 && drewno2>=oboz2.koszt_drewno && kamien2>=oboz2.koszt_kamien && zywnosc2>=oboz2.koszt_zywnosc && zloto2>=oboz2.koszt_zloto && miasto2[1].produkcja>=oboz2.koszt_produkcja){
+			oboz2.lvl++;
+			rozbuduj2(oboz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(oboz2);
+			zwieksz_przychod2(oboz2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_zloto=pikinier2[xm].koszt_zloto-25;
+			lucznik2[xm].koszt_zloto=lucznik2[xm].koszt_zloto-25;
+			kusznik2[xm].koszt_zloto=kusznik2[xm].koszt_zloto-25;	
+			lekka_jazda2[xm].koszt_zloto=lekka_jazda2[xm].koszt_zloto-25;
+			ciezka_jazda2[xm].koszt_zloto=ciezka_jazda2[xm].koszt_zloto-25;
+			ciezkozbrojny2[xm].koszt_zloto=ciezkozbrojny2[xm].koszt_zloto-25;
+			
+    	}	//////////////////
+				if(ster=='q' && x0==15 && menu_budowy==true && bank2.lvl==0){
+						budowlanka2(bank2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==15&& ratusz2.lvl>=4){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=bank2.wyglad[i-x][j-y];
+				if(bank2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=4 && bufor_budowa_miasto==15 && drewno2>=bank2.koszt_drewno && kamien2>=bank2.koszt_kamien && zywnosc2>=bank2.koszt_zywnosc && zloto2>=bank2.koszt_zloto && miasto2[1].produkcja>=bank2.koszt_produkcja && bank2.lvl==0)
+		{
+		zbuduj2(bank2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			bank2.lvl=1;
+			zwieksz_koszt(bank2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==15&& bank2.lvl==1 && ratusz2.lvl>=5 && drewno2>=bank2.koszt_drewno && kamien2>=bank2.koszt_kamien && zywnosc2>=bank2.koszt_zywnosc && zloto2>=bank2.koszt_zloto && miasto2[1].produkcja>=bank2.koszt_produkcja){
+			bank2.lvl++;
+			rozbuduj2(bank2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(bank2);
+			zwieksz_przychod2(bank2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==16 && menu_budowy==true && gildia2.lvl==0){
+							budowlanka2(gildia2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==16 && gildie2==true && ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=gildia2.wyglad[i-x][j-y];
+				if(gildia2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && bufor_budowa_miasto==16 && ratusz2.lvl>=2 &&gildie2==true&& drewno2>=gildia2.koszt_drewno && kamien2>=gildia2.koszt_kamien && zywnosc2>=gildia2.koszt_zywnosc && zloto2>=gildia2.koszt_zloto && miasto2[1].produkcja>=gildia2.koszt_produkcja && gildia2.lvl==0)
+		{
+		zbuduj2(gildia2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			gildia2.lvl=1;
+			josadnik.koszt_produkcja=josadnik.koszt_produkcja-50;
+			zwieksz_koszt(gildia2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==16&& gildia2.lvl==1 && ratusz2.lvl>=4 && drewno2>=gildia2.koszt_drewno && kamien2>=gildia2.koszt_kamien && zywnosc2>=gildia2.koszt_zywnosc && zloto2>=gildia2.koszt_zloto && miasto2[1].produkcja>=gildia2.koszt_produkcja){
+			gildia2.lvl++;
+			rozbuduj2(gildia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(gildia2);
+			zwieksz_przychod2(gildia2,&przychod_nauka2,&max_zolnierzy2);
+			josadnik2.koszt_produkcja=josadnik2.koszt_produkcja-50;
+			josadnik2.koszt_zloto=josadnik2.koszt_zloto-100;
+			
+    	}	
+		if(ster=='q' && rozbudowa==true&& x0==16&& gildia2.lvl==2 && kapitol2.lvl==5 && drewno2>=gildia2.koszt_drewno && kamien2>=gildia2.koszt_kamien && zywnosc2>=gildia2.koszt_zywnosc && zloto2>=gildia2.koszt_zloto && miasto2[1].produkcja>=gildia2.koszt_produkcja){
+			gildia2.lvl++;
+			rozbuduj2(gildia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(gildia2);
+			zwieksz_przychod2(gildia2,&przychod_nauka2,&max_zolnierzy2);
+			josadnik2.koszt_produkcja=josadnik2.koszt_produkcja-50;
+			josadnik2.koszt_zywnosc=josadnik2.koszt_zywnosc-100;
+			
+    	}//////////////////
+				if(ster=='q' && x0==17 && menu_budowy==true && biblioteka2.lvl==0){
+							budowlanka2(biblioteka2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==17&& ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=biblioteka2.wyglad[i-x][j-y];
+				if(biblioteka2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=2 && bufor_budowa_miasto==17 && drewno2>=biblioteka2.koszt_drewno && kamien2>=biblioteka2.koszt_kamien && zywnosc2>=biblioteka2.koszt_zywnosc && zloto2>=biblioteka2.koszt_zloto && miasto2[1].produkcja>=biblioteka2.koszt_produkcja && biblioteka2.lvl==0)
+		{
+		zbuduj2(biblioteka2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			biblioteka2.lvl=1;
+			zwieksz_koszt(biblioteka2);
+		}	
+		if(ster=='q' && x0==17&& rozbudowa==true&& biblioteka2.lvl==1 && ratusz2.lvl>=4 && drewno2>=biblioteka2.koszt_drewno && kamien2>=biblioteka2.koszt_kamien && zywnosc2>=biblioteka2.koszt_zywnosc && zloto2>=biblioteka2.koszt_zloto && miasto2[1].produkcja>=biblioteka2.koszt_produkcja){
+			biblioteka2.lvl++;
+			rozbuduj2(biblioteka2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(biblioteka2);
+			zwieksz_przychod2(biblioteka2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==18 && menu_budowy==true && park2.lvl==0){
+						budowlanka2(park2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==18 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=park2.wyglad[i-x][j-y];
+				if(park2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==18 && drewno2>=park2.koszt_drewno && kamien2>=park2.koszt_kamien && zywnosc2>=park2.koszt_zywnosc && zloto2>=park2.koszt_zloto && miasto2[1].produkcja>=park2.koszt_produkcja && park2.lvl==0)
+		{
+		zbuduj2(park2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			park2.lvl=1;
+			zwieksz_koszt(park2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==18&& park2.lvl==1 && ratusz2.lvl>=3 && drewno2>=park2.koszt_drewno && kamien2>=park2.koszt_kamien && zywnosc2>=park2.koszt_zywnosc && zloto2>=park2.koszt_zloto && miasto2[1].produkcja>=park2.koszt_produkcja){
+			park2.lvl++;
+			rozbuduj2(park2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(park2);
+			zwieksz_przychod2(park2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==18&& park2.lvl==2 && ratusz2.lvl>=5 && drewno2>=park2.koszt_drewno && kamien2>=park2.koszt_kamien && zywnosc2>=park2.koszt_zywnosc && zloto2>=park2.koszt_zloto && miasto2[1].produkcja>=park2.koszt_produkcja){
+			park2.lvl++;
+			rozbuduj2(park2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(park2);
+			zwieksz_przychod2(park2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==19 && menu_budowy==true && pomnik2.lvl==0){
+							budowlanka2(pomnik2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==19 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=pomnik2.wyglad[i-x][j-y];
+				if(pomnik2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true &&  ratusz2.lvl>=1 &&bufor_budowa_miasto==19 && drewno2>=pomnik2.koszt_drewno && kamien2>=pomnik2.koszt_kamien && zywnosc2>=pomnik2.koszt_zywnosc && zloto2>=pomnik2.koszt_zloto && miasto2[1].produkcja>=pomnik2.koszt_produkcja && pomnik2.lvl==0)
+		{
+		zbuduj2(pomnik2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			pomnik2.lvl=1;
+			zwieksz_koszt(pomnik2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==19&& pomnik2.lvl==1 && ratusz2.lvl>=2 && drewno2>=pomnik2.koszt_drewno && kamien2>=pomnik2.koszt_kamien && zywnosc2>=pomnik2.koszt_zywnosc && zloto2>=pomnik2.koszt_zloto && miasto2[1].produkcja>=pomnik2.koszt_produkcja){
+			pomnik2.lvl++;
+			rozbuduj2(pomnik2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(pomnik2);
+			zwieksz_przychod2(pomnik2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==19&& pomnik2.lvl==2 && ratusz2.lvl>=4 && drewno2>=pomnik2.koszt_drewno && kamien2>=pomnik2.koszt_kamien && zywnosc2>=pomnik2.koszt_zywnosc && zloto2>=pomnik2.koszt_zloto && miasto2[1].produkcja>=pomnik2.koszt_produkcja){
+			pomnik2.lvl++;
+			rozbuduj2(pomnik2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(pomnik2);
+			zwieksz_przychod2(pomnik2,&przychod_nauka2,&max_zolnierzy2);
+		
+    	}	//////////////////
+				if(ster=='q' && x0==20 && menu_budowy==true && ambasada2.lvl==0){
+							budowlanka2(ambasada2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true&& waluta==true && x0==20&& ratusz2.lvl>=4){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=ambasada2.wyglad[i-x][j-y];
+				if(ambasada2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=4 && waluta2==true && bufor_budowa_miasto==20 && drewno2>=ambasada2.koszt_drewno && kamien2>=ambasada2.koszt_kamien && zywnosc2>=ambasada2.koszt_zywnosc && zloto2>=ambasada2.koszt_zloto && miasto2[1].produkcja>=ambasada2.koszt_produkcja && ambasada2.lvl==0)
+		{
+		zbuduj2(ambasada2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			ambasada2.lvl=1;
+			zwieksz_koszt(ambasada2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==20&& ambasada2.lvl==1 && ratusz2.lvl>=5 && drewno2>=ambasada2.koszt_drewno && kamien2>=ambasada2.koszt_kamien && zywnosc2>=ambasada2.koszt_zywnosc && zloto2>=ambasada2.koszt_zloto && miasto2[1].produkcja>=ambasada2.koszt_produkcja){
+			ambasada2.lvl++;
+			rozbuduj2(ambasada2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(ambasada2);
+			zwieksz_przychod2(ambasada2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==20&& ambasada2.lvl==2 && kapitol2.lvl==5 && drewno2>=ambasada2.koszt_drewno && kamien2>=ambasada2.koszt_kamien && zywnosc2>=ambasada2.koszt_zywnosc && zloto2>=ambasada2.koszt_zloto && miasto2[1].produkcja>=ambasada2.koszt_produkcja){
+			ambasada2.lvl++;
+			rozbuduj2(ambasada2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(ambasada2);
+			zwieksz_przychod2(ambasada2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==21 && menu_budowy==true && port2.lvl==0 && miasto2[1].woda==true){
+						budowlanka2(port2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==21 && ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=port2.wyglad[i-x][j-y];
+				if(port2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=2 && bufor_budowa_miasto==21 && drewno2>=port2.koszt_drewno && kamien2>=port2.koszt_kamien && zywnosc2>=port2.koszt_zywnosc && zloto2>=port2.koszt_zloto && miasto2[1].produkcja>=port2.koszt_produkcja && port2.lvl==0)
+		{
+		zbuduj2(port2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			port2.lvl=1;
+			zwieksz_koszt(port2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==21&& port2.lvl==1 && ratusz2.lvl>=3 && drewno2>=port2.koszt_drewno && kamien2>=port2.koszt_kamien && zywnosc2>=port2.koszt_zywnosc && zloto2>=port2.koszt_zloto && miasto2[1].produkcja>=port2.koszt_produkcja){
+			port2.lvl++;
+			rozbuduj2(port2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(port2);
+			zwieksz_przychod2(port2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==21&& port2.lvl==2 && ratusz2.lvl>=4 && nawigacja2==true && drewno2>=port2.koszt_drewno && kamien2>=port2.koszt_kamien && zywnosc2>=port2.koszt_zywnosc && zloto2>=port2.koszt_zloto && miasto2[1].produkcja>=port2.koszt_produkcja){
+			port2.lvl++;
+			rozbuduj2(port2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(port2);
+			zwieksz_przychod2(port2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+			//////////////////
+				if(ster=='q' && x0==22 && menu_budowy==true && teatr2.lvl==0){
+							budowlanka2(teatr2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==22 && sztuka==true&& ratusz2.lvl>=4){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=teatr2.wyglad[i-x][j-y];
+				if(teatr2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true&& ratusz2.lvl>=4 &&sztuka==true && bufor_budowa_miasto==22 && drewno2>=teatr2.koszt_drewno && kamien2>=teatr2.koszt_kamien && zywnosc2>=teatr2.koszt_zywnosc && zloto2>=teatr2.koszt_zloto && miasto2[1].produkcja>=teatr2.koszt_produkcja && teatr2.lvl==0)
+		{
+		zbuduj2(teatr2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			teatr2.lvl=1;
+			zwieksz_koszt(teatr2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==22&& teatr2.lvl==1 && kapitol2.lvl==5&&administracja2==true && drewno2>=teatr2.koszt_drewno && kamien2>=teatr2.koszt_kamien && zywnosc2>=teatr2.koszt_zywnosc && zloto2>=teatr2.koszt_zloto && miasto2[1].produkcja>=teatr2.koszt_produkcja){
+			teatr2.lvl++;
+			rozbuduj2(teatr2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(teatr2);
+			zwieksz_przychod2(teatr2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==23 && menu_budowy==true){
+							budowlanka2(droga2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==23 && ratusz2.lvl>=1){
+				
+			if(ksztalt%10==0)mapa_stolicy2[x][y]=prosto_dol;
+			if(ksztalt%10==1)mapa_stolicy2[x][y]=prosto_bok;
+			if(ksztalt%10==2)mapa_stolicy2[x][y]=skrzyzowanie;
+			if(ksztalt%10==3)mapa_stolicy2[x][y]=skret_lewo_dol;
+			if(ksztalt%10==4)mapa_stolicy2[x][y]=skret_lewo_gora;
+			if(ksztalt%10==5)mapa_stolicy2[x][y]=skret_prawo_dol;
+			if(ksztalt%10==6)mapa_stolicy2[x][y]=skret_prawo_gora;
+			if(ksztalt%10==7)mapa_stolicy2[x][y]=skrzyzowanie_dol;
+			if(ksztalt%10==8)mapa_stolicy2[x][y]=skrzyzowanie_gora;
+			if(ksztalt%10==9)mapa_stolicy2[x][y]=skrzyzowanie_lewo;
+			if(ksztalt%10==10)mapa_stolicy2[x][y]=skrzyzowanie_prawo;
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==23 && drewno2>=droga2.koszt_drewno && kamien2>=droga2.koszt_kamien && zywnosc2>=droga2.koszt_zywnosc && zloto2>=droga2.koszt_zloto && miasto2[1].produkcja>=droga2.koszt_produkcja)
+		{
+			zloto2=zloto2-droga2.koszt_zloto;
+			drewno2=drewno2-droga2.koszt_drewno;
+			kamien2=kamien2-droga2.koszt_kamien;
+			zywnosc2=zywnosc2-droga2.koszt_zywnosc;
+			miasto2[1].produkcja=miasto2[1].produkcja-droga2.koszt_produkcja;
+			miasto2[1].ludnosc=miasto2[1].ludnosc+droga2.ludnosc;
+			if(ksztalt%10==0)mapa_stolicy2[x][y]=prosto_dol;
+			if(ksztalt%10==1)mapa_stolicy2[x][y]=prosto_bok;
+			if(ksztalt%10==2)mapa_stolicy2[x][y]=skrzyzowanie;
+			if(ksztalt%10==3)mapa_stolicy2[x][y]=skret_lewo_dol;
+			if(ksztalt%10==4)mapa_stolicy2[x][y]=skret_lewo_gora;
+			if(ksztalt%10==5)mapa_stolicy2[x][y]=skret_prawo_dol;
+			if(ksztalt%10==6)mapa_stolicy2[x][y]=skret_prawo_gora;
+			if(ksztalt%10==7)mapa_stolicy2[x][y]=skrzyzowanie_dol;
+			if(ksztalt%10==8)mapa_stolicy2[x][y]=skrzyzowanie_gora;
+			if(ksztalt%10==9)mapa_stolicy2[x][y]=skrzyzowanie_lewo;
+			if(ksztalt%10==10)mapa_stolicy2[x][y]=skrzyzowanie_prawo;
+			
+			for(int i=x-1;i<=x+1;i++){
+				for(int j=y-1;j<y+1;j++){
+					bufor_miasta2[i][j]=mapa_stolicy2[i][j];
+				}
+			}
+			
+			droga2.lvl=1;
+			
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==23&& droga2.lvl==1 && ratusz2.lvl>=4 &&infrastruktura2==true && drewno2>=droga2.koszt_drewno && kamien2>=droga2.koszt_kamien && zywnosc2>=droga2.koszt_zywnosc && zloto2>=droga2.koszt_zloto && miasto2[1].produkcja>=droga2.koszt_produkcja){
+			droga2.lvl++;
+			rozbuduj2(droga2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_przychod2(droga2,&przychod_nauka2,&max_zolnierzy2);
+			pikinier2[xm].koszt_produkcja-=25;
+			lucznik2[xm].koszt_produkcja-=25;
+			kusznik2[xm].koszt_produkcja-=25;
+			ciezkozbrojny2[xm].koszt_produkcja-=25;
+			lekka_jazda2[xm].koszt_produkcja-=25;
+			ciezka_jazda2[xm].koszt_produkcja-=25;
+			elita2.koszt_produkcja-=25;
+			taran2[xm].koszt_produkcja-=25;
+    	}	//////////////////
+				if(ster=='q' && x0==24 && menu_budowy==true && tawerna2.lvl==0){
+							budowlanka2(tawerna2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==24 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=tawerna2.wyglad[i-x][j-y];
+				if(tawerna2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==24 && drewno2>=tawerna2.koszt_drewno && kamien2>=tawerna2.koszt_kamien && zywnosc2>=tawerna2.koszt_zywnosc && zloto2>=tawerna2.koszt_zloto && miasto2[1].produkcja>=tawerna2.koszt_produkcja && tawerna2.lvl==0)
+		{
+		zbuduj2(tawerna2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			tawerna2.lvl=1;
+			zwieksz_koszt(tawerna2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==24&& tawerna2.lvl==1 && ratusz2.lvl>=3 && drewno2>=tawerna2.koszt_drewno && kamien2>=tawerna2.koszt_kamien && zywnosc2>=tawerna2.koszt_zywnosc && zloto2>=tawerna2.koszt_zloto && miasto2[1].produkcja>=tawerna2.koszt_produkcja){
+			tawerna2.lvl++;
+			rozbuduj2(tawerna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(tawerna2);
+			zwieksz_przychod2(tawerna2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==24&& tawerna2.lvl==2 && ratusz2.lvl>=4&&browarnictwo2==true && drewno2>=tawerna2.koszt_drewno && kamien2>=tawerna2.koszt_kamien && zywnosc2>=tawerna2.koszt_zywnosc && zloto2>=tawerna2.koszt_zloto && miasto2[1].produkcja>=tawerna2.koszt_produkcja){
+			tawerna2.lvl++;
+			rozbuduj2(tawerna2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(tawerna2);
+			zwieksz_przychod2(tawerna2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==25 && menu_budowy==true && magazyn2.lvl==0){
+						budowlanka2(magazyn2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==25 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=magazyn2.wyglad[i-x][j-y];
+				if(magazyn2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==25 && drewno2>=magazyn2.koszt_drewno && kamien2>=magazyn2.koszt_kamien && zywnosc2>=magazyn2.koszt_zywnosc && zloto2>=magazyn2.koszt_zloto && miasto2[1].produkcja>=magazyn2.koszt_produkcja && magazyn2.lvl==0)
+		{
+		zbuduj2(magazyn2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			magazyn2.lvl=1;
+			zwieksz_koszt(magazyn2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==25&& magazyn2.lvl==1 && ratusz2.lvl>=3 && drewno2>=magazyn2.koszt_drewno && kamien2>=magazyn2.koszt_kamien && zywnosc2>=magazyn2.koszt_zywnosc && zloto2>=magazyn2.koszt_zloto && miasto2[1].produkcja>=magazyn2.koszt_produkcja){
+			magazyn2.lvl++;
+			rozbuduj2(magazyn2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(magazyn2);
+			zwieksz_przychod2(magazyn2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==25&& magazyn2.lvl==2 && ratusz2.lvl>=4 && hodowla2==true && drewno2>=magazyn2.koszt_drewno && kamien2>=magazyn2.koszt_kamien && zywnosc2>=magazyn2.koszt_zywnosc && zloto2>=magazyn2.koszt_zloto && miasto2[1].produkcja>=magazyn2.koszt_produkcja){
+			magazyn2.lvl++;
+			rozbuduj2(magazyn2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(magazyn2);
+			zwieksz_przychod2(magazyn2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==25&& magazyn2.lvl==3 && kapitol2.lvl==5 && drewno2>=magazyn2.koszt_drewno && kamien2>=magazyn2.koszt_kamien && zywnosc2>=magazyn2.koszt_zywnosc && zloto2>=magazyn2.koszt_zloto && miasto2[1].produkcja>=magazyn2.koszt_produkcja){
+			magazyn2.lvl++;
+			rozbuduj2(magazyn2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(magazyn2);
+			zwieksz_przychod2(magazyn2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==26 && menu_budowy==true && mlyn2.lvl==0){
+						budowlanka2(mlyn2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==26 && ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=mlyn2.wyglad[i-x][j-y];
+				if(mlyn2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=2 && bufor_budowa_miasto==26 && drewno2>=mlyn2.koszt_drewno && kamien2>=mlyn2.koszt_kamien && zywnosc2>=mlyn2.koszt_zywnosc && zloto2>=mlyn2.koszt_zloto && miasto2[1].produkcja>=mlyn2.koszt_produkcja && mlyn2.lvl==0)
+		{
+		zbuduj2(mlyn2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			mlyn2.lvl=1;
+			zwieksz_koszt(mlyn2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==26&& mlyn2.lvl==1 && ratusz2.lvl>=3 && drewno2>=mlyn2.koszt_drewno && kamien2>=mlyn2.koszt_kamien && zywnosc2>=mlyn2.koszt_zywnosc && zloto2>=mlyn2.koszt_zloto && miasto2[1].produkcja>=mlyn2.koszt_produkcja){
+			mlyn2.lvl++;
+			rozbuduj2(mlyn2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mlyn2);
+			zwieksz_przychod2(mlyn2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==26&& mlyn2.lvl==2 && ratusz2.lvl>=4 && drewno2>=mlyn2.koszt_drewno && kamien2>=mlyn2.koszt_kamien && zywnosc2>=mlyn2.koszt_zywnosc && zloto2>=mlyn2.koszt_zloto && miasto2[1].produkcja>=mlyn2.koszt_produkcja){
+			mlyn2.lvl++;
+			rozbuduj2(mlyn2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mlyn2);
+			zwieksz_przychod2(mlyn2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==26&& mlyn2.lvl==3 && ratusz2.lvl>=5 && drewno2>=mlyn2.koszt_drewno && kamien2>=mlyn2.koszt_kamien && zywnosc2>=mlyn2.koszt_zywnosc && zloto2>=mlyn2.koszt_zloto && miasto2[1].produkcja>=mlyn2.koszt_produkcja){
+			mlyn2.lvl++;
+			rozbuduj2(mlyn2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(mlyn2);
+			zwieksz_przychod2(mlyn2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==27 && menu_budowy==true && plac2.lvl==0){
+							budowlanka2(plac2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==27 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=plac2.wyglad[i-x][j-y];
+				if(plac2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==27 && drewno2>=plac2.koszt_drewno && kamien2>=plac2.koszt_kamien && zywnosc2>=plac2.koszt_zywnosc && zloto2>=plac2.koszt_zloto && miasto2[1].produkcja>=plac2.koszt_produkcja && plac2.lvl==0)
+		{
+		zbuduj2(plac2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			plac2.lvl=1;
+		}		//////////////////
+				if(ster=='q' && x0==28 && menu_budowy==true && tartakb2.lvl==0){
+						budowlanka2(tartakb2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==28 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=tartakb2.wyglad[i-x][j-y];
+				if(tartakb2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==28 && drewno2>=tartakb2.koszt_drewno && kamien2>=tartakb2.koszt_kamien && zywnosc2>=tartakb2.koszt_zywnosc && zloto2>=tartakb2.koszt_zloto && miasto2[1].produkcja>=tartakb2.koszt_produkcja && tartakb2.lvl==0)
+		{
+		zbuduj2(tartakb2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			tartakb2.lvl=1;
+			zwieksz_koszt(tartakb2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==28&& tartakb2.lvl==1 && ratusz2.lvl>=3 && drewno2>=tartakb2.koszt_drewno && kamien2>=tartakb2.koszt_kamien && zywnosc2>=tartakb2.koszt_zywnosc && zloto2>=tartakb2.koszt_zloto && miasto2[1].produkcja>=tartakb2.koszt_produkcja){
+			tartakb2.lvl++;
+			rozbuduj2(tartakb2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(tartakb2);
+			zwieksz_przychod2(tartakb2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==28&& tartakb2.lvl==2 && ratusz2.lvl>=4 && drewno2>=tartakb2.koszt_drewno && kamien2>=tartakb2.koszt_kamien && zywnosc2>=tartakb2.koszt_zywnosc && zloto2>=tartakb2.koszt_zloto && miasto2[1].produkcja>=tartakb2.koszt_produkcja){
+			tartakb2.lvl++;
+			rozbuduj2(tartakb2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(tartakb2);
+			zwieksz_przychod2(tartakb2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==28&& tartakb2.lvl==3 && ratusz2.lvl>=5 && drewno2>=tartakb2.koszt_drewno && kamien2>=tartakb2.koszt_kamien && zywnosc2>=tartakb2.koszt_zywnosc && zloto2>=tartakb2.koszt_zloto && miasto2[1].produkcja>=tartakb2.koszt_produkcja){
+			tartakb2.lvl++;
+			rozbuduj2(tartakb2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(tartakb2);
+			zwieksz_przychod2(tartakb2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==29 && menu_budowy==true && kamieniarz2.lvl==0){
+						budowlanka2(kamieniarz2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==29 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=kamieniarz2.wyglad[i-x][j-y];
+				if(kamieniarz2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==29 && drewno2>=kamieniarz2.koszt_drewno && kamien2>=kamieniarz2.koszt_kamien && zywnosc2>=kamieniarz2.koszt_zywnosc && zloto2>=kamieniarz2.koszt_zloto && miasto2[1].produkcja>=kamieniarz2.koszt_produkcja && kamieniarz2.lvl==0)
+		{
+		zbuduj2(kamieniarz2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			kamieniarz2.lvl=1;
+			zwieksz_koszt(kamieniarz2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==29&& kamieniarz2.lvl==1 && ratusz2.lvl>=3 && drewno2>=kamieniarz2.koszt_drewno && kamien2>=kamieniarz2.koszt_kamien && zywnosc2>=kamieniarz2.koszt_zywnosc && zloto2>=kamieniarz2.koszt_zloto && miasto2[1].produkcja>=kamieniarz2.koszt_produkcja){
+			kamieniarz2.lvl++;
+			rozbuduj2(kamieniarz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kamieniarz2);
+			zwieksz_przychod2(kamieniarz2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==29&& kamieniarz2.lvl==2 && ratusz2.lvl>=4 && drewno2>=kamieniarz2.koszt_drewno && kamien2>=kamieniarz2.koszt_kamien && zywnosc2>=kamieniarz2.koszt_zywnosc && zloto2>=kamieniarz2.koszt_zloto && miasto2[1].produkcja>=kamieniarz2.koszt_produkcja){
+			kamieniarz2.lvl++;
+			rozbuduj2(kamieniarz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kamieniarz2);
+			zwieksz_przychod2(kamieniarz2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==29&& kamieniarz2.lvl==3 && ratusz2.lvl>=5 && drewno2>=kamieniarz2.koszt_drewno && kamien2>=kamieniarz2.koszt_kamien && zywnosc2>=kamieniarz2.koszt_zywnosc && zloto2>=kamieniarz2.koszt_zloto && miasto2[1].produkcja>=kamieniarz2.koszt_produkcja){
+			kamieniarz2.lvl++;
+			rozbuduj2(kamieniarz2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kamieniarz2);
+			zwieksz_przychod2(kamieniarz2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==30 && menu_budowy==true && kolos2.lvl==0){
+						budowlanka2(kolos2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==30 && sztuka2==true && kapitol2.lvl==5){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=kolos2.wyglad[i-x][j-y];
+				if(kolos2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && kapitol2.lvl==5 && sztuka2==true && bufor_budowa_miasto==30 && drewno2>=kolos2.koszt_drewno && kamien2>=kolos2.koszt_kamien && zywnosc2>=kolos2.koszt_zywnosc && zloto2>=kolos2.koszt_zloto && miasto2[1].produkcja>=kolos2.koszt_produkcja && kolos2.lvl==0)
+		{
+		zbuduj2(kolos2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			kolos2.lvl=1;
+		}		//////////////////
+				if(ster=='q' && x0==31 && menu_budowy==true && kosciol2.lvl==0){
+						budowlanka2(kosciol2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==31 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=kosciol2.wyglad[i-x][j-y];
+				if(kosciol2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==31 && drewno2>=kosciol2.koszt_drewno && kamien2>=kosciol2.koszt_kamien && zywnosc2>=kosciol2.koszt_zywnosc && zloto2>=kosciol2.koszt_zloto && miasto2[1].produkcja>=kosciol2.koszt_produkcja && kosciol2.lvl==0)
+		{
+		zbuduj2(kosciol2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			kosciol2.lvl=1;
+			zwieksz_koszt(kosciol2);
+		}
+		if(ster=='q' && rozbudowa==true&& x0==31&& kosciol2.lvl==1 && ratusz2.lvl>=3 && drewno2>=kosciol2.koszt_drewno && kamien2>=kosciol2.koszt_kamien && zywnosc2>=kosciol2.koszt_zywnosc && zloto2>=kosciol2.koszt_zloto && miasto2[1].produkcja>=kosciol2.koszt_produkcja){
+			kosciol2.lvl++;
+			rozbuduj2(kosciol2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kosciol2);
+			zwieksz_przychod2(kosciol2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==31&& kosciol2.lvl==2 && ratusz2.lvl>=4 && drewno2>=kosciol2.koszt_drewno && kamien2>=kosciol2.koszt_kamien && zywnosc2>=kosciol2.koszt_zywnosc && zloto2>=kosciol2.koszt_zloto && miasto2[1].produkcja>=kosciol2.koszt_produkcja){
+			kosciol2.lvl++;
+			rozbuduj2(kosciol2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(kosciol2);
+			zwieksz_przychod2(kosciol2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	
+			//////////////////
+				if(ster=='q' && x0==32 && menu_budowy==true && katedra2.lvl==0){
+							budowlanka2(katedra2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+							budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==32&& ewangelizacja2==true&& ratusz2.lvl>=4){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=katedra2.wyglad[i-x][j-y];
+				if(katedra2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=4&& bufor_budowa_miasto==32&& ewangelizacja==true && drewno2>=katedra2.koszt_drewno && kamien2>=katedra2.koszt_kamien && zywnosc2>=katedra2.koszt_zywnosc && zloto2>=katedra2.koszt_zloto && miasto2[1].produkcja>=katedra2.koszt_produkcja && katedra2.lvl==0)
+		{
+		zbuduj2(katedra2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			katedra2.lvl=1;
+			zwieksz_koszt(katedra2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==32&& katedra2.lvl==1 && ratusz2.lvl>=5 && drewno2>=katedra2.koszt_drewno && kamien2>=katedra2.koszt_kamien && zywnosc2>=katedra2.koszt_zywnosc && zloto2>=katedra2.koszt_zloto && miasto2[1].produkcja>=katedra2.koszt_produkcja){
+			katedra2.lvl++;
+			rozbuduj2(katedra2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(katedra2);
+			zwieksz_przychod2(katedra2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==32&& katedra2.lvl==2 && kapitol2.lvl==5 && drewno2>=katedra2.koszt_drewno && kamien2>=katedra2.koszt_kamien && zywnosc2>=katedra2.koszt_zywnosc && zloto2>=katedra2.koszt_zloto && miasto2[1].produkcja>=katedra2.koszt_produkcja){
+			katedra2.lvl++;
+			rozbuduj2(katedra2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(katedra2);
+			zwieksz_przychod2(katedra2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==33 && menu_budowy==true && skarbiec2.lvl==0){
+						budowlanka2(skarbiec2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==33 && ratusz2.lvl>=3){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=skarbiec2.wyglad[i-x][j-y];
+				if(skarbiec2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=3 && bufor_budowa_miasto==33 && drewno2>=skarbiec2.koszt_drewno && kamien2>=skarbiec2.koszt_kamien && zywnosc2>=skarbiec2.koszt_zywnosc && zloto2>=skarbiec2.koszt_zloto && miasto2[1].produkcja>=skarbiec2.koszt_produkcja && skarbiec2.lvl==0)
+		{
+		zbuduj2(skarbiec2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+				&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			skarbiec2.lvl=1;
+			zwieksz_koszt(skarbiec2);
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==33&& skarbiec2.lvl==1 && ratusz2.lvl>=5 && drewno2>=skarbiec2.koszt_drewno && kamien2>=skarbiec2.koszt_kamien && zywnosc2>=skarbiec2.koszt_zywnosc && zloto2>=skarbiec2.koszt_zloto && miasto2[1].produkcja>=skarbiec2.koszt_produkcja){
+			skarbiec2.lvl++;
+			rozbuduj2(skarbiec2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(skarbiec2);
+			zwieksz_przychod2(skarbiec2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==33&& skarbiec2.lvl==2 && kapitol2.lvl==5 && drewno2>=skarbiec2.koszt_drewno && kamien2>=skarbiec2.koszt_kamien && zywnosc2>=skarbiec2.koszt_zywnosc && zloto2>=skarbiec2.koszt_zloto && miasto2[1].produkcja>=skarbiec2.koszt_produkcja){
+			skarbiec2.lvl++;
+			rozbuduj2(skarbiec2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(skarbiec2);
+			zwieksz_przychod2(skarbiec2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==34 && menu_budowy==true && fort2.lvl==0){
+						budowlanka2(fort2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==34 && ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=fort2.wyglad[i-x][j-y];
+				if(fort2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=2 && bufor_budowa_miasto==34 && drewno2>=fort2.koszt_drewno && kamien2>=fort2.koszt_kamien && zywnosc2>=fort2.koszt_zywnosc && zloto2>=fort2.koszt_zloto && miasto2[1].produkcja>=fort2.koszt_produkcja && fort2.lvl==0)
+		{
+		zbuduj2(fort2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			fort2.lvl=1;
+			zwieksz_koszt(fort2);
+			miasto2[1].obrona=miasto2[1].obrona+15;
+		}	
+		if(ster=='q' && rozbudowa==true&& x0==34&& fort2.lvl==1 && ratusz2.lvl>=3 && drewno2>=fort2.koszt_drewno && kamien2>=fort2.koszt_kamien && zywnosc2>=fort2.koszt_zywnosc && zloto2>=fort2.koszt_zloto && miasto2[1].produkcja>=fort2.koszt_produkcja){
+			fort2.lvl++;
+			rozbuduj2(fort2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(fort2);
+			zwieksz_przychod2(fort2,&przychod_nauka2,&max_zolnierzy2);
+			miasto2[1].obrona=miasto2[1].obrona+15;
+		
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==34&& fort2.lvl==2 && ratusz2.lvl>=4 && drewno2>=fort2.koszt_drewno && kamien2>=fort2.koszt_kamien && zywnosc2>=fort2.koszt_zywnosc && zloto2>=fort2.koszt_zloto && miasto2[1].produkcja>=fort2.koszt_produkcja){
+			fort2.lvl++;
+			rozbuduj2(fort2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(fort2);
+			zwieksz_przychod2(fort2,&przychod_nauka2,&max_zolnierzy2);
+			miasto2[1].obrona=miasto2[1].obrona+15;
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==34&& fort2.lvl==3 && kapitol2.lvl==5 && drewno2>=fort2.koszt_drewno && kamien2>=fort2.koszt_kamien && zywnosc2>=fort2.koszt_zywnosc && zloto2>=fort2.koszt_zloto && miasto2[1].produkcja>=fort2.koszt_produkcja){
+			fort2.lvl++;
+			rozbuduj2(fort2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(fort2);
+			miasto2[1].obrona=miasto2[1].obrona+15;
+			zwieksz_przychod2(fort2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}	//////////////////
+				if(ster=='q' && x0==35 && menu_budowy==true && weglarnia2.lvl==0){
+						budowlanka2(weglarnia2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==35 && ratusz2.lvl>=1){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=weglarnia2.wyglad[i-x][j-y];
+				if(weglarnia2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==35 && drewno2>=weglarnia2.koszt_drewno && kamien2>=weglarnia2.koszt_kamien && zywnosc2>=weglarnia2.koszt_zywnosc && zloto2>=weglarnia2.koszt_zloto && miasto2[1].produkcja>=weglarnia2.koszt_produkcja && weglarnia2.lvl==0)
+		{
+		zbuduj2(weglarnia2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			weglarnia2.lvl=1;
+			zwieksz_koszt(weglarnia2);
+		}
+		if(ster=='q' && rozbudowa==true&& x0==35&& weglarnia2.lvl==1 && ratusz2.lvl>=3 && drewno2>=weglarnia2.koszt_drewno && kamien2>=weglarnia2.koszt_kamien && zywnosc2>=weglarnia2.koszt_zywnosc && zloto2>=weglarnia2.koszt_zloto && miasto2[1].produkcja>=weglarnia2.koszt_produkcja){
+			weglarnia2.lvl++;
+			rozbuduj2(weglarnia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(weglarnia2);
+			zwieksz_przychod2(weglarnia2,&przychod_nauka2,&max_zolnierzy2);
+			
+    	}
+				//////////////////
+				if(ster=='q' && x0==36 && menu_budowy==true && warsztat2.lvl==0){
+						budowlanka2(warsztat2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==36 && ratusz2.lvl>=2){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=warsztat2.wyglad[i-x][j-y];
+				if(warsztat2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=2 && bufor_budowa_miasto==36 && drewno2>=warsztat2.koszt_drewno && kamien2>=warsztat2.koszt_kamien && zywnosc2>=warsztat2.koszt_zywnosc && zloto2>=warsztat2.koszt_zloto && miasto2[1].produkcja>=warsztat2.koszt_produkcja && warsztat2.lvl==0)
+		{
+		zbuduj2(warsztat2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			warsztat2.lvl=1;
+			kusznik2[xm].koszt_produkcja=kusznik2[xm].koszt_produkcja-50;
+			zwieksz_koszt(warsztat2);
+			kusznik2[xm].koszt_produkcja-=50;
+		}
+		if(ster=='q' && rozbudowa==true && x0==36&& warsztat2.lvl==1 &&ratusz2.lvl>=4 && mechanika2==true && drewno2>=warsztat2.koszt_drewno && kamien2>=warsztat2.koszt_kamien && zywnosc2>=warsztat2.koszt_zywnosc && zloto2>=warsztat2.koszt_zloto && miasto2[1].produkcja>=warsztat2.koszt_produkcja){
+			warsztat2.lvl++;
+			rozbuduj2(warsztat2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(warsztat2);
+			zwieksz_przychod2(warsztat2,&przychod_nauka2,&max_zolnierzy2);
+			kusznik2[xm].koszt_produkcja-=50;
+    	}
+				//////////////////
+				if(ster=='q' && x0==37 && menu_budowy==true && stajnia2.lvl==0){
+						budowlanka2(stajnia2,x,y,mapa_stolicy2,bufor_miasta2,&bufor_budowa_miasto,x0,ksztalt);
+						budowa_miasto=true;
+		}
+		if(budowa_miasto==true && x0==37 && ratusz2.lvl>=3){
+		
+					for(int i=x;i<x+9;i++){
+				for(int j=y;j<y+21;j++){
+	
+				mapa_stolicy2[i][j]=stajnia2.wyglad[i-x][j-y];
+				if(stajnia2.wyglad[i-x][j-y]==' ')
+				mapa_stolicy2[i][j]=bufor_miasta2[i][j];
+		}
+			}
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=2 && bufor_budowa_miasto==37 && drewno2>=stajnia2.koszt_drewno && kamien2>=stajnia2.koszt_kamien && zywnosc2>=stajnia2.koszt_zywnosc && zloto2>=stajnia2.koszt_zloto && miasto2[1].produkcja>=stajnia2.koszt_produkcja && stajnia2.lvl==0)
+		{
+		zbuduj2(stajnia2, x,  y, mapa_stolicy2, bufor_miasta2, &drewno2, &kamien2, &zywnosc2, 
+			&zloto2, &max_zolnierzy2, &budowa_miasto, &menu_budowy, &menu_stolica, &przychod_nauka2, &x0);
+			stajnia2.lvl=1;
+			zwieksz_koszt(stajnia2);
+		}
+		if(ster=='q' && rozbudowa==true&& x0==37&& stajnia2.lvl==1 && ratusz2.lvl>=3 && drewno2>=stajnia2.koszt_drewno && kamien2>=stajnia2.koszt_kamien && zywnosc2>=stajnia2.koszt_zywnosc && zloto2>=stajnia2.koszt_zloto && miasto2[1].produkcja>=stajnia2.koszt_produkcja){
+			stajnia2.lvl++;
+			rozbuduj2(stajnia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(stajnia2);
+			zwieksz_przychod2(stajnia2,&przychod_nauka2,&max_zolnierzy2);
+			lekka_jazda2[xm].koszt_produkcja-=50;
+			ciezka_jazda2[xm].koszt_produkcja-=50;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==37&& stajnia2.lvl==2 && ratusz2.lvl>=4 && drewno2>=stajnia2.koszt_drewno && kamien2>=stajnia2.koszt_kamien && zywnosc2>=stajnia2.koszt_zywnosc && zloto2>=stajnia2.koszt_zloto && miasto2[1].produkcja>=stajnia2.koszt_produkcja){
+			stajnia2.lvl++;
+			rozbuduj2(stajnia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(stajnia2);
+			zwieksz_przychod2(stajnia2,&przychod_nauka2,&max_zolnierzy2);
+			lekka_jazda2[xm].koszt_produkcja-=50;
+			ciezka_jazda2[xm].koszt_produkcja-=50;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==37&& stajnia2.lvl==3 && ratusz2.lvl>=5 && drewno2>=stajnia2.koszt_drewno && kamien2>=stajnia2.koszt_kamien && zywnosc2>=stajnia2.koszt_zywnosc && zloto2>=stajnia2.koszt_zloto && miasto2[1].produkcja>=stajnia2.koszt_produkcja){
+			stajnia2.lvl++;
+			rozbuduj2(stajnia2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_stolica,&przychod_nauka2,&x0);
+			zwieksz_koszt(stajnia2);
+			zwieksz_przychod2(stajnia2,&przychod_nauka2,&max_zolnierzy2);
+			lekka_jazda2[xm].koszt_produkcja-=50;
+			ciezka_jazda2[xm].koszt_produkcja-=50;
+    	}
+				//////////////////
+				if(ster=='q' && x0==38 && menu_budowy==true && ratusz2.lvl>=1){
+				mapa_stolicy2[x][y]=dom;
+				budowa_miasto=true;
+			system("CLS");
+			gotoxy(90,27);
+
+			cout << dom;
+			bufor_budowa_miasto=38;
+		}
+		if(budowa_miasto==true && x0==38 && ratusz2.lvl>=1){
+	
+				mapa_stolicy2[x][y]=dom;	
+		}
+		if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==38 && drewno2>=10 && zywnosc2>=5 && zloto2 >=5 && miasto2[1].produkcja>=10&& bufor_miasta2[x][y]!='A'&&
+		 bufor_miasta2[x][y]!='B'&& bufor_miasta2[x][y]!='C'&& bufor_miasta2[x][y]!='D'&& bufor_miasta2[x][y]!='E'&& bufor_miasta2[x][y]!='F'&& bufor_miasta2[x][y]!='G'&&
+		  bufor_miasta2[x][y]!='H'&& bufor_miasta2[x][y]!='I'&& bufor_miasta2[x][y]!='J'&& bufor_miasta2[x][y]!='K'&& bufor_miasta2[x][y]!='L'&& bufor_miasta2[x][y]!='M'&&
+		   bufor_miasta2[x][y]!='N'&& bufor_miasta2[x][y]!='O'&& bufor_miasta2[x][y]!='P'&& bufor_miasta2[x][y]!='R'&& bufor_miasta2[x][y]!='S'&& bufor_miasta2[x][y]!='T'&&
+		    bufor_miasta2[x][y]!='U'&& bufor_miasta2[x][y]!='W'&& bufor_miasta2[x][y]!='Y'&& bufor_miasta2[x][y]!='Z'){
+			bufor_miasta2[x][y]=dom;
+			mapa_stolicy2[x][y]=dom;
+			drewno2=drewno2-10;
+			zywnosc2=zywnosc2-5;
+			zloto2=zloto2-5;
+			miasto2[1].produkcja=miasto2[1].produkcja-10;
+			system("CLS");
+			budowa_miasto=false;
+		}
+		///////////////////
+				if(ster=='q' && x0==39 && menu_budowy==true && ratusz2.lvl>=1){
+				mapa_stolicy2[x][y]=dom2;
+				budowa_miasto=true;
+
+			system("CLS");
+			gotoxy(90,27);
+
+			cout << dom2;
+			bufor_budowa_miasto=39;
+		}
+		if(budowa_miasto==true && x0==39 && ratusz2.lvl>=1){
+	
+				mapa_stolicy2[x][y]=dom2;	
+		}
+		
+		if(ster=='e' &&  budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==39 && drewno2>=10 && zywnosc2>=5 && zloto2 >=5 && miasto2[1].produkcja>=10 && mapa_stolicy2[x][y]!='A'&&
+		 bufor_miasta2[x][y]!='B'&& bufor_miasta2[x][y]!='C'&& bufor_miasta2[x][y]!='D'&& bufor_miasta2[x][y]!='E'&& bufor_miasta2[x][y]!='F'&& bufor_miasta2[x][y]!='G'&&
+		  bufor_miasta2[x][y]!='H'&& bufor_miasta2[x][y]!='I'&& bufor_miasta2[x][y]!='J'&& bufor_miasta2[x][y]!='K'&& bufor_miasta2[x][y]!='L'&& bufor_miasta2[x][y]!='M'&&
+		   bufor_miasta2[x][y]!='N'&& bufor_miasta2[x][y]!='O'&& bufor_miasta2[x][y]!='P'&& bufor_miasta2[x][y]!='R'&& bufor_miasta2[x][y]!='S'&& bufor_miasta2[x][y]!='T'&&
+		    bufor_miasta2[x][y]!='U'&& bufor_miasta2[x][y]!='W'&& bufor_miasta2[x][y]!='Y'&& bufor_miasta2[x][y]!='Z'){
+			bufor_miasta2[x][y]=dom2;
+			mapa_stolicy2[x][y]=dom2;
+			drewno2=drewno2-10;
+			zywnosc2=zywnosc2-5;
+			zloto2=zloto2-5;
+			miasto2[1].produkcja=miasto2[1].produkcja-10;
+			system("CLS");
+			budowa_miasto=false;
+		}
+		///////////////////
+				if(ster=='q' && x0==40 && menu_budowy==true && ratusz2.lvl>=1){
+				mapa_stolicy2[x][y]=woda;
+				budowa_miasto=true;
+
+			system("CLS");
+			gotoxy(90,27);
+
+			cout << woda;
+			bufor_budowa_miasto=40;
+		}
+		if(budowa_miasto==true && x0==40 && ratusz2.lvl>=1){
+	
+				mapa_stolicy2[x][y]=woda;	
+		}
+				if(ster=='e' && budowa_miasto==true && ratusz2.lvl>=1 && bufor_budowa_miasto==40 && drewno2>=10 && zywnosc2>=5 && zloto2 >=5 && miasto2[1].produkcja>=10 && mapa_stolicy2[x][y]!='A'&&
+		 bufor_miasta2[x][y]!='B'&& bufor_miasta2[x][y]!='C'&& bufor_miasta2[x][y]!='D'&& bufor_miasta2[x][y]!='E'&& bufor_miasta2[x][y]!='F'&& bufor_miasta2[x][y]!='G'&&
+		  bufor_miasta2[x][y]!='H'&& bufor_miasta2[x][y]!='I'&& bufor_miasta2[x][y]!='J'&& bufor_miasta2[x][y]!='K'&& bufor_miasta2[x][y]!='L'&& bufor_miasta2[x][y]!='M'&&
+		   bufor_miasta2[x][y]!='N'&& bufor_miasta2[x][y]!='O'&& bufor_miasta2[x][y]!='P'&& bufor_miasta2[x][y]!='R'&& bufor_miasta2[x][y]!='S'&& bufor_miasta2[x][y]!='T'&&
+		    bufor_miasta2[x][y]!='U'&& bufor_miasta2[x][y]!='W'&& bufor_miasta2[x][y]!='Y'&& bufor_miasta2[x][y]!='Z'){
+			bufor_miasta2[x][y]=woda;
+			mapa_stolicy2[x][y]=woda;
+			drewno2=drewno2-10;
+			zywnosc2=zywnosc2-5;
+			zloto2=zloto2-5;
+			miasto2[1].produkcja=miasto2[1].produkcja-10;
+			system("CLS");
+			budowa_miasto=false;
+		}
+
+		if(ster==KEY_UP && x0==0 && menu_budowy==true || ster==KEY_UP && x0==0 && rozbudowa==true)
+		x0=41;
+		
+		if(ster==KEY_DOWN && x0==41 && menu_budowy==true || ster==KEY_DOWN && x0==41 && rozbudowa==true)
+		x0=0;
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	}
+	if(technologie==true){
+		
+		cls();
+		
+		if(x0==1){
+			gotoxy(8,30);
+			cout << "Koszt: 350pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna rekrutowac lucznikow";
+		}
+		if(x0==2){
+			gotoxy(8,30);
+			cout << "Koszt: 350pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna rozbudowac Magazyn do 3 poziomu, zwieksza sie produkcja zywnosci w panstwie";
+		}
+		if(x0==3){
+			gotoxy(8,30);
+			cout << "Koszt: 400pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna zbudowac gildie oraz zwieksza sie panstwowy przychod nauki";
+		}
+		if(x0==4){
+						gotoxy(8,30);
+			cout << "Koszt: 400pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozliwosc rozbudowy tawerny do 3 poziomu oraz zwieksza sie ilosc ruchow na ture";
+		}
+		if(x0==5){
+			gotoxy(8,30);
+			cout << "Koszt: 450pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna budowac tarany i rozbudowac warsztat do 2 poziomu oraz zwieksza sie ilosc ruchow na ture ";
+		}
+		if(x0==6){
+			gotoxy(8,30);
+			cout << "Koszt: 450pkt. nauki";
+			gotoxy(8,31);
+			cout << "Zwieksza sie atak piechoty (+1) oraz mozna wybudowac hute";
+		}
+		if(x0==7){
+			gotoxy(8,30);
+			cout << "Koszt: 450pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna wybudowac ambasade, zwieksza sie przychod zlota w panstwie oraz mozna rozbudowac rynek do 3 poziomu";
+		}
+		if(x0==8){
+			gotoxy(8,30);
+			cout << "Koszt: 500pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna rekrutowac kusznikow i ciezkozbrojnych";
+		}
+		if(x0==9){
+			gotoxy(8,30);
+			cout << "Koszt: 500pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna ulepszyc drogi w stolicy";
+		}
+		if(x0==10){
+			gotoxy(8,30);
+			cout << "Koszt: 500pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna handlowac z drugim graczem oraz rozbudowac kapitol2 do poziomu 5 oraz zwieksza sie ilosc ruchow na ture";
+		}
+		if(x0==11){
+			gotoxy(8,30);
+			cout << "Koszt: 500pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna wybudowac katedre oraz zwieksza sie panstwowy przychod wiary";
+		}
+		if(x0==12){
+			gotoxy(8,30);
+			cout << "Koszt: 550pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna rekrutowac ciezka jazde oraz elity";
+		}
+		if(x0==13){
+			gotoxy(8,30);
+			cout << "Koszt: 550pkt. nauki";
+			gotoxy(8,31);
+			cout << "Zwieksza sie zasieg jednostek na mapie oraz mozna rozbudowac port do 3 poziomu";
+		}
+		if(x0==14){
+			gotoxy(8,30);
+			cout << "Koszt: 550pkt. nauki";
+			gotoxy(8,31);
+			cout << "Mozna zbudowac teatr oraz Kolosa";
+		}
+		
+		/////////////////////////////////////////
+		gotoxy(8,1);
+		if(x0==0){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Powrot ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else
+		cout << " Powrot ";
+		
+		if(kapitol2.lvl>=1){
+		
+		gotoxy(8,3);
+		if(x0==1){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Lowiectwo ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else{
+		if(lowiectwo2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Lowiectwo ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else	
+		cout << " Lowiectwo ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+		if(x0==2){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Hodowla ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(hodowla2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Hodowla ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Hodowla ";
+		}
+	}
+		if(kapitol2.lvl>=2){
+		gotoxy(8,7);
+				if(x0==3){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Gildie ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(gildie2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Gildie ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Gildie ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+		if(x0==4){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Browarnictwo ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(browarnictwo2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Browarnictwo ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Browarnictwo ";
+		}
+		}
+		if(kapitol2.lvl>=3){
+		
+		gotoxy(8,11);
+				if(x0==5){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Mechanika ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(mechanika2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Mechanika ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Mechanika ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+		if(x0==6){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Hutnictwo ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(hutnictwo2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Hutnictwo ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Hutnictwo ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+				if(x0==7){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Waluta ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(waluta2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Waluta ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Waluta ";
+		}
+		}
+		if(kapitol2.lvl>=4){
+		
+		gotoxy(8,15);
+				if(x0==8){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Obrobka zelaza ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(obrobka_zelaza2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Obrobka zelaza ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Obrobka zelaza ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+		if(x0==9){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Infrastruktura ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(infrastruktura2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Infrastruktura ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Infrastruktura ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+				if(x0==10){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Administracja ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(administracja2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Administracja ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Administracja ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+				if(x0==11){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Ewangelizacja ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+		}else{
+		if(ewangelizacja2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Ewangelizacja ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Ewangelizacja ";
+		}
+	}
+	if(kapitol2.lvl>=5){
+	
+			gotoxy(8,19);
+				if(x0==12){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Obrobka stali ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+			
+		}else{
+		if(obrobka_stali2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Obrobka stali ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Obrobka stali ";
+		}
+		for(int i=0;i<20;i++)cout << char(prosto_bok);
+		if(x0==13){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Nawigacja ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+			
+		}else{
+		if(nawigacja2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Nawigacja ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Nawigacja ";
+		}
+			for(int i=0;i<20;i++)cout << char(prosto_bok);
+		if(x0==14){
+			SetConsoleTextAttribute( hOut, 2 );
+			cout << " Sztuka ";
+			SetConsoleTextAttribute( hOut, 8 );
+
+			
+		}else{
+		if(sztuka2==true){
+			SetConsoleTextAttribute( hOut, 13 );
+			cout << " Sztuka ";
+			SetConsoleTextAttribute( hOut, 8 );
+		}else	
+		cout << " Sztuka ";
+		}
+	}
+	SetConsoleTextAttribute( hOut, 10 );
+		gotoxy(8,60);
+		cout << "Zywnosc: " << zywnosc2<<"("<<miasto2[1].przychod_zywnosc<<")" <<"  Drewno: " << drewno2 <<"("<<miasto2[1].przychod_drewno<<")" <<
+ 		"  Kamien: " << kamien2<<"("<<miasto2[1].przychod_kamien<<")" << "  Wiara: " << wiara <<"("<<miasto2[1].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy2 << "  zloto2: " 
+ 		<< zloto2 << "("<<miasto2[1].przychod_zloto<<")" <<"  Produckja: " << miasto2[1].produkcja <<"("<<miasto2[1].przychod_produkcja
+ 		<<")" << "  Ludnosc: "<<miasto2[1].ludnosc << "  Nauka: " << nauka<<"("<<miasto2[1].przychod_nauka<<")"<<"  Obrona: "<<miasto2[1].obrona;
+		SetConsoleTextAttribute( hOut, 8 );
+
+		ster=getch();
+		
+		if(ster==KEY_UP && x0!=0)x0--;
+		if(ster==KEY_DOWN && x0!=2 && kapitol2.lvl==1)x0++;
+		if(ster==KEY_DOWN && x0!=4 && kapitol2.lvl==2)x0++;
+		if(ster==KEY_DOWN && x0!=7 && kapitol2.lvl==3)x0++;
+		if(ster==KEY_DOWN && x0!=11 && kapitol2.lvl==4)x0++;
+		if(ster==KEY_DOWN && x0!=14 && kapitol2.lvl==5)x0++;
+	
+		if(ster=='q' && x0==0){
+			gotoxy(0,0);
+			menu_stolica=true;
+			technologie=false;
+			gotoxy(0,0);
+			system("CLS");
+			x0=0;
+			continue;
+
+		}
+		
+		if(ster=='q' && x0==1 && nauka2>=350 && lowiectwo2==false)odkryj(&lowiectwo2,350,&nauka2,"Lowiectwo");
+		if(ster=='q' && x0==2 && nauka2>=350 && hodowla2==false)odkryj(&hodowla2,350,&nauka2,"Hodowla");
+		if(ster=='q' && x0==3 && nauka2>=400 && gildie2==false)odkryj(&gildie2,400,&nauka2,"Gildie");
+		if(ster=='q' && x0==4 && nauka2>=400 && browarnictwo==false){
+		odkryj(&browarnictwo2,400,&nauka2,"Browarnictwo");
+		nastepna_tura_domyslnie2++;
+		}
+		if(ster=='q' && x0==5 && nauka2>=450 && mechanika2==false){
+		odkryj(&mechanika2,450,&nauka2,"Mechanika");
+		nastepna_tura_domyslnie2++;
+	};
+		if(ster=='q' && x0==6 && nauka2>=450 && hutnictwo2==false){
+		odkryj(&hutnictwo2,450,&nauka2,"Hutnictwo");
+		pikinier2[xm].atak++;
+		ciezkozbrojny2[xm].atak++;
+		elita2.atak++;	
+		};
+		if(ster=='q' && x0==7 && nauka2>=450 && waluta2==false)odkryj(&waluta2,450,&nauka2,"Waluta");
+		if(ster=='q' && x0==8 && nauka2>=500 && obrobka_zelaza2==false)odkryj(&obrobka_zelaza2,500,&nauka2,"Obrobka Zelaza");
+		if(ster=='q' && x0==9 && nauka2>=500 && infrastruktura2==false)odkryj(&infrastruktura2,500,&nauka2,"Infrastruktura");
+		if(ster=='q' && x0==10 && nauka2>=500 && administracja2==false){
+		odkryj(&administracja2,500,&nauka2,"Administracja");
+		nastepna_tura_domyslnie2++;
+		};
+		if(ster=='q' && x0==11 && nauka2>=500 && ewangelizacja2==false)odkryj(&ewangelizacja2,500,&nauka2,"Ewangelizacja");
+		if(ster=='q' && x0==12 && nauka2>=550 && obrobka_stali2==false)odkryj(&obrobka_stali2,550,&nauka2,"Obrobka Stali");
+		if(ster=='q' && x0==13 && nauka2>=550 && nawigacja2==false)odkryj(&nawigacja2,550,&nauka2,"Nawigacja");
+		if(ster=='q' && x0==14 && nauka2>=550 && sztuka2==false)odkryj(&sztuka2,550,&nauka2,"Sztuka");
+
+	
+	system("CLS");
+		
+	}
+	
+	if(rekrutacja==true){
+		
+		if(ster=='q' && x0==0 && drewno2>=jrobotnik2[xm].koszt_drewno && miasto2[1].ludnosc>=jrobotnik2[xm].wielkosc*100 && zloto2>=jrobotnik2[xm].koszt_zloto && zywnosc2>=jrobotnik2[xm].koszt_zywnosc && kamien2>=jrobotnik2[xm].koszt_kamien && miasto2[1].produkcja>=jrobotnik2[xm].koszt_produkcja){
+			if(mapa[miasto2[1].x1-1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom2 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom2 ||
+			mapa[miasto2[1].x1-1][miasto2[1].y1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom){
+				wystaw_armie2(jrobotnik2[xm],mapa,0, mapa_jednostek2, 1);
+				rekrutuj2(jrobotnik2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+			}
+		}
+		if(ster=='q' && x0==1 && drewno2>=josadnik.koszt_drewno&& miasto2[1].ludnosc>=josadnik.wielkosc*100 && zloto2>=josadnik.koszt_zloto && zywnosc2>=josadnik.koszt_zywnosc && kamien2>=josadnik.koszt_kamien && miasto2[1].produkcja>=josadnik.koszt_produkcja){
+			if(mapa[miasto2[1].x1-1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom2 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom2 ||
+			mapa[miasto2[1].x1-1][miasto2[1].y1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom){
+				wystaw_armie2(josadnik,mapa,1, mapa_jednostek2, 1);
+				rekrutuj2(josadnik,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+			}
+		}
+		if(ster=='q' && x0==2 && drewno2>=pikinier2[xm].koszt_drewno&& miasto2[1].ludnosc>=pikinier2[xm].wielkosc*100 && zloto2>=pikinier2[xm].koszt_zloto && zywnosc2>=pikinier2[xm].koszt_zywnosc && sjednostki2[0][2].ilosc<9 && kamien2>=pikinier2[xm].koszt_kamien && miasto2[1].produkcja>=pikinier2[xm].koszt_produkcja && koszary2.lvl>=1){
+				rekrutuj2(pikinier2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][2].ilosc++;
+		}
+		if(ster=='q' && x0==3 && drewno2>=lucznik2[xm].koszt_drewno&& miasto2[1].ludnosc>=lucznik2[xm].wielkosc*100 && zloto2>=lucznik2[xm].koszt_zloto && zywnosc2>=lucznik2[xm].koszt_zywnosc&& sjednostki2[0][3].ilosc<9 && kamien2>=lucznik2[xm].koszt_kamien && miasto2[1].produkcja>=lucznik2[xm].koszt_produkcja && koszary2.lvl>=2 && lowiectwo2==true){
+				rekrutuj2(lucznik2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][3].ilosc++;
+		}
+		if(ster=='q' && x0==4 && drewno2>=kusznik2[xm].koszt_drewno&& miasto2[1].ludnosc>=kusznik2[xm].wielkosc*100 && zloto2>=kusznik2[xm].koszt_zloto && zywnosc2>=kusznik2[xm].koszt_zywnosc&& sjednostki2[0][4].ilosc<9 && kamien2>=kusznik2[xm].koszt_kamien && miasto2[1].produkcja>=kusznik2[xm].koszt_produkcja && koszary2.lvl>=3 && lowiectwo2==true && obrobka_zelaza2==true){
+				rekrutuj2(kusznik2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][4].ilosc++;
+		}
+		if(ster=='q' && x0==5 && drewno2>=ciezkozbrojny2[xm].koszt_drewno&& miasto2[1].ludnosc>=ciezkozbrojny2[xm].wielkosc*100 && zloto2>=ciezkozbrojny2[xm].koszt_zloto && zywnosc2>=ciezkozbrojny2[xm].koszt_zywnosc&& sjednostki2[0][5].ilosc<9 && kamien2>=ciezkozbrojny2[xm].koszt_kamien && miasto2[1].produkcja>=ciezkozbrojny2[xm].koszt_produkcja && koszary2.lvl>=4 && obrobka_zelaza2==true){
+				rekrutuj2(ciezkozbrojny2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][5].ilosc++;
+		}
+		if(ster=='q' && x0==6 && drewno2>=lekka_jazda2[xm].koszt_drewno&& miasto2[1].ludnosc>=lekka_jazda2[xm].wielkosc*100 && zloto2>=lekka_jazda2[xm].koszt_zloto && zywnosc2>=lekka_jazda2[xm].koszt_zywnosc&& sjednostki2[0][6].ilosc<9 && kamien2>=lekka_jazda2[xm].koszt_kamien && miasto2[1].produkcja>=lekka_jazda2[xm].koszt_produkcja && stajnia2.lvl>=1){
+				rekrutuj2(lekka_jazda2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][6].ilosc++;
+		}
+		if(ster=='q' && x0==7 && drewno2>=ciezka_jazda2[xm].koszt_drewno&& miasto2[1].ludnosc>=ciezka_jazda2[xm].wielkosc*100 && zloto2>=ciezka_jazda2[xm].koszt_zloto && zywnosc2>=ciezka_jazda2[xm].koszt_zywnosc&& sjednostki2[0][7].ilosc<9 && kamien2>=ciezka_jazda2[xm].koszt_kamien && miasto2[1].produkcja>=ciezka_jazda2[xm].koszt_produkcja && stajnia2.lvl>=3 && obrobka_stali2==true){
+				rekrutuj2(ciezka_jazda2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][7].ilosc++;
+		}
+		if(ster=='q' && x0==8 && drewno2>=taran2[xm].koszt_drewno&& miasto2[1].ludnosc>=taran2[xm].wielkosc*100 && zloto2>=taran2[xm].koszt_zloto && zywnosc2>=taran2[xm].koszt_zywnosc && kamien2>=taran2[xm].koszt_kamien&& sjednostki2[0][8].ilosc<9 && miasto2[1].produkcja>=taran2[xm].koszt_produkcja && warsztat2.lvl>=2){
+				rekrutuj2(taran2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][8].ilosc++;
+		}
+		if(ster=='q' && x0==9 && drewno2>=elita2.koszt_drewno && miasto2[1].ludnosc>=elita2.wielkosc*100&& zloto2>=elita2.koszt_zloto && zywnosc2>=elita2.koszt_zywnosc && kamien2>=elita2.koszt_kamien&& sjednostki2[0][9].ilosc<9 && miasto2[1].produkcja>=elita2.koszt_produkcja && akademia2.lvl>=1 && obrobka_stali2==true){
+				rekrutuj2(elita2,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[0][9].ilosc++;
+		}
+		
+	}
+	
+	if(bplac==true){
+		
+		if(ster==KEY_RIGHT && sjednostki2[0][x0+2].ilosc>0 && liczba_zolnierzy2+sjednostki2[0][x0+2].wielkosc<=max_zolnierzy2){
+			if(x0==0){
+			armia2[liczba_armii2+1].pikinierzy++;
+			armia2[liczba_armii2+1].wielkosc+=pikinier2[xm].wielkosc;
+			sjednostki2[0][2].ilosc--;
+			liczba_zolnierzy2+=pikinier2[xm].wielkosc;
+			}
+			if(x0==1){
+			armia2[liczba_armii2+1].lucznicy++;
+			armia2[liczba_armii2+1].wielkosc+=lucznik2[xm].wielkosc;
+			sjednostki2[0][3].ilosc--;
+			liczba_zolnierzy2+=lucznik2[xm].wielkosc;
+			}
+			if(x0==2){
+			armia2[liczba_armii2+1].kusznicy++;
+			armia2[liczba_armii2+1].wielkosc+=kusznik2[xm].wielkosc;
+			sjednostki2[0][4].ilosc--;
+			liczba_zolnierzy2+=kusznik2[xm].wielkosc;
+			}
+			if(x0==3){
+			armia2[liczba_armii2+1].ciezkozbrojni++;
+			armia2[liczba_armii2+1].wielkosc+=ciezkozbrojny2[xm].wielkosc;
+			sjednostki2[0][5].ilosc--;
+			liczba_zolnierzy2+=ciezkozbrojny2[xm].wielkosc;
+			}
+			if(x0==4){
+			armia2[liczba_armii2+1].lekka_jazda++;
+			armia2[liczba_armii2+1].wielkosc+=lekka_jazda2[xm].wielkosc;
+			sjednostki2[0][6].ilosc--;
+			liczba_zolnierzy2+=lekka_jazda[xm].wielkosc;
+			}
+			if(x0==5){
+			armia2[liczba_armii2+1].ciezka_jazda++;
+			armia2[liczba_armii2+1].wielkosc+=ciezka_jazda2[xm].wielkosc;
+			sjednostki2[0][7].ilosc--;
+			liczba_zolnierzy2+=ciezka_jazda2[xm].wielkosc;
+			}
+			if(x0==6){
+			armia2[liczba_armii2+1].tarany++;
+			armia2[liczba_armii2+1].wielkosc+=taran2[xm].wielkosc;
+			sjednostki2[0][8].ilosc--;
+			liczba_zolnierzy2+=taran2[xm].wielkosc;
+			}
+			if(x0==7){
+			armia2[liczba_armii2+1].elity++;
+			armia2[liczba_armii2+1].wielkosc+=elita2.wielkosc;
+			sjednostki2[0][9].ilosc--;
+			liczba_zolnierzy2+=elita2.wielkosc;
+			}	
+		}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].pikinierzy>0 && x0==0){
+			armia2[liczba_armii2+1].pikinierzy--;
+			armia2[liczba_armii2+1].wielkosc-=pikinier2[xm].wielkosc;
+			sjednostki2[0][2].ilosc++;
+			liczba_zolnierzy2-=pikinier2[xm].wielkosc;
+		}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].lucznicy>0 && x0==1){
+			armia2[liczba_armii2+1].lucznicy--;
+			armia2[liczba_armii2+1].wielkosc-=lucznik2[xm].wielkosc;
+			sjednostki2[0][3].ilosc++;
+			liczba_zolnierzy2-=lucznik2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].kusznicy>0 && x0==2){
+			armia2[liczba_armii2+1].kusznicy--;
+			armia2[liczba_armii2+1].wielkosc-=kusznik2[xm].wielkosc;
+			sjednostki2[0][4].ilosc++;
+			liczba_zolnierzy2-=kusznik2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].ciezkozbrojni>0 && x0==3){
+			armia2[liczba_armii2+1].ciezkozbrojni--;
+			armia2[liczba_armii2+1].wielkosc-=ciezkozbrojny2[xm].wielkosc;
+			sjednostki2[0][5].ilosc++;
+			liczba_zolnierzy2-=ciezkozbrojny2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].lekka_jazda>0 && x0==4){
+			armia2[liczba_armii2+1].lekka_jazda--;
+			armia2[liczba_armii2+1].wielkosc-=lekka_jazda2[xm].wielkosc;
+			sjednostki2[0][6].ilosc++;
+			liczba_zolnierzy2-=lekka_jazda[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].ciezka_jazda>0 && x0==5){
+			armia2[liczba_armii2+1].ciezka_jazda--;
+			armia2[liczba_armii2+1].wielkosc-=ciezka_jazda2[xm].wielkosc;
+			sjednostki2[0][7].ilosc++;
+			liczba_zolnierzy2-=ciezka_jazda2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].tarany>0 && x0==6){
+			armia2[liczba_armii2+1].tarany--;
+			armia2[liczba_armii2+1].wielkosc-=taran2[xm].wielkosc;
+			sjednostki2[0][8].ilosc++;
+			liczba_zolnierzy2-=taran2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].elity>0 && x0==7){
+			armia2[liczba_armii2+1].elity--;
+			armia2[liczba_armii2+1].wielkosc-=elita2.wielkosc;
+			sjednostki2[0][9].ilosc++;
+			liczba_zolnierzy2-=elita2.wielkosc;
+			}	
+		
+		if(ster=='e' && armia2[liczba_armii2+1].wielkosc>0 && liczba_armii2<=50){
+			
+			liczba_armii2++;
+			wystaw_armie2(jarmia,mapa,45,mapa_jednostek2, 1);
+			bplac=false;
+			menu_stolica=true;
+			system("CLS");
+			continue;
+		}
+		
+	}
+	if(najmij==true){
+				
+		if(ster=='q' && x0==0  && zloto2>=jrobotnik[xm].koszt_zloto*3 || ster=='q' && x0==0 && wiara2>=jrobotnik[xm].koszt_wiara){
+			if(mapa[miasto2[1].x1-1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom2 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom2 ||
+			mapa[miasto2[1].x1-1][miasto2[1].y1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom){
+				najmijv(jrobotnik[xm],&wiara,&najmij,&zloto2,&x0,&menu_stolica);
+				wystaw_armie2(jrobotnik[xm],mapa,0, mapa_jednostek2,  1);
+				
+			}
+		}
+		if(ster=='q' && x0==1 && zloto2>=josadnik.koszt_zloto*3 || ster=='q' && x0==1 && wiara2>=josadnik.koszt_wiara){
+			if(mapa[miasto2[1].x1-1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom2 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom2 || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom2 ||
+			mapa[miasto2[1].x1-1][miasto2[1].y1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1]==dom || mapa[miasto2[1].x1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1-1][miasto2[1].y1-1]==dom 
+			|| mapa[miasto2[1].x1-1][miasto2[1].y1+1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1-1]==dom || mapa[miasto2[1].x1+1][miasto2[1].y1+1]==dom){
+				najmijv(josadnik,&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				rekrutuj2(josadnik,&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+			}
+		}
+		if(ster=='q' && x0==2  && zloto2>=pikinier2[xm].koszt_zloto*3 || ster=='q' && x0==2 && wiara2>=pikinier2[xm].koszt_wiara){
+				najmijv(pikinier2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][2].ilosc++;
+		}
+		if(ster=='q' && x0==3 && zloto2>=lucznik2[xm].koszt_zloto*3 || ster=='q' && x0==3 && wiara2>=lucznik2[xm].koszt_wiara){
+				najmijv(lucznik2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][3].ilosc++;
+		}
+		if(ster=='q' && x0==4 && zloto2>=kusznik2[xm].koszt_zloto*3&& oboz2.lvl>=2 || ster=='q' && x0==4 && wiara2>=kusznik2[xm].koszt_wiara && oboz2.lvl>=2){
+				najmijv(kusznik2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][4].ilosc++;
+		}
+		if(ster=='q' && x0==5 && zloto2>=ciezkozbrojny2[xm].koszt_zloto*3&& oboz2.lvl>=2 || ster=='q' && x0==5 && wiara2>=ciezkozbrojny2[xm].koszt_wiara&& oboz2.lvl>=2){
+				najmijv(ciezkozbrojny2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][5].ilosc++;
+		}
+		if(ster=='q' && x0==6 && zloto2>=lekka_jazda2[xm].koszt_zloto*3 && oboz2.lvl>=2|| ster=='q' && x0==6 && wiara2>=lekka_jazda2[xm].koszt_wiara&& oboz2.lvl>=2){
+						najmijv(lekka_jazda2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][6].ilosc++;
+		}
+		if(ster=='q' && x0==7 && zloto2>=ciezka_jazda2[xm].koszt_zloto*3 && oboz2.lvl>=3|| ster=='q' && x0==7 && wiara2>=ciezka_jazda2[xm].koszt_wiara&& oboz2.lvl>=3){
+				najmijv(ciezka_jazda2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][7].ilosc++;
+		}
+		if(ster=='q' && x0==8 && zloto2>=taran2[xm].koszt_zloto*3 && oboz2.lvl>=3|| ster=='q' && x0==8 && wiara2>=taran2[xm].koszt_wiara&& oboz2.lvl>=3){
+				najmijv(taran2[xm],&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][8].ilosc++;
+		}
+		if(ster=='q' && x0==9 && zloto2>=elita2.koszt_zloto*3 && oboz2.lvl>=3|| ster=='q' && x0==9 && wiara2>=elita2.koszt_wiara&& oboz2.lvl>=3){
+				najmijv(elita2,&wiara2,&najmij,&zloto2,&x0,&menu_stolica);
+				sjednostki2[0][9].ilosc++;
+		}
+		
+	}
+	
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+while(miasto2[xm].menu_osady==true){
+
+	
+	if(x0==0)aktualna=rada_osady2[xm];
+	if(x0==1)aktualna=mieszkalna_osada2[xm];
+	if(x0==2)aktualna=handlowa_osada2[xm];
+	if(x0==3)aktualna=wojskowa_osada2[xm];
+	if(x0==4)aktualna=robotnicza_osada2[xm];
+	if(x0==5)aktualna=koszary_osada2[xm];
+	if(x0==6)aktualna=biblioteka_osada2[xm];
+	if(x0==7)aktualna=park_osada2[xm];
+	if(x0==8)aktualna=pomnik_osada2[xm];
+	if(x0==9)aktualna=port_osada2[xm];
+	if(x0==10)aktualna=tawerna_osada2[xm];
+	if(x0==11)aktualna=magazyn_osada2[xm];
+	if(x0==12)aktualna=mlyn_osada2[xm];
+	if(x0==13)aktualna=kamieniarz_osada2[xm];
+	if(x0==14)aktualna=kosciol_osada2[xm];
+	if(x0==15)aktualna=weglarz_osada2[xm];
+	if(x0==16)aktualna=warsztat_osada2[xm];
+	if(x0==17)aktualna=stajnia_osada2[xm];
+
+	
+	
+	gotoxy(3,3);
+	cout << "Jestes w osadzie "<<miasto2[xm].nazwa;
+	
+	SetConsoleTextAttribute( hOut, 10 );
+gotoxy(8,60);
+cout << "Zywnosc: " << zywnosc2<<"("<<miasto2[xm].przychod_zywnosc<<")" <<"  Drewno: " << drewno2 <<"("<<miasto2[xm].przychod_drewno<<")" <<
+ "  Kamien: " << kamien2<<"("<<miasto2[xm].przychod_kamien<<")" << "  Wiara: " << wiara2 <<"("<<miasto2[xm].przychod_wiara<<")" << "  Max. Zolnierzy: " << max_zolnierzy2 <<"("<<liczba_zolnierzy2<<")"<< "  zloto2: " 
+ << zloto2 << "("<<miasto2[xm].przychod_zloto<<")" <<"  Produckja: " << miasto2[xm].produkcja <<"("<<miasto2[xm].przychod_produkcja
+ <<")" << "  Ludnosc: "<<miasto2[xm].ludnosc << "  Nauka: " << nauka2<<"("<<miasto2[xm].przychod_nauka<<")"<<"  Obrona: "<<miasto2[xm].obrona << "  Podatek: "<<miasto2[xm].podatek;
+SetConsoleTextAttribute( hOut, 8 );
+	gotoxy(8,61);
+	cout << xm <<"   "<< rada_osady2[xm].lvl;
+
+if(menu_osada==true){
+	gotoxy(50,1);
+cout << "MENU OSADY                    ";
+gotoxy(40,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(40,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Mapa Swiata            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Mapa Swiata            "<<blok; 
+gotoxy(40,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout << "   Buduj                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout <<blok<< "   Buduj                  "<<blok; 
+gotoxy(40,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Rekrutuj               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Rekrutuj               "<<blok; 
+
+gotoxy(40,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Plac Manewrowy         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Plac Manewrowy         "<<blok; 
+gotoxy(40,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Zbierz Podatek         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Zbierz Podatek         "<<blok; 
+gotoxy(40,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Zmien nazwe            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Zmien nazwe            "<<blok; 
+
+gotoxy(40,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Rozbudowa              "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Rozbudowa              "<<blok; 
+gotoxy(40,12);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,13);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+	if(menu_budowy==true || rozbudowa==true){
+gotoxy(50,1);
+if(menu_budowy==true && rozbudowa==false)
+cout << "MENU BUDOWY                    ";
+budowlanka_osada(aktualna);
+if(rozbudowa==true){
+cout << "MENU ROZBUDOWY                 ";
+rozbudowlanka_osada(x0, aktualna);
+
+}
+gotoxy(40,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(40,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,5);
+if(x0==0){
+cout<< blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"Rada Osady("<<rada_osady2[xm].lvl<<"/4)           ";
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else{
+if(rada_osady2[xm].budowa==true)
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"Rada Osady("<<rada_osady2[xm].lvl<<"/4)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"Dzielnica Mieszkalna ("<<mieszkalna_osada2[xm].lvl<<"/2)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(mieszkalna_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "Dzielnica Mieszkalna ("<<mieszkalna_osada2[xm].lvl<<"/2)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Handlowa ("<<handlowa_osada2[xm].lvl<<"/2) "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(handlowa_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< " Dzielnica Handlowa ("<<handlowa_osada2[xm].lvl<<"/2) "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<" Dzielnica Wojskowa ("<<wojskowa_osada2[xm].lvl<<"/2) "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(wojskowa_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<" Dzielnica Wojskowa ("<<wojskowa_osada2[xm].lvl<<"/2) "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"Dzielnica Robotnicza ("<<robotnicza_osada2[xm].lvl<<"/2)"; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(robotnicza_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"Dzielnica Robotnicza ("<<robotnicza_osada2[xm].lvl<<"/2)"<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Koszary ("<<koszary_osada2[xm].lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(koszary_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Koszary ("<<koszary_osada2[xm].lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+
+gotoxy(40,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Biblioteka ("<<biblioteka_osada2[xm].lvl<<"/2)       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(biblioteka_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Biblioteka ("<<biblioteka_osada2[xm].lvl<<"/2)       "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+gotoxy(40,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Park ("<<park_osada2[xm].lvl<<"/2)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(park_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Park ("<<park_osada2[xm].lvl<<"/2)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pomnik ("<<pomnik_osada2[xm].lvl<<"/2)           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(pomnik_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Pomnik ("<<pomnik_osada2[xm].lvl<<"/2)           "<<blok;
+SetConsoleTextAttribute( hOut, 8 );
+} 
+
+gotoxy(40,14);
+if(x0==9){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Port ("<<port_osada2[xm].lvl<<"/2)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(port_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Port ("<<port_osada2[xm].lvl<<"/2)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+} 
+
+
+gotoxy(40,15);
+if(x0==10){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Tawerna ("<<tawerna_osada2[xm].lvl<<"/2)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(tawerna_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Tawerna ("<<tawerna_osada2[xm].lvl<<"/2)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,16);
+if(x0==11){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Magazyn ("<<magazyn_osada2[xm].lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(magazyn_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Magazyn ("<<magazyn_osada2[xm].lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,17);
+if(x0==12){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Mlyn ("<<mlyn_osada2[xm].lvl<<"/3)             "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(mlyn_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Mlyn ("<<mlyn_osada2[xm].lvl<<"/3)             "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+gotoxy(40,18);
+if(x0==13){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kamieniarz ("<<kamieniarz_osada2[xm].lvl<<"/3)       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kamieniarz_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kamieniarz ("<<kamieniarz_osada2[xm].lvl<<"/3)       "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+gotoxy(40,19);
+if(x0==14){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kosciol ("<<kosciol_osada2[xm].lvl<<"/2)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(kosciol_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Kosciol ("<<kosciol_osada2[xm].lvl<<"/2)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+
+gotoxy(40,20);
+if(x0==15){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Weglarnia ("<<weglarz_osada2[xm].lvl<<"/2)        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(weglarz_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Weglarnia ("<<weglarz_osada2[xm].lvl<<"/2)        "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,21);
+if(x0==16){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Warsztat ("<<warsztat_osada2[xm].lvl<<"/2)         "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(warsztat_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<< "   Warsztat ("<<warsztat_osada2[xm].lvl<<"/2)         "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,22);
+if(x0==17){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Stajnia ("<<stajnia_osada2[xm].lvl<<"/3)          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else{
+if(stajnia_osada2[xm].budowa==true)	
+SetConsoleTextAttribute( hOut, 13 );
+cout <<blok<<"   Stajnia ("<<stajnia_osada2[xm].lvl<<"/3)          "<<blok; 
+SetConsoleTextAttribute( hOut, 8 );
+}
+gotoxy(40,23);
+if(x0==18){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok;
+gotoxy(40,24);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,25);
+for(int i=0;i<28;i++)cout << blok;
+}
+
+
+if(nazwa==true){
+	gotoxy(54,25);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(54,26);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,28);
+	cout << blok;
+	for(int i=0;i<38;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,29);
+	for(int i=0;i<40;i++)cout << blok;
+	gotoxy(90,27);
+	cout << "   " << blok;
+	gotoxy(54,27);
+	cout <<blok<< "  Wpisz nazwe miasta: ";
+	getline(cin, miasto2[xm].nazwa);
+
+	gotoxy(54,27);
+	for(int i=0;i<28;i++)cout << blok;
+	nazwa=false;
+	system("CLS");
+	continue;
+}
+
+	if(bplac==true){
+		gotoxy(50,1);
+cout << "NAZWA/ILOSC POSIADANYCH/DO ARMII                    ";
+rekrutowanka_osada(x0, xm);
+pokaz_armie(armia2[liczba_armii2+1], xm);
+gotoxy(40,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(40,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier / "<<sjednostki2[xm][2].ilosc<<" / "<<armia2[liczba_armii2+1].pikinierzy<<"       "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier / "<<sjednostki2[xm][2].ilosc<<" / "<<armia2[liczba_armii2+1].pikinierzy<<"       "<<blok; 
+
+gotoxy(40,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik / "<<sjednostki2[xm][3].ilosc<<" / "<<armia2[liczba_armii2+1].lucznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<<"   Lucznik / "<<sjednostki2[xm][3].ilosc<<" / "<<armia2[liczba_armii2+1].lucznicy<<"        ";
+gotoxy(40,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik / "<<sjednostki2[xm][4].ilosc<<" / "<<armia2[liczba_armii2+1].kusznicy<<"        "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik / "<<sjednostki2[xm][4].ilosc<<" / "<<armia2[liczba_armii2+1].kusznicy<<"        "<<blok; 
+gotoxy(40,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny / "<<sjednostki2[xm][5].ilosc<<" / "<<armia2[liczba_armii2+1].ciezkozbrojni<<"  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny / "<<sjednostki2[xm][5].ilosc<<" / "<<armia2[liczba_armii2+1].ciezkozbrojni<<"  "<<blok; 
+
+gotoxy(40,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda / "<<sjednostki2[xm][6].ilosc<<" / "<<armia2[liczba_armii2+1].lekka_jazda<<"    "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda / "<<sjednostki2[xm][6].ilosc<<" / "<<armia2[liczba_armii2+1].lekka_jazda<<"    "<<blok; 
+gotoxy(40,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda / "<<sjednostki2[xm][7].ilosc<<" / "<<armia2[liczba_armii2+1].ciezka_jazda<<"   "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda / "<<sjednostki2[xm][7].ilosc<<" / "<<armia2[liczba_armii2+1].ciezka_jazda<<"   "<<blok;
+gotoxy(40,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran / "<<sjednostki2[xm][8].ilosc<<" / "<<armia2[liczba_armii2+1].tarany<<"          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran / "<<sjednostki2[xm][8].ilosc<<" / "<<armia2[liczba_armii2+1].tarany<<"          "<<blok;
+gotoxy(40,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(40,13);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,14);
+for(int i=0;i<28;i++)cout << blok;
+	}
+	
+		if(rekrutacja==true){
+gotoxy(50,1);
+cout << "REKRUTACJA JEDNOSTEK                    ";
+rekrutowanka_osada(x0, xm);
+gotoxy(40,3);
+for(int i=0;i<28;i++)cout << blok;
+gotoxy(40,4);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,5);
+if(x0==0){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout <<"   Robotnik               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout << blok;
+}
+else
+cout << blok<<"   Robotnik               "<<blok; 
+gotoxy(40,6);
+if(x0==1){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Pikinier               "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Pikinier               "<<blok; 
+
+gotoxy(40,7);
+if(x0==2){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lucznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lucznik                "<<blok; 
+gotoxy(40,8);
+if(x0==3){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Kusznik                "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Kusznik                "<<blok; 
+gotoxy(40,9);
+if(x0==4){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezkozbrojny          "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezkozbrojny          "<<blok; 
+
+gotoxy(40,10);
+if(x0==5){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Lekka Jazda            "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Lekka Jazda            "<<blok; 
+gotoxy(40,11);
+if(x0==6){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Ciezka Jazda           "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Ciezka Jazda           "<<blok;
+gotoxy(40,12);
+if(x0==7){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Taran                  "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Taran                  "<<blok;
+gotoxy(40,13);
+if(x0==8){
+cout << blok;
+SetConsoleTextAttribute( hOut, 2 );
+cout<<"   Powrot                 "; 
+SetConsoleTextAttribute( hOut, 8 );
+cout<<blok;
+}
+else
+cout <<blok<< "   Powrot                 "<<blok; 
+gotoxy(40,14);
+cout <<blok<< "                          "<<blok;
+gotoxy(40,15);
+for(int i=0;i<28;i++)cout << blok;
+}
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	ster=getch();
+	
+	if(ster==27){
+		miasto2[xm].menu_osady=false;
+		menu_osada=false;
+		rozbudowa=false;
+		menu_budowy=false;
+		rekrutacja=false;
+		bplac=false;
+		xm=0;
+		mapa_glowna=true;
+		menu=true;
+		system("CLS");
+	}
+	
+	if(ster=='q' && x0==0 && menu_osada==true){
+		miasto2[xm].menu_osady=false;
+		menu_osada=false;
+		xm=0;
+		mapa_glowna=true;
+		menu=true;
+		system("CLS");
+	}
+	
+if(ster==KEY_DOWN && x0!=6 && menu_osada==true || ster==KEY_DOWN && x0!=18 && menu_budowy==true || ster==KEY_DOWN && x0!=18 && rozbudowa==true || ster==KEY_DOWN && x0!=8 && rekrutacja==true || ster==KEY_DOWN && x0!=7 && bplac==true){
+	x0++;
+	cls();
+	continue;
+}
+if(ster==KEY_UP && x0!=0){
+	x0--;
+	cls();
+	continue;
+}
+
+if(ster=='q' && x0==4 && menu_osada==true){
+	zloto2+=miasto2[xm].podatek;
+
+	gotoxy(54,25);
+	for(int i=0;i<70;i++)cout << blok;
+	gotoxy(54,26);
+	cout << blok;
+	for(int i=0;i<68;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,28);
+	cout << blok;
+	for(int i=0;i<68;i++)cout<< " ";
+	cout << blok;
+	gotoxy(54,29);
+	for(int i=0;i<70;i++)cout << blok;
+	gotoxy(118,27);
+	cout << "   " << blok;
+	gotoxy(54,27);
+	cout <<blok<< "  Zebrales podatek z miasta "<<miasto2[xm].nazwa<<" w wysokosci "<<miasto2[xm].podatek;
+	Sleep(2000);
+	miasto2[xm].podatek=0;
+	system("CLS");
+	continue;
+}
+
+if(ster=='q' && x0==3 && menu_osada==true){
+	menu_osada=false;
+	bplac=true;
+	x0=0;
+	gotoxy(0,0);
+	system("CLS");
+	continue;
+
+}
+if(ster=='q' && x0==7 && bplac==true){
+	menu_osada=true;
+	bplac=false;
+	x0=0;
+	gotoxy(0,0);
+	system("CLS");
+	continue;
+}
+
+if(ster=='q' && x0==5 && menu_osada==true){
+	nazwa=true;
+	gotoxy(0,0);
+	system("CLS");
+	continue;
+}
+if(ster=='q' && x0==1 && menu_osada==true){
+	menu_osada=false;
+	menu_budowy=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+
+}
+if(ster=='q' && x0==18 && menu_budowy==true){
+	menu_budowy=false;
+	menu_osada=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+}
+if(ster=='q' && x0==6 && menu_osada==true){
+	menu_osada=false;
+	rozbudowa=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+
+}
+if(ster=='q' && x0==18 && rozbudowa==true){
+	menu_osada=true;
+	rozbudowa=false;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+}
+if(ster=='q' && x0==2 && menu_osada==true){
+	menu_osada=false;
+	rekrutacja=true;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+
+}
+if(ster=='q' && x0==8 && rekrutacja==true){
+	menu_osada=true;
+	rekrutacja=false;
+	gotoxy(0,0);
+	system("CLS");
+	x0=0;
+	continue;
+}
+
+
+	
+
+	
+	if(bplac==true){
+		
+		if(ster==KEY_RIGHT && sjednostki2[xm][x0+2].ilosc>0 && liczba_zolnierzy2+sjednostki2[xm][x0+2].wielkosc<=max_zolnierzy2){
+			if(x0==0){
+			armia2[liczba_armii2+1].pikinierzy++;
+			armia2[liczba_armii2+1].wielkosc+=pikinier2[xm].wielkosc;
+			sjednostki2[xm][2].ilosc--;
+			liczba_zolnierzy2+=pikinier2[xm].wielkosc;
+			}
+			if(x0==1){
+			armia2[liczba_armii2+1].lucznicy++;
+			armia2[liczba_armii2+1].wielkosc+=lucznik2[xm].wielkosc;
+			sjednostki2[xm][3].ilosc--;
+			liczba_zolnierzy2+=lucznik2[xm].wielkosc;
+			}
+			if(x0==2){
+			armia2[liczba_armii2+1].kusznicy++;
+			armia2[liczba_armii2+1].wielkosc+=kusznik2[xm].wielkosc;
+			sjednostki2[xm][4].ilosc--;
+			liczba_zolnierzy2+=kusznik2[xm].wielkosc;
+			}
+			if(x0==3){
+			armia2[liczba_armii2+1].ciezkozbrojni++;
+			armia2[liczba_armii2+1].wielkosc+=ciezkozbrojny2[xm].wielkosc;
+			sjednostki2[xm][5].ilosc--;
+			liczba_zolnierzy2+=ciezkozbrojny2[xm].wielkosc;
+			}
+			if(x0==4){
+			armia2[liczba_armii2+1].lekka_jazda++;
+			armia2[liczba_armii2+1].wielkosc+=lekka_jazda2[xm].wielkosc;
+			sjednostki2[xm][6].ilosc--;
+			liczba_zolnierzy2+=lekka_jazda2[xm].wielkosc;
+			}
+			if(x0==5){
+			armia2[liczba_armii2+1].ciezka_jazda++;
+			armia2[liczba_armii2+1].wielkosc+=ciezka_jazda2[xm].wielkosc;
+			sjednostki2[xm][7].ilosc--;
+			liczba_zolnierzy2+=ciezka_jazda2[xm].wielkosc;
+			}
+			if(x0==6){
+			armia2[liczba_armii2+1].tarany++;
+			armia2[liczba_armii2+1].wielkosc+=taran2[xm].wielkosc;
+			sjednostki2[xm][8].ilosc--;
+			liczba_zolnierzy2+=taran2[xm].wielkosc;
+			}
+	
+		}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].pikinierzy>0 && x0==0){
+			armia2[liczba_armii2+1].pikinierzy--;
+			armia2[liczba_armii2+1].wielkosc-=pikinier2[xm].wielkosc;
+			sjednostki2[xm][2].ilosc++;
+			liczba_zolnierzy2-=pikinier2[xm].wielkosc;
+		}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].lucznicy>0 && x0==1){
+			armia2[liczba_armii2+1].lucznicy--;
+			armia2[liczba_armii2+1].wielkosc-=lucznik2[xm].wielkosc;
+			sjednostki2[xm][3].ilosc++;
+			liczba_zolnierzy2-=lucznik2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].kusznicy>0 && x0==2){
+			armia2[liczba_armii2+1].kusznicy--;
+			armia2[liczba_armii2+1].wielkosc-=kusznik2[xm].wielkosc;
+			sjednostki2[xm][4].ilosc++;
+			liczba_zolnierzy2-=kusznik2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].ciezkozbrojni>0 && x0==3){
+			armia2[liczba_armii2+1].ciezkozbrojni--;
+			armia2[liczba_armii2+1].wielkosc-=ciezkozbrojny2[xm].wielkosc;
+			sjednostki2[xm][5].ilosc++;
+			liczba_zolnierzy2-=ciezkozbrojny2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].lekka_jazda>0 && x0==4){
+			armia2[liczba_armii2+1].lekka_jazda--;
+			armia2[liczba_armii2+1].wielkosc-=lekka_jazda2[xm].wielkosc;
+			sjednostki2[xm][6].ilosc++;
+			liczba_zolnierzy2-=lekka_jazda2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].ciezka_jazda>0 && x0==5){
+			armia2[liczba_armii2+1].ciezka_jazda--;
+			armia2[liczba_armii2+1].wielkosc-=ciezka_jazda2[xm].wielkosc;
+			sjednostki2[xm][7].ilosc++;
+			liczba_zolnierzy2-=ciezka_jazda2[xm].wielkosc;
+			}
+		if(ster==KEY_LEFT && armia2[liczba_armii2+1].tarany>0 && x0==6){
+			armia2[liczba_armii2+1].tarany--;
+			armia2[liczba_armii2+1].wielkosc-=taran2[xm].wielkosc;
+			sjednostki2[xm][8].ilosc++;
+			liczba_zolnierzy2-=taran2[xm].wielkosc;
+			}
+	
+		
+		if(ster=='e' && armia2[liczba_armii2+1].wielkosc>0 &&liczba_armii2<=50){
+			
+			liczba_armii2++;
+			wystaw_armie2(jarmia,mapa,45,mapa_jednostek2, xm);
+			bplac=false;
+			menu_osada=true;
+			system("CLS");
+			continue;
+		}
+		
+	}
+	
+	if(rekrutacja==true){
+		
+		if(ster=='q' && x0==0 && drewno2>=jrobotnik2[xm].koszt_drewno && miasto2[xm].ludnosc>=jrobotnik2[xm].wielkosc*100 && zloto2>=jrobotnik2[xm].koszt_zloto && zywnosc2>=jrobotnik2[xm].koszt_zywnosc && kamien2>=jrobotnik2[xm].koszt_kamien && miasto2[xm].produkcja>=jrobotnik2[xm].koszt_produkcja){
+			if(mapa[miasto2[xm].x1-1][miasto2[xm].y1]==dom2 || mapa[miasto2[xm].x1+1][miasto2[xm].y1]==dom2 || mapa[miasto2[xm].x1][miasto2[xm].y1-1]==dom2 || mapa[miasto2[xm].x1][miasto2[xm].y1+1]==dom2 || mapa[miasto2[xm].x1-1][miasto2[xm].y1-1]==dom2 
+			|| mapa[miasto2[xm].x1-1][miasto2[xm].y1+1]==dom2 || mapa[miasto2[xm].x1+1][miasto2[xm].y1-1]==dom2 || mapa[miasto2[xm].x1+1][miasto2[xm].y1+1]==dom2 ||
+			mapa[miasto2[xm].x1-1][miasto2[xm].y1]==dom || mapa[miasto2[xm].x1+1][miasto2[xm].y1]==dom || mapa[miasto2[xm].x1][miasto2[xm].y1-1]==dom || mapa[miasto2[xm].x1][miasto2[xm].y1+1]==dom || mapa[miasto2[xm].x1-1][miasto2[xm].y1-1]==dom 
+			|| mapa[miasto2[xm].x1-1][miasto2[xm].y1+1]==dom || mapa[miasto2[xm].x1+1][miasto2[xm].y1-1]==dom || mapa[miasto2[xm].x1+1][miasto2[xm].y1+1]==dom){
+				wystaw_armie2(jrobotnik2[xm],mapa,0, mapa_jednostek, xm);
+				rekrutuj2(jrobotnik2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				menu_osada=true;
+			}
+		}
+		if(ster=='q' && x0==1 && drewno2>=pikinier2[xm].koszt_drewno&& miasto2[xm].ludnosc>=pikinier2[xm].wielkosc*100 && zloto2>=pikinier2[xm].koszt_zloto && zywnosc2>=pikinier2[xm].koszt_zywnosc && sjednostki2[xm][2].ilosc<9 && kamien2>=pikinier2[xm].koszt_kamien && miasto2[xm].produkcja>=pikinier2[xm].koszt_produkcja && koszary2.lvl>=1){
+				rekrutuj2(pikinier2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][2].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==2 && drewno2>=lucznik2[xm].koszt_drewno&& miasto2[xm].ludnosc>=lucznik2[xm].wielkosc*100 && zloto2>=lucznik2[xm].koszt_zloto && zywnosc2>=lucznik2[xm].koszt_zywnosc&& sjednostki2[xm][3].ilosc<9 && kamien2>=lucznik2[xm].koszt_kamien && miasto2[xm].produkcja>=lucznik2[xm].koszt_produkcja && koszary2.lvl>=2 && lowiectwo==true){
+				rekrutuj2(lucznik2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][3].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==3 && drewno2>=kusznik2[xm].koszt_drewno&& miasto2[xm].ludnosc>=kusznik2[xm].wielkosc*100 && zloto2>=kusznik2[xm].koszt_zloto && zywnosc2>=kusznik2[xm].koszt_zywnosc&& sjednostki2[xm][4].ilosc<9 && kamien2>=kusznik2[xm].koszt_kamien && miasto2[xm].produkcja>=kusznik2[xm].koszt_produkcja && koszary2.lvl>=3 && lowiectwo==true && obrobka_zelaza==true){
+				rekrutuj2(kusznik2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][4].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==4 && drewno2>=ciezkozbrojny2[xm].koszt_drewno&& miasto2[xm].ludnosc>=ciezkozbrojny2[xm].wielkosc*100 && zloto2>=ciezkozbrojny2[xm].koszt_zloto && zywnosc2>=ciezkozbrojny2[xm].koszt_zywnosc&& sjednostki2[xm][5].ilosc<9 && kamien2>=ciezkozbrojny2[xm].koszt_kamien && miasto2[xm].produkcja>=ciezkozbrojny2[xm].koszt_produkcja && koszary2.lvl>=4 && obrobka_zelaza==true){
+				rekrutuj2(ciezkozbrojny2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][5].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==5 && drewno2>=lekka_jazda2[xm].koszt_drewno&& miasto2[xm].ludnosc>=lekka_jazda2[xm].wielkosc*100 && zloto2>=lekka_jazda2[xm].koszt_zloto && zywnosc2>=lekka_jazda2[xm].koszt_zywnosc&& sjednostki2[xm][6].ilosc<9 && kamien2>=lekka_jazda2[xm].koszt_kamien && miasto2[xm].produkcja>=lekka_jazda2[xm].koszt_produkcja && stajnia2.lvl>=1){
+				rekrutuj2(lekka_jazda2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][6].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==6 && drewno2>=ciezka_jazda2[xm].koszt_drewno&& miasto2[xm].ludnosc>=ciezka_jazda2[xm].wielkosc*100 && zloto2>=ciezka_jazda2[xm].koszt_zloto && zywnosc2>=ciezka_jazda2[xm].koszt_zywnosc&& sjednostki2[xm][7].ilosc<9 && kamien2>=ciezka_jazda2[xm].koszt_kamien && miasto2[xm].produkcja>=ciezka_jazda2[xm].koszt_produkcja && stajnia2.lvl>=3 && obrobka_stali==true){
+				rekrutuj2(ciezka_jazda2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][7].ilosc++;
+				menu_osada=true;
+		}
+		if(ster=='q' && x0==7 && drewno2>=taran2[xm].koszt_drewno&& miasto2[xm].ludnosc>=taran2[xm].wielkosc*100 && zloto2>=taran2[xm].koszt_zloto && zywnosc2>=taran2[xm].koszt_zywnosc && kamien2>=taran2[xm].koszt_kamien&& sjednostki2[xm][8].ilosc<9 && miasto2[xm].produkcja>=taran2[xm].koszt_produkcja && warsztat2.lvl>=2){
+				rekrutuj2(taran2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rekrutacja,&menu_stolica,&x0);
+				sjednostki2[xm][8].ilosc++;
+				menu_osada=true;
+		}
+	}
+	
+	////////////////////////buwodanko/////////////////////
+	
+	
+		if(ster=='q' && x0==0 && rozbudowa==true && rada_osady2[xm].lvl==1 && kapitol2.lvl>=1 && drewno2>=rada_osady2[xm].koszt_drewno && kamien2>=rada_osady2[xm].koszt_kamien && zywnosc2>=rada_osady2[xm].koszt_zywnosc && zloto2>=rada_osady2[xm].koszt_zloto && miasto2[xm].produkcja>=rada_osady2[xm].koszt_produkcja){
+			rada_osady2[xm].lvl++;
+			rozbuduj_osada2(rada_osady2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(rada_osady2[xm]);
+			jrobotnik2[xm].koszt_produkcja-=25;
+			zwieksz_przychod_osada2(rada_osady2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+		}
+		if(ster=='q' && x0==0 && rozbudowa==true && rada_osady2[xm].lvl==2 && kapitol2.lvl>=2 && drewno2>=rada_osady2[xm].koszt_drewno && kamien2>=rada_osady2[xm].koszt_kamien && zywnosc2>=rada_osady2[xm].koszt_zywnosc && zloto2>=rada_osady2[xm].koszt_zloto && miasto2[xm].produkcja>=rada_osady2[xm].koszt_produkcja){
+			rada_osady2[xm].lvl++;
+			rozbuduj_osada2(rada_osady2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(rada_osady2[xm]);
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod_osada2(rada_osady2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+		}
+				if(ster=='q' && x0==0 && rozbudowa==true && rada_osady2[xm].lvl==3 && kapitol2.lvl>=3 && drewno2>=rada_osady2[xm].koszt_drewno && kamien2>=rada_osady2[xm].koszt_kamien && zywnosc2>=rada_osady2[xm].koszt_zywnosc && zloto2>=rada_osady2[xm].koszt_zloto && miasto2[xm].produkcja>=rada_osady2[xm].koszt_produkcja){
+			rada_osady2[xm].lvl++;
+			rozbuduj_osada2(rada_osady2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(rada_osady2[xm]);
+			jrobotnik[xm].koszt_produkcja-=25;
+			zwieksz_przychod_osada2(rada_osady2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+		}
+
+				//////////////////
+				if(ster=='q' && x0==1 && menu_budowy==true && mieszkalna_osada2[xm].lvl==0&&rada_osady2[xm].lvl>=1 && drewno2>=mieszkalna_osada2[xm].koszt_drewno && kamien2>=mieszkalna_osada2[xm].koszt_kamien && zywnosc2>=mieszkalna_osada2[xm].koszt_zywnosc && zloto2>=mieszkalna_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=mieszkalna_osada2[xm].koszt_produkcja){
+					mieszkalna_osada2[xm].lvl++;
+					zbuduj_osada(mieszkalna_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+					zwieksz_koszt_osada(mieszkalna_osada2[xm]);
+					zwieksz_przychod_osada2(mieszkalna_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+				}
+		if(ster=='q' && rozbudowa==true && x0==1&& mieszkalna_osada2[xm].lvl==1&&rada_osady2[xm].lvl>=2 && drewno2>=mieszkalna_osada2[xm].koszt_drewno && kamien2>=mieszkalna_osada2[xm].koszt_kamien && zywnosc2>=mieszkalna_osada2[xm].koszt_zywnosc && zloto2>=mieszkalna_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=mieszkalna_osada2[xm].koszt_produkcja){
+		
+			mieszkalna_osada2[xm].lvl++;
+			rozbuduj_osada2(mieszkalna_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(mieszkalna_osada2[xm]);
+			zwieksz_przychod_osada2(mieszkalna_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+		}
+
+			//////////////////
+				if(ster=='q' && x0==2 && menu_budowy==true&& handlowa_osada2[xm].lvl==0 &&rada_osady2[xm].lvl>=2 && drewno2>=handlowa_osada2[xm].koszt_drewno && kamien2>=handlowa_osada2[xm].koszt_kamien && zywnosc2>=handlowa_osada2[xm].koszt_zywnosc && zloto2>=handlowa_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=handlowa_osada2[xm].koszt_produkcja){
+	
+			handlowa_osada2[xm].lvl++;
+			zbuduj_osada(handlowa_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(handlowa_osada2[xm]);
+			zwieksz_przychod_osada2(handlowa_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+	}
+		if(ster=='q' && rozbudowa==true&& x0==2&& handlowa_osada2[xm].lvl==1&&rada_osady2[xm].lvl>=3 && drewno2>=handlowa_osada2[xm].koszt_drewno && kamien2>=handlowa_osada2[xm].koszt_kamien && zywnosc2>=handlowa_osada2[xm].koszt_zywnosc && zloto2>=handlowa_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=handlowa_osada2[xm].koszt_produkcja){
+		
+			handlowa_osada2[xm].lvl++;
+			rozbuduj_osada2(handlowa_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(handlowa_osada2[xm]);
+			zwieksz_przychod_osada2(handlowa_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+    	}
+			//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==3&& wojskowa_osada2[xm].lvl==0&&rada_osady2[xm].lvl>=2 && drewno2>=wojskowa_osada2[xm].koszt_drewno && kamien2>=wojskowa_osada2[xm].koszt_kamien && zywnosc2>=wojskowa_osada2[xm].koszt_zywnosc && zloto2>=wojskowa_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=wojskowa_osada2[xm].koszt_produkcja){
+			wojskowa_osada2[xm].lvl++;
+			zbuduj_osada(wojskowa_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(wojskowa_osada2[xm]);
+			zwieksz_przychod_osada2(wojskowa_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+			miasto2[xm].obrona=miasto2[xm].obrona+10;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==3&& wojskowa_osada2[xm].lvl==1&&rada_osady2[xm].lvl>=3&& drewno2>=wojskowa_osada2[xm].koszt_drewno && kamien2>=wojskowa_osada2[xm].koszt_kamien && zywnosc2>=wojskowa_osada2[xm].koszt_zywnosc && zloto2>=wojskowa_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=wojskowa_osada2[xm].koszt_produkcja){
+			wojskowa_osada2[xm].lvl++;
+			rozbuduj_osada2(wojskowa_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(wojskowa_osada2[xm]);
+			zwieksz_przychod_osada2(wojskowa_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+			miasto2[xm].obrona=miasto2[xm].obrona+15;
+    	}
+			
+			//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==4&& robotnicza_osada2[xm].lvl==0&&rada_osady2[xm].lvl>=1 && drewno2>=robotnicza_osada2[xm].koszt_drewno && kamien2>=robotnicza_osada2[xm].koszt_kamien && zywnosc2>=robotnicza_osada2[xm].koszt_zywnosc && zloto2>=robotnicza_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=robotnicza_osada2[xm].koszt_produkcja){
+			robotnicza_osada2[xm].lvl++;
+			zbuduj_osada(robotnicza_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(robotnicza_osada2[xm]);
+			zwieksz_przychod_osada2(robotnicza_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==4&& robotnicza_osada2[xm].lvl==1&&rada_osady2[xm].lvl>=2 && drewno2>=robotnicza_osada2[xm].koszt_drewno && kamien2>=robotnicza_osada2[xm].koszt_kamien && zywnosc2>=robotnicza_osada2[xm].koszt_zywnosc && zloto2>=robotnicza_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=robotnicza_osada2[xm].koszt_produkcja){
+			robotnicza_osada2[xm].lvl++;
+			rozbuduj_osada2(robotnicza_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(robotnicza_osada2[xm]);
+			zwieksz_przychod_osada2(robotnicza_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+
+    	}
+			
+		///////////////////////
+	
+		if(ster=='q' && menu_budowy==true && x0==5&& koszary_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=koszary_osada2[xm].koszt_drewno && kamien2>=koszary_osada2[xm].koszt_kamien && zywnosc2>=koszary_osada2[xm].koszt_zywnosc && zloto2>=koszary_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=koszary_osada2[xm].koszt_produkcja){
+			koszary_osada2[xm].lvl++;
+			zbuduj_osada(koszary_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(koszary_osada2[xm]);
+			zwieksz_przychod_osada2(koszary_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+    	}	
+		if(ster=='q' && rozbudowa==true && x0==5&& koszary_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=2 && drewno2>=koszary_osada2[xm].koszt_drewno && kamien2>=koszary_osada2[xm].koszt_kamien && zywnosc2>=koszary_osada2[xm].koszt_zywnosc && zloto2>=koszary_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=koszary_osada2[xm].koszt_produkcja){
+			koszary_osada2[xm].lvl++;
+			rozbuduj_osada2(koszary_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(koszary_osada2[xm]);
+			zwieksz_przychod_osada2(koszary_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+			
+    	}
+    	if(ster=='q' && rozbudowa==true && x0==5&& koszary_osada2[xm].lvl==2 && rada_osady2[xm].lvl>=4 && drewno2>=koszary_osada2[xm].koszt_drewno && kamien2>=koszary_osada2[xm].koszt_kamien && zywnosc2>=koszary_osada2[xm].koszt_zywnosc && zloto2>=koszary_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=koszary_osada2[xm].koszt_produkcja){
+			koszary_osada2[xm].lvl++;
+			rozbuduj_osada2(koszary_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(koszary_osada2[xm]);
+			zwieksz_przychod_osada2(koszary_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			pikinier2[xm].koszt_produkcja=pikinier2[xm].koszt_produkcja-25;
+			
+    	}
+			//////////////////
+
+		if(ster=='q' && x0==6&& menu_budowy==true&& biblioteka_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=2 && drewno2>=biblioteka_osada2[xm].koszt_drewno && kamien2>=biblioteka_osada2[xm].koszt_kamien && zywnosc2>=biblioteka_osada2[xm].koszt_zywnosc && zloto2>=biblioteka_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=biblioteka_osada2[xm].koszt_produkcja){
+			biblioteka_osada2[xm].lvl++;
+			zbuduj_osada(biblioteka_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(biblioteka_osada2[xm]);
+			zwieksz_przychod_osada2(biblioteka_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+    	}
+		if(ster=='q' && x0==6&& rozbudowa==true&& biblioteka_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=4 && drewno2>=biblioteka_osada2[xm].koszt_drewno && kamien2>=biblioteka_osada2[xm].koszt_kamien && zywnosc2>=biblioteka_osada2[xm].koszt_zywnosc && zloto2>=biblioteka_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=biblioteka_osada2[xm].koszt_produkcja){
+			biblioteka_osada2[xm].lvl++;
+			rozbuduj_osada2(biblioteka_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(biblioteka_osada2[xm]);
+			zwieksz_przychod_osada2(biblioteka_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+    	}	
+			//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==7&& park_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=park_osada2[xm].koszt_drewno && kamien2>=park_osada2[xm].koszt_kamien && zywnosc2>=park_osada2[xm].koszt_zywnosc && zloto2>=park_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=park_osada2[xm].koszt_produkcja){
+			park_osada2[xm].lvl++;
+			zbuduj_osada(park_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(park_osada2[xm]);
+			zwieksz_przychod_osada2(park_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==7&& park_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=park_osada2[xm].koszt_drewno && kamien2>=park_osada2[xm].koszt_kamien && zywnosc2>=park_osada2[xm].koszt_zywnosc && zloto2>=park_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=park_osada2[xm].koszt_produkcja){
+			park_osada2[xm].lvl++;
+			rozbuduj_osada2(park_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0, xm);
+			zwieksz_koszt_osada(park_osada2[xm]);
+			zwieksz_przychod_osada2(park_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+    	}	//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==8&& pomnik_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=pomnik_osada2[xm].koszt_drewno && kamien2>=pomnik_osada2[xm].koszt_kamien && zywnosc2>=pomnik_osada2[xm].koszt_zywnosc && zloto2>=pomnik_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=pomnik_osada2[xm].koszt_produkcja){
+			pomnik_osada2[xm].lvl++;
+			zbuduj_osada(pomnik_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(pomnik_osada2[xm]);
+			zwieksz_przychod_osada2(pomnik_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==8&& pomnik_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=2 && drewno2>=pomnik_osada2[xm].koszt_drewno && kamien2>=pomnik_osada2[xm].koszt_kamien && zywnosc2>=pomnik_osada2[xm].koszt_zywnosc && zloto2>=pomnik_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=pomnik_osada2[xm].koszt_produkcja){
+			pomnik_osada2[xm].lvl++;
+			rozbuduj_osada2(pomnik_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(pomnik_osada2[xm]);
+			zwieksz_przychod_osada2(pomnik_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}	
+				//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==9&& port_osada2[xm].lvl==0&&miasto2[xm].woda==true && rada_osady2[xm].lvl>=2 && drewno2>=port_osada2[xm].koszt_drewno && kamien2>=port_osada2[xm].koszt_kamien && zywnosc2>=port_osada2[xm].koszt_zywnosc && zloto2>=port_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=port_osada2[xm].koszt_produkcja){
+			port_osada2[xm].lvl++;
+			zbuduj_osada(port_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(port_osada2[xm]);
+			zwieksz_przychod_osada2(port_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==9&& port_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=port_osada2[xm].koszt_drewno && kamien2>=port_osada2[xm].koszt_kamien && zywnosc2>=port_osada2[xm].koszt_zywnosc && zloto2>=port_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=port_osada2[xm].koszt_produkcja){
+			port_osada2[xm].lvl++;
+			rozbuduj_osada2(port_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(port_osada2[xm]);
+			zwieksz_przychod_osada2(port_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+			//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==10&& tawerna_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=tawerna_osada2[xm].koszt_drewno && kamien2>=tawerna_osada2[xm].koszt_kamien && zywnosc2>=tawerna_osada2[xm].koszt_zywnosc && zloto2>=tawerna_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=tawerna_osada2[xm].koszt_produkcja){
+			tawerna_osada2[xm].lvl++;
+			zbuduj_osada(tawerna_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(tawerna_osada2[xm]);
+			zwieksz_przychod_osada2(tawerna_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==10&& tawerna_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=tawerna_osada2[xm].koszt_drewno && kamien2>=tawerna_osada2[xm].koszt_kamien && zywnosc2>=tawerna_osada2[xm].koszt_zywnosc && zloto2>=tawerna_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=tawerna_osada2[xm].koszt_produkcja){
+			tawerna_osada2[xm].lvl++;
+			rozbuduj_osada2(tawerna_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(tawerna_osada2[xm]);
+			zwieksz_przychod_osada2(tawerna_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			
+    	}	//////////////////
+		
+		if(ster=='q' && menu_budowy==true&& x0==11&& magazyn_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=magazyn_osada2[xm].koszt_drewno && kamien2>=magazyn_osada2[xm].koszt_kamien && zywnosc2>=magazyn_osada2[xm].koszt_zywnosc && zloto2>=magazyn_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=magazyn_osada2[xm].koszt_produkcja){
+			magazyn_osada2[xm].lvl++;
+			zbuduj_osada(magazyn_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(magazyn_osada2[xm]);
+			zwieksz_przychod_osada2(magazyn_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==11&& magazyn_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=magazyn_osada2[xm].koszt_drewno && kamien2>=magazyn_osada2[xm].koszt_kamien && zywnosc2>=magazyn_osada2[xm].koszt_zywnosc && zloto2>=magazyn_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=magazyn_osada2[xm].koszt_produkcja){
+			magazyn_osada2[xm].lvl++;
+			rozbuduj_osada2(magazyn_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(magazyn_osada2[xm]);
+			zwieksz_przychod_osada2(magazyn_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}	
+    	if(ster=='q' && rozbudowa==true&& x0==11&& magazyn_osada2[xm].lvl==2 && rada_osady2[xm].lvl>=4 && drewno2>=magazyn_osada2[xm].koszt_drewno && kamien2>=magazyn_osada2[xm].koszt_kamien && zywnosc2>=magazyn_osada2[xm].koszt_zywnosc && zloto2>=magazyn_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=magazyn_osada2[xm].koszt_produkcja){
+			magazyn_osada2[xm].lvl++;
+			rozbuduj_osada2(magazyn_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(magazyn_osada2[xm]);
+			zwieksz_przychod_osada2(magazyn_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}	
+			//////////////////
+	
+		if(ster=='q' && menu_budowy==true&& x0==12&& mlyn_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=2 && drewno2>=mlyn_osada2[xm].koszt_drewno && kamien2>=mlyn_osada2[xm].koszt_kamien && zywnosc2>=mlyn_osada2[xm].koszt_zywnosc && zloto2>=mlyn_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=mlyn_osada2[xm].koszt_produkcja){
+			mlyn_osada2[xm].lvl++;
+			zbuduj_osada(mlyn_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(mlyn_osada2[xm]);
+			zwieksz_przychod_osada2(mlyn_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==12&& mlyn_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=mlyn_osada2[xm].koszt_drewno && kamien2>=mlyn_osada2[xm].koszt_kamien && zywnosc2>=mlyn_osada2[xm].koszt_zywnosc && zloto2>=mlyn_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=mlyn_osada2[xm].koszt_produkcja){
+			mlyn_osada2[xm].lvl++;
+			rozbuduj_osada2(mlyn_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(mlyn_osada2[xm]);
+			zwieksz_przychod_osada2(mlyn_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==12&& mlyn_osada2[xm].lvl==2 && rada_osady2[xm].lvl>=4 && drewno2>=mlyn_osada2[xm].koszt_drewno && kamien2>=mlyn_osada2[xm].koszt_kamien && zywnosc2>=mlyn_osada2[xm].koszt_zywnosc && zloto2>=mlyn_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=mlyn_osada2[xm].koszt_produkcja){
+			mlyn_osada2[xm].lvl++;
+			rozbuduj_osada2(mlyn_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(mlyn_osada2[xm]);
+			zwieksz_przychod_osada2(mlyn_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+    	}
+
+	//////////////////
+				
+		if(ster=='q' && menu_budowy==true&& x0==13&& kamieniarz_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=kamieniarz_osada2[xm].koszt_drewno && kamien2>=kamieniarz_osada2[xm].koszt_kamien && zywnosc2>=kamieniarz_osada2[xm].koszt_zywnosc && zloto2>=kamieniarz_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=kamieniarz_osada2[xm].koszt_produkcja){
+			kamieniarz_osada2[xm].lvl++;
+			zbuduj_osada(kamieniarz_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(kamieniarz_osada2[xm]);
+			zwieksz_przychod_osada2(kamieniarz_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==13&& kamieniarz_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=kamieniarz_osada2[xm].koszt_drewno && kamien2>=kamieniarz_osada2[xm].koszt_kamien && zywnosc2>=kamieniarz_osada2[xm].koszt_zywnosc && zloto2>=kamieniarz_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=kamieniarz_osada2[xm].koszt_produkcja){
+			kamieniarz_osada2[xm].lvl++;
+			rozbuduj_osada2(kamieniarz_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(kamieniarz_osada2[xm]);
+			zwieksz_przychod_osada2(kamieniarz_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==13&& kamieniarz_osada2[xm].lvl==2 && rada_osady2[xm].lvl>=4 && drewno2>=kamieniarz_osada2[xm].koszt_drewno && kamien2>=kamieniarz_osada2[xm].koszt_kamien && zywnosc2>=kamieniarz_osada2[xm].koszt_zywnosc && zloto2>=kamieniarz_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=kamieniarz_osada2[xm].koszt_produkcja){
+			kamieniarz_osada2[xm].lvl++;
+			rozbuduj_osada2(kamieniarz_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(kamieniarz_osada2[xm]);
+			zwieksz_przychod_osada2(kamieniarz_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+
+	//////////////////
+			
+		if(ster=='q' && menu_budowy==true&& x0==14&& kosciol_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=kosciol_osada2[xm].koszt_drewno && kamien2>=kosciol_osada2[xm].koszt_kamien && zywnosc2>=kosciol_osada2[xm].koszt_zywnosc && zloto2>=kosciol_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=kosciol_osada2[xm].koszt_produkcja){
+			kosciol_osada2[xm].lvl++;
+			zbuduj_osada(kosciol_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(kosciol_osada2[xm]);
+			zwieksz_przychod_osada2(kosciol_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+		if(ster=='q' && rozbudowa==true&& x0==14&& kosciol_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=kosciol_osada2[xm].koszt_drewno && kamien2>=kosciol_osada2[xm].koszt_kamien && zywnosc2>=kosciol_osada2[xm].koszt_zywnosc && zloto2>=kosciol_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=kosciol_osada2[xm].koszt_produkcja){
+			kosciol_osada2[xm].lvl++;
+			rozbuduj_osada2(kosciol_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(kosciol_osada2[xm]);
+			zwieksz_przychod_osada2(kosciol_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}	
+			//////////////////
+			
+
+		if(ster=='q' && menu_budowy==true&& x0==15&& weglarz_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=1 && drewno2>=weglarz_osada2[xm].koszt_drewno && kamien2>=weglarz_osada2[xm].koszt_kamien && zywnosc2>=weglarz_osada2[xm].koszt_zywnosc && zloto2>=weglarz_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=weglarz_osada2[xm].koszt_produkcja){
+			weglarz_osada2[xm].lvl++;
+			zbuduj_osada(weglarz_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(weglarz_osada2[xm]);
+			zwieksz_przychod_osada2(weglarz_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==15&& weglarz_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=weglarz_osada2[xm].koszt_drewno && kamien2>=weglarz_osada2[xm].koszt_kamien && zywnosc2>=weglarz_osada2[xm].koszt_zywnosc && zloto2>=weglarz_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=weglarz_osada2[xm].koszt_produkcja){
+			weglarz_osada2[xm].lvl++;
+			rozbuduj_osada2(weglarz_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(weglarz_osada2[xm]);
+			zwieksz_przychod_osada2(weglarz_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			
+    	}
+				//////////////////
+
+		if(ster=='q' && menu_budowy==true && x0==16&& warsztat_osada2[xm].lvl==0 &&rada_osady2[xm].lvl>=2 && drewno2>=warsztat_osada2[xm].koszt_drewno && kamien2>=warsztat_osada2[xm].koszt_kamien && zywnosc2>=warsztat_osada2[xm].koszt_zywnosc && zloto2>=warsztat_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=warsztat_osada2[xm].koszt_produkcja){
+			warsztat_osada2[xm].lvl++;
+			zbuduj_osada(warsztat_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(warsztat_osada2[xm]);
+			zwieksz_przychod_osada2(warsztat_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			kusznik2[xm].koszt_produkcja-=50;
+    	}
+    	if(ster=='q' && rozbudowa==true && x0==16&& warsztat_osada2[xm].lvl==1 && mechanika==true &&rada_osady2[xm].lvl>=4 && drewno2>=warsztat_osada2[xm].koszt_drewno && kamien2>=warsztat_osada2[xm].koszt_kamien && zywnosc2>=warsztat_osada2[xm].koszt_zywnosc && zloto2>=warsztat_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=warsztat_osada2[xm].koszt_produkcja){
+			warsztat_osada2[xm].lvl++;
+			rozbuduj_osada2(warsztat_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(warsztat_osada2[xm]);
+			zwieksz_przychod_osada2(warsztat_osada2[xm],&przychod_nauka2,&max_zolnierzy2, xm);
+			kusznik2[xm].koszt_produkcja-=50;
+    	}
+				//////////////////
+
+		if(ster=='q' && menu_budowy==true&& x0==17&& stajnia_osada2[xm].lvl==0 && rada_osady2[xm].lvl>=2 && drewno2>=stajnia_osada2[xm].koszt_drewno && kamien2>=stajnia_osada2[xm].koszt_kamien && zywnosc2>=stajnia_osada2[xm].koszt_zywnosc && zloto2>=stajnia_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=stajnia_osada2[xm].koszt_produkcja){
+			stajnia_osada2[xm].lvl++;
+			zbuduj_osada(stajnia_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&menu_budowy,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(stajnia_osada2[xm]);
+			zwieksz_przychod_osada2(stajnia_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			lekka_jazda2[xm].koszt_produkcja-=50;
+
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==17&& stajnia_osada2[xm].lvl==1 && rada_osady2[xm].lvl>=3 && drewno2>=stajnia_osada2[xm].koszt_drewno && kamien2>=stajnia_osada2[xm].koszt_kamien && zywnosc2>=stajnia_osada2[xm].koszt_zywnosc && zloto2>=stajnia_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=stajnia_osada2[xm].koszt_produkcja){
+			stajnia_osada2[xm].lvl++;
+			rozbuduj_osada2(stajnia_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(stajnia_osada2[xm]);
+			zwieksz_przychod_osada2(stajnia_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			lekka_jazda2[xm].koszt_produkcja-=50;
+    	}
+    	if(ster=='q' && rozbudowa==true&& x0==17&& stajnia_osada2[xm].lvl==2 && rada_osady2[xm].lvl>=4 && drewno2>=stajnia_osada2[xm].koszt_drewno && kamien2>=stajnia_osada2[xm].koszt_kamien && zywnosc2>=stajnia_osada2[xm].koszt_zywnosc && zloto2>=stajnia_osada2[xm].koszt_zloto && miasto2[xm].produkcja>=stajnia_osada2[xm].koszt_produkcja){
+			stajnia_osada2[xm].lvl++;
+			rozbuduj_osada2(stajnia_osada2[xm],&drewno2,&kamien2,&zywnosc2,&zloto2,&max_zolnierzy2,&rozbudowa,&menu_osada,&przychod_nauka2,&x0,xm);
+			zwieksz_koszt_osada(stajnia_osada2[xm]);
+			zwieksz_przychod_osada2(stajnia_osada2[xm],&przychod_nauka2,&max_zolnierzy2,xm);
+			lekka_jazda2[xm].koszt_produkcja-=50;
+
+    	}
+    	
+
+		if(ster==KEY_UP && x0==0 && menu_budowy==true || ster==KEY_UP && x0==0 && rozbudowa==true)
+		x0=18;
+		
+		if(ster==KEY_DOWN && x0==18 && menu_budowy==true || ster==KEY_DOWN && x0==18 && rozbudowa==true)
+		x0=0;
+	
+}
+}
+
 ////////////////////////////////////////////////////////
+
+
+
 while(ruch_barbarzyncow==true){
  system("CLS");
  gotoxy(50,50);
@@ -10557,7 +25174,7 @@ while(ruch_barbarzyncow==true){
 	 		if(mapa[barbarzynca_x][barbarzynca_y]!=woda && mapa[barbarzynca_x][barbarzynca_y]!=gora &&mapa[barbarzynca_x][barbarzynca_y]!='@' && mapa[barbarzynca_x][barbarzynca_y]!=' '){
 	 			for(int p=barbarzynca_x-5;p<=barbarzynca_x+5;p++){
 	 				for(int o=barbarzynca_y-5;o<=barbarzynca_y+5;o++){
-	 					if(mapa[p][o]==osada || mapa[p][o]==stolica ||mapa[p][o]==tartak ||mapa[p][o]==kopalnia ||mapa[p][o]==farma ||mapa[p][o]==wioska || mapa_jednostek[p][o]=='A'|| mapa_jednostek[p][o]=='R'|| mapa_jednostek[p][o]=='O'){
+	 					if(mapa[p][o]==osada || mapa[p][o]==stolica ||mapa[p][o]==tartak ||mapa[p][o]==kopalnia ||mapa[p][o]==farma ||mapa[p][o]==wioska || mapa_jednostek[p][o]=='A'|| mapa_jednostek[p][o]=='R'|| mapa_jednostek[p][o]=='O'|| mapa_jednostek2[p][o]=='A'|| mapa_jednostek2[p][o]=='R'|| mapa_jednostek2[p][o]=='O'){
 	 						barbarzynca_blad=true;
 						 }
 					 }
@@ -10585,7 +25202,7 @@ while(ruch_barbarzyncow==true){
 	 		if(mapa_jednostek[i][j]=='B'){
 	 			for(int p=i-5;p<=i+5;p++){
 	 				for(int o=j-5;o<=j+5;o++){
-	 					if(mapa_jednostek[p][o]=='A')barbarzynca_blad=true;
+	 					if(mapa_jednostek[p][o]=='A' || mapa_jednostek2[p][o]=='A')barbarzynca_blad=true;
 	 					
 					 }
 				 }
@@ -10594,7 +25211,7 @@ while(ruch_barbarzyncow==true){
 				 if(barbarzynca_blad==false){
 				 for(int p=i-5;p<=i+5;p++){
 	 				for(int o=j-5;o<=j+5;o++){
-	 					if(mapa_jednostek[p][o]=='O' || mapa_jednostek[p][o]=='R' || mapa[p][o]==kopalnia|| mapa[p][o]==farma|| mapa[p][o]==tartak || mapa[p][o]==wioska){
+	 					if(mapa_jednostek[p][o]=='O' || mapa_jednostek[p][o]=='R'||mapa_jednostek2[p][o]=='O' || mapa_jednostek2[p][o]=='R' || mapa[p][o]==kopalnia|| mapa[p][o]==farma|| mapa[p][o]==tartak || mapa[p][o]==wioska){
 						
 					
 				
@@ -10659,7 +25276,7 @@ while(ruch_barbarzyncow==true){
 	 			if(barbarzynca_atak==true){
 	 				for(int p=i-min_x;p<=i+min_x;p++){
 	 				for(int o=j-min_y;o<=j+min_y;o++){
-	 					if(mapa_jednostek[p][o]=='O' || mapa_jednostek[p][o]=='R' || mapa[p][o]==kopalnia|| mapa[p][o]==farma|| mapa[p][o]==tartak || mapa[p][o]==wioska){
+	 					if(mapa_jednostek[p][o]=='O' || mapa_jednostek[p][o]=='R' ||mapa_jednostek2[p][o]=='O' || mapa_jednostek2[p][o]=='R' || mapa[p][o]==kopalnia|| mapa[p][o]==farma|| mapa[p][o]==tartak || mapa[p][o]==wioska){
 						if(i-p==1 && j-o==1&&koniec_ruchu==false){
 						bufor_barbarzyncow[i-1][j-1]=1;
 	 					mapa_jednostek[i][j]=' ';
@@ -10669,6 +25286,11 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i-1][j-1]=0;
 	 					mapa_wioska[i-1][j-1]=0;
 	 					mapa_kopalnia[i-1][j-1]=0;
+	 					mapa_jednostek2[i-1][j-1]=' ';
+	 					mapa_tartak2[i-1][j-1]=0;
+	 					mapa_farma2[i-1][j-1]=0;
+	 					mapa_wioska2[i-1][j-1]=0;
+	 					mapa_kopalnia2[i-1][j-1]=0;
 	 					koniec_ruchu=true;
 	 				
 						}
@@ -10681,6 +25303,11 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i-1][j]=0;
 	 					mapa_wioska[i-1][j]=0;
 	 					mapa_kopalnia[i-1][j]=0;
+	 						mapa_jednostek2[i-1][j]=' ';
+	 					mapa_tartak2[i-1][j]=0;
+	 					mapa_farma2[i-1][j]=0;
+	 					mapa_wioska2[i-1][j]=0;
+	 					mapa_kopalnia2[i-1][j]=0;
 	 					koniec_ruchu=true;
 	 					
 						}
@@ -10693,6 +25320,11 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i-1][j+1]=0;
 	 					mapa_wioska[i-1][j+1]=0;
 	 					mapa_kopalnia[i-1][j+1]=0;
+	 						mapa_jednostek2[i-1][j+1]=' ';
+	 					mapa_tartak2[i-1][j+1]=0;
+	 					mapa_farma2[i-1][j+1]=0;
+	 					mapa_wioska2[i-1][j+1]=0;
+	 					mapa_kopalnia2[i-1][j+1]=0;
 	 					koniec_ruchu=true;
 	 				
 						}
@@ -10705,6 +25337,11 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i][j-1]=0;
 	 					mapa_wioska[i][j-1]=0;
 	 					mapa_kopalnia[i][j-1]=0;
+	 						 	mapa_jednostek2[i][j-1]=' ';
+	 					mapa_tartak2[i][j-1]=0;
+	 					mapa_farma2[i][j-1]=0;
+	 					mapa_wioska2[i][j-1]=0;
+	 					mapa_kopalnia2[i][j-1]=0;
 	 					koniec_ruchu=true;
 	 					
 						}
@@ -10717,6 +25354,11 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i][j+1]=0;
 	 					mapa_wioska[i][j+1]=0;
 	 					mapa_kopalnia[i][j+1]=0;
+	 							mapa_jednostek2[i][j+1]=' ';
+	 					mapa_tartak2[i][j+1]=0;
+	 					mapa_farma2[i][j+1]=0;
+	 					mapa_wioska2[i][j+1]=0;
+	 					mapa_kopalnia2[i][j+1]=0;
 	 					koniec_ruchu=true;
 	 				
 						}
@@ -10729,6 +25371,11 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i+1][j-1]=0;
 	 					mapa_wioska[i+1][j-1]=0;
 	 					mapa_kopalnia[i+1][j-1]=0;
+	 						 	mapa_jednostek2[i+1][j-1]=' ';
+	 					mapa_tartak2[i+1][j-1]=0;
+	 					mapa_farma2[i+1][j-1]=0;
+	 					mapa_wioska2[i+1][j-1]=0;
+	 					mapa_kopalnia2[i+1][j-1]=0;
 	 					koniec_ruchu=true;
 	 					
 						}
@@ -10741,6 +25388,12 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i+1][j]=0;
 	 					mapa_wioska[i+1][j]=0;
 	 					mapa_kopalnia[i+1][j]=0;
+	 						 					mapa_jednostek2[i+1][j]=' ';
+	 					mapa[i+1][j]=dom2;
+	 					mapa_tartak2[i+1][j]=0;
+	 					mapa_farma2[i+1][j]=0;
+	 					mapa_wioska2[i+1][j]=0;
+	 					mapa_kopalnia2[i+1][j]=0;
 	 					koniec_ruchu=true;
 	 				
 						}
@@ -10753,6 +25406,12 @@ while(ruch_barbarzyncow==true){
 	 					mapa_farma[i+1][j+1]=0;
 	 					mapa_wioska[i+1][j+1]=0;
 	 					mapa_kopalnia[i+1][j+1]=0;
+	 						 					mapa_jednostek2[i+1][j+1]=' ';
+	 					mapa[i+1][j+1]=dom2;
+	 					mapa_tartak2[i+1][j+1]=0;
+	 					mapa_farma2[i+1][j+1]=0;
+	 					mapa_wioska2[i+1][j+1]=0;
+	 					mapa_kopalnia2[i+1][j+1]=0;
 	 					koniec_ruchu=true;
 	 				
 						}
